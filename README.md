@@ -12,7 +12,7 @@ Every profile lists what the browser is built on, which platforms and operating 
 - **Check your own setup:** an old-device finder, a version check, and a view of what websites can read about your browser.
 - **Look closer:** privacy and security grades, curated collections, a printable shortlist, and a data-health page showing how complete and confident the research is.
 
-Nothing you do on the site is sent anywhere. Your choices stay in your browser, and you can export, restore or clear them in Settings.
+Your choices, quiz answers and shortlist stay in your browser, and you can export, restore or clear them in Settings. The hosted site uses Cloudflare Web Analytics for basic, cookie-free page-view counts; it has no accounts and no ad trackers.
 
 ## Run it locally
 
