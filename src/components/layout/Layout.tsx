@@ -208,6 +208,18 @@ function Footer() {
           <p className="muted small" style={{ marginTop: 'var(--s-3)', maxWidth: '40ch' }}>
             Independent browser comparisons. Scores are editorial assessments grounded in cited public sources, last reviewed October 2026.
           </p>
+          <ul className="footer__links">
+            <li>
+              <a href="https://github.com/nmknm/browserfit" target="_blank" rel="noreferrer">
+                Source on GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://nmkslab.web.app/" target="_blank" rel="noreferrer">
+                More from Nmk's Lab
+              </a>
+            </li>
+          </ul>
         </div>
         {NAV.map((g) => (
           <div key={g.id}>

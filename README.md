@@ -1,38 +1,48 @@
 # Browserfit
 
-Detailed, sourced profiles of 125 web browsers across Windows, macOS, Linux, Android, iOS and ChromeOS. It also has tools to compare, rank and choose a browser.
+Detailed, sourced profiles of 125 web browsers across Windows, macOS, Linux, Android, iOS and ChromeOS, plus tools to compare them and find the one that fits you.
 
-## Run
+Every profile lists what the browser is built on, which platforms and operating system versions it supports, how it handles privacy and security, and where each claim comes from. Scores are editorial assessments grounded in cited public sources, last reviewed October 2026.
+
+## What you can do
+
+- **Browse and rank:** read a profile for any browser, or rank all of them for your operating system, with sources and a confidence level on each.
+- **Take a quiz:** 22 quizzes, from "find my browser" to narrower ones and a few for fun. You can build your own, and share a result as a link.
+- **Compare:** put browsers side by side or head to head, then export the comparison to Markdown or CSV.
+- **Check your own setup:** an old-device finder, a version check, and a view of what websites can read about your browser.
+- **Look closer:** privacy and security grades, curated collections, a printable shortlist, and a data-health page showing how complete and confident the research is.
+
+Nothing you do on the site is sent anywhere. Your choices stay in your browser, and you can export, restore or clear them in Settings.
+
+## Run it locally
+
+You need Node.js 22 or newer.
 
 ```
 npm install
 npm run dev        # http://localhost:5173
-npm run build      # static site in dist/ (hash routing, works from any folder)
+npm run build      # static site in dist/
 npm run preview
 ```
 
-## What is in it
+The site is fully static and uses hash routing, so `dist/` works on any static host.
 
-- **Profiles and rankings** for every browser, per operating system, with sources and confidence.
-- **Quizzes:** 22 built in (find your browser, narrow it down, test your knowledge), a builder for your own at `/quiz/build`, and result links that open the same result anywhere.
-- **Tools:** compare, head to head, feature finder, extension checker, switch planner, an old-device finder (`/old-device`), a version check and "what sites can read" on `/you`, a printable shortlist brief, and compare export to Markdown or CSV.
-- **Pages:** collections (`/collections`), browser privacy (`/privacy`), browser security, data health (`/data-health`).
-- **Settings** (`/settings`, the gear in the topbar): theme, platform, and everything saved on the device can be exported, restored or cleared. Nothing is sent anywhere.
+## Where the data comes from
 
-## Data
+Each browser has a researched fact sheet in `research/raw/`: sources, 40 scores, 68 features and per-OS details. `npm run data` turns those into the files in `src/data/generated/` that the site reads, checking ids and score ranges along the way. The field format and scoring guide are in `research/SCHEMA.md`.
 
-- `research/raw/*.json` holds one researched fact sheet per browser (October 2026): sources, 40 scores, 68 features and per-OS details.
-- `npm run data` rebuilds `src/data/generated/` from those files. It validates ids, clamps scores and normalises names. It also turns each platform's free-text `minOs` into a comparable `minOsFloor` (see `scripts/minos.mjs`); entries the research hedges on ("unverified", a third-party listing) are marked unconfirmed.
-- `research/SCHEMA.md` describes the research schema and the scoring calibration.
-- Security: `npm run data` derives a `security` block for every browser from its profile and `research/engines.json` (latest stable Chromium and Firefox). Researched facts go in `research/security/<id>.json` and override the derived ones; browsers without one show as Estimated. Never write security data into `research/raw/`.
-- `node scripts/check-security-facts.mjs` checks that every benchmark, bounty and exploited-bug entry in `src/data/securityFacts.ts` has a source URL and access date.
+Security grades are derived from each profile and the latest stable Chromium and Firefox versions in `research/engines.json`. Researched facts in `research/security/<id>.json` override the derived ones, and browsers without one are labelled Estimated. `node scripts/check-security-facts.mjs` verifies that every benchmark, bounty and exploited-bug entry has a source URL and access date.
 
-## Deploy (Cloudflare Pages)
+## Corrections and additions
 
-The site is fully static (hash routing), so no server or rewrite rules are needed. In the Cloudflare dashboard go to Workers & Pages, then Create, Pages, Connect to Git, and pick this repository:
+Found something out of date or wrong? Please [open an issue](https://github.com/nmknm/browserfit/issues) with a link to a source. Browsers and features change often, so corrections are welcome.
 
-- Build command: `npm run build`
-- Build output directory: `dist`
-- Environment variable: `NODE_VERSION=22`
+## Built with
 
-`src/data/generated/` is committed, so the build does not need to run `npm run data`. After changing anything in `research/`, run `npm run data` and commit the result. Every push to `main` redeploys, and other branches get preview URLs.
+React, TypeScript, Vite, React Router and Motion.
+
+## License
+
+[MIT](LICENSE). The research data in `research/` is released under the same license; please keep the attribution if you reuse it.
+
+More projects at [Nmk's Lab](https://nmkslab.web.app/).

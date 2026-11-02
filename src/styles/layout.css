@@ -413,6 +413,17 @@ html[data-topbar='floating'] {
   font-size: var(--text-sm);
   color: var(--text-2);
 }
+.footer .footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-5);
+  margin-block-start: var(--s-4);
+}
+.footer__links a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--border-strong, var(--border));
+}
 @media (hover: hover) {
   .footer a:hover {
     color: var(--text);
