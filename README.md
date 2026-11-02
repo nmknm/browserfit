@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/favicon.svg" alt="Browserfit logo" width="96" height="96">
+</p>
+
 # Browserfit
 
 Detailed, sourced profiles of 125 web browsers across Windows, macOS, Linux, Android, iOS and ChromeOS, plus tools to compare them and find the one that fits you.
@@ -10,9 +14,9 @@ Every profile lists what the browser is built on, which platforms and operating 
 - **Take a quiz:** 22 quizzes, from "find my browser" to narrower ones and a few for fun. You can build your own, and share a result as a link.
 - **Compare:** put browsers side by side or head to head, then export the comparison to Markdown or CSV.
 - **Check your own setup:** an old-device finder, a version check, and a view of what websites can read about your browser.
-- **Look closer:** privacy and security grades, curated collections, a printable shortlist, and a data-health page showing how complete and confident the research is.
+- **Look closer:** privacy and security grades, curated collections, a printable summary of the browsers you have saved, and a data-health page showing how complete and confident the research is.
 
-Your choices, quiz answers and shortlist stay in your browser, and you can export, restore or clear them in Settings. The hosted site uses Cloudflare Web Analytics for basic, cookie-free page-view counts; it has no accounts and no ad trackers.
+Your choices, quiz answers and saved browsers stay in your browser, and you can export, restore or clear them in Settings. The hosted site uses Cloudflare Web Analytics for basic, cookie-free page-view counts; it has no accounts and no ad trackers.
 
 ## Run it locally
 
