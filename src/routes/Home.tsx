@@ -59,7 +59,7 @@ function HeroSearch() {
         value={q}
         onChange={(e) => setQ(e.target.value)}
         aria-label="Look up a browser"
-        aria-controls="hero-hits"
+        aria-controls={hits.length > 0 ? 'hero-hits' : undefined}
       />
       <AnimatePresence>
         {hits.length > 0 && (

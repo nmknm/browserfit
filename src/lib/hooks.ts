@@ -17,9 +17,12 @@ export function useMedia(query: string) {
 export const useIsMobile = () => useMedia('(max-width: 47.99rem)');
 export const useCoarse = () => useMedia('(pointer: coarse)');
 
+// index.html (filled in at build time by scripts/seo.mjs) owns the home title; remember it before any page changes it.
+const HOME_TITLE = typeof document !== 'undefined' ? document.title : 'Browserfit';
+
 export function useDocTitle(title: string) {
   useEffect(() => {
-    document.title = title ? `${title} · Browserfit` : 'Browserfit — compare every web browser';
+    document.title = title ? `${title} · Browserfit` : HOME_TITLE;
   }, [title]);
 }
 

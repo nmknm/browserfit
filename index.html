@@ -3,11 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="description" content="Compare more than 120 web browsers across Windows, macOS, Linux, Android, iOS and ChromeOS: 40 rated categories, features, rankings, and quizzes." />
+    <title>__TITLE__</title>
+    <meta name="description" content="__DESCRIPTION__" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="__SITE_URL__/" />
+    __VERIFICATION__
+    <meta name="application-name" content="Browserfit" />
+    <meta name="apple-mobile-web-app-title" content="Browserfit" />
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <title>Browserfit — compare every web browser</title>
+    <!-- Stops iOS Safari turning version numbers, years and counts into phone, date or address links. -->
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    <meta name="msapplication-TileColor" content="#0961e2" />
+    <meta name="msapplication-TileImage" content="./icon-192.png" />
+
+    <link rel="icon" href="./favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" sizes="any" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Browserfit" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="__SITE_URL__/" />
+    <meta property="og:title" content="__TITLE__" />
+    <meta property="og:description" content="__DESCRIPTION__" />
+    <meta property="og:image" content="__SITE_URL__/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="__OG_ALT__" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="__TITLE__" />
+    <meta name="twitter:description" content="__DESCRIPTION__" />
+    <meta name="twitter:image" content="__SITE_URL__/og.png" />
+    <meta name="twitter:image:alt" content="__OG_ALT__" />
+    <!-- Slack shows these two label and value pairs under the link preview. -->
+    <meta name="twitter:label1" content="Browsers covered" />
+    <meta name="twitter:data1" content="__BROWSER_COUNT__" />
+    <meta name="twitter:label2" content="Rated categories" />
+    <meta name="twitter:data2" content="__CATEGORY_COUNT__" />
+    __SOCIAL__
+
+    <script type="application/ld+json">__JSONLD__</script>
     <script>
       var t = 'light';
       try {
@@ -17,6 +56,7 @@
     </script>
   </head>
   <body>
+    __FALLBACK__
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

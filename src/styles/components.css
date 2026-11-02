@@ -252,12 +252,10 @@
 }
 .dsheet--bottom::backdrop {
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
 }
 .dsheet--bottom .dsheet__inner {
   background: color-mix(in oklab, var(--surface) 82%, transparent);
   backdrop-filter: saturate(1.4) blur(10px);
-  -webkit-backdrop-filter: saturate(1.4) blur(10px);
   border-radius: var(--r-xl) var(--r-xl) 0 0;
   max-height: 88dvh;
   height: auto;

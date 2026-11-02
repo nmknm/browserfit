@@ -52,7 +52,6 @@ html[data-topbar='floating'] {
   border-radius: 0;
   background: color-mix(in oklab, var(--bg) 80%, transparent);
   backdrop-filter: saturate(1.4) blur(12px);
-  -webkit-backdrop-filter: saturate(1.4) blur(12px);
   transition: box-shadow var(--dur-slow) var(--ease-out), background-color var(--dur-slow) var(--ease-out);
 }
 .topbar.is-floating .topbar__bg {
@@ -288,7 +287,6 @@ html[data-topbar='floating'] {
   border: 1px solid var(--border);
   background: color-mix(in oklab, var(--surface) 80%, transparent);
   backdrop-filter: saturate(1.4) blur(16px);
-  -webkit-backdrop-filter: saturate(1.4) blur(16px);
   box-shadow: var(--shadow-pop);
   transform-origin: top left;
   list-style: none;
@@ -449,7 +447,6 @@ html[data-topbar='floating'] {
   padding: 0.25rem 0.25rem calc(0.25rem + env(safe-area-inset-bottom, 0px));
   background: color-mix(in oklab, var(--bg) 70%, transparent);
   backdrop-filter: saturate(1.4) blur(14px);
-  -webkit-backdrop-filter: saturate(1.4) blur(14px);
   border-top: 1px solid color-mix(in oklab, var(--border) 80%, transparent);
 }
 .bottom-nav__item {
@@ -504,7 +501,6 @@ html[data-topbar='floating'] {
   border: 1px solid var(--border);
   background: color-mix(in oklab, var(--surface) 75%, transparent);
   backdrop-filter: saturate(1.4) blur(14px);
-  -webkit-backdrop-filter: saturate(1.4) blur(14px);
   box-shadow: var(--shadow-pop);
   max-width: calc(100vw - 1.5rem);
 }
@@ -595,14 +591,12 @@ html[data-topbar='floating'] {
 .palette::backdrop {
   background: color-mix(in oklab, var(--overlay) 38%, transparent);
   backdrop-filter: saturate(1.2) blur(3px);
-  -webkit-backdrop-filter: saturate(1.2) blur(3px);
 }
 .palette__box {
   border-radius: var(--r-xl);
   border: 1px solid var(--border);
   background: color-mix(in oklab, var(--surface) 72%, transparent);
   backdrop-filter: saturate(1.6) blur(12px);
-  -webkit-backdrop-filter: saturate(1.6) blur(12px);
   box-shadow: var(--shadow-pop);
   transform-origin: top center; /* enter and exit are WAAPI on this box, see lib/dialogMotion.ts */
 }

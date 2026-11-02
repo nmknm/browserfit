@@ -1,0 +1,49 @@
+{
+  "id": "./",
+  "name": "Browserfit",
+  "short_name": "Browserfit",
+  "description": "Detailed, sourced profiles of web browsers, with tools to compare them and find the one that fits you.",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Rankings",
+      "short_name": "Rankings",
+      "description": "Rank every browser for your operating system",
+      "url": "./#/rankings",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Find my browser quiz",
+      "short_name": "Quizzes",
+      "description": "Take a quiz to find the browser that fits you",
+      "url": "./#/quiz",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Compare browsers",
+      "short_name": "Compare",
+      "description": "Put browsers side by side",
+      "url": "./#/compare",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Old-device finder",
+      "short_name": "Old device",
+      "description": "Find a browser that still supports an older operating system",
+      "url": "./#/old-device",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}

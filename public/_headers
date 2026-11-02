@@ -1,0 +1,11 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Vite renames these files whenever their content changes, so they can be cached for good.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Browser icons keep their names; a week is long enough to help repeat visits without freezing a replaced icon.
+/icons/*
+  Cache-Control: public, max-age=604800
