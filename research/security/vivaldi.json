@@ -1,0 +1,23 @@
+{
+  "patchLag": "days",
+  "lagNote": "Chromium 152 ESR with security fixes from Chromium 156 (Vivaldi 8.2.4133.96)",
+  "autoUpdate": { "windows": "background", "macos": "background", "linux": "os" },
+  "safeBrowsing": "google",
+  "extVetting": "reviewed",
+  "bugBounty": "upstream",
+  "disclosure": true,
+  "advisoryUrl": "https://update.vivaldi.com/update/1.0/relnotes/latest.html",
+  "summary": "Chromium Extended Stable base with out-of-schedule security backports, Google Safe Browsing, Chrome Web Store extensions, and a Hall of Fame instead of a cash bounty.",
+  "incidents": [
+    { "date": "2026-04", "title": "CVE-2026-5281 (Dawn use-after-free) fixed in Vivaldi 7.9", "severity": "high", "detail": "Vivaldi's release post says the Dawn WebGPU bug has a known exploit in the wild; fixed with Chromium 146.0.7680.182.", "url": "https://vivaldi.com/blog/desktop/minor-update-four-7-9/" },
+    { "date": "2026-06", "title": "CVE-2026-11645 (V8 out-of-bounds access) fixed in Vivaldi 8.0", "severity": "high", "detail": "Vivaldi's release post says the V8 bug has a known exploit in the wild; fixed in Chromium 148.0.7778.263 ESR.", "url": "https://vivaldi.com/blog/desktop/minor-update-six-8-0/" },
+    { "date": "2026-09", "title": "CVE-2026-85046 (V8 type confusion) fixed in Vivaldi 8.2", "severity": "high", "detail": "Vivaldi changelog lists the V8 type confusion fix in Chromium 152.0.7977.112 (build 4133.45), alongside Vivaldi-specific calendar fixes.", "url": "https://update.vivaldi.com/update/1.0/relnotes/latest.html" }
+  ],
+  "sources": [
+    { "url": "https://vivaldi.com/security/", "title": "Vivaldi Security", "accessed": "2026-10-30" },
+    { "url": "https://vivaldi.com/security/common-questions/", "title": "Vivaldi Security common questions", "accessed": "2026-10-30" },
+    { "url": "https://update.vivaldi.com/update/1.0/relnotes/latest.html", "title": "Vivaldi Changelog", "accessed": "2026-10-30" },
+    { "url": "https://help.vivaldi.com/desktop/install-update/update-vivaldi/", "title": "Update Vivaldi on desktop", "accessed": "2026-10-30" },
+    { "url": "https://vivaldi.com/blog/desktop/minor-update-six-8-0/", "title": "Minor update (6) for Vivaldi Desktop Browser 8.0", "accessed": "2026-10-30" }
+  ]
+}

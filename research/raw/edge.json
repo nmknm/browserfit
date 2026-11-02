@@ -1,0 +1,895 @@
+{
+  "id": "edge",
+  "name": "Microsoft Edge",
+  "aliases": [
+    "Edge"
+  ],
+  "group": "mainstream",
+  "developer": "Microsoft Corporation",
+  "hq": "United States",
+  "businessModel": "Free; funds Bing/Microsoft services, Microsoft 365 and Copilot upsell, shopping/rewards features",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary freeware (built on open-source Chromium)",
+  "openSource": false,
+  "price": "free",
+  "paidNote": "Browse with Copilot (agentic) limited to Microsoft 365 Premium subscribers in the US",
+  "releaseYear": 2015,
+  "status": "active",
+  "statusNote": "Chromium-based since January 2020; legacy EdgeHTML Edge replaced",
+  "version": {
+    "current": "156.0.4314.50",
+    "date": "2026-10-26",
+    "upstream": "Chromium 156"
+  },
+  "channels": [
+    "Stable",
+    "Beta",
+    "Dev",
+    "Canary",
+    "Extended Stable (enterprise)"
+  ],
+  "updateCadence": "Tracks Chromium majors; Edge 155 (Oct 8) and 156 (Oct 22, 2026) suggest a 2-week rhythm matching Chrome; security fixes within days",
+  "website": "https://www.microsoft.com/edge",
+  "tags": [
+    "mainstream",
+    "chromium",
+    "copilot",
+    "windows",
+    "enterprise"
+  ],
+  "pitch": "Chromium with Copilot, vertical tabs, split screen and Windows integration.",
+  "summary": "A feature-rich Chromium browser preinstalled on Windows: strong tab tools, Copilot folded into the core UI since May 2026, and Android extensions, but heavy Microsoft services, telemetry and MV2 removal ending by end of 2026.",
+  "bestFor": [
+    "Windows users who want tabs, split screen and Copilot",
+    "Enterprise / Microsoft 365 environments with IE mode",
+    "People who want Chrome compatibility with better tab management",
+    "Android users who want extensions on mobile"
+  ],
+  "notFor": [
+    "People who want to avoid AI and Microsoft promotions",
+    "Users who need full uBlock Origin long term (MV2 ending 2026)",
+    "Privacy-focused users who want strong default blocking"
+  ],
+  "pros": [
+    {
+      "title": "Excellent tab tools",
+      "detail": "Native vertical tabs, split screen, tab groups, sleeping tabs and Efficiency mode."
+    },
+    {
+      "title": "Copilot integrated",
+      "detail": "Copilot Mode was folded into core Edge in May 2026 with multi-tab reasoning, Journeys, voice and vision."
+    },
+    {
+      "title": "Chrome compatibility",
+      "detail": "Same Blink engine and Chrome Web Store support, with Edge Add-ons as a second source."
+    },
+    {
+      "title": "Android extensions",
+      "detail": "Edge for Android can install extensions from Edge Add-ons, something Chrome for Android still cannot do."
+    },
+    {
+      "title": "Enterprise-ready",
+      "detail": "IE mode, Edge for Business, thousands of policies and Defender SmartScreen integration."
+    },
+    {
+      "title": "Free Secure Network VPN",
+      "detail": "Cloudflare-powered VPN with a free monthly allowance when signed in (cap not re-verified)."
+    }
+  ],
+  "cons": [
+    {
+      "title": "MV2 ending",
+      "detail": "Microsoft is disabling Manifest V2 extensions for consumers through the end of 2026, ending full uBlock Origin (enterprise early 2027)."
+    },
+    {
+      "title": "Microsoft promotions",
+      "detail": "Bing, Copilot, shopping and rewards prompts are on by default and frequently criticized."
+    },
+    {
+      "title": "Telemetry",
+      "detail": "Collects diagnostic and usage data, with signed-in Microsoft personalisation."
+    },
+    {
+      "title": "Features come and go",
+      "detail": "Collections retired in v146, Workspaces sharing retired, sidebar changes in v150."
+    }
+  ],
+  "signatureFeatures": [
+    "Vertical tabs and split screen",
+    "Copilot in Edge (Journeys, Browse with Copilot)",
+    "Edge Secure Network VPN",
+    "Scareware blocker",
+    "Internet Explorer mode"
+  ],
+  "faq": [
+    {
+      "q": "Is Edge ending support for uBlock Origin?",
+      "a": "Yes for consumers: Microsoft began disabling MV2 extensions in Canary/Dev/Beta in August 2026 and plans to finish the consumer rollout by end of 2026, with enterprise in early 2027. uBlock Origin Lite (MV3) remains."
+    },
+    {
+      "q": "What happened to Copilot Mode?",
+      "a": "Microsoft retired it on May 13, 2026 and built its multi-tab reasoning, Journeys, voice, vision and writing features directly into Edge on desktop and mobile."
+    },
+    {
+      "q": "Does Edge for Android support extensions?",
+      "a": "Yes. Edge for Android can install extensions from the Edge Add-ons catalog; iOS has none."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2015-07",
+      "event": "Original EdgeHTML-based Edge debuts with Windows 10"
+    },
+    {
+      "date": "2020-01",
+      "event": "Chromium-based Edge released"
+    },
+    {
+      "date": "2025-07",
+      "event": "Copilot Mode launched as an opt-in experimental mode"
+    },
+    {
+      "date": "2026-05",
+      "event": "Copilot Mode retired; AI features integrated into core Edge on desktop and mobile"
+    },
+    {
+      "date": "2026-08",
+      "event": "Microsoft announces staged end of Manifest V2; disabling begins in pre-release channels"
+    },
+    {
+      "date": "2026-10",
+      "event": "Edge 156 stable (Oct 22) adds unified site permissions, document autofill and password key icon"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "favorites/bookmarks",
+      "passwords",
+      "history",
+      "extensions (some)",
+      "cookies"
+    ],
+    "note": "Imports from Chrome, Firefox, Safari and others; Chrome extensions install from the Chrome Web Store."
+  },
+  "alternatives": [
+    "chrome",
+    "firefox",
+    "brave",
+    "vivaldi",
+    "opera",
+    "island"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "favorites",
+        "passwords",
+        "history",
+        "open tabs",
+        "extensions",
+        "settings",
+        "autofill",
+        "workspaces (local-only v2)"
+      ],
+      "crossOs": true,
+      "note": "Microsoft account (or Entra work account); Collections retired in v146"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": true,
+      "breachCheck": true,
+      "note": "Microsoft Edge password manager with password monitor; Primary password deprecated in v147; new key icon with login details in v156"
+    },
+    "mv2": {
+      "level": "temporary",
+      "note": "Consumer MV2 being disabled from Aug 2026 through end of 2026; managed devices early 2027 with policy exceptions",
+      "date": "2026-2027"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "own-store",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "on-by-default",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Copilot integrated in core Edge since May 2026; Browse with Copilot (agentic) for M365 Premium in US; toggles in settings and policies"
+    },
+    "privacy": {
+      "defaults": "Tracking prevention Balanced by default; SmartScreen; Strict optional; no ad blocker",
+      "telemetry": "Diagnostic data collected; optional data toggles; Microsoft account personalisation",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Bing",
+    "telemetry": "Required diagnostic data plus optional data; Microsoft services contacted",
+    "drm": "Widevine and PlayReady (4K Netflix on Windows with supported hardware)",
+    "codecs": "H.264, HEVC (hardware), VP9, AV1",
+    "sandbox": "Chromium sandbox + site isolation; Enhanced Security Mode; Win32k lockdown on Windows",
+    "patchSpeed": "Typically within days of Chrome security releases",
+    "languages": "~90 languages"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64",
+        "x86"
+      ],
+      "stores": [
+        "preinstalled",
+        "official-installer",
+        "winget"
+      ],
+      "notes": [
+        "Included with Windows 10 20H2+ and Windows 11",
+        "Copilot app for Windows shares Edge codebase since April 2026"
+      ],
+      "highlights": [
+        "Efficiency mode, sleeping tabs, IE mode, Secure Network, scareware blocker"
+      ],
+      "scoreDelta": {
+        "battery": 0.5
+      }
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 13",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew"
+      ],
+      "notes": [
+        "Full feature set minus Windows-only features"
+      ],
+      "highlights": [
+        "Same sync and Copilot as Windows"
+      ],
+      "scoreDelta": {
+        "battery": -0.5
+      }
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "64-bit Ubuntu/Debian/Fedora/openSUSE",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "official-installer"
+      ],
+      "notes": [
+        "Official Microsoft package repos"
+      ],
+      "highlights": [
+        "Same core Edge on Linux"
+      ],
+      "scoreDelta": {
+        "extras": -1
+      }
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 10",
+      "arch": [
+        "arm64",
+        "arm32"
+      ],
+      "stores": [
+        "google-play"
+      ],
+      "notes": [
+        "Extensions via Edge Add-ons catalog",
+        "Journeys, Vision and Copilot on mobile",
+        "Play listing updated Oct 25, 2026"
+      ],
+      "highlights": [
+        "Only major Android browser besides Firefox with real extensions"
+      ],
+      "scoreDelta": {
+        "extensions": -1
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS 18",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine (Apple rule)",
+        "No extensions"
+      ],
+      "highlights": [
+        "Syncs with desktop Edge, Copilot features"
+      ],
+      "scoreDelta": {
+        "extensions": -6,
+        "jsSpeed": -1,
+        "webCompat": -1,
+        "blocking": -1,
+        "devTools": -4
+      }
+    }
+  },
+  "sources": [
+    {
+      "url": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
+      "title": "Microsoft Edge release notes for Stable Channel",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Microsoft_Edge",
+      "title": "Microsoft Edge - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.ghacks.net/2026/05/15/microsoft-edge-retires-copilot-mode-and-integrates-ai-features-across-desktop-and-mobile/",
+      "title": "gHacks: Edge retires Copilot Mode and integrates AI features",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blogs.windows.com/msedgedev/2026/05/13/new-updates-to-edge-across-desktop-and-mobile/",
+      "title": "Microsoft Edge Blog: New updates to Edge across desktop and mobile",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://mlq.ai/news/microsoft-edge-will-phase-out-manifest-v2-extensions-by-the-end-of-2026/",
+      "title": "MLQ: Edge will phase out Manifest V2 by end of 2026",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://9to5windows.com/ublock-origin-microsoft-edge-support-end/",
+      "title": "9to5Windows: When will uBlock Origin Edge support end",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.androidauthority.com/microsoft-edge-extensions-android-3535402/",
+      "title": "Android Authority: Edge extension store on Android",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Current free monthly cap of Edge Secure Network (previously 5 GB, not re-verified)",
+    "Scope of the \"sidebar retirement (v150)\" item in release notes",
+    "Whether Edge on-device AI APIs (Phi) are enabled by default",
+    "Exact date of MV2 default-disable reaching Stable for consumers",
+    "Memory/battery scores are editorial"
+  ],
+  "confidence": "high",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      7,
+      "Basic/Balanced/Strict levels"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      3,
+      "Strict blocks known fingerprinters"
+    ],
+    "httpsOnly": [
+      "yes",
+      7,
+      "Automatic HTTPS"
+    ],
+    "doh": [
+      "yes",
+      8,
+      "Secure DNS with providers"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "yes",
+      6,
+      "Edge Secure Network (Cloudflare), free allowance, Microsoft account"
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Strict tracking prevention partitions some storage"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      4,
+      "Optional data toggles; required diagnostics remain"
+    ],
+    "privateHardening": [
+      "partial",
+      5,
+      "InPrivate with strict tracking prevention"
+    ],
+    "adBlocker": [
+      "partial",
+      3,
+      "Tracker blocking and scareware blocker; no ad blocker"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      4,
+      "MV3 extensions; MV2 uBO being disabled"
+    ],
+    "customFilterLists": [
+      "extension",
+      5,
+      "uBO while MV2 lasts, uBO Lite after"
+    ],
+    "youtubeAds": [
+      "extension",
+      3
+    ],
+    "cookieBanners": [
+      "extension",
+      4,
+      "Extensions"
+    ],
+    "verticalTabs": [
+      "yes",
+      9,
+      "Native since 2021"
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      6,
+      "Workspaces v2 local-only; sharing retired"
+    ],
+    "splitView": [
+      "yes",
+      9,
+      "Split screen built in"
+    ],
+    "tabSleeping": [
+      "yes",
+      9,
+      "Sleeping tabs + Efficiency mode"
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      5,
+      "Two-pane split screen"
+    ],
+    "readerMode": [
+      "yes",
+      9,
+      "Immersive Reader with read aloud"
+    ],
+    "notes": [
+      "no",
+      0,
+      "Collections retired in v146"
+    ],
+    "webPanels": [
+      "yes",
+      6,
+      "Sidebar apps (v150 sidebar change noted)"
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "yes",
+      8,
+      "Web capture / Select"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "partial",
+      5,
+      "Mouse gesture setting on Windows"
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "partial",
+      4,
+      "Favorites; Collections retired"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      9,
+      "Chrome Web Store supported"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      3,
+      "Being disabled during 2026"
+    ],
+    "uboFull": [
+      "partial",
+      3,
+      "Works until MV2 disabled for your profile"
+    ],
+    "mobileExtensions": [
+      "yes",
+      7,
+      "Android via Edge Add-ons"
+    ],
+    "userscripts": [
+      "extension",
+      6
+    ],
+    "syncBookmarks": [
+      "yes",
+      9
+    ],
+    "syncPasswords": [
+      "yes",
+      9
+    ],
+    "syncTabs": [
+      "yes",
+      9
+    ],
+    "e2eeSync": [
+      "partial",
+      5,
+      "Encrypted; passwords end-to-end under Microsoft account; not full zero-knowledge"
+    ],
+    "profiles": [
+      "yes",
+      9,
+      "Personal/work profiles, Edge for Business"
+    ],
+    "passwordManager": [
+      "yes",
+      7,
+      "With monitor and key icon in v156"
+    ],
+    "passkeys": [
+      "yes",
+      7,
+      "Windows Hello / Microsoft password manager"
+    ],
+    "importData": [
+      "yes",
+      9
+    ],
+    "widevine": [
+      "yes",
+      10,
+      "Widevine + PlayReady"
+    ],
+    "netflix4k": [
+      "yes",
+      9,
+      "4K on Windows with HDCP hardware"
+    ],
+    "hevc": [
+      "yes",
+      9
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      9
+    ],
+    "aiAssistant": [
+      "yes",
+      9,
+      "Copilot built into core Edge"
+    ],
+    "aiSummarizer": [
+      "yes",
+      8,
+      "Page and multi-tab summaries"
+    ],
+    "agenticBrowsing": [
+      "partial",
+      6,
+      "Browse with Copilot (M365 Premium, US, limited)"
+    ],
+    "localAi": [
+      "partial",
+      4,
+      "Experimental on-device APIs, mostly cloud"
+    ],
+    "aiKillSwitch": [
+      "partial",
+      5,
+      "Settings toggles and policies; no single switch"
+    ],
+    "translation": [
+      "yes",
+      8,
+      "Microsoft Translator"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      9
+    ],
+    "enterprisePolicies": [
+      "yes",
+      10
+    ],
+    "kioskMode": [
+      "yes",
+      8,
+      "Assigned access kiosk"
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      7
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      9
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Same V8 as Chrome, near-identical results",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Blink engine; extra Microsoft services add overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Chromium network stack, HTTP/3",
+      "documented"
+    ],
+    "startup": [
+      8,
+      "Startup boost on Windows",
+      "documented"
+    ],
+    "smoothness": [
+      9,
+      "Chromium compositor",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "WebGPU and GPU raster like Chrome",
+      "documented"
+    ],
+    "memory": [
+      5.5,
+      "Sleeping tabs and Efficiency mode help vs Chrome",
+      "documented"
+    ],
+    "cpu": [
+      6.5,
+      "Efficiency mode reduces CPU",
+      "editorial"
+    ],
+    "battery": [
+      7,
+      "Efficiency mode and Windows integration",
+      "editorial"
+    ],
+    "resourceControls": [
+      8.5,
+      "Sleeping tabs, Efficiency mode, performance detector",
+      "documented"
+    ],
+    "lowEnd": [
+      5.5,
+      "Needs Win10+ and modern RAM",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Large install plus Microsoft components",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      4,
+      "Balanced tracking prevention but heavy telemetry/promos",
+      "documented"
+    ],
+    "blocking": [
+      5,
+      "Strict tracking prevention; no ad blocker, MV2 ending",
+      "documented"
+    ],
+    "fingerprinting": [
+      3,
+      "Strict mode blocks known fingerprinters only",
+      "documented"
+    ],
+    "securityHardening": [
+      9.5,
+      "Chromium sandbox plus Enhanced Security Mode and Win32k lockdown",
+      "documented"
+    ],
+    "patchSpeed": [
+      9.5,
+      "Ships fixes days after Chrome",
+      "documented"
+    ],
+    "telemetry": [
+      2.5,
+      "Required diagnostic data, Microsoft personalisation",
+      "documented"
+    ],
+    "lookCustom": [
+      5.5,
+      "Themes and layouts, vertical tabs, fixed UI",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      5.5,
+      "Mouse gestures, limited shortcuts",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7,
+      "edge://flags and many policies",
+      "documented"
+    ],
+    "tabManagement": [
+      8.5,
+      "Vertical tabs, split screen, groups, workspaces",
+      "documented"
+    ],
+    "searchFreedom": [
+      6.5,
+      "Bing default; custom engines allowed but nudges",
+      "documented"
+    ],
+    "downloads": [
+      6.5,
+      "Download flyout with scanning",
+      "editorial"
+    ],
+    "productivity": [
+      8,
+      "Immersive Reader, split screen, Copilot, web capture",
+      "editorial"
+    ],
+    "media": [
+      9.5,
+      "Widevine and PlayReady, 4K Netflix on Windows",
+      "documented"
+    ],
+    "translation": [
+      8,
+      "Microsoft Translator built in",
+      "documented"
+    ],
+    "extras": [
+      6.5,
+      "Secure Network VPN, scareware blocker, games, shopping",
+      "documented"
+    ],
+    "extensions": [
+      7,
+      "Chrome Web Store + Edge Add-ons, MV2 ending 2026",
+      "documented"
+    ],
+    "sync": [
+      8.5,
+      "Cross-device sync via Microsoft account",
+      "documented"
+    ],
+    "passwords": [
+      7.5,
+      "Password monitor, passkeys, new key icon",
+      "documented"
+    ],
+    "mobileApps": [
+      8,
+      "Android extensions; iOS WebKit limits",
+      "documented"
+    ],
+    "webCompat": [
+      10,
+      "Chromium engine",
+      "documented"
+    ],
+    "devTools": [
+      9.5,
+      "Chromium DevTools plus Edge extras",
+      "documented"
+    ],
+    "accessibility": [
+      9,
+      "Immersive Reader, strong Windows a11y integration",
+      "documented"
+    ],
+    "openSource": [
+      3,
+      "Proprietary on open Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      4,
+      "Pushes Microsoft services, telemetry",
+      "editorial"
+    ],
+    "longevity": [
+      10,
+      "Microsoft backed, tracks Chromium",
+      "documented"
+    ],
+    "ai": [
+      8.5,
+      "Copilot integrated; agentic part paid and limited",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      8.5,
+      "Preinstalled on Windows, many prompts",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

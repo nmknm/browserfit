@@ -1,0 +1,808 @@
+{
+  "id": "ulaa",
+  "name": "Ulaa",
+  "aliases": [
+    "Zoho Ulaa",
+    "Ulaa Browser"
+  ],
+  "group": "forks",
+  "developer": "Zoho Corporation",
+  "hq": "India",
+  "businessModel": "Free consumer browser tied to Zoho ecosystem; paid Ulaa Enterprise edition (Zoho Enterprise Browser)",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary (Chromium components open source)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2023,
+  "status": "active",
+  "statusNote": "Actively released; Android 155.0.8059.79 shipped 2026-10-20",
+  "version": {
+    "current": "155.0.8059.79",
+    "date": "2026-10-20",
+    "upstream": "Chromium 155"
+  },
+  "channels": [
+    "Stable",
+    "Enterprise"
+  ],
+  "updateCadence": "Tracks Chromium major releases closely",
+  "website": "https://ulaa.com",
+  "tags": [
+    "india",
+    "privacy",
+    "zoho",
+    "modes",
+    "enterprise"
+  ],
+  "pitch": "Zoho's Chromium browser with built-in blocking and Personal/Work/Kids/Developer modes.",
+  "summary": "Chromium-based browser from India's Zoho. Strips Google tracking, adds built-in ad/tracker blocking, five browsing modes, Zoho SSO and Zia AI search, with E2EE sync via a Zoho account.",
+  "bestFor": [
+    "Zoho workspace users",
+    "People wanting a de-Googled Chromium with built-in blocking",
+    "Users preferring a non-US company"
+  ],
+  "notFor": [
+    "Users wanting open-source code",
+    "Those needing uBlock Origin MV2",
+    "People outside the Zoho ecosystem wanting AI features"
+  ],
+  "pros": [
+    {
+      "title": "Browsing modes",
+      "detail": "Personal, Work, Kids, Developer and Open Season modes tune blocking and features."
+    },
+    {
+      "title": "Built-in blocker",
+      "detail": "Ad and tracker filtering with Standard and Extreme levels, no extension required."
+    },
+    {
+      "title": "Chrome extension support",
+      "detail": "Chromium foundation lets users install Chrome extensions."
+    },
+    {
+      "title": "Encrypted sync",
+      "detail": "Bookmarks, passwords and tabs sync via a Zoho account, E2EE per reviews."
+    },
+    {
+      "title": "Current Chromium",
+      "detail": "Android build 155 on Oct 20, 2026, close to upstream."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Not open source",
+      "detail": "Ulaa itself is proprietary freeware."
+    },
+    {
+      "title": "Default telemetry",
+      "detail": "Zoho terms say basic usage details are collected by default."
+    },
+    {
+      "title": "Zoho-centric extras",
+      "detail": "Zia AI and SSO mainly benefit Zoho app users."
+    },
+    {
+      "title": "Modest ecosystem",
+      "detail": "Reviews note extension compatibility and maturity concerns."
+    }
+  ],
+  "signatureFeatures": [
+    "Five browsing modes",
+    "Built-in ad/tracker blocking",
+    "Zoho SSO and Vault",
+    "Zia AI search",
+    "Enterprise edition"
+  ],
+  "faq": [
+    {
+      "q": "Is Ulaa based on Chromium?",
+      "a": "Yes, it is Chromium-based and supports Chrome extensions."
+    },
+    {
+      "q": "Which platforms does Ulaa run on?",
+      "a": "Windows, macOS, Linux, Android and iOS."
+    },
+    {
+      "q": "Does Ulaa collect data?",
+      "a": "Zoho terms say basic usage data such as browser version and OS is collected by default, with more when you sign in or enable Anonymized Stats."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "Ulaa launched by Zoho"
+    },
+    {
+      "date": "2025-05",
+      "event": "Zoho Enterprise Browser (Ulaa Enterprise) announced"
+    },
+    {
+      "date": "2026-10",
+      "event": "Android 155.0.8059.79 released (Oct 20); Play listing updated Oct 22"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Imports from other browsers; Zoho account for sync."
+  },
+  "alternatives": [
+    "brave",
+    "vivaldi",
+    "chrome",
+    "edge",
+    "jiosphere"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Zoho account sync, E2EE per reviews; scope unverified"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Built-in manager; Zoho Vault extension also available"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "Chromium 155 base; MV2 status not stated (unverified)",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": false,
+      "paid": "no",
+      "note": "Zia integrated for Zoho search; scope limited"
+    },
+    "privacy": {
+      "defaults": "Strips Google tracking; built-in tracker blocking, mode-dependent",
+      "telemetry": "Basic usage data collected by default per Zoho terms",
+      "jurisdiction": "India"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Basic usage by default; Anonymized Stats optional",
+    "drm": "Widevine unverified",
+    "codecs": "Chromium set (unverified)",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Close to Chromium stable (155 on Oct 20)",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10+ (unverified)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "deb",
+        "rpm"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64",
+        "arm"
+      ],
+      "stores": [
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "1M+ Google Play downloads",
+        "Build 155.0.8059.79 on Oct 20, 2026"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -5
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine (Apple rule)"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -5
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      7,
+      "Built-in tracker blocking, mode-based"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      4,
+      "Reviews cite browser-identification limits; unverified"
+    ],
+    "httpsOnly": [
+      "yes",
+      7,
+      "Chromium HTTPS-First mode"
+    ],
+    "doh": [
+      "yes",
+      7,
+      "Secure DNS setting"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "yes",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      4,
+      "Anonymized Stats toggle; basic usage default"
+    ],
+    "privateHardening": [
+      "partial",
+      5
+    ],
+    "adBlocker": [
+      "yes",
+      7,
+      "Built-in with tiers"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      5
+    ],
+    "customFilterLists": [
+      "partial",
+      3
+    ],
+    "youtubeAds": [
+      "partial",
+      4
+    ],
+    "cookieBanners": [
+      "partial",
+      3
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      8,
+      "Native tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "partial",
+      5,
+      "Browsing modes act as work/personal spaces"
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "yes",
+      7,
+      "Memory Saver"
+    ],
+    "tabSearch": [
+      "yes",
+      7
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      5,
+      "Chromium reading mode side panel"
+    ],
+    "notes": [
+      "yes",
+      6
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "yes",
+      6,
+      "Screen capture tool"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "yes",
+      5,
+      "Reading list"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      8
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "Unverified"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Built-in blocker instead"
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      7,
+      "Tampermonkey/Violentmonkey"
+    ],
+    "syncBookmarks": [
+      "yes",
+      7
+    ],
+    "syncPasswords": [
+      "yes",
+      7
+    ],
+    "syncTabs": [
+      "yes",
+      7
+    ],
+    "e2eeSync": [
+      "yes",
+      7,
+      "Per reviews"
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "yes",
+      7
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "partial",
+      6,
+      "Unverified"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      6
+    ],
+    "av1": [
+      "yes",
+      8
+    ],
+    "hwDecode": [
+      "yes",
+      8
+    ],
+    "aiAssistant": [
+      "partial",
+      4,
+      "Zia search for Zoho apps"
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "partial",
+      4,
+      "No single switch documented"
+    ],
+    "translation": [
+      "partial",
+      5
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      7,
+      "Enterprise edition"
+    ],
+    "kioskMode": [
+      "yes",
+      7
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      7
+    ],
+    "customSearchEngines": [
+      "yes",
+      8
+    ],
+    "devtools": [
+      "yes",
+      10,
+      "Full Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "startup": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "resourceControls": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      7,
+      "Built-in blocking, Google tracking removed, mode-dependent",
+      "documented"
+    ],
+    "blocking": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "fingerprinting": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "securityHardening": [
+      8.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "patchSpeed": [
+      7.5,
+      "Android 155 on Oct 20, 2026, near Chrome stable",
+      "documented"
+    ],
+    "telemetry": [
+      5.5,
+      "Basic usage collected by default per Zoho terms",
+      "documented"
+    ],
+    "lookCustom": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "downloads": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "productivity": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "media": [
+      8.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extras": [
+      6.5,
+      "Browsing modes, Zoho SSO, Vault, notes, screen capture",
+      "documented"
+    ],
+    "extensions": [
+      6.5,
+      "Chrome extensions; MV2 status unverified",
+      "documented"
+    ],
+    "sync": [
+      7,
+      "Zoho account sync, E2EE per reviews",
+      "documented"
+    ],
+    "passwords": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "devTools": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "accessibility": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary on top of Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      7,
+      "Established Zoho; no ad model, but closed source",
+      "documented"
+    ],
+    "longevity": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "ai": [
+      3,
+      "Zia only assists Zoho app search",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.zoho.primeum.stable&hl=en_US",
+      "title": "Ulaa Browser - Google Play",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://techyden.com/ulaa-browser-review/",
+      "title": "Ulaa Browser Review 2026 - TechYden",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://ulaa.com/",
+      "title": "Ulaa official site",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.appbrain.com/app/ulaa-browser/com.zoho.primeum.stable",
+      "title": "AppBrain Ulaa Android",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://intellyx.com/2025/06/05/zoho-ulaa-the-enterprise-browser-youd-build-yourself/",
+      "title": "Zoho Ulaa Enterprise - Intellyx",
+      "accessed": "2025-06-05"
+    }
+  ],
+  "unverified": [
+    "Desktop version numbers and release dates (only Android 155.0.8059.79 confirmed)",
+    "Minimum OS per platform",
+    "MV2 / uBlock Origin status on Chromium 155",
+    "Fingerprinting protections, default search and DRM support",
+    "Whether sync encryption is end-to-end for all data types"
+  ],
+  "confidence": "low",
+  "lastVerified": "2026-10-29"
+}

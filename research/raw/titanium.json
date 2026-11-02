@@ -1,0 +1,762 @@
+{
+  "id": "titanium",
+  "name": "Titanium Browser",
+  "aliases": [
+    "Titanium Browser for Android",
+    "Helium Browser for Android"
+  ],
+  "group": "android",
+  "developer": "jqssun (individual developer)",
+  "hq": "Unknown (individual developer)",
+  "businessModel": "None disclosed; free open-source project",
+  "engine": "blink",
+  "basedOn": "GrapheneOS Vanadium (Chromium)",
+  "license": "GPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2025,
+  "status": "active",
+  "statusNote": "Renamed from Helium Browser for Android in July 2026 (release v150.0.7871.124) to avoid confusion with the unrelated desktop Helium browser",
+  "version": {
+    "current": "v156.0.8078.73",
+    "date": "2026-10-28",
+    "upstream": "Chromium 156"
+  },
+  "channels": [
+    "Release (GitHub + Google Play)"
+  ],
+  "updateCadence": "Frequent; follows Vanadium/Chromium stable releases",
+  "website": "https://github.com/jqssun/android-titanium-browser",
+  "tags": [
+    "android",
+    "extensions",
+    "mv2",
+    "ublock-origin",
+    "vanadium",
+    "open-source"
+  ],
+  "pitch": "Vanadium-based Android Chromium that runs full MV2 desktop extensions.",
+  "summary": "Open-source Chromium browser for Android built on GrapheneOS Vanadium patches, adding Manifest V2 and off-store extension install from the Chrome Web Store, Opera and Edge add-ons, or local CRX files.",
+  "bestFor": [
+    "Android users who want full uBlock Origin and other MV2 extensions on a phone",
+    "Kiwi Browser refugees who want an open-source replacement",
+    "People who want a Vanadium-derived base without GrapheneOS"
+  ],
+  "notFor": [
+    "Users who need browser sync across devices",
+    "People wanting a polished, set-and-forget experience (experimental per coverage)",
+    "Anyone who expects GrapheneOS-level hardening on stock Android"
+  ],
+  "pros": [
+    {
+      "title": "Full MV2 extensions",
+      "detail": "Installs extensions from Chrome Web Store, Opera Add-ons and Edge Add-ons, plus local CRX/ZIP and unpacked MV2 extensions."
+    },
+    {
+      "title": "Full uBlock Origin",
+      "detail": "Community reports confirm the full uBO (not uBO Lite) installs from the Chrome Web Store."
+    },
+    {
+      "title": "Open source, GPL-2.0",
+      "detail": "Builds are made on GitHub Actions and can be verified with the GitHub CLI."
+    },
+    {
+      "title": "Fast Chromium updates",
+      "detail": "Release v156.0.8078.73 shipped 28 Oct 2026, tracking Chromium 156."
+    },
+    {
+      "title": "Two install channels",
+      "detail": "Available on Google Play and GitHub Releases, and updates can move between them."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No sync",
+      "detail": "No browser sync (bookmarks/tabs/passwords) was found in any source."
+    },
+    {
+      "title": "Experimental",
+      "detail": "Coverage describes it as experimental with some stability trade-offs for the extra features."
+    },
+    {
+      "title": "Hardening is weaker off GrapheneOS",
+      "detail": "The README itself says GrapheneOS with Vanadium offers stronger protection."
+    },
+    {
+      "title": "Young single-developer project",
+      "detail": "Renamed in 2026 and maintained by one developer, with several forks appearing."
+    }
+  ],
+  "signatureFeatures": [
+    "Manifest V2 + off-store extension install",
+    "Vanadium-derived hardening patches",
+    "Titanium Extension companion (external download manager, dark mode, privacy options)"
+  ],
+  "faq": [
+    {
+      "q": "Is Titanium Browser the same as Helium Browser for Android?",
+      "a": "Yes, it was renamed in July 2026 to avoid confusion with the unrelated desktop Helium browser; the Play package id is still io.github.jqssun.helium."
+    },
+    {
+      "q": "Is it on Google Play?",
+      "a": "Yes, listed under developer jqssun (package io.github.jqssun.helium), and also on GitHub Releases."
+    },
+    {
+      "q": "Does it support uBlock Origin?",
+      "a": "Yes, the full MV2 uBlock Origin can be installed from the Chrome Web Store."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "Released as Helium Browser for Android (jqssun), based on Vanadium"
+    },
+    {
+      "date": "2026-07",
+      "event": "Renamed Titanium Browser in v150.0.7871.124"
+    },
+    {
+      "date": "2026-10-28",
+      "event": "v156.0.8078.73 released on GitHub"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "extensions"
+    ],
+    "note": "No sync; install extensions from the Chrome Web Store or CRX. Bookmark import not confirmed."
+  },
+  "alternatives": [
+    "bare",
+    "vanadium",
+    "quetta",
+    "lemur",
+    "kiwi"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync found in any source (unverified)"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No built-in vault confirmed; use Bitwarden etc. as extension or Android autofill (unverified)"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Manifest V2 + secure off-store install patch; unpacked MV2 extensions loadable",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "chrome-web-store",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features documented"
+    },
+    "privacy": {
+      "defaults": "Vanadium-derived hardening; Google services removed; no ad blocking by default",
+      "telemetry": "No telemetry documented (unverified)",
+      "jurisdiction": "Unknown (individual developer)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Not confirmed",
+    "telemetry": "No telemetry documented; verify in app",
+    "drm": "Not confirmed (likely no Widevine)",
+    "codecs": "Chromium codecs, hardware decode via MediaCodec",
+    "sandbox": "Chromium sandbox + site isolation; hardening patches from Vanadium",
+    "patchLag": "Same-week Chromium stable updates (v156.0.8078.73 on 28 Oct 2026)",
+    "languages": "Chromium locales"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Not stated in sources",
+      "arch": [
+        "not confirmed"
+      ],
+      "stores": [
+        "google-play",
+        "github"
+      ],
+      "notes": [
+        "Google Play package io.github.jqssun.helium (listing name may still read Helium Browser; PiunikaWeb noted the rename had not hit the Play listing in July 2026)",
+        "GitHub repo jqssun/android-titanium-browser; Play: ~10K+ downloads and 4.4 rating per a secondary source",
+        "Chrome Web Store extensions install after switching to desktop site"
+      ],
+      "highlights": [
+        "MV2 + CRX sideload",
+        "Full uBlock Origin",
+        "Titanium Extension companion"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "Chromium defaults; no built-in tracker blocking"
+    ],
+    "fingerprintProtection": [
+      "no",
+      1,
+      "No dedicated protection documented"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first/upgrade setting"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Secure DNS setting"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4,
+      "Storage partitioning in Chromium"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      6,
+      "Usage reporting toggle"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Incognito only"
+    ],
+    "adBlocker": [
+      "extension",
+      9,
+      "Full uBlock Origin installable"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      9,
+      "uBO"
+    ],
+    "customFilterLists": [
+      "extension",
+      9,
+      "uBO"
+    ],
+    "youtubeAds": [
+      "extension",
+      8,
+      "uBO"
+    ],
+    "cookieBanners": [
+      "extension",
+      6,
+      "Via extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      7,
+      "Chromium Android tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "partial",
+      3,
+      "OS-level discarding only"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Tab grid search"
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      4,
+      "Chromium reading/distilled page mode, availability varies"
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Video PiP"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "OS screenshots"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5,
+      "Hardware keyboard shortcuts"
+    ],
+    "readLater": [
+      "partial",
+      3,
+      "Reading list depends on build"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      8,
+      "Plus Opera and Edge add-ons"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "yes",
+      9,
+      "MV2 patch"
+    ],
+    "uboFull": [
+      "yes",
+      9,
+      "Full uBO"
+    ],
+    "mobileExtensions": [
+      "yes",
+      8,
+      "Desktop extensions on Android"
+    ],
+    "userscripts": [
+      "extension",
+      7,
+      "Tampermonkey-class extensions"
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0,
+      "Extension or Android autofill only"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      2,
+      "Not confirmed"
+    ],
+    "widevine": [
+      "no",
+      0,
+      "Not confirmed"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "yes",
+      7,
+      "Hardware HEVC where device supports"
+    ],
+    "av1": [
+      "yes",
+      7,
+      "AV1 decode"
+    ],
+    "hwDecode": [
+      "yes",
+      8,
+      "Android MediaCodec"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      1,
+      "Not confirmed"
+    ],
+    "cryptoWallet": [
+      "extension",
+      5,
+      "Via extensions"
+    ],
+    "pwaInstall": [
+      "partial",
+      5,
+      "Add to Home screen; WebAPK needs Google services"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      7,
+      "External download manager via Titanium Extension"
+    ],
+    "customThemes": [
+      "partial",
+      4,
+      "Titanium Extension enhanced dark mode"
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      "Add search engines"
+    ],
+    "devtools": [
+      "partial",
+      6,
+      "Remote debugging from desktop; no on-device DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "V8 on current Chromium, same JS speed class as Chrome for Android",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Blink rendering gives Chrome-class page load on Android",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and QUIC",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Chromium Android cold start; no startup tuning documented",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor gives smooth Android scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      8.5,
+      "Chromium ANGLE/WebGL2 on Android GPUs",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Multi-process Chromium footprint typical for Android",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "CPU use comparable to Chrome for Android",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Chromium battery profile similar to Chrome on Android",
+      "editorial"
+    ],
+    "resourceControls": [
+      4,
+      "No tab-sleep or energy-saver UI beyond Android defaults",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "Chromium wants a modern 64-bit phone with ample RAM",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium build; large download vs light browsers",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6.5,
+      "Vanadium-derived, Google services stripped, but no ad blocking out of the box",
+      "editorial"
+    ],
+    "blocking": [
+      7.5,
+      "Full MV2 uBlock Origin installable from Chrome Web Store",
+      "editorial"
+    ],
+    "fingerprinting": [
+      3.5,
+      "No dedicated fingerprint resistance documented",
+      "editorial"
+    ],
+    "securityHardening": [
+      7,
+      "Vanadium patches, but README says GrapheneOS gives stronger protection",
+      "editorial"
+    ],
+    "patchSpeed": [
+      9,
+      "v156.0.8078.73 released 28 Oct 2026, same stable as Vanadium",
+      "editorial"
+    ],
+    "telemetry": [
+      8,
+      "No telemetry documented; de-Googled Vanadium base",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic Chromium theming; dark mode via Titanium Extension",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Few gestures or per-site controls beyond Chromium",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6,
+      "chrome://flags available, no deep policy tooling on Android",
+      "editorial"
+    ],
+    "tabManagement": [
+      5.5,
+      "Chromium Android tab grid and groups; no vertical tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6.5,
+      "Editorial estimate for searchFreedom",
+      "editorial"
+    ],
+    "downloads": [
+      6.5,
+      "External download manager handoff via Titanium Extension",
+      "editorial"
+    ],
+    "productivity": [
+      4,
+      "Basics only: reading mode, PiP, no sidebar or notes",
+      "editorial"
+    ],
+    "media": [
+      5.5,
+      "Chromium codecs/hardware decode; Widevine not confirmed",
+      "editorial"
+    ],
+    "translation": [
+      2,
+      "No built-in translation confirmed (Google Translate removed in de-Googled base)",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "Few built-ins; companion extension adds extras",
+      "editorial"
+    ],
+    "extensions": [
+      8.5,
+      "Chrome Web Store, Opera, Edge add-ons, CRX, unpacked; full MV2",
+      "editorial"
+    ],
+    "sync": [
+      1,
+      "No sync documented",
+      "editorial"
+    ],
+    "passwords": [
+      2,
+      "No built-in vault; rely on Bitwarden-style extensions",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "Android-only, Play + GitHub, actively released",
+      "editorial"
+    ],
+    "webCompat": [
+      9,
+      "Chromium engine, best-in-class site compatibility",
+      "editorial"
+    ],
+    "devTools": [
+      8,
+      "Chromium DevTools via remote debugging from desktop",
+      "editorial"
+    ],
+    "accessibility": [
+      8,
+      "Chromium Android accessibility, TalkBack and zoom support",
+      "editorial"
+    ],
+    "openSource": [
+      8.5,
+      "GPL-2.0, reproducible-style GitHub Actions builds",
+      "editorial"
+    ],
+    "businessTrust": [
+      6.5,
+      "Individual developer, no business model; rename and forks add some uncertainty",
+      "editorial"
+    ],
+    "longevity": [
+      6.5,
+      "Single maintainer, rapid cadence, young project (renamed 2026)",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      5,
+      "Extension install needs desktop-site trick; experimental feel",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://github.com/jqssun/android-titanium-browser",
+      "title": "jqssun/android-titanium-browser (GitHub)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/jqssun/android-titanium-browser/releases",
+      "title": "Titanium Browser releases",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/07/16/helium-browser-now-called-titanium-android/",
+      "title": "PiunikaWeb: Helium browser is now called Titanium on Android",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://malwaretips.com/threads/titanium-browser-for-android-comes-with-extensions-support.141403/",
+      "title": "MalwareTips thread on Titanium extensions",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.wares.gg/apps/titanium-browser",
+      "title": "wares.gg: Titanium Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=io.github.jqssun.helium",
+      "title": "Google Play listing (io.github.jqssun.helium)",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Minimum Android version and APK architectures not stated in fetched sources",
+    "Whether any sync or built-in password manager exists",
+    "Widevine/DRM support",
+    "Play downloads (10K+) and 4.4 rating come from a secondary summary, not the live Play page",
+    "Search default and telemetry specifics not confirmed",
+    "Downstream Helium-patch implementation reported as paused for licence compliance (secondary source)"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

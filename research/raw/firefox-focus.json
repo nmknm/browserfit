@@ -1,0 +1,729 @@
+{
+  "id": "firefox-focus",
+  "name": "Firefox Focus",
+  "aliases": [
+    "Focus",
+    "Firefox Klar"
+  ],
+  "group": "privacy",
+  "developer": "Mozilla Corporation",
+  "hq": "United States",
+  "businessModel": "Funded by Mozilla (search revenue share and other income)",
+  "engine": "gecko",
+  "basedOn": "Firefox (GeckoView on Android)",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2015,
+  "status": "active",
+  "statusNote": "Maintained; tracks Firefox release numbers (Android 158.0.2 on 2026-10-21)",
+  "version": {
+    "current": "158.0.2 (Android)",
+    "date": "2026-10-21",
+    "upstream": "GeckoView (Firefox 158 line)"
+  },
+  "channels": [
+    "Release",
+    "Beta",
+    "Nightly"
+  ],
+  "updateCadence": "Follows Firefox mobile releases (now every ~2 weeks)",
+  "website": "https://www.firefox.com/browsers/mobile/focus/",
+  "tags": [
+    "privacy",
+    "mobile",
+    "private-browsing",
+    "mozilla"
+  ],
+  "pitch": "A tiny, always-private mobile browser from Mozilla that forgets everything.",
+  "summary": "Mozilla's minimalist mobile browser: tracker blocking by default, no tabs history to keep, one-tap erase. Gecko-based on Android, WebKit on iOS. No extensions or sync.",
+  "bestFor": [
+    "One-off private searches on a phone",
+    "People who want a no-history default browser alongside a main one",
+    "Android users who want Gecko-based tracker blocking"
+  ],
+  "notFor": [
+    "Anyone who needs sync, extensions or many tabs",
+    "iOS users wanting Gecko (iOS uses WebKit)",
+    "Desktop users (mobile only)"
+  ],
+  "pros": [
+    {
+      "title": "Private by default",
+      "detail": "Sessions are erased with one tap and no history is kept."
+    },
+    {
+      "title": "Tracker blocking",
+      "detail": "Blocks ads/trackers using Firefox Enhanced Tracking Protection lists."
+    },
+    {
+      "title": "Tiny",
+      "detail": "Small install and fast launch."
+    },
+    {
+      "title": "Mozilla maintained",
+      "detail": "Updated alongside Firefox in 2026."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No extensions or sync",
+      "detail": "Intentionally minimal."
+    },
+    {
+      "title": "iOS is WebKit",
+      "detail": "Not Gecko on Apple devices."
+    },
+    {
+      "title": "Limited features",
+      "detail": "Few customization, tab or media options."
+    }
+  ],
+  "signatureFeatures": [
+    "Erase button",
+    "Tracker blocking",
+    "Always-private sessions",
+    "Tiny footprint"
+  ],
+  "faq": [
+    {
+      "q": "Is Firefox Focus still updated?",
+      "a": "Yes. Android version 158.0.2 shipped on Oct 21, 2026, refreshing GeckoView."
+    },
+    {
+      "q": "Does it use Gecko on iPhone?",
+      "a": "No. Apple requires WebKit on iOS."
+    },
+    {
+      "q": "Can I install extensions?",
+      "a": "No. Focus has no extension support."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2015-12",
+      "event": "Firefox Focus launches on iOS as a content blocker"
+    },
+    {
+      "date": "2017-06",
+      "event": "Standalone browser on iOS and Android"
+    },
+    {
+      "date": "2026-10",
+      "event": "Android 158.0.2 (Oct 21) updates GeckoView and fixes Mali-T rendering"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No import; designed to be disposable."
+  },
+  "alternatives": [
+    "firefox",
+    "duckduckgo",
+    "brave",
+    "tor-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync by design"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No saved passwords by design"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extensions",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Tracker blocking on, history and cookies erased",
+      "telemetry": "Mozilla telemetry opt-out",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (region dependent); changeable",
+    "telemetry": "Mozilla telemetry, opt-out",
+    "drm": "Widevine (Android)",
+    "codecs": "Android system codecs plus Gecko",
+    "sandbox": "Android app sandbox + Gecko process isolation",
+    "patchSpeed": "Follows Firefox releases",
+    "languages": "Many Firefox locales"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Android 8.0",
+      "arch": [
+        "arm64",
+        "arm32",
+        "x64"
+      ],
+      "stores": [
+        "google-play",
+        "f-droid"
+      ],
+      "notes": [
+        "Play listing updated Oct 22, 2026",
+        "Released as Firefox Klar in Germany"
+      ],
+      "highlights": [
+        "Gecko-based, erase button"
+      ],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS 15",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine (Apple rule)"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "jsSpeed": 1,
+        "fingerprinting": -1
+      }
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.techspot.com/downloads/6985-firefox-focus.html",
+      "title": "TechSpot: Firefox Focus 158.0.2",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Firefox_Focus",
+      "title": "Firefox Focus - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=org.mozilla.focus&hl=en",
+      "title": "Firefox Focus on Google Play",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://privacytools.io/app/firefox-focus",
+      "title": "PrivacyTools: Firefox Focus review",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://wiki.mozilla.org/Firefox/Channels/Meetings/2026-03-26",
+      "title": "MozillaWiki: channels meeting 2026-03-26",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "iOS Focus current version",
+    "Exact telemetry defaults",
+    "Wikipedia page is stale (shows May 2025)"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      9,
+      "On by default"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      5
+    ],
+    "httpsOnly": [
+      "partial",
+      5
+    ],
+    "doh": [
+      "yes",
+      9
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "yes",
+      7
+    ],
+    "queryStripping": [
+      "yes",
+      6
+    ],
+    "telemetryOptOut": [
+      "yes",
+      8
+    ],
+    "privateHardening": [
+      "yes",
+      10,
+      "Everything erased"
+    ],
+    "adBlocker": [
+      "yes",
+      7,
+      "Tracker/ad blocking lists"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "partial",
+      3
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "partial",
+      5
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      6
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "yes",
+      8
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      8
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "yes",
+      10,
+      "Erase button"
+    ],
+    "downloadManager": [
+      "partial",
+      4
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "no",
+      0
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      7,
+      "Gecko mobile",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "Light UI, tracker blocking speeds pages",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "Gecko network stack",
+      "editorial"
+    ],
+    "startup": [
+      9.5,
+      "Very fast launch",
+      "editorial"
+    ],
+    "smoothness": [
+      7.5,
+      "GeckoView on mobile",
+      "editorial"
+    ],
+    "graphics": [
+      6.5,
+      "Mobile WebGL",
+      "editorial"
+    ],
+    "memory": [
+      7.5,
+      "Single-tab focus",
+      "editorial"
+    ],
+    "cpu": [
+      7.5,
+      "Light",
+      "editorial"
+    ],
+    "battery": [
+      7.5,
+      "Light",
+      "editorial"
+    ],
+    "resourceControls": [
+      2,
+      "Few controls",
+      "editorial"
+    ],
+    "lowEnd": [
+      7.5,
+      "Android 8+",
+      "editorial"
+    ],
+    "installSize": [
+      8,
+      "Small app",
+      "documented"
+    ],
+    "privacyDefaults": [
+      9.5,
+      "Private by default, erase on demand",
+      "documented"
+    ],
+    "blocking": [
+      7.5,
+      "Tracker lists, no cosmetic filtering",
+      "documented"
+    ],
+    "fingerprinting": [
+      5,
+      "Gecko FPP basics",
+      "editorial"
+    ],
+    "securityHardening": [
+      7.5,
+      "Gecko isolation on mobile",
+      "editorial"
+    ],
+    "patchSpeed": [
+      9,
+      "Follows Firefox releases",
+      "documented"
+    ],
+    "telemetry": [
+      7,
+      "Mozilla opt-out telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      1.5,
+      "Little customisation",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      2,
+      "Few settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      1.5,
+      "No about:config",
+      "editorial"
+    ],
+    "tabManagement": [
+      1.5,
+      "Minimal tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Custom engine allowed",
+      "documented"
+    ],
+    "downloads": [
+      3.5,
+      "Basic",
+      "editorial"
+    ],
+    "productivity": [
+      1.5,
+      "Minimal",
+      "editorial"
+    ],
+    "media": [
+      5,
+      "Basic media",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "extras": [
+      1.5,
+      "Erase button only",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extensions",
+      "documented"
+    ],
+    "sync": [
+      0,
+      "None",
+      "documented"
+    ],
+    "passwords": [
+      0,
+      "None",
+      "documented"
+    ],
+    "mobileApps": [
+      6,
+      "Mobile-only, narrow use",
+      "editorial"
+    ],
+    "webCompat": [
+      7.5,
+      "Gecko mobile (WebKit on iOS)",
+      "editorial"
+    ],
+    "devTools": [
+      0.5,
+      "None",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Android accessibility APIs",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "MPL-2.0",
+      "documented"
+    ],
+    "businessTrust": [
+      8,
+      "Mozilla",
+      "editorial"
+    ],
+    "longevity": [
+      7,
+      "Maintained, niche",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "None",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      9,
+      "Very simple",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

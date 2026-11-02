@@ -1,0 +1,275 @@
+/* Browserfit design tokens.
+   Primitives (hue-named) feed semantic role tokens; components use roles only.
+   Light is the base; dark redefines roles under prefers-color-scheme and [data-theme]. */
+
+:root {
+  color-scheme: light;
+
+  /* ---------- primitives: neutral ramp (cool, very low chroma) ---------- */
+  --n-0: oklch(1 0 0);
+  --n-25: oklch(0.985 0.002 260);
+  --n-50: oklch(0.97 0.003 260);
+  --n-100: oklch(0.945 0.004 260);
+  --n-200: oklch(0.905 0.005 260);
+  --n-300: oklch(0.85 0.006 260);
+  --n-400: oklch(0.71 0.008 260);
+  --n-500: oklch(0.56 0.01 260);
+  --n-600: oklch(0.46 0.011 260);
+  --n-700: oklch(0.37 0.012 260);
+  --n-800: oklch(0.27 0.012 260);
+  --n-850: oklch(0.225 0.011 260);
+  --n-900: oklch(0.19 0.01 260);
+  --n-950: oklch(0.155 0.008 260);
+  --n-1000: oklch(0.13 0.007 260);
+
+  /* ---------- primitives: blue accent ---------- */
+  --blue-50: oklch(0.97 0.02 255);
+  --blue-100: oklch(0.93 0.045 255);
+  --blue-400: oklch(0.68 0.16 255);
+  --blue-500: oklch(0.6 0.2 258);
+  --blue-600: oklch(0.53 0.21 260);
+  --blue-700: oklch(0.46 0.19 262);
+
+  /* ---------- semantic: surfaces & ink ---------- */
+  --bg: var(--n-0);
+  --bg-subtle: var(--n-25);
+  --surface: var(--n-0);
+  --surface-2: var(--n-50);
+  --surface-3: var(--n-100);
+  --surface-hover: var(--n-50);
+  --surface-active: var(--n-100);
+  --overlay: oklch(0.13 0.007 260 / 0.42);
+
+  --border: var(--n-200);
+  --border-strong: var(--n-300);
+  --border-input: var(--n-400);
+
+  --text: var(--n-950);
+  --text-2: var(--n-600);
+  --text-3: var(--n-500);
+  --text-on-accent: oklch(1 0 0);
+
+  --accent: var(--blue-600);
+  --accent-hover: var(--blue-700);
+  --accent-soft: var(--blue-50);
+  --accent-soft-2: var(--blue-100);
+  --accent-text: var(--blue-600);
+  --focus: var(--blue-500);
+
+  /* ---------- semantic: status ---------- */
+  --positive: oklch(0.55 0.15 150);
+  --positive-soft: oklch(0.96 0.04 150);
+  --warning: oklch(0.62 0.15 70);
+  --warning-soft: oklch(0.97 0.05 85);
+  --negative: oklch(0.56 0.2 27);
+  --negative-soft: oklch(0.96 0.03 25);
+  --info: var(--blue-600);
+
+  /* ---------- score scale (5 steps; number always printed beside it) ---------- */
+  --score-poor: oklch(0.6 0.2 27);       /* < 4 */
+  --score-fair: oklch(0.7 0.16 55);      /* 4 – 5.9 */
+  --score-good: oklch(0.78 0.15 95);     /* 6 – 7.4 */
+  --score-great: oklch(0.68 0.16 145);   /* 7.5 – 8.9 */
+  --score-excellent: oklch(0.6 0.14 165);/* 9 – 10 */
+  --score-track: var(--n-100);
+
+  /* ---------- engines (identity, always paired with icon + label) ---------- */
+  --eng-blink: oklch(0.6 0.15 245);
+  --eng-gecko: oklch(0.65 0.18 45);
+  --eng-webkit: oklch(0.62 0.12 195);
+  --eng-libweb: oklch(0.6 0.17 340);
+  --eng-goanna: oklch(0.6 0.09 120);
+  --eng-servo: oklch(0.58 0.13 290);
+  --eng-other: var(--n-500);
+
+  /* ---------- dataviz categorical (validated reference order, light) ---------- */
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --series-6: #008300;
+  --viz-grid: var(--n-200);
+  --viz-axis: var(--n-500);
+
+  /* sequential blue (heatmaps) */
+  --seq-0: var(--n-50);
+  --seq-1: #cde2fb;
+  --seq-2: #9ec5f4;
+  --seq-3: #6da7ec;
+  --seq-4: #3987e5;
+  --seq-5: #256abf;
+  --seq-6: #184f95;
+
+  /* heat cells (security leaderboard): magnitude 0–6 with the number always printed.
+     Light follows the sequential blue; dark flips the anchor (low = dim, high = bright).
+     Text flips from --heat-on-low to --heat-on-high at step 5; every pair measured >= 4.5:1. */
+  --heat-0: var(--seq-0);
+  --heat-1: var(--seq-1);
+  --heat-2: var(--seq-2);
+  --heat-3: var(--seq-3);
+  --heat-4: var(--seq-4);
+  --heat-5: var(--seq-5);
+  --heat-6: var(--seq-6);
+  --heat-on-low: var(--text);
+  --heat-on-high: oklch(1 0 0);
+
+  /* ---------- type ---------- */
+  --font-sans: 'Geist Variable', 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --text-xs: 0.75rem;     /* 12 */
+  --text-sm: 0.8125rem;   /* 13 */
+  --text-base: 0.875rem;  /* 14  UI default */
+  --text-md: 1rem;        /* 16  body / inputs */
+  --text-lg: 1.125rem;    /* 18 */
+  --text-xl: 1.25rem;     /* 20 */
+  --text-2xl: 1.5rem;     /* 24 */
+  --text-3xl: 1.875rem;   /* 30 */
+  --text-4xl: 2.5rem;     /* 40 */
+  --text-5xl: 3.5rem;     /* 56  display */
+
+  /* ---------- space (4px base) ---------- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.25rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-10: 2.5rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-20: 5rem;
+  --s-24: 6rem;
+
+  --gutter: clamp(1rem, 3.2vw, 2rem);
+  --content: 80rem;      /* 1280 */
+  --content-wide: 96rem; /* 1536 data views */
+  --nav-h: 3.5rem;
+
+  /* ---------- radii ---------- */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-full: 999px;
+
+  /* ---------- elevation (only for things that float) ---------- */
+  --shadow-pop: 0 1px 2px oklch(0.13 0.01 260 / 0.06), 0 8px 24px -4px oklch(0.13 0.01 260 / 0.14);
+  --shadow-sheet: 0 -8px 32px -8px oklch(0.13 0.01 260 / 0.22);
+  --shadow-card-hover: 0 1px 2px oklch(0.13 0.01 260 / 0.05), 0 6px 16px -6px oklch(0.13 0.01 260 / 0.12);
+
+  /* ---------- motion ---------- */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --dur-press: 150ms;
+  --dur-exit: 100ms;
+  --dur-fast: 160ms;
+  --dur: 220ms;
+  --dur-slow: 320ms;
+}
+
+/* ---------- dark roles ---------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: var(--n-1000);
+    --bg-subtle: var(--n-950);
+    --surface: var(--n-950);
+    --surface-2: var(--n-900);
+    --surface-3: var(--n-850);
+    --surface-hover: var(--n-900);
+    --surface-active: var(--n-850);
+    --overlay: oklch(0 0 0 / 0.6);
+    --border: oklch(0.27 0.01 260);
+    --border-strong: oklch(0.34 0.012 260);
+    --border-input: oklch(0.45 0.012 260);
+    --text: oklch(0.96 0.003 260);
+    --text-2: oklch(0.76 0.008 260);
+    --text-3: oklch(0.64 0.01 260);
+    --accent: oklch(0.55 0.2 259);
+    --accent-hover: oklch(0.6 0.19 257);
+    --accent-soft: oklch(0.26 0.06 258);
+    --accent-soft-2: oklch(0.31 0.08 258);
+    --accent-text: oklch(0.74 0.14 255);
+    --focus: oklch(0.7 0.15 255);
+    --positive: oklch(0.7 0.15 150);
+    --positive-soft: oklch(0.27 0.05 150);
+    --warning: oklch(0.78 0.14 80);
+    --warning-soft: oklch(0.29 0.05 80);
+    --negative: oklch(0.68 0.17 25);
+    --negative-soft: oklch(0.28 0.06 25);
+    --score-track: oklch(0.25 0.01 260);
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --series-4: #c98500;
+    --series-5: #d55181;
+    --series-6: #008300;
+    --viz-grid: oklch(0.28 0.01 260);
+    --viz-axis: oklch(0.62 0.01 260);
+    --seq-0: oklch(0.2 0.01 260);
+    --heat-0: oklch(0.24 0.02 258);
+    --heat-1: oklch(0.31 0.05 258);
+    --heat-2: oklch(0.38 0.08 258);
+    --heat-3: oklch(0.44 0.11 258);
+    --heat-4: oklch(0.5 0.13 258);
+    --heat-5: oklch(0.64 0.14 258);
+    --heat-6: oklch(0.74 0.12 258);
+    --heat-on-high: oklch(0.155 0.008 260);
+    --shadow-pop: 0 1px 2px oklch(0 0 0 / 0.4), 0 10px 30px -6px oklch(0 0 0 / 0.6);
+    --shadow-sheet: 0 -8px 32px -8px oklch(0 0 0 / 0.7);
+    --shadow-card-hover: 0 1px 2px oklch(0 0 0 / 0.3), 0 8px 20px -8px oklch(0 0 0 / 0.6);
+  }
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: var(--n-1000);
+  --bg-subtle: var(--n-950);
+  --surface: var(--n-950);
+  --surface-2: var(--n-900);
+  --surface-3: var(--n-850);
+  --surface-hover: var(--n-900);
+  --surface-active: var(--n-850);
+  --overlay: oklch(0 0 0 / 0.6);
+  --border: oklch(0.27 0.01 260);
+  --border-strong: oklch(0.34 0.012 260);
+  --border-input: oklch(0.45 0.012 260);
+  --text: oklch(0.96 0.003 260);
+  --text-2: oklch(0.76 0.008 260);
+  --text-3: oklch(0.64 0.01 260);
+  --accent: oklch(0.55 0.2 259);
+  --accent-hover: oklch(0.6 0.19 257);
+  --accent-soft: oklch(0.26 0.06 258);
+  --accent-soft-2: oklch(0.31 0.08 258);
+  --accent-text: oklch(0.74 0.14 255);
+  --focus: oklch(0.7 0.15 255);
+  --positive: oklch(0.7 0.15 150);
+  --positive-soft: oklch(0.27 0.05 150);
+  --warning: oklch(0.78 0.14 80);
+  --warning-soft: oklch(0.29 0.05 80);
+  --negative: oklch(0.68 0.17 25);
+  --negative-soft: oklch(0.28 0.06 25);
+  --score-track: oklch(0.25 0.01 260);
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
+  --series-6: #008300;
+  --viz-grid: oklch(0.28 0.01 260);
+  --viz-axis: oklch(0.62 0.01 260);
+  --seq-0: oklch(0.2 0.01 260);
+  --heat-0: oklch(0.24 0.02 258);
+  --heat-1: oklch(0.31 0.05 258);
+  --heat-2: oklch(0.38 0.08 258);
+  --heat-3: oklch(0.44 0.11 258);
+  --heat-4: oklch(0.5 0.13 258);
+  --heat-5: oklch(0.64 0.14 258);
+  --heat-6: oklch(0.74 0.12 258);
+  --heat-on-high: oklch(0.155 0.008 260);
+  --shadow-pop: 0 1px 2px oklch(0 0 0 / 0.4), 0 10px 30px -6px oklch(0 0 0 / 0.6);
+  --shadow-sheet: 0 -8px 32px -8px oklch(0 0 0 / 0.7);
+  --shadow-card-hover: 0 1px 2px oklch(0 0 0 / 0.3), 0 8px 20px -8px oklch(0 0 0 / 0.6);
+}

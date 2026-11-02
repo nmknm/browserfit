@@ -1,0 +1,711 @@
+{
+  "id": "internet-explorer",
+  "name": "Internet Explorer",
+  "aliases": [
+    "IE",
+    "IE11",
+    "Windows Internet Explorer"
+  ],
+  "group": "forks",
+  "developer": "Microsoft",
+  "hq": "United States",
+  "businessModel": "Bundled with Windows; no direct revenue (search deals only)",
+  "engine": "trident-legacy",
+  "basedOn": "Independent (MSHTML/Trident; Spyglass Mosaic code in v1)",
+  "license": "Proprietary (requires Windows license)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 1995,
+  "status": "discontinued",
+  "statusNote": "Retired June 15, 2022 for Windows 10 Semi-Annual Channel; IE mode in Edge covered through at least 2029; IE11 on Windows 10 LTSC / IoT Enterprise LTSC 2021 supported to Jan 13, 2032",
+  "version": {
+    "current": "11",
+    "date": "2022-06-15",
+    "upstream": "Trident (MSHTML) / Chakra"
+  },
+  "channels": [],
+  "updateCadence": "Discontinued; IE11 released 2013-10-17; consumer support ended 2022-06-15",
+  "website": "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+  "tags": [
+    "historical",
+    "discontinued",
+    "trident",
+    "windows"
+  ],
+  "pitch": "Microsoft's retired Windows browser, kept alive only as Edge IE mode.",
+  "summary": "Microsoft's default Windows browser from 1995; IE11 was the final version (2013). Desktop support ended June 15, 2022 and Windows 11 disables it. Legacy sites now run through Edge IE mode.",
+  "bestFor": [
+    "Historical reference",
+    "Legacy intranet sites via Edge IE mode (not IE itself)"
+  ],
+  "notFor": [
+    "Any current browsing",
+    "Anyone needing modern web standards or security patches"
+  ],
+  "pros": [
+    {
+      "title": "Deep enterprise controls",
+      "detail": "Group Policy and IEAK enabled rich enterprise management."
+    },
+    {
+      "title": "Legacy app compatibility",
+      "detail": "Ran ActiveX and old intranet apps; Edge IE mode continues this to at least 2029."
+    },
+    {
+      "title": "Preinstalled",
+      "detail": "Shipped with Windows NT 4.0 through Windows 10 21H2."
+    },
+    {
+      "title": "Tiny footprint",
+      "detail": "No separate download; part of Windows."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No longer supported",
+      "detail": "Retired for Windows 10 SAC on June 15, 2022; Windows 11 disables the normal launch path."
+    },
+    {
+      "title": "Obsolete engine",
+      "detail": "Trident/Chakra lacks modern web standards."
+    },
+    {
+      "title": "Security risk",
+      "detail": "Unpatched on consumer Windows; ActiveX and BHO attack surface."
+    },
+    {
+      "title": "No extensions ecosystem",
+      "detail": "Only legacy add-ons (ActiveX/BHO), nothing compatible with current web."
+    }
+  ],
+  "signatureFeatures": [
+    "Trident/MSHTML engine",
+    "ActiveX and BHO add-ons",
+    "Group Policy / IEAK management",
+    "Enterprise Mode and Edge IE mode"
+  ],
+  "faq": [
+    {
+      "q": "When did Internet Explorer end?",
+      "a": "Support ended June 15, 2022 for Windows 10 Semi-Annual Channel editions; IE 11 was the final release."
+    },
+    {
+      "q": "Can I still use IE-only sites?",
+      "a": "Yes, through Microsoft Edge IE mode, which Microsoft has committed to support through at least 2029 with one year notice."
+    },
+    {
+      "q": "Does IE run on Windows 11?",
+      "a": "Windows 11 disables the normal way of launching it."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "1995-08",
+      "event": "Internet Explorer 1 launched with Plus! for Windows 95"
+    },
+    {
+      "date": "2013-10",
+      "event": "IE11 released with Windows 8.1 (final version)"
+    },
+    {
+      "date": "2015-07",
+      "event": "Edge Legacy replaces IE as default browser in Windows 10"
+    },
+    {
+      "date": "2022-06",
+      "event": "IE retired on Windows 10 SAC (2022-06-15)"
+    },
+    {
+      "date": "2032-01",
+      "event": "IE11 support end on Windows 10 LTSC 2021 / IoT (2032-01-13)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "favorites",
+      "passwords"
+    ],
+    "note": "Modern browsers import IE favorites; Edge adds IE mode for legacy sites."
+  },
+  "alternatives": [
+    "edge",
+    "chrome",
+    "firefox",
+    "edge-legacy"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "tabs",
+        "settings"
+      ],
+      "crossOs": false,
+      "note": "Microsoft-account sync in IE11 on Windows 8.1/10 (unverified detail)"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "AutoComplete and Windows Credential Manager"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "ActiveX/BHO add-ons only",
+      "date": "2022"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Tracking Protection Lists optional; DNT",
+      "telemetry": "Windows telemetry applies",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Bing",
+    "telemetry": "Windows diagnostic data",
+    "drm": "PlayReady (no Widevine)",
+    "codecs": "H.264, limited others",
+    "sandbox": "Enhanced Protected Mode (64-bit tabs, AppContainer)",
+    "patchLag": "No consumer patches since 2022",
+    "languages": "Dozens"
+  },
+  "platforms": {
+    "windows": {
+      "status": "discontinued",
+      "minOs": "Windows 7 SP1 (IE11)",
+      "arch": [
+        "x86",
+        "x64"
+      ],
+      "stores": [
+        "preinstalled"
+      ],
+      "notes": [
+        "Bundled Windows NT 4.0 to Windows 10 21H2",
+        "Retired on Windows 10 SAC 2022-06-15; LTSC/IoT LTSC 2021 to 2032",
+        "Windows 11 disables normal launch"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Tracking Protection Lists"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3
+    ],
+    "privateHardening": [
+      "partial",
+      3,
+      "InPrivate browsing"
+    ],
+    "adBlocker": [
+      "partial",
+      2,
+      "TPL only"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "partial",
+      2,
+      "TPL lists"
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "partial",
+      3,
+      "Color-coded tab groups (IE8+)"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "partial",
+      4,
+      "RSS feeds"
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      3,
+      "Trixie-type add-ons"
+    ],
+    "syncBookmarks": [
+      "partial",
+      3
+    ],
+    "syncPasswords": [
+      "partial",
+      3
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "yes",
+      4
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      5
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      3
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "yes",
+      5
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9,
+      "Group Policy, IEAK"
+    ],
+    "kioskMode": [
+      "yes",
+      6
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "partial",
+      3
+    ],
+    "customSearchEngines": [
+      "yes",
+      5
+    ],
+    "devtools": [
+      "yes",
+      5,
+      "F12 developer tools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      1.5,
+      "Chakra/JScript9 far behind modern engines",
+      "documented"
+    ],
+    "pageLoad": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "networkSpeed": [
+      2.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "startup": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "smoothness": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "graphics": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "memory": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "cpu": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "battery": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "resourceControls": [
+      1,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "installSize": [
+      9,
+      "Preinstalled with Windows, no separate download",
+      "documented"
+    ],
+    "privacyDefaults": [
+      2.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "blocking": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "fingerprinting": [
+      1,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "securityHardening": [
+      1,
+      "Trident attack surface plus ActiveX/BHO; EPM sandbox dated",
+      "documented"
+    ],
+    "patchSpeed": [
+      0.5,
+      "No consumer patches since 2022 retirement",
+      "documented"
+    ],
+    "telemetry": [
+      2.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lookCustom": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      2.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Group Policy / IEAK depth for enterprise",
+      "documented"
+    ],
+    "tabManagement": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "searchFreedom": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "downloads": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "productivity": [
+      1.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "media": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extras": [
+      1,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extensions": [
+      2,
+      "Legacy ActiveX/BHO only",
+      "documented"
+    ],
+    "sync": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "passwords": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "IE Mobile discontinued",
+      "documented"
+    ],
+    "webCompat": [
+      1,
+      "Lacks modern standards; Trident engine",
+      "documented"
+    ],
+    "devTools": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "accessibility": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "openSource": [
+      0,
+      "Proprietary Windows component",
+      "documented"
+    ],
+    "businessTrust": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "longevity": [
+      0,
+      "Retired June 15, 2022; Windows 11 disables it",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Internet_Explorer",
+      "title": "Internet Explorer - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Microsoft_Edge_Legacy",
+      "title": "Microsoft Edge Legacy - Wikipedia",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Exact IE11 final build number",
+    "IE11 sync item scope",
+    "Only two sources (both Wikipedia); Microsoft lifecycle page not fetched"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

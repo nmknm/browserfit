@@ -1,0 +1,734 @@
+{
+  "id": "wavebox",
+  "name": "Wavebox",
+  "aliases": [
+    "Wavebox Browser"
+  ],
+  "group": "power",
+  "developer": "Wavebox Ltd (Bytebox)",
+  "hq": "United Kingdom",
+  "businessModel": "Freemium with paid Pro/Business subscriptions (prices unverified)",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Pro/Business tiers (prices unverified)",
+  "releaseYear": 2015,
+  "status": "active",
+  "statusNote": "Versioning changed in April 2026 to [chromium major].x.y",
+  "version": {
+    "current": "155.3.12",
+    "date": "2026-10-07",
+    "upstream": "Chromium 155.0.8059.40 (FileHorse lists 156.3.20.2 on 2026-10-21; unconfirmed)"
+  },
+  "channels": [
+    "Stable",
+    "Beta"
+  ],
+  "updateCadence": "Tracks Chromium majors; beta channel available",
+  "website": "https://wavebox.io",
+  "tags": [
+    "workspaces",
+    "productivity",
+    "webapps",
+    "chromium",
+    "business"
+  ],
+  "pitch": "A Chromium workspace browser for juggling many web apps and accounts.",
+  "summary": "Chromium-based productivity browser built for managing many web apps with Webdock, multiple accounts and workspaces; works on Windows, macOS and Linux with Chrome Web Store extensions.",
+  "bestFor": [
+    "Teams and freelancers juggling many apps and accounts",
+    "Users wanting Slack/Gmail-style app management in one window"
+  ],
+  "notFor": [
+    "Privacy-first users",
+    "People wanting open source",
+    "Mobile users"
+  ],
+  "pros": [
+    {
+      "title": "Webdock and workspaces",
+      "detail": "Organizes apps and accounts."
+    },
+    {
+      "title": "Chrome extension support",
+      "detail": "Uses the Chrome Web Store."
+    },
+    {
+      "title": "Cross-platform desktop",
+      "detail": "Windows, macOS, Linux."
+    },
+    {
+      "title": "Tracks Chromium",
+      "detail": "Stable 155.3.12 on Chromium 155."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Proprietary",
+      "detail": "Closed source."
+    },
+    {
+      "title": "Paid tiers",
+      "detail": "Pro/Business features."
+    },
+    {
+      "title": "Chromium lag",
+      "detail": "Behind mainline slightly."
+    },
+    {
+      "title": "Desktop only",
+      "detail": "No mobile versions."
+    }
+  ],
+  "signatureFeatures": [
+    "Webdock",
+    "Workspaces",
+    "Multi-account",
+    "Chrome extension compatibility"
+  ],
+  "faq": [
+    {
+      "q": "Current version?",
+      "a": "Official changelog lists 155.3.12 (Oct 7, 2026) on Chromium 155; a download site lists 156.3.20.2."
+    },
+    {
+      "q": "Does it support Chrome extensions?",
+      "a": "Yes via the Chrome Web Store."
+    },
+    {
+      "q": "Is it free?",
+      "a": "There is a free tier plus paid plans."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Wavebox first released"
+    },
+    {
+      "date": "2026-04",
+      "event": "Switched to Chromium-major versioning (147.1.54 beta)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Stable 155.3.12 (Oct 7)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "extensions"
+    ],
+    "note": "Imports from Chrome/Edge and others."
+  },
+  "alternatives": [
+    "sigmaos",
+    "vivaldi",
+    "arc",
+    "edge",
+    "island"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "workspaces",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Wavebox account (details unverified)"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Chromium manager"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Chromium 155 MV3",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No major AI (unverified)"
+    },
+    "privacy": {
+      "defaults": "Chromium defaults",
+      "telemetry": "Unverified",
+      "jurisdiction": "UK"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (configurable)",
+    "telemetry": "Unverified",
+    "drm": "Widevine (unverified)",
+    "codecs": "Chromium",
+    "sandbox": "Chromium sandbox",
+    "patchSpeed": "Within about a major of Chromium",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS (unverified)",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "64-bit Linux",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "snap"
+      ],
+      "notes": [
+        "Packaging unverified"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://wavebox.io/changelog/stable/",
+      "title": "Wavebox stable changelog",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://wavebox.io/changelog/beta/",
+      "title": "Wavebox beta changelog",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.filehorse.com/download-wavebox/",
+      "title": "FileHorse: Wavebox",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Latest stable beyond 155.3.12",
+    "Pricing",
+    "Min macOS",
+    "Telemetry",
+    "Linux packaging",
+    "HQ"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3
+    ],
+    "customFilterLists": [
+      "extension",
+      3
+    ],
+    "youtubeAds": [
+      "extension",
+      2
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "yes",
+      8
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      9
+    ],
+    "splitView": [
+      "partial",
+      5
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "yes",
+      9,
+      "Webdock"
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      3
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      9
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "yes",
+      6
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "yes",
+      6
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      9,
+      "Multiple accounts per app"
+    ],
+    "passwordManager": [
+      "partial",
+      3
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      3
+    ],
+    "aiKillSwitch": [
+      "yes",
+      9
+    ],
+    "translation": [
+      "partial",
+      3
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      7
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "blocking": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "securityHardening": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "patchSpeed": [
+      8,
+      "Close to Chromium",
+      "documented"
+    ],
+    "telemetry": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lookCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      8.5,
+      "Workspaces and Webdock",
+      "documented"
+    ],
+    "searchFreedom": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      8.5,
+      "App management",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "translation": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extensions": [
+      7,
+      "Chrome Web Store, MV3",
+      "documented"
+    ],
+    "sync": [
+      5.5,
+      "Account sync",
+      "editorial"
+    ],
+    "passwords": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "None",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary",
+      "documented"
+    ],
+    "businessTrust": [
+      6.5,
+      "Small UK company",
+      "editorial"
+    ],
+    "longevity": [
+      7,
+      "Established since 2015",
+      "editorial"
+    ],
+    "ai": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Feature heavy",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,696 @@
+{
+  "id": "comodo-dragon",
+  "name": "Comodo Dragon",
+  "aliases": [
+    "Comodo Dragon Internet Browser"
+  ],
+  "group": "forks",
+  "developer": "Comodo Security Solutions",
+  "hq": "United States",
+  "businessModel": "Free browser that promoted Comodo’s security products and Secure DNS",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary (freeware)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2009,
+  "status": "discontinued",
+  "statusNote": "Last release 134.0.6998.179 (May 2025); a Comodo forum thread says the founder confirmed it is discontinued",
+  "version": {
+    "current": "134.0.6998.179",
+    "date": "2025-05-19",
+    "upstream": "Chromium 134"
+  },
+  "channels": [
+    "Stable"
+  ],
+  "updateCadence": "None since May 2025",
+  "website": "https://browser.comodo.com/",
+  "tags": [
+    "chromium",
+    "windows",
+    "security",
+    "discontinued"
+  ],
+  "pitch": "Discontinued Chromium build with Domain Validation and Comodo Secure DNS.",
+  "summary": "Comodo Dragon was a free Chromium browser for Windows that added certificate checks and optional Comodo Secure DNS. Its last release, based on Chromium 134, came out in May 2025, and it no longer gets security fixes.",
+  "bestFor": [
+    "Nobody new: it is out of date and unsupported",
+    "Historical interest"
+  ],
+  "notFor": [
+    "Anyone browsing the live web",
+    "Users who need security patches"
+  ],
+  "pros": [
+    {
+      "title": "Domain Validation",
+      "detail": "Marks sites with stronger SSL certificates apart from weaker ones."
+    },
+    {
+      "title": "Comodo Secure DNS option",
+      "detail": "Optional DNS filtering against malicious sites, chosen at install."
+    },
+    {
+      "title": "Chromium compatibility",
+      "detail": "Chromium 134 still renders most sites, though not newer web features."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Discontinued",
+      "detail": "A Comodo forum thread says it is discontinued and has not been updated since May 2025."
+    },
+    {
+      "title": "No security patches",
+      "detail": "Chromium 134 is far behind current Chromium, leaving known browser flaws unpatched."
+    },
+    {
+      "title": "Unverified privacy claims",
+      "detail": "Claims that it is more private than Chrome come from Comodo’s own marketing, not independent audits."
+    }
+  ],
+  "signatureFeatures": [
+    "Domain Validation",
+    "Comodo Secure DNS",
+    "SiteInspector scanning",
+    "Download tracking blocked"
+  ],
+  "faq": [
+    {
+      "q": "Is Comodo Dragon still maintained?",
+      "a": "No. The last release was in May 2025 and a Comodo forum thread says it is discontinued."
+    },
+    {
+      "q": "Is it safe to use?",
+      "a": "Not recommended: it lacks security fixes from newer Chromium versions and fails on some websites."
+    },
+    {
+      "q": "What should I use instead?",
+      "a": "An actively maintained Chromium or Firefox browser, such as Brave, Vivaldi or Firefox."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2009",
+      "event": "First release (not verified)"
+    },
+    {
+      "date": "2025-05",
+      "event": "Last release, version 134.0.6998.179"
+    },
+    {
+      "date": "2026",
+      "event": "Forum thread reports the browser is discontinued"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Chromium import tools."
+  },
+  "alternatives": [
+    "brave",
+    "vivaldi",
+    "firefox"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Not documented"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Chromium manager"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Chromium 134 still runs MV2; new MV2 installs need sideloading",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Blocks tracking cookies and download tracking; marketing claims unaudited",
+      "telemetry": "Not documented in the sources",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Not verified",
+    "telemetry": "Not documented in the sources",
+    "drm": "Not documented in the sources",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium 134 sandbox (unpatched)",
+    "patchLag": "No updates since May 2025",
+    "languages": "Not documented"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 7/8/10/11",
+      "arch": [
+        "x86",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Still downloadable, but discontinued",
+        "Optional Comodo Secure DNS at install"
+      ],
+      "highlights": [
+        "Domain Validation"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "Official Comodo announcement of discontinuation (only a forum thread found)",
+    "First release year",
+    "Telemetry and default search"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "Blocks tracking cookies (reported)"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "partial",
+      3,
+      "Comodo Secure DNS option"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "no",
+      0
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      5
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "yes",
+      4
+    ],
+    "pinnedTabs": [
+      "yes",
+      6
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      5
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      5,
+      "Chromium 134; MV2 listings gone since 2026-08-31"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      4
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      5
+    ],
+    "passwordManager": [
+      "partial",
+      4
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      5
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "yes",
+      5
+    ],
+    "hwDecode": [
+      "yes",
+      5
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      5
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "yes",
+      6
+    ],
+    "devtools": [
+      "yes",
+      8,
+      "Chromium 134 DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      7.5,
+      "Chromium 134 V8, now dated",
+      "editorial"
+    ],
+    "pageLoad": [
+      7,
+      "Dated engine",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7,
+      "Chromium network stack, older",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Chromium startup",
+      "editorial"
+    ],
+    "smoothness": [
+      7.5,
+      "Chromium rendering",
+      "editorial"
+    ],
+    "graphics": [
+      7,
+      "Chromium 134 GPU stack",
+      "editorial"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      2,
+      "No limiter added",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Heavier than older engines",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium install",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      4,
+      "Some tracking protection; DNS option",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "No ad blocker",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "securityHardening": [
+      3,
+      "Sandbox exists but no patches for 17 months",
+      "editorial"
+    ],
+    "patchSpeed": [
+      0.5,
+      "No updates since May 2025",
+      "documented"
+    ],
+    "telemetry": [
+      4,
+      "Not documented",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Chromium settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5,
+      "Chromium flags",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Chromium tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Chromium engine choices",
+      "editorial"
+    ],
+    "downloads": [
+      5,
+      "Chromium downloads",
+      "editorial"
+    ],
+    "productivity": [
+      3,
+      "Few extras",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Chromium codecs; DRM not documented",
+      "editorial"
+    ],
+    "translation": [
+      3,
+      "Not documented",
+      "editorial"
+    ],
+    "extras": [
+      4,
+      "Secure DNS, SiteInspector",
+      "editorial"
+    ],
+    "extensions": [
+      5,
+      "Chrome Web Store with dated engine",
+      "editorial"
+    ],
+    "sync": [
+      1,
+      "Not documented",
+      "editorial"
+    ],
+    "passwords": [
+      4,
+      "Chromium manager",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile versions",
+      "editorial"
+    ],
+    "webCompat": [
+      6.5,
+      "Chromium 134, fails on some sites",
+      "documented"
+    ],
+    "devTools": [
+      7,
+      "Chromium 134 DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      6,
+      "Chromium accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Closed on top of Chromium",
+      "editorial"
+    ],
+    "businessTrust": [
+      4,
+      "Marketing claims unaudited; abandoned",
+      "editorial"
+    ],
+    "longevity": [
+      0.5,
+      "Discontinued in 2025",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Chrome-like, but discontinued",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://forums.comodo.com/t/comodo-dragon-discontinued-last-version-released-may-2025-v134-0-6998-179/363344",
+      "title": "Comodo Forum: Dragon discontinued, last version May 2025",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.filehorse.com/download-comodo-dragon/",
+      "title": "Comodo Dragon - FileHorse",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://windowsreport.com/comodo-dragon-browser/",
+      "title": "Comodo Dragon Browser Review - Windows Report",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://browser.comodo.com/",
+      "title": "Comodo browser site",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

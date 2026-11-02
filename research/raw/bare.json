@@ -1,0 +1,762 @@
+{
+  "id": "bare",
+  "name": "Bare Browser",
+  "aliases": [
+    "Bare",
+    "Bare Browser for Android"
+  ],
+  "group": "android",
+  "developer": "BareBrowser project",
+  "hq": "Unknown",
+  "businessModel": "None disclosed; free open-source project",
+  "engine": "blink",
+  "basedOn": "Chromium (Android) patch series, de-Googled",
+  "license": "BSD-3-Clause (bundled uBlock Origin GPL-3.0)",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2026,
+  "status": "beta",
+  "statusNote": "Bare 2.0 is in open beta on Google Play; v2.0.0-beta.1 released 27 Oct 2026",
+  "version": {
+    "current": "2.0.0-beta.1",
+    "date": "2026-10-27",
+    "upstream": "Chromium 156.0.8078.25"
+  },
+  "channels": [
+    "Beta (Google Play open beta, GitHub pre-release)"
+  ],
+  "updateCadence": "Pinned Chromium revision, updated per release (196 patches in the series)",
+  "website": "https://barebrowser.org/",
+  "tags": [
+    "android",
+    "de-googled",
+    "ublock-origin",
+    "mv2",
+    "no-ai",
+    "open-source"
+  ],
+  "pitch": "De-Googled Chromium for Android with full uBlock Origin and desktop extensions.",
+  "summary": "A patch series on pinned Chromium that strips Google sign-in, telemetry, Firebase and Gemini/AI, keeps desktop extensions, ships full MV2 uBlock Origin, and adds background video playback and download handoff.",
+  "bestFor": [
+    "Android users who want Chrome without Google, AI or telemetry",
+    "People who want uBlock Origin preinstalled",
+    "Users who want to hand downloads to 1DM-style managers"
+  ],
+  "notFor": [
+    "Anyone needing cross-device sync",
+    "Users who want phishing/malware warnings (Safe Browsing is unavailable)",
+    "Devices older than Android 10 or x86"
+  ],
+  "pros": [
+    {
+      "title": "Full MV2 uBlock Origin preinstalled",
+      "detail": "Bundled uBO is the full MV2 extension, works in incognito, and can be disabled or removed."
+    },
+    {
+      "title": "Strips Google and AI",
+      "detail": "Removes Google sign-in, telemetry, Firebase registration and Gemini integration."
+    },
+    {
+      "title": "Desktop extensions",
+      "detail": "Installs from the Chrome Web Store, CRX files or unpacked folders."
+    },
+    {
+      "title": "Open-source patch series",
+      "detail": "BSD-3-Clause patches against one pinned Chromium revision, available on GitHub and Play."
+    },
+    {
+      "title": "Media extras",
+      "detail": "Background playback with screen off, media saving, and a choice of download manager."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No Safe Browsing",
+      "detail": "The README states no phishing or malware warnings in this build."
+    },
+    {
+      "title": "Beta / small project",
+      "detail": "Tracks a single pinned Chromium revision and is still pre-release at 2.0.0-beta.1."
+    },
+    {
+      "title": "No sync",
+      "detail": "Google sign-in is removed and no replacement sync was found."
+    },
+    {
+      "title": "Clunky extension install",
+      "detail": "Android Police found Chrome Web Store navigation on a phone awkward."
+    }
+  ],
+  "signatureFeatures": [
+    "Preinstalled full uBlock Origin",
+    "Background video playback",
+    "Lockable incognito (biometric, wipe after failed unlocks)",
+    "LibreTranslate-compatible translation"
+  ],
+  "faq": [
+    {
+      "q": "Is Bare on Google Play?",
+      "a": "Yes, as org.barebrowser (Bare 2.0 open beta), plus GitHub releases; no account is needed."
+    },
+    {
+      "q": "Which Android versions and CPUs?",
+      "a": "Android 10 or later on arm64-v8a or armeabi-v7a; there is no x86 build."
+    },
+    {
+      "q": "Does it phone home?",
+      "a": "Chromium component updater, uBO filter-list fetches and the GitHub build update check still make requests."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "First alpha releases (1.0.0-alpha.2 RC3 added uBO in incognito)"
+    },
+    {
+      "date": "2026-09-07",
+      "event": "Android Police review"
+    },
+    {
+      "date": "2026-10-27",
+      "event": "Bare 2.0.0-beta.1 on Chromium 156.0.8078.25; open beta on Google Play"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "extensions"
+    ],
+    "note": "Install Bitwarden etc. from the Chrome Web Store; no sync, so export/import bookmarks manually (unverified)."
+  },
+  "alternatives": [
+    "titanium",
+    "vanadium",
+    "quetta",
+    "lemur",
+    "kiwi"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Google sign-in removed; no sync documented"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Use extensions such as Bitwarden (Android Police)"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Full MV2 uBlock Origin bundled; desktop extensions supported",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "chrome-web-store",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Gemini/AI integration removed"
+    },
+    "privacy": {
+      "defaults": "No Google sign-in, telemetry or AI; uBlock Origin on by default; DuckDuckGo search",
+      "telemetry": "Browser telemetry removed; component updater and uBO list fetches remain",
+      "jurisdiction": "Unknown"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo",
+    "telemetry": "Removed; component updater, uBO list fetches and GitHub-build update check remain",
+    "drm": "Widevine may be provisioned via Google (README ambiguous)",
+    "codecs": "Chromium codecs, hardware decode",
+    "sandbox": "Chromium sandbox; Safe Browsing unavailable",
+    "patchLag": "Pinned Chromium revision: 156.0.8078.25 in 2.0.0-beta.1 (stable was 156.0.8078.73 elsewhere, small lag)",
+    "languages": "Chromium locales; translation via LibreTranslate-compatible server"
+  },
+  "platforms": {
+    "android": {
+      "status": "beta",
+      "minOs": "Android 10",
+      "arch": [
+        "arm64-v8a",
+        "armeabi-v7a"
+      ],
+      "stores": [
+        "google-play",
+        "github"
+      ],
+      "notes": [
+        "Google Play package org.barebrowser (open beta for Bare 2.0)",
+        "GitHub: BareBrowser/bare-browser; no x86 build",
+        "Android Police (Sep 2026) expected F-Droid later; not confirmed"
+      ],
+      "highlights": [
+        "Preinstalled uBO",
+        "No Google/AI"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      5,
+      "Via preinstalled uBlock Origin"
+    ],
+    "fingerprintProtection": [
+      "no",
+      1,
+      "None documented"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first/upgrade setting"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Secure DNS setting"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4,
+      "Storage partitioning in Chromium"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      6,
+      "Usage reporting toggle"
+    ],
+    "privateHardening": [
+      "yes",
+      7,
+      "Biometric incognito lock, wipe after failed unlocks, screenshot control"
+    ],
+    "adBlocker": [
+      "yes",
+      9,
+      "Preinstalled full uBlock Origin"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      9,
+      "uBO"
+    ],
+    "customFilterLists": [
+      "yes",
+      9,
+      "uBO"
+    ],
+    "youtubeAds": [
+      "yes",
+      8,
+      "uBO"
+    ],
+    "cookieBanners": [
+      "extension",
+      6,
+      "uBO lists"
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      7,
+      "Chromium Android tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "partial",
+      3,
+      "OS-level discarding only"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Tab grid search"
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      4,
+      "Chromium reading/distilled page mode, availability varies"
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      8,
+      "Plus background playback with screen off"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "OS screenshots"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5,
+      "Hardware keyboard shortcuts"
+    ],
+    "readLater": [
+      "partial",
+      3,
+      "Reading list depends on build"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      7,
+      "Install via Web Store, CRX or unpacked"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "yes",
+      9,
+      "MV2 extensions work"
+    ],
+    "uboFull": [
+      "yes",
+      10,
+      "Bundled MV2 uBO"
+    ],
+    "mobileExtensions": [
+      "yes",
+      8,
+      "Desktop extensions on phone"
+    ],
+    "userscripts": [
+      "extension",
+      7,
+      "Via extensions"
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0,
+      "Extensions only"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      2,
+      "Not confirmed"
+    ],
+    "widevine": [
+      "partial",
+      4,
+      "May be provisioned via Google"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "yes",
+      7,
+      "Hardware HEVC where device supports"
+    ],
+    "av1": [
+      "yes",
+      7,
+      "AV1 decode"
+    ],
+    "hwDecode": [
+      "yes",
+      8,
+      "Android MediaCodec"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "LibreTranslate-compatible server, Google Translate optional"
+    ],
+    "cryptoWallet": [
+      "extension",
+      5,
+      "Via extensions"
+    ],
+    "pwaInstall": [
+      "partial",
+      5,
+      "Add to Home screen; WebAPK needs Google services"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      8,
+      "Handoff to external managers like 1DM"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      "Light/dark only"
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      "Add search engines"
+    ],
+    "devtools": [
+      "partial",
+      6,
+      "Remote debugging from desktop; no on-device DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "V8 on current Chromium, same JS speed class as Chrome for Android",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Blink rendering gives Chrome-class page load on Android",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and QUIC",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Full Chromium cold start; slower than WebView-based light browsers",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor gives smooth Android scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      8.5,
+      "Chromium ANGLE/WebGL2 on Android GPUs",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Multi-process Chromium footprint typical for Android",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "CPU use comparable to Chrome for Android",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Chromium battery profile similar to Chrome on Android",
+      "editorial"
+    ],
+    "resourceControls": [
+      4,
+      "No tab-sleep or energy-saver UI beyond Android defaults",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "Chromium wants a modern 64-bit phone with ample RAM",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium build; large download vs light browsers",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      8,
+      "No Google sign-in/telemetry/AI; uBO on by default; DuckDuckGo search",
+      "editorial"
+    ],
+    "blocking": [
+      8,
+      "Preinstalled full MV2 uBlock Origin, works in incognito",
+      "editorial"
+    ],
+    "fingerprinting": [
+      3.5,
+      "No dedicated fingerprint resistance documented",
+      "editorial"
+    ],
+    "securityHardening": [
+      6,
+      "Chromium sandbox, but Safe Browsing removed",
+      "editorial"
+    ],
+    "patchSpeed": [
+      8,
+      "Pinned Chromium 156.0.8078.25 on 27 Oct 2026; small lag behind stable",
+      "editorial"
+    ],
+    "telemetry": [
+      9,
+      "Telemetry stripped; only updater and list fetches remain",
+      "editorial"
+    ],
+    "lookCustom": [
+      4.5,
+      "Basic Chromium theming",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      5.5,
+      "Biometric incognito lock, screenshot control; few gestures",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6,
+      "chrome://flags available, no deep policy tooling on Android",
+      "editorial"
+    ],
+    "tabManagement": [
+      5.5,
+      "Chromium Android tab grid and groups; no vertical tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Chromium custom search engines, DuckDuckGo default",
+      "editorial"
+    ],
+    "downloads": [
+      7.5,
+      "Download handoff to 1DM-style managers, media saving",
+      "editorial"
+    ],
+    "productivity": [
+      4.5,
+      "Basics only: reading mode, PiP, no sidebar or notes",
+      "editorial"
+    ],
+    "media": [
+      5.5,
+      "Background playback; Widevine availability unclear",
+      "editorial"
+    ],
+    "translation": [
+      4.5,
+      "LibreTranslate-compatible server option; Google Translate opt-in",
+      "editorial"
+    ],
+    "extras": [
+      4,
+      "Background playback, media saver, incognito lock",
+      "editorial"
+    ],
+    "extensions": [
+      8.5,
+      "Chrome Web Store, CRX, unpacked; full MV2",
+      "editorial"
+    ],
+    "sync": [
+      1,
+      "No sync after Google sign-in removal",
+      "editorial"
+    ],
+    "passwords": [
+      2,
+      "No built-in vault; rely on Bitwarden-style extensions",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "Android-only, Play beta + GitHub, arm only, Android 10+",
+      "editorial"
+    ],
+    "webCompat": [
+      9,
+      "Chromium engine, best-in-class site compatibility",
+      "editorial"
+    ],
+    "devTools": [
+      8,
+      "Chromium DevTools via remote debugging from desktop",
+      "editorial"
+    ],
+    "accessibility": [
+      8,
+      "Chromium Android accessibility, TalkBack and zoom support",
+      "editorial"
+    ],
+    "openSource": [
+      8.5,
+      "BSD-3-Clause patch series, GitHub",
+      "editorial"
+    ],
+    "businessTrust": [
+      6.5,
+      "Small project, transparent patches, no business model disclosed",
+      "editorial"
+    ],
+    "longevity": [
+      6.5,
+      "New 2026 project, still beta, single pinned Chromium revision",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "AI and Gemini integration removed",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      5.5,
+      "Extension install on phone is awkward; beta status",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://github.com/BareBrowser/bare-browser",
+      "title": "BareBrowser/bare-browser (GitHub)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/BareBrowser/bare-browser/blob/main/README.md",
+      "title": "Bare README",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/BareBrowser/bare-browser/releases/tag/v2.0.0-beta.1",
+      "title": "Bare 2.0.0-beta.1 release",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://barebrowser.org/",
+      "title": "Bare Browser website",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.androidpolice.com/bare-browser-chrome-gemini-ai-alternative/",
+      "title": "Android Police: I ditched Chrome for Bare",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.wares.gg/apps/bare",
+      "title": "wares.gg: Bare",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Widevine/DRM provisioning",
+    "F-Droid availability (Android Police expected it; not confirmed)",
+    "HTTPS-only and DoH settings not mentioned in README",
+    "Exact Play open-beta status wording",
+    "Install size not found"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

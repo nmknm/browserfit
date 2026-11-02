@@ -1,0 +1,772 @@
+{
+  "id": "lynx",
+  "name": "Lynx",
+  "aliases": [
+    "lynx text browser"
+  ],
+  "group": "minimal",
+  "developer": "Thomas E. Dickey (maintainer), originally University of Kansas",
+  "hq": "United States",
+  "businessModel": "None; volunteer-maintained free software",
+  "engine": "text",
+  "basedOn": "Independent",
+  "license": "GPL-2.0-only",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 1992,
+  "status": "active",
+  "statusNote": "Oldest browser still maintained; 2.9.3 current stable",
+  "version": {
+    "current": "2.9.3",
+    "date": "2026-05-27",
+    "upstream": "n/a (own text renderer)"
+  },
+  "channels": [
+    "Stable",
+    "Development snapshots"
+  ],
+  "updateCadence": "Irregular; a few releases per year plus frequent development snapshots",
+  "website": "https://lynx.invisible-island.net/",
+  "tags": [
+    "text-mode",
+    "terminal",
+    "accessibility",
+    "no-javascript",
+    "keyboard"
+  ],
+  "pitch": "The original text-mode web browser: no images, no JavaScript, tiny and fast.",
+  "summary": "Lynx renders HTML as text in a terminal, with no JavaScript, images or CSS. It is ideal for SSH sessions, screen readers and low-end systems, but cannot use most modern web apps.",
+  "bestFor": [
+    "Terminal and SSH-only environments",
+    "Braille display and screen-reader users",
+    "Scripting page dumps (-dump, -source)",
+    "Very old or tiny hardware"
+  ],
+  "notFor": [
+    "Anyone needing JavaScript, images or video",
+    "Logging into modern web apps",
+    "Beginners expecting a point-and-click UI"
+  ],
+  "pros": [
+    {
+      "title": "Tiny and instant",
+      "detail": "Starts immediately and uses a few MB of RAM, even on very old hardware."
+    },
+    {
+      "title": "No JavaScript attack surface",
+      "detail": "No JS, no CSS tracking tricks and no images means most tracking and ads never load."
+    },
+    {
+      "title": "Accessibility friendly",
+      "detail": "Plain linear text output works well with braille displays and screen readers."
+    },
+    {
+      "title": "Scriptable",
+      "detail": "Dump or fetch pages from the command line and customise keys through lynx.cfg."
+    },
+    {
+      "title": "Everywhere",
+      "detail": "Packaged in nearly every Linux/BSD distro and Homebrew, with Windows builds by the maintainer."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Most modern sites fail",
+      "detail": "No JavaScript means web apps, logins with JS flows and SPAs generally do not work."
+    },
+    {
+      "title": "No images or media",
+      "detail": "Cannot display images or video itself, only hand them to external programs."
+    },
+    {
+      "title": "Dated interface",
+      "detail": "Cursor-key link navigation and a config file are a steep learning curve for newcomers."
+    },
+    {
+      "title": "Small security surface but old code",
+      "detail": "C codebase without modern sandboxing; TLS stack depends on OpenSSL/GnuTLS builds."
+    }
+  ],
+  "signatureFeatures": [
+    "Numbered-link navigation",
+    "Page dump / source mode",
+    "lynx.cfg and keymap customisation",
+    "Cookie accept/reject prompts"
+  ],
+  "faq": [
+    {
+      "q": "Does Lynx support JavaScript?",
+      "a": "No. It never has and is not planned; sites that require JavaScript will not work."
+    },
+    {
+      "q": "Is Lynx still maintained?",
+      "a": "Yes. Thomas Dickey released 2.9.3 on 2026-05-27, including zstd content-encoding support."
+    },
+    {
+      "q": "Can Lynx show images?",
+      "a": "Not itself; it can launch external viewers for images and other media."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "1992",
+      "event": "Lynx created at the University of Kansas"
+    },
+    {
+      "date": "1995",
+      "event": "Released under the GNU GPL"
+    },
+    {
+      "date": "2024-01",
+      "event": "2.9.0 development series reaches release (2.9.1 April, 2.9.2 May 2024)"
+    },
+    {
+      "date": "2026-05",
+      "event": "2.9.3 released (zstd support, Unicode fixes)"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No importers; bookmarks are a local file. Copy any URLs over manually."
+  },
+  "alternatives": [
+    "w3m",
+    "qutebrowser",
+    "firefox",
+    "netsurf",
+    "dillo"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No password storage"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension system",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "No JavaScript, images or CSS; cookies can be prompted/whitelisted",
+      "telemetry": "None",
+      "jurisdiction": "US (maintainer)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Configurable (none preset in lynx.cfg)",
+    "telemetry": "None",
+    "drm": "None",
+    "codecs": "None",
+    "sandbox": "None (plain process)",
+    "patchLag": "Depends on distro and the system TLS library",
+    "languages": "Dozens (gettext)"
+  },
+  "platforms": {
+    "linux": {
+      "status": "active",
+      "minOs": "Any POSIX with ncurses",
+      "arch": [
+        "x64",
+        "arm64",
+        "x86",
+        "other"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "aur"
+      ],
+      "notes": [
+        "In nearly every distro repo"
+      ],
+      "highlights": [
+        "Runs in any terminal incl. SSH"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "Any with ncurses",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "homebrew"
+      ],
+      "notes": [
+        "Also MacPorts/Fink"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "active",
+      "minOs": "Windows (win32 builds)",
+      "arch": [
+        "x86",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Maintainer publishes win32 installers; the 2.9.3 installer update was announced as pending"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "beta",
+      "minOs": "Termux / source build",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [],
+      "notes": [
+        "Source can be built on Android; no standalone app"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://lynx.invisible-island.net/",
+      "title": "Lynx official site",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://lynx.invisible-island.net/lynx2.9.3/CHANGES.html",
+      "title": "Lynx 2.9.3 CHANGES",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Lynx_(web_browser)",
+      "title": "Lynx - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/ThomasDickey/lynx-snapshots",
+      "title": "lynx-snapshots on GitHub",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Current win32 installer version",
+    "Exact TLS library/features of each distro build"
+  ],
+  "confidence": "high",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "No JS/images; cookie prompts"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      5,
+      "Minimal surface; no JS/canvas"
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      3,
+      "Per-domain cookie allow/deny"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry exists"
+    ],
+    "privateHardening": [
+      "partial",
+      5,
+      "Cookie/history files can be disabled"
+    ],
+    "adBlocker": [
+      "partial",
+      2,
+      "Ads mostly absent as they need images/JS"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      4,
+      "Output is linear text"
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "partial",
+      3,
+      "g (goto) and / search prompts"
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7,
+      "Fully keyboard driven; keymap in lynx.cfg"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "partial",
+      4,
+      "System lynx.cfg and -restrictions"
+    ],
+    "kioskMode": [
+      "partial",
+      5,
+      "-anonymous / -restrictions options"
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      3,
+      "D download menu, external handlers"
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      3,
+      "Via lynx.cfg / goto URLs"
+    ],
+    "devtools": [
+      "partial",
+      1,
+      "View source and -dump only"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      0,
+      "No JavaScript at all",
+      "documented"
+    ],
+    "pageLoad": [
+      3,
+      "Fast text fetch but renders only static HTML",
+      "editorial"
+    ],
+    "networkSpeed": [
+      4,
+      "HTTP/1.1 only, single connection",
+      "editorial"
+    ],
+    "startup": [
+      10,
+      "Starts instantly in a terminal",
+      "editorial"
+    ],
+    "smoothness": [
+      5,
+      "Text scrolling only",
+      "editorial"
+    ],
+    "graphics": [
+      0,
+      "No graphics, WebGL or images",
+      "editorial"
+    ],
+    "memory": [
+      10,
+      "A few MB of RAM",
+      "editorial"
+    ],
+    "cpu": [
+      10,
+      "Negligible CPU",
+      "editorial"
+    ],
+    "battery": [
+      10,
+      "Negligible power draw",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "Nothing to limit; single page",
+      "editorial"
+    ],
+    "lowEnd": [
+      10,
+      "Runs on decades-old hardware",
+      "editorial"
+    ],
+    "installSize": [
+      10,
+      "Well under 2 MB binary in most distros",
+      "documented"
+    ],
+    "privacyDefaults": [
+      8,
+      "No JS/images; cookie prompts configurable",
+      "editorial"
+    ],
+    "blocking": [
+      5,
+      "Ads and trackers mostly cannot run, no filter lists",
+      "editorial"
+    ],
+    "fingerprinting": [
+      8,
+      "Almost no fingerprintable surface",
+      "editorial"
+    ],
+    "securityHardening": [
+      5,
+      "No sandbox; C code, but no JS engine",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5,
+      "Distro-dependent updates",
+      "editorial"
+    ],
+    "telemetry": [
+      10,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      2,
+      "Colours and keymap only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      5,
+      "Keymap and lynx.cfg options",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6,
+      "Large lynx.cfg and options menu",
+      "editorial"
+    ],
+    "tabManagement": [
+      1,
+      "Single page, history only",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Any URL/search template via config",
+      "editorial"
+    ],
+    "downloads": [
+      3,
+      "Basic download menu",
+      "editorial"
+    ],
+    "productivity": [
+      1,
+      "No notes, reader or sidebar",
+      "editorial"
+    ],
+    "media": [
+      0,
+      "No media playback",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "No translation",
+      "editorial"
+    ],
+    "extras": [
+      0,
+      "No extras",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extensions",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "No sync",
+      "editorial"
+    ],
+    "passwords": [
+      0,
+      "No password storage",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile app",
+      "documented"
+    ],
+    "webCompat": [
+      2,
+      "Only static HTML pages work",
+      "editorial"
+    ],
+    "devTools": [
+      0,
+      "View source only",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Linear text suits braille/screen readers",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "GPL-2.0, public development snapshots",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Volunteer maintainer, no business model",
+      "editorial"
+    ],
+    "longevity": [
+      8,
+      "30+ years; single maintainer",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      1,
+      "Terminal-only, text link navigation",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,739 @@
+{
+  "id": "konqueror",
+  "name": "Konqueror",
+  "aliases": [
+    "KDE Konqueror"
+  ],
+  "group": "minimal",
+  "developer": "KDE community",
+  "hq": "Germany (KDE e.V.)",
+  "businessModel": "KDE e.V. donations and volunteer work",
+  "engine": "blink",
+  "basedOn": "Qt WebEngine (Chromium); historically KHTML",
+  "license": "GPL-2.0-or-later",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2000,
+  "status": "maintenance",
+  "statusNote": "KDE’s legacy web browser / file manager; maintenance-level changes in KDE Gear 26.08",
+  "version": {
+    "current": "26.08.2",
+    "date": "2026-10-08",
+    "upstream": "Qt WebEngine (Chromium-based)"
+  },
+  "channels": [
+    "KDE Gear stable"
+  ],
+  "updateCadence": "KDE Gear: three major releases a year plus monthly bugfix releases",
+  "website": "https://apps.kde.org/konqueror/",
+  "tags": [
+    "kde",
+    "file-manager",
+    "kio",
+    "legacy"
+  ],
+  "pitch": "KDE’s classic web browser and file manager, now on Qt WebEngine.",
+  "summary": "Konqueror is the long-running KDE browser that also acts as a file manager through KIO. It now uses Qt WebEngine, offers deep per-site and KDE-style customisation, but receives mostly maintenance updates.",
+  "bestFor": [
+    "KDE users who want one app for web, FTP/SMB and files",
+    "People who like per-site policies and split views",
+    "Long-time KDE users"
+  ],
+  "notFor": [
+    "Users wanting a modern, polished browser",
+    "Extension or sync users",
+    "Anyone needing strong Chromium patch timing"
+  ],
+  "pros": [
+    {
+      "title": "KIO integration",
+      "detail": "Browses web, FTP, SMB, man pages and local files from one window."
+    },
+    {
+      "title": "Per-site policies",
+      "detail": "Domain-specific JavaScript, cookie and user-agent settings."
+    },
+    {
+      "title": "Highly customisable UI",
+      "detail": "KDE toolbars, shortcuts and split views."
+    },
+    {
+      "title": "Built-in ad filter",
+      "detail": "KDE AdBlock filters included."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Maintenance mode",
+      "detail": "Recent Gear releases list only trivial Konqueror changes."
+    },
+    {
+      "title": "Rough modern web experience",
+      "detail": "Qt WebEngine integration has been less polished than Falkon."
+    },
+    {
+      "title": "No sync, no extension store",
+      "detail": "KDE plugins only."
+    }
+  ],
+  "signatureFeatures": [
+    "KIO protocols",
+    "Split views",
+    "Per-domain policies",
+    "Web shortcuts"
+  ],
+  "faq": [
+    {
+      "q": "What engine does Konqueror use?",
+      "a": "Currently Qt WebEngine (Chromium-based); earlier versions used KHTML and then QtWebKit."
+    },
+    {
+      "q": "Is Konqueror still developed?",
+      "a": "Yes, as part of KDE Gear (26.08.2 in October 2026), but changes are mostly small fixes."
+    },
+    {
+      "q": "Is it still KDE’s file manager?",
+      "a": "No. Dolphin replaced it in KDE 4 (2008), though Konqueror can still browse files."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2000",
+      "event": "Konqueror debuts with KDE 2"
+    },
+    {
+      "date": "2008",
+      "event": "File-manager role passes to Dolphin with KDE 4"
+    },
+    {
+      "date": "2026-05",
+      "event": "26.04.2 released (2026-05-29)"
+    },
+    {
+      "date": "2026-08",
+      "event": "KDE Gear 26.08.0 released 2026-08-20"
+    },
+    {
+      "date": "2026-10",
+      "event": "26.08.2 (maintainer email update only in changelog)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks"
+    ],
+    "note": "Imports bookmarks from other KDE/browser formats; no password or extension import."
+  },
+  "alternatives": [
+    "falkon",
+    "gnome-web",
+    "qutebrowser"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Form autofill via KWallet"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "KDE plugins only",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Per-site cookie and JS policies; AdBlock filter",
+      "telemetry": "None",
+      "jurisdiction": "Germany (KDE e.V.)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Web shortcuts (e.g. DuckDuckGo, configurable)",
+    "telemetry": "None",
+    "drm": "None by default",
+    "codecs": "Depends on Qt WebEngine build",
+    "sandbox": "Chromium sandbox via Qt WebEngine",
+    "patchLag": "Follows Qt WebEngine and distro updates",
+    "languages": "Many (KDE i18n)"
+  },
+  "platforms": {
+    "linux": {
+      "status": "active",
+      "minOs": "KDE Frameworks 6 / Qt 6",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "aur"
+      ],
+      "notes": [
+        "Distro packages; not found on Flathub under tested IDs"
+      ],
+      "highlights": [
+        "KDE Plasma integration"
+      ],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "beta",
+      "minOs": "KDE Craft builds",
+      "arch": [
+        "x64"
+      ],
+      "stores": [],
+      "notes": [
+        "Available only via KDE Craft/CI builds, unofficial"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Konqueror",
+      "title": "Konqueror - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://apps.kde.org/konqueror/",
+      "title": "Konqueror KDE Applications page",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://kde.org/announcements/changelogs/gear/26.08.2/",
+      "title": "KDE Gear 26.08.2 changelog",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://lwn.net/Articles/1089721/",
+      "title": "KDE Gear 26.08 released (LWN)",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Windows/macOS availability",
+    "Flathub availability",
+    "Default WebEngine vs KHTML part packaging per distro"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Cookie policy only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4,
+      "Per-domain cookie policy"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "yes",
+      5,
+      "KDE AdBlock filter lists"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      3,
+      "Basic element hiding"
+    ],
+    "customFilterLists": [
+      "yes",
+      6,
+      "Add filter subscriptions"
+    ],
+    "youtubeAds": [
+      "partial",
+      2,
+      "Filter-list dependent"
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "partial",
+      4,
+      "Profiles and sessions"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "partial",
+      4,
+      "View profiles/sessions"
+    ],
+    "splitView": [
+      "yes",
+      8,
+      "Split views are a core feature"
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "partial",
+      4,
+      "Tab list"
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      8,
+      "Fully configurable KDE shortcuts"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "View profiles"
+    ],
+    "passwordManager": [
+      "yes",
+      4,
+      "Form autofill with KWallet"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      3,
+      "Bookmark import"
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "partial",
+      3,
+      "Build dependent"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "partial",
+      2,
+      "Translate plugin (online service)"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      4,
+      "KIO download handling"
+    ],
+    "customThemes": [
+      "yes",
+      6,
+      "KDE themes/styles"
+    ],
+    "customSearchEngines": [
+      "yes",
+      8,
+      "Web shortcuts"
+    ],
+    "devtools": [
+      "yes",
+      7,
+      "Via Qt WebEngine"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8,
+      "V8 via Qt WebEngine",
+      "documented"
+    ],
+    "pageLoad": [
+      7.5,
+      "Blink engine, lightly integrated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7.5,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "KDE libs plus WebEngine init",
+      "editorial"
+    ],
+    "smoothness": [
+      7,
+      "Chromium compositor; some integration glitches",
+      "editorial"
+    ],
+    "graphics": [
+      7,
+      "WebEngine GPU support",
+      "editorial"
+    ],
+    "memory": [
+      5.5,
+      "Chromium processes",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "No tab sleeping",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Needs a capable machine for WebEngine",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Small app on top of KDE libs",
+      "documented"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Policies available; no telemetry",
+      "editorial"
+    ],
+    "blocking": [
+      5,
+      "KDE AdBlock lists",
+      "editorial"
+    ],
+    "fingerprinting": [
+      3,
+      "Chromium default surface",
+      "editorial"
+    ],
+    "securityHardening": [
+      6,
+      "Chromium sandbox, little else",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5.5,
+      "Lags via Qt WebEngine cycle",
+      "editorial"
+    ],
+    "telemetry": [
+      9.5,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      7,
+      "KDE toolbar and layout customisation",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      8,
+      "Per-domain settings, shortcuts",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7,
+      "Deep KDE configuration modules",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tabs, split views and sessions",
+      "editorial"
+    ],
+    "searchFreedom": [
+      9,
+      "Web shortcuts for any engine",
+      "editorial"
+    ],
+    "downloads": [
+      5,
+      "KIO downloads",
+      "editorial"
+    ],
+    "productivity": [
+      4,
+      "File manager roles, no reader or notes",
+      "editorial"
+    ],
+    "media": [
+      5.5,
+      "Codec/DRM depend on build",
+      "editorial"
+    ],
+    "translation": [
+      2,
+      "Optional translate plugin",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "KIO file/FTP/SMB browsing is unique",
+      "editorial"
+    ],
+    "extensions": [
+      2,
+      "KDE plugins only",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "No sync",
+      "editorial"
+    ],
+    "passwords": [
+      4,
+      "Autofill via KWallet",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile app",
+      "documented"
+    ],
+    "webCompat": [
+      7.5,
+      "Blink via Qt WebEngine",
+      "editorial"
+    ],
+    "devTools": [
+      7.5,
+      "Chromium DevTools via WebEngine",
+      "editorial"
+    ],
+    "accessibility": [
+      5.5,
+      "Qt/KDE accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "GPL, KDE development",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Non-profit KDE community",
+      "editorial"
+    ],
+    "longevity": [
+      6,
+      "Long history but few active developers",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      5,
+      "Cluttered classic toolbar UI",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

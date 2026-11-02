@@ -1,0 +1,784 @@
+{
+  "id": "duckduckgo",
+  "name": "DuckDuckGo Browser",
+  "aliases": [
+    "DuckDuckGo Private Browser",
+    "DuckDuckGo"
+  ],
+  "group": "privacy",
+  "developer": "Duck Duck Go, Inc.",
+  "hq": "United States",
+  "businessModel": "Search ads (non-personalised), Privacy Pro subscription (VPN, Identity Restoration), affiliate",
+  "engine": "multi",
+  "basedOn": "OS web engines (WebKit / WebView2 / Android System WebView)",
+  "license": "Apache-2.0 (apps)",
+  "openSource": "partial",
+  "price": "free",
+  "paidNote": "Privacy Pro subscription is optional",
+  "releaseYear": 2018,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "5.300.0",
+    "date": "2026-10-27",
+    "upstream": "OS WebKit / WebView2"
+  },
+  "channels": [
+    "Release",
+    "Beta"
+  ],
+  "updateCadence": "Frequent app updates; web engine updates follow the OS/WebView2",
+  "website": "https://duckduckgo.com/app",
+  "tags": [
+    "privacy",
+    "beginner",
+    "ai",
+    "ad-blocking"
+  ],
+  "pitch": "Simple, privacy-first browser with Fire Button, tracker blocking and optional Duck.ai.",
+  "summary": "A lightweight privacy browser built on each OS's web engine: tracker blocking, Fire Button, Duck Player and YouTube ad blocking, Duck.ai on demand (one-click off). No extensions. No Linux version.",
+  "bestFor": [
+    "Beginners wanting privacy with no setup",
+    "iPhone and Android users",
+    "People who want a simple Duck.ai-integrated browser"
+  ],
+  "notFor": [
+    "Extension users",
+    "People needing deep customisation or vertical tabs",
+    "Linux users (no official build)"
+  ],
+  "pros": [
+    {
+      "title": "Simple and private by default",
+      "detail": "Tracker blocking, cookie pop-up handling and HTTPS upgrades work out of the box."
+    },
+    {
+      "title": "Fire Button",
+      "detail": "One tap clears tabs and data."
+    },
+    {
+      "title": "YouTube ad blocking",
+      "detail": "Duck Player and ad blocking on by default for most users (Q3 2026) on macOS, Windows, Android and iOS."
+    },
+    {
+      "title": "AI with a kill switch",
+      "detail": "Duck.ai access with one-click \"Use DuckDuckGo Without AI\" on Windows and macOS."
+    },
+    {
+      "title": "Encrypted sync",
+      "detail": "Sync & Backup syncs bookmarks and passwords end-to-end encrypted without email."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No extensions",
+      "detail": "No extension support on any platform."
+    },
+    {
+      "title": "Limited settings",
+      "detail": "Few tabs, appearance and advanced controls."
+    },
+    {
+      "title": "No Linux build",
+      "detail": "No official Linux browser; DDG points to its extensions."
+    },
+    {
+      "title": "Engine differences",
+      "detail": "Behaviour varies by OS engine; WebKit/WebView2 patch speed depends on the OS."
+    }
+  ],
+  "signatureFeatures": [
+    "Fire Button",
+    "Duck Player",
+    "Duck.ai",
+    "App Tracking Protection (Android)",
+    "Email Protection"
+  ],
+  "faq": [
+    {
+      "q": "Is there a DuckDuckGo browser for Linux?",
+      "a": "No official Linux browser as of Oct 2026; DDG offers extensions for Firefox/Chromium-based browsers instead."
+    },
+    {
+      "q": "Does it support extensions?",
+      "a": "No extensions on desktop or mobile."
+    },
+    {
+      "q": "Can I turn AI off?",
+      "a": "Yes: there is a one-click AI shutoff on Windows and macOS."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2018-07",
+      "event": "Android and iOS browser app"
+    },
+    {
+      "date": "2022-11",
+      "event": "Desktop beta for macOS"
+    },
+    {
+      "date": "2023-2024",
+      "event": "Windows version and Duck Player"
+    },
+    {
+      "date": "2026-Q3",
+      "event": "YouTube ad blocking on by default; Windows/macOS Duck.ai shortcuts and AI shutoff"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Imports from Chrome, Firefox, Edge, Safari on desktop."
+  },
+  "alternatives": [
+    "firefox-focus",
+    "brave",
+    "safari",
+    "firefox",
+    "ecosia-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "macos": "webkit",
+      "ios": "webkit",
+      "windows": "blink (WebView2)",
+      "android": "blink (Android System WebView)"
+    },
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Sync & Backup, no email required"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Built-in manager with Sync & Backup; passkey support not fully verified"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension support",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "partial",
+      "note": "Duck.ai with free and paid models; one-click shutoff"
+    },
+    "privacy": {
+      "defaults": "Tracker blocking, HTTPS upgrade, cookie pop-up management, Global Privacy Control",
+      "telemetry": "Anonymous pixels, no user-linked analytics",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo",
+    "telemetry": "Privacy-preserving anonymous pixels",
+    "drm": "Via OS engine (varies)",
+    "codecs": "OS engine codecs",
+    "sandbox": "OS engine sandbox (WebKit / WebView2)",
+    "patchLag": "Follows OS/WebView2 updates",
+    "languages": "~40"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10+",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "microsoft-store"
+      ],
+      "notes": [
+        "WebView2 engine",
+        "YouTube ad blocking and Duck.ai shortcut"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 12+",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "mac-app-store"
+      ],
+      "notes": [
+        "WebKit engine"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 8+",
+      "arch": [
+        "arm64",
+        "arm"
+      ],
+      "stores": [
+        "google-play",
+        "f-droid",
+        "apk"
+      ],
+      "notes": [
+        "App Tracking Protection, Fire Tabs"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": 0
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS 16+",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      9
+    ],
+    "fingerprintProtection": [
+      "partial",
+      5
+    ],
+    "httpsOnly": [
+      "yes",
+      8
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "paid",
+      5,
+      "Privacy Pro VPN"
+    ],
+    "cookieIsolation": [
+      "partial",
+      6
+    ],
+    "queryStripping": [
+      "yes",
+      7
+    ],
+    "telemetryOptOut": [
+      "yes",
+      8
+    ],
+    "privateHardening": [
+      "yes",
+      9,
+      "Fire Button"
+    ],
+    "adBlocker": [
+      "partial",
+      5,
+      "Blocks trackers/ads partially"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      5
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "yes",
+      7,
+      "Duck Player + ad blocking"
+    ],
+    "cookieBanners": [
+      "yes",
+      8
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "partial",
+      4
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      7
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "partial",
+      4
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "partial",
+      5
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "yes",
+      7
+    ],
+    "syncPasswords": [
+      "yes",
+      7
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "yes",
+      9
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "yes",
+      6
+    ],
+    "passkeys": [
+      "partial",
+      6
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "partial",
+      6
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      6
+    ],
+    "av1": [
+      "partial",
+      6
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "yes",
+      8,
+      "Duck.ai"
+    ],
+    "aiSummarizer": [
+      "partial",
+      5,
+      "Selected text and PDF actions"
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "One-click AI shutoff"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "yes",
+      10,
+      "Fire Button"
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "no",
+      0
+    ],
+    "devtools": [
+      "yes",
+      6
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "Uses JavaScriptCore/V8 via OS engine",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Native engine speed",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "OS network stack",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Light shell",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "OS engine compositor",
+      "editorial"
+    ],
+    "graphics": [
+      7.5,
+      "Depends on OS engine",
+      "editorial"
+    ],
+    "memory": [
+      7,
+      "Thin wrapper",
+      "editorial"
+    ],
+    "cpu": [
+      7.5,
+      "Native engines",
+      "editorial"
+    ],
+    "battery": [
+      7.5,
+      "Native engines, mobile efficient",
+      "editorial"
+    ],
+    "resourceControls": [
+      4,
+      "Little tab control",
+      "editorial"
+    ],
+    "lowEnd": [
+      6.5,
+      "Needs modern OS",
+      "editorial"
+    ],
+    "installSize": [
+      8,
+      "Small install",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      9,
+      "Tracker blocking, Fire Button defaults",
+      "documented"
+    ],
+    "blocking": [
+      7,
+      "Tracker and YouTube ad blocking, no custom lists",
+      "documented"
+    ],
+    "fingerprinting": [
+      5.5,
+      "No dedicated fingerprint defences",
+      "editorial"
+    ],
+    "securityHardening": [
+      8,
+      "Platform sandbox",
+      "editorial"
+    ],
+    "patchSpeed": [
+      8,
+      "Follows OS/WebView2 updates",
+      "editorial"
+    ],
+    "telemetry": [
+      8.5,
+      "Anonymous pixels only",
+      "documented"
+    ],
+    "lookCustom": [
+      3,
+      "Little theming",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3,
+      "Few options",
+      "editorial"
+    ],
+    "advancedSettings": [
+      2.5,
+      "Very few settings",
+      "editorial"
+    ],
+    "tabManagement": [
+      4,
+      "Basic tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      3,
+      "Limited search choice",
+      "editorial"
+    ],
+    "downloads": [
+      5,
+      "Basic manager",
+      "editorial"
+    ],
+    "productivity": [
+      3.5,
+      "Duck.ai, Duck Player",
+      "editorial"
+    ],
+    "media": [
+      7,
+      "OS codecs/DRM, PiP varies",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "No translation",
+      "editorial"
+    ],
+    "extras": [
+      7,
+      "Duck Player, Fire Button, email protection, Duck.ai",
+      "documented"
+    ],
+    "extensions": [
+      0,
+      "No extensions",
+      "documented"
+    ],
+    "sync": [
+      6.5,
+      "E2EE bookmarks/passwords",
+      "documented"
+    ],
+    "passwords": [
+      6.5,
+      "Built-in sync manager",
+      "editorial"
+    ],
+    "mobileApps": [
+      8.5,
+      "Strong mobile apps",
+      "documented"
+    ],
+    "webCompat": [
+      8.5,
+      "OS engines",
+      "editorial"
+    ],
+    "devTools": [
+      5,
+      "Basic inspector",
+      "editorial"
+    ],
+    "accessibility": [
+      7.5,
+      "Native engine a11y",
+      "editorial"
+    ],
+    "openSource": [
+      8,
+      "Apache-2.0 apps, some closed",
+      "documented"
+    ],
+    "businessTrust": [
+      7.5,
+      "Search ads and Privacy Pro, but strong privacy stance",
+      "editorial"
+    ],
+    "longevity": [
+      8.5,
+      "Established company",
+      "editorial"
+    ],
+    "ai": [
+      6.5,
+      "Duck.ai with free and paid models",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      9.5,
+      "Very simple",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://duckduckgo.com/updates",
+      "title": "What's New in DuckDuckGo",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.techspot.com/downloads/7433-duckduckgo-browser.html",
+      "title": "TechSpot: DuckDuckGo Browser 5.300.0",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/DuckDuckGo_Private_Browser",
+      "title": "DuckDuckGo Private Browser (Wikipedia)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://duckduckgo.com/app",
+      "title": "DuckDuckGo app",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Version 5.300.0 comes from TechSpot and may refer to the Android build; desktop uses a different scheme",
+    "Passkey, Widevine/Netflix status per platform not confirmed",
+    "Tab groups / pinned tabs availability on Windows and macOS",
+    "Open-source status of Windows build"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

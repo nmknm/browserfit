@@ -1,0 +1,745 @@
+{
+  "id": "helium",
+  "name": "Helium",
+  "aliases": [
+    "Helium Browser",
+    "imput Helium"
+  ],
+  "group": "privacy",
+  "developer": "imput (imputnet)",
+  "hq": "Unknown (small distributed team; unverified)",
+  "businessModel": "Donation/user funded open-source project (same team as the cobalt media downloader)",
+  "engine": "blink",
+  "basedOn": "ungoogled-chromium",
+  "license": "GPL-3.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2025,
+  "status": "beta",
+  "statusNote": "Still in beta (0.x); ~500 open GitHub issues reported in Sept 2026",
+  "version": {
+    "current": "0.20.1",
+    "date": "2026-10-21",
+    "upstream": "Chromium 156.0.8078.47"
+  },
+  "channels": [
+    "Release (0.x beta)"
+  ],
+  "updateCadence": "Frequent 0.x releases (0.19.4 and 0.20.1 in October 2026), tracks Chromium within about a week",
+  "website": "https://helium.computer",
+  "tags": [
+    "privacy",
+    "ungoogled",
+    "ublock-origin",
+    "open-source",
+    "desktop"
+  ],
+  "pitch": "Ungoogled Chromium with uBlock Origin on by default and a clean UI.",
+  "summary": "A young, open-source desktop browser built on ungoogled-chromium that ships uBlock Origin and community filter lists enabled by default. Still beta, with no Widevine DRM and early sync work.",
+  "bestFor": [
+    "Chromium users who want Google removed and blocking on by default",
+    "Open-source minded users on Windows, macOS or Linux",
+    "People coming from Arc-style layouts who want something simple"
+  ],
+  "notFor": [
+    "Netflix/Disney+ viewers (no Widevine reported)",
+    "Users needing mobile versions or mature sync",
+    "Anyone who needs a stable, long-established project"
+  ],
+  "pros": [
+    {
+      "title": "uBlock Origin built in",
+      "detail": "Ships uBO with community filter lists enabled out of the box."
+    },
+    {
+      "title": "Ungoogled base",
+      "detail": "Removes Google services and tracking from Chromium."
+    },
+    {
+      "title": "Open source",
+      "detail": "GPL-3.0 code; repository passed 20k GitHub stars in Sept 2026."
+    },
+    {
+      "title": "Fast Chromium updates",
+      "detail": "Version 0.20.1 moved to Chromium 156.0.8078.47 within days."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Beta quality",
+      "detail": "Version numbers are 0.x and many issues are open."
+    },
+    {
+      "title": "No DRM",
+      "detail": "A September review reported no Widevine, so no Netflix-style streaming."
+    },
+    {
+      "title": "Desktop only",
+      "detail": "No Android or iOS builds."
+    },
+    {
+      "title": "Sync immature",
+      "detail": "Vault/private sync work only recently appeared in changelogs."
+    }
+  ],
+  "signatureFeatures": [
+    "uBlock Origin enabled by default",
+    "ungoogled-chromium base",
+    "Zen mode and sidebar tab layouts",
+    "Open-source GPL-3.0"
+  ],
+  "faq": [
+    {
+      "q": "Is Helium ready for daily use?",
+      "a": "It is still labelled beta (0.20.1) with many open issues, but is updated frequently."
+    },
+    {
+      "q": "Does Helium support Netflix?",
+      "a": "A September 2026 review said it lacks Widevine, so DRM streaming was not supported."
+    },
+    {
+      "q": "Who makes Helium?",
+      "a": "imput (imputnet), the small team behind the cobalt media downloader."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "Helium launched by imput"
+    },
+    {
+      "date": "2026-09",
+      "event": "GitHub project passes 20,000 stars"
+    },
+    {
+      "date": "2026-10",
+      "event": "0.19.4 adds proxy flags and vault syncing; 0.20.1 updates to Chromium 156"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "history"
+    ],
+    "note": "Imports from other Chromium browsers; password/sync support still limited."
+  },
+  "alternatives": [
+    "ungoogled-chromium",
+    "brave",
+    "librewolf",
+    "thorium"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "local-only",
+      "items": [],
+      "crossOs": false,
+      "note": "No mature sync; private sync repository/vault in early development"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Local only; one review noted no password manager"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Bundles uBlock Origin; general MV2 not supported by Chromium 156 (unverified how uBO is shipped)",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Ungoogled, uBO on, no Google services",
+      "telemetry": "No telemetry",
+      "jurisdiction": "Unknown"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Privacy-oriented search (unverified exact default)",
+    "telemetry": "None",
+    "drm": "No Widevine",
+    "codecs": "Chromium codecs minus proprietary ones (unverified)",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchSpeed": "Within about a week of Chromium",
+    "languages": "English-focused (unverified)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "beta",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "github",
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "beta",
+      "minOs": "macOS 13 (unverified)",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "github",
+        "homebrew"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "beta",
+      "minOs": "64-bit Linux",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "github",
+        "aur",
+        "flathub"
+      ],
+      "notes": [
+        "Package availability partly unverified"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://github.com/imputnet/helium/releases",
+      "title": "imputnet/helium releases",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://releasebot.io/updates/imputnet/helium",
+      "title": "Releasebot: Helium updates",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://privacytools.io/app/helium",
+      "title": "PrivacyTools: Helium review",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://privacygear.nl/en/reviews/helium-browser-review/",
+      "title": "PrivacyGear: Helium review",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://pasqualepillitteri.it/en/news/14572/helium-browser-chromium-without-google",
+      "title": "Helium: Chromium without Google",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "HQ/jurisdiction",
+    "Default search engine",
+    "How uBlock Origin MV2 is provided on Chromium 156",
+    "Linux package channels",
+    "Current DRM status after Sept 2026"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      8
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      8
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "yes",
+      9,
+      "uBlock Origin by default"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      9
+    ],
+    "customFilterLists": [
+      "yes",
+      9
+    ],
+    "youtubeAds": [
+      "yes",
+      8
+    ],
+    "cookieBanners": [
+      "yes",
+      7,
+      "Via filter lists"
+    ],
+    "verticalTabs": [
+      "yes",
+      7
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      5
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      3
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      5,
+      "Via workaround"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      5,
+      "Bundled uBO"
+    ],
+    "uboFull": [
+      "yes",
+      9
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "partial",
+      3
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      3
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      8,
+      "Ungoogled plus uBO on by default",
+      "documented"
+    ],
+    "blocking": [
+      9,
+      "uBlock Origin default",
+      "documented"
+    ],
+    "fingerprinting": [
+      3,
+      "No special resistance",
+      "editorial"
+    ],
+    "securityHardening": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "patchSpeed": [
+      8,
+      "Chromium 156 within days",
+      "documented"
+    ],
+    "telemetry": [
+      9.5,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "media": [
+      5,
+      "No Widevine reported",
+      "documented"
+    ],
+    "translation": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extensions": [
+      6,
+      "MV3 plus bundled uBO",
+      "documented"
+    ],
+    "sync": [
+      1.5,
+      "No mature sync",
+      "documented"
+    ],
+    "passwords": [
+      2.5,
+      "Local only",
+      "documented"
+    ],
+    "mobileApps": [
+      0,
+      "Desktop only",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      9,
+      "GPL-3.0",
+      "documented"
+    ],
+    "businessTrust": [
+      8,
+      "Donation funded, open source",
+      "editorial"
+    ],
+    "longevity": [
+      5,
+      "Young beta project",
+      "editorial"
+    ],
+    "ai": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Simple UI but beta",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

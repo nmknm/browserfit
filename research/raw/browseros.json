@@ -1,0 +1,809 @@
+{
+  "id": "browseros",
+  "name": "BrowserOS",
+  "aliases": [
+    "BrowserOS neo",
+    "browseros-neo"
+  ],
+  "group": "ai",
+  "developer": "Felafax, Inc. (BrowserOS)",
+  "hq": "United States",
+  "businessModel": "Open source (AGPL-3.0); BYO API keys or local models; monetisation not documented",
+  "engine": "blink",
+  "basedOn": "Chromium (with some ungoogled-chromium patches)",
+  "license": "AGPL-3.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2025,
+  "status": "active",
+  "statusNote": "Main browser plus \"BrowserOS neo\" agent-driven secondary browser",
+  "version": {
+    "current": "neo 0.51.x (per commit notes; unverified)",
+    "date": "2026-10-28",
+    "upstream": "Chromium"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Very frequent component releases on GitHub (server, extension, neo)",
+  "website": "https://www.browseros.com",
+  "tags": [
+    "ai",
+    "agentic",
+    "open-source",
+    "chromium",
+    "mcp",
+    "local-ai"
+  ],
+  "pitch": "Open-source Chromium fork for agents, with your own keys or local models.",
+  "summary": "AGPL-3.0 agentic Chromium fork for Mac, Windows and Linux. Run agents with your own API keys or local models (Ollama/LM Studio), or use neo as an agent-driven browser connected via MCP to Claude Code, Codex and Cursor.",
+  "bestFor": [
+    "Developers who want agents controlling a real logged-in browser",
+    "Users wanting open-source AI browsing and BYO keys",
+    "People running local models"
+  ],
+  "notFor": [
+    "People wanting a polished consumer assistant",
+    "Mobile users",
+    "Users expecting built-in sync or password manager"
+  ],
+  "pros": [
+    {
+      "title": "Open source",
+      "detail": "AGPL-3.0 with a very active GitHub repo (about 14k stars)."
+    },
+    {
+      "title": "Bring your own model",
+      "detail": "Works with API keys or local models via Ollama and LM Studio."
+    },
+    {
+      "title": "MCP integration",
+      "detail": "neo connects one-click to Claude Code, Codex, Cursor, VS Code and more."
+    },
+    {
+      "title": "Linux support",
+      "detail": "AppImage and deb builds, rare among AI browsers."
+    },
+    {
+      "title": "Privacy transparency",
+      "detail": "Neo keeps sessions locally and says it never sends URLs, prompts or screenshots; telemetry has one off toggle."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Local models are weak for agents",
+      "detail": "Docs warn local models are not yet strong enough for Agent Mode."
+    },
+    {
+      "title": "No sync or password manager documented",
+      "detail": "Only one-time Chrome import is mentioned."
+    },
+    {
+      "title": "No mobile apps",
+      "detail": "Desktop only."
+    },
+    {
+      "title": "Rapid, fragmented releases",
+      "detail": "Component-based tags make versions hard to track; AGPL may deter some."
+    }
+  ],
+  "signatureFeatures": [
+    "Agent Mode",
+    "BrowserOS neo",
+    "MCP servers",
+    "Local models via Ollama",
+    "Chrome extension compatibility"
+  ],
+  "faq": [
+    {
+      "q": "Is BrowserOS free?",
+      "a": "Yes, open source under AGPL-3.0; you supply API keys or run local models."
+    },
+    {
+      "q": "Does it support Chrome extensions?",
+      "a": "Yes, docs say Chrome extensions work as it is a Chromium fork; MV2 status is not documented."
+    },
+    {
+      "q": "What is neo?",
+      "a": "A secondary browser built for AI agents that runs alongside Chrome and imports your logins and extensions."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "BrowserOS open-source agentic browser appears on GitHub (date unverified)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Neo redesign and onboarding work; repo updated Oct 28"
+    },
+    {
+      "date": "2026-10",
+      "event": "Repo at about 14k GitHub stars under AGPL-3.0"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "extensions"
+    ],
+    "note": "One-click import of logins, bookmarks and extensions from Chrome."
+  },
+  "alternatives": [
+    "sigma-ai",
+    "comet",
+    "opera-neon",
+    "aside"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Not documented"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Only Chrome import documented"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "Not documented; assume MV3 like upstream (unverified)",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "none",
+      "note": "BYO keys or local; no vendor AI fee"
+    },
+    "privacy": {
+      "defaults": "Browsing data stays on device unless user chooses cloud models; ungoogled patches",
+      "telemetry": "Anonymous usage events with a single opt-out toggle",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Anonymous agent-connect/version/OS events; opt-out toggle",
+    "drm": "Unverified",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox",
+    "patchLag": "Not measured",
+    "languages": "English (zh-CN community patch exists)"
+  },
+  "platforms": {
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 13",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew",
+        "github"
+      ],
+      "notes": [
+        "brew install --cask browseros-neo"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Installer EXE from CDN"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "deb",
+        "official-installer"
+      ],
+      "notes": [
+        "AppImage and DEB, x64 only for neo"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://github.com/browseros-ai/BrowserOS",
+      "title": "BrowserOS GitHub repository",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/browseros-ai/BrowserOS/releases",
+      "title": "BrowserOS releases",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://docs.browseros.com/browseros",
+      "title": "BrowserOS docs",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://flaviocopes.com/alternative-browsers/",
+      "title": "Chrome Alternatives in 2026 - flaviocopes.com",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Current stable version (Releases page shows component tags)",
+    "MV2/uBlock Origin support",
+    "Built-in ad blocker",
+    "Sync and password manager",
+    "Founding date and funding"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "ungoogled patches"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7,
+      "Single toggle for neo"
+    ],
+    "privateHardening": [
+      "partial",
+      5,
+      ""
+    ],
+    "adBlocker": [
+      "extension",
+      3,
+      "Only MV3 blockers such as uBO Lite"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      "Chromium tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "partial",
+      6,
+      "Address bar doubles as AI prompt"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "yes",
+      8,
+      "Chromium-based; installs MV3 extensions"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "MV3"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      8,
+      "Chrome one-click"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      8,
+      "Chat Mode"
+    ],
+    "aiSummarizer": [
+      "yes",
+      8,
+      ""
+    ],
+    "agenticBrowsing": [
+      "yes",
+      8.5,
+      "Agent Mode, neo parallel tabs"
+    ],
+    "localAi": [
+      "yes",
+      7,
+      "Ollama / LM Studio for chat; weak for agents"
+    ],
+    "aiKillSwitch": [
+      "partial",
+      4,
+      "Agent is opt-in via keys; no single switch documented"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Chromium cold start, heavier than plain Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus AI layer; RAM-heavy",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      3.5,
+      "Chromium plus local models need strong hardware",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6,
+      "Local data, ungoogled patches, BYO keys",
+      "editorial"
+    ],
+    "blocking": [
+      3.5,
+      "No built-in blocker documented",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2.5,
+      "No documented resistance",
+      "editorial"
+    ],
+    "securityHardening": [
+      7.5,
+      "Chromium sandbox; agent injection risk remains",
+      "editorial"
+    ],
+    "patchSpeed": [
+      6.5,
+      "Small team tracking Chromium; lag unmeasured",
+      "editorial"
+    ],
+    "telemetry": [
+      6.5,
+      "Anonymous events, single opt-out, no URLs sent",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5.5,
+      "Chromium flags, MCP and key settings",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab groups and search; no workspaces documented",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      7.5,
+      "AI sidebar, page chat and summaries",
+      "documented"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      6,
+      "MCP servers, skills, local-model support",
+      "editorial"
+    ],
+    "extensions": [
+      7,
+      "Chrome extensions work; MV3 only (unverified)",
+      "editorial"
+    ],
+    "sync": [
+      2,
+      "No sync documented",
+      "editorial"
+    ],
+    "passwords": [
+      3,
+      "Only Chrome import documented",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile apps",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "documented"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      8.5,
+      "AGPL-3.0 on GitHub, Chromium-fork patches",
+      "documented"
+    ],
+    "businessTrust": [
+      7,
+      "Open code, transparent telemetry, small company",
+      "editorial"
+    ],
+    "longevity": [
+      6.5,
+      "Very active repo, small team",
+      "editorial"
+    ],
+    "ai": [
+      8.5,
+      "Agent Mode, MCP and local model support",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Needs API keys or local setup for AI",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

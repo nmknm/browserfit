@@ -1,0 +1,781 @@
+{
+  "id": "orion",
+  "name": "Orion",
+  "aliases": [
+    "Orion Browser",
+    "Orion by Kagi"
+  ],
+  "group": "power",
+  "developer": "Kagi Inc.",
+  "hq": "United States",
+  "businessModel": "Funded by Kagi search subscribers; free browser with optional Orion+ ($5/mo, $50/yr, $150 lifetime)",
+  "engine": "webkit",
+  "basedOn": "WebKit",
+  "license": "Proprietary (closed source; Linux/Windows code to be open-sourced)",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Orion+ $5/month, $50/year or $150 lifetime",
+  "releaseYear": 2019,
+  "status": "active",
+  "statusNote": "Kagi ended its own development of the Linux (beta) and Windows (never released) versions on 2026-10-02 and will open-source them; macOS and iOS continue",
+  "version": {
+    "current": "1.1.3 macOS / 1.5.5 iOS",
+    "date": "2026-10-01",
+    "upstream": "WebKit"
+  },
+  "channels": [
+    "Release",
+    "TestFlight beta (Orion+)"
+  ],
+  "updateCadence": "iOS roughly every 2-4 weeks (1.5.4 Sep 17, 1.5.5 Oct 1, 2026); macOS point releases",
+  "website": "https://orionbrowser.com",
+  "tags": [
+    "webkit",
+    "privacy",
+    "extensions",
+    "kagi",
+    "apple"
+  ],
+  "pitch": "A WebKit browser for Mac and iPhone that runs Chrome and Firefox extensions.",
+  "summary": "Kagi's zero-telemetry WebKit browser for macOS and iOS: runs Safari, Chrome and Firefox extensions (~70% of WebExtensions API), built-in ad blocking and Kagi Search. Linux and Windows efforts were stopped in Oct 2026.",
+  "bestFor": [
+    "Mac/iPhone users who want extensions beyond Safari",
+    "Kagi Search subscribers",
+    "People wanting a no-telemetry Apple-native browser"
+  ],
+  "notFor": [
+    "Windows or Linux users (Kagi stopped development)",
+    "People wanting open source on Apple platforms",
+    "Those needing flawless extension compatibility"
+  ],
+  "pros": [
+    {
+      "title": "Chrome/Firefox extensions on WebKit",
+      "detail": "Kagi claims 150,000+ extensions via roughly 70% of the WebExtensions API, including on iOS."
+    },
+    {
+      "title": "No telemetry claim",
+      "detail": "Zero telemetry, built-in ad/tracker blocking."
+    },
+    {
+      "title": "Native and light",
+      "detail": "WebKit gives Safari-class efficiency."
+    },
+    {
+      "title": "Active iOS cadence",
+      "detail": "iOS 1.5.5 shipped Oct 1, 2026."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Linux/Windows dropped",
+      "detail": "Kagi ended development on Oct 2, 2026; community handoff uncertain."
+    },
+    {
+      "title": "Closed source on Apple",
+      "detail": "Telemetry claims cannot be audited."
+    },
+    {
+      "title": "Extension gaps",
+      "detail": "Complex extensions may break."
+    },
+    {
+      "title": "Small team",
+      "detail": "Funded by Kagi subscribers only."
+    }
+  ],
+  "signatureFeatures": [
+    "Chrome/Firefox/Safari extension support",
+    "Kagi Search integration",
+    "Built-in ad blocking",
+    "Vertical tabs and workspaces",
+    "Zero-telemetry claim"
+  ],
+  "faq": [
+    {
+      "q": "What happened to Orion for Linux and Windows?",
+      "a": "Kagi ended its development on 2026-10-02; the Linux beta keeps working without updates and the source is to be open-sourced for the community."
+    },
+    {
+      "q": "Is Orion free?",
+      "a": "Yes; Orion+ is an optional paid tier ($5/mo, $50/yr, $150 lifetime)."
+    },
+    {
+      "q": "Does Orion use Chromium?",
+      "a": "No. It is WebKit-based on macOS and iOS (WebKitGTK on the Linux beta)."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "Orion begins as a Kagi project"
+    },
+    {
+      "date": "2025-11",
+      "event": "Orion 1.0 for macOS leaves beta"
+    },
+    {
+      "date": "2026-01",
+      "event": "Linux alpha begins"
+    },
+    {
+      "date": "2026-08",
+      "event": "Linux officially enters beta"
+    },
+    {
+      "date": "2026-10",
+      "event": "Kagi ends Linux/Windows development (Oct 2) and iOS 1.5.5 ships (Oct 1)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Imports from Safari, Chrome and Firefox."
+  },
+  "alternatives": [
+    "safari",
+    "arc",
+    "firefox",
+    "brave"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "tabs",
+        "history",
+        "settings"
+      ],
+      "crossOs": false,
+      "note": "Orion sync across Apple devices (details unverified)"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Uses Apple Passwords / extensions such as Bitwarden (Bitwarden featured on iOS since 1.4.21)"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Runs MV2 and MV3 WebExtensions subset on WebKit",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "chrome-web-store"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No built-in assistant; Kagi Search/Assistant integration optional (unverified)"
+    },
+    "privacy": {
+      "defaults": "Ad/tracker blocking, no telemetry claimed",
+      "telemetry": "None claimed (not auditable)",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Kagi Search (configurable)",
+    "telemetry": "Zero telemetry (claimed)",
+    "drm": "FairPlay (WebKit)",
+    "codecs": "WebKit/system",
+    "sandbox": "WebKit + Apple sandbox",
+    "patchSpeed": "Depends on WebKit/OS updates",
+    "languages": "Multiple"
+  },
+  "platforms": {
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 26 (per MacUpdate; unverified)",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Orion 1.0 Nov 25, 2025; 1.1.2 Aug 2026; listing shows 1.1.3"
+      ],
+      "highlights": [
+        "Extensions from three stores"
+      ],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS (unverified)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "iOS/iPadOS 1.5.5 Oct 1, 2026",
+        "Extensions supported on iOS"
+      ],
+      "highlights": [
+        "Orion+ purchase in-app since 1.5.3"
+      ],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "discontinued",
+      "minOs": "WebKitGTK Flatpak",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "flathub"
+      ],
+      "notes": [
+        "Public beta; Kagi stopped updates after Oct 2, 2026; to be open-sourced"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "patchSpeed": -4
+      }
+    },
+    "windows": {
+      "status": "discontinued",
+      "minOs": "n/a (never released)",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Planned late 2026; cancelled Oct 2, 2026; code to be open-sourced"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://blog.kagi.com/update-orion-linux-windows",
+      "title": "Kagi Blog: An Update on Orion for Linux and Windows",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://alternativeto.net/news/2026/10/kagi-ends-development-of-orion-for-linux-and-windows-open-sources-code-to-community/",
+      "title": "AlternativeTo: Kagi ends Orion Linux/Windows",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blog.kagi.com/orion",
+      "title": "Kagi Blog: Orion 1.0",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://orionbrowser.com/updates/orion-iOS-release-notes.html",
+      "title": "Orion iOS release notes",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.macrumors.com/2025/11/27/kagi-orion-webkit-based-privacy-browser-mac/",
+      "title": "MacRumors: Orion WebKit browser for Mac",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "macOS minimum OS (26 per MacUpdate)",
+    "Current macOS version (1.1.3 vs 1.1.2)",
+    "Sync details",
+    "Kagi AI integration",
+    "Whether any community fork takes over Linux/Windows"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      8
+    ],
+    "fingerprintProtection": [
+      "yes",
+      8
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "partial",
+      5
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "paid",
+      7
+    ],
+    "cookieIsolation": [
+      "yes",
+      8
+    ],
+    "queryStripping": [
+      "yes",
+      8
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "yes",
+      8
+    ],
+    "adBlocker": [
+      "yes",
+      8,
+      "Built-in ad blocker"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      6
+    ],
+    "customFilterLists": [
+      "extension",
+      5
+    ],
+    "youtubeAds": [
+      "extension",
+      6
+    ],
+    "cookieBanners": [
+      "extension",
+      5
+    ],
+    "verticalTabs": [
+      "yes",
+      8
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      8
+    ],
+    "splitView": [
+      "partial",
+      3
+    ],
+    "tabSleeping": [
+      "partial",
+      5
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      9
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "yes",
+      6
+    ],
+    "pip": [
+      "yes",
+      9
+    ],
+    "screenshots": [
+      "partial",
+      4
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "yes",
+      8
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      6,
+      "Chrome store extensions on WebKit"
+    ],
+    "firefoxAddons": [
+      "partial",
+      6,
+      "Firefox add-ons supported"
+    ],
+    "mv2Support": [
+      "partial",
+      6
+    ],
+    "uboFull": [
+      "partial",
+      6,
+      "uBO works via compatibility layer (unverified)"
+    ],
+    "mobileExtensions": [
+      "yes",
+      7,
+      "iOS extensions"
+    ],
+    "userscripts": [
+      "extension",
+      7
+    ],
+    "syncBookmarks": [
+      "yes",
+      7
+    ],
+    "syncPasswords": [
+      "partial",
+      5
+    ],
+    "syncTabs": [
+      "yes",
+      7
+    ],
+    "e2eeSync": [
+      "partial",
+      4
+    ],
+    "profiles": [
+      "yes",
+      7
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      "Relies on Apple Passwords"
+    ],
+    "passkeys": [
+      "yes",
+      10
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "yes",
+      9
+    ],
+    "hevc": [
+      "yes",
+      10
+    ],
+    "av1": [
+      "partial",
+      7
+    ],
+    "hwDecode": [
+      "yes",
+      10
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No built-in AI"
+    ],
+    "translation": [
+      "yes",
+      8
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      6
+    ],
+    "enterprisePolicies": [
+      "yes",
+      7
+    ],
+    "kioskMode": [
+      "partial",
+      4
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      8,
+      "Kagi default, many engines"
+    ],
+    "devtools": [
+      "yes",
+      8
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      9,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      8.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      8.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      9,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      9.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      6,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      7,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      9,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      8,
+      "Ad/tracker blocking and no telemetry",
+      "documented"
+    ],
+    "blocking": [
+      8,
+      "Built-in blocker + extensions",
+      "documented"
+    ],
+    "fingerprinting": [
+      7.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "securityHardening": [
+      8.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "patchSpeed": [
+      7,
+      "Follows WebKit/OS",
+      "editorial"
+    ],
+    "telemetry": [
+      9,
+      "Zero telemetry claim, unauditable",
+      "editorial"
+    ],
+    "lookCustom": [
+      6,
+      "Themes and layout options",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6.5,
+      "Shortcuts and gestures",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5.5,
+      "More settings than Safari",
+      "editorial"
+    ],
+    "tabManagement": [
+      8,
+      "Vertical tabs, workspaces",
+      "documented"
+    ],
+    "searchFreedom": [
+      9,
+      "Any engine, Kagi default",
+      "documented"
+    ],
+    "downloads": [
+      6,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      7,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "media": [
+      9.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "translation": [
+      7.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      5.5,
+      "Kagi integration",
+      "editorial"
+    ],
+    "extensions": [
+      6.5,
+      "Multi-store but ~70% API coverage",
+      "documented"
+    ],
+    "sync": [
+      5,
+      "Apple platforms only",
+      "editorial"
+    ],
+    "passwords": [
+      5,
+      "No own manager",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "iOS app with extensions",
+      "documented"
+    ],
+    "webCompat": [
+      8.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      7.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      9,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Closed source (Apple builds)",
+      "documented"
+    ],
+    "businessTrust": [
+      8,
+      "User-funded Kagi",
+      "editorial"
+    ],
+    "longevity": [
+      5.5,
+      "Small team; cross-platform dropped",
+      "documented"
+    ],
+    "ai": [
+      1,
+      "No built-in assistant",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Safari-like",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

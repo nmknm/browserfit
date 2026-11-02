@@ -1,0 +1,822 @@
+{
+  "id": "dia",
+  "name": "Dia",
+  "aliases": [
+    "Dia Browser",
+    "Dia by The Browser Company"
+  ],
+  "group": "ai",
+  "developer": "The Browser Company of New York (Atlassian)",
+  "hq": "United States",
+  "businessModel": "Freemium: capped free AI usage, Dia Pro subscription; owned by Atlassian since Oct 2025",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Dia Pro $20/mo (launched Aug 2025; unlimited chat and skills, personalized memory). Business tier teased, no price.",
+  "releaseYear": 2025,
+  "status": "active",
+  "statusNote": "macOS only (Apple Silicon, macOS 14+); Windows is waitlist-only",
+  "version": {
+    "current": "1.33.0",
+    "date": "2026-05-28",
+    "upstream": "Chromium (version not published)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Frequent feature releases (about 1.x every 1-3 weeks in 2026); tracks Chromium",
+  "website": "https://www.diabrowser.com",
+  "tags": [
+    "ai",
+    "macos",
+    "chromium",
+    "assistant",
+    "atlassian"
+  ],
+  "pitch": "Chrome-compatible Mac browser with an AI chat box built into the address bar.",
+  "summary": "Chromium browser from the makers of Arc, now Atlassian-owned. AI chat with your tabs, Skills and memory; Mac-only on Apple Silicon, with a capped free tier and a $20/mo Pro plan.",
+  "bestFor": [
+    "Mac users who want AI chat over their open tabs",
+    "Chrome users who want to keep their extensions",
+    "Atlassian/Notion/Gmail-heavy workflows (Live Groups)"
+  ],
+  "notFor": [
+    "Windows, Linux or mobile users",
+    "Intel Mac owners",
+    "People who want a privacy-first browser"
+  ],
+  "pros": [
+    {
+      "title": "AI built into the address bar",
+      "detail": "Chat with tabs, summarize and run Skills without opening a separate sidebar."
+    },
+    {
+      "title": "Chrome extensions work",
+      "detail": "Chromium base means Chrome Web Store extensions install (MV3 only)."
+    },
+    {
+      "title": "Active release cadence",
+      "detail": "v1.33.0 shipped May 28, 2026 after dozens of 1.x releases in a year."
+    },
+    {
+      "title": "Free tier available",
+      "detail": "Basic AI features are free with usage caps; Pro lifts limits for $20/mo."
+    },
+    {
+      "title": "Backed by Atlassian",
+      "detail": "Acquired for a reported $610M, completed Oct 21, 2025; deeper Confluence/Jira ties."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Mac only",
+      "detail": "Requires macOS 14+ on Apple Silicon; Windows is still a waitlist with no date, no mobile app."
+    },
+    {
+      "title": "Cloud AI by default",
+      "detail": "Tab content goes to model providers; memory is a Pro feature with unclear data handling."
+    },
+    {
+      "title": "Limited agent depth",
+      "detail": "Skills and chat dominate; fewer autonomous multi-step agents than Comet or Opera Neon."
+    },
+    {
+      "title": "Parent company churn",
+      "detail": "Arc is being sunset in favor of Dia, so priorities shift with Atlassian strategy."
+    }
+  ],
+  "signatureFeatures": [
+    "AI chat in the address bar",
+    "Skills",
+    "Personalized memory (Pro)",
+    "Live Groups for Gmail/Notion/Confluence"
+  ],
+  "faq": [
+    {
+      "q": "Is Dia free?",
+      "a": "Yes with usage caps; Dia Pro at $20/mo removes limits and adds memory."
+    },
+    {
+      "q": "Is there a Windows version?",
+      "a": "Not publicly. As of mid-2026 Windows is waitlist-only with no release date."
+    },
+    {
+      "q": "Does Dia support Chrome extensions?",
+      "a": "Yes, as a Chromium browser; Manifest V2 extensions are being phased out in favor of MV3."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-06",
+      "event": "Dia beta opens (The Browser Company)"
+    },
+    {
+      "date": "2025-08",
+      "event": "Dia Pro subscription launched at $20/mo"
+    },
+    {
+      "date": "2025-10",
+      "event": "Atlassian completes acquisition of The Browser Company"
+    },
+    {
+      "date": "2026-01",
+      "event": "v1.16.0 announces move from Manifest V2 to V3"
+    },
+    {
+      "date": "2026-05",
+      "event": "v1.33.0 released"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Imports from Chrome and other major browsers (details unverified)."
+  },
+  "alternatives": [
+    "comet",
+    "opera-neon",
+    "chatgpt-atlas",
+    "thravik",
+    "norton-neo"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "account",
+      "items": [
+        "tabs",
+        "settings",
+        "memory",
+        "shortcuts",
+        "profiles"
+      ],
+      "crossOs": false,
+      "note": "Sync shipped in v1.26.0; Mac-only so cross-OS not applicable"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Not documented; likely relies on Chromium/third-party managers"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "v1.16.0 announced the move to Manifest V3; Chrome Web Store removed MV2 on Aug 31, 2026",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "on-by-default",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Free tier capped; Pro unlimited. Agentic autonomy unverified."
+    },
+    "privacy": {
+      "defaults": "Cloud AI processes tab context; no built-in blocking beyond Chromium",
+      "telemetry": "Not documented in sources reviewed",
+      "jurisdiction": "US (Atlassian: Australia/US)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (unverified)",
+    "telemetry": "Not documented",
+    "drm": "Unverified",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Not independently measured",
+    "languages": "English-first (unverified)"
+  },
+  "platforms": {
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 14",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Apple Silicon only; Intel Macs unsupported",
+        "No Homebrew cask; direct download"
+      ],
+      "highlights": [
+        "Only platform with a public release"
+      ],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "waitlist",
+      "minOs": "",
+      "arch": [
+        "x64"
+      ],
+      "stores": [],
+      "notes": [
+        "In development, waitlist via The Browser Company page; no release date as of mid-2026"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "none",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "No standalone app"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://supasidebar.com/blog/dia-browser-status-tracker",
+      "title": "Dia Browser Status Tracker (SupaSidebar; vendor-adjacent, release facts cross-checked)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dia_(web_browser)",
+      "title": "Dia (web browser) - Wikipedia (search snippet)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://composite.com/blog/dia-browser-reviews-pricing-alternatives",
+      "title": "Dia Browser Reviews & Alternatives - Composite",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://makerstack.co/reviews/dia-review/",
+      "title": "Dia Review (2026) - MakerStack",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://flaviocopes.com/alternative-browsers/",
+      "title": "Chrome Alternatives in 2026 - flaviocopes.com",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Current version after 1.33.0 (tracker dated June 6, 2026)",
+    "Chromium version",
+    "Built-in password manager and passkey support",
+    "Degree of agentic autonomy",
+    "Data retention for Pro memory"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "extension",
+      3,
+      "Only MV3 blockers such as uBO Lite"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "yes",
+      8,
+      "Tab groups, auto emojis, groups for meetings"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "partial",
+      5,
+      "Profiles; unverified"
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      7,
+      ""
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "partial",
+      6,
+      "AI side panel"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "yes",
+      9,
+      "AI-enabled address bar"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "yes",
+      8,
+      "Chromium-based; installs MV3 extensions"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "MV3 userscript managers"
+    ],
+    "syncBookmarks": [
+      "partial",
+      5,
+      "Settings/tabs sync per release notes; bookmarks unverified"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "yes",
+      6,
+      "Sync v1.26.0"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      7,
+      "Chrome import"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      9,
+      ""
+    ],
+    "aiSummarizer": [
+      "yes",
+      9,
+      ""
+    ],
+    "agenticBrowsing": [
+      "partial",
+      6,
+      "Skills and Live Groups; autonomy limited/unverified"
+    ],
+    "localAi": [
+      "no",
+      0,
+      "Cloud models"
+    ],
+    "aiKillSwitch": [
+      "partial",
+      3,
+      "Not a documented single switch; AI is central"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      "Business tier planned"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7.5,
+      "Native-feeling Mac app; v1.24 focused on speed",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus AI layer; RAM-heavy",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs modern hardware; AI features add load",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3,
+      "AI features send page context to cloud; little blocking by default",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Only MV3 blockers such as uBO Lite are available",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      8.5,
+      "Chromium sandbox and site isolation; agent injection risk",
+      "documented"
+    ],
+    "patchSpeed": [
+      7,
+      "Chromium version not published; lag unverified",
+      "editorial"
+    ],
+    "telemetry": [
+      3,
+      "Vendor telemetry; prompts processed in cloud",
+      "editorial"
+    ],
+    "lookCustom": [
+      5,
+      "Clean UI; themes limited",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Tab groups, Live Groups, tab switcher redesign (v1.33)",
+      "documented"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      8,
+      "Address-bar AI, Skills, Live Groups",
+      "documented"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "AI agent and memory; no VPN or wallet",
+      "editorial"
+    ],
+    "extensions": [
+      6.5,
+      "Chrome Web Store but MV3 only since the Aug 2026 MV2 purge",
+      "documented"
+    ],
+    "sync": [
+      5.5,
+      "Account sync of tabs/settings/memory since v1.26",
+      "documented"
+    ],
+    "passwords": [
+      4,
+      "No documented built-in manager",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No iOS/Android app",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "documented"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary layer over Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      5.5,
+      "Atlassian-owned; AI data handling unclear",
+      "editorial"
+    ],
+    "longevity": [
+      7,
+      "Atlassian-backed, frequent releases; Arc churn noted",
+      "editorial"
+    ],
+    "ai": [
+      8.5,
+      "Tab chat, Skills, memory; agent actions limited",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Familiar Chrome-like layout, AI in address bar",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Thravik portal mark</title>
+  <rect width="512" height="512" rx="116" fill="#0d0d0d"/>
+  <g fill="#ff3b12">
+    <path d="M256 58 378 128 342 190 256 140 170 190 134 128Z"/>
+    <path d="m454 256-70 122-62-36 50-86-50-86 62-36Z"/>
+    <path d="m256 454-122-70 36-62 86 50 86-50 36 62Z"/>
+    <path d="m58 256 70-122 62 36-50 86 50 86-62 36Z"/>
+  </g>
+  <path d="m256 202 54 54-54 54-54-54Z" fill="#fff"/>
+</svg>

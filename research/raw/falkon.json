@@ -1,0 +1,759 @@
+{
+  "id": "falkon",
+  "name": "Falkon",
+  "aliases": [
+    "QupZilla"
+  ],
+  "group": "minimal",
+  "developer": "KDE community",
+  "hq": "Germany (KDE e.V.)",
+  "businessModel": "KDE e.V. donations and volunteer work",
+  "engine": "blink",
+  "basedOn": "Qt WebEngine (Chromium)",
+  "license": "GPL-3.0-or-later",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2010,
+  "status": "active",
+  "statusNote": "Maintained in KDE Gear; small team",
+  "version": {
+    "current": "26.08.2",
+    "date": "2026-10-08",
+    "upstream": "Qt WebEngine (Chromium-based)"
+  },
+  "channels": [
+    "KDE Gear stable"
+  ],
+  "updateCadence": "KDE Gear: major releases in April, August, December plus monthly bugfix releases",
+  "website": "https://apps.kde.org/falkon/",
+  "tags": [
+    "kde",
+    "qt",
+    "lightweight",
+    "adblock"
+  ],
+  "pitch": "KDE’s lightweight Qt browser with built-in ad blocking and a speed-dial.",
+  "summary": "Falkon is the KDE project’s Qt WebEngine browser (the former QupZilla). It offers built-in ad blocking, a password manager integration and Python/QML plugins, but ships few headline features and has no extension store or sync.",
+  "bestFor": [
+    "KDE Plasma desktops",
+    "People wanting a simple Chromium-engine browser without Google services",
+    "Light use on Linux or Windows"
+  ],
+  "notFor": [
+    "People who need Chrome/Firefox extensions",
+    "Cross-device sync users",
+    "Anyone who needs fast Chromium patching"
+  ],
+  "pros": [
+    {
+      "title": "Built-in ad blocking",
+      "detail": "ABP-style filter lists included without extensions."
+    },
+    {
+      "title": "KDE integration",
+      "detail": "Uses KDE wallets, themes and dialogs; follows Plasma look."
+    },
+    {
+      "title": "Light and simple",
+      "detail": "Clean interface, speed dial, full-page screenshots."
+    },
+    {
+      "title": "Open and independent",
+      "detail": "GPL-3.0, no telemetry or accounts."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No WebExtensions",
+      "detail": "Plugins are Falkon-specific (Python/QML/C++), so the ecosystem is tiny."
+    },
+    {
+      "title": "No sync",
+      "detail": "No built-in cross-device sync of bookmarks or tabs."
+    },
+    {
+      "title": "Slow patch pipeline",
+      "detail": "Chromium fixes arrive via Qt WebEngine releases and distro packaging."
+    },
+    {
+      "title": "Low development velocity",
+      "detail": "KDE Gear 26.08 changelogs show only maintenance changes for Falkon."
+    }
+  ],
+  "signatureFeatures": [
+    "Built-in AdBlock",
+    "Speed dial",
+    "KDE integration",
+    "Python/QML plugins"
+  ],
+  "faq": [
+    {
+      "q": "Is Falkon based on Chromium?",
+      "a": "Yes, through Qt WebEngine; Falkon itself is a Qt/C++ application."
+    },
+    {
+      "q": "Does Falkon support Chrome extensions?",
+      "a": "No. It has its own plugin system; Chrome Web Store extensions do not install."
+    },
+    {
+      "q": "Is Falkon available on Windows?",
+      "a": "Yes, KDE publishes Windows builds (Microsoft Store/CI), though Linux is the main platform."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2010",
+      "event": "Started as QupZilla"
+    },
+    {
+      "date": "2017",
+      "event": "Renamed Falkon and moved into KDE"
+    },
+    {
+      "date": "2026-04",
+      "event": "KDE Gear 26.04 series (26.04.3 on 2026-06-28)"
+    },
+    {
+      "date": "2026-08",
+      "event": "KDE Gear 26.08.0 released 2026-08-20"
+    },
+    {
+      "date": "2026-10",
+      "event": "26.08.2 bugfix release 2026-10-08"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "history",
+      "passwords"
+    ],
+    "note": "Imports bookmarks from Firefox, Chromium, Opera and others via the bookmark importer."
+  },
+  "alternatives": [
+    "konqueror",
+    "gnome-web",
+    "qutebrowser",
+    "luakit",
+    "otter-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync service"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Autofill with KWallet/GNOME Keyring/own database backends"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "Own plugin API only (no WebExtensions)",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Built-in AdBlock; no telemetry",
+      "telemetry": "None known",
+      "jurisdiction": "Germany (KDE e.V.)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo (configurable)",
+    "telemetry": "None",
+    "drm": "Widevine possible if Qt WebEngine build supports it",
+    "codecs": "Depends on Qt WebEngine build",
+    "sandbox": "Chromium sandbox via Qt WebEngine",
+    "patchLag": "Follows Qt WebEngine and distro updates",
+    "languages": "Many (KDE i18n)"
+  },
+  "platforms": {
+    "linux": {
+      "status": "active",
+      "minOs": "Qt 6 desktop",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "flathub",
+        "snap",
+        "deb",
+        "rpm",
+        "aur"
+      ],
+      "notes": [
+        "Flathub app org.kde.falkon"
+      ],
+      "highlights": [
+        "KDE Plasma integration"
+      ],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10+",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "microsoft-store"
+      ],
+      "notes": [
+        "KDE builds; Wikipedia lists Windows 7+"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://apps.kde.org/falkon/",
+      "title": "Falkon KDE Applications page",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Falkon",
+      "title": "Falkon - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://kde.org/announcements/changelogs/gear/26.08.2/",
+      "title": "KDE Gear 26.08.2 changelog",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://kde.org/announcements/changelogs/gear/26.08.0/",
+      "title": "KDE Gear 26.08.0 changelog",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://flathub.org/apps/org.kde.falkon",
+      "title": "Falkon on Flathub",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Windows distribution channels (Microsoft Store vs CI builds)",
+    "Snap package currency",
+    "Exact default adblock lists"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "AdBlock only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "yes",
+      5,
+      "Private browsing mode"
+    ],
+    "adBlocker": [
+      "yes",
+      6,
+      "Built-in AdBlock with ABP lists"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      5,
+      "Element-hiding rules supported"
+    ],
+    "customFilterLists": [
+      "yes",
+      7,
+      "Add subscriptions in settings"
+    ],
+    "youtubeAds": [
+      "partial",
+      3,
+      "Depends on filter lists"
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "partial",
+      5,
+      "Tab list menu"
+    ],
+    "pinnedTabs": [
+      "yes",
+      6,
+      "Pin tab"
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "yes",
+      6,
+      "Full-page screenshots"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      "Configurable shortcuts"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "partial",
+      3,
+      "Feeds listed by older versions"
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      4,
+      "GreaseMonkey plugin"
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Named profiles"
+    ],
+    "passwordManager": [
+      "yes",
+      5,
+      "Autofill via KWallet/keyring"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      6,
+      "Bookmarks/history importers"
+    ],
+    "widevine": [
+      "partial",
+      4,
+      "Build dependent"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4,
+      "Build dependent"
+    ],
+    "av1": [
+      "partial",
+      5,
+      "Build dependent"
+    ],
+    "hwDecode": [
+      "partial",
+      4,
+      "Platform dependent"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5,
+      "Basic manager"
+    ],
+    "customThemes": [
+      "yes",
+      5,
+      "Themes via Qt/KDE and icon sets"
+    ],
+    "customSearchEngines": [
+      "yes",
+      7,
+      "Search engine manager"
+    ],
+    "devtools": [
+      "yes",
+      8,
+      "Chromium DevTools via Qt WebEngine"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "V8 via Qt WebEngine",
+      "documented"
+    ],
+    "pageLoad": [
+      8,
+      "Blink engine with a light UI",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7.5,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Qt app start plus WebEngine init",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Chromium compositor",
+      "editorial"
+    ],
+    "graphics": [
+      7.5,
+      "GPU support via Qt WebEngine",
+      "editorial"
+    ],
+    "memory": [
+      5.5,
+      "Chromium processes, light UI",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      3.5,
+      "No tab sleeping",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Lighter UI than Chrome but same engine",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Small app, shared Qt WebEngine",
+      "documented"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Built-in AdBlock; Chromium defaults",
+      "editorial"
+    ],
+    "blocking": [
+      6,
+      "ABP lists with element hiding",
+      "editorial"
+    ],
+    "fingerprinting": [
+      3,
+      "Chromium default surface",
+      "editorial"
+    ],
+    "securityHardening": [
+      6.5,
+      "Chromium sandbox; no extra hardening",
+      "editorial"
+    ],
+    "patchSpeed": [
+      6,
+      "Lags via Qt WebEngine release cycle",
+      "editorial"
+    ],
+    "telemetry": [
+      9.5,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      6,
+      "Themes, toolbar layout, KDE style",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6,
+      "Shortcuts and per-site permissions",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6,
+      "Preferences dialog, no flags page",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Tab list and pinning; no groups",
+      "editorial"
+    ],
+    "searchFreedom": [
+      8,
+      "Search engine manager",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Basic download manager",
+      "editorial"
+    ],
+    "productivity": [
+      4.5,
+      "Speed dial, screenshots; no reader",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Codecs/DRM depend on build",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "No translation",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "Speed dial and a few plugins",
+      "editorial"
+    ],
+    "extensions": [
+      3,
+      "Own plugins; no WebExtensions",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "No sync",
+      "editorial"
+    ],
+    "passwords": [
+      5,
+      "Autofill via system wallet",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile app",
+      "documented"
+    ],
+    "webCompat": [
+      8,
+      "Blink via Qt WebEngine",
+      "editorial"
+    ],
+    "devTools": [
+      8,
+      "Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      5.5,
+      "Qt accessibility with some gaps",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "GPL-3.0, KDE development",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Non-profit KDE community",
+      "editorial"
+    ],
+    "longevity": [
+      7,
+      "KDE backed, small contributor base",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Familiar tabbed GUI",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

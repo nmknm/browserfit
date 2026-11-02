@@ -1,0 +1,785 @@
+{
+  "id": "tabbit",
+  "name": "Tabbit",
+  "aliases": [
+    "Tabbit Browser"
+  ],
+  "group": "ai",
+  "developer": "Guangnianzhiwai (GN06), Meituan-linked",
+  "hq": "China",
+  "businessModel": "Free during public beta; future pricing to be announced",
+  "engine": "blink",
+  "basedOn": "Chromium (not stated by vendor; assumed)",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "paidNote": "Beta is free including flagship models; future pricing not announced",
+  "releaseYear": 2026,
+  "status": "beta",
+  "statusNote": "Public beta, global launch Mar 2, 2026",
+  "version": {
+    "current": "Beta (version not published)",
+    "date": "2026-03",
+    "upstream": "Unverified"
+  },
+  "channels": [
+    "Public beta"
+  ],
+  "updateCadence": "Unknown",
+  "website": "https://tabbit.ai",
+  "tags": [
+    "ai",
+    "agentic",
+    "beta",
+    "multi-model",
+    "china"
+  ],
+  "pitch": "Free beta browser with multi-model chat and parallel agent tab groups.",
+  "summary": "AI-native browser from Meituan's GN06 team, in free public beta since Mar 2026 on Windows 10/11 and macOS 12+. Switch between GPT, Claude and Gemini models, run agents in separate tab groups.",
+  "bestFor": [
+    "People who want to try multiple frontier models for free",
+    "Users who like vertical tabs and agent tab groups",
+    "Beta testers"
+  ],
+  "notFor": [
+    "Users wary of Chinese-linked vendors",
+    "People needing long-term pricing clarity",
+    "Mobile or Linux users"
+  ],
+  "pros": [
+    {
+      "title": "Multi-model access",
+      "detail": "International build supports Gemini 3.1 Pro, GPT-5.2 and Claude Sonnet 4.6 in the beta."
+    },
+    {
+      "title": "Parallel agent tabs",
+      "detail": "Agent mode runs multi-step tasks in a separate tab group while you keep browsing."
+    },
+    {
+      "title": "Free beta, no invite",
+      "detail": "No invite code and no API key needed."
+    },
+    {
+      "title": "One-click import",
+      "detail": "Imports from Chrome, Edge or Safari."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Beta software",
+      "detail": "No stable version and pricing is undecided."
+    },
+    {
+      "title": "Opaque privacy",
+      "detail": "Vendor says it will not collect user data; not independently verified."
+    },
+    {
+      "title": "Provenance questions",
+      "detail": "Press noted UI similarity to the open-source ReadFrog; Meituan ties weigh on trust."
+    },
+    {
+      "title": "Desktop only",
+      "detail": "Windows and macOS only."
+    }
+  ],
+  "signatureFeatures": [
+    "Agent mode in tab groups",
+    "Multi-model chat",
+    "Skills",
+    "Vertical tabs"
+  ],
+  "faq": [
+    {
+      "q": "Is Tabbit free?",
+      "a": "Yes during the public beta, flagship models included; future pricing is not announced."
+    },
+    {
+      "q": "Who makes it?",
+      "a": "GN06 (Guangnianzhiwai), a Meituan-linked team historically tied to co-founder Wang Huiwen."
+    },
+    {
+      "q": "Which platforms?",
+      "a": "Windows 10/11 x64 and macOS 12+ (Apple Silicon and Intel)."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-03",
+      "event": "Public beta and global launch (Mar 2)"
+    },
+    {
+      "date": "2026-03",
+      "event": "International build lists Gemini 3.1 Pro, GPT-5.2, Claude Sonnet 4.6"
+    },
+    {
+      "date": "2026-10",
+      "event": "Still listed as public beta by vendor pages"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "One-click import from Chrome, Edge, Safari."
+  },
+  "alternatives": [
+    "comet",
+    "sigma-ai",
+    "aside",
+    "polar"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Not documented"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Not documented"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "Engine not confirmed; assume Chromium without MV2",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "none",
+      "note": "Free in beta; later pricing unknown"
+    },
+    "privacy": {
+      "defaults": "Vendor pledges no data collection and no ads (unverified)",
+      "telemetry": "Unknown",
+      "jurisdiction": "China"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Vendor claims none (unverified)",
+    "drm": "Unverified",
+    "codecs": "Unverified",
+    "sandbox": "Unverified",
+    "patchLag": "Unknown",
+    "languages": "English and Chinese (unverified)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "beta",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Windows 10/11 x64 per vendor page"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "beta",
+      "minOs": "macOS 12",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Intel and Apple Silicon"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://abit.ee/en/soft/browsers/meituan-gn06-tabbit-ai-browser-ai-native-agent-mode-llm-macos-windows-china-en",
+      "title": "Meituan GN06 launches Tabbit public beta - abit.ee",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://news.aibase.com/news/25820",
+      "title": "Tabbit opens public beta - AIbase",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://go.tabbit.ai/browser-downloads",
+      "title": "Tabbit downloads (vendor page, biased)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://go.tabbit.com/ai-agent-browser",
+      "title": "Tabbit AI agent browser (vendor)",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Chromium base (vendor does not say)",
+    "Extensions, sync, password manager",
+    "Plagiarism claims about ReadFrog (one source, not confirmed)",
+    "No-data-collection pledge",
+    "Whether it left beta after Mar 2026"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "partial",
+      3,
+      "Unverified"
+    ],
+    "doh": [
+      "partial",
+      3,
+      "Unverified"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "no",
+      0,
+      "No-ads pledge only"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0,
+      ""
+    ],
+    "customFilterLists": [
+      "no",
+      0,
+      ""
+    ],
+    "youtubeAds": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieBanners": [
+      "no",
+      0,
+      ""
+    ],
+    "verticalTabs": [
+      "yes",
+      7,
+      "Vendor-listed"
+    ],
+    "tabGroups": [
+      "yes",
+      7,
+      "Agent tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "partial",
+      6,
+      "Address bar doubles as AI prompt"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "Via userscript-manager extension (MV3)"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      8,
+      "One-click Chrome/Edge/Safari"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      9,
+      "Multi-model"
+    ],
+    "aiSummarizer": [
+      "yes",
+      8,
+      ""
+    ],
+    "agenticBrowsing": [
+      "yes",
+      8,
+      "Parallel agent tab groups"
+    ],
+    "localAi": [
+      "no",
+      0,
+      "Cloud models"
+    ],
+    "aiKillSwitch": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "partial",
+      5,
+      "Unverified"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "Likely Blink/V8 but engine not confirmed",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Chromium cold start, heavier than plain Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus AI layer; RAM-heavy",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs modern hardware; AI features add load",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3.5,
+      "Cloud AI; no-collection claim unverified",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Only MV3 blockers such as uBO Lite are available",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      6.5,
+      "Beta; engine and patching unverified",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5,
+      "Unknown update cadence",
+      "editorial"
+    ],
+    "telemetry": [
+      3.5,
+      "Vendor claim only, no policy reviewed",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Vertical tabs and agent tab groups",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      8,
+      "Multi-model chat, Skills, agent mode",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "AI agent and memory; no VPN or wallet",
+      "editorial"
+    ],
+    "extensions": [
+      5.5,
+      "Extension support unverified",
+      "editorial"
+    ],
+    "sync": [
+      3,
+      "No sync documented",
+      "editorial"
+    ],
+    "passwords": [
+      4,
+      "Not documented",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile apps",
+      "editorial"
+    ],
+    "webCompat": [
+      8.5,
+      "Engine unconfirmed; assumed Chromium",
+      "editorial"
+    ],
+    "devTools": [
+      7,
+      "Unverified DevTools support",
+      "editorial"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary layer over Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      3.5,
+      "Meituan link, beta pricing unknown, UI-copy allegation",
+      "editorial"
+    ],
+    "longevity": [
+      4.5,
+      "Public beta from a large-company team",
+      "editorial"
+    ],
+    "ai": [
+      8,
+      "Multi-model chat and agent tab groups",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7,
+      "One-click import, free beta",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

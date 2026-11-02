@@ -1,0 +1,776 @@
+{
+  "id": "netsurf",
+  "name": "NetSurf",
+  "aliases": [
+    "NetSurf Web Browser"
+  ],
+  "group": "minimal",
+  "developer": "The NetSurf Developers (volunteers)",
+  "hq": "Decentralised volunteer project (UK origins, unverified)",
+  "businessModel": "None; volunteer-run free software",
+  "engine": "netsurf",
+  "basedOn": "Independent (own layout engine with Hubbub, LibCSS, LibDOM and Duktape)",
+  "license": "GPL-2.0-only",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2007,
+  "status": "active",
+  "statusNote": "Slow stable cadence: 3.11 (Dec 2023) is the latest release, but git commits continue (Oct 2026) and a 3.12 development build exists for AmigaOS.",
+  "version": {
+    "current": "3.11",
+    "date": "2023-12-28",
+    "upstream": "n/a (own engine)"
+  },
+  "channels": [
+    "Stable",
+    "Development / CI autobuilds"
+  ],
+  "updateCadence": "Irregular: 3.9 in Jul 2019, 3.10 in May 2020, 3.11 in Dec 2023",
+  "website": "https://www.netsurf-browser.org",
+  "tags": [
+    "lightweight",
+    "own-engine",
+    "retro",
+    "risc-os",
+    "amiga",
+    "haiku"
+  ],
+  "pitch": "Tiny graphical browser with its own engine, from RISC OS to Linux. Modern sites break.",
+  "summary": "A small, fast, free browser written in C with its own HTML/CSS engine and Duktape JavaScript. It runs on RISC OS, Amiga, Haiku and Linux, but handles only older web standards, so many modern sites fail.",
+  "bestFor": [
+    "Retro and niche systems (RISC OS, AmigaOS, Haiku, Atari)",
+    "Very low-spec machines that cannot run a mainstream browser",
+    "Reading static, standards-based pages with minimal resource use"
+  ],
+  "notFor": [
+    "Anyone who needs modern web apps, video or heavy JavaScript",
+    "People who want extensions, sync or a password manager",
+    "Users who need strong security hardening or fast patches"
+  ],
+  "pros": [
+    {
+      "title": "Very small and quick",
+      "detail": "Its own engine in C: the RISC OS build is 4.0 MB and the AmigaOS build 6.9 MB (per Wikipedia)."
+    },
+    {
+      "title": "Runs where others do not",
+      "detail": "Official ports for RISC OS, AmigaOS 4, Haiku/BeOS, Atari, Linux and Windows; third-party ports to MorphOS, Plan 9 and more."
+    },
+    {
+      "title": "Own standards stack",
+      "detail": "Hubbub HTML5 parser, LibCSS, LibDOM and Duktape JavaScript, with CSS flex added in 3.11."
+    },
+    {
+      "title": "No telemetry",
+      "detail": "A volunteer project with no business model and no data-collection service."
+    },
+    {
+      "title": "Still receiving commits",
+      "detail": "The git mirror shows daily commits in late October 2026, including HSTS test work."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Weak modern-web support",
+      "detail": "Targets HTML 4.01 and CSS 2.1 plus selected newer features; JavaScript is limited, so web apps usually fail."
+    },
+    {
+      "title": "No media or web apps",
+      "detail": "Renders images (PNG, JPEG, GIF, SVG, WebP, JPEG XL) but not modern video or canvas-style apps."
+    },
+    {
+      "title": "Thin security model",
+      "detail": "C codebase without sandboxing or site isolation; fixes depend on volunteers."
+    },
+    {
+      "title": "Slow releases, no polished Windows build",
+      "detail": "Stable releases are years apart, and there is no complete native Windows port (the GTK front end is built for Windows)."
+    }
+  ],
+  "signatureFeatures": [
+    "Own HTML/CSS engine",
+    "Tiny footprint",
+    "RISC OS / Amiga / Haiku ports",
+    "Duktape JavaScript"
+  ],
+  "faq": [
+    {
+      "q": "Does NetSurf support JavaScript?",
+      "a": "Yes, in a limited form via the Duktape engine (since 2015), but coverage is far below mainstream browsers; the project does not publish a compatibility level."
+    },
+    {
+      "q": "Is NetSurf still maintained?",
+      "a": "Yes, slowly. The latest stable release is 3.11 (28 Dec 2023), and the git mirror had commits on 28 Oct 2026."
+    },
+    {
+      "q": "Why does my favourite site not work?",
+      "a": "NetSurf implements HTML 4.01 and CSS 2.1 plus newer pieces like flexbox and media queries; sites built on heavy JavaScript frameworks are out of reach."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2002-04",
+      "event": "Project started"
+    },
+    {
+      "date": "2007-05",
+      "event": "Version 1.0, the first stable release"
+    },
+    {
+      "date": "2015-08",
+      "event": "JavaScript engine switched to Duktape"
+    },
+    {
+      "date": "2020-05",
+      "event": "NetSurf 3.10 released"
+    },
+    {
+      "date": "2023-12",
+      "event": "NetSurf 3.11 released with CSS flex support"
+    },
+    {
+      "date": "2025-09",
+      "event": "3.12 development build 6872 posted for AmigaOS 3 and 4"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No importers from other browsers; bookmarks live in NetSurf's own list, so copy URLs over manually."
+  },
+  "alternatives": [
+    "lynx",
+    "w3m",
+    "pale-moon",
+    "falkon",
+    "ladybird",
+    "dillo"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No password storage found"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension system",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "No telemetry; cookie manager; no tracker blocking",
+      "telemetry": "None",
+      "jurisdiction": "Volunteer project"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Configurable search providers (default not verified)",
+    "telemetry": "None",
+    "drm": "None",
+    "codecs": "Images only (PNG, GIF, JPEG, BMP, SVG, WebP, JPEG XL); no HTML5 media found",
+    "sandbox": "None (plain process)",
+    "patchLag": "Volunteer-driven; no regular security cadence",
+    "languages": "Several (volunteer translations)"
+  },
+  "platforms": {
+    "linux": {
+      "status": "active",
+      "minOs": "Unix-like with GTK (framebuffer and Qt front ends also exist)",
+      "arch": [
+        "x64",
+        "x86",
+        "arm64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "aur",
+        "portable"
+      ],
+      "notes": [
+        "Also official RISC OS, AmigaOS 4, Haiku/BeOS and Atari builds",
+        "Packaged by many distributions; package versions not verified"
+      ],
+      "highlights": [
+        "Framebuffer front end for SDL, X and VNC surfaces"
+      ],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "maintenance",
+      "minOs": "Unverified",
+      "arch": [
+        "x86"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Download page lists Windows, but the project says there is no complete native port and GTK is built for Windows"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "webCompat": -0.5
+      }
+    },
+    "macos": {
+      "status": "unknown",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Wikipedia lists a Mac OS X port from 2.7; the current download page does not offer macOS"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "no",
+      0
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      3,
+      "Cookie manager"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry exists"
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "no",
+      0,
+      "A basic block-ads option was not confirmed"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      3,
+      "Basic save and download handling"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      "Platform themes (for example Amiga) rather than a theme store"
+    ],
+    "customSearchEngines": [
+      "partial",
+      4,
+      "Search providers are selectable"
+    ],
+    "devtools": [
+      "partial",
+      1,
+      "Debug builds and view source only"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      1.5,
+      "Duktape interpreter, no JIT",
+      "editorial"
+    ],
+    "pageLoad": [
+      5,
+      "Fast on simple pages, fails on heavy ones",
+      "editorial"
+    ],
+    "networkSpeed": [
+      4.5,
+      "libcurl-based fetching, no modern HTTP tuning shown",
+      "editorial"
+    ],
+    "startup": [
+      9,
+      "Fast startup is a stated goal",
+      "documented"
+    ],
+    "smoothness": [
+      5.5,
+      "Simple software rendering",
+      "editorial"
+    ],
+    "graphics": [
+      0.5,
+      "No WebGL or canvas apps",
+      "editorial"
+    ],
+    "memory": [
+      9,
+      "Small footprint is a stated goal",
+      "documented"
+    ],
+    "cpu": [
+      8.5,
+      "Light C engine",
+      "editorial"
+    ],
+    "battery": [
+      8.5,
+      "Low CPU use on simple pages",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "Nothing to limit",
+      "editorial"
+    ],
+    "lowEnd": [
+      9.5,
+      "Targets RISC OS, Amiga and other low-end systems",
+      "documented"
+    ],
+    "installSize": [
+      9.5,
+      "About 4-7 MB per build",
+      "documented"
+    ],
+    "privacyDefaults": [
+      6.5,
+      "No telemetry, little scripting; no blocking",
+      "editorial"
+    ],
+    "blocking": [
+      3.5,
+      "No filter lists; limited JS means fewer trackers",
+      "editorial"
+    ],
+    "fingerprinting": [
+      5.5,
+      "Small surface but rare, identifiable user agent",
+      "editorial"
+    ],
+    "securityHardening": [
+      3.5,
+      "No sandbox, C code, volunteer testing",
+      "editorial"
+    ],
+    "patchSpeed": [
+      4,
+      "Volunteer-driven; distro dependent",
+      "editorial"
+    ],
+    "telemetry": [
+      10,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      3,
+      "Platform theming only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Choices dialog and shortcuts",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5,
+      "Choices dialog with many options",
+      "editorial"
+    ],
+    "tabManagement": [
+      3,
+      "Basic tabs",
+      "documented"
+    ],
+    "searchFreedom": [
+      6.5,
+      "Selectable search providers",
+      "editorial"
+    ],
+    "downloads": [
+      3.5,
+      "Basic downloads",
+      "editorial"
+    ],
+    "productivity": [
+      2,
+      "Bookmarks and history only",
+      "editorial"
+    ],
+    "media": [
+      1,
+      "Images only, no modern video",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "No translation",
+      "editorial"
+    ],
+    "extras": [
+      0.5,
+      "Cookie manager only",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extension system",
+      "documented"
+    ],
+    "sync": [
+      0,
+      "No sync",
+      "documented"
+    ],
+    "passwords": [
+      0,
+      "No password manager found",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile app",
+      "documented"
+    ],
+    "webCompat": [
+      2.5,
+      "HTML 4.01, CSS 2.1 plus flex; limited JS",
+      "documented"
+    ],
+    "devTools": [
+      1,
+      "Debug builds and view source",
+      "editorial"
+    ],
+    "accessibility": [
+      3,
+      "Limited screen reader support found",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "GPL-2.0, open autobuilder and git",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Volunteer project, no monetisation",
+      "editorial"
+    ],
+    "longevity": [
+      6,
+      "24 years old and still committing, but slow releases",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      4.5,
+      "Simple GUI, but sites often fail",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.netsurf-browser.org/",
+      "title": "NetSurf official site",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.netsurf-browser.org/about/",
+      "title": "NetSurf: About",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.netsurf-browser.org/downloads/",
+      "title": "NetSurf downloads",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/NetSurf",
+      "title": "NetSurf - Wikipedia",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://github.com/netsurf-browser/netsurf",
+      "title": "NetSurf git mirror (recent commits)",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.osnews.com/story/138159/netsurf-3-11-released/",
+      "title": "OSnews: NetSurf 3.11 released",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.amiga-news.de/de/news/AN-2025-09-00021-DE.html",
+      "title": "amiga-news.de: NetSurf 3.12 developer build 6872",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Current JavaScript coverage and whether it is enabled by default",
+    "Whether Choices offers a basic ad-blocking option",
+    "Current packaged versions per distribution and the state of the Windows and macOS builds",
+    "Real-world security record and HTTPS/TLS defaults",
+    "Engine is listed as 'multi' only because the schema has no 'own engine' value; NetSurf uses a single in-house engine"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-30"
+}

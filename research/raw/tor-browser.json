@@ -1,0 +1,793 @@
+{
+  "id": "tor-browser",
+  "name": "Tor Browser",
+  "aliases": [
+    "Tor"
+  ],
+  "group": "privacy",
+  "developer": "The Tor Project, Inc.",
+  "hq": "United States (Tor Project, Inc., 501(c)(3))",
+  "businessModel": "Non-profit funded by grants and donations; no ads or data sales",
+  "engine": "gecko",
+  "basedOn": "Firefox ESR",
+  "license": "MPL-2.0 (plus BSD/others for Tor components)",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2008,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "15.0.26",
+    "date": "2026-10-21",
+    "upstream": "Firefox ESR 140"
+  },
+  "channels": [
+    "Stable",
+    "Alpha (16.0a14 on ESR 153)"
+  ],
+  "updateCadence": "Follows Firefox ESR security releases, roughly every 2-4 weeks; 15.0.26 was an emergency CA fix",
+  "website": "https://www.torproject.org/download/",
+  "tags": [
+    "privacy",
+    "anonymity",
+    "tor",
+    "onion"
+  ],
+  "pitch": "Anonymity-first browser that routes everything through Tor and blends all users together.",
+  "summary": "Hardened Firefox ESR that sends all traffic through the Tor network with uniform fingerprints, first-party isolation and no telemetry. Desktop and Android; slow by design.",
+  "bestFor": [
+    "Journalists, activists and anyone needing network anonymity",
+    "Accessing .onion services",
+    "Bypassing censorship with bridges and Snowflake"
+  ],
+  "notFor": [
+    "Everyday fast browsing and streaming",
+    "Logging into personal accounts",
+    "People who want sync or heavy customisation"
+  ],
+  "pros": [
+    {
+      "title": "Network anonymity",
+      "detail": "All traffic goes over three-hop Tor circuits, hiding your IP from sites."
+    },
+    {
+      "title": "Uniform fingerprint",
+      "detail": "Letterboxing and resistFingerprinting make users look alike."
+    },
+    {
+      "title": "Per-site isolation",
+      "detail": "First-party isolation and New Identity wipe state and circuits."
+    },
+    {
+      "title": "Zero telemetry",
+      "detail": "No analytics; non-profit and fully open source."
+    },
+    {
+      "title": "Censorship circumvention",
+      "detail": "Built-in bridges, Snowflake and Lyrebird transports."
+    },
+    {
+      "title": "Prompt security fixes",
+      "detail": "Tracks Firefox ESR with emergency releases such as 15.0.26 (Oct 2026)."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Slow",
+      "detail": "Three-hop routing makes pages and downloads noticeably slower."
+    },
+    {
+      "title": "Site breakage",
+      "detail": "Many sites block Tor exits or serve CAPTCHAs; streaming does not work."
+    },
+    {
+      "title": "No iOS version",
+      "detail": "Apple rules forbid it; Tor recommends Onion Browser instead."
+    },
+    {
+      "title": "Not a daily driver",
+      "detail": "No sync, no passwords, no media DRM, minimal customisation."
+    }
+  ],
+  "signatureFeatures": [
+    "Tor circuits",
+    "Letterboxing",
+    "New Identity",
+    "Snowflake bridges",
+    "NoScript security levels"
+  ],
+  "faq": [
+    {
+      "q": "Is Tor Browser available on iPhone?",
+      "a": "No official build; Tor Project points to Onion Browser, which uses WebKit and gets weaker protections."
+    },
+    {
+      "q": "Should I add extensions?",
+      "a": "The Tor Project discourages it because extra add-ons make your fingerprint unique."
+    },
+    {
+      "q": "Is it based on Firefox?",
+      "a": "Yes, Firefox ESR 140 in the stable 15.0 line; the 16 alpha moves to ESR 153."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2008-01",
+      "event": "First Tor Browser Bundle"
+    },
+    {
+      "date": "2019-05",
+      "event": "Tor Browser for Android stable"
+    },
+    {
+      "date": "2025",
+      "event": "Tor Browser 15.0 first stable on Firefox ESR 140 (screen lock on Android)"
+    },
+    {
+      "date": "2026-10-12",
+      "event": "15.0.25 security release with Tor 0.4.9.14"
+    },
+    {
+      "date": "2026-10-21",
+      "event": "15.0.26 emergency release blocking compromised eMudhra CA intermediates"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No import; start fresh by design. Bookmarks can be re-added manually."
+  },
+  "alternatives": [
+    "mullvad-browser",
+    "onion-browser",
+    "librewolf",
+    "brave"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Intentionally none"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Saving logins disabled"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Firefox engine keeps MV2, but extra add-ons are discouraged",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Tor routing, letterboxing, resistFingerprinting, first-party isolation, HTTPS-only",
+      "telemetry": "None",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo (onion available)",
+    "telemetry": "None",
+    "drm": "None (Widevine disabled)",
+    "codecs": "Open codecs, software decode",
+    "sandbox": "Firefox content sandbox + Fission",
+    "patchLag": "Days behind Firefox ESR",
+    "languages": "~35"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [
+        "Built-in Tor"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 10.15+",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew"
+      ],
+      "notes": [],
+      "highlights": [
+        "Universal build"
+      ],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern 64-bit distro",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "flathub",
+        "deb"
+      ],
+      "notes": [
+        "torbrowser-launcher in distros"
+      ],
+      "highlights": [
+        "Self-contained tarball"
+      ],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 5.0+",
+      "arch": [
+        "arm64",
+        "arm",
+        "x64"
+      ],
+      "stores": [
+        "google-play",
+        "f-droid",
+        "apk"
+      ],
+      "notes": [
+        "Available via Guardian Project F-Droid repo; official APK download page",
+        "Based on Fenix/GeckoView with Tor daemon"
+      ],
+      "highlights": [
+        "Screen lock added in 15.0"
+      ],
+      "scoreDelta": {
+        "fingerprinting": -1
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      9
+    ],
+    "fingerprintProtection": [
+      "yes",
+      10,
+      "Letterboxing + RFP"
+    ],
+    "httpsOnly": [
+      "yes",
+      9
+    ],
+    "doh": [
+      "no",
+      0,
+      "DNS goes through Tor"
+    ],
+    "torWindows": [
+      "yes",
+      10,
+      "Native Tor"
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "yes",
+      10,
+      "First-party isolation"
+    ],
+    "queryStripping": [
+      "partial",
+      6
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "yes",
+      10
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "partial",
+      5,
+      "Firefox ESR 140 vertical tabs, unconfirmed in Tor build"
+    ],
+    "tabGroups": [
+      "partial",
+      5,
+      "Firefox ESR 140 groups, unconfirmed"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      7
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "partial",
+      4
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "partial",
+      3,
+      "Add-ons possible but discouraged"
+    ],
+    "mv2Support": [
+      "yes",
+      5
+    ],
+    "uboFull": [
+      "extension",
+      4,
+      "Possible but discouraged"
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      3
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "yes",
+      5
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "partial",
+      4
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "yes",
+      10,
+      "New Identity"
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "partial",
+      3
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      8
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      6,
+      "Anchor: SpiderMonkey with hardening",
+      "editorial"
+    ],
+    "pageLoad": [
+      4,
+      "Anchor: Tor latency",
+      "measured-public"
+    ],
+    "networkSpeed": [
+      2,
+      "Anchor: Tor circuits cap speed",
+      "measured-public"
+    ],
+    "startup": [
+      5,
+      "Anchor",
+      "editorial"
+    ],
+    "smoothness": [
+      6,
+      "Anchor",
+      "editorial"
+    ],
+    "graphics": [
+      3,
+      "Anchor: WebGL restricted",
+      "editorial"
+    ],
+    "memory": [
+      6,
+      "Anchor",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Anchor",
+      "editorial"
+    ],
+    "battery": [
+      5,
+      "Anchor",
+      "editorial"
+    ],
+    "resourceControls": [
+      2,
+      "Anchor: no tab sleeping",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Anchor",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Anchor",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      10,
+      "Tor routing and RFP by default",
+      "documented"
+    ],
+    "blocking": [
+      8,
+      "Anchor: NoScript security levels, no ad blocker",
+      "editorial"
+    ],
+    "fingerprinting": [
+      10,
+      "Uniform fingerprint with letterboxing",
+      "documented"
+    ],
+    "securityHardening": [
+      8.5,
+      "Firefox sandbox, Safer/Safest modes",
+      "documented"
+    ],
+    "patchSpeed": [
+      8,
+      "Tracks Firefox ESR with emergency builds",
+      "documented"
+    ],
+    "telemetry": [
+      10,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      2,
+      "Anchor",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3,
+      "Anchor",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7,
+      "Anchor: about:config available but risky",
+      "editorial"
+    ],
+    "tabManagement": [
+      3,
+      "Anchor",
+      "editorial"
+    ],
+    "searchFreedom": [
+      8,
+      "Anchor",
+      "editorial"
+    ],
+    "downloads": [
+      5,
+      "Anchor",
+      "editorial"
+    ],
+    "productivity": [
+      2,
+      "Anchor",
+      "editorial"
+    ],
+    "media": [
+      3,
+      "Anchor: DRM off",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "Anchor",
+      "editorial"
+    ],
+    "extras": [
+      4,
+      "Anchor: bridges, onion-location",
+      "editorial"
+    ],
+    "extensions": [
+      3,
+      "Anchor: discouraged to add",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "Anchor",
+      "editorial"
+    ],
+    "passwords": [
+      0,
+      "Anchor",
+      "editorial"
+    ],
+    "mobileApps": [
+      6,
+      "Anchor: Android only",
+      "documented"
+    ],
+    "webCompat": [
+      6,
+      "Anchor: blocked by many sites",
+      "editorial"
+    ],
+    "devTools": [
+      5,
+      "Anchor",
+      "editorial"
+    ],
+    "accessibility": [
+      6,
+      "Anchor",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "Fully open source",
+      "documented"
+    ],
+    "businessTrust": [
+      10,
+      "Non-profit, no ads",
+      "documented"
+    ],
+    "longevity": [
+      9,
+      "Long-running project with grants",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "Anchor",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Anchor",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://blog.torproject.org/new-release-tor-browser-15026/",
+      "title": "New Release: Tor Browser 15.0.26",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blog.torproject.org/new-release-tor-browser-15025/",
+      "title": "New Release: Tor Browser 15.0.25",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blog.torproject.org/new-release-tor-browser-150/",
+      "title": "New Release: Tor Browser 15.0",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://download.torproject.org/tor-browser-for-android/",
+      "title": "Tor Browser for Android download page",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blog.torproject.org/tor-heart-onion-browser-and-more-ios-tor/",
+      "title": "Tor at the Heart: Onion Browser (iOS)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.torproject.org/download/",
+      "title": "Tor Project download",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Whether Tor Browser 15.0 build exposes vertical tabs/tab groups from ESR 140",
+    "Exact Android minOs for current 15.0.26"
+  ],
+  "confidence": "high",
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,749 @@
+{
+  "id": "360-secure",
+  "name": "360 Secure Browser",
+  "aliases": [
+    "360安全浏览器",
+    "360 Browser",
+    "Qihoo 360 Browser"
+  ],
+  "group": "regional",
+  "developer": "Qihoo 360 Technology",
+  "hq": "China",
+  "businessModel": "Free; ads, start-page traffic, sponsored navigation and 360 ecosystem (360 Security suite)",
+  "engine": "multi",
+  "basedOn": "Chromium + Trident (IE compatibility mode)",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2008,
+  "status": "active",
+  "statusNote": "Version 16 ships Chromium 132 kernel with built-in AI tools",
+  "version": {
+    "current": "16.2.1038.0",
+    "date": "2026-09-15",
+    "upstream": "Chromium 132 (official site / Microsoft Store)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Frequent builds (16.1.6116.64 on 2026-07-17, 16.2.1038.0 on 2026-09-15); kernel upgraded rarely",
+  "website": "https://browser.360.cn",
+  "tags": [
+    "regional",
+    "china",
+    "chromium",
+    "ie-mode",
+    "banking",
+    "ads"
+  ],
+  "pitch": "China's dual-engine browser with IE-mode banking compatibility, but an aging Chromium kernel.",
+  "summary": "360 Secure Browser is Qihoo 360's Windows browser popular in China, with dual-engine (Chromium + legacy IE) compatibility and bundled AI tools, but its Chromium 132 kernel lags current Chrome by about 20 releases.",
+  "bestFor": [
+    "Windows users in China needing banking/IE-only sites",
+    "Users of the 360 security suite"
+  ],
+  "notFor": [
+    "Security-conscious users given kernel lag",
+    "Privacy-focused users",
+    "Non-Chinese readers"
+  ],
+  "pros": [
+    {
+      "title": "Dual-engine compatibility",
+      "detail": "Switches between Chromium and a legacy IE (Trident) mode for old Chinese banking and government sites."
+    },
+    {
+      "title": "Built-in AI tools",
+      "detail": "Version 16 Microsoft Store listing advertises a full set of built-in AI tools."
+    },
+    {
+      "title": "Microsoft Store listing",
+      "detail": "Available from the Microsoft Store as well as the vendor site."
+    },
+    {
+      "title": "Enterprise Xinchuang edition",
+      "detail": "A localisation edition runs on domestic OSes (Chromium 95 base)."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Old Chromium kernel",
+      "detail": "Chromium 132 (a forum noted Edge was already on 140) means missing recent security fixes."
+    },
+    {
+      "title": "Ad and bloat history",
+      "detail": "Revenue relies on ads and start-page traffic; heavy bundled features."
+    },
+    {
+      "title": "Windows-focused",
+      "detail": "No macOS; limited global releases."
+    },
+    {
+      "title": "Opaque telemetry",
+      "detail": "Little published documentation on data collection."
+    }
+  ],
+  "signatureFeatures": [
+    "Dual engine with IE mode",
+    "Built-in 360 safe browsing",
+    "AI tools (v16)",
+    "Skins and extensions center"
+  ],
+  "faq": [
+    {
+      "q": "Which Chromium does 360 Secure Browser use?",
+      "a": "Version 16 uses Chromium 132, per the official site and Microsoft Store listing. Third-party pages showing older kernels appear stale."
+    },
+    {
+      "q": "Does it have an IE mode?",
+      "a": "It is a dual-engine browser; legacy Trident mode is retained for old sites (per Wikipedia-style descriptions)."
+    },
+    {
+      "q": "Is there a macOS version?",
+      "a": "None found; focus is Windows (plus enterprise Xinchuang builds)."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2008",
+      "event": "First release"
+    },
+    {
+      "date": "2026-01",
+      "event": "360 Speed Browser X on Chromium 132 (23.1.1187.64)"
+    },
+    {
+      "date": "2026-07-17",
+      "event": "Version 16.1.6116.64"
+    },
+    {
+      "date": "2026-09-15",
+      "event": "Version 16.2.1038.0 listed on 360 software store"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "history",
+      "passwords"
+    ],
+    "note": "Imports from other browsers; 360 account cloud sync."
+  },
+  "alternatives": [
+    "qq-browser",
+    "edge",
+    "chrome",
+    "maxthon"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "settings",
+        "history"
+      ],
+      "crossOs": false,
+      "note": "360 account (unverified)"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Autofill with 360 safeguards"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Chromium 132 still supports MV2; own extension center; MV2 end not applicable on old kernel",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": false,
+      "paid": "no",
+      "note": "AI tools bundled in v16"
+    },
+    "privacy": {
+      "defaults": "Ad filtering on; sponsored links and navigation pages",
+      "telemetry": "Extensive 360 cloud-security lookups",
+      "jurisdiction": "China"
+    }
+  },
+  "spec": {
+    "defaultSearch": "360 Search / so.com",
+    "telemetry": "360 cloud safety lookups and analytics",
+    "drm": "Limited",
+    "codecs": "H.264, HEVC (system), VP9",
+    "sandbox": "Chromium 132 sandbox + 360 security layer",
+    "patchLag": "Chromium 132 vs ~154 stable: roughly 20 releases behind (inferred)",
+    "languages": "Chinese-first"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 7/10 (unverified)",
+      "arch": [
+        "x64",
+        "x86"
+      ],
+      "stores": [
+        "official-installer",
+        "microsoft-store"
+      ],
+      "notes": [
+        "Version 16 on Microsoft Store (xp9kr3p6xp9bxq)",
+        "Chromium 132 kernel"
+      ],
+      "highlights": [
+        "IE mode",
+        "AI tools"
+      ],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Domestic Chinese OS (Xinchuang)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Xinchuang edition built on Chromium 95; enterprise only"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "patchSpeed": -2
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "partial",
+      3
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      2
+    ],
+    "privateHardening": [
+      "partial",
+      3
+    ],
+    "adBlocker": [
+      "yes",
+      5,
+      "Built-in ad filter"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      4
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      4
+    ],
+    "tabSleeping": [
+      "partial",
+      4
+    ],
+    "tabSearch": [
+      "yes",
+      5
+    ],
+    "pinnedTabs": [
+      "yes",
+      6
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      6
+    ],
+    "notes": [
+      "partial",
+      3
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "Sidebar tools"
+    ],
+    "pip": [
+      "yes",
+      6
+    ],
+    "screenshots": [
+      "yes",
+      7
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "yes",
+      7
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      4,
+      "Own extension center; Chrome compatibility limited from China"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "yes",
+      5,
+      "Old Chromium 132 still runs MV2"
+    ],
+    "uboFull": [
+      "partial",
+      4,
+      "MV2 ext could run via sideload (unverified)"
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "yes",
+      5
+    ],
+    "syncPasswords": [
+      "partial",
+      4
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "partial",
+      4
+    ],
+    "passwordManager": [
+      "yes",
+      4
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "partial",
+      4
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      5
+    ],
+    "av1": [
+      "partial",
+      4
+    ],
+    "hwDecode": [
+      "yes",
+      6
+    ],
+    "aiAssistant": [
+      "yes",
+      5,
+      "Built-in AI tools (v16)"
+    ],
+    "aiSummarizer": [
+      "yes",
+      5
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "partial",
+      3
+    ],
+    "translation": [
+      "yes",
+      5
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "partial",
+      3
+    ],
+    "enterprisePolicies": [
+      "yes",
+      5,
+      "Xinchuang/enterprise editions"
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "yes",
+      6,
+      "Boss key (typical, unverified)"
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      7
+    ],
+    "customSearchEngines": [
+      "yes",
+      5
+    ],
+    "devtools": [
+      "yes",
+      7
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      7,
+      "Chromium 132 V8, well behind current",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "Chromium 132 Blink",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7.5,
+      "Older Chromium stack",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Bundled services",
+      "editorial"
+    ],
+    "smoothness": [
+      7.5,
+      "Blink, older",
+      "editorial"
+    ],
+    "graphics": [
+      7,
+      "Older WebGL/WebGPU",
+      "editorial"
+    ],
+    "memory": [
+      4,
+      "Chromium plus bundled components",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      4.5,
+      "Basic",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Heavy features",
+      "editorial"
+    ],
+    "installSize": [
+      4,
+      "Large installer",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      2,
+      "Ads, sponsored nav, 360 cloud lookups",
+      "editorial"
+    ],
+    "blocking": [
+      5,
+      "Built-in ad filter",
+      "editorial"
+    ],
+    "fingerprinting": [
+      1.5,
+      "None",
+      "editorial"
+    ],
+    "securityHardening": [
+      5.5,
+      "Old Chromium 132 sandbox, no site isolation updates",
+      "editorial"
+    ],
+    "patchSpeed": [
+      2,
+      "About 20 Chromium releases behind (inferred)",
+      "editorial"
+    ],
+    "telemetry": [
+      1.5,
+      "Cloud lookups, closed",
+      "editorial"
+    ],
+    "lookCustom": [
+      7,
+      "Skins, layouts",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6,
+      "Gestures",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Limited",
+      "editorial"
+    ],
+    "tabManagement": [
+      4.5,
+      "Basic",
+      "editorial"
+    ],
+    "searchFreedom": [
+      4.5,
+      "Pushed defaults",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Built-in manager",
+      "editorial"
+    ],
+    "productivity": [
+      6,
+      "Screenshots, tools, AI",
+      "editorial"
+    ],
+    "media": [
+      6.5,
+      "Video tools, DRM limited",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "Basic",
+      "editorial"
+    ],
+    "extras": [
+      6,
+      "Safe-pay mode, tools",
+      "editorial"
+    ],
+    "extensions": [
+      5.5,
+      "Own store, Chromium 132 MV2 works",
+      "editorial"
+    ],
+    "sync": [
+      5,
+      "360 account",
+      "editorial"
+    ],
+    "passwords": [
+      4,
+      "Basic",
+      "editorial"
+    ],
+    "mobileApps": [
+      3,
+      "Mobile 360 browser not verified",
+      "editorial"
+    ],
+    "webCompat": [
+      8,
+      "Chromium plus IE mode for Chinese sites",
+      "editorial"
+    ],
+    "devTools": [
+      7,
+      "Chromium 132 DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      5.5,
+      "Chromium-based",
+      "editorial"
+    ],
+    "openSource": [
+      1,
+      "Closed",
+      "editorial"
+    ],
+    "businessTrust": [
+      2,
+      "Ad model, bloat history",
+      "editorial"
+    ],
+    "longevity": [
+      7,
+      "Active but narrow",
+      "editorial"
+    ],
+    "ai": [
+      5,
+      "Bundled AI tools",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Easy in China, cluttered",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://browser.360.cn/",
+      "title": "360 Secure Browser official site",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://apps.microsoft.com/detail/xp9kr3p6xp9bxq?hl=en-US&gl=US",
+      "title": "Microsoft Store - 360 Secure Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://baoku.360.cn/qbfl/2000001166.html",
+      "title": "360 Software Treasury - download/version",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://bbs.360.cn/thread-16169101-1-1.html",
+      "title": "360 Community - Speed Browser X Chromium 132 (2026-01)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/360_Secure_Browser",
+      "title": "Wikipedia - 360 Secure Browser",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Actual Chromium-version gap vs current stable (inferred)",
+    "IE-mode details in v16",
+    "Mobile browser (360 Browser Android) status",
+    "Minimum Windows version",
+    "Telemetry specifics",
+    "Security-patch cadence"
+  ],
+  "confidence": "low",
+  "lastVerified": "2026-10-29"
+}

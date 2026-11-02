@@ -1,0 +1,698 @@
+{
+  "id": "wolvic",
+  "name": "Wolvic",
+  "aliases": [
+    "Firefox Reality (predecessor)"
+  ],
+  "group": "mobile",
+  "developer": "Igalia",
+  "hq": "Spain",
+  "businessModel": "Open-source project funded by Igalia, grants (NLnet) and partnerships; no ads",
+  "engine": "multi",
+  "basedOn": "Firefox Reality (Gecko) and a separate Chromium build",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2022,
+  "status": "active",
+  "statusNote": "Gecko build is the main line; a Chromium-based build ships alongside it",
+  "version": {
+    "current": "Gecko build on 153 ESR; Chromium build 1.2.3",
+    "date": "2026-10",
+    "upstream": "Gecko 153 ESR / Chromium"
+  },
+  "channels": [
+    "Release (Gecko)",
+    "Release (Chromium)"
+  ],
+  "updateCadence": "Regular releases; the GitHub repo was last updated on 2026-10-13",
+  "website": "https://wolvic.com",
+  "tags": [
+    "vr",
+    "ar",
+    "webxr",
+    "open-source",
+    "headset"
+  ],
+  "pitch": "Open-source browser for VR and AR headsets, with Gecko and Chromium builds.",
+  "summary": "Wolvic is an independent, open-source browser for standalone XR headsets, continued by Igalia from Firefox Reality. It runs on Quest, Pico, Magic Leap 2, Lynx and Huawei glasses, and ships Gecko and Chromium builds.",
+  "bestFor": [
+    "Headset owners who want a non-Meta browser",
+    "Open-source and Gecko fans on XR devices",
+    "Pico, Lynx or Huawei headset users"
+  ],
+  "notFor": [
+    "People who want a polished, feature-rich desktop-class browser",
+    "Anyone who needs strong ad blocking out of the box"
+  ],
+  "pros": [
+    {
+      "title": "Open and independent",
+      "detail": "MPL-2.0 project maintained by Igalia, not tied to a headset maker."
+    },
+    {
+      "title": "Wide device support",
+      "detail": "Quest, Pico 4 and Neo 3, Magic Leap 2, Lynx R1 and Huawei glasses."
+    },
+    {
+      "title": "Two engines",
+      "detail": "A Gecko build and a Chromium build, chosen per need and device."
+    },
+    {
+      "title": "VR video focus",
+      "detail": "The latest Gecko release adds VR video projection modes."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Small team",
+      "detail": "A smaller project than Meta’s or Pico’s own browsers."
+    },
+    {
+      "title": "Some video sites block it",
+      "detail": "A Chromium update restored support for VR video sites that had begun blocking non-Meta browsers."
+    },
+    {
+      "title": "Sparse docs on privacy",
+      "detail": "Ad blocking and tracking-protection details are not clearly documented."
+    }
+  ],
+  "signatureFeatures": [
+    "Gecko and Chromium builds",
+    "WebXR",
+    "Passthrough on glasses",
+    "Multi-window tabs"
+  ],
+  "faq": [
+    {
+      "q": "Is Wolvic the successor to Firefox Reality?",
+      "a": "Yes. Mozilla handed the project to Igalia in 2022, which continued it as Wolvic."
+    },
+    {
+      "q": "Which headsets does it support?",
+      "a": "Quest 2, Pro, 3 and 3S, Pico Neo3 and Pico 4, Magic Leap 2, Lynx R1 and Huawei Vision Glass and VR Glass."
+    },
+    {
+      "q": "Does it support extensions?",
+      "a": "Its site lists extension support; which store or API it uses is not documented there."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "Igalia takes over Firefox Reality as Wolvic"
+    },
+    {
+      "date": "2024-02",
+      "event": "NLnet-funded UI work begins, including a Chromium-based build"
+    },
+    {
+      "date": "2026-10",
+      "event": "Latest Gecko release moves to Gecko 153 ESR; Chromium build 1.2.3 out"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Sync with desktop is advertised; no importers are documented."
+  },
+  "alternatives": [
+    "meta-quest-browser",
+    "firefox",
+    "chrome"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks"
+      ],
+      "crossOs": true,
+      "note": "Site advertises sync with desktop; details not documented"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Not documented"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Extensions advertised on the site; model not documented",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "firefox-addons",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Open-source; no ads or tracking business model",
+      "telemetry": "Not documented in the sources",
+      "jurisdiction": "Spain (Igalia)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Not documented in the sources",
+    "telemetry": "Not documented in the sources",
+    "drm": "Not documented in the sources",
+    "codecs": "Engine dependent",
+    "sandbox": "Engine dependent",
+    "patchLag": "Follows the Gecko ESR line",
+    "languages": "Not documented"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "AOSP-based XR headsets; HarmonyOS for Huawei glasses",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "apk",
+        "github"
+      ],
+      "notes": [
+        "Distributed through the Meta, Pico and Huawei AppGallery stores and as APKs",
+        "Passthrough on VR and AR glasses"
+      ],
+      "highlights": [
+        "Multi-window",
+        "WebXR"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "Exact current release numbers and dates",
+    "Extension store, sync, ad-blocking and DRM details"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "Gecko-based; settings not documented"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "no",
+      0
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "partial",
+      4,
+      "External keyboards supported"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "partial",
+      4,
+      "Extensions listed on the site"
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "partial",
+      4,
+      "Extensions on XR headsets"
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "partial",
+      4,
+      "Sync with desktop advertised"
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      3
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      3
+    ],
+    "devtools": [
+      "partial",
+      4,
+      "Remote debugging via the engine"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      6,
+      "SpiderMonkey or V8 on headset-class hardware",
+      "editorial"
+    ],
+    "pageLoad": [
+      6,
+      "Mobile-class XR hardware",
+      "editorial"
+    ],
+    "networkSpeed": [
+      6.5,
+      "Engine network stack",
+      "editorial"
+    ],
+    "startup": [
+      5.5,
+      "Loads as a headset app",
+      "editorial"
+    ],
+    "smoothness": [
+      5.5,
+      "Windowed in VR",
+      "editorial"
+    ],
+    "graphics": [
+      7,
+      "WebXR focus",
+      "editorial"
+    ],
+    "memory": [
+      4,
+      "Shares headset RAM with the system",
+      "editorial"
+    ],
+    "cpu": [
+      4,
+      "Mobile XR chip",
+      "editorial"
+    ],
+    "battery": [
+      4,
+      "Headset battery limits sessions",
+      "editorial"
+    ],
+    "resourceControls": [
+      2,
+      "No limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      3,
+      "Needs a standalone XR headset",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Separate app install",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5,
+      "No ads; Gecko baseline",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "No blocking documented",
+      "editorial"
+    ],
+    "fingerprinting": [
+      4,
+      "Engine defaults only",
+      "editorial"
+    ],
+    "securityHardening": [
+      6,
+      "Gecko/Chromium sandbox baseline",
+      "editorial"
+    ],
+    "patchSpeed": [
+      6,
+      "Follows Gecko ESR; small team",
+      "editorial"
+    ],
+    "telemetry": [
+      6,
+      "Open-source; telemetry not documented",
+      "editorial"
+    ],
+    "lookCustom": [
+      3,
+      "Few visual options",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Basic settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4,
+      "Engine options only",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Multiple windows and tabs",
+      "documented"
+    ],
+    "searchFreedom": [
+      5,
+      "Search engine can be changed",
+      "editorial"
+    ],
+    "downloads": [
+      3,
+      "Basic downloads",
+      "editorial"
+    ],
+    "productivity": [
+      3,
+      "Passthrough and multi-window",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "VR video projection modes",
+      "documented"
+    ],
+    "translation": [
+      0,
+      "No translation documented",
+      "editorial"
+    ],
+    "extras": [
+      4,
+      "XR and passthrough features",
+      "editorial"
+    ],
+    "extensions": [
+      4,
+      "Extension support advertised",
+      "documented"
+    ],
+    "sync": [
+      4,
+      "Advertised desktop sync",
+      "editorial"
+    ],
+    "passwords": [
+      1,
+      "No password manager documented",
+      "editorial"
+    ],
+    "mobileApps": [
+      3,
+      "Headset only",
+      "editorial"
+    ],
+    "webCompat": [
+      6.5,
+      "Depends on the engine build",
+      "editorial"
+    ],
+    "devTools": [
+      5,
+      "Remote debugging",
+      "editorial"
+    ],
+    "accessibility": [
+      5,
+      "Accessibility fixes in the latest release",
+      "documented"
+    ],
+    "openSource": [
+      9,
+      "MPL-2.0 on GitHub",
+      "documented"
+    ],
+    "businessTrust": [
+      8,
+      "Igalia-run, grant-supported, no ads",
+      "editorial"
+    ],
+    "longevity": [
+      6.5,
+      "Active but small; grant-dependent",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Simple headset UI; setup via APK on some devices",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://wolvic.com/en/",
+      "title": "Wolvic",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://github.com/Igalia/wolvic/releases/",
+      "title": "Wolvic releases on GitHub",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://nlnet.nl/project/Wolvic-UI/",
+      "title": "NLnet: Wolvic User Interface",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

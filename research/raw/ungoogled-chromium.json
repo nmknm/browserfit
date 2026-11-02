@@ -1,0 +1,759 @@
+{
+  "id": "ungoogled-chromium",
+  "name": "ungoogled-chromium",
+  "aliases": [
+    "ungoogled chromium"
+  ],
+  "group": "privacy",
+  "developer": "ungoogled-software community (Eloston and contributors)",
+  "hq": "Decentralised volunteer project",
+  "businessModel": "Volunteer open-source project; donations",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "BSD-3-Clause",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2016,
+  "status": "active",
+  "statusNote": "Linux builds first; Windows and macOS binaries come from community builders and can lag",
+  "version": {
+    "current": "156.0.8078.73-1",
+    "date": "2026-10-28",
+    "upstream": "Chromium 156"
+  },
+  "channels": [
+    "Stable"
+  ],
+  "updateCadence": "Re-patches each Chromium stable release; multiple updates per month",
+  "website": "https://github.com/ungoogled-software/ungoogled-chromium",
+  "tags": [
+    "privacy",
+    "chromium",
+    "de-googled",
+    "patch-set"
+  ],
+  "pitch": "Chromium with Google web services and tracking code removed.",
+  "summary": "A patch set that strips Google integration and telemetry from Chromium. No sync, no blocker bundled, no auto-updater; binaries mostly from community sources.",
+  "bestFor": [
+    "Chromium users who want no Google calls",
+    "Linux users who like patch-set transparency",
+    "People who want Chromium behaviour without Google services"
+  ],
+  "notFor": [
+    "People wanting automatic updates",
+    "Users needing sync or built-in blocking",
+    "Streaming users (no Widevine)"
+  ],
+  "pros": [
+    {
+      "title": "No Google services",
+      "detail": "Removes Google API keys, Safe Browsing, sync and telemetry calls."
+    },
+    {
+      "title": "Chromium compatibility",
+      "detail": "Same engine and DevTools as Chromium."
+    },
+    {
+      "title": "Transparent patches",
+      "detail": "All changes are open on GitHub under BSD-3."
+    },
+    {
+      "title": "Fast upstream tracking (Linux)",
+      "detail": "156.0.8078.73-1 shipped on Oct 28, 2026, days after Chromium 156."
+    },
+    {
+      "title": "Flexible flags",
+      "detail": "Adds extra privacy flags and runtime switches."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No auto-update",
+      "detail": "Updating is manual or via a package manager; Windows builds lagged on 155.0.8059.84."
+    },
+    {
+      "title": "No built-in blocking",
+      "detail": "Needs uBlock Origin Lite or similar; MV2 uBO unavailable on current Chromium."
+    },
+    {
+      "title": "No sync or Widevine",
+      "detail": "No cross-device sync and no DRM out of the box."
+    },
+    {
+      "title": "Rough edges",
+      "detail": "No official installer; Chrome Web Store access requires a helper extension."
+    }
+  ],
+  "signatureFeatures": [
+    "Google-free Chromium",
+    "No Safe Browsing pings",
+    "Patch-based transparency",
+    "Extra privacy flags"
+  ],
+  "faq": [
+    {
+      "q": "Is it safer than Chrome?",
+      "a": "It strips Google services but you lose Safe Browsing and auto-update, so security depends on updating promptly."
+    },
+    {
+      "q": "Does uBlock Origin work?",
+      "a": "The MV2 uBO does not run on current Chromium; uBlock Origin Lite (MV3) works."
+    },
+    {
+      "q": "Where do I get Windows builds?",
+      "a": "From the project's listed community binaries; recent Windows build found was 155.0.8059.84-1.1."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2016",
+      "event": "Project started by Eloston"
+    },
+    {
+      "date": "2026-10-06",
+      "event": "155.0.8059.39-1 released for all platforms"
+    },
+    {
+      "date": "2026-10-23",
+      "event": "156.0.8078.47-1 for Linux"
+    },
+    {
+      "date": "2026-10-28",
+      "event": "156.0.8078.73-1 for Linux"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Chromium-based; import from other browsers through Chromium import UI."
+  },
+  "alternatives": [
+    "helium",
+    "brave",
+    "srware-iron",
+    "librewolf",
+    "iridium-browser",
+    "trivalent"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Google Sync removed"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Local Chromium manager"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "Chromium 156 has no MV2; use uBlock Origin Lite",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "Google AI features removed"
+    },
+    "privacy": {
+      "defaults": "No Google services, but no tracker blocker",
+      "telemetry": "None",
+      "jurisdiction": "Decentralised"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo (configurable)",
+    "telemetry": "None",
+    "drm": "No Widevine by default",
+    "codecs": "Depends on build; AV1, VP9, optional H.264/HEVC",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Days on Linux; Windows and macOS binaries can lag a major",
+    "languages": "~50"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "github",
+        "portable",
+        "winget"
+      ],
+      "notes": [
+        "Community builds, newest found 155.0.8059.84-1.1 (Oct 19)"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 11+",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "github",
+        "homebrew"
+      ],
+      "notes": [
+        "Community builds"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern 64-bit distro",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "flathub",
+        "deb",
+        "rpm",
+        "aur",
+        "portable",
+        "github"
+      ],
+      "notes": [
+        "Official release notes target Linux first"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "Third-party cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      8
+    ],
+    "doh": [
+      "yes",
+      7
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      5
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10
+    ],
+    "privateHardening": [
+      "partial",
+      5
+    ],
+    "adBlocker": [
+      "extension",
+      5,
+      "uBlock Origin Lite"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3
+    ],
+    "customFilterLists": [
+      "extension",
+      4
+    ],
+    "youtubeAds": [
+      "extension",
+      4
+    ],
+    "cookieBanners": [
+      "extension",
+      4
+    ],
+    "verticalTabs": [
+      "partial",
+      5,
+      "Chromium feature behind flag"
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      6
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      4
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      5
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "partial",
+      4
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      6,
+      "Needs helper extension"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      6
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "partial",
+      4
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "partial",
+      4
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      5
+    ],
+    "av1": [
+      "yes",
+      8
+    ],
+    "hwDecode": [
+      "yes",
+      8
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "Google AI features removed"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      7
+    ],
+    "enterprisePolicies": [
+      "yes",
+      7
+    ],
+    "kioskMode": [
+      "partial",
+      6
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      9
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.3,
+      "V8, same as Chromium",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering, no blocker",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "HTTP/3 and parallelism",
+      "editorial"
+    ],
+    "startup": [
+      7.5,
+      "Chromium start",
+      "editorial"
+    ],
+    "smoothness": [
+      8.8,
+      "Chromium compositor",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "WebGL/WebGPU",
+      "editorial"
+    ],
+    "memory": [
+      5.5,
+      "Chromium memory profile",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Chromium",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Memory Saver, Energy Saver",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Chromium requirements",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Chromium-sized",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      7.5,
+      "No Google services, but no blocker",
+      "documented"
+    ],
+    "blocking": [
+      4,
+      "No bundled blocker; MV3 limits",
+      "editorial"
+    ],
+    "fingerprinting": [
+      3,
+      "No fingerprint defences",
+      "editorial"
+    ],
+    "securityHardening": [
+      8,
+      "Chromium sandbox; no Safe Browsing",
+      "editorial"
+    ],
+    "patchSpeed": [
+      7,
+      "Linux in days; Windows lags",
+      "documented"
+    ],
+    "telemetry": [
+      9.5,
+      "All telemetry removed",
+      "documented"
+    ],
+    "lookCustom": [
+      5,
+      "Chromium themes and flags",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      5,
+      "Chromium settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      8,
+      "Extra flags plus chrome://flags",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Tab groups, search, no native vertical",
+      "editorial"
+    ],
+    "searchFreedom": [
+      9,
+      "Custom search engines",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Chromium downloads",
+      "editorial"
+    ],
+    "productivity": [
+      4.5,
+      "Side panel, PiP",
+      "editorial"
+    ],
+    "media": [
+      4.5,
+      "No Widevine",
+      "documented"
+    ],
+    "translation": [
+      0,
+      "Google Translate removed",
+      "documented"
+    ],
+    "extras": [
+      1,
+      "No extras",
+      "editorial"
+    ],
+    "extensions": [
+      5,
+      "CWS needs helper; no MV2",
+      "documented"
+    ],
+    "sync": [
+      0,
+      "Sync removed",
+      "documented"
+    ],
+    "passwords": [
+      2.5,
+      "Local basic manager",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile version",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Chromium compatibility",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Full DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      8,
+      "Chromium a11y",
+      "editorial"
+    ],
+    "openSource": [
+      9.5,
+      "BSD patches transparent",
+      "documented"
+    ],
+    "businessTrust": [
+      8,
+      "Volunteer, no monetisation",
+      "editorial"
+    ],
+    "longevity": [
+      7,
+      "Long-lived volunteer project",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      4,
+      "Manual install and update",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://github.com/ungoogled-software/ungoogled-chromium/releases",
+      "title": "ungoogled-chromium releases",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ungoogled_Chromium",
+      "title": "Ungoogled Chromium (Wikipedia)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.linuxcompatible.org/story/ungoogled-chromium-15608078731-ships-with-chrome-156s-353-security-fixes",
+      "title": "Ungoogled Chromium 156.0.8078.73-1",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://chromiumbuilds.org/builds/ungoogled-chromium/",
+      "title": "chromiumbuilds: ungoogled-chromium",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.softpedia.com/get/Internet/Browsers/UnGoogled-Chromium.shtml",
+      "title": "Softpedia: UnGoogled Chromium",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Whether MV2 can still be re-enabled via patches in 156",
+    "Exact store availability (winget, flathub) for community builds",
+    "Android availability (not found)"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

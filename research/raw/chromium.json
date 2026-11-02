@@ -1,0 +1,839 @@
+{
+  "id": "chromium",
+  "name": "Chromium",
+  "aliases": [
+    "Chromium browser"
+  ],
+  "group": "mainstream",
+  "developer": "The Chromium Authors (led by Google)",
+  "hq": "United States",
+  "businessModel": "Open-source upstream funded by Google and contributors (Microsoft, Opera, Brave, Samsung and others)",
+  "engine": "blink",
+  "basedOn": "Independent",
+  "license": "BSD-3-Clause with LGPL, MIT, MPL and other component licenses",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2008,
+  "status": "active",
+  "statusNote": "Bare-bones upstream; no official auto-updating consumer installer",
+  "version": {
+    "current": "156.0.8078.x",
+    "date": "2026-10-27",
+    "upstream": "Chromium 156 (official snapshots and distro builds; mirrors Chrome Stable)"
+  },
+  "channels": [
+    "Snapshots (continuous)",
+    "Distro-packaged stable",
+    "Dev/Canary via Chrome channels"
+  ],
+  "updateCadence": "Source tracks Chrome: new major every 2 weeks since 153; official binaries are snapshots, distro builds update via package managers",
+  "website": "https://www.chromium.org",
+  "tags": [
+    "mainstream",
+    "open-source",
+    "blink",
+    "upstream",
+    "developer"
+  ],
+  "pitch": "The open-source upstream of Chrome, Edge and Brave, without Google extras.",
+  "summary": "The source project behind most browsers. Binaries come from distro packages or snapshots; no Google sync, no Widevine, no automatic updates, and on iOS/Android it is only an experimental or sideloaded build.",
+  "bestFor": [
+    "Linux users who want a distro-packaged Blink browser",
+    "Developers and testers wanting the latest engine",
+    "Anyone building their own Chromium-based browser"
+  ],
+  "notFor": [
+    "Everyday users who want auto-updates and Google sync",
+    "People who need Netflix/Widevine out of the box",
+    "Mobile users (no official store builds)"
+  ],
+  "pros": [
+    {
+      "title": "Open source",
+      "detail": "BSD-style licensed code you can audit and build."
+    },
+    {
+      "title": "Latest engine",
+      "detail": "Blink/V8 equal to Chrome performance."
+    },
+    {
+      "title": "No Google account tie-in",
+      "detail": "No Chrome sync and no Google branding, usage metrics or crash reporting."
+    },
+    {
+      "title": "Distro-packaged",
+      "detail": "Debian, Arch, Fedora and others ship Chromium with proprietary codecs enabled by their builds."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No auto-update",
+      "detail": "Official binaries lack automatic updates, so patching depends on you or your distro."
+    },
+    {
+      "title": "No Widevine",
+      "detail": "No Netflix-style DRM by default; official builds lack licensed codecs."
+    },
+    {
+      "title": "No sync",
+      "detail": "Chrome sync is blocked for Chromium builds since 2021."
+    },
+    {
+      "title": "No MV2",
+      "detail": "MV2 code was removed in Chromium 151; Chrome Web Store is unofficially usable."
+    }
+  ],
+  "signatureFeatures": [
+    "Reference Blink/V8 engine",
+    "Open source BSD-style license",
+    "Snapshot builds for every OS",
+    "Basis of Chrome, Edge, Opera, Brave",
+    "Chromium DevTools"
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between Chrome and Chromium?",
+      "a": "Chrome is Google's branded binary built on Chromium, adding auto-update, Widevine, proprietary codecs, Google sync and telemetry."
+    },
+    {
+      "q": "Where do I get Chromium builds?",
+      "a": "Linux distributions package it; Google publishes per-commit snapshots for Windows, macOS, Linux and Android. Android builds are sideloaded APKs."
+    },
+    {
+      "q": "Does Chromium update itself?",
+      "a": "No official auto-updater. Use your package manager or fetch new snapshots."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2008-09",
+      "event": "Chromium open-sourced with Chrome 1.0"
+    },
+    {
+      "date": "2021",
+      "event": "Google blocks Chrome sync in Chromium builds"
+    },
+    {
+      "date": "2025-07",
+      "event": "MV2 extension support removed in Chrome 138/139 line"
+    },
+    {
+      "date": "2026-07",
+      "event": "Chromium 151 deletes remaining MV2 switches from the source tree"
+    },
+    {
+      "date": "2026-09",
+      "event": "Chromium 153 begins two-week release cadence"
+    },
+    {
+      "date": "2026-10",
+      "event": "Chromium 156 stable branch (156.0.8078.x); 157 snapshots appear Oct 13"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Can import from Chrome, Edge, Firefox; Chrome Web Store extensions may install manually."
+  },
+  "alternatives": [
+    "chrome",
+    "brave",
+    "vivaldi",
+    "ungoogled-chromium",
+    "thorium"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Chrome sync not available to Chromium; use extensions or third-party sync"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Local password storage; no Google Password Manager sync"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "MV2 removed from the source in Chromium 151",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No Gemini assistant; on-device AI APIs present but depend on Google components"
+    },
+    "privacy": {
+      "defaults": "No Google sign-in, no crash reporting/usage metrics; Safe Browsing and 3P cookies remain, Google default search",
+      "telemetry": "No usage statistics; Google services may still be contacted",
+      "jurisdiction": "US (project), varies by distributor"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google",
+    "telemetry": "No UMA metrics reporting in upstream builds",
+    "drm": "None by default (no Widevine)",
+    "codecs": "VP8/VP9, AV1, Opus; H.264/AAC depend on build/distro ffmpeg",
+    "sandbox": "Multi-process sandbox with site isolation",
+    "patchSpeed": "Source gets fixes immediately; binaries depend on distro or manual snapshots",
+    "languages": "~50"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64",
+        "x86"
+      ],
+      "stores": [
+        "portable",
+        "official-installer"
+      ],
+      "notes": [
+        "Unofficial installers and snapshots; Hibbiki/Marmaduke builds",
+        "Not Google-signed"
+      ],
+      "highlights": [
+        "Latest Blink with manual updating"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 13",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "homebrew",
+        "portable"
+      ],
+      "notes": [
+        "Snapshot or Homebrew builds; ungoogled macOS build lags"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "64-bit Linux",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "flathub",
+        "snap",
+        "aur"
+      ],
+      "notes": [
+        "Packaged by most distros; Debian, Arch and Fedora builds enable proprietary codecs",
+        "Snap and Flathub builds available in addition"
+      ],
+      "highlights": [
+        "Best-supported platform with auto-updates via distro"
+      ],
+      "scoreDelta": {
+        "patchSpeed": 1,
+        "media": 1
+      }
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 10",
+      "arch": [
+        "arm64",
+        "arm32",
+        "x64"
+      ],
+      "stores": [
+        "apk",
+        "github"
+      ],
+      "notes": [
+        "Sideloaded APK; no Play Store listing",
+        "Extension-capable desktop-class builds are experimental"
+      ],
+      "highlights": [
+        "Snapshot APKs from Google storage"
+      ],
+      "scoreDelta": {
+        "patchSpeed": -2,
+        "mobileApps": -2
+      }
+    },
+    "ios": {
+      "status": "alpha",
+      "minOs": "iOS 18",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [],
+      "notes": [
+        "Chromium ships experimental Blink-on-iOS code only; browsers use WebKit",
+        "Not a consumer browser"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "chromeos": {
+      "status": "active",
+      "minOs": "ChromeOS (built in)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "preinstalled"
+      ],
+      "notes": [
+        "Chromium OS is the open-source base; consumer ChromeOS ships Chrome"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Chromium_(web_browser)",
+      "title": "Chromium (web browser) - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://chromiumbuilds.org/",
+      "title": "chromiumbuilds.org - Chromium builds index",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://chromiumbuilds.org/android/",
+      "title": "Download Chromium for Android",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline",
+      "title": "Manifest V2 support timeline",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://thenewstack.io/chrome-two-week-releases/",
+      "title": "The New Stack: Chrome two-week releases",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Latest official snapshot build number (sources show .47 and .73)",
+    "Whether Chromium for Android Play Store listing exists (none found)",
+    "Extension behavior with Chrome Web Store in Chromium",
+    "iOS status label (experimental code only)",
+    "Linux ARM64 build availability by distro"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Same as Chrome"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      7,
+      "HTTPS-first modes present"
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7,
+      "No metrics by default"
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3
+    ],
+    "customFilterLists": [
+      "extension",
+      3
+    ],
+    "youtubeAds": [
+      "extension",
+      2
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "yes",
+      7
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "tabSleeping": [
+      "yes",
+      7,
+      "Memory Saver"
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4,
+      "Side panel"
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      3
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      5,
+      "Unofficial; works with workarounds"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "partial",
+      3,
+      "Local only"
+    ],
+    "passkeys": [
+      "partial",
+      3,
+      "Platform authenticator only"
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4,
+      "Build dependent"
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      "Linux needs flags"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      3,
+      "APIs depend on Google components"
+    ],
+    "aiKillSwitch": [
+      "yes",
+      9,
+      "Almost no AI features"
+    ],
+    "translation": [
+      "partial",
+      3,
+      "Needs Google API keys"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Same V8 as Chrome",
+      "documented"
+    ],
+    "pageLoad": [
+      9,
+      "Blink reference engine",
+      "documented"
+    ],
+    "networkSpeed": [
+      9,
+      "Chromium network stack",
+      "documented"
+    ],
+    "startup": [
+      8,
+      "Plain UI, fast",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Same compositor",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "WebGPU/WebGL",
+      "documented"
+    ],
+    "memory": [
+      5,
+      "Same architecture as Chrome",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Same as Chrome",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Same as Chrome",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Memory Saver, energy options",
+      "documented"
+    ],
+    "lowEnd": [
+      6,
+      "Needs modern OS",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Large",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "No sign-in or metrics but 3P cookies",
+      "documented"
+    ],
+    "blocking": [
+      3.5,
+      "No blocker, MV2 gone",
+      "documented"
+    ],
+    "fingerprinting": [
+      2.5,
+      "No resistance",
+      "documented"
+    ],
+    "securityHardening": [
+      8.5,
+      "Strong sandbox but no auto-update",
+      "documented"
+    ],
+    "patchSpeed": [
+      5.5,
+      "Depends on distro or manual updates",
+      "documented"
+    ],
+    "telemetry": [
+      6.5,
+      "No usage stats; Google services still used",
+      "documented"
+    ],
+    "lookCustom": [
+      4.5,
+      "Minimal",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Minimal",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Flags and policies",
+      "documented"
+    ],
+    "tabManagement": [
+      7,
+      "Vertical tabs and groups",
+      "documented"
+    ],
+    "searchFreedom": [
+      7,
+      "Custom engines",
+      "documented"
+    ],
+    "downloads": [
+      5.5,
+      "Basic",
+      "editorial"
+    ],
+    "productivity": [
+      5.5,
+      "Few tools",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "No Widevine; build-dependent codecs",
+      "documented"
+    ],
+    "translation": [
+      3.5,
+      "Often non-functional without API keys",
+      "documented"
+    ],
+    "extras": [
+      2.5,
+      "None",
+      "editorial"
+    ],
+    "extensions": [
+      6.5,
+      "Chrome Web Store use unofficial",
+      "documented"
+    ],
+    "sync": [
+      1,
+      "No Chrome sync since 2021",
+      "documented"
+    ],
+    "passwords": [
+      3.5,
+      "Local manager only",
+      "documented"
+    ],
+    "mobileApps": [
+      2,
+      "Sideloaded Android only",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Chromium engine",
+      "documented"
+    ],
+    "devTools": [
+      10,
+      "Full DevTools",
+      "documented"
+    ],
+    "accessibility": [
+      8.5,
+      "Chromium a11y",
+      "documented"
+    ],
+    "openSource": [
+      9,
+      "BSD-licensed, Google-led",
+      "documented"
+    ],
+    "businessTrust": [
+      6.5,
+      "Open project, Google dominant",
+      "editorial"
+    ],
+    "longevity": [
+      9,
+      "Core of the web platform",
+      "documented"
+    ],
+    "ai": [
+      2.5,
+      "Almost no AI",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      4.5,
+      "Manual updates and codecs",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

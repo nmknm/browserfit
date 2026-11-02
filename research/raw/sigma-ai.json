@@ -1,0 +1,835 @@
+{
+  "id": "sigma-ai",
+  "name": "Sigma AI Browser",
+  "aliases": [
+    "Sigma Browser",
+    "SigmaBrowser"
+  ],
+  "group": "ai",
+  "developer": "Sigmabrowser OÜ",
+  "hq": "Estonia",
+  "businessModel": "Free tier; Premium subscription (first-month discount code SIGMA50 advertised)",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary (vendor claims code is open source; unverified)",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Premium subscription; prices not stated on home page",
+  "releaseYear": 2025,
+  "status": "active",
+  "statusNote": "Android via waitlist/APK; Linux \"coming soon\"",
+  "version": {
+    "current": "macOS build 152.0.7977.134; Windows build 149.0.7827.117",
+    "date": "2026-10",
+    "upstream": "Chromium 152 (macOS) / 149 (Windows)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Unclear; Windows build on older Chromium than macOS",
+  "website": "https://www.sigmabrowser.com",
+  "tags": [
+    "ai",
+    "agentic",
+    "local-ai",
+    "privacy",
+    "estonia"
+  ],
+  "pitch": "Chromium browser with a local \"Eclipse\" LLM plus an agent and Deep Research.",
+  "summary": "Chromium browser from an Estonian company with an on-device LLM (Eclipse), an AI agent, chat with page and Deep Research. Windows, macOS, iOS; Android in waitlist. Marketing-heavy, little independent testing.",
+  "bestFor": [
+    "People who want offline/local AI in a browser",
+    "Privacy-leaning users who accept unverified claims",
+    "Windows/macOS users wanting a free AI browser"
+  ],
+  "notFor": [
+    "People needing independently audited privacy",
+    "Users who need fast Chromium patching",
+    "Anyone wanting a mature mobile app"
+  ],
+  "pros": [
+    {
+      "title": "Local LLM",
+      "detail": "Eclipse runs on-device so supported prompts need no cloud processing."
+    },
+    {
+      "title": "Four-platform footprint",
+      "detail": "Windows, macOS, iOS apps plus an Android waitlist/APK."
+    },
+    {
+      "title": "Built-in ad blocker",
+      "detail": "Advertised ad blocker with no extension needed."
+    },
+    {
+      "title": "Free tier includes AI",
+      "detail": "Free plan covers Eclipse, Chat with Page and limited Agent and Deep Research."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Unverified privacy claims",
+      "detail": "E2EE, SOC 2 and open-source statements are vendor marketing only."
+    },
+    {
+      "title": "Chromium lag",
+      "detail": "Windows installer was on Chromium 149 while the macOS build was on 152."
+    },
+    {
+      "title": "Thin independent reviews",
+      "detail": "TechArcade notes few ratings (iOS 3.4 stars from 7) and little testing."
+    },
+    {
+      "title": "Local AI is slower",
+      "detail": "On-device answers are slower on weak hardware."
+    }
+  ],
+  "signatureFeatures": [
+    "Eclipse local LLM",
+    "AI Agent",
+    "Chat With Page",
+    "Deep Research",
+    "Built-in ad blocker"
+  ],
+  "faq": [
+    {
+      "q": "Does Sigma run AI offline?",
+      "a": "Eclipse is described as an on-device LLM; the underlying model and requirements are not named."
+    },
+    {
+      "q": "Is it open source?",
+      "a": "The vendor says its code is open source, but we could not confirm a public repository."
+    },
+    {
+      "q": "Is there Linux or Android?",
+      "a": "Linux is \"coming soon\"; Android is a waitlist with a 1.0.1 APK."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "Sigma AI Browser launches (exact date unverified)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Site lists Windows, macOS (incl. Mac App Store) and iOS downloads; Android waitlist"
+    },
+    {
+      "date": "2026-10",
+      "event": "Site offers Android APK 1.0.1 via waitlist dialog"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Chromium-based import (details unverified)."
+  },
+  "alternatives": [
+    "genspark",
+    "comet",
+    "browseros",
+    "tabbit"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [],
+      "crossOs": true,
+      "note": "Vendor claims E2EE for data and AI chats; sync scope not described"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Redesigned password manager mentioned; details missing"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "Chromium 149-152 base; MV2 removed upstream (not verified for Sigma)",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Free tier limited agent/Deep Research"
+    },
+    "privacy": {
+      "defaults": "Built-in ad blocker; local Eclipse keeps prompts on device (vendor claim)",
+      "telemetry": "Not documented",
+      "jurisdiction": "Estonia (EU)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Not documented",
+    "drm": "Unverified",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Windows build 3 Chromium majors behind macOS build on the site",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Installer on Chromium 149 per site filename"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "mac-app-store"
+      ],
+      "notes": [
+        "Build on Chromium 152 per site filename"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "3.4 stars from 7 ratings per TechArcade"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -6
+      }
+    },
+    "android": {
+      "status": "waitlist",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [
+        "apk"
+      ],
+      "notes": [
+        "Waitlist; APK 1.0.1 linked"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "none",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "\"Coming soon\"; one directory claims available"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.sigmabrowser.com/",
+      "title": "Sigma Private AI Browser (official)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.techarcade.io/products/sigma-ai-browser/",
+      "title": "Sigma AI Browser review - TechArcade",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://aiagentsdirectory.com/agent/sigma-ai-browser",
+      "title": "Sigma AI Browser - AI Agents Directory",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.aikaptan.com/tools/sigma-ai-browser",
+      "title": "Sigma AI Browser pricing - AIKaptan",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://intelligenttools.co/tools/sigma-ai-browser",
+      "title": "Sigma Browser - IntelligentTools",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Open-source claim",
+    "E2EE, SOC 2, GDPR badges",
+    "Eclipse model identity and size",
+    "Pricing tiers",
+    "Linux availability (sources conflict)",
+    "Which Chromium build is current"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Vendor lists DNS-over-HTTPS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "yes",
+      6,
+      "Built-in (vendor-described)"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "customFilterLists": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "youtubeAds": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "cookieBanners": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      "Chromium tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "partial",
+      6,
+      "Address bar doubles as AI prompt"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "yes",
+      8,
+      "Chromium-based; installs MV3 extensions"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "Via userscript-manager extension (MV3)"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "partial",
+      4,
+      "Vendor claim only"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      7,
+      "Chrome import"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      9,
+      ""
+    ],
+    "aiSummarizer": [
+      "yes",
+      8,
+      ""
+    ],
+    "agenticBrowsing": [
+      "yes",
+      6,
+      "Agent quality rated 5.5 by TechArcade"
+    ],
+    "localAi": [
+      "yes",
+      7,
+      "Eclipse local LLM (Windows/macOS)"
+    ],
+    "aiKillSwitch": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Chromium cold start, heavier than plain Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus AI layer; RAM-heavy",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs modern hardware; AI features add load",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5,
+      "Local LLM and ad blocker, but claims unverified",
+      "editorial"
+    ],
+    "blocking": [
+      5,
+      "Built-in blocker of unknown depth",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      7,
+      "Chromium sandbox but patching lag on Windows",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5.5,
+      "Windows build 3 Chromium majors behind macOS build",
+      "documented"
+    ],
+    "telemetry": [
+      4,
+      "Telemetry undocumented; marketing claims only",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab groups and search; no workspaces documented",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      7.5,
+      "AI sidebar, page chat and summaries",
+      "documented"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5.5,
+      "Local LLM, ad blocker, Deep Research",
+      "editorial"
+    ],
+    "extensions": [
+      6.5,
+      "Chrome Web Store but MV3 only since the Aug 2026 MV2 purge",
+      "documented"
+    ],
+    "sync": [
+      4.5,
+      "Sync scope undocumented; E2EE claimed",
+      "editorial"
+    ],
+    "passwords": [
+      5,
+      "Built-in manager mentioned, undocumented",
+      "editorial"
+    ],
+    "mobileApps": [
+      4.5,
+      "iOS app with few ratings; Android only waitlist",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "documented"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      2.5,
+      "Open-source claim not confirmed",
+      "editorial"
+    ],
+    "businessTrust": [
+      4,
+      "Unverified claims, thin independent coverage",
+      "editorial"
+    ],
+    "longevity": [
+      5,
+      "Small vendor; active builds on site",
+      "editorial"
+    ],
+    "ai": [
+      7.5,
+      "Local LLM plus agent; agent quality rated average",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7.5,
+      "Chrome-like UI; free AI included",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

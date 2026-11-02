@@ -1,0 +1,802 @@
+{
+  "id": "genspark",
+  "name": "Genspark Browser",
+  "aliases": [
+    "Genspark AI Browser"
+  ],
+  "group": "ai",
+  "developer": "Genspark (MainFunc)",
+  "hq": "United States",
+  "businessModel": "Free browser; Genspark cloud agents (Super Agent) sold via credit-based subscriptions",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Cloud agent features use Genspark credits; paid tiers exist (prices not confirmed, Plus ~$19.99-24.99/mo reported in an older review)",
+  "releaseYear": 2025,
+  "status": "active",
+  "statusNote": "Launched Jun 2025 Mac-first; Windows build now listed",
+  "version": {
+    "current": "Not published",
+    "date": "2026-10",
+    "upstream": "Chromium"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Not documented",
+  "website": "https://www.genspark.ai/browser",
+  "tags": [
+    "ai",
+    "agentic",
+    "chromium",
+    "ad-blocking",
+    "local-models"
+  ],
+  "pitch": "Ad-free Chromium browser with a Super Agent and on-device open-weight models.",
+  "summary": "Chromium browser from the Genspark AI workspace company: built-in ad blocker, Super Agent/Autopilot for tasks, an MCP store and optional on-device open-weight models. Free to install; cloud agents use credits.",
+  "bestFor": [
+    "Genspark workspace users",
+    "People who want a built-in ad blocker plus agents",
+    "Those curious about on-device models"
+  ],
+  "notFor": [
+    "Linux or mobile users",
+    "People who want a transparent open-source browser",
+    "Users wanting independent reviews first"
+  ],
+  "pros": [
+    {
+      "title": "Built-in ad blocker",
+      "detail": "Ads blocked by default after install, no extension needed (vendor-described)."
+    },
+    {
+      "title": "Local models option",
+      "detail": "Genspark says users can run open-weight models on-device; claimed catalog of 169 models."
+    },
+    {
+      "title": "Agent tooling",
+      "detail": "Super Agent, Autopilot and an MCP store with 700+ app connections (vendor claim)."
+    },
+    {
+      "title": "Free to install",
+      "detail": "No fee for the browser; credits only for cloud agents."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Little independent testing",
+      "detail": "Most coverage is promotional or aggregator write-ups."
+    },
+    {
+      "title": "Credit-based agents",
+      "detail": "Super Agent and research use credits; prices unclear."
+    },
+    {
+      "title": "Desktop only",
+      "detail": "macOS 15+ and Windows; mobile and Linux browsers not offered."
+    },
+    {
+      "title": "Opaque pricing and policies",
+      "detail": "Plan details need sign-in; privacy policy not reviewed."
+    }
+  ],
+  "signatureFeatures": [
+    "Super Agent",
+    "Autopilot",
+    "Built-in ad blocker",
+    "On-device models",
+    "MCP store"
+  ],
+  "faq": [
+    {
+      "q": "Is the Genspark browser free?",
+      "a": "The browser is free; cloud agent features consume credits on a Genspark plan."
+    },
+    {
+      "q": "Does it run on Windows?",
+      "a": "Launched Mac-only in Jun 2025; the download page now lists a Windows build."
+    },
+    {
+      "q": "Can it run models locally?",
+      "a": "The vendor says yes via open-weight models on your own hardware; performance depends on the device."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-06",
+      "event": "Genspark AI Browser announced, Mac-only"
+    },
+    {
+      "date": "2025-06",
+      "event": "Launch post says Windows support is coming soon"
+    },
+    {
+      "date": "2026-10",
+      "event": "Download page lists macOS 15+ and Windows builds"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords"
+    ],
+    "note": "Chromium-based; reviews say imports and Chrome extensions are straightforward (unverified)."
+  },
+  "alternatives": [
+    "comet",
+    "sigma-ai",
+    "opera-neon",
+    "fellou"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "account",
+      "items": [],
+      "crossOs": false,
+      "note": "Not documented"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Not documented; Chromium defaults"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "Chromium base; MV2 removed upstream (not verified for Genspark)",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Free local models; cloud agents use credits"
+    },
+    "privacy": {
+      "defaults": "Built-in ad blocker; cloud agents process page data",
+      "telemetry": "Not reviewed (site returned 403)",
+      "jurisdiction": "US (unverified)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Not reviewed",
+    "drm": "Unverified",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Not measured",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 15",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Apple Silicon and Intel builds listed"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Initially promised \"soon\" in Jun 2025"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "none",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Separate Genspark Super App supports Linux; the browser does not"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.genspark.ai/browser",
+      "title": "Download Genspark Browser (official; fetch returned 403, search snippet used)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://x.com/genspark_ai/status/1932473797548159006",
+      "title": "Genspark launch post on X (Jun 2025)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://futuretools.io/tools/genspark-browser",
+      "title": "GenSpark Browser - Future Tools",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://switchmytool.com/blog/comet-browser-vs-genspark",
+      "title": "Comet vs Genspark - SwitchMyTool",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.genspark.ai/download",
+      "title": "Genspark download page",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Current plan prices",
+    "Windows minimum OS",
+    "Exact \"169 models\" and \"700+ apps\" claims",
+    "Developer HQ and legal entity",
+    "Sync and password manager features",
+    "Extension support"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "yes",
+      7,
+      "Built-in, on by default (vendor-described)"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "customFilterLists": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "youtubeAds": [
+      "partial",
+      5,
+      "Vendor mentions pre-roll blocking"
+    ],
+    "cookieBanners": [
+      "partial",
+      3,
+      "Unverified"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      "Chromium tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "partial",
+      6,
+      "Address bar doubles as AI prompt"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "yes",
+      8,
+      "Chromium-based; installs MV3 extensions"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "Via userscript-manager extension (MV3)"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      7,
+      "Chrome import"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      9,
+      ""
+    ],
+    "aiSummarizer": [
+      "yes",
+      8,
+      ""
+    ],
+    "agenticBrowsing": [
+      "yes",
+      8,
+      "Super Agent, Autopilot, MCP store"
+    ],
+    "localAi": [
+      "yes",
+      6,
+      "On-device open-weight models (vendor claim)"
+    ],
+    "aiKillSwitch": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Chromium cold start, heavier than plain Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4,
+      "Chromium plus optional local models",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs modern hardware; AI features add load",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      4,
+      "Built-in blocker, but cloud agents see page data",
+      "editorial"
+    ],
+    "blocking": [
+      5.5,
+      "Built-in ad blocker, filter depth undocumented",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      8.5,
+      "Chromium sandbox and site isolation; agent injection risk",
+      "documented"
+    ],
+    "patchSpeed": [
+      6,
+      "Update cadence not documented",
+      "editorial"
+    ],
+    "telemetry": [
+      3,
+      "Vendor telemetry; prompts processed in cloud",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab groups and search; no workspaces documented",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      7.5,
+      "Super Agent and research tools; credit-limited",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      6,
+      "MCP store, on-device models, ad blocker",
+      "editorial"
+    ],
+    "extensions": [
+      6,
+      "Chromium extension install per reviews (unverified)",
+      "editorial"
+    ],
+    "sync": [
+      4,
+      "Sync not documented",
+      "editorial"
+    ],
+    "passwords": [
+      4.5,
+      "Basic built-in manager or Chromium defaults",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile browser",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "documented"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary layer over Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      4.5,
+      "Credit pricing unclear; mostly vendor-sourced info",
+      "editorial"
+    ],
+    "longevity": [
+      5.5,
+      "Funded AI startup with broader product line",
+      "editorial"
+    ],
+    "ai": [
+      8.5,
+      "Super Agent plus local model option",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Chrome-like UI; credit model adds friction",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

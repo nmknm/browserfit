@@ -1,0 +1,748 @@
+{
+  "id": "quark",
+  "name": "Quark",
+  "aliases": [
+    "Quark Browser",
+    "夸克"
+  ],
+  "group": "regional",
+  "developer": "Alibaba Group",
+  "hq": "China",
+  "businessModel": "Free; funded by Alibaba’s AI, search and ad business, plus Quark Drive subscriptions",
+  "engine": "blink",
+  "basedOn": "Chromium-derived engine (reported)",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Quark Drive storage is sold in paid tiers (not verified)",
+  "releaseYear": 2016,
+  "status": "active",
+  "version": {
+    "current": "Rolling (not verified)",
+    "date": "2026",
+    "upstream": "Not verified"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Frequent app updates; not published",
+  "website": "https://www.quarkcx.com/en/",
+  "tags": [
+    "ai",
+    "china",
+    "cloud-drive",
+    "qwen"
+  ],
+  "pitch": "Alibaba’s AI search browser with Qwen built in and a bundled cloud drive.",
+  "summary": "Quark is Alibaba’s AI-first browser and app, popular in China. A January 2026 desktop relaunch built Qwen into the browser, alongside cloud drive, document scanning and AI writing tools.",
+  "bestFor": [
+    "Chinese-language users who want AI search and study tools",
+    "People already in Alibaba’s ecosystem",
+    "Scanning and cloud-drive workflows"
+  ],
+  "notFor": [
+    "Anyone who wants an independent privacy-first browser",
+    "Users who need a large extension ecosystem"
+  ],
+  "pros": [
+    {
+      "title": "Qwen built in",
+      "detail": "The January 2026 desktop version uses Qwen as its core AI engine with a floating ball assistant."
+    },
+    {
+      "title": "Cloud drive",
+      "detail": "Quark Cloud Drive is built in, with up to 6 TB of storage per its description."
+    },
+    {
+      "title": "Scanner and study tools",
+      "detail": "AI document scanning, learning and writing tools."
+    },
+    {
+      "title": "Four platforms",
+      "detail": "Windows 10/11, macOS 12+, Android 8+ and iOS."
+    }
+  ],
+  "cons": [
+    {
+      "title": "China-centric",
+      "detail": "Mostly used and supported in China; reviews call it less relevant elsewhere."
+    },
+    {
+      "title": "Account required for key features",
+      "detail": "The desktop version needs a QR login from the phone app for drive and scanner features."
+    },
+    {
+      "title": "Opaque privacy",
+      "detail": "AI features send data to Alibaba services; independent privacy review is limited."
+    }
+  ],
+  "signatureFeatures": [
+    "Qwen assistant",
+    "Quark Cloud Drive",
+    "AI document scanner",
+    "Floating ball"
+  ],
+  "faq": [
+    {
+      "q": "How many people use Quark?",
+      "a": "Alibaba cites over 200 million users in China and 100 million desktop users; Baidu’s wiki cites about 159 million monthly actives in June 2026. The figures measure different things."
+    },
+    {
+      "q": "Which AI model does it use?",
+      "a": "Alibaba’s Qwen."
+    },
+    {
+      "q": "Does it work outside China?",
+      "a": "Downloads are offered globally, but the product and its services are aimed at the Chinese market."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2016",
+      "event": "Quark launched as a mobile browser (not verified)"
+    },
+    {
+      "date": "2026-01",
+      "event": "Revamped desktop AI browser with Qwen for Windows and macOS"
+    },
+    {
+      "date": "2026-02",
+      "event": "Quark Drive launched as a standalone app"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Import options are not documented in the sources."
+  },
+  "alternatives": [
+    "qq-browser",
+    "uc-browser",
+    "chrome"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "history"
+      ],
+      "crossOs": true,
+      "note": "Bookmarks, history and drive files sync across devices"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Not documented"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Extension support not documented",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "on-by-default",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Qwen is a core part of the product"
+    },
+    "privacy": {
+      "defaults": "Alibaba account-based services",
+      "telemetry": "Not documented in the sources",
+      "jurisdiction": "China"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Quark Search",
+    "telemetry": "Not documented in the sources",
+    "drm": "Not documented in the sources",
+    "codecs": "Not documented in the sources",
+    "sandbox": "Not documented in the sources",
+    "patchLag": "Not documented",
+    "languages": "Chinese-first; English download page exists"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10/11 (64-bit)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Desktop relaunch with Qwen in January 2026",
+        "QR login from the phone app unlocks drive and scanner"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 12+",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Same desktop AI release as Windows"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 8.0+",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "google-play"
+      ],
+      "notes": [
+        "Original and largest platform",
+        "Baidu’s wiki also lists HarmonyOS"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS (current)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine under Apple rules"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "Rendering engine on each platform (Chromium-derived is reported, not confirmed)",
+    "Current version numbers",
+    "Launch year and Quark Drive pricing",
+    "Extension and privacy details"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "no",
+      0
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "no",
+      0
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      4
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "yes",
+      6,
+      "Scanner and capture tools"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "partial",
+      4,
+      "Cloud drive saves"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "yes",
+      6,
+      "Account sync"
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "partial",
+      4
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      3
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "yes",
+      8,
+      "Qwen built in"
+    ],
+    "aiSummarizer": [
+      "yes",
+      7,
+      "AI search and summaries"
+    ],
+    "agenticBrowsing": [
+      "partial",
+      3,
+      "Marketed assistant actions; scope unverified"
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "no",
+      0,
+      "No documented switch"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-assisted"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Integrated with Quark Drive"
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      3
+    ],
+    "devtools": [
+      "no",
+      0
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      7.5,
+      "Chromium-class engine (reported)",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "Optimised for the Chinese web",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7.5,
+      "Alibaba CDN-friendly",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Light mobile app; heavier on desktop",
+      "editorial"
+    ],
+    "smoothness": [
+      7.5,
+      "Modern Chromium-class engine",
+      "editorial"
+    ],
+    "graphics": [
+      6.5,
+      "Not a gaming focus",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "AI features add overhead",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Typical Chromium-class load",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Mobile-first tuning",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "Few controls documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Strong on low-end Android in China",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Bundles drive and AI tools",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      2,
+      "Account-based AI services",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Ad blocking not documented",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "None documented",
+      "editorial"
+    ],
+    "securityHardening": [
+      6,
+      "Sandbox details not documented",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5,
+      "Not published",
+      "editorial"
+    ],
+    "telemetry": [
+      2,
+      "Not documented; account-linked services",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Themes available",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Basic settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3,
+      "Little exposed",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Tabs plus AI sidebar",
+      "editorial"
+    ],
+    "searchFreedom": [
+      3,
+      "Quark Search is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Cloud drive downloads",
+      "editorial"
+    ],
+    "productivity": [
+      7,
+      "Scanner, cloud drive, AI writing",
+      "documented"
+    ],
+    "media": [
+      5,
+      "Not documented in detail",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-assisted translation",
+      "editorial"
+    ],
+    "extras": [
+      8,
+      "Cloud drive, scanner, study and health tools",
+      "documented"
+    ],
+    "extensions": [
+      1,
+      "Not documented",
+      "editorial"
+    ],
+    "sync": [
+      6,
+      "Bookmarks, history and files sync",
+      "editorial"
+    ],
+    "passwords": [
+      3,
+      "Not documented",
+      "editorial"
+    ],
+    "mobileApps": [
+      8,
+      "Mobile is the core product",
+      "editorial"
+    ],
+    "webCompat": [
+      7,
+      "Strong on Chinese sites",
+      "editorial"
+    ],
+    "devTools": [
+      2,
+      "Not documented",
+      "editorial"
+    ],
+    "accessibility": [
+      4,
+      "Not documented",
+      "editorial"
+    ],
+    "openSource": [
+      1,
+      "Proprietary",
+      "editorial"
+    ],
+    "businessTrust": [
+      3,
+      "Alibaba data practices, limited transparency",
+      "editorial"
+    ],
+    "longevity": [
+      8,
+      "Backed by Alibaba; active 2026 launches",
+      "documented"
+    ],
+    "ai": [
+      9,
+      "Qwen integrated across the product",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Simple, but Chinese-first",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.alizila.com/alibabas-quark-unveils-revamped-ai-browser-deeply-integrated-with-qwen/",
+      "title": "Alizila: Quark unveils revamped AI browser",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.quarkcx.com/en/download.html",
+      "title": "Quark download page",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://baike.baidu.com/en/item/Quark/13155",
+      "title": "Baiduwiki: Quark",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

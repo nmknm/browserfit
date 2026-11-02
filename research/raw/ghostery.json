@@ -1,0 +1,330 @@
+{
+  "id": "ghostery",
+  "name": "Ghostery Private Browser",
+  "aliases": ["Ghostery Dawn", "Dawn", "Ghostery Browser"],
+  "group": "privacy",
+  "developer": "Ghostery GmbH",
+  "hq": "Germany",
+  "businessModel": "Free; Ghostery GmbH funds itself through its other products (extension subscriptions and related services), not the browser. Exact revenue link unverified.",
+  "engine": "gecko",
+  "basedOn": "Firefox",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2021,
+  "status": "discontinued",
+  "statusNote": "Sunset announced 2024-12-05; no security or feature updates since the final 2024.8.2 build (Dec 2024); GitHub repo archived 2025-02-17. Ghostery now recommends Firefox or Safari plus its extension.",
+  "version": {
+    "current": "2024.8.2",
+    "date": "2024-12-10",
+    "upstream": "Firefox (exact base version not verified)"
+  },
+  "channels": ["Release", "Nightly (via about:config update channel)"],
+  "updateCadence": "None: development ended Dec 2024",
+  "website": "https://www.ghostery.com",
+  "tags": ["privacy", "firefox-fork", "ad-blocking", "discontinued"],
+  "pitch": "Firefox-based browser with Ghostery blocking built in. Discontinued in Dec 2024.",
+  "summary": "A Firefox fork (formerly Dawn) with Ghostery tracker and ad blocking built in. Ghostery retired it in December 2024 and tells users to keep Firefox or Safari and add the Ghostery extension instead.",
+  "bestFor": [
+    "Nobody new: the browser no longer receives security updates",
+    "Existing users looking for the replacement path (Firefox + Ghostery extension)",
+    "Readers comparing how a Firefox-based privacy browser was packaged"
+  ],
+  "notFor": [
+    "Anyone who needs security fixes for a browser that is exposed to the open web",
+    "People who want a maintained browser with a roadmap",
+    "Users who need a mobile version (the mobile apps were retired too)"
+  ],
+  "pros": [
+    {
+      "title": "Blocking built in",
+      "detail": "Ghostery positioned it as blocking ads and trackers out of the box, without installing an extension."
+    },
+    {
+      "title": "Firefox base",
+      "detail": "Built on Firefox, so Firefox extensions and the Gecko engine were available."
+    },
+    {
+      "title": "Open source",
+      "detail": "The full desktop source was public under MPL-2.0 and remains readable in the archived repository."
+    },
+    {
+      "title": "Clear exit path",
+      "detail": "Ghostery explained the shutdown and named replacements for desktop, Android and iOS."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Discontinued",
+      "detail": "Ghostery says the browser no longer gets security or feature updates and that continued use is at your own risk."
+    },
+    {
+      "title": "Frozen engine",
+      "detail": "The Firefox base has not been updated since late 2024, so known browser vulnerabilities stay unpatched."
+    },
+    {
+      "title": "No mobile option",
+      "detail": "Android and iOS users are pointed to Firefox and Safari with the Ghostery extension instead."
+    },
+    {
+      "title": "Thin documentation",
+      "detail": "Telemetry, sync and DRM behaviour of the final builds are not documented in any source we could fetch."
+    }
+  ],
+  "signatureFeatures": ["Built-in Ghostery blocking", "Ghostery Private Search by default", "Firefox extension support"],
+  "faq": [
+    {
+      "q": "Is Ghostery Private Browser still supported?",
+      "a": "No. Ghostery announced the sunset on 2024-12-05 and the repository was archived on 2025-02-17; the browser gets no security or feature updates."
+    },
+    {
+      "q": "What should I use instead?",
+      "a": "Ghostery recommends Firefox with the Ghostery Tracker & Ad Blocker extension on desktop and Android, and Safari with the extension on iOS and iPadOS."
+    },
+    {
+      "q": "Why was it shut down?",
+      "a": "Ghostery said Safari on iOS (since 2022) and Firefox on Android (since 2024) now support extensions, so a standalone browser was no longer necessary."
+    }
+  ],
+  "timeline": [
+    {"date": "2020-07", "event": "Desktop repository created on GitHub (as Dawn)"},
+    {"date": "2021-03", "event": "Ghostery blog introduces the Private Browser as a faster, Firefox-based browser"},
+    {"date": "2024-08", "event": "Release 2024.8.1 published on GitHub"},
+    {"date": "2024-12", "event": "Sunset announced on 5 Dec; final release posted 10 Dec"},
+    {"date": "2025-02", "event": "GitHub repository archived and marked discontinued"}
+  ],
+  "switching": {
+    "imports": ["bookmarks", "history", "passwords", "extensions"],
+    "note": "Move to Firefox and install the Ghostery Tracker & Ad Blocker extension; Firefox can import profile data, and the Private Browser was itself Firefox-based."
+  },
+  "alternatives": ["firefox", "librewolf", "brave", "mullvad-browser", "duckduckgo"],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Sync support in the Ghostery build was not verified"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Firefox-style local manager (unverified in the Ghostery build)"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Firefox base keeps Manifest V2 add-ons, but the base is frozen at its late-2024 state",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Built-in ad and tracker blocking; Ghostery Private Search as default engine (per Ghostery pages)",
+      "telemetry": "Not verified; no current policy found for the retired browser",
+      "jurisdiction": "Germany (Ghostery GmbH)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Ghostery Private Search (per Ghostery pages)",
+    "telemetry": "Not verified",
+    "drm": "Not verified",
+    "codecs": "Firefox set (unverified)",
+    "sandbox": "Firefox sandbox, frozen at the last build",
+    "patchLag": "No security updates since Dec 2024",
+    "languages": "English only (per AlternativeTo)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "discontinued",
+      "minOs": "Windows 10+ (unverified)",
+      "arch": ["x64", "arm64"],
+      "stores": ["official-installer", "github"],
+      "notes": ["Builds for 64-bit and ARM listed in the archived README", "No updates since Dec 2024"],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "discontinued",
+      "minOs": "Unverified",
+      "arch": ["x64", "arm64"],
+      "stores": ["official-installer", "github"],
+      "notes": ["No updates since Dec 2024"],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "discontinued",
+      "minOs": "64-bit Linux",
+      "arch": ["x64"],
+      "stores": ["github"],
+      "notes": ["No updates since Dec 2024"],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "discontinued",
+      "minOs": "Unverified",
+      "arch": ["arm64"],
+      "stores": [],
+      "notes": ["Ghostery now points Android users to Firefox plus its extension", "Store listing state not verified"],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -6,
+        "patchSpeed": -1
+      }
+    },
+    "ios": {
+      "status": "discontinued",
+      "minOs": "Unverified",
+      "arch": ["arm64"],
+      "stores": [],
+      "notes": ["Ghostery now points iOS users to Safari plus its extension", "WebKit engine under Apple rules (inferred)"],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -9,
+        "fingerprinting": -2
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": ["yes", 8, "Ghostery blocking built in; Firefox ETP underneath"],
+    "fingerprintProtection": ["partial", 5, "Anti-tracking data scrubbing claimed by Ghostery; details unverified"],
+    "httpsOnly": ["yes", 7, "Firefox HTTPS-Only mode"],
+    "doh": ["yes", 7, "Firefox DNS over HTTPS"],
+    "torWindows": ["no", 0],
+    "builtinVpn": ["no", 0],
+    "cookieIsolation": ["yes", 7, "Firefox Total Cookie Protection, if present in the frozen base"],
+    "queryStripping": ["partial", 5, "Firefox tracking-parameter stripping"],
+    "telemetryOptOut": ["yes", 7, "Firefox telemetry controls; Ghostery-specific settings unverified"],
+    "privateHardening": ["partial", 5],
+    "adBlocker": ["yes", 8, "Ghostery ad and tracker blocking"],
+    "cosmeticFiltering": ["yes", 7],
+    "customFilterLists": ["partial", 4, "Custom lists are an extension feature; browser support unverified"],
+    "youtubeAds": ["partial", 5],
+    "cookieBanners": ["partial", 5, "Ghostery cookie-popup handling; browser coverage unverified"],
+    "verticalTabs": ["no", 0, "Predates Firefox's native vertical tabs"],
+    "tabGroups": ["no", 0],
+    "tabStacks": ["no", 0],
+    "workspaces": ["no", 0],
+    "splitView": ["no", 0],
+    "tabSleeping": ["partial", 3, "Firefox tab unloading under memory pressure"],
+    "tabSearch": ["yes", 5],
+    "pinnedTabs": ["yes", 8],
+    "tabTiling": ["no", 0],
+    "readerMode": ["yes", 7],
+    "notes": ["no", 0],
+    "webPanels": ["no", 0],
+    "pip": ["yes", 8],
+    "screenshots": ["yes", 7],
+    "commandBar": ["partial", 3, "Firefox address-bar quick actions"],
+    "mouseGestures": ["extension", 6],
+    "keyboardShortcuts": ["yes", 7],
+    "readLater": ["no", 0],
+    "mailCalendarRss": ["no", 0],
+    "chromeWebStore": ["no", 0],
+    "firefoxAddons": ["yes", 9, "Ghostery says Firefox extensions work"],
+    "mv2Support": ["yes", 8, "Firefox base"],
+    "uboFull": ["yes", 9],
+    "mobileExtensions": ["no", 0],
+    "userscripts": ["extension", 8],
+    "syncBookmarks": ["partial", 3, "Firefox Sync status in this build unverified"],
+    "syncPasswords": ["partial", 3, "Unverified"],
+    "syncTabs": ["partial", 3, "Unverified"],
+    "e2eeSync": ["partial", 3, "Firefox Sync is E2EE; availability here unverified"],
+    "profiles": ["yes", 7],
+    "passwordManager": ["yes", 5],
+    "passkeys": ["partial", 3],
+    "importData": ["yes", 8, "Imports from other desktop browsers (per Ghostery)"],
+    "widevine": ["partial", 4, "Unverified"],
+    "netflix4k": ["no", 0],
+    "hevc": ["partial", 4],
+    "av1": ["yes", 7],
+    "hwDecode": ["yes", 7],
+    "aiAssistant": ["no", 0],
+    "aiSummarizer": ["no", 0],
+    "agenticBrowsing": ["no", 0],
+    "localAi": ["no", 0],
+    "aiKillSwitch": ["yes", 10, "No AI features"],
+    "translation": ["partial", 3, "Unverified"],
+    "cryptoWallet": ["no", 0],
+    "pwaInstall": ["no", 0],
+    "enterprisePolicies": ["yes", 6, "Firefox policies.json"],
+    "kioskMode": ["partial", 4],
+    "panicButton": ["no", 0],
+    "downloadManager": ["yes", 6],
+    "customThemes": ["yes", 6],
+    "customSearchEngines": ["yes", 7],
+    "devtools": ["yes", 9, "Firefox DevTools"]
+  },
+  "scores": {
+    "jsSpeed": [7.5, "Firefox SpiderMonkey, frozen at a late-2024 base", "editorial"],
+    "pageLoad": [8, "Gecko plus built-in blocking trims page weight", "editorial"],
+    "networkSpeed": [7.5, "Firefox networking stack, HTTP/3 capable", "editorial"],
+    "startup": [7, "Firefox-class startup", "editorial"],
+    "smoothness": [8, "Gecko compositor", "editorial"],
+    "graphics": [7, "WebGL yes, no WebGPU in the frozen base", "editorial"],
+    "memory": [6.5, "Firefox-level memory use", "editorial"],
+    "cpu": [7, "Blocking cuts script work", "editorial"],
+    "battery": [6.5, "Firefox-level efficiency", "editorial"],
+    "resourceControls": [5, "Only Firefox's automatic tab unloading", "editorial"],
+    "lowEnd": [6, "Firefox-class requirements", "editorial"],
+    "installSize": [6, "Firefox-sized install", "editorial"],
+    "privacyDefaults": [8.5, "Blocking on from first run; Ghostery search default", "documented"],
+    "blocking": [8.5, "Ghostery engine built in", "documented"],
+    "fingerprinting": [6, "Ghostery data scrubbing; no RFP-level defence confirmed", "editorial"],
+    "securityHardening": [3.5, "Firefox sandbox, but unpatched since Dec 2024", "documented"],
+    "patchSpeed": [0.5, "No updates since the Dec 2024 shutdown", "documented"],
+    "telemetry": [6.5, "No personal-data collection claimed; telemetry unverified", "editorial"],
+    "lookCustom": [6, "Firefox themes and userChrome", "editorial"],
+    "behaviourCustom": [6.5, "Firefox shortcuts and per-site settings", "editorial"],
+    "advancedSettings": [8, "about:config and policies", "editorial"],
+    "tabManagement": [5.5, "Pinned tabs and containers only", "editorial"],
+    "searchFreedom": [7.5, "Firefox search engine management", "editorial"],
+    "downloads": [6, "Firefox download panel", "editorial"],
+    "productivity": [5, "Reader, PiP, screenshots; nothing extra", "editorial"],
+    "media": [6.5, "Firefox codecs; DRM state unverified", "editorial"],
+    "translation": [3, "On-device translation unconfirmed in this build", "editorial"],
+    "extras": [3, "Ghostery stats and private search only", "documented"],
+    "extensions": [8.5, "Firefox add-ons and MV2 intact", "documented"],
+    "sync": [3, "Sync in this build is unverified", "editorial"],
+    "passwords": [5, "Firefox local password manager", "editorial"],
+    "mobileApps": [1, "Mobile apps retired with the browser", "documented"],
+    "webCompat": [7.5, "Gecko, but frozen in late 2024", "editorial"],
+    "devTools": [9, "Full Firefox DevTools", "documented"],
+    "accessibility": [8, "Firefox accessibility stack", "editorial"],
+    "openSource": [9.5, "MPL-2.0 source, archived but readable", "documented"],
+    "businessTrust": [7, "Clear sunset notice; Ghostery's older ad-data history", "editorial"],
+    "longevity": [0.5, "Discontinued Dec 2024, repo archived", "documented"],
+    "ai": [0, "No AI features", "documented"],
+    "beginnerFriendly": [7, "Simple setup, but no longer maintained", "editorial"]
+  },
+  "sources": [
+    {"url": "https://www.ghostery.com/blog/ghostery-private-browser-discontinued", "title": "Ghostery: Ghostery Private Browser is discontinued", "accessed": "2026-10-30"},
+    {"url": "https://github.com/ghostery/user-agent-desktop", "title": "ghostery/user-agent-desktop (archived 2025-02-17)", "accessed": "2026-10-30"},
+    {"url": "https://www.ghostery.com/blog/ghostery-private-browser-our-new-browser-is-lightning-fast", "title": "Ghostery: Private Browser launch post", "accessed": "2026-10-30"},
+    {"url": "https://alternativeto.net/software/ghostery-dawn/about/", "title": "AlternativeTo: Ghostery Private Browser (Dawn)", "accessed": "2026-10-30"},
+    {"url": "https://en.wikipedia.org/wiki/Ghostery", "title": "Ghostery - Wikipedia", "accessed": "2026-10-30"},
+    {"url": "https://www.ghostery.com/changelog", "title": "Ghostery product changelog (extension only)", "accessed": "2026-10-30"}
+  ],
+  "unverified": [
+    "Firefox base version of the final 2024.8.2 build",
+    "Telemetry, Firefox Sync, Widevine and translation behaviour of the final builds",
+    "Whether the Android and iOS store listings are still live",
+    "Exact public launch date (blog post is dated March 2021; the repository started July 2020 as Dawn)",
+    "Feature ratings are inferred from the Firefox base and Ghostery marketing, not tested on the final build"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-30"
+}

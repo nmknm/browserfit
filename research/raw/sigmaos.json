@@ -1,0 +1,705 @@
+{
+  "id": "sigmaos",
+  "name": "SigmaOS",
+  "aliases": [
+    "Sigma OS"
+  ],
+  "group": "power",
+  "developer": "SigmaOS (Sigma Labs)",
+  "hq": "United States (unverified)",
+  "businessModel": "Freemium: free Personal plan; Personal Pro $20/mo and Personal Max $30/mo include more Airis AI access",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Personal Pro $20/mo, Personal Max $30/mo (checked Aug 2026)",
+  "releaseYear": 2022,
+  "status": "active",
+  "statusNote": "Mac-only; viability concerns raised by reviewers (minimal funding), no shutdown found",
+  "version": {
+    "current": "1.21.0",
+    "date": "2026-03",
+    "upstream": "Chromium (version not verified)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Irregular (MacUpdate lists 1.21.0, March 2026)",
+  "website": "https://sigmaos.com",
+  "tags": [
+    "workspaces",
+    "productivity",
+    "mac",
+    "keyboard-driven",
+    "ai"
+  ],
+  "pitch": "A keyboard-driven Mac browser built around workspaces and split view.",
+  "summary": "Productivity browser for macOS with workspaces, split view, ad blocker and the Airis AI assistant. iOS and Windows are \"coming soon\" with no date.",
+  "bestFor": [
+    "Mac power users who like shortcuts and workspaces"
+  ],
+  "notFor": [
+    "Windows/Linux users",
+    "Users worried about long-term support"
+  ],
+  "pros": [
+    {
+      "title": "Workspaces",
+      "detail": "Unlimited workspaces on free plan."
+    },
+    {
+      "title": "Split view and shortcuts",
+      "detail": "Keyboard-driven workflow."
+    },
+    {
+      "title": "Airis AI",
+      "detail": "Limited free access."
+    },
+    {
+      "title": "Free tier",
+      "detail": "Personal plan is free with unlimited workspaces and an ad blocker."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Mac only",
+      "detail": "Windows/iOS not shipped."
+    },
+    {
+      "title": "Reliability complaints",
+      "detail": "Lag, glitches, SSO issues in reviews."
+    },
+    {
+      "title": "Funding risk",
+      "detail": "Minimal funding per reviewers."
+    },
+    {
+      "title": "Weak extension support",
+      "detail": "Per reviewers."
+    }
+  ],
+  "signatureFeatures": [
+    "Workspaces",
+    "Split view",
+    "Airis assistant",
+    "Shortcut-heavy design"
+  ],
+  "faq": [
+    {
+      "q": "Is SigmaOS available on Windows?",
+      "a": "No; Windows and iOS are listed as coming soon with no date."
+    },
+    {
+      "q": "Is it free?",
+      "a": "Yes, Personal plan is free; Pro $20/mo and Max $30/mo add AI."
+    },
+    {
+      "q": "Is it shutting down?",
+      "a": "No shutdown was found; it was still listed Aug-Oct 2026."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2022-11",
+      "event": "SigmaOS raises $4M seed"
+    },
+    {
+      "date": "2026-03",
+      "event": "Version 1.21.0 listed"
+    },
+    {
+      "date": "2026-09",
+      "event": "Windows/iOS still \"coming soon\""
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords"
+    ],
+    "note": "Imports from Chrome/Safari (unverified)."
+  },
+  "alternatives": [
+    "arc",
+    "orion",
+    "vivaldi",
+    "dia",
+    "island"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "workspaces",
+        "bookmarks"
+      ],
+      "crossOs": false,
+      "note": "Account sync; Mac only"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Unverified"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Chromium MV3 (weak extension support reported)",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "partial",
+      "note": "Airis Assistant; limited on free plan"
+    },
+    "privacy": {
+      "defaults": "Ad blocker included",
+      "telemetry": "Unverified",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (unverified)",
+    "telemetry": "Unverified",
+    "drm": "Widevine (unverified)",
+    "codecs": "Chromium",
+    "sandbox": "Chromium sandbox",
+    "patchSpeed": "Unverified",
+    "languages": "English"
+  },
+  "platforms": {
+    "macos": {
+      "status": "active",
+      "minOs": "macOS (unverified)",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Mac-only"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.producthunt.com/products/sigmaos/reviews",
+      "title": "Product Hunt: SigmaOS reviews",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://efficient.app/apps/sigmaos",
+      "title": "efficient.app: SigmaOS review",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://sigmaos.macupdate.com/",
+      "title": "MacUpdate: SigmaOS",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://techcrunch.com/2026/07/22/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
+      "title": "TechCrunch: browser alternatives 2026",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Chromium version",
+    "Minimum macOS",
+    "Pricing beyond Aug 2026",
+    "Telemetry",
+    "Developer details"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "yes",
+      6,
+      "Built-in"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3
+    ],
+    "customFilterLists": [
+      "extension",
+      3
+    ],
+    "youtubeAds": [
+      "extension",
+      2
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "yes",
+      9
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      9
+    ],
+    "splitView": [
+      "yes",
+      9
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "yes",
+      6
+    ],
+    "webPanels": [
+      "partial",
+      4
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      3
+    ],
+    "commandBar": [
+      "yes",
+      8
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      5
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "yes",
+      6
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "yes",
+      6
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "partial",
+      3
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "yes",
+      6,
+      "Airis"
+    ],
+    "aiSummarizer": [
+      "yes",
+      6
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      3
+    ],
+    "aiKillSwitch": [
+      "partial",
+      5
+    ],
+    "translation": [
+      "partial",
+      3
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "blocking": [
+      5,
+      "Built-in ad blocker",
+      "documented"
+    ],
+    "fingerprinting": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "securityHardening": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "telemetry": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lookCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      9,
+      "Workspaces and split view",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      8,
+      "Command bar, notes, AI",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "translation": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extensions": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "sync": [
+      1,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "passwords": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "iOS not shipped",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "businessTrust": [
+      6,
+      "Small startup",
+      "editorial"
+    ],
+    "longevity": [
+      3,
+      "Minimal funding, Mac-only",
+      "editorial"
+    ],
+    "ai": [
+      5.5,
+      "Airis assistant",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      4.5,
+      "Steep shortcuts",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,785 @@
+{
+  "id": "thravik",
+  "name": "Thravik",
+  "aliases": [
+    "Thravik Browser"
+  ],
+  "group": "ai",
+  "developer": "Evhalon (maker credited as Ahmed Yacoub on Product Hunt)",
+  "hq": "Not confirmed",
+  "businessModel": "Not stated; accounts used for usage analytics",
+  "engine": "webkit",
+  "basedOn": "System WebKit (Swift/SwiftUI)",
+  "license": "Not stated",
+  "openSource": false,
+  "price": "free",
+  "paidNote": "Price not stated on Product Hunt; assumed free (unverified)",
+  "releaseYear": 2026,
+  "status": "beta",
+  "statusNote": "Product Hunt launch Oct 9-10, 2026; releases at 0.2.x (0.2.69 seen Oct 27)",
+  "version": {
+    "current": "0.2.69",
+    "date": "2026-10-27",
+    "upstream": "System WebKit (macOS)"
+  },
+  "channels": [
+    "Signed releases on GitHub (thravik-releases)"
+  ],
+  "updateCadence": "Frequent; self-updating",
+  "website": "https://thravik.app",
+  "tags": [
+    "mac",
+    "webkit",
+    "on-device-ai",
+    "memory",
+    "spaces"
+  ],
+  "pitch": "Native Mac WebKit browser with private on-device memory and Apple Intelligence.",
+  "summary": "Native macOS 26+ browser built on system WebKit (app only a few MB). Spaces with separate logins, up to four-pane split view, tab hibernation and opt-in encrypted on-device Memory plus Ask Page via Apple Intelligence.",
+  "bestFor": [
+    "Mac power users wanting lightweight, native browsing",
+    "People who want private on-device AI memory",
+    "Arc/Dia-style tab fans"
+  ],
+  "notFor": [
+    "Anyone not on macOS 26+",
+    "Chrome-extension-dependent users",
+    "People wanting an autonomous agent"
+  ],
+  "pros": [
+    {
+      "title": "Tiny footprint",
+      "detail": "No bundled engine; the app is a few megabytes and background tabs hibernate."
+    },
+    {
+      "title": "Private Memory",
+      "detail": "Off by default; encrypted with AES-256-GCM using a device-only Keychain key and skips banking, health and password pages."
+    },
+    {
+      "title": "On-device AI",
+      "detail": "Ask Page and Memory answers use Apple Intelligence where available."
+    },
+    {
+      "title": "Spaces",
+      "detail": "Separate tabs, cookies and logins; Split View up to four pages."
+    }
+  ],
+  "cons": [
+    {
+      "title": "macOS 26+ only",
+      "detail": "Mobile and other desktop OSes are not offered (release notes hint at mobile work)."
+    },
+    {
+      "title": "Limited extensions",
+      "detail": "Extensions relying on Chrome-only APIs may not work."
+    },
+    {
+      "title": "Early and single-developer",
+      "detail": "Version 0.2.x; maker lists \"Redent\" in one reply, a naming inconsistency."
+    },
+    {
+      "title": "Account required",
+      "detail": "Login supports analytics; no-login mode only \"considered\"."
+    }
+  ],
+  "signatureFeatures": [
+    "Private Memory (⌘K)",
+    "Ask Page",
+    "Spaces",
+    "Split View",
+    "Boosts"
+  ],
+  "faq": [
+    {
+      "q": "Is Thravik Chromium?",
+      "a": "No, it runs on the system WebKit with a CDP bridge via inspect-webkit."
+    },
+    {
+      "q": "Does it use cloud AI?",
+      "a": "Ask Page and Memory are described as on-device via Apple Intelligence."
+    },
+    {
+      "q": "What does it require?",
+      "a": "macOS 26 or later."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-10",
+      "event": "Launched on Product Hunt (Oct 9-10)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Release 0.2.69 published (Oct 27)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Listed among new web browsers on Product Hunt"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords"
+    ],
+    "note": "Unverified; saved passwords and TOTP autofill exist."
+  },
+  "alternatives": [
+    "rill",
+    "dia",
+    "google-disco",
+    "aside"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "account",
+      "items": [
+        "vault",
+        "bookmarks"
+      ],
+      "crossOs": false,
+      "note": "Release notes mention sync/vault; scope unverified"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Saved passwords and Google Authenticator code fill"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "WebKit; Chrome-only extension APIs may not work",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": false,
+      "paid": "none",
+      "note": "On-device Apple Intelligence; Memory off by default"
+    },
+    "privacy": {
+      "defaults": "Memory off by default; encrypted on-device; skips sensitive sites",
+      "telemetry": "Login for usage analytics; Crashlytics seen in release notes",
+      "jurisdiction": "Unknown"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Usage analytics via login; crash reporting",
+    "drm": "System WebKit/FairPlay",
+    "codecs": "System WebKit",
+    "sandbox": "WebKit sandbox",
+    "patchLag": "Tied to macOS updates",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "macos": {
+      "status": "beta",
+      "minOs": "macOS 26",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "github"
+      ],
+      "notes": [
+        "Signed, notarized builds in Evhalon/thravik-releases",
+        "Few MB app size"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "unknown",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Release notes mention iOS/Android items; apps unconfirmed"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://thravik.app/",
+      "title": "Thravik - Native Browser for Mac (official)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.producthunt.com/products/thravik",
+      "title": "Thravik on Product Hunt",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/Evhalon/thravik-releases/releases",
+      "title": "Thravik releases",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.producthunt.com/categories/web-browsers?order=recent_launches",
+      "title": "Product Hunt: new web browsers",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Price",
+    "License and open-source status of the Evhalon/thravik repo",
+    "Mobile apps (release notes mention iOS/Android)",
+    "Sync scope",
+    "Developer country",
+    "Product Hunt reply naming \"Redent\""
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      5,
+      "WebKit ITP-class defaults (system WebKit)"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "partial",
+      5,
+      "WebKit upgrade behaviour (unverified)"
+    ],
+    "doh": [
+      "partial",
+      4,
+      "System DNS; unverified"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "yes",
+      6,
+      "WebKit partitioned storage"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "no",
+      0,
+      "No extension store"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0,
+      ""
+    ],
+    "customFilterLists": [
+      "no",
+      0,
+      ""
+    ],
+    "youtubeAds": [
+      "partial",
+      5,
+      "Release notes mention YouTube ad removal"
+    ],
+    "cookieBanners": [
+      "no",
+      0,
+      ""
+    ],
+    "verticalTabs": [
+      "yes",
+      6,
+      "Dia-style tabs, Edge reveal panels"
+    ],
+    "tabGroups": [
+      "partial",
+      5,
+      "Spaces"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "yes",
+      8,
+      "Spaces with separate logins"
+    ],
+    "splitView": [
+      "yes",
+      8,
+      "Up to 4 pages"
+    ],
+    "tabSleeping": [
+      "yes",
+      8,
+      "Tab hibernation"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "commandBar": [
+      "yes",
+      8,
+      "⌘K"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "no",
+      0,
+      "WebKit; Chrome-only extension APIs may not work"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncBookmarks": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "syncPasswords": [
+      "partial",
+      4,
+      "Vault; unverified"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Spaces with separate logins"
+    ],
+    "passwordManager": [
+      "yes",
+      6,
+      "Saved passwords, TOTP fill"
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      6,
+      "Unverified"
+    ],
+    "widevine": [
+      "yes",
+      6,
+      "FairPlay via system WebKit"
+    ],
+    "netflix4k": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      8,
+      "System VideoToolbox"
+    ],
+    "av1": [
+      "partial",
+      5,
+      "macOS hardware-dependent"
+    ],
+    "hwDecode": [
+      "yes",
+      9,
+      "VideoToolbox"
+    ],
+    "aiAssistant": [
+      "yes",
+      6,
+      "Ask Page, on-device"
+    ],
+    "aiSummarizer": [
+      "yes",
+      6,
+      "On-device"
+    ],
+    "agenticBrowsing": [
+      "no",
+      0,
+      "No autonomous agent"
+    ],
+    "localAi": [
+      "yes",
+      7,
+      "Apple Intelligence on-device"
+    ],
+    "aiKillSwitch": [
+      "partial",
+      6,
+      "Memory off by default; no global switch documented"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      3,
+      "Unverified"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "yes",
+      6,
+      "Web Inspector"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "System WebKit/JavaScriptCore, Safari-class",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "System WebKit rendering",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "System WebKit/URLSession networking",
+      "editorial"
+    ],
+    "startup": [
+      8.5,
+      "Native Swift app on system WebKit",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Native WebKit on Apple Silicon",
+      "editorial"
+    ],
+    "graphics": [
+      8,
+      "WebKit WebGL/WebGPU on macOS",
+      "editorial"
+    ],
+    "memory": [
+      7.5,
+      "Shared system WebKit; tabs hibernate",
+      "editorial"
+    ],
+    "cpu": [
+      8,
+      "Native WebKit efficiency",
+      "editorial"
+    ],
+    "battery": [
+      8.5,
+      "Native WebKit on Apple Silicon",
+      "editorial"
+    ],
+    "resourceControls": [
+      6,
+      "Tab hibernation documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      3,
+      "Requires recent macOS only",
+      "editorial"
+    ],
+    "installSize": [
+      9.5,
+      "App is only a few MB; engine is the system WebKit",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6.5,
+      "Memory off by default, encrypted, skips sensitive sites",
+      "editorial"
+    ],
+    "blocking": [
+      2,
+      "No extension store or built-in blocker documented",
+      "editorial"
+    ],
+    "fingerprinting": [
+      5,
+      "WebKit privacy defaults; no extra work documented",
+      "editorial"
+    ],
+    "securityHardening": [
+      8,
+      "WebKit sandbox; patches tied to macOS updates",
+      "documented"
+    ],
+    "patchSpeed": [
+      7,
+      "Fixes via macOS WebKit updates",
+      "editorial"
+    ],
+    "telemetry": [
+      4.5,
+      "Login analytics and crash reporting",
+      "editorial"
+    ],
+    "lookCustom": [
+      5,
+      "Glass chrome; limited options documented",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      8,
+      "Spaces, split view up to 4, hibernation",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      7,
+      "Command bar, Ask Page, Memory search",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "Memory and Boosts",
+      "editorial"
+    ],
+    "extensions": [
+      1.5,
+      "No Chrome extension support yet",
+      "editorial"
+    ],
+    "sync": [
+      4.5,
+      "Account vault; scope unverified",
+      "editorial"
+    ],
+    "passwords": [
+      5.5,
+      "Saved passwords plus TOTP fill",
+      "editorial"
+    ],
+    "mobileApps": [
+      1,
+      "Mobile unconfirmed",
+      "editorial"
+    ],
+    "webCompat": [
+      8.5,
+      "WebKit; Chrome-only sites and APIs may break",
+      "documented"
+    ],
+    "devTools": [
+      6,
+      "Web Inspector level",
+      "documented"
+    ],
+    "accessibility": [
+      8.5,
+      "Native macOS accessibility stack",
+      "editorial"
+    ],
+    "openSource": [
+      2.5,
+      "Source repo exists but license not stated",
+      "editorial"
+    ],
+    "businessTrust": [
+      4.5,
+      "Solo developer, account required, naming slip",
+      "editorial"
+    ],
+    "longevity": [
+      3.5,
+      "Version 0.2.x single developer",
+      "editorial"
+    ],
+    "ai": [
+      6,
+      "On-device Ask Page and opt-in Memory, no agent",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Safari-like native feel",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,725 @@
+{
+  "id": "cent-browser",
+  "name": "Cent Browser",
+  "aliases": [
+    "Cent",
+    "Cent Studio browser"
+  ],
+  "group": "forks",
+  "developer": "Cent Studio",
+  "hq": "China (not verified)",
+  "businessModel": "Free freeware; no business model documented",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary (freeware)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2015,
+  "status": "active",
+  "version": {
+    "current": "5.3.1184.25",
+    "date": "2026-10-17",
+    "upstream": "Chromium 150.0.7871.250"
+  },
+  "channels": [
+    "Stable",
+    "Portable"
+  ],
+  "updateCadence": "Irregular; a few releases a year, trailing Chrome by several milestones",
+  "website": "https://www.centbrowser.com/",
+  "tags": [
+    "chromium",
+    "windows",
+    "mouse-gestures",
+    "legacy-windows"
+  ],
+  "pitch": "Chromium for Windows with mouse gestures, super drag and old-Windows support.",
+  "summary": "Cent Browser is a free Windows Chromium build from Cent Studio with mouse gestures, a scrollable tab bar and super drag. Its October 2026 release still supports Windows 7 and Manifest V2 extensions.",
+  "bestFor": [
+    "Windows 7 and 8 users who want a recent-ish Chromium",
+    "People who like mouse gestures and drag tricks",
+    "Users who still rely on Manifest V2 extensions"
+  ],
+  "notFor": [
+    "People who need fast security updates",
+    "Anyone who wants an open-source or audited build"
+  ],
+  "pros": [
+    {
+      "title": "Mouse gestures built in",
+      "detail": "Right-button gestures switch tabs, refresh or open history without an extension."
+    },
+    {
+      "title": "Still supports Windows 7",
+      "detail": "The October 2026 changelog keeps Windows 7 support."
+    },
+    {
+      "title": "Manifest V2 allowed",
+      "detail": "The changelog says MV2 extensions still work."
+    },
+    {
+      "title": "Chrome extensions",
+      "detail": "Works with Chrome Web Store extensions; Google-account sync is supported."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Lagging Chromium",
+      "detail": "Version 5.3 uses Chromium 150, several milestones behind Chrome."
+    },
+    {
+      "title": "Closed source and opaque",
+      "detail": "Proprietary build with little published about the developer or telemetry."
+    },
+    {
+      "title": "Irregular updates",
+      "detail": "Download sites note it is not updated as often as Chrome."
+    }
+  ],
+  "signatureFeatures": [
+    "Mouse gestures",
+    "Super drag",
+    "Scrollable tab bar",
+    "Boss Key"
+  ],
+  "faq": [
+    {
+      "q": "Is Cent Browser safe?",
+      "a": "It is a Chromium build, but it trails Chrome by several milestones and is closed source, so patch speed is a concern."
+    },
+    {
+      "q": "Does it support Manifest V2 extensions?",
+      "a": "The October 2026 changelog says so; Chrome Web Store removed MV2 listings on 2026-08-31, so installs may need sideloading."
+    },
+    {
+      "q": "Does it run on Windows 7?",
+      "a": "Yes, according to the 5.3.1184.25 changelog."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "First releases (not verified)"
+    },
+    {
+      "date": "2025-08",
+      "event": "Version 5.2.1168.83 released"
+    },
+    {
+      "date": "2026-10",
+      "event": "Version 5.3.1184.25 on Chromium 150, with Quick URL shortcut and selected-text translation"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Chromium import tools; Google sign-in syncs Chrome data."
+  },
+  "alternatives": [
+    "supermium",
+    "slimjet",
+    "ungoogled-chromium"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "extensions",
+        "settings"
+      ],
+      "crossOs": false,
+      "note": "Google-account sync reported"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Chromium password manager"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Changelog says MV2 extensions still work; Chrome Web Store dropped MV2 on 2026-08-31",
+      "date": "2026-10"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features documented"
+    },
+    "privacy": {
+      "defaults": "Chromium defaults; privacy protection feature listed",
+      "telemetry": "Not documented in the sources",
+      "jurisdiction": "Not verified"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Not verified",
+    "telemetry": "Not documented in the sources",
+    "drm": "Not documented in the sources",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox (on legacy Windows may be weaker)",
+    "patchLag": "About 4 milestones behind Chrome by version number",
+    "languages": "Multiple (not counted)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 7 and later",
+      "arch": [
+        "x86",
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "portable"
+      ],
+      "notes": [
+        "32-bit and 64-bit builds, plus portable",
+        "GDI rendering still supported"
+      ],
+      "highlights": [
+        "Mouse gestures",
+        "Boss Key",
+        "Super drag"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "Developer location and launch year",
+    "Telemetry, default search and DRM details",
+    "Whether MV2 extensions can still be installed after Chrome Web Store removal"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium baseline"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "no",
+      0
+    ],
+    "privateHardening": [
+      "partial",
+      3
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      "Chromium tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "yes",
+      5,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      6,
+      "Chromium PiP"
+    ],
+    "screenshots": [
+      "partial",
+      4
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "yes",
+      9,
+      "Built in"
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7,
+      "Quick URL shortcut added in 5.3"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      7,
+      "Works; MV2 listings removed in 2026"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      5,
+      "Changelog says MV2 still works"
+    ],
+    "uboFull": [
+      "partial",
+      4,
+      "Possible via sideloaded MV2; not verified"
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "yes",
+      6,
+      "Google account"
+    ],
+    "syncPasswords": [
+      "yes",
+      6
+    ],
+    "syncTabs": [
+      "partial",
+      4
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles"
+    ],
+    "passwordManager": [
+      "partial",
+      5,
+      "Chromium manager"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "partial",
+      5,
+      "Not documented in the sources"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      6,
+      "Chromium AV1"
+    ],
+    "hwDecode": [
+      "yes",
+      6,
+      "Chromium hardware decode"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "partial",
+      6,
+      "Selected-text translation added in 5.3"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      6
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "Chromium V8, a few milestones old",
+      "editorial"
+    ],
+    "pageLoad": [
+      8,
+      "Chromium engine",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Extra features add startup work",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Chromium rendering",
+      "editorial"
+    ],
+    "graphics": [
+      8,
+      "Chromium GPU stack",
+      "editorial"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      4,
+      "Lazy session loading; fewer limiters",
+      "editorial"
+    ],
+    "lowEnd": [
+      7,
+      "Supports Windows 7 and old PCs",
+      "documented"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium install",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      4,
+      "Chromium defaults",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "No built-in blocker documented",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "securityHardening": [
+      6,
+      "Chromium sandbox; legacy OS paths weaker",
+      "editorial"
+    ],
+    "patchSpeed": [
+      3.5,
+      "Chromium 150 in Oct 2026, several milestones behind",
+      "editorial"
+    ],
+    "telemetry": [
+      4,
+      "Not documented",
+      "editorial"
+    ],
+    "lookCustom": [
+      6,
+      "Themes and layout options",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      8,
+      "Mouse gestures and super drag",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6,
+      "Chromium flags plus extras",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Scrollable tabs, groups",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Chromium engine choices",
+      "editorial"
+    ],
+    "downloads": [
+      5,
+      "Chromium downloads",
+      "editorial"
+    ],
+    "productivity": [
+      5,
+      "Gestures and Quick URL",
+      "editorial"
+    ],
+    "media": [
+      6.5,
+      "Chromium codecs; DRM not documented",
+      "editorial"
+    ],
+    "translation": [
+      6,
+      "Selected-text translation",
+      "editorial"
+    ],
+    "extras": [
+      4,
+      "Boss Key, QR code generator",
+      "editorial"
+    ],
+    "extensions": [
+      7.5,
+      "Chrome extensions plus MV2",
+      "editorial"
+    ],
+    "sync": [
+      6,
+      "Google account sync",
+      "editorial"
+    ],
+    "passwords": [
+      5.5,
+      "Chromium manager",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile versions",
+      "editorial"
+    ],
+    "webCompat": [
+      8.5,
+      "Chromium, a few milestones old",
+      "editorial"
+    ],
+    "devTools": [
+      8.5,
+      "Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Chromium accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Closed on top of Chromium",
+      "editorial"
+    ],
+    "businessTrust": [
+      4,
+      "Little published about the developer",
+      "editorial"
+    ],
+    "longevity": [
+      5.5,
+      "Long-running but slow cadence",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features documented",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Chrome-like",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.softpedia.com/get/Internet/Browsers/Cent-Browser.shtml",
+      "title": "Cent Browser - Softpedia",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.majorgeeks.com/files/details/cent_browser.html",
+      "title": "Cent Browser 5.3.1184.25 - MajorGeeks",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.filehorse.com/download-cent-browser-64/",
+      "title": "Cent Browser (64-bit) - FileHorse",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://baike.baidu.com/en/item/Cent%20Browser/3443709",
+      "title": "Baiduwiki: Cent Browser",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

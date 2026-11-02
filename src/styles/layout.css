@@ -1,0 +1,716 @@
+/* ============ top bar ============ */
+/* The header is a fixed-height, transparent shell so the page never reflows when the bar
+   floats. The pill inside changes shape; useFloatingTopbar animates that change (FLIP). */
+:root {
+  /* Bar proportions: 56px pill, 36px controls, so a 10px inset all round and fully round
+     controls sit concentric with the pill's ends. */
+  --float-h: 3.5rem;
+  --tb-ctl: 2.25rem;
+  --float-gap: 0.75rem;
+  --stick-top: var(--nav-h);
+}
+/* Sticky elements below the bar sit under the floating pill, not under the docked bar. */
+html[data-topbar='floating'] {
+  --stick-top: calc(var(--float-gap) + var(--float-h) + var(--s-2));
+}
+@media (min-width: 48rem) {
+  :root {
+    --float-gap: 1rem;
+  }
+}
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  box-sizing: border-box;
+  display: flow-root; /* keeps the pill's margin-top inside the shell instead of collapsing through it */
+  height: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
+  pointer-events: none;
+  /* The hover animation slides labels in from past the right edge; transforms count as scrollable
+     overflow, so without this the page briefly widens and the fixed bottom bar shifts (Firefox). */
+  overflow-x: clip;
+}
+.topbar__pill {
+  position: relative;
+  isolation: isolate;
+  pointer-events: auto;
+  width: 100%;
+  height: var(--nav-h);
+  margin-inline: auto;
+}
+.topbar.is-floating .topbar__pill {
+  width: min(calc(100% - var(--gutter) * 2), 70rem);
+  height: var(--float-h);
+  margin-top: var(--float-gap);
+}
+.topbar__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform-origin: 0 0;
+  border-radius: 0;
+  background: color-mix(in oklab, var(--bg) 80%, transparent);
+  backdrop-filter: saturate(1.4) blur(12px);
+  -webkit-backdrop-filter: saturate(1.4) blur(12px);
+  transition: box-shadow var(--dur-slow) var(--ease-out), background-color var(--dur-slow) var(--ease-out);
+}
+.topbar.is-floating .topbar__bg {
+  border-radius: calc(var(--float-h) / 2);
+  background: color-mix(in oklab, var(--bg) 80%, transparent);
+  box-shadow: inset 0 0 0 0.8px color-mix(in oklab, var(--border) 75%, transparent), var(--shadow-pop);
+}
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--s-6);
+  height: 100%;
+}
+.topbar.is-floating .topbar__inner {
+  max-width: none;
+  padding-inline: 1.125rem 0.5rem;
+}
+@media (min-width: 48rem) {
+  .topbar.is-floating .topbar__inner {
+    padding-inline-end: 0.625rem;
+  }
+}
+/* Logo and name sized together so the mark reads as one unit with the title. */
+.topbar .wordmark {
+  gap: 0.625rem;
+  font-size: var(--text-lg);
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+.topbar .wordmark svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.topbar__brand {
+  flex: none;
+  display: flex;
+  align-items: center;
+}
+.topbar__menu {
+  min-width: 0;
+}
+.topbar__end {
+  margin-inline-start: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 650;
+  font-size: var(--text-md);
+  letter-spacing: -0.02em;
+  flex: none;
+}
+/* Topbar controls. Each is a pill whose background is its own layer so it can FLIP (scale, with the
+   corners counter-scaled) when a cursor hovers and the control grows to show its label. useBarHoverFlip
+   toggles is-hot from pointer events, so taps on a touchscreen never expand it. */
+.tb-ctl {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  flex: none;
+  box-sizing: border-box;
+  height: var(--tb-ctl);
+  min-width: var(--tb-ctl);
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-full);
+  background: none;
+  color: var(--text);
+  font-size: var(--text-base);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  transition: color var(--dur) ease, scale var(--dur-press) var(--ease-out);
+}
+.tb-ctl:active {
+  scale: 0.96;
+}
+.tb-ctl__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  transform-origin: 0 0;
+  will-change: transform;
+  transition: background-color var(--dur-fast) ease;
+}
+.tb-ctl__icon {
+  display: inline-flex;
+  flex: none;
+}
+.tb-ctl svg {
+  width: 1rem;
+  height: 1rem;
+}
+.tb-ctl__label {
+  display: none;
+}
+.tb-ctl.is-hot {
+  justify-content: flex-start;
+  padding-inline: 0.625rem 0.875rem; /* icon keeps its x inside the pill: (36px - 16px) / 2 */
+}
+.tb-ctl.is-hot .tb-ctl__bg {
+  background: var(--surface-hover);
+}
+.tb-ctl.is-hot .tb-ctl__label {
+  display: inline;
+}
+/* The label that is leaving: a copy kept in place so it can fade out with the bar (see useBarHoverFlip). */
+.tb-ctl__ghost {
+  position: absolute;
+  pointer-events: none;
+}
+/* The label's reveal edge: opaque up to --wipe minus the feather, fading to clear at --wipe. At rest
+   --wipe is huge, so the label is untouched; useBarHoverFlip animates it. */
+@property --wipe {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 9999px;
+}
+.tb-ctl__label,
+.tb-ctl__ghost {
+  --feather: 22px;
+  -webkit-mask-image: linear-gradient(90deg, #000 calc(var(--wipe) - var(--feather)), transparent var(--wipe));
+  mask-image: linear-gradient(90deg, #000 calc(var(--wipe) - var(--feather)), transparent var(--wipe));
+}
+
+/* Search is a full bar on wide screens and just the icon below that. */
+.search-trigger {
+  min-width: 14rem;
+  padding: 0 0.4375rem 0 0.875rem;
+  justify-content: flex-start;
+  color: var(--text-3);
+  transition: color var(--dur) ease, scale var(--dur-press) var(--ease-out);
+}
+.search-trigger .tb-ctl__bg {
+  background: var(--surface-2);
+}
+.search-trigger .tb-ctl__label {
+  display: inline;
+}
+.search-trigger .kbd {
+  margin-inline-start: auto;
+  border: 0;
+  border-radius: var(--r-full);
+  height: 1.375rem;
+  padding: 0 0.5rem;
+  background: var(--surface);
+  color: var(--text-3);
+}
+.search-trigger.is-hot {
+  min-width: 16.5rem;
+  padding: 0 0.4375rem 0 0.875rem;
+  color: var(--text-2);
+}
+@media (max-width: 47.99rem) {
+  .topbar.is-floating .topbar__pill {
+    height: 3rem;
+  }
+}
+.os-select .input {
+  min-height: 2.125rem;
+  font-size: var(--text-sm);
+  width: auto;
+}
+.os-select--compact .input {
+  max-width: 10rem;
+  min-height: var(--tb-ctl);
+  padding-inline: 0.875rem 2rem;
+  border-color: transparent;
+  border-radius: var(--r-full);
+  background-color: var(--surface-2);
+  background-position: calc(100% - 0.875rem) 50%;
+  font-size: var(--text-base);
+  transition: background-color var(--dur-fast) ease;
+}
+@media (hover: hover) {
+  .os-select--compact .input:hover {
+    background-color: var(--surface-hover);
+  }
+}
+/* mega menu */
+.mega {
+  display: flex;
+  gap: 2px;
+}
+.mega__group {
+  position: relative;
+}
+.mega__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  height: var(--tb-ctl);
+  padding: 0 0.75rem 0 0.875rem;
+  border-radius: var(--r-full);
+  color: var(--text-2);
+  font-weight: 500;
+  font-size: var(--text-base);
+  transition: color var(--dur-fast) ease, background-color var(--dur-fast) ease;
+}
+.mega__trigger svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  transition: rotate var(--dur) var(--ease-out);
+}
+.mega__trigger[aria-expanded='true'] svg {
+  rotate: 180deg;
+}
+.mega__trigger.is-active,
+.mega__trigger[aria-expanded='true'] {
+  color: var(--text);
+}
+@media (hover: hover) {
+  .mega__trigger:hover {
+    color: var(--text);
+    background: var(--surface-hover);
+  }
+}
+.mega__panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: -0.5rem;
+  width: 26rem;
+  padding: var(--s-2);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--surface) 80%, transparent);
+  backdrop-filter: saturate(1.4) blur(16px);
+  -webkit-backdrop-filter: saturate(1.4) blur(16px);
+  box-shadow: var(--shadow-pop);
+  transform-origin: top left;
+  list-style: none;
+}
+/* Invisible bridge across the gap under the trigger, so moving the cursor down to the panel
+   never leaves the menu (which would start the close fade and reopen on arrival). */
+.mega__panel::before {
+  content: '';
+  position: absolute;
+  inset: -6px 0 auto;
+  height: 6px;
+}
+.mega__panel ul {
+  list-style: none;
+}
+.mega__panel--wide {
+  width: 44rem;
+}
+.mega__panel--wide ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.mega__item,
+.more-item {
+  display: flex;
+  gap: var(--s-3);
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-md);
+  transition: background-color var(--dur-fast) ease;
+}
+@media (hover: hover) {
+  .mega__item:hover,
+  .more-item:hover {
+    background: var(--surface-hover);
+  }
+}
+.mega__item.active {
+  background: var(--surface-2);
+}
+.mega__icon {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  flex: none;
+  color: var(--text-2);
+}
+.mega__icon svg,
+.more-item > svg {
+  width: 1rem;
+  height: 1rem;
+}
+.more-item > svg {
+  margin-top: 3px;
+  color: var(--text-2);
+  flex: none;
+}
+.mega__label {
+  display: block;
+  font-weight: 500;
+}
+.mega__desc {
+  display: block;
+  color: var(--text-2);
+  font-size: var(--text-sm);
+  line-height: 1.35;
+}
+/* Topbar menu rows stay one line; the copy is written to fit, the ellipsis is the safety net */
+.mega__panel .mega__desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mega__panel li,
+.mega__panel li > a > span:last-child {
+  min-width: 0;
+}
+.more-group {
+  margin-block-start: var(--s-4);
+}
+.more-group h3 {
+  font-size: var(--text-sm);
+  color: var(--text-3);
+  font-weight: 500;
+  margin-block-end: var(--s-1);
+}
+.more-group ul {
+  list-style: none;
+}
+
+/* ============ main / footer ============ */
+.main {
+  min-height: calc(100dvh - var(--nav-h));
+}
+.main > div > :first-child h1:focus {
+  outline: none;
+}
+.footer {
+  border-top: 1px solid var(--border);
+  padding-block: var(--s-12) var(--s-16);
+  background: var(--bg-subtle);
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: var(--s-8);
+}
+.footer__grid > :first-child {
+  grid-column: span 2;
+}
+.footer__h {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  margin-block-end: var(--s-3);
+}
+.footer ul {
+  list-style: none;
+  display: grid;
+  gap: var(--s-2);
+  font-size: var(--text-sm);
+  color: var(--text-2);
+}
+@media (hover: hover) {
+  .footer a:hover {
+    color: var(--text);
+  }
+}
+@media (max-width: 47.99rem) {
+  .footer {
+    padding-bottom: calc(var(--s-20) + env(safe-area-inset-bottom, 0px));
+  }
+  .footer__grid > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ============ bottom nav (mobile) ============ */
+.bottom-nav {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 45;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 0.25rem 0.25rem calc(0.25rem + env(safe-area-inset-bottom, 0px));
+  background: color-mix(in oklab, var(--bg) 70%, transparent);
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  border-top: 1px solid color-mix(in oklab, var(--border) 80%, transparent);
+}
+.bottom-nav__item {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  padding: 0.375rem 0;
+  min-height: 3rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--text-3);
+  border-radius: var(--r-md);
+}
+.bottom-nav__item.active {
+  color: var(--accent-text);
+}
+.bottom-nav__icon {
+  position: relative;
+}
+.bottom-nav__icon svg {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+.bottom-nav__badge {
+  position: absolute;
+  top: -4px;
+  right: -9px;
+  min-width: 1rem;
+  height: 1rem;
+  padding: 0 4px;
+  border-radius: 99px;
+  background: var(--accent);
+  color: var(--text-on-accent);
+  font-size: 0.6875rem;
+  display: grid;
+  place-items: center;
+}
+
+/* ============ compare tray ============ */
+.tray {
+  position: fixed;
+  z-index: 44;
+  left: 50%;
+  bottom: calc(var(--s-5) + env(safe-area-inset-bottom, 0px));
+  translate: -50% 0;
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-2);
+  padding-inline-start: var(--s-3);
+  border-radius: var(--r-xl);
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--surface) 75%, transparent);
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  box-shadow: var(--shadow-pop);
+  max-width: calc(100vw - 1.5rem);
+}
+.tray__slots {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+}
+/* The dashed placeholder stays under the mark so a removal fades back to an empty slot. */
+.tray__slot {
+  display: grid;
+}
+.tray__slot > * {
+  grid-area: 1 / 1;
+}
+.tray__slot button {
+  position: relative;
+  display: block;
+  border-radius: 9px;
+}
+.tray__slot > span {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px dashed var(--border-strong);
+  transition: opacity var(--dur-fast) ease;
+}
+.tray__slot:not(.tray__slot--empty) > span {
+  opacity: 0;
+}
+.tray__x {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 14px;
+  height: 14px;
+  padding: 2px;
+  border-radius: 50%;
+  background: var(--text);
+  color: var(--bg);
+  opacity: 0;
+  transition: opacity var(--dur-fast) ease;
+}
+.tray__slot button:focus-visible .tray__x,
+.tray__slot button:hover .tray__x {
+  opacity: 1;
+}
+@media (hover: none) {
+  .tray__x {
+    opacity: 1;
+  }
+}
+.tray__count {
+  font-size: var(--text-sm);
+  color: var(--text-2);
+}
+.btn.is-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+@media (max-width: 47.99rem) {
+  .tray {
+    bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px));
+    left: var(--s-3);
+    right: var(--s-3);
+    translate: none;
+    justify-content: space-between;
+  }
+  .tray__slot--empty {
+    display: none;
+  }
+  .tray__count {
+    display: none;
+  }
+}
+
+/* ============ command palette ============ */
+.palette {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  width: min(40rem, calc(100vw - 1.5rem));
+  max-width: none;
+  margin: 12vh auto auto;
+  color: var(--text);
+}
+.palette::backdrop {
+  background: color-mix(in oklab, var(--overlay) 38%, transparent);
+  backdrop-filter: saturate(1.2) blur(3px);
+  -webkit-backdrop-filter: saturate(1.2) blur(3px);
+}
+.palette__box {
+  border-radius: var(--r-xl);
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--surface) 72%, transparent);
+  backdrop-filter: saturate(1.6) blur(12px);
+  -webkit-backdrop-filter: saturate(1.6) blur(12px);
+  box-shadow: var(--shadow-pop);
+  transform-origin: top center; /* enter and exit are WAAPI on this box, see lib/dialogMotion.ts */
+}
+.palette__input {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: 0 var(--s-4);
+  border-bottom: 1px solid var(--border);
+}
+.palette__input svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  color: var(--text-3);
+  flex: none;
+}
+.palette__input input {
+  flex: 1;
+  height: 3.25rem;
+  border: 0;
+  background: transparent;
+  font-size: var(--text-md);
+  outline: none;
+}
+.palette__results {
+  overflow: hidden; /* clips the list while useHeightFlip tweens its height */
+}
+.palette__list {
+  position: relative; /* offsetParent for the keep-in-view scroll */
+  list-style: none;
+  max-height: min(60vh, 28rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--s-2);
+}
+.palette__item {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-md);
+  cursor: pointer;
+}
+/* The selected-row background, as one element that slides (layoutId) rather than one per row. */
+.palette__hl {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--surface-2);
+}
+.palette__text {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+}
+.palette__sub {
+  color: var(--text-2);
+  font-size: var(--text-sm);
+}
+.palette__kind {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--surface-3);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--text-2);
+  flex: none;
+}
+.palette__go {
+  width: 1rem;
+  height: 1rem;
+  color: var(--text-3);
+  opacity: 0;
+  transition: opacity var(--dur-fast) ease;
+}
+.palette__item[aria-selected='true'] .palette__go {
+  opacity: 1;
+}
+.palette__empty {
+  padding: var(--s-6) var(--s-4);
+  color: var(--text-2);
+  text-align: center;
+  transition: opacity var(--dur-fast) ease;
+}
+@starting-style {
+  .palette__empty {
+    opacity: 0;
+  }
+}
+
+/* Tablet: compact top bar so the mega menu fits */
+@media (max-width: 63.99rem) {
+  .topbar__inner {
+    gap: var(--s-3);
+  }
+  .search-trigger {
+    min-width: var(--tb-ctl);
+    padding: 0;
+    justify-content: center;
+  }
+  .search-trigger .tb-ctl__label,
+  .search-trigger .kbd,
+  .topbar .os-select {
+    display: none;
+  }
+  .search-trigger.is-hot {
+    min-width: var(--tb-ctl);
+    padding-inline: 0.625rem 0.875rem;
+    justify-content: flex-start;
+  }
+  .search-trigger.is-hot .tb-ctl__label {
+    display: inline;
+  }
+  .mega__trigger {
+    padding: 0 0.5rem;
+  }
+}

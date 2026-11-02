@@ -1,0 +1,765 @@
+{
+  "id": "librewolf",
+  "name": "LibreWolf",
+  "aliases": [],
+  "group": "privacy",
+  "developer": "LibreWolf community (volunteer)",
+  "hq": "Decentralised volunteer project (Codeberg)",
+  "businessModel": "Volunteer-run; donations only; no ads or data collection",
+  "engine": "gecko",
+  "basedOn": "Firefox (rapid release)",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2020,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "158.0.1-2",
+    "date": "2026-10-22",
+    "upstream": "Firefox 158.0.1"
+  },
+  "channels": [
+    "Stable"
+  ],
+  "updateCadence": "Usually within ~3 days of each Firefox release; no auto-updater on most platforms",
+  "website": "https://librewolf.net",
+  "tags": [
+    "privacy",
+    "firefox-fork",
+    "hardened",
+    "anti-ai",
+    "ublock"
+  ],
+  "pitch": "Firefox hardened out of the box: uBO bundled, telemetry and AI stripped or locked off.",
+  "summary": "Firefox rapid-release fork with telemetry removed, uBlock Origin bundled, resist-fingerprinting on and Firefox AI features kept off by default. Desktop only; updates come through package managers.",
+  "bestFor": [
+    "Firefox users who want privacy defaults without manual about:config work",
+    "People who want a browser with Firefox AI features off",
+    "Linux users comfortable with package managers"
+  ],
+  "notFor": [
+    "People who want automatic background updates on Windows/Linux",
+    "Users who need Netflix-style DRM out of the box",
+    "Android or iOS users (no mobile version)"
+  ],
+  "pros": [
+    {
+      "title": "Hardened defaults",
+      "detail": "Telemetry, Pocket, sponsored content and many Mozilla connections are removed or disabled."
+    },
+    {
+      "title": "uBlock Origin bundled",
+      "detail": "A full MV2 content blocker ships preinstalled."
+    },
+    {
+      "title": "Resist Fingerprinting",
+      "detail": "RFP is on by default, spoofing timezone and window size."
+    },
+    {
+      "title": "Firefox AI kept off",
+      "detail": "AI features are disabled/locked by default, aligning with its AI-free reputation."
+    },
+    {
+      "title": "Fast upstream tracking",
+      "detail": "LibreWolf 158.0 followed Firefox 158 on the same day in Oct 2026."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No Android/iOS",
+      "detail": "No mobile version; the FAQ points Android users to IronFox."
+    },
+    {
+      "title": "Manual updates",
+      "detail": "No built-in auto-update on Windows and Linux; depends on package managers."
+    },
+    {
+      "title": "Site breakage",
+      "detail": "RFP, disabled DRM and WebGL tweaks break some sites until adjusted."
+    },
+    {
+      "title": "Volunteer project",
+      "detail": "Small team; longevity depends on maintainers."
+    }
+  ],
+  "signatureFeatures": [
+    "uBlock Origin bundled",
+    "Resist Fingerprinting",
+    "No telemetry",
+    "AI features off",
+    "Locked privacy prefs"
+  ],
+  "faq": [
+    {
+      "q": "Is LibreWolf anti-AI?",
+      "a": "It keeps Firefox AI features disabled and locked by default, but the project does not market itself as an anti-AI browser; users can opt in."
+    },
+    {
+      "q": "Can I use Firefox Sync?",
+      "a": "Yes, it can be enabled and is encrypted client-side; self-hosting a sync server is possible."
+    },
+    {
+      "q": "Does Netflix work?",
+      "a": "DRM is disabled by default; you can enable it in settings."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2020-05",
+      "event": "LibreWolf forked from Waterfox/Firefox hardening configs"
+    },
+    {
+      "date": "2026-02",
+      "event": "Firefox 148 adds AI kill switch; LibreWolf already off by default"
+    },
+    {
+      "date": "2026-10-13",
+      "event": "LibreWolf 158.0 shipped same day as Firefox 158"
+    },
+    {
+      "date": "2026-10-22",
+      "event": "158.0.1-2 released"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "history",
+      "passwords",
+      "extensions"
+    ],
+    "note": "Imports from Firefox and other browsers; add-ons from AMO work."
+  },
+  "alternatives": [
+    "firefox",
+    "mullvad-browser",
+    "gnu-icecat",
+    "brave"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "settings",
+        "extensions"
+      ],
+      "crossOs": true,
+      "note": "Firefox Sync available; can self-host"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Built-in Firefox manager"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Firefox keeps MV2; uBO ships bundled",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "Firefox AI features disabled and locked by default"
+    },
+    "privacy": {
+      "defaults": "RFP, ETP strict, uBO, HTTPS-only, DRM off, telemetry removed",
+      "telemetry": "None; lists the few network connections it still makes",
+      "jurisdiction": "Decentralised"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo",
+    "telemetry": "None",
+    "drm": "Widevine disabled by default (opt-in)",
+    "codecs": "H.264, VP9, AV1; HEVC limited",
+    "sandbox": "Firefox content sandbox + Fission",
+    "patchLag": "0-3 days behind Firefox stable",
+    "languages": "~100 (Firefox locales)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "winget"
+      ],
+      "notes": [
+        "No auto-updater; use package manager"
+      ],
+      "highlights": [
+        "uBO preinstalled"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 11+",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "homebrew",
+        "official-installer"
+      ],
+      "notes": [
+        "Built-in updater"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern 64-bit distro",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "flathub",
+        "deb",
+        "rpm",
+        "aur"
+      ],
+      "notes": [
+        "Own apt/rpm repositories"
+      ],
+      "highlights": [
+        "Flathub build supports ARM"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      9
+    ],
+    "fingerprintProtection": [
+      "yes",
+      9,
+      "RFP on"
+    ],
+    "httpsOnly": [
+      "yes",
+      9
+    ],
+    "doh": [
+      "yes",
+      7
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "yes",
+      9,
+      "Total Cookie Protection"
+    ],
+    "queryStripping": [
+      "yes",
+      8
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10
+    ],
+    "privateHardening": [
+      "yes",
+      9
+    ],
+    "adBlocker": [
+      "yes",
+      9,
+      "uBO"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      9
+    ],
+    "customFilterLists": [
+      "yes",
+      9
+    ],
+    "youtubeAds": [
+      "yes",
+      7
+    ],
+    "cookieBanners": [
+      "partial",
+      5
+    ],
+    "verticalTabs": [
+      "yes",
+      7
+    ],
+    "tabGroups": [
+      "yes",
+      7
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      6
+    ],
+    "tabSleeping": [
+      "yes",
+      6
+    ],
+    "tabSearch": [
+      "yes",
+      7
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      7
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      5
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      5
+    ],
+    "commandBar": [
+      "partial",
+      4
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "yes",
+      10
+    ],
+    "mv2Support": [
+      "yes",
+      9
+    ],
+    "uboFull": [
+      "yes",
+      10
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      9
+    ],
+    "syncBookmarks": [
+      "yes",
+      7
+    ],
+    "syncPasswords": [
+      "yes",
+      7
+    ],
+    "syncTabs": [
+      "yes",
+      7
+    ],
+    "e2eeSync": [
+      "yes",
+      8
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "partial",
+      6
+    ],
+    "passkeys": [
+      "partial",
+      4
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "partial",
+      4,
+      "Off by default"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      5
+    ],
+    "av1": [
+      "yes",
+      7
+    ],
+    "hwDecode": [
+      "yes",
+      6
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "AI features disabled and locked"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "Optional local translation models"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "yes",
+      8
+    ],
+    "kioskMode": [
+      "partial",
+      5
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      8
+    ],
+    "devtools": [
+      "yes",
+      9
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      7.5,
+      "SpiderMonkey; RFP reduces timer precision",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "Firefox rendering plus uBO",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "Firefox networking, HTTP/3",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Slower cold start with hardened profile",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Firefox WebRender",
+      "editorial"
+    ],
+    "graphics": [
+      6.5,
+      "WebGL tweaks may limit gaming",
+      "editorial"
+    ],
+    "memory": [
+      6.5,
+      "Firefox e10s memory profile",
+      "editorial"
+    ],
+    "cpu": [
+      7,
+      "Comparable to Firefox",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "No special battery work",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "Little beyond Firefox tab unloading",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Firefox requirements",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Firefox-sized install",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      9.5,
+      "Telemetry removed, strict ETP, RFP",
+      "documented"
+    ],
+    "blocking": [
+      8.5,
+      "uBO bundled",
+      "documented"
+    ],
+    "fingerprinting": [
+      8.5,
+      "RFP on by default",
+      "documented"
+    ],
+    "securityHardening": [
+      7.5,
+      "Fission sandbox; no auto-updater",
+      "editorial"
+    ],
+    "patchSpeed": [
+      8,
+      "Within ~3 days of Firefox",
+      "documented"
+    ],
+    "telemetry": [
+      9.5,
+      "Telemetry removed; connections documented",
+      "documented"
+    ],
+    "lookCustom": [
+      7.5,
+      "Firefox themes and userChrome",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      7.5,
+      "Firefox settings and shortcuts",
+      "editorial"
+    ],
+    "advancedSettings": [
+      9.5,
+      "about:config, policies",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Vertical tabs and groups from Firefox",
+      "editorial"
+    ],
+    "searchFreedom": [
+      9,
+      "DDG default, custom engines",
+      "documented"
+    ],
+    "downloads": [
+      6.5,
+      "Firefox download panel",
+      "editorial"
+    ],
+    "productivity": [
+      6,
+      "Reader, PiP, no notes",
+      "editorial"
+    ],
+    "media": [
+      5,
+      "DRM off by default",
+      "documented"
+    ],
+    "translation": [
+      6,
+      "Optional local translation",
+      "documented"
+    ],
+    "extras": [
+      3,
+      "No built-in extras",
+      "editorial"
+    ],
+    "extensions": [
+      9.5,
+      "Full AMO ecosystem and MV2",
+      "documented"
+    ],
+    "sync": [
+      7,
+      "Firefox Sync works, can self-host",
+      "documented"
+    ],
+    "passwords": [
+      5.5,
+      "Firefox manager, basic",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile version",
+      "documented"
+    ],
+    "webCompat": [
+      7,
+      "RFP breaks some sites",
+      "editorial"
+    ],
+    "devTools": [
+      9.5,
+      "Firefox DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      8,
+      "Firefox a11y stack",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "Fully open source",
+      "documented"
+    ],
+    "businessTrust": [
+      9.5,
+      "Volunteer, no monetisation",
+      "documented"
+    ],
+    "longevity": [
+      7.5,
+      "Small volunteer team",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "AI off and locked",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      5.5,
+      "Needs some tweaks for some sites",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://librewolf.net/docs/faq/",
+      "title": "LibreWolf FAQ",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/LibreWolf",
+      "title": "LibreWolf (Wikipedia)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.banthebots.org/explainers/librewolf-vs-firefox",
+      "title": "LibreWolf vs Firefox (ban the bots)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://codeberg.org/librewolf/issues/issues/2037",
+      "title": "LibreWolf issue 2037: AI chatbot",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.omgubuntu.co.uk/2026/02/firefox-148-released-ai-kill-switch",
+      "title": "OMG Ubuntu: Firefox 148 AI kill switch",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Exact feature set of vertical tabs/split view in Firefox 158 builds as shipped by LibreWolf",
+    "Whether LibreWolf disables passkeys/Widevine hardware paths on all platforms"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

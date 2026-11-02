@@ -1,0 +1,699 @@
+{
+  "id": "phoenix-browser",
+  "name": "Phoenix Browser",
+  "aliases": [
+    "Phoenix - Fast & Safe",
+    "Transsion Phoenix"
+  ],
+  "group": "android",
+  "developer": "Transsion Holdings (Play developer: Shalltry Group)",
+  "hq": "China",
+  "businessModel": "Free, ad-supported; preinstalled on Transsion phones; news feed and in-app ads",
+  "engine": "blink",
+  "basedOn": "Android System WebView (Chromium)",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2016,
+  "status": "active",
+  "version": {
+    "current": "22.5.3.6795",
+    "date": "2026-10-24",
+    "upstream": "System WebView (Chromium)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Frequent app updates (Play listing: Aug 2026; APK mirror: Oct 2026)",
+  "website": "https://play.google.com/store/apps/details?id=com.transsion.phoenix",
+  "tags": [
+    "android",
+    "video-downloader",
+    "data-saver",
+    "preinstalled"
+  ],
+  "pitch": "Ad-supported Android browser with a video downloader, popular on Transsion phones.",
+  "summary": "Phoenix is Transsion’s lightweight Android browser, with over a billion Play Store downloads. It offers a smart video downloader, ad blocker and data saver, but also home-screen ads and broad permissions.",
+  "bestFor": [
+    "Low-end Android phones with limited data",
+    "Saving online videos",
+    "Users who keep the preinstalled browser"
+  ],
+  "notFor": [
+    "Privacy-focused users",
+    "Anyone who dislikes in-app ads and news feeds"
+  ],
+  "pros": [
+    {
+      "title": "Smart video downloader",
+      "detail": "Detects downloadable videos while browsing and saves them."
+    },
+    {
+      "title": "Built-in ad blocker and data saver",
+      "detail": "Reduces data use and blocks some ads."
+    },
+    {
+      "title": "Huge install base",
+      "detail": "1bn+ downloads on Google Play with a 4.3 rating."
+    },
+    {
+      "title": "Light on weak phones",
+      "detail": "Built on WebView, so it runs on low-end hardware."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Ads everywhere",
+      "detail": "The Play listing says it contains ads; users report full-screen ads and a busy home feed."
+    },
+    {
+      "title": "Broad permissions",
+      "detail": "Requests All Files Access and shares activity and device IDs with third parties."
+    },
+    {
+      "title": "Basic privacy",
+      "detail": "Reviews call private tabs the extent of its privacy controls."
+    }
+  ],
+  "signatureFeatures": [
+    "Smart video downloader",
+    "Built-in video player",
+    "Ad blocker",
+    "Data saver"
+  ],
+  "faq": [
+    {
+      "q": "Who makes Phoenix Browser?",
+      "a": "Transsion, the company behind Tecno, Infinix and itel phones; Google Play lists Shalltry Group as developer."
+    },
+    {
+      "q": "Does it download YouTube videos?",
+      "a": "No. Reviews say YouTube downloads are unavailable because of Google’s policies."
+    },
+    {
+      "q": "Is it private?",
+      "a": "Not by design. Its Play data safety section lists sharing with third parties, and it has ads."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2016-09",
+      "event": "Phoenix appears on Google Play"
+    },
+    {
+      "date": "2026-08",
+      "event": "Play listing updated"
+    },
+    {
+      "date": "2026-10",
+      "event": "Build 22.5.3.6795 published"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Import options are not documented in the sources."
+  },
+  "alternatives": [
+    "uc-browser",
+    "opera-mini",
+    "via"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync documented"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Not documented"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension support",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features documented"
+    },
+    "privacy": {
+      "defaults": "Ads, news feed and third-party data sharing per Play data safety",
+      "telemetry": "Shares app activity, app info, performance data and device IDs with third parties",
+      "jurisdiction": "China"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Not verified",
+    "telemetry": "Shared with third parties per Play listing",
+    "drm": "Not documented in the sources",
+    "codecs": "System WebView codecs",
+    "sandbox": "System WebView sandbox",
+    "patchLag": "Depends on the phone’s WebView updates",
+    "languages": "Many"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Android 7.0+ (some builds 10+)",
+      "arch": [
+        "arm64",
+        "arm"
+      ],
+      "stores": [
+        "google-play",
+        "preinstalled",
+        "apk"
+      ],
+      "notes": [
+        "Preinstalled on Transsion devices",
+        "Requests All Files Access for cleanup and downloads"
+      ],
+      "highlights": [
+        "Video downloader",
+        "Data saver"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "Android download count and rating at the time of use (Play vs. mirrors)",
+    "Default search, sync and import details",
+    "Whether any built-in VPN exists"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "no",
+      0
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "no",
+      0
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "yes",
+      5,
+      "Built in"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "partial",
+      3
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "yes",
+      5,
+      "System decoders"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      8,
+      "Smart video detection and downloads"
+    ],
+    "customThemes": [
+      "yes",
+      5
+    ],
+    "customSearchEngines": [
+      "partial",
+      3
+    ],
+    "devtools": [
+      "no",
+      0
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      6.5,
+      "System WebView speed",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "Data saver and compression help",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7.5,
+      "Compression and prefetch",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Lightweight, but ads add delay",
+      "editorial"
+    ],
+    "smoothness": [
+      6.5,
+      "WebView rendering",
+      "editorial"
+    ],
+    "graphics": [
+      5,
+      "Not a focus",
+      "editorial"
+    ],
+    "memory": [
+      6.5,
+      "Light vs. full Chromium",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "WebView baseline",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "WebView baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "Few controls",
+      "editorial"
+    ],
+    "lowEnd": [
+      8,
+      "Designed for low-end phones",
+      "editorial"
+    ],
+    "installSize": [
+      7,
+      "Small app",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      1.5,
+      "Ads and third-party sharing",
+      "documented"
+    ],
+    "blocking": [
+      4.5,
+      "Basic built-in ad blocker",
+      "editorial"
+    ],
+    "fingerprinting": [
+      1,
+      "None documented",
+      "editorial"
+    ],
+    "securityHardening": [
+      5,
+      "WebView sandbox",
+      "editorial"
+    ],
+    "patchSpeed": [
+      4,
+      "Depends on system WebView updates",
+      "editorial"
+    ],
+    "telemetry": [
+      1,
+      "Shares IDs and activity with third parties",
+      "documented"
+    ],
+    "lookCustom": [
+      4,
+      "Themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3,
+      "Basic settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      2,
+      "Little exposed",
+      "editorial"
+    ],
+    "tabManagement": [
+      4,
+      "Basic tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      4,
+      "Some engine choice",
+      "editorial"
+    ],
+    "downloads": [
+      8,
+      "Standout video downloader",
+      "editorial"
+    ],
+    "productivity": [
+      3,
+      "Basic",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Built-in video player",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "None documented",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "Video downloader, cleaner, news feed",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extension support",
+      "editorial"
+    ],
+    "sync": [
+      1,
+      "None documented",
+      "editorial"
+    ],
+    "passwords": [
+      1,
+      "None documented",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "Mobile-only, widely used",
+      "editorial"
+    ],
+    "webCompat": [
+      7,
+      "System WebView",
+      "editorial"
+    ],
+    "devTools": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "accessibility": [
+      4,
+      "Android basics",
+      "editorial"
+    ],
+    "openSource": [
+      0,
+      "Proprietary",
+      "editorial"
+    ],
+    "businessTrust": [
+      2,
+      "Ads, broad permissions, data sharing",
+      "editorial"
+    ],
+    "longevity": [
+      8,
+      "Backed by Transsion; active updates",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features documented",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Simple, preinstalled",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.transsion.phoenix&hl=en-gb&gl=ng",
+      "title": "Phoenix Browser - Google Play",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.appbrain.com/app/phoenix-browser-fast-safe/com.transsion.phoenix",
+      "title": "Phoenix on AppBrain",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://apkpure.com/phoenix-browser-fast-safe-free-vpn/com.transsion.phoenix/download",
+      "title": "Phoenix on APKPure",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://tech-ish.com/2019/08/29/phoenix-browser-review/",
+      "title": "Phoenix Browser review - tech-ish",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

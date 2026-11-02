@@ -1,0 +1,800 @@
+{
+  "id": "coc-coc",
+  "name": "Cốc Cốc",
+  "aliases": [
+    "Coc Coc",
+    "CocCoc"
+  ],
+  "group": "regional",
+  "developer": "Cốc Cốc Company Limited",
+  "hq": "Vietnam",
+  "businessModel": "Free browser monetised via Cốc Cốc search and start-page advertising/partnerships (details not verified)",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary freeware (Chromium BSD components)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2013,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "154.0.8037 (Windows); 160.0.108 (iOS)",
+    "date": "2026-08-21 (Windows); 2026-10 (iOS)",
+    "upstream": "Chromium 148 (desktop est.); iOS 160 = Chromium 154 per App Store notes"
+  },
+  "channels": [
+    "Release",
+    "Beta (Windows/Android)"
+  ],
+  "updateCadence": "Roughly every 2 months, version number ~6 ahead of Chromium base",
+  "website": "https://coccoc.com",
+  "tags": [
+    "regional",
+    "vietnam",
+    "chromium",
+    "video-download",
+    "torrent",
+    "adblock"
+  ],
+  "pitch": "Vietnam's Chromium browser with built-in ad block, video download and torrents.",
+  "summary": "Cốc Cốc is Vietnam's leading local browser, built on Chromium with built-in ad blocking including YouTube, one-click video/music downloading and a direct torrent downloader. Desktop lags Chromium by about three months.",
+  "bestFor": [
+    "Vietnamese users",
+    "People who want built-in video/music downloading",
+    "Users wanting an easy ad blocker without extensions"
+  ],
+  "notFor": [
+    "Privacy-focused users",
+    "Linux users (no Linux build found)",
+    "Anyone needing fast Chromium security patches"
+  ],
+  "pros": [
+    {
+      "title": "Built-in ad blocker",
+      "detail": "Blocks ads including a separate YouTube mode without extensions."
+    },
+    {
+      "title": "Video and music download",
+      "detail": "Downloads from YouTube, Facebook, TikTok and more without extra software."
+    },
+    {
+      "title": "Torrent download",
+      "detail": "Direct torrent download built into the browser."
+    },
+    {
+      "title": "Vietnamese-optimised",
+      "detail": "Local language and search tuned for Vietnam."
+    },
+    {
+      "title": "Four-platform coverage",
+      "detail": "Windows, macOS, Android and iOS/iPadOS."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Chromium lag",
+      "detail": "Windows 154.0.8037 (Aug 2026) ships Chromium about 148, roughly 3 months behind."
+    },
+    {
+      "title": "Limited global support",
+      "detail": "Few non-Vietnamese resources and little independent security review."
+    },
+    {
+      "title": "Telemetry unclear",
+      "detail": "Data practices are not transparently documented in sources found."
+    },
+    {
+      "title": "No Linux",
+      "detail": "Official site lists no Linux build."
+    }
+  ],
+  "signatureFeatures": [
+    "Video/music downloader",
+    "Built-in ad block with YouTube mode",
+    "Direct torrent download",
+    "AI Search (Android)"
+  ],
+  "faq": [
+    {
+      "q": "Is Cốc Cốc based on Chromium?",
+      "a": "Yes. Its major version runs about 6 above the Chromium base (e.g. 160 on iOS = Chromium 154)."
+    },
+    {
+      "q": "Does it have AI?",
+      "a": "The Android listing describes an AI Search feature summarising multiple sources. No full assistant was found."
+    },
+    {
+      "q": "Which platforms?",
+      "a": "Windows 10+, macOS 10.11+, Android 10+, iOS/iPadOS 17+ per the official site."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2013",
+      "event": "First release"
+    },
+    {
+      "date": "2026-04",
+      "event": "iOS 152.0.136 on Chromium 146"
+    },
+    {
+      "date": "2026-06",
+      "event": "iOS 154.0.188 on Chromium 148"
+    },
+    {
+      "date": "2026-08-21",
+      "event": "Windows 154.0.8037 (FileHorse)"
+    },
+    {
+      "date": "2026-10",
+      "event": "iOS 160.0.108 on Chromium 154; Android listing updated 2026-10-26 with AI Search"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Imports from Chrome and other browsers; Cốc Cốc account sync (unverified)."
+  },
+  "alternatives": [
+    "chrome",
+    "opera",
+    "brave",
+    "edge"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs"
+      ],
+      "crossOs": true,
+      "note": "Cốc Cốc account (details unverified)"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Chromium-style password saving"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Chromium base; MV2 status unverified",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": false,
+      "paid": "no",
+      "note": "AI Search on Android"
+    },
+    "privacy": {
+      "defaults": "Ad blocking on; tracker protection basic",
+      "telemetry": "Not clearly documented",
+      "jurisdiction": "Vietnam"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Cốc Cốc Search",
+    "telemetry": "Not clearly documented",
+    "drm": "Widevine",
+    "codecs": "H.264, VP9, AV1",
+    "sandbox": "Chromium sandbox",
+    "patchLag": "Desktop ~3 months behind Chromium (154 vs 148); iOS current",
+    "languages": "Vietnamese, English (others unverified)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Beta channel available",
+        "154.0.8037 on 2026-08-21"
+      ],
+      "highlights": [
+        "Video download",
+        "Torrent"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 10.11",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Universal package"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 10",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "google-play"
+      ],
+      "notes": [
+        "Beta available",
+        "AI Search listing updated 2026-10-26"
+      ],
+      "highlights": [
+        "AI Search"
+      ],
+      "scoreDelta": {
+        "extensions": -7
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS/iPadOS 17",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine",
+        "160.0.108 on Chromium 154 branding"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -7,
+        "jsSpeed": -1
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "Ad/tracker blocking only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "partial",
+      3
+    ],
+    "doh": [
+      "partial",
+      4,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      2
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3
+    ],
+    "privateHardening": [
+      "partial",
+      3
+    ],
+    "adBlocker": [
+      "yes",
+      7,
+      "Built-in"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      5
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "yes",
+      7,
+      "Separate YouTube ad block"
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      6
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "partial",
+      4
+    ],
+    "tabSearch": [
+      "yes",
+      5
+    ],
+    "pinnedTabs": [
+      "yes",
+      7
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      4
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      4
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      6,
+      "Chromium base; not highlighted on official site"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "uboFull": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      4
+    ],
+    "syncBookmarks": [
+      "yes",
+      6
+    ],
+    "syncPasswords": [
+      "yes",
+      6
+    ],
+    "syncTabs": [
+      "yes",
+      5
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      6
+    ],
+    "passwordManager": [
+      "yes",
+      5
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "yes",
+      8
+    ],
+    "netflix4k": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6
+    ],
+    "av1": [
+      "yes",
+      6
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "partial",
+      4,
+      "AI Search on Android"
+    ],
+    "aiSummarizer": [
+      "partial",
+      5,
+      "Multi-source answer summary on search"
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "partial",
+      3,
+      "Feature appears optional (unverified)"
+    ],
+    "translation": [
+      "partial",
+      4,
+      "Chromium page translation (unverified)"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      6
+    ],
+    "enterprisePolicies": [
+      "partial",
+      3
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      9,
+      "Torrent, video/music download"
+    ],
+    "customThemes": [
+      "yes",
+      5
+    ],
+    "customSearchEngines": [
+      "yes",
+      5
+    ],
+    "devtools": [
+      "yes",
+      9
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "Chromium V8, ~3 months behind",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium Blink",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Blink",
+      "editorial"
+    ],
+    "graphics": [
+      8.5,
+      "Chromium WebGL",
+      "editorial"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "Basic memory saving only",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Chromium weight, Win10+",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Chromium-sized",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      4,
+      "Ad block helps but little else",
+      "editorial"
+    ],
+    "blocking": [
+      7.5,
+      "Built-in blocker incl. YouTube",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "No resistance",
+      "editorial"
+    ],
+    "securityHardening": [
+      8.5,
+      "Chromium sandbox, lagging base",
+      "editorial"
+    ],
+    "patchSpeed": [
+      6,
+      "Desktop ~3 months behind Chromium",
+      "documented"
+    ],
+    "telemetry": [
+      4,
+      "Data practices unclear",
+      "editorial"
+    ],
+    "lookCustom": [
+      5.5,
+      "Themes, basic",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6,
+      "Standard Chromium",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5.5,
+      "Chromium flags",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Groups, pinned",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6.5,
+      "Can change search",
+      "editorial"
+    ],
+    "downloads": [
+      8.5,
+      "Torrent plus video/music downloader",
+      "editorial"
+    ],
+    "productivity": [
+      6.5,
+      "PiP and downloaders",
+      "editorial"
+    ],
+    "media": [
+      9,
+      "Widevine plus built-in media downloading",
+      "editorial"
+    ],
+    "translation": [
+      6,
+      "Chromium translate, unverified",
+      "editorial"
+    ],
+    "extras": [
+      7.5,
+      "Torrent, video download, YouTube ad block",
+      "editorial"
+    ],
+    "extensions": [
+      7.5,
+      "Chromium extension compatibility (unverified detail)",
+      "editorial"
+    ],
+    "sync": [
+      6.5,
+      "Cốc Cốc account",
+      "editorial"
+    ],
+    "passwords": [
+      5,
+      "Basic",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "Android and iOS available",
+      "editorial"
+    ],
+    "webCompat": [
+      9,
+      "Blink",
+      "editorial"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Chromium",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary",
+      "editorial"
+    ],
+    "businessTrust": [
+      5,
+      "Local company, ad/search model",
+      "editorial"
+    ],
+    "longevity": [
+      8,
+      "Over a decade, steady releases",
+      "editorial"
+    ],
+    "ai": [
+      4.5,
+      "AI Search only",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      8.5,
+      "Simple, Chrome-like, download tools out of the box",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://coccoc.com/en",
+      "title": "Cốc Cốc official site",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.filehorse.com/download-coc-coc/",
+      "title": "FileHorse - Coc Coc for Windows",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/c%E1%BB%91c-c%E1%BB%91c-web-browser-adblock/id1170593919",
+      "title": "App Store - Cốc Cốc",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.coccoc.trinhduyet&hl=en_US",
+      "title": "Google Play - Cốc Cốc",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://prodima.vn/en/coccoc-browser/",
+      "title": "Prodima - CocCoc review",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Chrome Web Store extension support detail",
+    "Telemetry practices",
+    "Linux build existence",
+    "Business model details",
+    "Desktop Chromium base (inferred 148 from version offset)"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

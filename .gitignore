@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+.DS_Store
+
+# Local tooling output
+.playwright-mcp/
+.impeccable/
+.taste-skill/

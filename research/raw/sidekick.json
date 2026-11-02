@@ -1,0 +1,704 @@
+{
+  "id": "sidekick",
+  "name": "Sidekick",
+  "aliases": [
+    "Sidekick Browser",
+    "Meet Sidekick"
+  ],
+  "group": "power",
+  "developer": "Pushply, Inc. (acquired by Perplexity)",
+  "hq": "United States",
+  "businessModel": "Freemium (discontinued); team acquired by Perplexity in May 2025",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2020,
+  "status": "discontinued",
+  "statusNote": "Shut down around Aug 2025 after Perplexity acquired the team; meetsidekick.com redirects to Comet",
+  "version": {
+    "current": "Final release (version not verified)",
+    "date": "2025-08",
+    "upstream": "Chromium (version not verified)"
+  },
+  "channels": [],
+  "updateCadence": "None; discontinued",
+  "website": "https://meetsidekick.com",
+  "tags": [
+    "discontinued",
+    "workspaces",
+    "apps",
+    "chromium"
+  ],
+  "pitch": "A defunct work browser that was folded into Perplexity.",
+  "summary": "Sidekick was a Chromium productivity browser with a sidebar of apps. Perplexity hired the team in May 2025, Sidekick shut down around August 2025, and its site now redirects to Comet.",
+  "bestFor": [
+    "Nobody; use a maintained alternative"
+  ],
+  "notFor": [
+    "Anyone: no updates, shut down"
+  ],
+  "pros": [
+    {
+      "title": "Historical interest",
+      "detail": "Pioneered app-sidebar work browsing."
+    },
+    {
+      "title": "Chrome extensions",
+      "detail": "Chromium base."
+    },
+    {
+      "title": "Workspaces",
+      "detail": "Productivity focus."
+    },
+    {
+      "title": "Free tier",
+      "detail": "Existed while active."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Discontinued",
+      "detail": "No support or security updates."
+    },
+    {
+      "title": "Unpatched Chromium",
+      "detail": "Dangerous to keep using."
+    },
+    {
+      "title": "Site redirects",
+      "detail": "meetsidekick.com goes to Comet."
+    }
+  ],
+  "signatureFeatures": [
+    "App sidebar",
+    "Workspaces",
+    "Quick search",
+    "Work-focused tab management"
+  ],
+  "faq": [
+    {
+      "q": "Is Sidekick still available?",
+      "a": "No; it was shut down around Aug 2025."
+    },
+    {
+      "q": "What replaced it?",
+      "a": "Perplexity launched Comet, which is a different product; alternatives include Dia, Arc, SigmaOS."
+    },
+    {
+      "q": "Dates?",
+      "a": "Sources conflict: one says Aug 3, 2025, another announced in Aug 2025 with refunds."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2020",
+      "event": "Sidekick launched"
+    },
+    {
+      "date": "2025-05",
+      "event": "Perplexity acquires the team"
+    },
+    {
+      "date": "2025-08",
+      "event": "Sidekick sunset"
+    },
+    {
+      "date": "2026-06",
+      "event": "Domain redirects to comet.perplexity.ai"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Export bookmarks before they are lost; use alternatives."
+  },
+  "alternatives": [
+    "sigmaos",
+    "arc",
+    "dia",
+    "wavebox"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Service ended"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": ""
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "Last build predates MV2 removal; unverified",
+      "date": "2025"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "None"
+    },
+    "privacy": {
+      "defaults": "Chromium defaults",
+      "telemetry": "Unverified",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google",
+    "telemetry": "Unverified",
+    "drm": "Unverified",
+    "codecs": "Chromium",
+    "sandbox": "Chromium sandbox (frozen)",
+    "patchSpeed": "None",
+    "languages": "English"
+  },
+  "platforms": {
+    "macos": {
+      "status": "discontinued",
+      "minOs": "Unverified",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "discontinued",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "discontinued",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.superchargebrowser.com/library/sidekick-browser-shutdown-chrome-alternative/",
+      "title": "Supercharge: Sidekick shut down",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://efficient.app/apps/sidekick",
+      "title": "efficient.app: Sidekick",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.whatismybrowser.com/guides/big-list-of-all-web-browsers/view/sidekick/",
+      "title": "WhatIsMyBrowser: Sidekick",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Exact shutdown date",
+    "Final version",
+    "Platform OS minimums"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3
+    ],
+    "customFilterLists": [
+      "extension",
+      3
+    ],
+    "youtubeAds": [
+      "extension",
+      2
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "yes",
+      7
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      8
+    ],
+    "splitView": [
+      "partial",
+      5
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "yes",
+      8
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      3
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      5
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "partial",
+      3
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      3
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI"
+    ],
+    "translation": [
+      "partial",
+      3
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "blocking": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "securityHardening": [
+      4,
+      "Frozen Chromium",
+      "editorial"
+    ],
+    "patchSpeed": [
+      0,
+      "Discontinued, no patches",
+      "documented"
+    ],
+    "telemetry": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lookCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "translation": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "Legacy app sidebar",
+      "editorial"
+    ],
+    "extensions": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "Service ended",
+      "documented"
+    ],
+    "passwords": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "None",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "businessTrust": [
+      3,
+      "Team absorbed, users abandoned",
+      "editorial"
+    ],
+    "longevity": [
+      0,
+      "Discontinued",
+      "documented"
+    ],
+    "ai": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      3,
+      "Unavailable",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

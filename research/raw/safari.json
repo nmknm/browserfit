@@ -1,0 +1,818 @@
+{
+  "id": "safari",
+  "name": "Apple Safari",
+  "aliases": [
+    "Safari"
+  ],
+  "group": "mainstream",
+  "developer": "Apple Inc.",
+  "hq": "United States",
+  "businessModel": "Bundled with Apple hardware; search default revenue share (notably Google); Private Relay via iCloud+",
+  "engine": "webkit",
+  "basedOn": "WebKit (Apple)",
+  "license": "Proprietary (WebKit engine is open source, LGPL/BSD)",
+  "openSource": "partial",
+  "price": "free",
+  "paidNote": "iCloud+ needed for Private Relay",
+  "releaseYear": 2003,
+  "status": "active",
+  "statusNote": "Safari 27 shipped stable on Sept 14, 2026; Safari 26.x remains on older macOS releases",
+  "version": {
+    "current": "27.x (27.0 stable 2026-09-14)",
+    "date": "2026-09-14",
+    "upstream": "WebKit (Safari 27.0 build 20625.1.29; third-party tracker lists 27.2 as of Oct 26, unconfirmed)"
+  },
+  "channels": [
+    "Stable",
+    "Safari Technology Preview",
+    "Beta (with OS betas)"
+  ],
+  "updateCadence": "Major version yearly with OS releases (September); point releases every ~4-8 weeks; STP roughly every 2 weeks",
+  "website": "https://www.apple.com/safari/",
+  "tags": [
+    "mainstream",
+    "apple",
+    "webkit",
+    "battery",
+    "privacy"
+  ],
+  "pitch": "The fast, efficient, Apple-only browser with strong privacy and tight iCloud integration.",
+  "summary": "Apple's WebKit browser for macOS, iOS, iPadOS and visionOS: best battery life, Advanced Fingerprinting Protection and iCloud Passwords/passkeys, but few customisation options and a limited extension model.",
+  "bestFor": [
+    "Apple device users who want efficiency and battery life",
+    "People who want iCloud Passwords and passkeys everywhere",
+    "Users who want privacy protections without setup",
+    "iPhone/iPad users (WebKit is the only engine there)"
+  ],
+  "notFor": [
+    "Windows, Linux or Android users (not available)",
+    "People who want full ad blockers or power-user customisation",
+    "Developers who want Chrome-level DevTools breadth"
+  ],
+  "pros": [
+    {
+      "title": "Battery and efficiency",
+      "detail": "Best-in-class energy use on Apple silicon Macs and iPhones."
+    },
+    {
+      "title": "Anti-tracking by default",
+      "detail": "Intelligent Tracking Prevention blocks cross-site tracking; Advanced Fingerprinting Protection hardens against fingerprinting."
+    },
+    {
+      "title": "iCloud Passwords and passkeys",
+      "detail": "Passwords app with passkeys, autofill and 2FA codes synced end-to-end encrypted."
+    },
+    {
+      "title": "Fast WebKit",
+      "detail": "JavaScriptCore and WebKit trade top benchmark spots with Chrome."
+    },
+    {
+      "title": "Apple Intelligence touches",
+      "detail": "Safari 27 adds AI tab organization, Notify Me page monitoring and AI-assisted Safari extension creation on supported devices."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Apple only",
+      "detail": "No Windows, Linux or Android version (the Windows build was abandoned in 2012)."
+    },
+    {
+      "title": "Limited customisation",
+      "detail": "Little control over UI, search engines (fixed list), shortcuts and flags."
+    },
+    {
+      "title": "Restrictive extensions",
+      "detail": "Web extensions are supported but blocking power is limited and distribution is via the App Store."
+    },
+    {
+      "title": "Slower feature and security cadence",
+      "detail": "Major features arrive once a year, and older OS versions get Safari updates later."
+    }
+  ],
+  "signatureFeatures": [
+    "Advanced Fingerprinting Protection",
+    "iCloud Passwords and passkeys",
+    "Intelligent Tracking Prevention",
+    "Profiles and tab groups synced via iCloud",
+    "Apple Intelligence tab organization and Notify Me"
+  ],
+  "faq": [
+    {
+      "q": "Is Safari 27 still in beta?",
+      "a": "No. Safari 27.0 shipped stable on September 14, 2026 with macOS 27 Golden Gate and iOS 27; Safari 26.x continues for older macOS versions."
+    },
+    {
+      "q": "Can I run Safari on Windows or Android?",
+      "a": "No. Safari is available only on macOS, iOS, iPadOS and visionOS; the Windows version ended in 2012."
+    },
+    {
+      "q": "Does Safari support uBlock Origin?",
+      "a": "No. Safari supports content blockers and web extensions through the App Store, but not full uBlock Origin."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2003-01",
+      "event": "Safari 1.0 debuts on Mac OS X"
+    },
+    {
+      "date": "2007-06",
+      "event": "Safari for Windows released (discontinued 2012) and iPhone ships Mobile Safari"
+    },
+    {
+      "date": "2025-09",
+      "event": "Safari 26 released with Liquid Glass design; Advanced Fingerprinting Protection expanded"
+    },
+    {
+      "date": "2026-06",
+      "event": "Safari 27 announced at WWDC; beta released July 2026"
+    },
+    {
+      "date": "2026-09",
+      "event": "Safari 27.0 stable (Sept 14) with macOS 27 (Apple silicon only) and iOS 27"
+    },
+    {
+      "date": "2026-09",
+      "event": "WebKit blog details Safari 27 developer features including a Safari MCP server for AI agents"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Imports from Chrome and Firefox on Mac; iCloud syncs across Apple devices."
+  },
+  "alternatives": [
+    "chrome",
+    "firefox",
+    "brave",
+    "arc",
+    "orion"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "passkeys",
+        "history",
+        "tabs",
+        "tab groups",
+        "reading list",
+        "profiles"
+      ],
+      "crossOs": false,
+      "note": "iCloud; Passwords/keychain and history/iCloud Tabs e2ee by default, bookmarks need Advanced Data Protection; Apple devices only"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": true,
+      "breachCheck": true,
+      "note": "Passwords app; compromised password detection; Safari 27 can fix weak passwords automatically"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Web extensions (MV2/MV3) via Xcode and App Store; no blocking webRequest",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "own-store"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Apple Intelligence features (tab organization, Notify Me, summaries) require compatible hardware and can be disabled system-wide"
+    },
+    "privacy": {
+      "defaults": "ITP blocks cross-site tracking, AFP on, link tracking protection, Private Relay (iCloud+) optional",
+      "telemetry": "Minimal; Apple analytics optional; Google default search deal",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (change to Bing, DuckDuckGo, Ecosia, Yahoo etc.)",
+    "telemetry": "Optional analytics; Safe Browsing via Google or Tencent, with IP-address privacy proxy",
+    "drm": "FairPlay Streaming (no Widevine)",
+    "codecs": "H.264, HEVC, VP9, AV1 (hardware on M3/A17 Pro and newer), ProRes on Mac",
+    "sandbox": "Process-per-site sandbox, Lockdown Mode, Memory Integrity Enforcement on newer hardware",
+    "patchSpeed": "Security updates with iOS/macOS point releases; Background Security Improvements and rapid responses for critical fixes",
+    "languages": "~40"
+  },
+  "platforms": {
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 14+ for Safari 26.x; Safari 27 ships with macOS 27 (Apple silicon only)",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "preinstalled"
+      ],
+      "notes": [
+        "macOS 27 Golden Gate drops all Intel Macs",
+        "Safari 26.x updates remain available for Sonoma/Sequoia/Tahoe"
+      ],
+      "highlights": [
+        "Pull-down-to-refresh on Mac, AI tab organization, Notify Me"
+      ],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS 26 (Safari 26.x) / iOS 27 (Safari 27)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "preinstalled"
+      ],
+      "notes": [
+        "Required engine for all iOS browsers (outside regions with alternative engines)",
+        "Some AI features not on iPhone 15 and older",
+        "Same app covers iPadOS"
+      ],
+      "highlights": [
+        "Compact layout, Start Page picker, web extensions via App Store"
+      ],
+      "scoreDelta": {
+        "mobileApps": 0
+      }
+    },
+    "windows": {
+      "status": "discontinued",
+      "minOs": "Windows XP-7 (last release Safari 5.1.7, 2012)",
+      "arch": [
+        "x86"
+      ],
+      "stores": [],
+      "notes": [
+        "Not available; no longer updated"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Safari_(web_browser)",
+      "title": "Safari (web browser) - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://developer.apple.com/documentation/safari-release-notes/safari-27-release-notes",
+      "title": "Safari 27 Release Notes - Apple Developer",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://theapplewiki.com/wiki/Safari",
+      "title": "Safari - The Apple Wiki",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://9to5mac.com/2026/06/09/heres-everything-new-coming-to-safari-on-macos-27-golden-gate/",
+      "title": "9to5Mac: Everything new in Safari on macOS 27",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.macrumors.com/guide/ios-27-safari/",
+      "title": "MacRumors: iOS 27 Safari features",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://9to5mac.com/2026/09/17/webkit-blog-breaks-down-whats-new-with-safari-27-for-developers-including-mcp-support/",
+      "title": "9to5Mac: Safari 27 for developers incl. MCP support",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.macrumors.com/2026/08/20/macos-golden-gate-marks-the-end-of-an-era/",
+      "title": "MacRumors: macOS Golden Gate marks the end of an era (Intel dropped)",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Whether Safari 27.1/27.2 are final (Apple Wiki lists 27.2 on Oct 26; not confirmed on Apple pages)",
+    "Advanced Fingerprinting Protection behaviour in Safari 27 (default-on across all browsing since Safari 26 is from prior knowledge, not re-fetched this session)",
+    "iOS 27 supported-iPhone list and Safari minimum on iOS",
+    "iCloud encryption category details for bookmarks vs history",
+    "Task text said \"27 beta\"; research shows 27 is already stable"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      8,
+      "Intelligent Tracking Prevention"
+    ],
+    "fingerprintProtection": [
+      "yes",
+      8,
+      "Advanced Fingerprinting Protection"
+    ],
+    "httpsOnly": [
+      "yes",
+      7,
+      "Auto-upgrade with warning"
+    ],
+    "doh": [
+      "partial",
+      5,
+      "Via OS/profile DNS settings"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "paid",
+      7,
+      "iCloud Private Relay (iCloud+)"
+    ],
+    "cookieIsolation": [
+      "yes",
+      8,
+      "3P cookies blocked by default"
+    ],
+    "queryStripping": [
+      "yes",
+      8,
+      "Link tracking protection"
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "yes",
+      8,
+      "Private Browsing with Private Relay options"
+    ],
+    "adBlocker": [
+      "extension",
+      6,
+      "Content blockers via App Store"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      6
+    ],
+    "customFilterLists": [
+      "extension",
+      5
+    ],
+    "youtubeAds": [
+      "extension",
+      6
+    ],
+    "cookieBanners": [
+      "extension",
+      5
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      8,
+      "Synced via iCloud"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      6,
+      "Profiles + tab groups"
+    ],
+    "splitView": [
+      "partial",
+      3,
+      "macOS window split view"
+    ],
+    "tabSleeping": [
+      "partial",
+      5,
+      "OS-level background tab discard"
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      9
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      9
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "OS-level"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "partial",
+      5
+    ],
+    "readLater": [
+      "yes",
+      8,
+      "Reading List"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      3,
+      "Safari web extensions only"
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "yes",
+      7,
+      "iOS App Store extensions"
+    ],
+    "userscripts": [
+      "extension",
+      6,
+      "Userscripts app"
+    ],
+    "syncBookmarks": [
+      "yes",
+      8
+    ],
+    "syncPasswords": [
+      "yes",
+      9
+    ],
+    "syncTabs": [
+      "yes",
+      9
+    ],
+    "e2eeSync": [
+      "yes",
+      8,
+      "Passwords e2ee; bookmarks need ADP"
+    ],
+    "profiles": [
+      "yes",
+      7
+    ],
+    "passwordManager": [
+      "yes",
+      9,
+      "Passwords app"
+    ],
+    "passkeys": [
+      "yes",
+      10
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "no",
+      0,
+      "Uses FairPlay instead"
+    ],
+    "netflix4k": [
+      "yes",
+      9
+    ],
+    "hevc": [
+      "yes",
+      10
+    ],
+    "av1": [
+      "partial",
+      7,
+      "Hardware only on newer chips"
+    ],
+    "hwDecode": [
+      "yes",
+      10
+    ],
+    "aiAssistant": [
+      "partial",
+      5,
+      "Siri/Apple Intelligence, no chat sidebar"
+    ],
+    "aiSummarizer": [
+      "yes",
+      7,
+      "Summaries in Reader and Highlights"
+    ],
+    "agenticBrowsing": [
+      "partial",
+      3,
+      "Notify Me monitors pages; no actions"
+    ],
+    "localAi": [
+      "yes",
+      6,
+      "On-device Apple Intelligence"
+    ],
+    "aiKillSwitch": [
+      "yes",
+      7,
+      "Single Apple Intelligence toggle"
+    ],
+    "translation": [
+      "yes",
+      8
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      6,
+      "Add to Dock/Home Screen"
+    ],
+    "enterprisePolicies": [
+      "yes",
+      7,
+      "MDM configuration profiles"
+    ],
+    "kioskMode": [
+      "partial",
+      4,
+      "MDM/Guided Access"
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      "Backgrounds only"
+    ],
+    "customSearchEngines": [
+      "partial",
+      4,
+      "Fixed list"
+    ],
+    "devtools": [
+      "yes",
+      8,
+      "Web Inspector"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "JavaScriptCore leads Speedometer on Apple silicon",
+      "documented"
+    ],
+    "pageLoad": [
+      9,
+      "WebKit optimised for Apple hardware",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "HTTP/3 support, fewer preconnect tricks",
+      "editorial"
+    ],
+    "startup": [
+      9,
+      "Fast launch on Apple silicon",
+      "editorial"
+    ],
+    "smoothness": [
+      9.5,
+      "Best scrolling on Apple devices",
+      "editorial"
+    ],
+    "graphics": [
+      8.5,
+      "WebGL good, WebGPU shipped in Safari 26",
+      "documented"
+    ],
+    "memory": [
+      8.5,
+      "Low memory footprint",
+      "editorial"
+    ],
+    "cpu": [
+      9,
+      "Efficient on Apple silicon",
+      "editorial"
+    ],
+    "battery": [
+      9.5,
+      "Best laptop battery life",
+      "editorial"
+    ],
+    "resourceControls": [
+      6,
+      "System-managed, little user control",
+      "editorial"
+    ],
+    "lowEnd": [
+      7,
+      "Only Apple hardware; Intel dropped in macOS 27",
+      "documented"
+    ],
+    "installSize": [
+      9,
+      "Part of the OS",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      7,
+      "ITP and AFP on by default",
+      "documented"
+    ],
+    "blocking": [
+      6,
+      "Content blockers only",
+      "documented"
+    ],
+    "fingerprinting": [
+      7.5,
+      "AFP with noise injection and defaults",
+      "documented"
+    ],
+    "securityHardening": [
+      8.5,
+      "Sandbox, Lockdown Mode, MIE on newer chips",
+      "documented"
+    ],
+    "patchSpeed": [
+      7,
+      "Security fixes tied to OS point releases",
+      "documented"
+    ],
+    "telemetry": [
+      7,
+      "Minimal analytics, Google search deal",
+      "editorial"
+    ],
+    "lookCustom": [
+      3,
+      "Limited UI customisation",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few options",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4,
+      "Develop menu only",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab groups, profiles, no vertical tabs",
+      "documented"
+    ],
+    "searchFreedom": [
+      5,
+      "Fixed list of engines",
+      "documented"
+    ],
+    "downloads": [
+      6,
+      "Simple download panel",
+      "editorial"
+    ],
+    "productivity": [
+      7,
+      "Reader, PiP, Highlights, Start Page",
+      "editorial"
+    ],
+    "media": [
+      9.5,
+      "FairPlay, HEVC, Dolby, HW decode",
+      "documented"
+    ],
+    "translation": [
+      7.5,
+      "Apple Translate, limited languages",
+      "documented"
+    ],
+    "extras": [
+      5,
+      "Private Relay (paid), no VPN",
+      "documented"
+    ],
+    "extensions": [
+      4,
+      "Limited blocking APIs",
+      "documented"
+    ],
+    "sync": [
+      7,
+      "iCloud only, Apple devices only",
+      "documented"
+    ],
+    "passwords": [
+      9,
+      "Passwords app, passkeys, 2FA",
+      "documented"
+    ],
+    "mobileApps": [
+      7,
+      "iOS Safari excellent but Apple-only",
+      "documented"
+    ],
+    "webCompat": [
+      8.5,
+      "Rare WebKit-only issues",
+      "editorial"
+    ],
+    "devTools": [
+      7.5,
+      "Web Inspector solid, narrower than Chrome",
+      "documented"
+    ],
+    "accessibility": [
+      9,
+      "VoiceOver integration",
+      "documented"
+    ],
+    "openSource": [
+      3,
+      "Proprietary app; WebKit engine open",
+      "documented"
+    ],
+    "businessTrust": [
+      7,
+      "Hardware-funded, but Google search deal",
+      "editorial"
+    ],
+    "longevity": [
+      10,
+      "Apple-backed, tied to every Apple OS",
+      "documented"
+    ],
+    "ai": [
+      5,
+      "Apple Intelligence, no chat or agent",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      9,
+      "Simple and consistent",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

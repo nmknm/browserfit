@@ -1,0 +1,760 @@
+{
+  "id": "blanc",
+  "name": "Blanc",
+  "aliases": [
+    "Blanc Browser"
+  ],
+  "group": "minimal",
+  "developer": "Anthony J. Loria (bnfy)",
+  "hq": "United States (unverified)",
+  "businessModel": "Free; optional Patron subscription ($4/month or $30/year) unlocks workspaces",
+  "engine": "blink",
+  "basedOn": "Electron (Chromium)",
+  "license": "MIT",
+  "openSource": true,
+  "price": "freemium",
+  "paidNote": "Patron plan $4/mo or $30/yr for workspaces",
+  "releaseYear": 2026,
+  "status": "active",
+  "statusNote": "Brand-new (repo created July 2026, Product Hunt launch Sept 2026); very rapid releases",
+  "version": {
+    "current": "1.45.0",
+    "date": "2026-10-29",
+    "upstream": "Electron/Chromium (version unspecified)"
+  },
+  "channels": [
+    "Stable (GitHub releases, auto-update)"
+  ],
+  "updateCadence": "Multiple releases per week in October 2026",
+  "website": "https://blancbrowser.substack.com/",
+  "tags": [
+    "minimal",
+    "electron",
+    "ad-blocking",
+    "new"
+  ],
+  "pitch": "Minimal browser where a floating \"Island\" replaces tabs and toolbar.",
+  "summary": "Blanc is a brand-new Electron-based browser that replaces the tab strip and toolbar with a small floating Island showing navigation, tab dots, domain and blocked-request count. It blocks ads with EasyList/EasyPrivacy and deliberately has no extension runtime.",
+  "bestFor": [
+    "People who want an ultra-minimal UI",
+    "Mac, Windows and Linux users wanting built-in blocking",
+    "Early adopters comfortable with a new project"
+  ],
+  "notFor": [
+    "Extension users",
+    "Anyone who needs a mature, long-lived browser",
+    "DRM-heavy streaming"
+  ],
+  "pros": [
+    {
+      "title": "Distinct minimal UI",
+      "detail": "The Island combines navigation, address bar, command palette and quick switcher."
+    },
+    {
+      "title": "Network-level blocking",
+      "detail": "Bundled EasyList/EasyPrivacy snapshots via Ghostery adblocker, with a live blocked count."
+    },
+    {
+      "title": "MIT source",
+      "detail": "Repo is MIT-licensed with transparent release notes."
+    },
+    {
+      "title": "Cross-platform",
+      "detail": "macOS, Windows installer and Linux AppImage."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Very new, single maintainer",
+      "detail": "Launched in 2026; long-term support is unproven."
+    },
+    {
+      "title": "No extensions",
+      "detail": "The maker shipped an extension runtime, then removed it after crashes and sandboxing/licensing issues."
+    },
+    {
+      "title": "Nag for Patron plan",
+      "detail": "OMG! Ubuntu reports a new-tab button for the paid plan that cannot be hidden."
+    },
+    {
+      "title": "Unclear licensing signals",
+      "detail": "AlternativeTo calls it source-available while the repo lists MIT."
+    }
+  ],
+  "signatureFeatures": [
+    "The Island",
+    "Quick Switcher",
+    "Glance side-by-side peek",
+    "Built-in EasyList/EasyPrivacy blocking"
+  ],
+  "faq": [
+    {
+      "q": "Is Blanc open source?",
+      "a": "The GitHub repo is MIT-licensed; AlternativeTo describes it differently, and trademarks are reserved."
+    },
+    {
+      "q": "Does Blanc support extensions?",
+      "a": "No. There is no extension runtime by design."
+    },
+    {
+      "q": "Is Blanc free?",
+      "a": "Yes; workspaces require the optional Patron plan."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-07",
+      "event": "GitHub repository created"
+    },
+    {
+      "date": "2026-09",
+      "event": "Product Hunt launch (Sept 17) and OMG! Ubuntu coverage"
+    },
+    {
+      "date": "2026-10",
+      "event": "v1.45.0 released on 2026-10-29 after daily releases"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Import support was not confirmed; use profiles for separation."
+  },
+  "alternatives": [
+    "min",
+    "brave",
+    "vivaldi"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "e2ee",
+      "items": [],
+      "crossOs": true,
+      "note": "README lists encrypted sync as free; synced items not documented"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No password manager; security-key passkeys work, Touch ID passkeys on supported Macs"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension runtime by design",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Network-level ad/tracker blocking on by default",
+      "telemetry": "Search suggestions and bounded usage measurement default on, opt-out at first run",
+      "jurisdiction": "Unverified"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unspecified (search suggestions provider toggle)",
+    "telemetry": "Bounded usage measurement, user can disable",
+    "drm": "None documented",
+    "codecs": "Chromium via Electron",
+    "sandbox": "Electron/Chromium sandbox",
+    "patchLag": "Electron update cadence (auto-updates via GitHub Releases)",
+    "languages": "Unspecified"
+  },
+  "platforms": {
+    "macos": {
+      "status": "active",
+      "minOs": "Unspecified",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "github",
+        "official-installer"
+      ],
+      "notes": [
+        "Signed and notarized dmg/zip"
+      ],
+      "highlights": [
+        "Touch ID passkeys"
+      ],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "active",
+      "minOs": "Windows (NSIS installer)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "github",
+        "official-installer"
+      ],
+      "notes": [
+        "Code-signed when included in release"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "x86_64 distro with AppImage support",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "github",
+        "portable"
+      ],
+      "notes": [
+        "AppImage only; no Flathub/deb mentioned"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://github.com/bnfy/blanc",
+      "title": "Blanc GitHub repository",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.producthunt.com/products/blanc-3",
+      "title": "Blanc on Product Hunt",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.omgubuntu.co.uk/2026/09/blanc-web-browser-new",
+      "title": "Blanc browser uses a dynamic island (OMG! Ubuntu)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://alternativeto.net/software/blanc/about/",
+      "title": "Blanc on AlternativeTo",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blancbrowser.substack.com/",
+      "title": "Blanc Browser newsletter",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Maker’s claim of one quarter the RAM of Chrome/Vivaldi (vendor claim)",
+    "Whether bookmark/password import exists",
+    "Which items sync and how sync keys work",
+    "Widevine/DRM support",
+    "Maker location",
+    "Electron/Chromium version"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      6,
+      "Network blocking by default"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7,
+      "Opt out at first-run choices"
+    ],
+    "privateHardening": [
+      "yes",
+      5,
+      "Private tabs with in-memory session"
+    ],
+    "adBlocker": [
+      "yes",
+      7,
+      "Ghostery adblocker with EasyList/EasyPrivacy"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      4,
+      "Cosmetic hiding exists"
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "partial",
+      3,
+      "Depends on bundled lists"
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      "Tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "paid",
+      6,
+      "Patron plan"
+    ],
+    "splitView": [
+      "partial",
+      5,
+      "Glance side-by-side reference view"
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Quiet Tabs (unverified behaviour)"
+    ],
+    "tabSearch": [
+      "yes",
+      8,
+      "Quick Switcher"
+    ],
+    "pinnedTabs": [
+      "yes",
+      6,
+      "Pinned tabs"
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "yes",
+      8,
+      "Island command palette"
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      "Slash commands and shortcuts"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "partial",
+      4,
+      "Encrypted sync; items undocumented"
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "partial",
+      5,
+      "Encrypted sync, details unclear"
+    ],
+    "profiles": [
+      "yes",
+      7,
+      "Local profiles"
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "partial",
+      3,
+      "Security keys and Touch ID on Mac"
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      4,
+      "Basic"
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "devtools": [
+      "partial",
+      4,
+      "Electron DevTools (unverified)"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "V8 via Electron",
+      "documented"
+    ],
+    "pageLoad": [
+      8,
+      "Blink with network blocking",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      6,
+      "Electron startup",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Chromium compositor",
+      "editorial"
+    ],
+    "graphics": [
+      8,
+      "WebGL through Chromium",
+      "editorial"
+    ],
+    "memory": [
+      6,
+      "Electron; maker claims low RAM (unverified)",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      3.5,
+      "Quiet Tabs only",
+      "editorial"
+    ],
+    "lowEnd": [
+      4.5,
+      "Electron needs decent hardware",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Electron bundle",
+      "documented"
+    ],
+    "privacyDefaults": [
+      7.5,
+      "Blocking default, opt-out telemetry choices",
+      "editorial"
+    ],
+    "blocking": [
+      7,
+      "EasyList/EasyPrivacy network blocking",
+      "editorial"
+    ],
+    "fingerprinting": [
+      3,
+      "Chromium default surface",
+      "editorial"
+    ],
+    "securityHardening": [
+      7,
+      "Electron/Chromium sandbox",
+      "editorial"
+    ],
+    "patchSpeed": [
+      6.5,
+      "Frequent releases; Electron-dependent",
+      "editorial"
+    ],
+    "telemetry": [
+      6.5,
+      "Usage measurement default on, opt-out",
+      "documented"
+    ],
+    "lookCustom": [
+      4,
+      "Minimal Island UI, few themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      5,
+      "Slash commands",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3,
+      "Small settings set",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Groups, pins, quick switcher",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Provider toggle only documented",
+      "editorial"
+    ],
+    "downloads": [
+      5,
+      "Basic",
+      "editorial"
+    ],
+    "productivity": [
+      6,
+      "Command palette, glance",
+      "editorial"
+    ],
+    "media": [
+      5,
+      "No documented DRM",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "No translation",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "Glance and a bundled Mahjong game",
+      "editorial"
+    ],
+    "extensions": [
+      0.5,
+      "No extension runtime",
+      "editorial"
+    ],
+    "sync": [
+      5.5,
+      "Encrypted sync, scope unclear",
+      "editorial"
+    ],
+    "passwords": [
+      2,
+      "No manager; passkey keys only",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "Desktop only",
+      "documented"
+    ],
+    "webCompat": [
+      8.5,
+      "Chromium engine",
+      "editorial"
+    ],
+    "devTools": [
+      6,
+      "Electron DevTools (unverified)",
+      "editorial"
+    ],
+    "accessibility": [
+      5,
+      "Unknown; unconventional UI",
+      "editorial"
+    ],
+    "openSource": [
+      8,
+      "MIT repo; trademark reserved, AlternativeTo disputes",
+      "documented"
+    ],
+    "businessTrust": [
+      6,
+      "Solo developer, Patron nag",
+      "editorial"
+    ],
+    "longevity": [
+      4.5,
+      "Launched 2026, single maintainer",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Simple, but unconventional Island",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

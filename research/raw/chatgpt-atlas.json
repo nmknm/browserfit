@@ -1,0 +1,803 @@
+{
+  "id": "chatgpt-atlas",
+  "name": "ChatGPT Atlas",
+  "aliases": [
+    "Atlas",
+    "OpenAI Atlas"
+  ],
+  "group": "ai",
+  "developer": "OpenAI",
+  "hq": "United States",
+  "businessModel": "Free browser; agent mode for ChatGPT Plus/Pro subscribers",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Agent mode limited to Plus and Pro (while running)",
+  "releaseYear": 2025,
+  "status": "discontinued",
+  "statusNote": "Retirement announced Jul 9, 2026; stopped working Aug 9, 2026. Features moved into the ChatGPT desktop app and Codex.",
+  "version": {
+    "current": "Last version not published",
+    "date": "2026-08-09",
+    "upstream": "Chromium"
+  },
+  "channels": [],
+  "updateCadence": "None - discontinued",
+  "website": "https://chatgpt.com/atlas",
+  "tags": [
+    "ai",
+    "agentic",
+    "discontinued",
+    "macos",
+    "openai"
+  ],
+  "pitch": "OpenAI's short-lived AI browser, shut down Aug 9, 2026.",
+  "summary": "OpenAI's macOS-only AI browser launched Oct 21, 2025 with a ChatGPT sidebar, browser memories and agent mode. OpenAI announced retirement Jul 9, 2026 and stopped it Aug 9, 2026, folding features into ChatGPT desktop and Codex.",
+  "bestFor": [
+    "Historical reference for AI-browser research",
+    "Anyone migrating data (export window has closed)"
+  ],
+  "notFor": [
+    "Everyone: it no longer works",
+    "Users who need ongoing updates",
+    "Anyone expecting data recovery"
+  ],
+  "pros": [
+    {
+      "title": "Deep ChatGPT integration",
+      "detail": "Sidebar chat, cursor chat and browser memories were native."
+    },
+    {
+      "title": "Agent mode",
+      "detail": "Could complete tasks like hotel booking for Plus/Pro users."
+    },
+    {
+      "title": "Memory controls",
+      "detail": "OpenAI said memory summaries were deleted within seven days; training on browsing off by default."
+    },
+    {
+      "title": "Passkey support",
+      "detail": "iCloud Keychain passkeys supported."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Shut down",
+      "detail": "Stopped working Aug 9, 2026, under a year after launch."
+    },
+    {
+      "title": "Data not transferable",
+      "detail": "Bookmarks, history and tabs did not move automatically; export window closed."
+    },
+    {
+      "title": "macOS only",
+      "detail": "Windows, iOS and Android were announced but not confirmed shipped."
+    },
+    {
+      "title": "Security findings",
+      "detail": "LayerX reported a memory-injection attack in Oct 2025; OpenAI said it could not reproduce it."
+    }
+  ],
+  "signatureFeatures": [
+    "ChatGPT sidebar",
+    "Browser memories",
+    "Agent mode",
+    "Cursor chat"
+  ],
+  "faq": [
+    {
+      "q": "Is ChatGPT Atlas still available?",
+      "a": "No. It stopped working on Aug 9, 2026; chatgpt.com/atlas now loads standard ChatGPT."
+    },
+    {
+      "q": "Why was it shut down?",
+      "a": "OpenAI lead James Sun said core capabilities moved into the redesigned ChatGPT desktop app; OpenAI gave no further explanation."
+    },
+    {
+      "q": "Can I recover my data?",
+      "a": "Data not exported before the window closed cannot be recovered."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-10",
+      "event": "Launched on macOS (Oct 21)"
+    },
+    {
+      "date": "2026-03",
+      "event": "OpenAI announces merging Atlas, ChatGPT desktop and Codex"
+    },
+    {
+      "date": "2026-07",
+      "event": "Discontinuation announced (Jul 9)"
+    },
+    {
+      "date": "2026-08",
+      "event": "Atlas stops working (Aug 9)"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No longer installable. See comet, dia or opera-neon."
+  },
+  "alternatives": [
+    "comet",
+    "dia",
+    "opera-neon",
+    "browseros"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "account",
+      "items": [
+        "memories"
+      ],
+      "crossOs": false,
+      "note": "ChatGPT account; ended with shutdown"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "iCloud Keychain passkeys; iCloud passwords via extension"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "Could import extensions at setup for new installs (as of Oct 2025)",
+      "date": "2025"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Agent mode was Plus/Pro"
+    },
+    "privacy": {
+      "defaults": "Browser memories on opt-in; summaries deleted within 7 days; training off by default",
+      "telemetry": "OpenAI account telemetry",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "ChatGPT / Google (Auto mode)",
+    "telemetry": "OpenAI account-linked",
+    "drm": "Unverified",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium",
+    "patchLag": "N/A - discontinued",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "macos": {
+      "status": "discontinued",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [],
+      "notes": [
+        "Launched Oct 21, 2025; stopped Aug 9, 2026"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "none",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Announced \"coming soon\", not confirmed shipped"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "none",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Announced, not confirmed shipped"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "none",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Announced, not confirmed shipped"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/ChatGPT_Atlas",
+      "title": "ChatGPT Atlas - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://9to5mac.com/2026/07/09/openai-is-discontinuing-chatgpt-atlas-its-standalone-desktop-browser/",
+      "title": "9to5Mac: OpenAI discontinuing Atlas",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
+      "title": "TechCrunch: OpenAI shutting down Atlas",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://thenextweb.com/news/openai-chatgpt-atlas-browser-shutdown-superapp",
+      "title": "The Next Web: OpenAI killing Atlas",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.arkoselabs.com/blog/standalone-agentic-browser-didnt-win",
+      "title": "Arkose Labs: standalone agentic browser",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Last shipped version",
+    "Whether Windows/mobile ever shipped (Wikipedia says only announced)",
+    "Exact extension behavior at shutdown"
+  ],
+  "confidence": "high",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "extension",
+      3,
+      "Only MV3 blockers such as uBO Lite"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "yes",
+      7,
+      "Optional"
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      ""
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "yes",
+      8,
+      "Cursor chat, Auto search mode"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "partial",
+      3,
+      "Extension import at setup only"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "Via userscript-manager extension (MV3)"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Did not transfer"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      ""
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "yes",
+      7,
+      "iCloud Keychain"
+    ],
+    "importData": [
+      "yes",
+      6,
+      "Imported from other browsers"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      9.5,
+      "ChatGPT sidebar"
+    ],
+    "aiSummarizer": [
+      "yes",
+      9,
+      ""
+    ],
+    "agenticBrowsing": [
+      "yes",
+      8,
+      "Agent mode (Plus/Pro); discontinued"
+    ],
+    "localAi": [
+      "no",
+      0,
+      "Cloud models"
+    ],
+    "aiKillSwitch": [
+      "no",
+      0,
+      "AI is the core"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      ""
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Chromium cold start, heavier than plain Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus AI layer; RAM-heavy",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs modern hardware; AI features add load",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3.5,
+      "Opt-in memories, training off by default; cloud AI",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Only MV3 blockers such as uBO Lite are available",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      7,
+      "Chromium base; injection issues reported",
+      "editorial"
+    ],
+    "patchSpeed": [
+      3,
+      "Discontinued; no further patches",
+      "documented"
+    ],
+    "telemetry": [
+      3,
+      "Account-linked OpenAI telemetry",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab groups and search; no workspaces documented",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      8,
+      "Sidebar chat, cursor chat, agent mode",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "AI agent and memory; no VPN or wallet",
+      "editorial"
+    ],
+    "extensions": [
+      3,
+      "Extension import at setup only",
+      "editorial"
+    ],
+    "sync": [
+      4,
+      "ChatGPT account memories; no browser sync",
+      "editorial"
+    ],
+    "passwords": [
+      4.5,
+      "iCloud Keychain passkeys",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "macOS only",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "documented"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary layer over Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      3,
+      "Killed in under a year; data not recoverable",
+      "editorial"
+    ],
+    "longevity": [
+      0,
+      "Discontinued Aug 9, 2026",
+      "documented"
+    ],
+    "ai": [
+      9.5,
+      "Full ChatGPT agent and memory at peak",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Simple ChatGPT-style UI",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

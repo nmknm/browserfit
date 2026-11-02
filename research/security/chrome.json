@@ -1,0 +1,43 @@
+{
+  "sandbox": "strong",
+  "siteIsolation": "full",
+  "patchLag": "upstream",
+  "lagNote": "Google develops Chromium; security fixes ship in Chrome Stable first",
+  "autoUpdate": { "windows": "background", "macos": "background", "linux": "os", "android": "store", "ios": "store", "chromeos": "os" },
+  "httpsFirst": "default",
+  "safeBrowsing": "google",
+  "bugBounty": "own",
+  "disclosure": true,
+  "advisoryUrl": "https://chromereleases.googleblog.com/",
+  "summary": "Sandboxes renderers per OS and isolates all sites on desktop; updates in the background and warns before loading public HTTP pages since Chrome 154.",
+  "incidents": [
+    {
+      "date": "2026-09",
+      "title": "CVE-2026-87491 V8 out-of-bounds write exploited in the wild",
+      "severity": "high",
+      "detail": "Google said an exploit exists in the wild; fixed in Chrome 153.0.8010.36/.37 Stable.",
+      "url": "https://www.bleepingcomputer.com/news/security/google-patches-seventh-chrome-zero-day-exploited-in-attacks-this-year/"
+    },
+    {
+      "date": "2026-09",
+      "title": "CVE-2026-85046 V8 type confusion exploited in the wild",
+      "severity": "high",
+      "detail": "Google confirmed an in-the-wild exploit; fixed in Chrome 152.0.7977.82/.83 Stable.",
+      "url": "https://www.helpnetsecurity.com/2026/09/04/google-chrome-zero-day-cve-2026-85046/"
+    },
+    {
+      "date": "2026-06",
+      "title": "CVE-2026-11645 V8 out-of-bounds access exploited in the wild",
+      "severity": "high",
+      "detail": "Google confirmed active exploitation; fixed in Chrome 149.0.7827.102/.103 Stable on June 8, 2026.",
+      "url": "https://socprime.com/blog/cve-2026-11645-chrome-zero-day-vulnerability-exploited-in-the-wild/"
+    }
+  ],
+  "sources": [
+    { "url": "https://chromereleases.googleblog.com/", "title": "Chrome Releases blog", "accessed": "2026-10-30" },
+    { "url": "https://www.chromium.org/Home/chromium-security/site-isolation/", "title": "Site Isolation - The Chromium Projects", "accessed": "2026-10-30" },
+    { "url": "https://support.google.com/chrome/answer/95414", "title": "Update Google Chrome - Chrome Help", "accessed": "2026-10-30" },
+    { "url": "https://blog.google/security/https-by-defau/", "title": "HTTPS by default - Google blog", "accessed": "2026-10-30" },
+    { "url": "https://chromium.googlesource.com/chromium/src/+/main/docs/security/faq.md", "title": "Chromium Security FAQ", "accessed": "2026-10-30" }
+  ]
+}

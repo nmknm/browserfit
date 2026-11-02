@@ -1,0 +1,705 @@
+{
+  "id": "jiosphere",
+  "name": "JioSphere",
+  "aliases": [
+    "JioSphere Browser",
+    "JioPages"
+  ],
+  "group": "regional",
+  "developer": "Jio Platforms Limited (Reliance Industries)",
+  "hq": "India",
+  "businessModel": "Free; supports Jio’s app ecosystem and services, with ads and regional content",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2019,
+  "status": "active",
+  "statusNote": "Renamed from JioPages; 8.0.0 and 8.0.1 shipped in October 2026",
+  "version": {
+    "current": "8.0.1",
+    "date": "2026-10-30",
+    "upstream": "Chromium (latest engine, per release notes)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Major update in October 2026 (8.0.0 on Oct 16, 8.0.1 on Oct 30)",
+  "website": "https://play.google.com/store/apps/details?id=com.jio.web",
+  "tags": [
+    "india",
+    "regional-languages",
+    "vpn",
+    "android"
+  ],
+  "pitch": "Jio’s Chromium-based Indian browser with a free VPN and 21+ regional languages.",
+  "summary": "JioSphere is Reliance Jio’s Chromium-based browser, formerly JioPages. It focuses on Indian languages and bundles a free VPN, tracker and ad blocking, a download manager and a generative AI assistant.",
+  "bestFor": [
+    "Indian users who want regional-language content",
+    "Jio subscribers",
+    "People who want a free built-in VPN"
+  ],
+  "notFor": [
+    "People who want independent privacy auditing",
+    "Users outside India"
+  ],
+  "pros": [
+    {
+      "title": "Regional languages",
+      "detail": "Supports 21+ regional languages with regional news and voice search."
+    },
+    {
+      "title": "Free built-in VPN",
+      "detail": "A free VPN is included, according to its listing."
+    },
+    {
+      "title": "Tracker and ad blocking",
+      "detail": "Anti-tracking and an ad blocker are built in."
+    },
+    {
+      "title": "Chromium engine",
+      "detail": "Version 8.0.1 moved to the latest Chromium engine."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Runs under Jio’s privacy policy",
+      "detail": "Blocking applies to third parties, but browsing remains governed by Reliance Jio’s own policy."
+    },
+    {
+      "title": "No independent audit",
+      "detail": "No published independent security or privacy audit."
+    },
+    {
+      "title": "Niche reach",
+      "detail": "About 0.02% of India’s browser share, grouped under “Other” by Statcounter."
+    }
+  ],
+  "signatureFeatures": [
+    "Free VPN",
+    "21+ regional languages",
+    "PIN-protected incognito",
+    "AI assistant (reported)"
+  ],
+  "faq": [
+    {
+      "q": "Is JioSphere the same as JioPages?",
+      "a": "Yes. JioPages was renamed JioSphere."
+    },
+    {
+      "q": "How many people use it?",
+      "a": "Google Play lists more than 10 million installs."
+    },
+    {
+      "q": "Does it include AI?",
+      "a": "APKPure’s listing says it has a generative AI assistant for summaries and quick answers; this is not confirmed on the Play listing."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2019-01",
+      "event": "Earliest dated mention: Android app launch"
+    },
+    {
+      "date": "2020",
+      "event": "Relaunched as JioPages on Chromium with 8 Indian languages"
+    },
+    {
+      "date": "2026-10",
+      "event": "Version 8.0.0 (Oct 16) and 8.0.1 (Oct 30) move to a newer Chromium engine"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Import options are not documented in the sources."
+  },
+  "alternatives": [
+    "ulaa",
+    "uc-browser",
+    "chrome"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Not documented"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Not documented"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension support documented",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": false,
+      "paid": "none",
+      "note": "AI assistant reported on APKPure; not on the Play listing"
+    },
+    "privacy": {
+      "defaults": "Anti-tracking and ad blocker, subject to Jio’s privacy policy",
+      "telemetry": "Governed by Reliance Jio policy",
+      "jurisdiction": "India"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Multiple search engines",
+    "telemetry": "Governed by Jio’s privacy policy",
+    "drm": "Not documented in the sources",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox",
+    "patchLag": "Not published",
+    "languages": "21+ regional languages"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Android (version not verified)",
+      "arch": [
+        "arm64",
+        "arm"
+      ],
+      "stores": [
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "Dedicated TV browser for Android TV and JioTV devices",
+        "Listed among Jio Platforms apps in its IPO materials"
+      ],
+      "highlights": [
+        "Free VPN",
+        "Regional languages"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "AI assistant (APKPure only)",
+    "Android version requirement, sync, imports and DRM",
+    "Launch year (earliest dated mention is January 2019)"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      5,
+      "Anti-tracking"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "yes",
+      5,
+      "Free built-in VPN"
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "no",
+      0
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "PIN-protected incognito"
+    ],
+    "adBlocker": [
+      "yes",
+      5,
+      "Built in"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "partial",
+      4,
+      "Reported on APKPure"
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "partial",
+      3,
+      "Regional language support"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Auto-categorizes files"
+    ],
+    "customThemes": [
+      "yes",
+      4,
+      "Dark mode"
+    ],
+    "customSearchEngines": [
+      "partial",
+      4,
+      "Multiple search engines"
+    ],
+    "devtools": [
+      "no",
+      0
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      7,
+      "Chromium V8 on phones",
+      "editorial"
+    ],
+    "pageLoad": [
+      7,
+      "Chromium engine",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Heavier home feed",
+      "editorial"
+    ],
+    "smoothness": [
+      7,
+      "Chromium rendering",
+      "editorial"
+    ],
+    "graphics": [
+      6,
+      "Includes games, not a graphics focus",
+      "editorial"
+    ],
+    "memory": [
+      5.5,
+      "Chromium plus feed and extras",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "Few controls",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Aimed at budget Indian phones",
+      "editorial"
+    ],
+    "installSize": [
+      5.5,
+      "Bundles VPN and extras",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      4,
+      "Blocking on, but Jio policy applies",
+      "editorial"
+    ],
+    "blocking": [
+      5,
+      "Built-in ad and tracker blocking",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "None documented",
+      "editorial"
+    ],
+    "securityHardening": [
+      6.5,
+      "Chromium sandbox base",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5.5,
+      "Moved to the latest engine in Oct 2026",
+      "documented"
+    ],
+    "telemetry": [
+      3,
+      "Governed by Jio policy; no audit",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Dark mode and themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3,
+      "Basic settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      2,
+      "Little exposed",
+      "editorial"
+    ],
+    "tabManagement": [
+      4,
+      "Basic tabs and PIN incognito",
+      "editorial"
+    ],
+    "searchFreedom": [
+      5,
+      "Multiple engines",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Auto-categorizing download manager",
+      "documented"
+    ],
+    "productivity": [
+      3,
+      "QR scanner, voice search",
+      "editorial"
+    ],
+    "media": [
+      5,
+      "Live streaming support",
+      "editorial"
+    ],
+    "translation": [
+      4,
+      "Regional language support",
+      "editorial"
+    ],
+    "extras": [
+      6,
+      "Free VPN, games, news, AI assistant",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extension support",
+      "editorial"
+    ],
+    "sync": [
+      1,
+      "Not documented",
+      "editorial"
+    ],
+    "passwords": [
+      1,
+      "Not documented",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "Mobile-first",
+      "editorial"
+    ],
+    "webCompat": [
+      8,
+      "Chromium engine",
+      "editorial"
+    ],
+    "devTools": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "accessibility": [
+      4,
+      "Voice search and language support",
+      "editorial"
+    ],
+    "openSource": [
+      0,
+      "Proprietary",
+      "editorial"
+    ],
+    "businessTrust": [
+      3,
+      "Telecom giant; no independent audit",
+      "editorial"
+    ],
+    "longevity": [
+      7,
+      "Backed by Reliance Jio; active in 2026",
+      "editorial"
+    ],
+    "ai": [
+      4,
+      "AI assistant reported, scope unverified",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Simple and localised",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.jio.web&hl=en_IN",
+      "title": "JioSphere - Google Play",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.apkmirror.com/apk/jio-platforms-limited/jiobrowser-fast-lite-indian-language-support/jiosphere-web-browser-8-0-1-release/",
+      "title": "JioSphere 8.0.1 - APKMirror",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/JioSphere",
+      "title": "JioSphere - Wikipedia",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://swadeshiapps.com/blog/indian-browsers-and-search-engines",
+      "title": "Indian browsers in 2026 - Swadeshi Apps",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

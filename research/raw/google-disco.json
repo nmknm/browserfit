@@ -1,0 +1,761 @@
+{
+  "id": "google-disco",
+  "name": "Google Disco",
+  "aliases": [
+    "Disco",
+    "GenTabs"
+  ],
+  "group": "ai",
+  "developer": "Google Labs",
+  "hq": "United States",
+  "businessModel": "Free closed experiment; no paid tier announced",
+  "engine": "blink",
+  "basedOn": "Chromium (reported; Google post does not confirm)",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2025,
+  "status": "early-access",
+  "statusNote": "Google Labs experiment; macOS waitlist; US, 18+ per reports",
+  "version": {
+    "current": "Experiment (no public version)",
+    "date": "2025-12-11",
+    "upstream": "Chromium (unverified)"
+  },
+  "channels": [
+    "Closed beta"
+  ],
+  "updateCadence": "Experimental",
+  "website": "https://labs.google/disco",
+  "tags": [
+    "ai",
+    "google",
+    "experimental",
+    "gentabs",
+    "macos"
+  ],
+  "pitch": "Google Labs browser that turns open tabs into custom apps with Gemini 3 GenTabs.",
+  "summary": "Experimental Google Labs browser announced Dec 11, 2025. GenTabs reads open tabs and chat history to build interactive web apps. macOS waitlist only; ideas may flow into Chrome. Prompt-based interface instead of a URL bar.",
+  "bestFor": [
+    "Early adopters wanting to test Gemini-built tab apps",
+    "Researchers planning trips or lessons across tabs",
+    "Mac users in the US"
+  ],
+  "notFor": [
+    "Anyone needing a daily driver",
+    "Windows, Linux or mobile users",
+    "Users outside the US or under 18"
+  ],
+  "pros": [
+    {
+      "title": "GenTabs",
+      "detail": "Builds interactive apps (meal plans, trip plans) from your tabs and refines them in natural language."
+    },
+    {
+      "title": "Source links",
+      "detail": "Google says generated elements link back to the original web sources."
+    },
+    {
+      "title": "Google backing",
+      "detail": "Built with Gemini 3 by Google Labs."
+    },
+    {
+      "title": "Free",
+      "detail": "Free during the closed beta."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Waitlist only",
+      "detail": "macOS and invite-gated; no public download."
+    },
+    {
+      "title": "Experiment risk",
+      "detail": "Google Labs projects can end or be folded into Chrome."
+    },
+    {
+      "title": "No URL bar",
+      "detail": "Prompt-based interface is unfamiliar."
+    },
+    {
+      "title": "Data use unclear",
+      "detail": "Retention and training use of tabs/chat history is not covered in Google's post."
+    }
+  ],
+  "signatureFeatures": [
+    "GenTabs",
+    "Prompt-based browsing",
+    "Gemini 3"
+  ],
+  "faq": [
+    {
+      "q": "How do I get Disco?",
+      "a": "Join the waitlist at labs.google/disco; macOS only, starting with a small tester group."
+    },
+    {
+      "q": "Is it Chromium?",
+      "a": "Reports say it is built on Chromium; Google's own post does not say."
+    },
+    {
+      "q": "Will it become Chrome?",
+      "a": "Google says the best ideas may reach larger products, likely Chrome."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-12",
+      "event": "Disco and GenTabs announced (Dec 11), macOS waitlist"
+    },
+    {
+      "date": "2025-12",
+      "event": "Covered by 9to5Google, Neowin as closed US beta"
+    },
+    {
+      "date": "2026-10",
+      "event": "No newer public release found in sources reviewed"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks"
+    ],
+    "note": "Unverified."
+  },
+  "alternatives": [
+    "dia",
+    "comet",
+    "chatgpt-atlas",
+    "rill"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "account",
+      "items": [],
+      "crossOs": false,
+      "note": "Google account (unverified)"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Unverified"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "Extension support not stated",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "on-by-default",
+      "killSwitch": false,
+      "paid": "none",
+      "note": "Generative apps, not action-taking agents"
+    },
+    "privacy": {
+      "defaults": "Tabs and chat history feed Gemini; policies not detailed",
+      "telemetry": "Not documented",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (unverified)",
+    "telemetry": "Not documented",
+    "drm": "Unverified",
+    "codecs": "Unverified",
+    "sandbox": "Unverified",
+    "patchLag": "Unknown",
+    "languages": "English (unverified)"
+  },
+  "platforms": {
+    "macos": {
+      "status": "early-access",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Waitlist at labs.google/disco"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/gentabs-gemini-3/",
+      "title": "Google: GenTabs built with Gemini 3",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://9to5google.com/2025/12/11/google-disco-gentab-browser/",
+      "title": "9to5Google: Disco and GenTabs",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.neowin.net/news/googles-new-experiment-disco-wants-to-improve-your-web-browsing-game/",
+      "title": "Neowin: Disco",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://hokai.io/hub/tools/google-disco",
+      "title": "Is Google Disco Free? - Hokai (third-party)",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Whether still waitlist-only in Oct 2026 (newest source about 94 days old)",
+    "Chromium base",
+    "US-only and 18+ rules (third-party)",
+    "Extensions, sync, passwords"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "extension",
+      3,
+      "Only MV3 blockers such as uBO Lite"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "partial",
+      5,
+      "GenTabs"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "yes",
+      8,
+      "Prompt-based interface replaces URL bar"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "partial",
+      3,
+      "Not stated"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "Via userscript-manager extension (MV3)"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      8,
+      "Gemini 3"
+    ],
+    "aiSummarizer": [
+      "yes",
+      8,
+      ""
+    ],
+    "agenticBrowsing": [
+      "partial",
+      6,
+      "Generates apps; limited actions"
+    ],
+    "localAi": [
+      "no",
+      0,
+      "Cloud models"
+    ],
+    "aiKillSwitch": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      ""
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "partial",
+      5,
+      "Unverified"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Chromium cold start, heavier than plain Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus AI layer; RAM-heavy",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      3.5,
+      "Chromium plus Gemini, macOS only",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3,
+      "Tabs and chat history feed Gemini; terms unclear",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Only MV3 blockers such as uBO Lite are available",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      8.5,
+      "Chromium-class sandbox plus Google security (unverified)",
+      "editorial"
+    ],
+    "patchSpeed": [
+      8,
+      "Google ships Chromium fixes fast (unverified for Disco)",
+      "editorial"
+    ],
+    "telemetry": [
+      3,
+      "Vendor telemetry; prompts processed in cloud",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab groups and search; no workspaces documented",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      8,
+      "GenTabs builds task apps from open tabs",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "AI agent and memory; no VPN or wallet",
+      "editorial"
+    ],
+    "extensions": [
+      3,
+      "Extension support not stated",
+      "editorial"
+    ],
+    "sync": [
+      4,
+      "Unverified",
+      "editorial"
+    ],
+    "passwords": [
+      4,
+      "Unverified",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "macOS only",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "documented"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary layer over Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      4,
+      "Google data practices, experiment terms unclear",
+      "editorial"
+    ],
+    "longevity": [
+      3,
+      "Labs experiment; may be folded into Chrome",
+      "editorial"
+    ],
+    "ai": [
+      8,
+      "Gemini 3 GenTabs, little agent action",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      4.5,
+      "Waitlist, US 18+, no URL bar",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

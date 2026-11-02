@@ -1,0 +1,713 @@
+{
+  "id": "privacy-browser-android",
+  "name": "Privacy Browser Android",
+  "aliases": [
+    "Privacy Browser",
+    "Stoutner Privacy Browser"
+  ],
+  "group": "android",
+  "developer": "Soren Stoutner",
+  "hq": "United States",
+  "businessModel": "Free software; funded by the developer and donations",
+  "engine": "blink",
+  "basedOn": "Android System WebView (Chromium)",
+  "license": "GPL-3.0-or-later",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2015,
+  "status": "active",
+  "version": {
+    "current": "3.20.1",
+    "date": "2026-03-30",
+    "upstream": "System WebView"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "A few releases a year (3.20 on 2026-03-11, 3.20.1 on 2026-03-30)",
+  "website": "https://www.stoutner.com/privacy-browser-android/",
+  "tags": [
+    "android",
+    "privacy",
+    "f-droid",
+    "webview",
+    "open-source"
+  ],
+  "pitch": "Android browser that ships with JavaScript, cookies and DOM storage turned off.",
+  "summary": "Privacy Browser Android is a WebView-based browser from Soren Stoutner. Version 3.20 added a filter-list system modelled on its PC sibling, and the 4.x series will move to a forked Privacy WebView.",
+  "bestFor": [
+    "Android users who want a locked-down, open-source browser",
+    "F-Droid users",
+    "People who want per-site control over JavaScript"
+  ],
+  "notFor": [
+    "Anyone who wants a full daily browser with sync and extensions",
+    "People on Android 9 or older after 3.21"
+  ],
+  "pros": [
+    {
+      "title": "Strict defaults",
+      "detail": "JavaScript, DOM storage and cookies are off until you allow them."
+    },
+    {
+      "title": "Filter lists",
+      "detail": "Version 3.20 added a Filter Lists Activity modelled on Privacy Browser PC."
+    },
+    {
+      "title": "Open source and no trackers",
+      "detail": "GPL-licensed and distributed on F-Droid and Google Play."
+    },
+    {
+      "title": "Modern targets",
+      "detail": "Version 3.20 targets API 36 (Android 16)."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Many sites need JavaScript",
+      "detail": "Enabling it per site is required for much of the modern web."
+    },
+    {
+      "title": "WebView-bound",
+      "detail": "Depends on the system WebView, which now only supports Android 10+, so 3.21 will raise the minimum API to 29."
+    },
+    {
+      "title": "Single-developer project",
+      "detail": "Release pace and Amazon listing (still 3.19.3) can lag."
+    }
+  ],
+  "signatureFeatures": [
+    "Per-site JavaScript and cookie settings",
+    "Filter lists",
+    "Privacy WebView (planned 4.x)",
+    "Tor/Orbot support"
+  ],
+  "faq": [
+    {
+      "q": "Is Privacy Browser Android maintained?",
+      "a": "Yes: 3.20 was released on 11 March 2026 and 3.20.1 on 30 March 2026."
+    },
+    {
+      "q": "What changes in 3.21?",
+      "a": "The minimum API level rises to 29 (Android 10) because System WebView supports only Android 10+."
+    },
+    {
+      "q": "Is monocles browser related?",
+      "a": "Yes. monocles browser is a fork of Privacy Browser."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Privacy Browser Android begins (not verified)"
+    },
+    {
+      "date": "2026-03",
+      "event": "Version 3.20: new filter-list system and API 36 target"
+    },
+    {
+      "date": "2026-03",
+      "event": "Version 3.20.1 fixes the F-Droid build; F-Droid adds it on Apr 4"
+    },
+    {
+      "date": "2026-04",
+      "event": "Privacy Browser PC 0.9 released"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks"
+    ],
+    "note": "Settings and bookmarks can be imported and exported."
+  },
+  "alternatives": [
+    "monocles-browser",
+    "ironfox",
+    "duckduckgo"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "local-only",
+      "items": [
+        "bookmarks",
+        "settings"
+      ],
+      "crossOs": false,
+      "note": "Import and export only"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No password manager"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension support",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "JavaScript, DOM storage and cookies off by default",
+      "telemetry": "None",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Configurable",
+    "telemetry": "None",
+    "drm": "None documented",
+    "codecs": "System WebView codecs",
+    "sandbox": "System WebView sandbox",
+    "patchLag": "Depends on the phone’s WebView updates",
+    "languages": "Several translations"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Android 8.0+ (3.21 will require Android 10)",
+      "arch": [
+        "arm64",
+        "arm",
+        "x64"
+      ],
+      "stores": [
+        "f-droid",
+        "google-play",
+        "izzy"
+      ],
+      "notes": [
+        "Amazon Appstore listing still shows 3.19.3",
+        "Target API 36 since 3.20"
+      ],
+      "highlights": [
+        "Per-site settings",
+        "Filter lists"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "Launch year",
+    "Exact default settings of 3.20 (based on long-standing behaviour)",
+    "Tor/Orbot support in the current build"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      6,
+      "Filter lists plus JS/cookies off"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      4,
+      "JS off reduces exposure"
+    ],
+    "httpsOnly": [
+      "partial",
+      4
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "partial",
+      6
+    ],
+    "adBlocker": [
+      "yes",
+      6,
+      "Filter lists"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "yes",
+      6,
+      "Filter Lists Activity"
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      4,
+      "Bookmarks and settings"
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      4
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      6
+    ],
+    "devtools": [
+      "no",
+      0
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      6.5,
+      "System WebView speed",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "JS off makes pages light",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7,
+      "WebView network stack",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Small and light",
+      "editorial"
+    ],
+    "smoothness": [
+      6.5,
+      "WebView rendering",
+      "editorial"
+    ],
+    "graphics": [
+      4,
+      "JS off by default limits WebGL",
+      "editorial"
+    ],
+    "memory": [
+      7.5,
+      "Lightweight wrapper",
+      "editorial"
+    ],
+    "cpu": [
+      7,
+      "Light",
+      "editorial"
+    ],
+    "battery": [
+      7,
+      "Light",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "Nothing to limit",
+      "editorial"
+    ],
+    "lowEnd": [
+      7,
+      "Small app; needs Android 8+",
+      "editorial"
+    ],
+    "installSize": [
+      8,
+      "Small APK",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      9,
+      "JS, DOM storage and cookies off",
+      "documented"
+    ],
+    "blocking": [
+      6.5,
+      "Filter lists in 3.20",
+      "documented"
+    ],
+    "fingerprinting": [
+      5.5,
+      "JS off helps; no dedicated protection",
+      "editorial"
+    ],
+    "securityHardening": [
+      5.5,
+      "WebView sandbox",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5,
+      "Releases follow WebView and Android changes",
+      "editorial"
+    ],
+    "telemetry": [
+      10,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      4,
+      "Themes and some UI options",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      7,
+      "Per-domain settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7,
+      "Many toggles",
+      "editorial"
+    ],
+    "tabManagement": [
+      4,
+      "Basic tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Changeable engine",
+      "editorial"
+    ],
+    "downloads": [
+      4,
+      "Basic",
+      "editorial"
+    ],
+    "productivity": [
+      2,
+      "Minimal",
+      "editorial"
+    ],
+    "media": [
+      3,
+      "JS off limits web video",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "Orbot proxy, filter lists",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extensions",
+      "editorial"
+    ],
+    "sync": [
+      1,
+      "Local import/export only",
+      "editorial"
+    ],
+    "passwords": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "mobileApps": [
+      6,
+      "Android only, its core",
+      "editorial"
+    ],
+    "webCompat": [
+      4.5,
+      "Many sites need JS enabled",
+      "editorial"
+    ],
+    "devTools": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "accessibility": [
+      4,
+      "Android basics",
+      "editorial"
+    ],
+    "openSource": [
+      9.5,
+      "GPL on F-Droid and stoutner.com",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Single developer, no ads",
+      "editorial"
+    ],
+    "longevity": [
+      5.5,
+      "One maintainer; steady releases",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      4,
+      "Needs JavaScript toggling",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.stoutner.com/privacy-browser-android-3-20/",
+      "title": "Privacy Browser Android 3.20",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.stoutner.com/privacy-browser-android-3-20-1/",
+      "title": "Privacy Browser Android 3.20.1",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://f-droid.org/packages/com.stoutner.privacybrowser.standard/",
+      "title": "Privacy Browser on F-Droid",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.stoutner.privacybrowser.standard",
+      "title": "Privacy Browser on Google Play",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

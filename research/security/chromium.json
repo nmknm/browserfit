@@ -1,0 +1,20 @@
+{
+  "sandbox": "strong",
+  "siteIsolation": "full",
+  "patchLag": "upstream",
+  "lagNote": "Chromium is the upstream engine project; fixes land in its source first",
+  "autoUpdate": { "windows": "manual", "macos": "manual" },
+  "safeBrowsing": "google",
+  "bugBounty": "own",
+  "disclosure": true,
+  "advisoryUrl": "https://chromereleases.googleblog.com/",
+  "summary": "Open-source base of Chrome with a renderer sandbox and site isolation; snapshot builds do not auto-update and Safe Browsing needs Google API keys.",
+  "incidents": [],
+  "sources": [
+    { "url": "https://www.chromium.org/getting-involved/download-chromium/", "title": "Download Chromium - The Chromium Projects", "accessed": "2026-10-30" },
+    { "url": "https://www.chromium.org/developers/how-tos/api-keys/", "title": "API Keys - The Chromium Projects", "accessed": "2026-10-30" },
+    { "url": "https://chromium.googlesource.com/chromium/src/+/main/docs/security/faq.md", "title": "Chromium Security FAQ", "accessed": "2026-10-30" },
+    { "url": "https://www.chromium.org/Home/chromium-security/site-isolation/", "title": "Site Isolation - The Chromium Projects", "accessed": "2026-10-30" },
+    { "url": "https://chromium.googlesource.com/chromium/src/+/main/docs/design/sandbox.md", "title": "Sandbox design - Chromium source docs", "accessed": "2026-10-30" }
+  ]
+}

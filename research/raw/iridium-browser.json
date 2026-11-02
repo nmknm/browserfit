@@ -1,0 +1,311 @@
+{
+  "id": "iridium-browser",
+  "name": "Iridium Browser",
+  "aliases": ["Iridium"],
+  "group": "privacy",
+  "developer": "Red Cool Beans UG",
+  "hq": "Germany (Cologne)",
+  "businessModel": "None disclosed; free, with funding not described on the project pages",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "BSD-3-Clause (repository); Chromium components keep their own licences",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2015,
+  "status": "maintenance",
+  "statusNote": "Source tarballs only: the site offers no binaries ('New builds to follow') and the browser never updates itself. Latest source 2026.08.151.2 (13 Aug 2026).",
+  "version": {
+    "current": "2026.08.151.2",
+    "date": "2026-08-13",
+    "upstream": "Chromium 151.0.7922.137"
+  },
+  "channels": ["Source tarballs"],
+  "updateCadence": "Source releases follow Chromium point releases (12 posts Jun-Aug 2026); nothing newer than 13 Aug seen; no auto-update",
+  "website": "https://iridiumbrowser.de",
+  "tags": ["privacy", "chromium", "source-only", "german", "de-googled"],
+  "pitch": "Chromium with stricter privacy defaults. Now source-only, with no official binaries.",
+  "summary": "A German Chromium modification that stops partial queries and metrics going to central services, blocks Google sign-in and ships stricter defaults. Today it is distributed only as source, so you must build it or rely on distro packages.",
+  "bestFor": [
+    "Linux packagers and builders who want a Chromium with privacy patches",
+    "People who value a European, publicly auditable Chromium variant",
+    "Readers who want a de-Googled Chromium and can compile it"
+  ],
+  "notFor": [
+    "Anyone who wants a download-and-run installer or automatic updates",
+    "Users who need sync, translation or reliable extension updates",
+    "People who want the fastest security-patch cadence"
+  ],
+  "pros": [
+    {
+      "title": "Privacy-first defaults",
+      "detail": "Partial queries, keywords and metrics are not sent to central services without consent; third-party cookies are blocked and DNS prediction is off."
+    },
+    {
+      "title": "Public, auditable source",
+      "detail": "Full source in a public Git repository under BSD-3-Clause, with reproducible builds claimed."
+    },
+    {
+      "title": "Close Chromium tracking in source",
+      "detail": "Twelve source releases from Jun to Aug 2026 moved from Chromium 149 to 151."
+    },
+    {
+      "title": "European privacy search default",
+      "detail": "Qwant has been the default search engine since 2015."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No official binaries",
+      "detail": "The site offers only source tarballs; newer Windows, macOS and Linux builds must be compiled (one reviewer needed over two hours)."
+    },
+    {
+      "title": "No auto-update",
+      "detail": "The browser never updates itself, so users must rebuild or reinstall to receive Chromium security fixes."
+    },
+    {
+      "title": "No sync, limited extensions",
+      "detail": "Google sign-in and sync are blocked by design, and the extensions panel does not fully work."
+    },
+    {
+      "title": "Slow release flow",
+      "detail": "Reviews note slow security updates, and nothing newer than 13 Aug 2026 appeared although Chrome 156 shipped on 20 Oct."
+    }
+  ],
+  "signatureFeatures": ["No partial-query leakage", "Third-party cookies blocked", "WebRTC hardening", "Qwant default", "Source-only releases"],
+  "faq": [
+    {
+      "q": "Can I download Iridium for Windows or macOS?",
+      "a": "Not from the official site, which currently provides source tarballs only. Third-party download sites list old binaries (2023.09.116), so build from source or use a distro package."
+    },
+    {
+      "q": "How is Iridium different from ungoogled-chromium?",
+      "a": "Both remove Google integrations; Iridium is run by a German company with a privacy-defaults focus and no built-in blocker, while ungoogled-chromium has a far larger community."
+    },
+    {
+      "q": "Does it update itself?",
+      "a": "No. You check the version yourself and rebuild or install the newest source release."
+    }
+  ],
+  "timeline": [
+    {"date": "2015-04", "event": "Listed on AlternativeTo; Qwant default since 2015 (earlier history not verified)"},
+    {"date": "2019-11", "event": "GitHub source repository created"},
+    {"date": "2023-09", "event": "2023.09.116, the last binary release listed by download sites"},
+    {"date": "2026-06", "event": "Source release series for Chromium 149 begins (2026.06.149.1 on 10 Jun)"},
+    {"date": "2026-08", "event": "2026.08.151.2 source released (13 Aug), builds 'to follow'"}
+  ],
+  "switching": {
+    "imports": ["bookmarks"],
+    "note": "Chromium-style import is expected but unverified; sync is blocked, so export bookmarks and passwords manually."
+  },
+  "alternatives": ["ungoogled-chromium", "srware-iron", "brave", "cromite", "helium"],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Google sign-in and sync are blocked by design"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Local only; does not sync"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Chromium 151 base; MV2 not documented",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features; Google-account features are disabled"
+    },
+    "privacy": {
+      "defaults": "No partial queries or metrics without consent, third-party cookies blocked, DNS prediction off, Qwant search",
+      "telemetry": "No metrics sent to central services without approval; Safe Browsing on by default",
+      "jurisdiction": "Germany (Red Cool Beans UG)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Qwant",
+    "telemetry": "Queries and metrics not sent without consent; Google Safe Browsing enabled by default",
+    "drm": "Not verified (no Widevine expected)",
+    "codecs": "Chromium open codecs (unverified)",
+    "sandbox": "Chromium sandbox and site isolation",
+    "patchLag": "No auto-update; source follows Chromium point releases, latest 13 Aug 2026",
+    "languages": "Chromium locale set (unverified)"
+  },
+  "platforms": {
+    "linux": {
+      "status": "maintenance",
+      "minOs": "Modern distro with a Chromium build toolchain",
+      "arch": ["x64"],
+      "stores": [],
+      "notes": ["Source tarballs only; README targets Linux builds and distro Chromium recipes", "Distro packages may exist; versions not verified"],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "maintenance",
+      "minOs": "Unverified",
+      "arch": ["x64"],
+      "stores": [],
+      "notes": ["No official binary; third-party sites list 2023.09.116", "An MSI installer for organisations is mentioned but its source is unclear"],
+      "highlights": [],
+      "scoreDelta": {
+        "patchSpeed": -1,
+        "beginnerFriendly": -1
+      }
+    },
+    "macos": {
+      "status": "maintenance",
+      "minOs": "Unverified",
+      "arch": ["x64", "arm64"],
+      "stores": [],
+      "notes": ["No official binary; one reviewer compiled it from source in 2025"],
+      "highlights": [],
+      "scoreDelta": {
+        "patchSpeed": -1,
+        "beginnerFriendly": -1
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": ["partial", 4, "Third-party cookies blocked, no prediction"],
+    "fingerprintProtection": ["partial", 2, "WebRTC identity changes only"],
+    "httpsOnly": ["partial", 5, "Chromium HTTPS setting"],
+    "doh": ["yes", 5, "Chromium secure DNS"],
+    "torWindows": ["no", 0],
+    "builtinVpn": ["no", 0],
+    "cookieIsolation": ["partial", 5, "Third-party cookies blocked by default"],
+    "queryStripping": ["no", 0],
+    "telemetryOptOut": ["yes", 8, "Queries and metrics blocked unless approved"],
+    "privateHardening": ["partial", 5, "Reviewer reports incognito-style clearing by default"],
+    "adBlocker": ["no", 0, "No built-in ad blocker"],
+    "cosmeticFiltering": ["extension", 5],
+    "customFilterLists": ["extension", 5],
+    "youtubeAds": ["extension", 4],
+    "cookieBanners": ["extension", 4],
+    "verticalTabs": ["partial", 5, "Upstream Chromium feature; unverified in builds"],
+    "tabGroups": ["yes", 7, "Upstream Chromium"],
+    "tabStacks": ["no", 0],
+    "workspaces": ["no", 0],
+    "splitView": ["partial", 5, "Upstream Chromium feature; unverified"],
+    "tabSleeping": ["partial", 5],
+    "tabSearch": ["yes", 7],
+    "pinnedTabs": ["yes", 8],
+    "tabTiling": ["no", 0],
+    "readerMode": ["partial", 4],
+    "notes": ["no", 0],
+    "webPanels": ["partial", 4],
+    "pip": ["yes", 7],
+    "screenshots": ["partial", 4],
+    "commandBar": ["no", 0],
+    "mouseGestures": ["no", 0],
+    "keyboardShortcuts": ["yes", 6],
+    "readLater": ["partial", 4],
+    "mailCalendarRss": ["no", 0],
+    "chromeWebStore": ["partial", 4, "Some extensions break under the strict privacy rules"],
+    "firefoxAddons": ["no", 0],
+    "mv2Support": ["no", 0],
+    "uboFull": ["no", 0],
+    "mobileExtensions": ["no", 0],
+    "userscripts": ["extension", 5],
+    "syncBookmarks": ["no", 0],
+    "syncPasswords": ["no", 0],
+    "syncTabs": ["no", 0],
+    "e2eeSync": ["no", 0],
+    "profiles": ["yes", 7],
+    "passwordManager": ["partial", 3, "Local only"],
+    "passkeys": ["no", 0],
+    "importData": ["partial", 4, "Unverified"],
+    "widevine": ["no", 0, "Not verified"],
+    "netflix4k": ["no", 0],
+    "hevc": ["partial", 3],
+    "av1": ["yes", 7],
+    "hwDecode": ["yes", 6],
+    "aiAssistant": ["no", 0],
+    "aiSummarizer": ["no", 0],
+    "agenticBrowsing": ["no", 0],
+    "localAi": ["no", 0],
+    "aiKillSwitch": ["yes", 10, "No AI features"],
+    "translation": ["no", 0],
+    "cryptoWallet": ["no", 0],
+    "pwaInstall": ["yes", 6],
+    "enterprisePolicies": ["yes", 6, "Chromium policies; MSI mentioned for organisations"],
+    "kioskMode": ["partial", 5],
+    "panicButton": ["no", 0],
+    "downloadManager": ["yes", 5],
+    "customThemes": ["yes", 5, "Themes work per reviewers"],
+    "customSearchEngines": ["yes", 8],
+    "devtools": ["yes", 9, "Chromium DevTools"]
+  },
+  "scores": {
+    "jsSpeed": [9, "Chromium 151 V8 when built", "editorial"],
+    "pageLoad": [8, "Chromium speed; prediction disabled", "editorial"],
+    "networkSpeed": [7.5, "Preconnect and DNS prediction turned off", "documented"],
+    "startup": [7.5, "Chromium startup", "editorial"],
+    "smoothness": [8.5, "Chromium compositor", "editorial"],
+    "graphics": [9, "Full Chromium WebGL/WebGPU", "editorial"],
+    "memory": [5.5, "Chromium baseline", "editorial"],
+    "cpu": [6.5, "Chromium baseline", "editorial"],
+    "battery": [6.5, "Chromium baseline", "editorial"],
+    "resourceControls": [6, "Chromium savers, if present", "editorial"],
+    "lowEnd": [5.5, "Chromium requirements", "editorial"],
+    "installSize": [5, "Chromium-sized once built", "editorial"],
+    "privacyDefaults": [7.5, "Cookies blocked, prediction off, no leaks", "documented"],
+    "blocking": [3.5, "No built-in ad blocker", "documented"],
+    "fingerprinting": [3, "WebRTC changes only", "documented"],
+    "securityHardening": [6.5, "Chromium sandbox, but no auto-update", "documented"],
+    "patchSpeed": [3.5, "Source only; reviewers cite slow fixes", "documented"],
+    "telemetry": [8.5, "Metrics need consent; Safe Browsing stays on", "documented"],
+    "lookCustom": [5, "Chromium themes", "editorial"],
+    "behaviourCustom": [5, "Chromium site settings", "editorial"],
+    "advancedSettings": [7.5, "Flags and policies", "editorial"],
+    "tabManagement": [6.5, "Tab groups and search from upstream", "editorial"],
+    "searchFreedom": [8, "Qwant default, easy to change", "documented"],
+    "downloads": [5.5, "Chromium downloads", "editorial"],
+    "productivity": [4, "Upstream tools only", "editorial"],
+    "media": [4.5, "Open codecs, no DRM expected", "editorial"],
+    "translation": [0, "No translation without Google services", "editorial"],
+    "extras": [1, "No extras", "editorial"],
+    "extensions": [4, "Extension panel partly broken, manual updates", "documented"],
+    "sync": [0, "Sync blocked by design", "documented"],
+    "passwords": [2.5, "Local manager only", "documented"],
+    "mobileApps": [0, "Not available on mobile", "documented"],
+    "webCompat": [9, "Chromium engine", "editorial"],
+    "devTools": [9.5, "Chromium DevTools", "editorial"],
+    "accessibility": [7.5, "Chromium accessibility stack", "editorial"],
+    "openSource": [9, "BSD-3 source, public Git, reproducible builds claimed", "documented"],
+    "businessTrust": [7, "Small German firm, transparent source, quiet communication", "editorial"],
+    "longevity": [4, "Small team, binaries dropped, source still flowing", "documented"],
+    "ai": [0, "No AI features", "documented"],
+    "beginnerFriendly": [2, "Build from source and no auto-update", "documented"]
+  },
+  "sources": [
+    {"url": "https://iridiumbrowser.de/", "title": "Iridium Browser official site", "accessed": "2026-10-30"},
+    {"url": "https://iridiumbrowser.de/news/archive/", "title": "Iridium news archive (Jun-Aug 2026 source releases)", "accessed": "2026-10-30"},
+    {"url": "https://iridiumbrowser.de/downloads/", "title": "Iridium downloads (source tarballs only)", "accessed": "2026-10-30"},
+    {"url": "https://github.com/iridium-browser/iridium-browser", "title": "iridium-browser/iridium-browser (GitHub README)", "accessed": "2026-10-30"},
+    {"url": "https://europeanpurpose.com/tool/iridium-browser", "title": "European Purpose: Iridium Browser review", "accessed": "2026-10-30"},
+    {"url": "https://www.xda-developers.com/chromium-privacy-browser-for-protecting-online-not-talking-about-brave/", "title": "XDA: Iridium review (Aug 2025)", "accessed": "2026-10-30"},
+    {"url": "https://alternativeto.net/software/iridium/about/", "title": "AlternativeTo: Iridium Browser", "accessed": "2026-10-30"}
+  ],
+  "unverified": [
+    "True first release year (AlternativeTo listing is April 2015; earlier history not confirmed)",
+    "Whether distro packages or any newer official binaries exist beyond the 2023.09.116 third-party listings",
+    "Whether upstream Chromium tab features (vertical tabs, split view) are enabled in Iridium builds",
+    "Extension install behaviour, import options, DRM and translation support",
+    "The site's structured data still lists Windows, macOS and Linux packages that the visible pages no longer offer"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-30"
+}

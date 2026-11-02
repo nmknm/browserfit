@@ -1,0 +1,713 @@
+{
+  "id": "edge-legacy",
+  "name": "Microsoft Edge Legacy",
+  "aliases": [
+    "EdgeHTML Edge",
+    "Project Spartan",
+    "Edge (EdgeHTML)"
+  ],
+  "group": "forks",
+  "developer": "Microsoft",
+  "hq": "United States",
+  "businessModel": "Bundled with Windows 10; Bing search default",
+  "engine": "edgehtml-legacy",
+  "basedOn": "MSHTML fork (EdgeHTML) with Chakra",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2015,
+  "status": "discontinued",
+  "statusNote": "Desktop support ended March 9, 2021; removed by April 13, 2021 update; Windows 10 Mobile ended Jan 14, 2020; Xbox Sept 23, 2021",
+  "version": {
+    "current": "44.19041 (EdgeHTML 18.19041)",
+    "date": "2020-05-27",
+    "upstream": "EdgeHTML 18"
+  },
+  "channels": [],
+  "updateCadence": "Discontinued; updated with Windows 10 feature updates",
+  "website": "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+  "tags": [
+    "historical",
+    "discontinued",
+    "edgehtml",
+    "windows10"
+  ],
+  "pitch": "Microsoft's 2015 EdgeHTML browser, replaced by Chromium-based Edge.",
+  "summary": "Windows 10's original Edge (codename Spartan) built on EdgeHTML and Chakra, with reading view, web notes and WebExtension-style add-ons. Replaced by Chromium Edge from January 2020 and removed in April 2021.",
+  "bestFor": [
+    "Historical reference only"
+  ],
+  "notFor": [
+    "Any current browsing",
+    "Anyone needing extensions, sync with modern devices or security updates"
+  ],
+  "pros": [
+    {
+      "title": "Light and efficient",
+      "detail": "Cleaner and faster than IE11 with strong battery life for its time."
+    },
+    {
+      "title": "Reading and notes",
+      "detail": "Reading view, reading list and Web Notes annotations."
+    },
+    {
+      "title": "Built-in PDF and Flash",
+      "detail": "Integrated PDF reader and Flash until January 2021."
+    },
+    {
+      "title": "PlayReady video",
+      "detail": "Supported premium PlayReady streaming."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Discontinued",
+      "detail": "Support ended March 9, 2021 and the April 13, 2021 update removed it."
+    },
+    {
+      "title": "Weak compatibility",
+      "detail": "EdgeHTML had gaps vs Chromium and Firefox."
+    },
+    {
+      "title": "Tiny extension store",
+      "detail": "WebExtension-based add-ons were few."
+    },
+    {
+      "title": "Windows 10 only",
+      "detail": "Not available on Windows 8.1 or earlier or LTSC builds."
+    }
+  ],
+  "signatureFeatures": [
+    "EdgeHTML engine",
+    "Reading view and Web Notes",
+    "Set aside tabs",
+    "Cortana integration"
+  ],
+  "faq": [
+    {
+      "q": "When did Edge Legacy end?",
+      "a": "Desktop support ended March 9, 2021, with removal via an April 13, 2021 update."
+    },
+    {
+      "q": "What replaced it?",
+      "a": "Chromium-based Microsoft Edge, which became the default desktop browser on January 15, 2020."
+    },
+    {
+      "q": "Which engine did it use?",
+      "a": "EdgeHTML, a fork of MSHTML, with the Chakra JavaScript engine."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2015-07",
+      "event": "Released with Windows 10 (July 29, 2015)"
+    },
+    {
+      "date": "2020-01",
+      "event": "Chromium-based Edge becomes default; Windows 10 Mobile support ends Jan 14, 2020"
+    },
+    {
+      "date": "2020-05",
+      "event": "Final version 44.19041 / EdgeHTML 18.19041 (May 27, 2020)"
+    },
+    {
+      "date": "2021-03",
+      "event": "Desktop support ends March 9, 2021"
+    },
+    {
+      "date": "2021-04",
+      "event": "Removed by April 13, 2021 cumulative update"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "favorites",
+      "passwords"
+    ],
+    "note": "Chromium Edge imports Legacy data automatically on upgrade."
+  },
+  "alternatives": [
+    "edge",
+    "internet-explorer",
+    "chrome",
+    "firefox"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "settings"
+      ],
+      "crossOs": false,
+      "note": "Microsoft account; not compatible with Chromium Edge sync"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Windows Credential Manager; Windows Hello WebAuthn sign-in"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "WebExtension-style store add-ons; store defunct",
+      "date": "2021"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Cortana integration only"
+    },
+    "privacy": {
+      "defaults": "Do Not Track; Windows telemetry applies",
+      "telemetry": "Windows diagnostic data",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Bing",
+    "telemetry": "Windows diagnostic data",
+    "drm": "PlayReady (no Widevine)",
+    "codecs": "H.264, HEVC (hw), VP9 limited, no AV1",
+    "sandbox": "AppContainer sandbox",
+    "patchLag": "None since 2021",
+    "languages": "Windows languages"
+  },
+  "platforms": {
+    "windows": {
+      "status": "discontinued",
+      "minOs": "Windows 10 (up to version 2004)",
+      "arch": [
+        "x86",
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "preinstalled"
+      ],
+      "notes": [
+        "Not on Windows 8.1 or earlier; not in LTSB/LTSC",
+        "Removed by April 13, 2021 update"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      2,
+      "Do Not Track only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "no",
+      0
+    ],
+    "privateHardening": [
+      "partial",
+      3,
+      "InPrivate"
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "partial",
+      4,
+      "Set these tabs aside"
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "yes",
+      5
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      8,
+      "Reading view"
+    ],
+    "notes": [
+      "yes",
+      7,
+      "Web Notes annotation"
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Web Note clip"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "yes",
+      6,
+      "Reading list"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "yes",
+      6
+    ],
+    "syncPasswords": [
+      "yes",
+      6
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "yes",
+      4
+    ],
+    "passkeys": [
+      "partial",
+      3,
+      "Windows Hello / WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      5
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "yes",
+      7,
+      "PlayReady 4K on supported hardware"
+    ],
+    "hevc": [
+      "yes",
+      7
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "partial",
+      3,
+      "Cortana"
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      8,
+      "Cortana optional"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "partial",
+      3,
+      "Store PWAs"
+    ],
+    "enterprisePolicies": [
+      "yes",
+      7
+    ],
+    "kioskMode": [
+      "yes",
+      4,
+      "Assigned Access"
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      4
+    ],
+    "customThemes": [
+      "partial",
+      2,
+      "Light/dark only"
+    ],
+    "customSearchEngines": [
+      "partial",
+      3
+    ],
+    "devtools": [
+      "yes",
+      5
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      3,
+      "Chakra, far behind current engines",
+      "documented"
+    ],
+    "pageLoad": [
+      3.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "networkSpeed": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "smoothness": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "graphics": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "battery": [
+      7,
+      "Known for good battery efficiency on Windows 10",
+      "documented"
+    ],
+    "resourceControls": [
+      1.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "installSize": [
+      9,
+      "Preinstalled with Windows 10",
+      "documented"
+    ],
+    "privacyDefaults": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "blocking": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "fingerprinting": [
+      1,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "securityHardening": [
+      3.5,
+      "AppContainer sandbox decent for 2020, now unpatched",
+      "documented"
+    ],
+    "patchSpeed": [
+      0,
+      "No updates since 2021",
+      "documented"
+    ],
+    "telemetry": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lookCustom": [
+      2.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      2.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "advancedSettings": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "tabManagement": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "searchFreedom": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "downloads": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "productivity": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "media": [
+      5,
+      "PlayReady 4K but no Widevine",
+      "documented"
+    ],
+    "translation": [
+      0,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extensions": [
+      3,
+      "Small WebExtension-style store, now defunct",
+      "documented"
+    ],
+    "sync": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "passwords": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "Mobile Edge was a separate product",
+      "documented"
+    ],
+    "webCompat": [
+      2.5,
+      "EdgeHTML gaps vs Chromium/Firefox",
+      "documented"
+    ],
+    "devTools": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "openSource": [
+      0.5,
+      "Proprietary",
+      "documented"
+    ],
+    "businessTrust": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "longevity": [
+      0,
+      "Discontinued; removed in April 2021",
+      "documented"
+    ],
+    "ai": [
+      1,
+      "Cortana integration only",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Microsoft_Edge_Legacy",
+      "title": "Microsoft Edge Legacy - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Internet_Explorer",
+      "title": "Internet Explorer - Wikipedia",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Sync item scope",
+    "Only Wikipedia consulted; Microsoft lifecycle pages not fetched",
+    "Reading-level details of feature quality scores are editorial"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

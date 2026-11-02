@@ -1,0 +1,817 @@
+{
+  "id": "slimjet",
+  "name": "Slimjet",
+  "aliases": [
+    "Slimjet Web Browser",
+    "FlashPeak Slimjet"
+  ],
+  "group": "forks",
+  "developer": "FlashPeak Inc.",
+  "hq": "United States (Austin, Texas per Wikipedia)",
+  "businessModel": "Freeware, free for personal and commercial use; donation page; revenue sources such as search partnerships are not documented",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary freeware (built on open-source Chromium)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2014,
+  "status": "active",
+  "statusNote": "Regular releases, but the Chromium base trails Chrome: 51.x is on Chromium 149 while Chrome 156 reached stable on 2026-10-20.",
+  "version": {
+    "current": "51.0.2.0",
+    "date": "2026-10",
+    "upstream": "Chromium 149"
+  },
+  "channels": [
+    "Release",
+    "Portable"
+  ],
+  "updateCadence": "Major Chromium migration roughly every 3-6 months (48.0 Oct 2025, 50.0 Apr 2026, 51.0 Oct 2026) with point releases between; the FAQ promises a lag of no more than three months",
+  "website": "https://www.slimjet.com",
+  "tags": [
+    "chromium",
+    "ad-blocker",
+    "youtube-downloader",
+    "freeware",
+    "windows"
+  ],
+  "pitch": "Chromium browser with built-in ad blocker and YouTube downloader. Trails Chrome by months.",
+  "summary": "FlashPeak's freeware Chromium browser adds an ad blocker, a YouTube video downloader, a side tab bar and an AI chat panel, with Chrome Web Store compatibility. Its Chromium base lags Chrome by several months.",
+  "bestFor": [
+    "Windows users who want Chrome-style browsing with built-in ad blocking",
+    "People who want a one-click video downloader and a parallel download manager",
+    "Older Windows machines (Windows 7+ supported)"
+  ],
+  "notFor": [
+    "Anyone who wants Chrome-level security patch speed",
+    "People who need verified privacy: Google-service connections are disputed",
+    "Open-source purists (the builds are proprietary)"
+  ],
+  "pros": [
+    {
+      "title": "Built-in ad blocker",
+      "detail": "Ships with EasyList pre-loaded, with per-site disable options; a 51.0.2.0 note says its performance was improved."
+    },
+    {
+      "title": "YouTube video downloader",
+      "detail": "Saves videos in several resolutions and can extract MP3 audio."
+    },
+    {
+      "title": "Chrome extension compatibility",
+      "detail": "Slimjet says it supports almost all Chrome extensions and all Chrome themes from the Chrome Web Store."
+    },
+    {
+      "title": "Extra convenience tools",
+      "detail": "Side tab bar, auto-reload, idle background tab closing and an AI Chat side panel (ChatGPT, Gemini, Claude, Deepseek, Grok)."
+    },
+    {
+      "title": "Wide OS reach",
+      "detail": "Windows 7+, macOS 10.9+ and several Linux distributions, per the FAQ."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Chromium lag",
+      "detail": "51.0.0.0 moved to Chromium 149 in Oct 2026 while Chrome 156 shipped Oct 20, so Chrome security fixes arrive months late."
+    },
+    {
+      "title": "Disputed privacy claims",
+      "detail": "Slimjet says no usage data goes to Google, but one tester reports Google service connections, and anonymous usage statistics are on by default (can be disabled)."
+    },
+    {
+      "title": "Proprietary and thinly documented",
+      "detail": "Source is not published and the release log has no dates; the blog has no 2026 posts."
+    },
+    {
+      "title": "No native Apple silicon or mobile apps",
+      "detail": "The Mac build runs through Rosetta per a download-site listing, and there are no Android or iOS versions."
+    }
+  ],
+  "signatureFeatures": [
+    "Built-in ad blocker",
+    "YouTube video downloader",
+    "AI Chat side panel",
+    "Side tab bar",
+    "Auto-reload"
+  ],
+  "faq": [
+    {
+      "q": "Is Slimjet safe to use?",
+      "a": "It is a Chromium build with a sandbox, but its base trails Chrome by months, so it misses recent security fixes. Keep it updated and avoid sensitive logins if you need fast patches."
+    },
+    {
+      "q": "Does Slimjet send data to Google?",
+      "a": "Slimjet says it sends no data to Google unless you sync with a Google account; it collects anonymous usage stats you can switch off. A third-party tester disputes the Google claim."
+    },
+    {
+      "q": "Can I install Chrome extensions?",
+      "a": "Yes, per Slimjet, from the Chrome Web Store. Because the base is a recent Chromium, Manifest V2 extensions such as full uBlock Origin are not expected to work."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2014",
+      "event": "Chromium-based Slimjet appears (sources conflict between 2009 and 2014)"
+    },
+    {
+      "date": "2020-05",
+      "event": "Side tab bar introduced"
+    },
+    {
+      "date": "2025-03",
+      "event": "AI Chat side panel documented (introduced in 45.0.3.0)"
+    },
+    {
+      "date": "2025-10",
+      "event": "48.0.0.0 migrates to Chromium 139"
+    },
+    {
+      "date": "2026-04",
+      "event": "50.0.0.0 migrates to Chromium 144"
+    },
+    {
+      "date": "2026-10",
+      "event": "51.0.0.0 migrates to Chromium 149; 51.0.1.0 and 51.0.2.0 follow"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Imports from other browsers and syncs with Chrome or Chromium if you sign in with a Google account (per the FAQ)."
+  },
+  "alternatives": [
+    "srware-iron",
+    "chrome",
+    "brave",
+    "vivaldi",
+    "ungoogled-chromium",
+    "cent-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Uses Google account sync, interoperable with Chrome/Chromium (per Slimjet FAQ)"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Chromium manager; QuickFill was phased out in 2021"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Chromium 149 base; MV2 not documented",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": false,
+      "paid": "no",
+      "note": "AI Chat side panel wraps the ChatGPT, Gemini, Claude, Deepseek and Grok websites; Gemini toolbar button"
+    },
+    "privacy": {
+      "defaults": "Ad blocker with EasyList; anonymous usage statistics on by default (can be turned off)",
+      "telemetry": "Anonymous usage stats; Google connections disputed",
+      "jurisdiction": "US (FlashPeak Inc.)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Not verified",
+    "telemetry": "Anonymous usage statistics, switchable off in Privacy settings",
+    "drm": "Not verified",
+    "codecs": "Chromium codecs (unverified)",
+    "sandbox": "Chromium sandbox and site isolation",
+    "patchLag": "Chromium 149 in Oct 2026 versus Chrome 156 stable on Oct 20; FAQ promises under three months",
+    "languages": "Not verified"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 7 or later",
+      "arch": [
+        "x64",
+        "x86"
+      ],
+      "stores": [
+        "official-installer",
+        "portable"
+      ],
+      "notes": [
+        "Portable zip upgrades by extracting over the existing folder"
+      ],
+      "highlights": [
+        "Parallel download manager and YouTube downloader"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 10.9+ (FAQ); 10.10 (FileHorse)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "No native Apple silicon build per a download-site listing; runs through Rosetta"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "battery": -1,
+        "memory": -0.5
+      }
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Ubuntu 14.04+, Debian 8+, openSUSE 13.1+, Fedora 21+ (per FAQ)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "official-installer"
+      ],
+      "notes": [
+        "A blog post covers 32-bit Linux support"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      5,
+      "Ad blocker lists plus privacy options"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      3,
+      "Canvas and WebRTC options discussed in blog posts"
+    ],
+    "httpsOnly": [
+      "partial",
+      4,
+      "Chromium HTTPS setting"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4,
+      "Chromium third-party cookie controls"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      6,
+      "Usage statistics can be disabled in Privacy settings"
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "yes",
+      7,
+      "Built in, EasyList pre-loaded"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      6
+    ],
+    "customFilterLists": [
+      "yes",
+      6,
+      "Extra lists such as EasyPrivacy can be added"
+    ],
+    "youtubeAds": [
+      "partial",
+      3,
+      "Users report YouTube detecting the blocker"
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "yes",
+      6,
+      "Side tab bar"
+    ],
+    "tabGroups": [
+      "yes",
+      7,
+      "Chromium tab groups (a 51.0.2.0 fix concerns the group menu)"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "yes",
+      6,
+      "Idle background tabs can be closed automatically"
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4,
+      "AI Chat side panel"
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      3,
+      "Unverified"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "partial",
+      3
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      8,
+      "Per Slimjet FAQ"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Only uBlock Origin Lite style MV3 blockers"
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      7
+    ],
+    "syncBookmarks": [
+      "yes",
+      7,
+      "Via Google account"
+    ],
+    "syncPasswords": [
+      "yes",
+      6,
+      "Via Google account"
+    ],
+    "syncTabs": [
+      "yes",
+      6,
+      "Via Google account"
+    ],
+    "e2eeSync": [
+      "partial",
+      3,
+      "Google sync passphrase optional"
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "yes",
+      5
+    ],
+    "passkeys": [
+      "partial",
+      4
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "partial",
+      4,
+      "Not verified"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      5
+    ],
+    "av1": [
+      "yes",
+      7
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "yes",
+      5,
+      "AI Chat panel: ChatGPT, Gemini, Claude, Deepseek, Grok websites"
+    ],
+    "aiSummarizer": [
+      "yes",
+      4,
+      "Summarize the current page via the panel"
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "partial",
+      5,
+      "AI button is optional; no master switch documented"
+    ],
+    "translation": [
+      "partial",
+      3,
+      "Unverified"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      6
+    ],
+    "enterprisePolicies": [
+      "partial",
+      3
+    ],
+    "kioskMode": [
+      "partial",
+      3
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      7,
+      "Parallel-connection download manager"
+    ],
+    "customThemes": [
+      "yes",
+      7,
+      "All Chrome themes per Slimjet"
+    ],
+    "customSearchEngines": [
+      "yes",
+      8
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Chromium 149 V8, a few months old",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Chromium plus ad blocker trims load",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium stack, parallel download manager",
+      "editorial"
+    ],
+    "startup": [
+      7.5,
+      "Chromium startup",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Full Chromium WebGL/WebGPU",
+      "editorial"
+    ],
+    "memory": [
+      5.5,
+      "Chromium baseline, idle-tab closing helps",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium baseline, ads blocked",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      6.5,
+      "Idle tab closing plus Chromium savers",
+      "documented"
+    ],
+    "lowEnd": [
+      6,
+      "Supports Windows 7, though still Chromium",
+      "documented"
+    ],
+    "installSize": [
+      5,
+      "Chromium-sized install",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5,
+      "Ad blocker on; stats on by default",
+      "documented"
+    ],
+    "blocking": [
+      6,
+      "EasyList-based, extendable",
+      "documented"
+    ],
+    "fingerprinting": [
+      3.5,
+      "Canvas and WebRTC options only",
+      "documented"
+    ],
+    "securityHardening": [
+      7,
+      "Chromium sandbox, but months of missing fixes",
+      "editorial"
+    ],
+    "patchSpeed": [
+      3,
+      "Chromium 149 vs stable 156; FAQ allows three months",
+      "documented"
+    ],
+    "telemetry": [
+      5,
+      "Anonymous stats; Google links disputed",
+      "documented"
+    ],
+    "lookCustom": [
+      6,
+      "Chrome themes plus side tab bar",
+      "documented"
+    ],
+    "behaviourCustom": [
+      6,
+      "Auto-reload and Chromium settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6.5,
+      "Chromium flags plus Slimjet options",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Side tabs, groups, idle closing",
+      "documented"
+    ],
+    "searchFreedom": [
+      7,
+      "Chromium search engine management",
+      "editorial"
+    ],
+    "downloads": [
+      7,
+      "Parallel downloads and video downloader",
+      "documented"
+    ],
+    "productivity": [
+      5.5,
+      "AI panel, auto-reload, PiP",
+      "documented"
+    ],
+    "media": [
+      6.5,
+      "Chromium codecs; DRM unverified",
+      "editorial"
+    ],
+    "translation": [
+      3,
+      "No built-in translation confirmed",
+      "editorial"
+    ],
+    "extras": [
+      5.5,
+      "YouTube downloader, ad blocker, AI panel",
+      "documented"
+    ],
+    "extensions": [
+      6.5,
+      "Chrome Web Store, MV3-era limits",
+      "documented"
+    ],
+    "sync": [
+      6.5,
+      "Google account sync across Chrome/Chromium",
+      "documented"
+    ],
+    "passwords": [
+      5.5,
+      "Chromium manager with sync",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile versions",
+      "documented"
+    ],
+    "webCompat": [
+      9,
+      "Chromium 149 still broadly compatible",
+      "editorial"
+    ],
+    "devTools": [
+      9.5,
+      "Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack",
+      "editorial"
+    ],
+    "openSource": [
+      2.5,
+      "Proprietary freeware on open Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      5.5,
+      "Small company, thin transparency, disputed claims",
+      "editorial"
+    ],
+    "longevity": [
+      6,
+      "Regular releases for years, small team",
+      "editorial"
+    ],
+    "ai": [
+      4.5,
+      "AI chat panel wrapping web chatbots",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Chrome-like and simple",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.slimjet.com/",
+      "title": "Slimjet official site",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.slimjet.com/en/whatisnew.php",
+      "title": "Slimjet Version History",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.slimjet.com/en/faq.php",
+      "title": "Slimjet FAQ",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.slimjet.com/blog/",
+      "title": "Slimjet blog (AI Chat side panel, Mar 2025)",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://slimjet.en.uptodown.com/windows",
+      "title": "Uptodown: Slimjet version history",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://mac.filehorse.com/download-slimjet/",
+      "title": "FileHorse: Slimjet for Mac",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/SlimBrowser",
+      "title": "SlimBrowser - Wikipedia (FlashPeak company)",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://gbhackers.com/google-chrome-156-fixes-353-security-vulnerabilities/",
+      "title": "GBHackers: Chrome 156 stable (Oct 2026)",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Exact release date of 51.0.2.0 (the homepage shows today's date; the release log has no dates)",
+    "First release year (sources range from 2009 to 2014)",
+    "Widevine/DRM, translation, screenshots, mouse gestures and default search",
+    "Whether Slimjet contacts Google services in the background (vendor denies, a third-party tester reports it)",
+    "Mac build architecture (one listing says Rosetta only, another lists Apple Silicon)"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-30"
+}

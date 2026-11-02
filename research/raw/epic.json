@@ -1,0 +1,740 @@
+{
+  "id": "epic",
+  "name": "Epic Privacy Browser",
+  "aliases": [
+    "Epic Browser",
+    "Epic"
+  ],
+  "group": "privacy",
+  "developer": "Hidden Reflex",
+  "hq": "India / United States (unverified)",
+  "businessModel": "Free; funded by search partnerships and ads (unverified)",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary freeware",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2010,
+  "status": "maintenance",
+  "statusNote": "Desktop is ~4 Chromium majors behind and lacks automatic updates; Android stuck at 138 since July 2025",
+  "version": {
+    "current": "152.0.7977.6",
+    "date": "2026-10-13",
+    "upstream": "Chromium 152"
+  },
+  "channels": [
+    "Stable"
+  ],
+  "updateCadence": "Irregular; manual updates (no auto-update)",
+  "website": "https://www.epicbrowser.com",
+  "tags": [
+    "privacy",
+    "chromium",
+    "proxy",
+    "adblock"
+  ],
+  "pitch": "Privacy Chromium with built-in blocking and a browser proxy, but slow to update.",
+  "summary": "A Chromium-based privacy browser that blocks third-party cookies and ads (uBlock Origin fork) and offers a browser-only proxy; updates are manual and trail Chromium by several versions.",
+  "bestFor": [
+    "People wanting a preconfigured privacy Chromium on Windows/macOS",
+    "Those who like built-in proxy and ad-block"
+  ],
+  "notFor": [
+    "Anyone who needs timely security patches",
+    "Users who need mobile support (Android stale)",
+    "Open-source requirement"
+  ],
+  "pros": [
+    {
+      "title": "Privacy defaults",
+      "detail": "Third-party cookies blocked; built-in ad blocker."
+    },
+    {
+      "title": "Browser proxy",
+      "detail": "Built-in proxy routes browser traffic (not the full system)."
+    },
+    {
+      "title": "Chromium compatibility",
+      "detail": "Blink engine site compat."
+    },
+    {
+      "title": "Free and simple",
+      "detail": "No account needed; privacy settings preconfigured."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Behind Chromium",
+      "detail": "Desktop 152 vs Chromium 156 current."
+    },
+    {
+      "title": "No auto-update",
+      "detail": "Reported as a drawback by FileHorse."
+    },
+    {
+      "title": "Stale Android",
+      "detail": "Play version 138 from July 2025."
+    },
+    {
+      "title": "Closed source",
+      "detail": "Proprietary code and opaque ownership."
+    }
+  ],
+  "signatureFeatures": [
+    "Built-in proxy",
+    "Ad-blocking uBO fork",
+    "Third-party cookies blocked",
+    "No-tracking promise"
+  ],
+  "faq": [
+    {
+      "q": "Is Epic up to date?",
+      "a": "Windows 152.0.7977.6 (about four majors behind Chromium 156); Android 138."
+    },
+    {
+      "q": "Does Epic have a VPN?",
+      "a": "A browser-only proxy that does not cover system traffic."
+    },
+    {
+      "q": "Is it open source?",
+      "a": "No, it is proprietary freeware."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2010",
+      "event": "Epic Privacy Browser first released (Firefox-based originally)"
+    },
+    {
+      "date": "2013",
+      "event": "Rebased on Chromium"
+    },
+    {
+      "date": "2025-07",
+      "event": "Last Android Play update (138.0.7204.63)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Desktop 152.0.7977.6 listed on download sites"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "history"
+    ],
+    "note": "Imports from other Chromium browsers."
+  },
+  "alternatives": [
+    "brave",
+    "ungoogled-chromium",
+    "vivaldi",
+    "librewolf",
+    "avast-secure-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Local"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Chromium 152 base; uBO fork built in",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI"
+    },
+    "privacy": {
+      "defaults": "3P cookies blocked, ad blocker on, proxy opt-in",
+      "telemetry": "Claims no tracking; closed source so unverifiable",
+      "jurisdiction": "Unverified"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Epic Search / Bing-like (unverified)",
+    "telemetry": "Claimed none",
+    "drm": "Not verified",
+    "codecs": "Chromium",
+    "sandbox": "Chromium sandbox but outdated",
+    "patchSpeed": "Weeks to months behind",
+    "languages": "Several"
+  },
+  "platforms": {
+    "windows": {
+      "status": "maintenance",
+      "minOs": "Windows 10 (unverified)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "152.0.7977.6"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "maintenance",
+      "minOs": "macOS (unverified)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Exists but version unverified"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "maintenance",
+      "minOs": "Android (unverified)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "google-play"
+      ],
+      "notes": [
+        "138.0.7204.63 (July 2025)"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "patchSpeed": -3,
+        "securityHardening": -2
+      }
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Epic_(web_browser)",
+      "title": "Epic - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.techspot.com/downloads/6913-epic-privacy-browser.html",
+      "title": "TechSpot: Epic 152.0.7977.6",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.filehorse.com/download-epic-privacy-browser/",
+      "title": "FileHorse: Epic Privacy Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.appbrain.com/app/epic-privacy-browser/com.epic.browser",
+      "title": "AppBrain: Epic Android",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Ownership/jurisdiction",
+    "iOS availability",
+    "macOS version",
+    "DRM support",
+    "Actual maintenance cadence"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      7
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "partial",
+      4,
+      "Browser proxy"
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "3P cookies blocked"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      6
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "yes",
+      7,
+      "uBO fork"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      6
+    ],
+    "customFilterLists": [
+      "partial",
+      4
+    ],
+    "youtubeAds": [
+      "partial",
+      5
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "yes",
+      7
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      5
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      3
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      5
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "partial",
+      3
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      3
+    ],
+    "aiKillSwitch": [
+      "yes",
+      9
+    ],
+    "translation": [
+      "partial",
+      3
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      7.5,
+      "3P cookies off, blocker on",
+      "documented"
+    ],
+    "blocking": [
+      7,
+      "Built-in uBO fork",
+      "documented"
+    ],
+    "fingerprinting": [
+      3,
+      "Basic",
+      "editorial"
+    ],
+    "securityHardening": [
+      6,
+      "Outdated Chromium builds",
+      "documented"
+    ],
+    "patchSpeed": [
+      3,
+      "No auto-update, ~4 majors behind",
+      "documented"
+    ],
+    "telemetry": [
+      7,
+      "Claims none; closed source",
+      "editorial"
+    ],
+    "lookCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "translation": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "Proxy and blocker",
+      "documented"
+    ],
+    "extensions": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "None",
+      "documented"
+    ],
+    "passwords": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "mobileApps": [
+      4,
+      "Android stale",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary",
+      "documented"
+    ],
+    "businessTrust": [
+      4,
+      "Opaque ownership",
+      "editorial"
+    ],
+    "longevity": [
+      4,
+      "Slipping update cadence",
+      "editorial"
+    ],
+    "ai": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Simple but manual updates",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

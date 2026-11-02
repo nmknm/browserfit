@@ -1,0 +1,755 @@
+{
+  "id": "servo",
+  "name": "Servo",
+  "aliases": [
+    "servoshell"
+  ],
+  "group": "minimal",
+  "developer": "Linux Foundation Europe (Servo project)",
+  "hq": "Europe / international",
+  "businessModel": "Open-source project funded by donations and sponsors (Phoronix reported under $8k monthly early in 2026)",
+  "engine": "servo",
+  "basedOn": "Independent",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2012,
+  "status": "early-access",
+  "statusNote": "Embeddable engine with numbered 0.x releases and a demo browser (servoshell); not a daily-driver browser",
+  "version": {
+    "current": "0.6.x (exact date unverified)",
+    "date": "2026-10",
+    "upstream": "Servo with SpiderMonkey 153"
+  },
+  "channels": [
+    "Numbered releases",
+    "Nightly servoshell",
+    "LTS branch (first LTS in 0.1.0)"
+  ],
+  "updateCadence": "Roughly monthly 0.x releases (0.4.0 Jul 31, 0.5 Aug 31, 0.6 later in autumn 2026)",
+  "website": "https://servo.org",
+  "tags": [
+    "engine",
+    "rust",
+    "embeddable",
+    "independent",
+    "experimental"
+  ],
+  "pitch": "A Rust browser engine for embedding, with a demo browser.",
+  "summary": "Servo is a parallel Rust web engine now released regularly as a crate with servoshell, a minimal demo browser for Linux, macOS, Windows and Android. Rendering is improving (CSS Grid, WebGPU) but compatibility is limited.",
+  "bestFor": [
+    "Developers embedding a web engine in apps",
+    "Following the Rust-based engine project"
+  ],
+  "notFor": [
+    "Daily browsing",
+    "Users wanting extensions, sync, DRM"
+  ],
+  "pros": [
+    {
+      "title": "Rust memory safety",
+      "detail": "Written largely in Rust."
+    },
+    {
+      "title": "Embeddable",
+      "detail": "Published as crate; LTS branch since 0.1.0."
+    },
+    {
+      "title": "Steady releases",
+      "detail": "0.4.0 had a record 558 commits."
+    },
+    {
+      "title": "Multi-platform demo",
+      "detail": "servoshell for Linux, macOS, Windows, Android."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Limited compatibility",
+      "detail": "Many sites render incorrectly."
+    },
+    {
+      "title": "Tiny funding",
+      "detail": "Under $8k monthly reported."
+    },
+    {
+      "title": "Demo UI",
+      "detail": "servoshell is not a full browser."
+    },
+    {
+      "title": "No ecosystem",
+      "detail": "No extensions, sync, DRM."
+    }
+  ],
+  "signatureFeatures": [
+    "Parallel layout in Rust",
+    "WebGPU progress",
+    "Embeddable crate/LTS",
+    "SpiderMonkey JS"
+  ],
+  "faq": [
+    {
+      "q": "Is Servo a browser?",
+      "a": "It is an engine; servoshell is a minimal demo browser."
+    },
+    {
+      "q": "Latest version?",
+      "a": "0.6 is the latest reported; 0.4.0 shipped 2026-07-31 and 0.5 on 2026-08-31 (one source). Verify on servo.org."
+    },
+    {
+      "q": "Who runs it?",
+      "a": "Servo moved under the Linux Foundation Europe."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2012",
+      "event": "Mozilla Research begins Servo"
+    },
+    {
+      "date": "2023-2024",
+      "event": "Project revived under Linux Foundation Europe"
+    },
+    {
+      "date": "2026-01",
+      "event": "Release 0.0.5-era progress with ML-KEM/ML-DSA, Ogg audio"
+    },
+    {
+      "date": "2026-07",
+      "event": "Servo 0.4.0 (Jul 31) with 558 commits"
+    },
+    {
+      "date": "2026-08",
+      "event": "Servo 0.5 with faster text rendering; 0.6 adds CSS Grid, SpiderMonkey 153"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No import tools."
+  },
+  "alternatives": [
+    "ladybird",
+    "firefox",
+    "lynx",
+    "netsurf"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "None"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": ""
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extensions",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI"
+    },
+    "privacy": {
+      "defaults": "No telemetry",
+      "telemetry": "None",
+      "jurisdiction": "EU/international"
+    }
+  },
+  "spec": {
+    "defaultSearch": "None/blank page",
+    "telemetry": "None",
+    "drm": "None",
+    "codecs": "Basic",
+    "sandbox": "Limited",
+    "patchSpeed": "Per release",
+    "languages": "English"
+  },
+  "platforms": {
+    "linux": {
+      "status": "early-access",
+      "minOs": "Linux",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "github"
+      ],
+      "notes": [
+        "servoshell nightly builds"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "early-access",
+      "minOs": "macOS",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "github"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "early-access",
+      "minOs": "Windows 10+",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "github"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "early-access",
+      "minOs": "Android",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "github",
+        "apk"
+      ],
+      "notes": [
+        "servoshell APK"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Servo_(software)",
+      "title": "Servo - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://lwn.net/Articles/1086555/",
+      "title": "LWN: Servo 0.4.0 released",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.phoronix.com/news/Servo-0.6-Changes",
+      "title": "Phoronix: Servo 0.6",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.phoronix.com/news/Servo-January-2026",
+      "title": "Phoronix: Servo January 2026",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://servo.org",
+      "title": "Servo website",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Exact 0.6 date",
+    "0.5 date (single source)",
+    "Windows minOs",
+    "Android availability details"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "no",
+      0
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "partial",
+      3
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "no",
+      0
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      2
+    ],
+    "devtools": [
+      "partial",
+      4
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      7,
+      "SpiderMonkey 153 JIT",
+      "documented"
+    ],
+    "pageLoad": [
+      3,
+      "Parallel layout but incomplete",
+      "editorial"
+    ],
+    "networkSpeed": [
+      5,
+      "Basic HTTP stack",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Light shell",
+      "editorial"
+    ],
+    "smoothness": [
+      4,
+      "Early",
+      "editorial"
+    ],
+    "graphics": [
+      4,
+      "WebGPU progress",
+      "documented"
+    ],
+    "memory": [
+      5,
+      "Light shell",
+      "editorial"
+    ],
+    "cpu": [
+      5,
+      "Parallel layout",
+      "editorial"
+    ],
+    "battery": [
+      4,
+      "Unoptimised",
+      "editorial"
+    ],
+    "resourceControls": [
+      1,
+      "None",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Unoptimised",
+      "editorial"
+    ],
+    "installSize": [
+      8,
+      "Small",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6,
+      "No telemetry, sparse features",
+      "editorial"
+    ],
+    "blocking": [
+      1,
+      "None",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "Not hardened",
+      "editorial"
+    ],
+    "securityHardening": [
+      5,
+      "Rust helps; sandboxing limited",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5,
+      "Monthly releases",
+      "documented"
+    ],
+    "telemetry": [
+      10,
+      "None",
+      "documented"
+    ],
+    "lookCustom": [
+      1,
+      "Minimal",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      1,
+      "Minimal",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3,
+      "Prefs flags",
+      "editorial"
+    ],
+    "tabManagement": [
+      2,
+      "Basic tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      3,
+      "Limited",
+      "editorial"
+    ],
+    "downloads": [
+      1,
+      "None",
+      "editorial"
+    ],
+    "productivity": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "media": [
+      3,
+      "Limited",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "None",
+      "documented"
+    ],
+    "extras": [
+      0,
+      "None",
+      "documented"
+    ],
+    "extensions": [
+      0,
+      "None",
+      "documented"
+    ],
+    "sync": [
+      0,
+      "None",
+      "documented"
+    ],
+    "passwords": [
+      0,
+      "None",
+      "documented"
+    ],
+    "mobileApps": [
+      2,
+      "Android demo shell",
+      "documented"
+    ],
+    "webCompat": [
+      3,
+      "Improving, limited",
+      "documented"
+    ],
+    "devTools": [
+      4,
+      "Basic devtools",
+      "editorial"
+    ],
+    "accessibility": [
+      2,
+      "Early",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "MPL-2.0, Linux Foundation Europe",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Open governance",
+      "editorial"
+    ],
+    "longevity": [
+      6,
+      "Revived but small funding",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "None",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      1,
+      "Demo shell",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

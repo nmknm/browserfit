@@ -1,0 +1,782 @@
+{
+  "id": "pale-moon",
+  "name": "Pale Moon",
+  "aliases": [
+    "Palemoon"
+  ],
+  "group": "forks",
+  "developer": "Moonchild Productions (M.C. Straver)",
+  "hq": "Netherlands (unverified)",
+  "businessModel": "Donation-funded; no ads or paid tiers",
+  "engine": "goanna",
+  "basedOn": "Firefox (UXP / Goanna fork of Gecko)",
+  "license": "MPL-2.0 (source); binaries proprietary freeware unless rebranded",
+  "openSource": "partial",
+  "price": "free",
+  "releaseYear": 2009,
+  "status": "active",
+  "statusNote": "Current line 35.x; 35.0.3 security release on 2026-10-27",
+  "version": {
+    "current": "35.0.3",
+    "date": "2026-10-27",
+    "upstream": "UXP / Goanna (Firefox compat mode UA 140)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Minor releases every few weeks, major (34, 35) a few times a year",
+  "website": "https://www.palemoon.org",
+  "tags": [
+    "goanna",
+    "xul",
+    "legacy",
+    "customizable",
+    "lightweight"
+  ],
+  "pitch": "Independent Goanna engine, classic XUL interface and no WebExtensions.",
+  "summary": "A single-process, highly customizable browser on the Goanna engine (a Gecko fork) that keeps the pre-Quantum Firefox interface and XUL add-ons. Free of telemetry and Mozilla-isms, but webcompat and security depth lag mainstream browsers.",
+  "bestFor": [
+    "Fans of the classic Firefox UI and XUL add-ons",
+    "Low-resource and older machines (Windows 7 SP1+)",
+    "People wanting a non-Chromium, non-Gecko independent engine"
+  ],
+  "notFor": [
+    "Users who rely on modern web apps or WebRTC",
+    "People who need Netflix/DRM or WebExtensions",
+    "Security-sensitive users wanting multi-process sandboxing"
+  ],
+  "pros": [
+    {
+      "title": "Independent engine",
+      "detail": "Goanna is a separate Gecko fork, with new CSS and JS features still landing (Cascade Layers, WeakRef, URL.parse in 2026)."
+    },
+    {
+      "title": "Deep customization",
+      "detail": "Full UI customization, themes and personas, about:config."
+    },
+    {
+      "title": "Low resource use",
+      "detail": "Single-process design needs little RAM; Windows 7 SP1 and Linux supported."
+    },
+    {
+      "title": "No telemetry",
+      "detail": "No data collection or account tie-ins."
+    },
+    {
+      "title": "Active releases",
+      "detail": "35.0.0 shipped 2026-09-17, followed by 35.0.1, 35.0.2 and 35.0.3."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Site compatibility",
+      "detail": "Newer sites that need modern JS/CSS or WebRTC (unsupported by design) break; a Firefox UA compat mode helps partially."
+    },
+    {
+      "title": "No WebExtensions",
+      "detail": "Only legacy XUL/XPCOM add-ons from its own library; no Chrome Web Store or AMO."
+    },
+    {
+      "title": "Weaker security model",
+      "detail": "No multi-process sandbox or site isolation like Chrome and Firefox."
+    },
+    {
+      "title": "No DRM",
+      "detail": "No Widevine, so Netflix, Spotify web and similar do not work."
+    },
+    {
+      "title": "Small team",
+      "detail": "Development depends on a few volunteers; binaries are proprietary freeware."
+    }
+  ],
+  "signatureFeatures": [
+    "Goanna engine",
+    "Classic XUL UI",
+    "Legacy add-ons",
+    "Windows 7 / Linux / macOS / FreeBSD builds"
+  ],
+  "faq": [
+    {
+      "q": "Does Pale Moon support Firefox extensions?",
+      "a": "No WebExtensions. It supports its own legacy XUL/XPCOM add-ons from its add-ons site; modern Firefox add-ons will not install."
+    },
+    {
+      "q": "Does Pale Moon run on Windows 7?",
+      "a": "Yes. Wikipedia lists Windows 7 SP1 as the minimum, with AVX required for 64-bit builds."
+    },
+    {
+      "q": "Is Pale Moon safe?",
+      "a": "It receives regular security updates but lacks multi-process sandboxing, so it is less hardened than Chrome or Firefox."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2009-10",
+      "event": "First release"
+    },
+    {
+      "date": "2016",
+      "event": "Switches to Goanna engine (version 26)"
+    },
+    {
+      "date": "2026-01",
+      "event": "34.0.0 milestone release with refreshed Windows theme (2026-01-20)"
+    },
+    {
+      "date": "2026-06",
+      "event": "34.3.0 major release (2026-06-02)"
+    },
+    {
+      "date": "2026-09",
+      "event": "35.0.0 released (2026-09-17)"
+    },
+    {
+      "date": "2026-10",
+      "event": "35.0.3 security release (2026-10-27)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Imports from Firefox and other browsers; no extension migration."
+  },
+  "alternatives": [
+    "basilisk",
+    "seamonkey",
+    "librewolf",
+    "firefox",
+    "k-meleon"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "self-hostable",
+      "items": [
+        "bookmarks",
+        "history",
+        "passwords",
+        "tabs"
+      ],
+      "crossOs": true,
+      "note": "Firefox-Sync-1.1-style sync; details unverified"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Built-in store with optional master password"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "WebExtensions unsupported by design; legacy XUL add-ons only",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "No telemetry; no built-in tracker blocking",
+      "telemetry": "None",
+      "jurisdiction": "Netherlands (developer; unverified)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo-class default (unverified), changeable",
+    "telemetry": "None",
+    "drm": "No Widevine/EME",
+    "codecs": "VP8/VP9, AV1, H.264 via system libav (partial)",
+    "sandbox": "Single-process; no site isolation",
+    "patchLag": "Own security fixes; major releases every few months",
+    "languages": "Dozens (language packs)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 7 SP1",
+      "arch": [
+        "x64",
+        "x86",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "portable"
+      ],
+      "notes": [
+        "64-bit needs AVX; 32-bit needs SSE2; 2 GB RAM recommended"
+      ],
+      "highlights": [
+        "Refreshed Windows 11-style theme in 34.0"
+      ],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "GTK3 distros",
+      "arch": [
+        "x64",
+        "x86",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "aur",
+        "portable"
+      ],
+      "notes": [
+        "GTK3 builds; Linux-only 34.3.2.1 fixed GTK file dialog"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "OS X Lion; Apple silicon needs Big Sur",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Support level per Wikipedia; release notes mention Mac/PPC updates"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "no",
+      0
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "partial",
+      3,
+      "Unverified"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      9,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "partial",
+      3
+    ],
+    "adBlocker": [
+      "extension",
+      5,
+      "Legacy XUL/UXP add-ons"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      5
+    ],
+    "customFilterLists": [
+      "extension",
+      5
+    ],
+    "youtubeAds": [
+      "extension",
+      4
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "extension",
+      5
+    ],
+    "tabGroups": [
+      "extension",
+      4,
+      "Add-on only; Panorama removed"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "yes",
+      7
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4,
+      "Bookmarks/history sidebars"
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "extension",
+      6
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "No WebExtensions by design"
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      7,
+      "Legacy Greasemonkey-type add-ons"
+    ],
+    "syncBookmarks": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "syncPasswords": [
+      "partial",
+      4
+    ],
+    "syncTabs": [
+      "partial",
+      4
+    ],
+    "e2eeSync": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "profiles": [
+      "yes",
+      7
+    ],
+    "passwordManager": [
+      "yes",
+      4,
+      "Basic, optional master password"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      3
+    ],
+    "av1": [
+      "partial",
+      4
+    ],
+    "hwDecode": [
+      "partial",
+      4
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "partial",
+      3,
+      "Prefs/autoconfig only"
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      9,
+      "Themes and Personas"
+    ],
+    "customSearchEngines": [
+      "yes",
+      8
+    ],
+    "devtools": [
+      "yes",
+      5,
+      "Older Firefox-era developer tools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      4,
+      "Goanna/SpiderMonkey fork, behind modern V8/SM on benchmarks",
+      "documented"
+    ],
+    "pageLoad": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "networkSpeed": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "smoothness": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "graphics": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "memory": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "resourceControls": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lowEnd": [
+      8,
+      "Single-process; Windows 7 SP1 minimum",
+      "documented"
+    ],
+    "installSize": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "blocking": [
+      3.5,
+      "Only via legacy add-ons",
+      "documented"
+    ],
+    "fingerprinting": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "securityHardening": [
+      3.5,
+      "Single-process, no site isolation or modern sandbox",
+      "documented"
+    ],
+    "patchSpeed": [
+      5,
+      "Own security releases (35.0.3 on 2026-10-27); no upstream sync",
+      "documented"
+    ],
+    "telemetry": [
+      9.5,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      9,
+      "Themes, personas and full UI customisation",
+      "documented"
+    ],
+    "behaviourCustom": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "advancedSettings": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "tabManagement": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "searchFreedom": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "productivity": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "media": [
+      3.5,
+      "No Widevine; limited hw decode",
+      "documented"
+    ],
+    "translation": [
+      0,
+      "No built-in translation",
+      "documented"
+    ],
+    "extras": [
+      2.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extensions": [
+      5,
+      "Own XUL add-on library only; no WebExtensions",
+      "documented"
+    ],
+    "sync": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "passwords": [
+      3.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile version (Android port cancelled)",
+      "documented"
+    ],
+    "webCompat": [
+      4,
+      "WebRTC unsupported; modern sites break (Firefox UA compat mode helps)",
+      "documented"
+    ],
+    "devTools": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "accessibility": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "openSource": [
+      8,
+      "MPL-2.0 source, but binaries proprietary freeware",
+      "documented"
+    ],
+    "businessTrust": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "longevity": [
+      6.5,
+      "Active since 2009, but small team",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.palemoon.org/releasenotes.shtml",
+      "title": "Pale Moon release notes",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Pale_Moon",
+      "title": "Pale Moon - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://securitygarden.blogspot.com/2026/08/pale-moon-version-3432-released-with.html",
+      "title": "Pale Moon 34.3.2 - Security Garden",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://securitygarden.blogspot.com/2026/01/pale-moon-version-3400-released-with.html",
+      "title": "Pale Moon 34.0.0 - Security Garden",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Pale Moon Sync architecture and status",
+    "DoH support",
+    "Developer jurisdiction (Netherlands assumed)",
+    "Default search engine",
+    "Current macOS/Android support level",
+    "Hardware video decode details"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

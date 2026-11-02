@@ -1,0 +1,718 @@
+{
+  "id": "crest",
+  "name": "Crest",
+  "aliases": [
+    "Crest Browser"
+  ],
+  "group": "power",
+  "developer": "Crest project (independent)",
+  "hq": "Unknown (unverified)",
+  "businessModel": "Free open-source project (funding unverified)",
+  "engine": "multi",
+  "basedOn": "ungoogled-chromium (Mac) + WebKit (iOS)",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2026,
+  "status": "early-access",
+  "statusNote": "Early access; security not independently audited; no Windows version",
+  "version": {
+    "current": "Early access (version not verified)",
+    "date": "2026-10-25",
+    "upstream": "ungoogled-chromium / WebKit"
+  },
+  "channels": [
+    "Early access"
+  ],
+  "updateCadence": "Unknown",
+  "website": "https://toolfolio.com/tools/crest-browser",
+  "tags": [
+    "arc-alternative",
+    "spaces",
+    "open-source",
+    "apple"
+  ],
+  "pitch": "An open-source browser for life after Arc, with Spaces, split view and iCloud sync.",
+  "summary": "An early-access Arc successor for Apple silicon Macs and iPhone/iPad. Rebuilds Spaces, sidebar, Peek, Split View and Quick Window; uses ungoogled-chromium on Mac, WebKit per site or on iOS; imports from Arc, Zen, Chrome, Safari, Firefox.",
+  "bestFor": [
+    "Arc users who want an open-source replacement",
+    "Apple silicon Mac users"
+  ],
+  "notFor": [
+    "Windows/Linux users",
+    "People who need audited security",
+    "Anyone wanting Boosts"
+  ],
+  "pros": [
+    {
+      "title": "Arc-style workflow",
+      "detail": "Spaces, sidebar, Peek, Split View, Quick Window."
+    },
+    {
+      "title": "Open source",
+      "detail": "MPL-2.0."
+    },
+    {
+      "title": "iCloud sync",
+      "detail": "Syncs through iCloud across Mac and iOS."
+    },
+    {
+      "title": "Arc import",
+      "detail": "Imports from Arc and other browsers."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Early access",
+      "detail": "Less polished than Arc by user reports."
+    },
+    {
+      "title": "Unaudited",
+      "detail": "Project says security not independently audited."
+    },
+    {
+      "title": "Apple only",
+      "detail": "No Windows version."
+    },
+    {
+      "title": "No Boosts",
+      "detail": "Arc Boosts not replicated."
+    }
+  ],
+  "signatureFeatures": [
+    "Spaces",
+    "Peek",
+    "Split View",
+    "Link routing",
+    "iCloud sync"
+  ],
+  "faq": [
+    {
+      "q": "Is Crest stable?",
+      "a": "It is early access and unaudited."
+    },
+    {
+      "q": "What engine?",
+      "a": "ungoogled-chromium on Mac, WebKit per site or on iOS."
+    },
+    {
+      "q": "Does it replace Arc?",
+      "a": "It targets Arc users but lacks Boosts and Windows support."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "Crest early access released"
+    },
+    {
+      "date": "2026-10",
+      "event": "Featured in Arc-shutdown alternatives roundups"
+    },
+    {
+      "date": "2026-10-22",
+      "event": "Arc sunset announced, driving interest in Crest"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "arc data",
+      "zen",
+      "chrome",
+      "safari",
+      "firefox"
+    ],
+    "note": "Imports from Arc, Zen, Chrome, Safari and Firefox."
+  },
+  "alternatives": [
+    "arc",
+    "ardia",
+    "zen",
+    "dia"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "spaces",
+        "bookmarks"
+      ],
+      "crossOs": false,
+      "note": "iCloud"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Unverified"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Chromium MV3",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI (unverified)"
+    },
+    "privacy": {
+      "defaults": "Ungoogled base",
+      "telemetry": "Unverified",
+      "jurisdiction": "Unknown"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Unverified",
+    "drm": "Unverified",
+    "codecs": "Chromium/WebKit",
+    "sandbox": "Chromium sandbox on Mac",
+    "patchSpeed": "Unverified",
+    "languages": "English-focused"
+  },
+  "platforms": {
+    "macos": {
+      "status": "early-access",
+      "minOs": "macOS (Apple silicon only)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "github"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "early-access",
+      "minOs": "iOS (unverified)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://toolfolio.com/tools/crest-browser",
+      "title": "Toolfolio: Crest",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://toolfolio.com/articles/best-arc-browser-alternatives-for-mac-and-windows-after-the-december-2026-shutdown-dia-zen-and-ai-browsers",
+      "title": "Toolfolio: Arc alternatives",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://flaviocopes.com/alternative-browsers/",
+      "title": "Flavio Copes: 50 browsers compared",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Developer identity",
+    "Version",
+    "Distribution channel",
+    "Telemetry/privacy",
+    "Licence (MPL-2.0 per roundup)"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3
+    ],
+    "customFilterLists": [
+      "extension",
+      3
+    ],
+    "youtubeAds": [
+      "extension",
+      2
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "yes",
+      8
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      8,
+      "Spaces"
+    ],
+    "splitView": [
+      "yes",
+      8
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      3
+    ],
+    "commandBar": [
+      "yes",
+      6
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      5
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "yes",
+      5,
+      "iCloud"
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "yes",
+      5
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      7
+    ],
+    "passwordManager": [
+      "partial",
+      3
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "yes",
+      9,
+      "Arc import"
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      3
+    ],
+    "aiKillSwitch": [
+      "yes",
+      9
+    ],
+    "translation": [
+      "partial",
+      3
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "blocking": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "securityHardening": [
+      6.5,
+      "Unaudited per project",
+      "documented"
+    ],
+    "patchSpeed": [
+      5,
+      "Unverified",
+      "editorial"
+    ],
+    "telemetry": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lookCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      8,
+      "Arc-style Spaces",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "translation": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extensions": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "sync": [
+      1,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "passwords": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "mobileApps": [
+      4,
+      "iOS app",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      9,
+      "MPL-2.0",
+      "documented"
+    ],
+    "businessTrust": [
+      6,
+      "Open source but unknown",
+      "editorial"
+    ],
+    "longevity": [
+      3,
+      "Early access, unknown team",
+      "editorial"
+    ],
+    "ai": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      5,
+      "Early access",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,700 @@
+{
+  "id": "monocles-browser",
+  "name": "monocles browser",
+  "aliases": [
+    "monocles",
+    "monocles_browser"
+  ],
+  "group": "android",
+  "developer": "Arne-Brün Vogelsang (monocles)",
+  "hq": "Germany (not verified)",
+  "businessModel": "None; free software, with a default search run by the same project",
+  "engine": "blink",
+  "basedOn": "Privacy Browser (Stoutner) / Android System WebView",
+  "license": "GPL-3.0-only",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2021,
+  "status": "maintenance",
+  "statusNote": "Last release 1.9.3 in August 2025; no newer release found",
+  "version": {
+    "current": "1.9.3",
+    "date": "2025-08-21",
+    "upstream": "System WebView (monocles WebView by default)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "About one release a year (2024-01, 2024-09, 2025-08)",
+  "website": "https://codeberg.org/monocles/monocles_browser",
+  "tags": [
+    "android",
+    "privacy",
+    "f-droid",
+    "webview",
+    "open-source"
+  ],
+  "pitch": "Privacy-focused Android browser forked from Privacy Browser, with ad blocking.",
+  "summary": "monocles browser is an open-source Android browser based on Stoutner’s Privacy Browser. JavaScript and cookies are off by default, EasyList ad blocking is built in, and it defaults to the project’s own metasearch.",
+  "bestFor": [
+    "F-Droid users who want a locked-down WebView browser",
+    "People who like JavaScript-off-by-default browsing",
+    "Orbot/Tor proxy users"
+  ],
+  "notFor": [
+    "People who want a fully featured daily browser",
+    "Anyone who needs extensions or sync"
+  ],
+  "pros": [
+    {
+      "title": "Locked down by default",
+      "detail": "JavaScript and cookies are off until enabled."
+    },
+    {
+      "title": "Built-in ad blocking",
+      "detail": "Integrated EasyList filtering."
+    },
+    {
+      "title": "Orbot support",
+      "detail": "Can route traffic through the Tor Orbot proxy."
+    },
+    {
+      "title": "Open source",
+      "detail": "GPL-3.0 code on Codeberg and in F-Droid."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Slow updates",
+      "detail": "The last release found is 1.9.3 from August 2025."
+    },
+    {
+      "title": "Depends on system WebView",
+      "detail": "Security and compatibility depend on the phone’s WebView updates."
+    },
+    {
+      "title": "Small feature set",
+      "detail": "No extensions, sync or password manager."
+    }
+  ],
+  "signatureFeatures": [
+    "JavaScript off by default",
+    "EasyList ad blocking",
+    "Orbot proxy",
+    "SSL certificate pinning"
+  ],
+  "faq": [
+    {
+      "q": "Is monocles browser based on Privacy Browser?",
+      "a": "Yes. Its Codeberg page says it is based on Stoutner’s Privacy Browser."
+    },
+    {
+      "q": "Is it still updated?",
+      "a": "The latest release found is 1.9.3 (August 2025), with releases roughly yearly."
+    },
+    {
+      "q": "What is the default search?",
+      "a": "The monocles metasearch engine, which says it does not save your IP or queries."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2021-06",
+      "event": "Added to F-Droid"
+    },
+    {
+      "date": "2024-09",
+      "event": "Version 1.9.2 released"
+    },
+    {
+      "date": "2025-08",
+      "event": "Version 1.9.3: upstream merge, Android 16 preparation, improved URL bar"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks"
+    ],
+    "note": "Settings and bookmarks can be imported and exported."
+  },
+  "alternatives": [
+    "privacy-browser-android",
+    "ironfox",
+    "mull"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "local-only",
+      "items": [
+        "bookmarks",
+        "settings"
+      ],
+      "crossOs": false,
+      "note": "Import and export of settings and bookmarks"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No password manager"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension support",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "JavaScript and cookies off by default; EasyList filtering",
+      "telemetry": "None reported; no known trackers",
+      "jurisdiction": "Germany (not verified)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "monocles search (metasearch)",
+    "telemetry": "No known trackers (IzzyOnDroid)",
+    "drm": "None documented",
+    "codecs": "System WebView codecs",
+    "sandbox": "System WebView sandbox",
+    "patchLag": "Depends on the phone’s WebView updates",
+    "languages": "Not documented"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Android 4.4+ with monocles WebView by default (not verified for newer builds)",
+      "arch": [
+        "arm64",
+        "arm"
+      ],
+      "stores": [
+        "f-droid",
+        "izzy"
+      ],
+      "notes": [
+        "Source on Codeberg; GPL-3.0-only"
+      ],
+      "highlights": [
+        "JS off by default"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "Developer location",
+    "Current minimum Android version",
+    "Whether a release newer than 1.9.3 exists"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      5,
+      "EasyList plus JS/cookies off"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      3,
+      "JS off reduces exposure"
+    ],
+    "httpsOnly": [
+      "partial",
+      4
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      3
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "partial",
+      5
+    ],
+    "adBlocker": [
+      "yes",
+      6,
+      "EasyList"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "partial",
+      3
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      4,
+      "Settings and bookmarks import/export"
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      4
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      5
+    ],
+    "devtools": [
+      "no",
+      0
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      6.5,
+      "System WebView speed, JS off by default",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "JS off makes pages light",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7,
+      "WebView network stack",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Small and light",
+      "editorial"
+    ],
+    "smoothness": [
+      6.5,
+      "WebView rendering",
+      "editorial"
+    ],
+    "graphics": [
+      4,
+      "JS off by default limits WebGL",
+      "editorial"
+    ],
+    "memory": [
+      7.5,
+      "Lightweight wrapper",
+      "editorial"
+    ],
+    "cpu": [
+      7,
+      "Light",
+      "editorial"
+    ],
+    "battery": [
+      7,
+      "Light",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "Nothing to limit",
+      "editorial"
+    ],
+    "lowEnd": [
+      8,
+      "Small app, old Android supported",
+      "editorial"
+    ],
+    "installSize": [
+      8,
+      "Small APK",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      8.5,
+      "JS and cookies off by default",
+      "documented"
+    ],
+    "blocking": [
+      6,
+      "EasyList only",
+      "editorial"
+    ],
+    "fingerprinting": [
+      5,
+      "JS off helps; no dedicated protection",
+      "editorial"
+    ],
+    "securityHardening": [
+      5.5,
+      "WebView sandbox",
+      "editorial"
+    ],
+    "patchSpeed": [
+      4,
+      "WebView and release delays",
+      "editorial"
+    ],
+    "telemetry": [
+      10,
+      "No trackers",
+      "documented"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6,
+      "Per-site settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6,
+      "Many toggles",
+      "editorial"
+    ],
+    "tabManagement": [
+      4,
+      "Basic tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Changeable engine",
+      "editorial"
+    ],
+    "downloads": [
+      4,
+      "Basic",
+      "editorial"
+    ],
+    "productivity": [
+      2,
+      "Minimal",
+      "editorial"
+    ],
+    "media": [
+      3,
+      "JS off limits web video",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "extras": [
+      2,
+      "Orbot integration",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extensions",
+      "editorial"
+    ],
+    "sync": [
+      1,
+      "Local import/export only",
+      "editorial"
+    ],
+    "passwords": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "mobileApps": [
+      6,
+      "Android only, its core",
+      "editorial"
+    ],
+    "webCompat": [
+      4,
+      "Many sites break with JS off",
+      "editorial"
+    ],
+    "devTools": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "accessibility": [
+      4,
+      "Android basics",
+      "editorial"
+    ],
+    "openSource": [
+      9,
+      "GPL-3.0 on Codeberg",
+      "documented"
+    ],
+    "businessTrust": [
+      8,
+      "No business model",
+      "editorial"
+    ],
+    "longevity": [
+      4.5,
+      "One person; roughly yearly releases",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      4,
+      "Needs toggling JavaScript for most sites",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://codeberg.org/monocles/monocles_browser/releases",
+      "title": "monocles browser releases on Codeberg",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://apt.izzysoft.de/fdroid/index/apk/de.monocles.browser?repo=main",
+      "title": "monocles browser on IzzyOnDroid",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://f-droid.org/en/packages/de.monocles.browser/",
+      "title": "monocles browser on F-Droid",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

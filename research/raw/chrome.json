@@ -1,0 +1,928 @@
+{
+  "id": "chrome",
+  "name": "Google Chrome",
+  "aliases": [
+    "Chrome"
+  ],
+  "group": "mainstream",
+  "developer": "Google LLC",
+  "hq": "United States",
+  "businessModel": "Free; funded by Google Search/advertising ecosystem; Gemini features partly gated behind Google AI Pro/Ultra subscriptions",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary freeware (built on open-source Chromium)",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Browser is free; Gemini auto browse requires Google AI Pro/Ultra (US)",
+  "releaseYear": 2008,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "156.0.8078.74",
+    "date": "2026-10-27",
+    "upstream": "Chromium 156"
+  },
+  "channels": [
+    "Stable",
+    "Extended Stable (8-week, enterprise)",
+    "Beta",
+    "Dev",
+    "Canary"
+  ],
+  "updateCadence": "Every 2 weeks since Chrome 153 (Sept 8, 2026; previously 4 weeks); weekly security updates; Extended Stable every 8 weeks",
+  "website": "https://www.google.com/chrome/",
+  "tags": [
+    "mainstream",
+    "chromium",
+    "gemini",
+    "ai",
+    "extensions",
+    "sync"
+  ],
+  "pitch": "The default web browser for most people, now with Gemini built in.",
+  "summary": "The world's most used browser: fastest-moving engine, best site compatibility and a huge extension store, but weak default privacy, no MV2 ad blockers any more, and increasingly woven into Gemini.",
+  "bestFor": [
+    "People who want maximum site compatibility and polish",
+    "Google account / Android / Chromebook users",
+    "Developers testing against the reference engine",
+    "Users who want Gemini built into the browser"
+  ],
+  "notFor": [
+    "People who want strong tracker/ad blocking out of the box",
+    "Users who want full uBlock Origin (MV2 is gone)",
+    "Anyone who wants to minimise Google data collection"
+  ],
+  "pros": [
+    {
+      "title": "Best compatibility",
+      "detail": "Sites are built and tested against Chrome first, so almost everything just works."
+    },
+    {
+      "title": "Fast engine",
+      "detail": "V8 and Blink lead or tie the field on JavaScript and graphics workloads."
+    },
+    {
+      "title": "Polished sync",
+      "detail": "Bookmarks, passwords, passkeys, tabs and settings follow your Google account across every OS."
+    },
+    {
+      "title": "Native vertical tabs",
+      "detail": "Vertical tab layout rolled out to stable from Chrome 147 (April 2026), plus saved tab groups and split view."
+    },
+    {
+      "title": "Gemini built in",
+      "detail": "Gemini side panel, AI Mode in the address bar, on-device Gemini Nano scam detection and auto browse for subscribers."
+    },
+    {
+      "title": "Security cadence",
+      "detail": "Weekly security updates and a two-week major cycle since Chrome 153; HTTPS-by-default from Chrome 154."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Weak default privacy",
+      "detail": "Third-party cookies are still allowed and there is no content blocker or strong anti-fingerprinting."
+    },
+    {
+      "title": "MV2 fully gone",
+      "detail": "Manifest V2 was disabled from Chrome 138-139 and all MV2 extensions were purged from the Web Store on 2026-08-31; only uBlock Origin Lite-style MV3 blockers remain."
+    },
+    {
+      "title": "Heavy on RAM",
+      "detail": "Memory use is high compared with Safari and Firefox despite Memory Saver."
+    },
+    {
+      "title": "Google-centric AI and data",
+      "detail": "Gemini features push you toward a signed-in Google account and parts need a paid AI plan."
+    }
+  ],
+  "signatureFeatures": [
+    "Gemini in Chrome and auto browse",
+    "Chrome Web Store (MV3)",
+    "Google account sync and Password Manager with passkeys",
+    "Native vertical tabs and tab groups",
+    "Enhanced Safe Browsing with on-device Gemini Nano"
+  ],
+  "faq": [
+    {
+      "q": "Can I still use uBlock Origin in Chrome?",
+      "a": "No. Manifest V2 support was removed (disabled in Chrome 138-139, Web Store MV2 purge on 2026-08-31, MV2 code deleted in Chrome 151). Use uBlock Origin Lite (MV3) or switch to Firefox for the full version."
+    },
+    {
+      "q": "Does Chrome for Android support extensions?",
+      "a": "No. Standard Chrome for Android and iOS have no extension support; extension-capable desktop-class Chromium builds are experimental and aimed at Android-based PCs."
+    },
+    {
+      "q": "How often does Chrome update now?",
+      "a": "Every two weeks since Chrome 153 (September 8, 2026), with security fixes shipped weekly."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2008-09",
+      "event": "Chrome 1.0 released"
+    },
+    {
+      "date": "2025-07",
+      "event": "Chrome 138: MV2 extensions stop running; Chrome 139 removes the enterprise MV2 policy"
+    },
+    {
+      "date": "2026-01",
+      "event": "Gemini 3-powered \"auto browse\" announced for AI Pro/Ultra subscribers in the US"
+    },
+    {
+      "date": "2026-04",
+      "event": "Chrome 147 starts staged rollout of native vertical tabs on desktop"
+    },
+    {
+      "date": "2026-08",
+      "event": "All remaining MV2 extensions removed from the Chrome Web Store (Aug 31); Gemini in Chrome available to all US Android users"
+    },
+    {
+      "date": "2026-09",
+      "event": "Chrome 153 moves stable releases to a 2-week cycle; Chrome 154 makes \"Always use secure connections\" default"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "autofill",
+      "search engines"
+    ],
+    "note": "Imports from Edge, Firefox, Safari and other browsers; Google account sync restores everything on a new device."
+  },
+  "alternatives": [
+    "edge",
+    "firefox",
+    "brave",
+    "vivaldi",
+    "safari",
+    "ecosia-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "passkeys",
+        "history",
+        "tabs",
+        "extensions",
+        "settings",
+        "autofill",
+        "reading list"
+      ],
+      "crossOs": true,
+      "note": "Google Account; optional sync passphrase for end-to-end encryption of most data"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": true,
+      "breachCheck": true,
+      "note": "Google Password Manager: passkey sync, compromised password checks, automatic password change on supported sites"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Disabled in Chrome 138/139 (2025); Web Store MV2 purge 2026-08-31; MV2 switches deleted in Chrome 151",
+      "date": "2025-2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Gemini in Chrome (free for signed-in adults in supported countries), auto browse needs AI Pro/Ultra; per-feature toggles, no single master off switch found"
+    },
+    "privacy": {
+      "defaults": "Third-party cookies allowed; Safe Browsing on; HTTPS-first default from Chrome 154; no tracker blocking by default",
+      "telemetry": "Usage stats and crash reports opt-in at setup but Google services ping continuously; signed-in personalisation",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google Search",
+    "telemetry": "Optional usage statistics/crash reports; Safe Browsing and sync contact Google servers",
+    "drm": "Widevine L3 (software) on desktop, L1 on supported Android devices/Chromebooks; Netflix capped at 1080p on desktop",
+    "codecs": "H.264, HEVC (hardware), VP9, AV1, Opus",
+    "sandbox": "Multi-process sandbox with site isolation, MiraclePtr, V8 sandbox, Enhanced Safe Browsing",
+    "patchSpeed": "Reference implementation; weekly security releases",
+    "languages": "~50 UI languages (Google lists 50+)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "winget"
+      ],
+      "notes": [
+        "Chrome 109 was the last for Windows 7/8; current builds need Windows 10 or later",
+        "Not in the Microsoft Store"
+      ],
+      "highlights": [
+        "Vertical tabs, Gemini side panel, auto browse (US, paid)"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 13 Ventura",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew"
+      ],
+      "notes": [
+        "Wikipedia lists macOS Ventura as the current minimum"
+      ],
+      "highlights": [
+        "Gets features at the same time as Windows"
+      ],
+      "scoreDelta": {
+        "battery": -1
+      }
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Ubuntu 22.04+ / Debian 11+ / Fedora / openSUSE (64-bit)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "official-installer"
+      ],
+      "notes": [
+        "Official .deb and .rpm repos; no official Flathub/snap (community Flathub package exists)"
+      ],
+      "highlights": [
+        "Same feature set as other desktops"
+      ],
+      "scoreDelta": {
+        "startup": -0.5
+      }
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 10",
+      "arch": [
+        "arm64",
+        "arm32",
+        "x64"
+      ],
+      "stores": [
+        "google-play",
+        "preinstalled"
+      ],
+      "notes": [
+        "No extensions",
+        "Gemini in Chrome available to all US Android users since Aug 2026; auto browse for AI Pro/Ultra on Android 12+ with 4GB RAM",
+        "Android 10 minimum per Wikipedia"
+      ],
+      "highlights": [
+        "Tab groups, Lens, Gemini, Reading mode, password manager with passkeys"
+      ],
+      "scoreDelta": {
+        "extensions": -6,
+        "blocking": -1,
+        "memory": 0
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS 18",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine (Apple rule); version numbering runs ahead of or alongside desktop (157.x vs desktop 156 on 2026-10-27)",
+        "No extensions",
+        "Gemini available via Page tools"
+      ],
+      "highlights": [
+        "Google account sync, Lens, Safe Browsing"
+      ],
+      "scoreDelta": {
+        "extensions": -7,
+        "jsSpeed": -1,
+        "webCompat": -1,
+        "blocking": -1,
+        "devTools": -4
+      }
+    },
+    "chromeos": {
+      "status": "active",
+      "minOs": "ChromeOS (built in)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "preinstalled"
+      ],
+      "notes": [
+        "Browser is the core of ChromeOS; ChromeOS stable lags (browser 154 on 2026-10-09)",
+        "Google is transitioning consumer devices toward Android-based Aluminium OS / Googlebook (announced May 2026, unconfirmed details)"
+      ],
+      "highlights": [
+        "Chromebook Plus gets Gemini features"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Google_Chrome",
+      "title": "Google Chrome - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://chromereleases.googleblog.com/",
+      "title": "Chrome Releases blog",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline",
+      "title": "Manifest V2 support timeline - Chrome for Developers",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.ghacks.net/2026/09/01/manifest-v2-is-dead-as-chrome-web-store-permanently-purges-legacy-extensions/",
+      "title": "gHacks: MV2 is dead as Chrome Web Store purges legacy extensions",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://9to5google.com/2026/01/28/chrome-gemini-auto-browse/",
+      "title": "9to5Google: Chrome rolling out Gemini 3 auto browse",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/",
+      "title": "Google blog: Gemini in Chrome with auto browse comes to Android",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.androidauthority.com/chrome-vertical-tabs-stable-3655470/",
+      "title": "Android Authority: Chrome vertical tabs out of beta",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://thenewstack.io/chrome-two-week-releases/",
+      "title": "The New Stack: Chrome moves to a two-week release cycle",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Whether a single master switch for all Gemini/AI features exists (only per-feature toggles and enterprise policies confirmed)",
+    "Exact Chrome for Linux ARM64 availability",
+    "Chrome 154 default-HTTPS rollout is staged; one source says reached stable 2026-10-01, not confirmed against official notes",
+    "Memory/CPU/battery scores are editorial anchors, not new measurements",
+    "Windows/macOS minimum from Wikipedia infobox, not from Google support page"
+  ],
+  "confidence": "high",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "3P cookies still allowed (2025 decision); optional blocking; IP Protection in Incognito only"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2,
+      "Minimal; UA reduction only"
+    ],
+    "httpsOnly": [
+      "yes",
+      8,
+      "Always use secure connections default from Chrome 154 (staged)"
+    ],
+    "doh": [
+      "yes",
+      8,
+      "Secure DNS with provider choice"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4,
+      "CHIPS partitioned cookies opt-in for sites; no default isolation"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      5,
+      "Toggles exist but Google services still contacted"
+    ],
+    "privateHardening": [
+      "partial",
+      5,
+      "Incognito blocks 3P cookies; no fingerprint or IP hiding by default"
+    ],
+    "adBlocker": [
+      "partial",
+      3,
+      "Only heavy-ad intervention; no content blocker"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      4,
+      "MV3 blockers have limited cosmetic rules"
+    ],
+    "customFilterLists": [
+      "extension",
+      4,
+      "uBO Lite/AdGuard MV3 only"
+    ],
+    "youtubeAds": [
+      "extension",
+      2,
+      "Hard post-MV3"
+    ],
+    "cookieBanners": [
+      "extension",
+      4,
+      "Via MV3 extensions"
+    ],
+    "verticalTabs": [
+      "yes",
+      7,
+      "Native from Chrome 147 (staged), Settings > Appearance"
+    ],
+    "tabGroups": [
+      "yes",
+      9,
+      "Saved and shared groups, AI suggestions"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "partial",
+      3,
+      "Profiles and saved groups only"
+    ],
+    "splitView": [
+      "yes",
+      7,
+      "Two tabs side by side"
+    ],
+    "tabSleeping": [
+      "yes",
+      8,
+      "Memory Saver and Energy Saver"
+    ],
+    "tabSearch": [
+      "yes",
+      8,
+      "Ctrl+Shift+A tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      4,
+      "Split view of two tabs"
+    ],
+    "readerMode": [
+      "yes",
+      6,
+      "Reading mode side panel"
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "Side panel (Gemini, reading list, bookmarks, extensions)"
+    ],
+    "pip": [
+      "yes",
+      8,
+      "Video and document PiP"
+    ],
+    "screenshots": [
+      "partial",
+      5,
+      "Built-in Lens/screenshot share; no full capture tool"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      "Fixed shortcuts; extension shortcuts customizable"
+    ],
+    "readLater": [
+      "yes",
+      7,
+      "Reading list"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      10,
+      "MV3 only now"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "Removed 2025-26"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Only uBO Lite"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      "No extensions on Android or iOS"
+    ],
+    "userscripts": [
+      "extension",
+      6,
+      "Tampermonkey etc. require enabling User Scripts permission"
+    ],
+    "syncBookmarks": [
+      "yes",
+      9
+    ],
+    "syncPasswords": [
+      "yes",
+      9
+    ],
+    "syncTabs": [
+      "yes",
+      9
+    ],
+    "e2eeSync": [
+      "partial",
+      6,
+      "Optional passphrase; default is Google-managed encryption"
+    ],
+    "profiles": [
+      "yes",
+      9,
+      "Profile switcher, Google account profiles"
+    ],
+    "passwordManager": [
+      "yes",
+      8,
+      "Google Password Manager with breach checks"
+    ],
+    "passkeys": [
+      "yes",
+      9,
+      "Synced passkeys across devices"
+    ],
+    "importData": [
+      "yes",
+      8
+    ],
+    "widevine": [
+      "yes",
+      9,
+      "L3 on desktop, L1 on supported Android/ChromeOS"
+    ],
+    "netflix4k": [
+      "no",
+      0,
+      "Netflix caps Chrome at 1080p"
+    ],
+    "hevc": [
+      "yes",
+      8,
+      "Hardware HEVC decode"
+    ],
+    "av1": [
+      "yes",
+      10
+    ],
+    "hwDecode": [
+      "yes",
+      9
+    ],
+    "aiAssistant": [
+      "yes",
+      9,
+      "Gemini in Chrome, AI Mode in omnibox"
+    ],
+    "aiSummarizer": [
+      "yes",
+      8,
+      "Page summaries, multi-tab comparison"
+    ],
+    "agenticBrowsing": [
+      "yes",
+      7,
+      "Auto browse for AI Pro/Ultra, US only"
+    ],
+    "localAi": [
+      "yes",
+      8,
+      "Gemini Nano on-device (scam detection, built-in AI APIs)"
+    ],
+    "aiKillSwitch": [
+      "partial",
+      5,
+      "Per-feature toggles and policies; no single switch confirmed"
+    ],
+    "translation": [
+      "yes",
+      9,
+      "Built-in page translation, on-device model"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      9
+    ],
+    "enterprisePolicies": [
+      "yes",
+      10,
+      "Chrome Browser Cloud Management, 400+ policies"
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Basic download bubble"
+    ],
+    "customThemes": [
+      "yes",
+      6,
+      "Chrome Web Store themes, Material You color"
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "V8 benchmark leader",
+      "documented"
+    ],
+    "pageLoad": [
+      9,
+      "Blink reference engine",
+      "documented"
+    ],
+    "networkSpeed": [
+      9,
+      "HTTP/3, preconnect, speculation rules",
+      "documented"
+    ],
+    "startup": [
+      8,
+      "Fast on SSD; calibration anchor",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Compositor scrolling, GPU raster",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "WebGPU shipped on all desktop platforms",
+      "documented"
+    ],
+    "memory": [
+      5,
+      "Multi-process; high RAM despite Memory Saver",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Efficient JS but heavy background processes",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Energy Saver helps; below Safari",
+      "editorial"
+    ],
+    "resourceControls": [
+      8,
+      "Memory Saver, Energy Saver, per-site exceptions",
+      "documented"
+    ],
+    "lowEnd": [
+      6,
+      "Needs Win10+, 4GB RAM advised",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Large install, fast frequent updates",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      4,
+      "3P cookies allowed, no blocking by default",
+      "documented"
+    ],
+    "blocking": [
+      3,
+      "No built-in blocker; MV3 limits extensions",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No meaningful fingerprint resistance",
+      "documented"
+    ],
+    "securityHardening": [
+      9.5,
+      "Site isolation, strong sandbox, V8 sandbox",
+      "documented"
+    ],
+    "patchSpeed": [
+      10,
+      "Weekly security releases, 2-week majors",
+      "documented"
+    ],
+    "telemetry": [
+      3,
+      "Google services telemetry, signed-in personalisation",
+      "documented"
+    ],
+    "lookCustom": [
+      5,
+      "Themes and Material You; fixed layout besides vertical tabs",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      5,
+      "Few shortcuts/gestures options",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7,
+      "chrome://flags and extensive enterprise policies",
+      "documented"
+    ],
+    "tabManagement": [
+      7.5,
+      "Vertical tabs, groups, split view, no stacks",
+      "documented"
+    ],
+    "searchFreedom": [
+      7,
+      "Custom engines allowed; Google default",
+      "documented"
+    ],
+    "downloads": [
+      6,
+      "Basic bubble UI",
+      "editorial"
+    ],
+    "productivity": [
+      7,
+      "Side panel, Reading mode, Lens, Gemini",
+      "editorial"
+    ],
+    "media": [
+      10,
+      "Full codec/DRM support, Widevine",
+      "documented"
+    ],
+    "translation": [
+      9,
+      "On-device translation, wide language set",
+      "documented"
+    ],
+    "extras": [
+      5,
+      "Few built-in extras beyond Gemini and Lens",
+      "editorial"
+    ],
+    "extensions": [
+      7,
+      "Biggest store but MV3-only, MV2 purged 2026-08-31",
+      "documented"
+    ],
+    "sync": [
+      9.5,
+      "Best cross-device sync across all OSes",
+      "documented"
+    ],
+    "passwords": [
+      8.5,
+      "Google Password Manager, passkeys, breach checks",
+      "documented"
+    ],
+    "mobileApps": [
+      9,
+      "Android and iOS apps, no extensions",
+      "documented"
+    ],
+    "webCompat": [
+      10,
+      "Reference browser for sites",
+      "documented"
+    ],
+    "devTools": [
+      10,
+      "Chrome DevTools is the industry benchmark",
+      "documented"
+    ],
+    "accessibility": [
+      9,
+      "Screen reader support, caret browsing, zoom",
+      "documented"
+    ],
+    "openSource": [
+      3,
+      "Proprietary build on open Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      4,
+      "Ad-funded; Google data collection incentives",
+      "editorial"
+    ],
+    "longevity": [
+      10,
+      "Dominant share, 2-week cadence, backed by Google",
+      "documented"
+    ],
+    "ai": [
+      9.5,
+      "Gemini, auto browse, Gemini Nano",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      10,
+      "Simplest setup for most users",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,758 @@
+{
+  "id": "nyxt",
+  "name": "Nyxt",
+  "aliases": [
+    "Nyxt Browser",
+    "The Hacker’s Browser"
+  ],
+  "group": "minimal",
+  "developer": "Atlas Engineer",
+  "hq": "United States (unverified)",
+  "businessModel": "Open source; donations/sponsors, consulting",
+  "engine": "blink",
+  "basedOn": "Electron (Chromium); WebKitGTK optional on Linux",
+  "license": "BSD-3-Clause",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2017,
+  "status": "active",
+  "statusNote": "4.0.0 (Jan 2026) moved the default renderer to Electron; WebKitGTK is now a build option",
+  "version": {
+    "current": "4.0.0",
+    "date": "2026-01-18",
+    "upstream": "Electron/Chromium (version unspecified)"
+  },
+  "channels": [
+    "Stable",
+    "Pre-release (Git)"
+  ],
+  "updateCadence": "Irregular; 4.0 after about two years of pre-releases",
+  "website": "https://nyxt.atlas.engineer",
+  "tags": [
+    "keyboard-driven",
+    "common-lisp",
+    "hackable",
+    "emacs-like"
+  ],
+  "pitch": "Emacs-like, Lisp-hackable keyboard browser; 4.0 now renders with Electron.",
+  "summary": "Nyxt is a programmable browser written in Common Lisp, driven by commands and key chords. Version 4.0 (Jan 2026) switched to an Electron renderer for performance and macOS/Windows plans; WebKitGTK is still possible as a source build.",
+  "bestFor": [
+    "Emacs and Lisp users who want to script their browser",
+    "Power users who like buffers and a command palette",
+    "Tinkerers who want a hackable browser"
+  ],
+  "notFor": [
+    "Beginners and non-keyboard users",
+    "People who need extensions and sync",
+    "Anyone who needs predictable, easy builds"
+  ],
+  "pros": [
+    {
+      "title": "Fully hackable",
+      "detail": "All source can be introspected and changed live in Common Lisp."
+    },
+    {
+      "title": "Command-driven",
+      "detail": "Emacs/vi/CUA keybindings, link hints and a command palette."
+    },
+    {
+      "title": "Adblock by default",
+      "detail": "Pre-release 10 turned adblocking on by default."
+    },
+    {
+      "title": "Electron performance",
+      "detail": "The 4.x Electron renderer improved speed over WebKitGTK."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Steep learning curve",
+      "detail": "Lisp configuration and unusual concepts are hard for newcomers."
+    },
+    {
+      "title": "Young Electron port",
+      "detail": "WebExtensions install is only experimental and not integrated into Nyxt’s API."
+    },
+    {
+      "title": "Packaging friction",
+      "detail": "AUR reports in Aug 2026 describe broken submodule URLs and dependency pins."
+    },
+    {
+      "title": "No sync or accounts",
+      "detail": "No built-in synchronization."
+    }
+  ],
+  "signatureFeatures": [
+    "Common Lisp scripting",
+    "Command palette and buffers",
+    "Link hints",
+    "Multi-keybinding modes (Emacs, vi, CUA)"
+  ],
+  "faq": [
+    {
+      "q": "What engine does Nyxt use now?",
+      "a": "Version 4.0 defaults to Electron (Chromium); WebKitGTK remains a compile-time option on Linux."
+    },
+    {
+      "q": "Does Nyxt run on Windows?",
+      "a": "Linux and macOS are documented; Windows support via Electron is a stated goal but not confirmed here."
+    },
+    {
+      "q": "Can I use Chrome extensions?",
+      "a": "Only experimentally through cl-electron; it is not a supported feature yet."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "First releases (as Next browser)"
+    },
+    {
+      "date": "2025-04",
+      "event": "4.0 pre-release series with Electron renderer begins to stabilize"
+    },
+    {
+      "date": "2025-06",
+      "event": "Pre-release 10: adblock default, AppImage"
+    },
+    {
+      "date": "2025-08",
+      "event": "Pre-release 13: all modes audited"
+    },
+    {
+      "date": "2026-01",
+      "event": "4.0.0 released (2026-01-18)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks (manual)"
+    ],
+    "note": "No automatic importers found; bookmarks are Lisp data files."
+  },
+  "alternatives": [
+    "qutebrowser",
+    "min",
+    "falkon",
+    "luakit"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "linux": "webkit (optional source build)"
+    },
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Password-manager mode with KeePassXC, Bitwarden, pass backends"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Experimental WebExtension install in cl-electron (pre-release 9), not integrated",
+      "date": "2025-06"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Adblock on by default; no telemetry",
+      "telemetry": "None known",
+      "jurisdiction": "Open-source project"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo (configurable)",
+    "telemetry": "None known",
+    "drm": "None by default",
+    "codecs": "Chromium codecs via Electron",
+    "sandbox": "Electron/Chromium sandbox",
+    "patchLag": "Tied to Electron/cl-electron updates",
+    "languages": "English"
+  },
+  "platforms": {
+    "linux": {
+      "status": "active",
+      "minOs": "Modern Linux (X11 or Wayland)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "flathub",
+        "aur",
+        "github"
+      ],
+      "notes": [
+        "AppImage from releases; Flathub app engineer.atlas.Nyxt; Wayland rendering fixed in pre-release 11"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "beta",
+      "minOs": "Unspecified",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "homebrew"
+      ],
+      "notes": [
+        "Electron port fixes for macOS appear in pre-release 7; Homebrew cask not verified"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://github.com/atlas-engineer/nyxt/releases",
+      "title": "Nyxt GitHub releases",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://lwn.net/Articles/1001773/",
+      "title": "Nyxt: the Emacs-like web browser (LWN)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/atlas-engineer/nyxt/issues/2989",
+      "title": "Support Chrome-based renderer (issue 2989)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://aur.archlinux.org/packages/nyxt-git",
+      "title": "nyxt-git on AUR",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://flathub.org/apps/engineer.atlas.Nyxt",
+      "title": "Nyxt on Flathub",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Electron/Chromium version in 4.0.0",
+    "Windows support status",
+    "Homebrew availability",
+    "HQ country of Atlas Engineer",
+    "Whether Flathub build uses Electron or WebKitGTK",
+    "User-script mode in 4.x"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "Adblock on; no tracker lists"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      9,
+      "No telemetry known"
+    ],
+    "privateHardening": [
+      "yes",
+      5,
+      "Nosave / private buffers"
+    ],
+    "adBlocker": [
+      "yes",
+      5,
+      "On by default since pre-release 10"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      2,
+      "Unverified"
+    ],
+    "customFilterLists": [
+      "partial",
+      3,
+      "Lisp configurable"
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "partial",
+      3,
+      "Buffer categories via scripting"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "yes",
+      9,
+      "Buffer search with completion"
+    ],
+    "pinnedTabs": [
+      "partial",
+      2,
+      "Not first-class"
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      6,
+      "Reader mode"
+    ],
+    "notes": [
+      "partial",
+      4,
+      "Annotation and bookmark notes"
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "yes",
+      10,
+      "Core of the UI"
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      10,
+      "Emacs/vi/CUA keymaps"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      2,
+      "Experimental in cl-electron"
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "partial",
+      4,
+      "Scripting in Lisp; user-scripts mode unverified"
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      7,
+      "Data profiles"
+    ],
+    "passwordManager": [
+      "yes",
+      5,
+      "Password-manager mode, external backends"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      2,
+      "Manual"
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "partial",
+      4,
+      "Platform dependent"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Added in pre-release 11"
+    ],
+    "customThemes": [
+      "yes",
+      7,
+      "Themes in Lisp, dark theme in pre-release 13"
+    ],
+    "customSearchEngines": [
+      "yes",
+      8,
+      "Configurable engines"
+    ],
+    "devtools": [
+      "yes",
+      6,
+      "Electron DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "V8 via Electron renderer",
+      "documented"
+    ],
+    "pageLoad": [
+      7.5,
+      "Blink, but Lisp UI overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7.5,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      5,
+      "Lisp image plus Electron start",
+      "editorial"
+    ],
+    "smoothness": [
+      7.5,
+      "Chromium compositor",
+      "editorial"
+    ],
+    "graphics": [
+      7.5,
+      "WebGL through Electron",
+      "editorial"
+    ],
+    "memory": [
+      4.5,
+      "Electron plus Lisp runtime",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      5,
+      "Electron baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "No tab sleeping",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs Electron-capable hardware",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Large AppImage with Electron bundle",
+      "documented"
+    ],
+    "privacyDefaults": [
+      6,
+      "Adblock default, no telemetry",
+      "editorial"
+    ],
+    "blocking": [
+      5.5,
+      "Basic adblock only",
+      "editorial"
+    ],
+    "fingerprinting": [
+      3,
+      "Chromium default surface",
+      "editorial"
+    ],
+    "securityHardening": [
+      6,
+      "Electron sandbox; young port",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5.5,
+      "Depends on Electron bumps",
+      "editorial"
+    ],
+    "telemetry": [
+      9,
+      "No telemetry known",
+      "documented"
+    ],
+    "lookCustom": [
+      8,
+      "Everything scriptable, dark theme",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      10,
+      "Keymaps, modes and Lisp hooks",
+      "editorial"
+    ],
+    "advancedSettings": [
+      10,
+      "Full Lisp configuration",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Buffers, tabs bar, completion",
+      "editorial"
+    ],
+    "searchFreedom": [
+      9,
+      "Fully configurable engines",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Download manager since pre-release 11",
+      "editorial"
+    ],
+    "productivity": [
+      7.5,
+      "Command palette, reader, annotations",
+      "editorial"
+    ],
+    "media": [
+      5.5,
+      "No DRM; Chromium codecs",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "No translation",
+      "editorial"
+    ],
+    "extras": [
+      4,
+      "Hackable modes in Lisp",
+      "editorial"
+    ],
+    "extensions": [
+      3.5,
+      "Lisp extensions; WebExtensions experimental",
+      "editorial"
+    ],
+    "sync": [
+      0.5,
+      "No sync",
+      "editorial"
+    ],
+    "passwords": [
+      4.5,
+      "External backends only",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile app",
+      "documented"
+    ],
+    "webCompat": [
+      8,
+      "Blink engine",
+      "editorial"
+    ],
+    "devTools": [
+      7,
+      "Electron DevTools (unverified wiring)",
+      "editorial"
+    ],
+    "accessibility": [
+      3.5,
+      "Keyboard-first; screen reader support unclear",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "BSD-3-Clause",
+      "documented"
+    ],
+    "businessTrust": [
+      8,
+      "Small company, open source",
+      "editorial"
+    ],
+    "longevity": [
+      5.5,
+      "Small team, slow releases, build instability",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      1.5,
+      "Lisp config, unusual concepts",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

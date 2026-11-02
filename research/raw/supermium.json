@@ -1,0 +1,751 @@
+{
+  "id": "supermium",
+  "name": "Supermium",
+  "aliases": [],
+  "group": "forks",
+  "developer": "Shane Fournier (win32ss)",
+  "hq": "Independent developer (jurisdiction unverified)",
+  "businessModel": "Volunteer open-source project; no monetisation",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "BSD-3-Clause",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2023,
+  "status": "active",
+  "statusNote": "Active; latest 150.0.7871.255 R2.01 (2026-10-21)",
+  "version": {
+    "current": "150.0.7871.255 R2.01",
+    "date": "2026-10-21",
+    "upstream": "Chromium 150"
+  },
+  "channels": [
+    "Stable",
+    "Preview"
+  ],
+  "updateCadence": "Irregular; tracks selected Chromium releases (144 through June-July 2026, 150 by Oct 2026) with R-revisions",
+  "website": "https://www.supermium.net",
+  "tags": [
+    "windows-xp",
+    "windows-7",
+    "legacy-os",
+    "chromium"
+  ],
+  "pitch": "Modern Chromium for Windows XP, Vista, 7, 8 and newer.",
+  "summary": "A Chromium fork that keeps current Blink/V8 running on Windows XP through 11, with Google Sync, Chrome Web Store access and ungoogled-chromium privacy flags. The only mainstream way to get a recent Chromium engine on XP/Vista/7.",
+  "bestFor": [
+    "Windows XP, Vista, 7 and 8 users",
+    "Old PCs needing a modern engine",
+    "People wanting MV2 uBlock Origin on a Chromium base"
+  ],
+  "notFor": [
+    "Users on current Windows who want fast security patching",
+    "Anyone needing macOS, Linux or mobile",
+    "People who need guaranteed Netflix/DRM"
+  ],
+  "pros": [
+    {
+      "title": "Runs on XP to 11",
+      "detail": "Windows XP SP1+, Vista, 7, 8, 10, 11 in 32-bit and 64-bit builds."
+    },
+    {
+      "title": "Modern engine on old OS",
+      "detail": "Tracks current Chromium major versions, so most modern sites work where Firefox ESR or old Chrome fail."
+    },
+    {
+      "title": "Sync works on XP",
+      "detail": "Google Sync is functional even on Windows XP per Wikipedia."
+    },
+    {
+      "title": "MV2 kept",
+      "detail": "Project says MV2 is not slated for removal and uBlock Origin can be sideloaded from GitHub."
+    },
+    {
+      "title": "Light on old hardware",
+      "detail": "Runs from 768 MB RAM with SSE2 or SSE3 CPUs."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Windows only",
+      "detail": "No macOS, Linux or mobile builds."
+    },
+    {
+      "title": "Security on legacy OS",
+      "detail": "XP/Vista lack modern OS mitigations; sandbox strength is below Chrome on Windows 11."
+    },
+    {
+      "title": "Patch lag",
+      "detail": "Supermium 150 is months behind current stable Chrome; patch cadence depends on one developer."
+    },
+    {
+      "title": "Rough edges",
+      "detail": "Occasional process failures on some XP systems were still open in Oct 2026."
+    }
+  ],
+  "signatureFeatures": [
+    "Windows XP/Vista/7 support",
+    "Classic Chrome UI themes",
+    "Google Sync on XP",
+    "ungoogled-chromium privacy flags"
+  ],
+  "faq": [
+    {
+      "q": "Does Supermium work on Windows XP in 2026?",
+      "a": "Yes. Windows XP SP3 or later with a Pentium 4+ SSE2 CPU and at least 768 MB RAM; release 150 notes still list an open XP process-failure fix."
+    },
+    {
+      "q": "Is uBlock Origin supported?",
+      "a": "MV2 extensions work by sideloading per the project; Wikipedia says MV2 is not yet available, so this is contested."
+    },
+    {
+      "q": "Is it safe to use on XP?",
+      "a": "The browser engine is current-ish, but the OS itself is unpatched, so risk remains."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2023-05",
+      "event": "First release"
+    },
+    {
+      "date": "2023",
+      "event": "Version 119 adds Vista support without Extended Kernel"
+    },
+    {
+      "date": "2024",
+      "event": "Version 121 adds Windows XP support"
+    },
+    {
+      "date": "2026-06",
+      "event": "144.0.7559.252 R4.01 released"
+    },
+    {
+      "date": "2026-07",
+      "event": "Release 144.0.7559.256 R5"
+    },
+    {
+      "date": "2026-10",
+      "event": "150.0.7871.255 R2.01 released (2026-10-21)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Chrome-style importer; Google Sync available."
+  },
+  "alternatives": [
+    "thorium",
+    "ungoogled-chromium",
+    "chrome",
+    "pale-moon",
+    "cent-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Google Sync works including on XP (Wikipedia)"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Chromium manager; passkeys unlikely on XP"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Project says MV2 retained, uBO sideloaded from GitHub; Wikipedia says not yet available",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Chromium defaults plus ungoogled-chromium flags",
+      "telemetry": "Google services remain; flags available",
+      "jurisdiction": "Independent developer"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google",
+    "telemetry": "Chromium-style; ungoogled flags available",
+    "drm": "Widevine unverified on XP/Vista/7",
+    "codecs": "H.264, VP9, AV1 (software on old hardware)",
+    "sandbox": "Chromium sandbox; weaker on XP/Vista",
+    "patchLag": "Months behind Chrome stable (150 vs ~156)",
+    "languages": "~100 (Chromium locales)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows XP SP1/SP3",
+      "arch": [
+        "x86",
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "portable",
+        "github"
+      ],
+      "notes": [
+        "32-bit needs SSE2, 64-bit needs SSE3; 768 MB RAM minimum",
+        "Planned: Windows 2000, WebGPU on D3D9"
+      ],
+      "highlights": [
+        "Also installs on Windows 10/11"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Standard Chromium plus flags"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "yes",
+      7,
+      "Chromium HTTPS-First mode"
+    ],
+    "doh": [
+      "yes",
+      7,
+      "Secure DNS setting"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "yes",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      5,
+      "Flags from ungoogled-chromium"
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "extension",
+      8,
+      "uBO sideloaded as MV2"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      8
+    ],
+    "customFilterLists": [
+      "extension",
+      8
+    ],
+    "youtubeAds": [
+      "extension",
+      8
+    ],
+    "cookieBanners": [
+      "extension",
+      6
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      8,
+      "Native tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "yes",
+      7,
+      "Memory Saver"
+    ],
+    "tabSearch": [
+      "yes",
+      7
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      5,
+      "Chromium reading mode side panel"
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4,
+      "Chromium side panel where supported"
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "yes",
+      5,
+      "Chromium capture tool"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "yes",
+      5,
+      "Reading list"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      8
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      7,
+      "Sideload MV2; conflicting statements"
+    ],
+    "uboFull": [
+      "yes",
+      7,
+      "Sideload from GitHub"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      "Windows only"
+    ],
+    "userscripts": [
+      "extension",
+      7,
+      "Tampermonkey/Violentmonkey"
+    ],
+    "syncBookmarks": [
+      "yes",
+      8,
+      "Google Sync"
+    ],
+    "syncPasswords": [
+      "yes",
+      8
+    ],
+    "syncTabs": [
+      "yes",
+      8
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "yes",
+      7
+    ],
+    "passkeys": [
+      "no",
+      0,
+      "Not expected on XP/Vista"
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "partial",
+      4,
+      "Unverified on XP/Vista/7"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      5
+    ],
+    "av1": [
+      "yes",
+      8
+    ],
+    "hwDecode": [
+      "partial",
+      6,
+      "Depends on old GPU"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "Google Translate if enabled"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      7
+    ],
+    "kioskMode": [
+      "yes",
+      7
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      7
+    ],
+    "customSearchEngines": [
+      "yes",
+      8
+    ],
+    "devtools": [
+      "yes",
+      10,
+      "Full Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "startup": [
+      8.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "graphics": [
+      6,
+      "Software/D3D9 paths on old OS; no WebGPU yet",
+      "documented"
+    ],
+    "memory": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "resourceControls": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lowEnd": [
+      10,
+      "Only modern Chromium that installs on XP/Vista/7; 768 MB RAM minimum",
+      "documented"
+    ],
+    "installSize": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "blocking": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "securityHardening": [
+      5,
+      "Chromium sandbox but XP/Vista OS lacks modern mitigations",
+      "documented"
+    ],
+    "patchSpeed": [
+      4,
+      "Chromium 150 R2 in Oct 2026 while stable Chrome is ~156; one developer",
+      "documented"
+    ],
+    "telemetry": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lookCustom": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "productivity": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extras": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extensions": [
+      8.5,
+      "Chrome Web Store plus sideloaded MV2 uBO",
+      "documented"
+    ],
+    "sync": [
+      8,
+      "Google Sync works, even on XP",
+      "documented"
+    ],
+    "passwords": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "Windows only; no mobile",
+      "documented"
+    ],
+    "webCompat": [
+      8,
+      "Modern Blink; some GPU/OS features missing on XP",
+      "documented"
+    ],
+    "devTools": [
+      10,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "accessibility": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "openSource": [
+      8.5,
+      "BSD-3 Chromium fork on GitHub",
+      "documented"
+    ],
+    "businessTrust": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "longevity": [
+      6,
+      "Active but single-developer project",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Supermium",
+      "title": "Supermium - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.supermium.net/",
+      "title": "Supermium Web Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/win32ss/supermium/discussions/988",
+      "title": "Supermium MV2 discussion #988",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.softpedia.com/get/Internet/Browsers/Supermium.shtml",
+      "title": "Softpedia Supermium",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Widevine/Netflix support on XP/Vista/7",
+    "Whether MV2 is natively supported or only sideloadable (Wikipedia vs project site disagree)",
+    "Developer jurisdiction",
+    "Release date discrepancy: Gizmodo lists 150.0.7871.255 R2 as 2026-10-09, search summary says 2026-10-21 for R2.01"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

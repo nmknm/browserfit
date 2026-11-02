@@ -1,0 +1,755 @@
+{
+  "id": "srware-iron",
+  "name": "SRWare Iron",
+  "aliases": [
+    "Iron Browser"
+  ],
+  "group": "privacy",
+  "developer": "SRWare (Jorg Muller)",
+  "hq": "Germany",
+  "businessModel": "Free; donations and sponsorship (unverified)",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary freeware (source partly published)",
+  "openSource": "partial",
+  "price": "free",
+  "releaseYear": 2008,
+  "status": "active",
+  "statusNote": "Desktop tracks Chromium with a lag; Android outdated (120)",
+  "version": {
+    "current": "154.0.8100.0",
+    "date": "2026-10-04",
+    "upstream": "Chromium 154"
+  },
+  "channels": [
+    "Stable"
+  ],
+  "updateCadence": "Roughly quarterly majors in 2026 (143 Feb, 147 Apr, 150 Jul, 154 Oct)",
+  "website": "https://www.srware.net",
+  "tags": [
+    "privacy",
+    "chromium",
+    "germany",
+    "legacy"
+  ],
+  "pitch": "A German Chromium build with Google tracking removed.",
+  "summary": "Long-running Chromium derivative from SRWare that removes Google tracking components (RLZ, update checks, URL tracking), but no built-in blocker or sync and updates lag Chromium by a couple of majors.",
+  "bestFor": [
+    "Users who want vanilla Chromium without Google hooks",
+    "Windows users who prefer portable options"
+  ],
+  "notFor": [
+    "People who need timely security patches",
+    "Users who want built-in blocking or sync",
+    "Mobile users (Android stuck at 120)"
+  ],
+  "pros": [
+    {
+      "title": "Google bits removed",
+      "detail": "Strips Google tracking and update hooks."
+    },
+    {
+      "title": "Familiar Chromium",
+      "detail": "Same site compatibility and DevTools."
+    },
+    {
+      "title": "Cross-desktop",
+      "detail": "Windows, macOS and Linux builds exist."
+    },
+    {
+      "title": "Portable build",
+      "detail": "A portable edition is available for Windows."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Update lag",
+      "detail": "Stable 154 while Chromium was at 156."
+    },
+    {
+      "title": "No built-in blocker",
+      "detail": "Needs extensions."
+    },
+    {
+      "title": "Stale Android",
+      "detail": "Latest Android listed is 120."
+    },
+    {
+      "title": "Opaque project",
+      "detail": "Proprietary freeware, small team."
+    }
+  ],
+  "signatureFeatures": [
+    "Chromium without Google tracking",
+    "Portable build",
+    "No RLZ/URL tracking"
+  ],
+  "faq": [
+    {
+      "q": "How current is Iron?",
+      "a": "Windows/Linux 154.0.8100.0 (Oct 4, 2026) and macOS posted Oct 15, versus Chromium 156 mainline."
+    },
+    {
+      "q": "Is Iron safe?",
+      "a": "It lags Chromium by about two majors, so security fixes arrive later than Chrome."
+    },
+    {
+      "q": "Is it open source?",
+      "a": "Partly; the project publishes some source but the browser is freeware."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2008-09",
+      "event": "Iron released shortly after Chrome 1"
+    },
+    {
+      "date": "2026-02",
+      "event": "Iron 143 (Windows)"
+    },
+    {
+      "date": "2026-07",
+      "event": "Iron 150 (Windows)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Iron 154.0.8100.0 for Windows/Linux; macOS on Oct 15"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "history"
+    ],
+    "note": "Imports from Chrome-family browsers."
+  },
+  "alternatives": [
+    "ungoogled-chromium",
+    "brave",
+    "epic",
+    "helium",
+    "iridium-browser",
+    "slimjet"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No Google sync"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Local only"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Chromium 154 base",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI"
+    },
+    "privacy": {
+      "defaults": "Google tracking removed; no blocker",
+      "telemetry": "Removed Google telemetry",
+      "jurisdiction": "Germany"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Configurable (Google/DuckDuckGo choice)",
+    "telemetry": "No Google RLZ/updater",
+    "drm": "Not verified",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox",
+    "patchSpeed": "About 2 Chromium majors behind",
+    "languages": "Many"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10 (unverified)",
+      "arch": [
+        "x64",
+        "x86"
+      ],
+      "stores": [
+        "official-installer",
+        "portable"
+      ],
+      "notes": [
+        "154.0.8100.0 (Oct 4, 2026)"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS (unverified)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "154.0.8100.0 posted Oct 15, 2026"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "64-bit Linux",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "deb",
+        "official-installer"
+      ],
+      "notes": [
+        "154 posted Oct 4, 2026"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "maintenance",
+      "minOs": "Android (unverified)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "apk"
+      ],
+      "notes": [
+        "Latest listed 120.0.6100.0"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "patchSpeed": -4,
+        "securityHardening": -2
+      }
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.srware.net/forum/forum/5",
+      "title": "SRWare Iron forum",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.techspot.com/downloads/5544-srware-iron.html",
+      "title": "TechSpot: SRWare Iron 154.0.8100.0",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/SRWare_Iron",
+      "title": "SRWare Iron - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.softpedia.com/get/Internet/Browsers/SRWare-Iron.shtml",
+      "title": "Softpedia: SRWare Iron",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Minimum OS versions",
+    "DRM support",
+    "Funding model",
+    "Exact openness of source"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      8,
+      "Google hooks removed"
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3
+    ],
+    "customFilterLists": [
+      "extension",
+      3
+    ],
+    "youtubeAds": [
+      "extension",
+      2
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "yes",
+      7
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      5
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      3
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      5
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "partial",
+      3
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      3
+    ],
+    "aiKillSwitch": [
+      "yes",
+      9
+    ],
+    "translation": [
+      "partial",
+      3
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6,
+      "Google tracking removed, no blocker",
+      "documented"
+    ],
+    "blocking": [
+      3.5,
+      "None built in",
+      "documented"
+    ],
+    "fingerprinting": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "securityHardening": [
+      8,
+      "Chromium sandbox but lagging",
+      "editorial"
+    ],
+    "patchSpeed": [
+      6,
+      "About two majors behind",
+      "documented"
+    ],
+    "telemetry": [
+      8,
+      "No Google telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "translation": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extensions": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "None",
+      "documented"
+    ],
+    "passwords": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "mobileApps": [
+      1,
+      "Stale Android",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      4,
+      "Freeware, partly open",
+      "documented"
+    ],
+    "businessTrust": [
+      6,
+      "Small independent German dev",
+      "editorial"
+    ],
+    "longevity": [
+      6,
+      "Old but slow",
+      "editorial"
+    ],
+    "ai": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Chrome-like",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

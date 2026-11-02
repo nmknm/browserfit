@@ -1,0 +1,100 @@
+export interface Term {
+  term: string;
+  short: string;
+  detail: string;
+  tag: 'Engines' | 'Privacy' | 'Security' | 'Extensions' | 'Sync' | 'Performance' | 'General';
+}
+
+export const GLOSSARY: Term[] = [
+  { term: 'Browser engine', tag: 'Engines', short: 'The part that turns code into the page you see.', detail: 'It parses HTML and CSS, lays out the page, runs JavaScript and paints pixels. Blink, Gecko and WebKit are the big three; most browsers reuse one of them.' },
+  { term: 'Blink', tag: 'Engines', short: 'Chromium’s engine, used by most browsers.', detail: 'Google forked Blink from WebKit in 2013. Chrome, Edge, Brave, Opera, Vivaldi and nearly every fork run on it.' },
+  { term: 'Gecko', tag: 'Engines', short: 'Firefox’s engine, the main independent alternative.', detail: 'Developed by Mozilla. Firefox, LibreWolf, Zen, Floorp, Waterfox, Tor Browser and Mullvad Browser use it.' },
+  { term: 'WebKit', tag: 'Engines', short: 'Safari’s engine, and the required engine on iPhone.', detail: 'Apple’s engine, originally forked from KDE’s KHTML. On iOS and iPadOS every browser must use it, outside limited EU exceptions.' },
+  { term: 'Fork', tag: 'General', short: 'A browser built from another browser’s source code.', detail: 'Forks change defaults, add features or strip tracking. LibreWolf forks Firefox; Brave and Vivaldi build on Chromium.' },
+  { term: 'Chromium', tag: 'General', short: 'The open-source project Chrome is built from.', detail: 'Google maintains Chromium; Chrome adds Google services, branding and some proprietary codecs on top.' },
+  { term: 'Manifest V2 / V3', tag: 'Extensions', short: 'The rules extensions are written against.', detail: 'Manifest V3 limits how extensions can filter network requests. Powerful blockers like the full uBlock Origin need V2, which Chrome removed in 2026.' },
+  { term: 'uBlock Origin', tag: 'Extensions', short: 'The most respected open-source content blocker.', detail: 'The full version needs Manifest V2. uBlock Origin Lite is a reduced Manifest V3 version for Chrome and Edge.' },
+  { term: 'Fingerprinting', tag: 'Privacy', short: 'Recognising your device without cookies.', detail: 'Sites combine screen size, fonts, GPU, audio stack and more into an ID. Defences either make everyone look the same (Tor, Mullvad) or add random noise (Brave).' },
+  { term: 'Third-party cookies', tag: 'Privacy', short: 'Cookies set by a site other than the one you visit.', detail: 'Used for cross-site tracking. Most privacy browsers block or partition them.' },
+  { term: 'Storage partitioning', tag: 'Privacy', short: 'Separate storage for each site you visit.', detail: 'An embedded tracker gets a different “jar” on every site, so it can’t follow you across them.' },
+  { term: 'Telemetry', tag: 'Privacy', short: 'Usage data a browser sends to its maker.', detail: 'Ranges from anonymous crash reports to detailed usage analytics. Good browsers document it and let you turn it off.' },
+  { term: 'DNS over HTTPS (DoH)', tag: 'Privacy', short: 'Encrypts the lookups that turn names into addresses.', detail: 'Hides which sites you visit from your network, though not from the DNS provider you choose.' },
+  { term: 'HTTPS-only mode', tag: 'Security', short: 'Refuses unencrypted connections.', detail: 'Upgrades sites to HTTPS and warns before loading anything insecure.' },
+  { term: 'Sandboxing', tag: 'Security', short: 'Running web content in a locked-down process.', detail: 'If a page exploits a bug, the sandbox keeps it from reaching your files and system.' },
+  { term: 'Site isolation', tag: 'Security', short: 'Each site in its own process.', detail: 'Stops one site reading another’s memory, a defence against Spectre-style attacks.' },
+  { term: 'Patch lag', tag: 'Security', short: 'How long a fork takes to ship upstream security fixes.', detail: 'Small forks can trail Chrome or Firefox by days or weeks, leaving known holes open.' },
+  { term: 'Zero-day', tag: 'Security', short: 'A bug attackers use before a fix exists.', detail: 'Nobody has had “zero days” to fix it. Patching speed cannot help against a zero-day, but it closes the window once a fix ships.' },
+  { term: 'CVE', tag: 'Security', short: 'A public ID for one security bug.', detail: 'Written CVE-year-number. It lets vendors, researchers and lists such as CISA’s refer to exactly the same bug.' },
+  { term: 'Sandbox escape', tag: 'Security', short: 'Breaking out of the locked-down process a page runs in.', detail: 'Attackers usually chain a bug in the page’s process with an escape to reach your files. This is why sandboxes are rewarded so highly in bug bounties.' },
+  { term: 'Drive-by download', tag: 'Security', short: 'Malware installed just by visiting a page.', detail: 'It relies on an unpatched browser bug rather than anything you click, which is why prompt updates matter.' },
+  { term: 'Malvertising', tag: 'Security', short: 'Malicious ads on legitimate sites.', detail: 'Ad networks can carry scams or exploit code. A good content blocker removes that route.' },
+  { term: 'Safe Browsing', tag: 'Security', short: 'A list-based warning for known bad sites.', detail: 'Browsers check pages against a list of phishing and malware sites. Providers differ, and some browsers use none.' },
+  { term: 'Lockdown mode', tag: 'Security', short: 'A strict mode that trades features for fewer attack routes.', detail: 'Examples include Apple’s Lockdown Mode and Tor Browser’s Safest level. They switch off risky features such as some JavaScript and file types.' },
+  { term: 'Prompt injection', tag: 'Security', short: 'Hidden text that steers an AI agent.', detail: 'A web page can hide instructions an agent obeys as if you wrote them. It is the main new risk of agentic browsers.' },
+  { term: 'Mixed content', tag: 'Security', short: 'An encrypted page loading something unencrypted.', detail: 'One plain-HTTP image or script can be altered by anyone on the network. Browsers block or upgrade most of it.' },
+  { term: 'Bug bounty', tag: 'Security', short: 'A reward for reporting a security bug privately.', detail: 'Vendors pay researchers so bugs are fixed before attackers use them. Payout size shows effort, not how safe the browser is.' },
+  { term: 'Extension supply chain', tag: 'Security', short: 'A trusted extension that turns bad.', detail: 'An update or a sale can add tracking or malware to an extension you already installed. Fewer extensions means fewer risks.' },
+  { term: 'End-to-end encrypted sync', tag: 'Sync', short: 'Only your devices can read synced data.', detail: 'The sync server stores data it can’t decrypt. Firefox, Brave and Vivaldi offer it.' },
+  { term: 'Passkeys', tag: 'Sync', short: 'Passwordless sign-in tied to your device.', detail: 'Uses public-key cryptography, so there’s no password to phish or leak.' },
+  { term: 'Widevine', tag: 'Performance', short: 'Google’s DRM for protected video.', detail: 'Netflix, Disney+ and others need it. Some privacy forks leave it out or make it optional.' },
+  { term: 'Hardware decoding', tag: 'Performance', short: 'Letting the GPU decode video.', detail: 'Saves battery and CPU, especially with AV1 and HEVC.' },
+  { term: 'Tab sleeping', tag: 'Performance', short: 'Unloading idle tabs to free memory.', detail: 'Also called memory saver or tab discarding; tabs reload when you return.' },
+  { term: 'Speedometer', tag: 'Performance', short: 'A public benchmark of web-app responsiveness.', detail: 'Built jointly by the major engine makers; version 3 simulates real web-app work.' },
+  { term: 'Agentic browsing', tag: 'General', short: 'AI that clicks, types and navigates for you.', detail: 'Agents can book, buy or fill in forms. They raise new security risks such as prompt injection from web pages.' },
+  { term: 'PWA', tag: 'General', short: 'A website you can install like an app.', detail: 'Progressive web apps get their own window, icon and sometimes offline support.' },
+  { term: 'Release channels', tag: 'General', short: 'Stable, Beta, Dev and Nightly builds.', detail: 'Earlier channels get features first, with more bugs. Most people should use Stable.' },
+  { term: 'ESR', tag: 'General', short: 'Extended Support Release.', detail: 'A slower Firefox branch that gets security fixes for about a year without feature changes. Waterfox and Tor Browser build on ESR.' },
+  { term: 'De-Googled', tag: 'Privacy', short: 'Chromium with Google services removed.', detail: 'Ungoogled-chromium, Bare, Cromite and Helium strip Google sign-in, Safe Browsing pings and other Google calls.' },
+  { term: 'Container tabs', tag: 'Privacy', short: 'Separate cookie jars inside one browser.', detail: 'Keep work, personal and shopping logins apart without separate profiles.' },
+];
+
+export const MYTHS: { myth: string; fact: string }[] = [
+  { myth: 'Incognito mode makes me anonymous.', fact: 'Private windows only stop the browser saving history on your device. Sites, your ISP and your employer can still see what you do.' },
+  { myth: 'Chrome on iPhone is the same as Chrome on Windows.', fact: 'On iOS, Chrome runs on Apple’s WebKit engine with different features and no extensions.' },
+  { myth: 'Using a privacy browser means sites will break.', fact: 'Modern privacy browsers break very few sites with default settings; stricter modes are optional.' },
+  { myth: 'More extensions make a browser more private.', fact: 'Every extension can see your browsing. A few well-chosen ones, or built-in protection, are safer.' },
+  { myth: 'All Chromium browsers are just Chrome reskins.', fact: 'They share an engine, but defaults, telemetry, blocking, sync and update speed differ a lot.' },
+  { myth: 'Firefox is slow.', fact: 'Firefox trails Chromium slightly in some JavaScript benchmarks but is fast in everyday use, often lighter on memory.' },
+  { myth: 'A VPN makes my browser private.', fact: 'A VPN hides your IP from sites and your network from the VPN’s view, but cookies and fingerprinting still track you.' },
+  { myth: 'All Chromium browsers are patched as fast as Chrome.', fact: 'They share the engine, but each fork ships fixes on its own schedule. Some trail Chrome by weeks or months.' },
+  { myth: 'Open source means secure.', fact: 'Open code can be inspected, but it still needs people reviewing it and a team shipping fixes quickly.' },
+  { myth: 'Private mode protects me from malware.', fact: 'It only stops the browser keeping history. A malicious page can still attack a private window.' },
+  { myth: 'A browser with no known exploits is safe.', fact: 'It may simply be less studied or a smaller target. Lists of exploited bugs show what was found, not what exists.' },
+  { myth: 'Safari has no extensions.', fact: 'Safari supports Safari Web Extensions on macOS, iOS and iPadOS, including content blockers.' },
+];
+
+export const HISTORY: { year: number; title: string; detail: string }[] = [
+  { year: 1990, title: 'WorldWideWeb', detail: 'Tim Berners-Lee writes the first browser and editor at CERN.' },
+  { year: 1993, title: 'Mosaic', detail: 'NCSA Mosaic brings images inline with text and popularises the web.' },
+  { year: 1994, title: 'Netscape Navigator', detail: 'Netscape dominates the early commercial web.' },
+  { year: 1995, title: 'Internet Explorer', detail: 'Microsoft bundles IE with Windows, starting the first browser war.' },
+  { year: 1998, title: 'Mozilla open-sourced', detail: 'Netscape releases its code, the seed of Firefox.' },
+  { year: 2003, title: 'Safari & WebKit', detail: 'Apple launches Safari on WebKit, forked from KDE’s KHTML.' },
+  { year: 2004, title: 'Firefox 1.0', detail: 'Firefox challenges IE’s 90%+ market share.' },
+  { year: 2008, title: 'Google Chrome', detail: 'Chrome launches with a process-per-tab architecture and the V8 engine.' },
+  { year: 2013, title: 'Blink fork', detail: 'Google forks WebKit into Blink; Opera moves to Chromium.' },
+  { year: 2015, title: 'Edge (EdgeHTML)', detail: 'Microsoft replaces IE with Edge and a new engine.' },
+  { year: 2016, title: 'Brave & Vivaldi', detail: 'Two Chromium-based alternatives launch with very different ideas.' },
+  { year: 2017, title: 'Firefox Quantum', detail: 'A major rewrite brings big speed gains to Firefox.' },
+  { year: 2020, title: 'Chromium Edge', detail: 'Edge switches to Chromium, leaving three major engines.' },
+  { year: 2022, title: 'Arc & IE retired', detail: 'The Browser Company’s Arc rethinks the sidebar; Internet Explorer is retired.' },
+  { year: 2024, title: 'Ladybird & Zen', detail: 'Ladybird starts a non-profit independent engine; Zen brings Arc-style ideas to Firefox. iOS opens to other engines in the EU.' },
+  { year: 2025, title: 'The AI browser wave', detail: 'Dia, Comet, Opera Neon and ChatGPT Atlas launch. Chrome begins disabling Manifest V2.' },
+  { year: 2026, title: 'MV2 ends in Chrome', detail: 'Chrome removes uBlock Origin; Edge follows. Atlas shuts down; Arc announces its end. Samsung Browser arrives on Windows.' },
+];
+
+/** Engine lineage for the tree (parent → child). */
+export const LINEAGE: { id: string; label: string; parent?: string; year: number; engine: string; browsers?: string[] }[] = [
+  { id: 'khtml', label: 'KHTML', year: 1998, engine: 'other', browsers: ['konqueror'] },
+  { id: 'webkit', label: 'WebKit', parent: 'khtml', year: 2001, engine: 'webkit', browsers: ['safari', 'gnome-web', 'orion', 'yab', 'sigmaos', 'nyxt', 'luakit'] },
+  { id: 'blink', label: 'Blink', parent: 'webkit', year: 2013, engine: 'blink', browsers: ['chrome', 'edge', 'brave', 'opera', 'vivaldi', 'chromium', 'samsung-browser', 'thorium', 'helium', 'cromite', 'titanium', 'bare'] },
+  { id: 'netscape', label: 'Netscape / Mozilla', year: 1998, engine: 'other', browsers: ['netscape', 'seamonkey'] },
+  { id: 'gecko', label: 'Gecko', parent: 'netscape', year: 2000, engine: 'gecko', browsers: ['firefox', 'librewolf', 'zen', 'floorp', 'waterfox', 'tor-browser', 'mullvad-browser', 'ironfox', 'midori'] },
+  { id: 'goanna', label: 'Goanna', parent: 'gecko', year: 2015, engine: 'goanna', browsers: ['pale-moon', 'basilisk', 'k-meleon'] },
+  { id: 'servo', label: 'Servo', parent: 'gecko', year: 2012, engine: 'servo', browsers: ['servo'] },
+  { id: 'trident', label: 'Trident', year: 1997, engine: 'other', browsers: ['internet-explorer'] },
+  { id: 'edgehtml', label: 'EdgeHTML', parent: 'trident', year: 2015, engine: 'other', browsers: ['edge-legacy'] },
+  { id: 'libweb', label: 'LibWeb (Ladybird)', year: 2022, engine: 'libweb', browsers: ['ladybird'] },
+  { id: 'netsurf', label: 'NetSurf', year: 2002, engine: 'other', browsers: ['netsurf'] },
+  { id: 'dillo', label: 'Dillo', year: 1999, engine: 'other', browsers: ['dillo'] },
+];

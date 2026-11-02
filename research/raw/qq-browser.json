@@ -1,0 +1,783 @@
+{
+  "id": "qq-browser",
+  "name": "QQ Browser",
+  "aliases": [
+    "QQ浏览器",
+    "Tencent QQ Browser"
+  ],
+  "group": "regional",
+  "developer": "Tencent",
+  "hq": "China",
+  "businessModel": "Free; ads, content feed and traffic into Tencent ecosystem (WeChat, QQ, Tencent Docs, Tencent Cloud AI)",
+  "engine": "blink",
+  "basedOn": "Chromium (own X5/Chromium kernel customisations)",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2008,
+  "status": "active",
+  "statusNote": "Agentic \"QBotClaw\" assistant launched 2026-04-08 (Mac first; Windows announced as coming)",
+  "version": {
+    "current": "20.x series (exact current build unverified)",
+    "date": "2026",
+    "upstream": "Chromium (version unverified)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Frequent minor releases per vendor changelog; not independently checked",
+  "website": "https://browser.qq.com",
+  "tags": [
+    "regional",
+    "china",
+    "tencent",
+    "ai",
+    "agentic",
+    "chromium"
+  ],
+  "pitch": "Tencent's Chinese-market browser with PDF tools, WeChat tie-ins and agentic AI.",
+  "summary": "QQ Browser is Tencent's Chromium-based browser, widely used in China, with document/PDF tools, video features and, since April 2026, the QBotClaw agent that automates tasks and can be driven from WeChat.",
+  "bestFor": [
+    "Users in mainland China wanting Tencent/WeChat integration",
+    "People who want built-in document/PDF handling",
+    "Early adopters of agentic browsing"
+  ],
+  "notFor": [
+    "Privacy-conscious users",
+    "Users outside China needing English polish",
+    "Anyone who dislikes feeds and ads"
+  ],
+  "pros": [
+    {
+      "title": "QBotClaw agent",
+      "detail": "Natural-language automation (e.g. price comparisons across Taobao and JD) launched April 2026, remote-controllable from WeChat."
+    },
+    {
+      "title": "Tencent ecosystem",
+      "detail": "Deep integration with WeChat, QQ and Tencent Docs."
+    },
+    {
+      "title": "Built-in tools",
+      "detail": "Document, PDF, video and screenshot utilities are bundled."
+    },
+    {
+      "title": "Broad platform coverage",
+      "detail": "Windows, macOS, Android and iOS."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Security history",
+      "detail": "Citizen Lab (2016) found insecure data transmission and unsafe update mechanisms in Windows and Android versions."
+    },
+    {
+      "title": "Ad and feed heavy",
+      "detail": "Start page feeds and promotions are central to the model."
+    },
+    {
+      "title": "Early agent limits",
+      "detail": "Hands-on test hit API rate limits and needed manual logins."
+    },
+    {
+      "title": "Opaque versions",
+      "detail": "Current build and Chromium base not published in an easy-to-verify place."
+    }
+  ],
+  "signatureFeatures": [
+    "QBotClaw AI agent",
+    "PDF/doc tools",
+    "WeChat integration",
+    "Video player and downloader"
+  ],
+  "faq": [
+    {
+      "q": "Does QQ Browser have an AI agent?",
+      "a": "Yes. Tencent Cloud announced QBotClaw on 2026-04-08; Mac was live first and Windows was \"coming soon\" at launch."
+    },
+    {
+      "q": "Is it Chromium-based?",
+      "a": "Wikipedia describes Chromium-based engine upgrades since version 9.0 (2015); the current Chromium version is not published in sources found."
+    },
+    {
+      "q": "Is QQ Browser private?",
+      "a": "Not by default. Citizen Lab reported insecure data handling in 2016, and it is a Tencent ad/content product."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2003",
+      "event": "Tencent TT browser precursor"
+    },
+    {
+      "date": "2015",
+      "event": "Version 9.0 adopts Chromium-based engine"
+    },
+    {
+      "date": "2016",
+      "event": "Citizen Lab report on insecure data and update code execution"
+    },
+    {
+      "date": "2026-04-08",
+      "event": "QBotClaw agentic assistant announced by Tencent Cloud"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "history",
+      "passwords"
+    ],
+    "note": "Imports from other desktop browsers; account sync via QQ/WeChat (unverified)."
+  },
+  "alternatives": [
+    "360-secure",
+    "edge",
+    "chrome",
+    "uc-browser",
+    "quark"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "history",
+        "tabs",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "QQ/WeChat account (unverified detail)"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Autofill and password saving"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Chromium-compatible extensions supported; MV2 status unverified",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "no",
+      "note": "QBotClaw agent plus AI search/summaries"
+    },
+    "privacy": {
+      "defaults": "Safe-browsing style protections; ads and feeds on",
+      "telemetry": "Extensive; Tencent account-linked",
+      "jurisdiction": "China"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Sogou / Tencent search (unverified)",
+    "telemetry": "Tencent analytics, account-linked",
+    "drm": "Widevine (region limits unverified)",
+    "codecs": "H.264, HEVC, VP9",
+    "sandbox": "Chromium sandbox",
+    "patchLag": "Not verified",
+    "languages": "Chinese-first (English limited)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10 (unverified)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "QBotClaw Windows build announced as coming (April 2026)"
+      ],
+      "highlights": [
+        "Doc tools"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "Not verified",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "QBotClaw launched here first"
+      ],
+      "highlights": [
+        "QBotClaw agent"
+      ],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Not verified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "apk",
+        "google-play"
+      ],
+      "notes": [
+        "Primarily distributed via Chinese app stores; Google Play listing status unverified"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -5
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "Not verified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -5,
+        "jsSpeed": -1
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "partial",
+      3
+    ],
+    "doh": [
+      "partial",
+      3
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      2
+    ],
+    "privateHardening": [
+      "partial",
+      3
+    ],
+    "adBlocker": [
+      "yes",
+      5,
+      "Built-in ad filter"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      4
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "partial",
+      4
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      4
+    ],
+    "tabSleeping": [
+      "yes",
+      5
+    ],
+    "tabSearch": [
+      "yes",
+      5
+    ],
+    "pinnedTabs": [
+      "yes",
+      6
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      6
+    ],
+    "notes": [
+      "partial",
+      4
+    ],
+    "webPanels": [
+      "yes",
+      6,
+      "Sidebar tools"
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "yes",
+      8
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "yes",
+      6
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "partial",
+      4
+    ],
+    "mailCalendarRss": [
+      "partial",
+      4,
+      "QQ Mail entry"
+    ],
+    "chromeWebStore": [
+      "partial",
+      4,
+      "Extension compatibility; access from mainland limited"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      4
+    ],
+    "syncBookmarks": [
+      "yes",
+      6
+    ],
+    "syncPasswords": [
+      "yes",
+      5
+    ],
+    "syncTabs": [
+      "yes",
+      5
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      5
+    ],
+    "passwordManager": [
+      "yes",
+      4
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "partial",
+      4
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "yes",
+      7
+    ],
+    "av1": [
+      "partial",
+      5
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "yes",
+      7,
+      "AI assistant and AI search (Chinese-first)"
+    ],
+    "aiSummarizer": [
+      "yes",
+      7
+    ],
+    "agenticBrowsing": [
+      "yes",
+      7,
+      "QBotClaw (Apr 2026), early stage"
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "partial",
+      3,
+      "Optional features, no single switch confirmed"
+    ],
+    "translation": [
+      "yes",
+      6,
+      "Built-in translation (quality unverified)"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "partial",
+      4
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "partial",
+      4,
+      "Boss key (typical for Chinese browsers, unverified)"
+    ],
+    "downloadManager": [
+      "yes",
+      7,
+      "Video and file download tools"
+    ],
+    "customThemes": [
+      "yes",
+      7
+    ],
+    "customSearchEngines": [
+      "yes",
+      5
+    ],
+    "devtools": [
+      "yes",
+      8
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "Chromium V8 base (version unverified)",
+      "editorial"
+    ],
+    "pageLoad": [
+      8,
+      "Chromium-class",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Heavier UI and services",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Blink",
+      "editorial"
+    ],
+    "graphics": [
+      8,
+      "Chromium WebGL",
+      "editorial"
+    ],
+    "memory": [
+      4.5,
+      "Chromium plus services",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      5.5,
+      "Tab sleeping",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Heavy for old PCs",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Large installer",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      2.5,
+      "Ads, feeds and Tencent-linked analytics",
+      "editorial"
+    ],
+    "blocking": [
+      5,
+      "Basic built-in ad filter",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "None known",
+      "editorial"
+    ],
+    "securityHardening": [
+      7.5,
+      "Chromium sandbox but 2016 Citizen Lab findings",
+      "documented"
+    ],
+    "patchSpeed": [
+      5,
+      "Chromium base not published",
+      "editorial"
+    ],
+    "telemetry": [
+      2,
+      "Extensive Tencent collection, closed",
+      "editorial"
+    ],
+    "lookCustom": [
+      7,
+      "Skins and themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6,
+      "Gestures, shortcuts",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5,
+      "Limited beyond Chromium",
+      "editorial"
+    ],
+    "tabManagement": [
+      5.5,
+      "Basic groups and split",
+      "editorial"
+    ],
+    "searchFreedom": [
+      5.5,
+      "Pushed defaults",
+      "editorial"
+    ],
+    "downloads": [
+      7,
+      "Video and file download tools",
+      "editorial"
+    ],
+    "productivity": [
+      8,
+      "Docs, PDF, screenshots, AI",
+      "editorial"
+    ],
+    "media": [
+      7.5,
+      "Strong video features, DRM limited",
+      "editorial"
+    ],
+    "translation": [
+      6,
+      "Built-in",
+      "editorial"
+    ],
+    "extras": [
+      6.5,
+      "Doc tools, AI agent, games",
+      "editorial"
+    ],
+    "extensions": [
+      5.5,
+      "Chromium extension compatibility with caveats",
+      "editorial"
+    ],
+    "sync": [
+      6,
+      "Tencent account sync",
+      "editorial"
+    ],
+    "passwords": [
+      4,
+      "Basic",
+      "editorial"
+    ],
+    "mobileApps": [
+      8,
+      "Strong Chinese mobile app",
+      "editorial"
+    ],
+    "webCompat": [
+      8.5,
+      "Chromium plus Chinese-site tuning",
+      "editorial"
+    ],
+    "devTools": [
+      8,
+      "Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      6,
+      "Chromium-based",
+      "editorial"
+    ],
+    "openSource": [
+      1,
+      "Closed",
+      "editorial"
+    ],
+    "businessTrust": [
+      2.5,
+      "Ad and data driven, Citizen Lab history",
+      "documented"
+    ],
+    "longevity": [
+      8,
+      "Tencent-backed, active",
+      "editorial"
+    ],
+    "ai": [
+      8,
+      "Agentic QBotClaw plus AI search",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7.5,
+      "Easy but cluttered, Chinese-first",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/QQ_Browser",
+      "title": "Wikipedia - QQ Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://datayuan.substack.com/p/tencent-launched-its-first-browser",
+      "title": "DataYuan - Tencent QBotClaw",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://chinabizinsider.com/tencent-cloud-turns-qq-browser-into-a-wechat-controlled-ai-agent-with-qbotclaw/",
+      "title": "China Biz Insider - QBotClaw",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://browser.qq.com",
+      "title": "QQ Browser official site",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Current desktop/mobile build numbers",
+    "Chromium base version",
+    "Whether QBotClaw has shipped on Windows",
+    "Platform minimum OS versions",
+    "Chrome Web Store usability from mainland China",
+    "Search engine default"
+  ],
+  "confidence": "low",
+  "lastVerified": "2026-10-29"
+}

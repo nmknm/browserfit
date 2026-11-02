@@ -1,0 +1,756 @@
+{
+  "id": "uc-browser",
+  "name": "UC Browser",
+  "aliases": [
+    "UCWeb",
+    "UC Browser Android"
+  ],
+  "group": "regional",
+  "developer": "UCWeb (Alibaba Group)",
+  "hq": "China",
+  "businessModel": "Ad-funded: start-page news feed, content and ads; Alibaba ecosystem",
+  "engine": "blink",
+  "basedOn": "Chromium (own U4 kernel)",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2004,
+  "status": "active",
+  "statusNote": "Android-only now; banned in India since 2020; Windows/iOS discontinued",
+  "version": {
+    "current": "15.1.2.1388 (Android, per Wikipedia, citation needed)",
+    "date": "2026-03-20",
+    "upstream": "Unverified"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Irregular; current cadence not independently verified",
+  "website": "https://www.ucweb.com",
+  "tags": [
+    "regional",
+    "china",
+    "mobile",
+    "data-saving",
+    "privacy-concerns"
+  ],
+  "pitch": "Data-saving Android browser with fast downloads and a long privacy-problem history.",
+  "summary": "UC Browser is Alibaba's mobile browser known for proxy compression and a strong download manager. Citizen Lab and others documented insecure data handling; it is Android-only today and banned in India.",
+  "bestFor": [
+    "Low-bandwidth Android users who value download manager",
+    "Markets where UC is the default familiar app"
+  ],
+  "notFor": [
+    "Anyone who cares about privacy or security",
+    "iOS or desktop users",
+    "People in India (banned)"
+  ],
+  "pros": [
+    {
+      "title": "Strong downloader",
+      "detail": "Multi-threaded download manager is a long-time signature."
+    },
+    {
+      "title": "Data saving",
+      "detail": "Proxy-server compression reduces data usage."
+    },
+    {
+      "title": "Light on weak devices",
+      "detail": "Runs acceptably on low-end Android phones."
+    },
+    {
+      "title": "Built-in ad blocking",
+      "detail": "Ad blocking is offered in the app (depth unverified)."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Privacy record",
+      "detail": "Citizen Lab found personal data sent with weak encryption; Forbes (2021) reported IPs going to Alibaba."
+    },
+    {
+      "title": "Proxy architecture",
+      "detail": "Pages route through UCWeb servers, which weakens HTTPS guarantees."
+    },
+    {
+      "title": "Android-only",
+      "detail": "Wikipedia says only Android is supported as of 2025."
+    },
+    {
+      "title": "Banned in India",
+      "detail": "Banned in 2020 along with 58 other Chinese apps."
+    },
+    {
+      "title": "Weak patching evidence",
+      "detail": "No verifiable security release cadence or Chromium base."
+    }
+  ],
+  "signatureFeatures": [
+    "Download manager",
+    "Proxy data compression",
+    "News feed start page",
+    "Cloud sync with UC account"
+  ],
+  "faq": [
+    {
+      "q": "Is UC Browser safe?",
+      "a": "Independent researchers (Citizen Lab, Doctor Web) documented serious privacy and security flaws; treat it as high-risk."
+    },
+    {
+      "q": "Is it still updated?",
+      "a": "Wikipedia lists Android 15.1.2.1388 from March 2026, but the entry is flagged citation needed."
+    },
+    {
+      "q": "Can I use it on iOS or Windows?",
+      "a": "No. Wikipedia states Android is the only supported platform as of 2025."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2004",
+      "event": "UCWeb founded; first browser (Java phones)"
+    },
+    {
+      "date": "2014",
+      "event": "Alibaba acquires UCWeb"
+    },
+    {
+      "date": "2015-2016",
+      "event": "Citizen Lab and Snowden documents flag privacy leaks"
+    },
+    {
+      "date": "2020-06",
+      "event": "Banned in India with 58 other Chinese apps; Google Play version re-added with compliant settings"
+    },
+    {
+      "date": "2021",
+      "event": "Reports of IP addresses sent to Alibaba servers"
+    },
+    {
+      "date": "2026-03",
+      "event": "Android 15.1.2.1388 listed (unverified)"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Limited import tools found; mostly account-based sync."
+  },
+  "alternatives": [
+    "opera-mini",
+    "puffin",
+    "chrome",
+    "brave",
+    "quark",
+    "phoenix-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "history",
+        "tabs"
+      ],
+      "crossOs": false,
+      "note": "UC account, Android only"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Basic autofill (unverified)"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension ecosystem",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": false,
+      "paid": "no",
+      "note": "Some AI features in recent versions (unverified)"
+    },
+    "privacy": {
+      "defaults": "Cloud-accelerated mode routes traffic via UCWeb servers",
+      "telemetry": "Heavy; Citizen Lab found personal data sent insecurely",
+      "jurisdiction": "China"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Shenma / regional (unverified)",
+    "telemetry": "Extensive server-side data collection reported",
+    "drm": "Limited",
+    "codecs": "Android system codecs",
+    "sandbox": "Android app sandbox; own engine kernel",
+    "patchLag": "Unknown",
+    "languages": "Many (unverified)"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Not verified",
+      "arch": [
+        "arm64",
+        "arm"
+      ],
+      "stores": [
+        "google-play",
+        "apk",
+        "preinstalled"
+      ],
+      "notes": [
+        "Wikipedia: only Android supported as of 2025",
+        "Many unofficial APK sites (e.g. ucbrowser.in) are not official - download risk",
+        "Play listing status not independently verified for 2026"
+      ],
+      "highlights": [
+        "Download manager"
+      ],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "discontinued",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Last Windows 6.0.1308.1016 (2023-08)"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "discontinued",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Not supported per Wikipedia"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "no",
+      0,
+      "No documented protection"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      "browsers.to lists none"
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      2
+    ],
+    "privateHardening": [
+      "partial",
+      1,
+      "Reports of data logged in incognito"
+    ],
+    "adBlocker": [
+      "yes",
+      5,
+      "Built-in"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      3
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "partial",
+      3
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "partial",
+      4
+    ],
+    "screenshots": [
+      "yes",
+      5
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "partial",
+      4,
+      "Touch gestures"
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0
+    ],
+    "readLater": [
+      "partial",
+      4,
+      "Offline pages"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "yes",
+      5
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "yes",
+      4
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "partial",
+      3
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      3
+    ],
+    "widevine": [
+      "partial",
+      3
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "partial",
+      3
+    ],
+    "hwDecode": [
+      "yes",
+      5
+    ],
+    "aiAssistant": [
+      "partial",
+      3,
+      "Unverified"
+    ],
+    "aiSummarizer": [
+      "partial",
+      3
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "partial",
+      3
+    ],
+    "translation": [
+      "partial",
+      4
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "partial",
+      3
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      9,
+      "Signature feature"
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      4
+    ],
+    "devtools": [
+      "no",
+      0
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      6.5,
+      "Own kernel, mobile-class",
+      "editorial"
+    ],
+    "pageLoad": [
+      8,
+      "Server compression speeds slow networks",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7.5,
+      "Proxy acceleration, multi-thread download",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Light app",
+      "editorial"
+    ],
+    "smoothness": [
+      7,
+      "Mobile-class",
+      "editorial"
+    ],
+    "graphics": [
+      5.5,
+      "Limited WebGL focus",
+      "editorial"
+    ],
+    "memory": [
+      6,
+      "Fairly light on Android",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Mobile-class",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Server-side rendering helps",
+      "editorial"
+    ],
+    "resourceControls": [
+      4.5,
+      "Data saver only",
+      "editorial"
+    ],
+    "lowEnd": [
+      8,
+      "Designed for low-end phones",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Moderate APK",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      1.5,
+      "Traffic via UCWeb servers by default",
+      "documented"
+    ],
+    "blocking": [
+      5.5,
+      "Built-in ad blocking",
+      "editorial"
+    ],
+    "fingerprinting": [
+      1,
+      "None",
+      "editorial"
+    ],
+    "securityHardening": [
+      4.5,
+      "Documented flaws (Citizen Lab, Doctor Web)",
+      "documented"
+    ],
+    "patchSpeed": [
+      3,
+      "No verifiable cadence",
+      "editorial"
+    ],
+    "telemetry": [
+      1,
+      "Heavy collection reported",
+      "documented"
+    ],
+    "lookCustom": [
+      6,
+      "Themes and skins",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      5.5,
+      "Gestures",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3,
+      "Limited",
+      "editorial"
+    ],
+    "tabManagement": [
+      5.5,
+      "Basic",
+      "editorial"
+    ],
+    "searchFreedom": [
+      5,
+      "Several engines",
+      "editorial"
+    ],
+    "downloads": [
+      9,
+      "Multi-threaded manager is signature",
+      "editorial"
+    ],
+    "productivity": [
+      5.5,
+      "Reader, screenshots",
+      "editorial"
+    ],
+    "media": [
+      6.5,
+      "Video downloads, limited DRM",
+      "editorial"
+    ],
+    "translation": [
+      4,
+      "Basic",
+      "editorial"
+    ],
+    "extras": [
+      6,
+      "Ad block, news, tools",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extension support",
+      "editorial"
+    ],
+    "sync": [
+      5,
+      "UC account sync",
+      "editorial"
+    ],
+    "passwords": [
+      3,
+      "Basic",
+      "editorial"
+    ],
+    "mobileApps": [
+      6,
+      "Android-only",
+      "editorial"
+    ],
+    "webCompat": [
+      7.5,
+      "Proxy mode can break sites",
+      "editorial"
+    ],
+    "devTools": [
+      1,
+      "None",
+      "editorial"
+    ],
+    "accessibility": [
+      5,
+      "Basic",
+      "editorial"
+    ],
+    "openSource": [
+      0.5,
+      "Closed",
+      "editorial"
+    ],
+    "businessTrust": [
+      1.5,
+      "Repeated privacy findings, India ban",
+      "documented"
+    ],
+    "longevity": [
+      5,
+      "Large legacy base but narrowing platforms",
+      "editorial"
+    ],
+    "ai": [
+      4,
+      "Minor AI features",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Simple UI, ad-heavy",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/UC_Browser",
+      "title": "Wikipedia - UC Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://citizenlab.ca/research/a-tough-nut-to-crack-look-privacy-and-security-issues-with-uc-browser/",
+      "title": "Citizen Lab - A Tough Nut to Crack",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://browsers.to/uc-browser",
+      "title": "browsers.to - UC Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://sourceforge.net/app/uc-browser/android/",
+      "title": "SourceForge - UC Browser for Android",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Current Google Play availability in 2026",
+    "Android 15.1.2.1388 date (citation needed on Wikipedia)",
+    "Exact AI features",
+    "Current engine/Chromium base",
+    "Whether VPN or proxy modes are still present"
+  ],
+  "confidence": "low",
+  "lastVerified": "2026-10-29"
+}

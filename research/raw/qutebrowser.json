@@ -1,0 +1,782 @@
+{
+  "id": "qutebrowser",
+  "name": "qutebrowser",
+  "aliases": [
+    "qute"
+  ],
+  "group": "minimal",
+  "developer": "Florian Bruhin (The-Compiler) and contributors",
+  "hq": "Switzerland",
+  "businessModel": "Donations and volunteer work; no commercial product",
+  "engine": "blink",
+  "basedOn": "Qt WebEngine (Chromium)",
+  "license": "GPL-3.0-or-later",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2014,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "3.7.0",
+    "date": "2026-04-03",
+    "upstream": "Qt WebEngine 6.x (Windows/macOS builds ship Qt 6.11, Chromium 140 base with backported fixes)"
+  },
+  "channels": [
+    "Stable",
+    "Git main"
+  ],
+  "updateCadence": "A few releases per year; Qt WebEngine updates follow Qt/distro schedule",
+  "website": "https://qutebrowser.org",
+  "tags": [
+    "keyboard-driven",
+    "vim-like",
+    "python",
+    "minimal-ui"
+  ],
+  "pitch": "Vim-style keyboard-driven browser with a minimal GUI, on Qt WebEngine.",
+  "summary": "qutebrowser is a Python/Qt browser controlled with vim-like keys, a command line and hints. It is deeply configurable through config.py and userscripts, but is limited by Qt WebEngine and has no extension store, sync or mobile app.",
+  "bestFor": [
+    "Vim users who want a keyboard-only browser",
+    "People who like to configure everything in a text file",
+    "Tiling-WM users who want minimal chrome"
+  ],
+  "notFor": [
+    "People who rely on browser extensions or sync",
+    "Mobile or cross-device users",
+    "Anyone who needs strict Chromium-level patch timing"
+  ],
+  "pros": [
+    {
+      "title": "True keyboard workflow",
+      "detail": "Hints, modes, a command line and vim-like bindings cover almost everything without a mouse."
+    },
+    {
+      "title": "Deep configuration",
+      "detail": "config.py plus per-domain settings, custom CSS and userscripts allow fine control."
+    },
+    {
+      "title": "Built-in ad blocking",
+      "detail": "Supports ABP-style filter lists, using Brave adblock via python-adblock when installed, plus host blocking."
+    },
+    {
+      "title": "Modern rendering",
+      "detail": "Qt WebEngine means current Chromium-class compatibility and DevTools."
+    },
+    {
+      "title": "No telemetry",
+      "detail": "Independent volunteer project with no tracking or accounts."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No extensions",
+      "detail": "No WebExtensions; only Greasemonkey-style userscripts and external scripts."
+    },
+    {
+      "title": "No sync or password manager",
+      "detail": "Relies on userscripts for Bitwarden/pass/KeePassXC; no built-in sync."
+    },
+    {
+      "title": "Qt WebEngine lag",
+      "detail": "Security fixes depend on Qt releases and distro packaging, which can trail Chrome."
+    },
+    {
+      "title": "Steep learning curve",
+      "detail": "Modal keybindings are unfamiliar to non-vim users."
+    }
+  ],
+  "signatureFeatures": [
+    "Link hints",
+    "Vim-style modal keys",
+    "config.py and :set",
+    "Userscripts and per-domain settings"
+  ],
+  "faq": [
+    {
+      "q": "Does qutebrowser support Chrome or Firefox extensions?",
+      "a": "No. It supports Greasemonkey-style userscripts and external scripts, not WebExtensions."
+    },
+    {
+      "q": "What engine does qutebrowser use?",
+      "a": "Qt WebEngine, which is Chromium-based. The old QtWebKit backend was removed."
+    },
+    {
+      "q": "Is there a Windows or macOS build?",
+      "a": "Yes, official builds exist; the 3.7.0 Windows/macOS releases ship Qt 6.11.0."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2014",
+      "event": "First release"
+    },
+    {
+      "date": "2025-10",
+      "event": "v3.6.0: hinting inside open shadow DOMs, GPU 2D canvas on Qt 6.8.2+"
+    },
+    {
+      "date": "2025-11",
+      "event": "v3.6.1-3.6.3 fixes (Qt 6.10.1 segfault workaround)"
+    },
+    {
+      "date": "2026-04",
+      "event": "v3.7.0: Qt 6.11 bundles on Windows/macOS; quickmark/bookmark reload commands"
+    },
+    {
+      "date": "2026-10",
+      "event": "v3.8.0 in development (drops Python 3.9)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks"
+    ],
+    "note": "Bookmark import is limited (e.g. import script); config migration is manual."
+  },
+  "alternatives": [
+    "nyxt",
+    "falkon",
+    "firefox",
+    "luakit"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync; use dotfile repos / syncthing for config and quickmarks"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No built-in vault; userscripts for pass, Bitwarden, KeePassXC, 1Password"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No WebExtensions; Greasemonkey-compatible userscripts only",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "No telemetry; ABP-style blocking available; cookie/3rd-party options",
+      "telemetry": "None",
+      "jurisdiction": "Switzerland (maintainer)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo (configurable)",
+    "telemetry": "None",
+    "drm": "Widevine only if system Qt WebEngine and CDM are available",
+    "codecs": "Depends on Qt WebEngine build (proprietary codecs often in distro builds)",
+    "sandbox": "Chromium sandbox via Qt WebEngine (can be disabled by setting)",
+    "patchLag": "Follows Qt WebEngine and distro updates",
+    "languages": "English UI (Qt locale for dialogs)"
+  },
+  "platforms": {
+    "linux": {
+      "status": "active",
+      "minOs": "Python 3.10+ (required from v3.8.0)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "flathub",
+        "deb",
+        "rpm",
+        "aur"
+      ],
+      "notes": [
+        "Distro-packaged; Flathub app org.qutebrowser.qutebrowser"
+      ],
+      "highlights": [
+        "Wayland and X11"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS (Qt 6.11 bundle)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew"
+      ],
+      "notes": [
+        "3.6.2 changelog mentioned issues with the Intel macOS release"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10+",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "portable"
+      ],
+      "notes": [
+        "Installer and standalone build ship Qt 6.11.0"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://github.com/qutebrowser/qutebrowser/releases",
+      "title": "qutebrowser GitHub releases",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/qutebrowser/qutebrowser/main/doc/changelog.asciidoc",
+      "title": "qutebrowser changelog",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://qutebrowser.org",
+      "title": "qutebrowser homepage",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://flathub.org/apps/org.qutebrowser.qutebrowser",
+      "title": "qutebrowser on Flathub",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Default adblock list contents and whether Brave adblock is used by default (needs python-adblock)",
+    "Homebrew cask presence",
+    "Windows winget/scoop availability",
+    "Python minimum on Linux (3.10 per changelog; verify)"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      5,
+      "Filter lists + 3rd-party cookie settings"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "partial",
+      4,
+      "Setting to upgrade/warn; scheme config"
+    ],
+    "doh": [
+      "partial",
+      3,
+      "Via Chromium flags / system resolver"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4,
+      "Per-domain cookie policy"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "yes",
+      6,
+      "Private windows with temp profile"
+    ],
+    "adBlocker": [
+      "yes",
+      6,
+      "ABP lists via adblock lib / hosts"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0,
+      "Network blocking only"
+    ],
+    "customFilterLists": [
+      "yes",
+      8,
+      "content.blocking lists in config"
+    ],
+    "youtubeAds": [
+      "partial",
+      3,
+      "Network rules only; userscripts help"
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "yes",
+      6,
+      "tabs.position left/right"
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "yes",
+      8,
+      ":tab-select with fuzzy completion"
+    ],
+    "pinnedTabs": [
+      "yes",
+      6,
+      ":tab-pin"
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "extension",
+      4,
+      "Userscript (readability)"
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "yes",
+      10,
+      "Core of the UI with completion"
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      10,
+      "Modal, fully rebindable"
+    ],
+    "readLater": [
+      "partial",
+      4,
+      "Bookmarks/quickmarks"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "yes",
+      8,
+      "Greasemonkey-compatible + shell userscripts"
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "partial",
+      6,
+      "--basedir isolated profiles"
+    ],
+    "passwordManager": [
+      "extension",
+      5,
+      "External via userscripts"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      3,
+      "Bookmark/history import is manual"
+    ],
+    "widevine": [
+      "partial",
+      4,
+      "Needs system Widevine/Qt support"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4,
+      "Build dependent"
+    ],
+    "av1": [
+      "partial",
+      5,
+      "Qt WebEngine build dependent"
+    ],
+    "hwDecode": [
+      "partial",
+      4,
+      "Platform/flag dependent"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "extension",
+      2,
+      "Userscript only"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "partial",
+      4,
+      "Global config.py/autoconfig"
+    ],
+    "kioskMode": [
+      "partial",
+      3,
+      "Hide UI via settings"
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Download list, open-with commands"
+    ],
+    "customThemes": [
+      "yes",
+      7,
+      "Stylesheets and colour settings"
+    ],
+    "customSearchEngines": [
+      "yes",
+      10,
+      "url.searchengines with prefixes"
+    ],
+    "devtools": [
+      "yes",
+      8,
+      ":devtools (Chromium DevTools)"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "V8 via Qt WebEngine; Chromium-class speed",
+      "documented"
+    ],
+    "pageLoad": [
+      8,
+      "Blink rendering, fewer UI extras",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Python+Qt startup before first page",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Chromium compositor",
+      "editorial"
+    ],
+    "graphics": [
+      7.5,
+      "GPU raster on Linux, flags sometimes needed",
+      "editorial"
+    ],
+    "memory": [
+      5.5,
+      "Chromium renderers; minimal UI",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium efficiency, lean UI",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "No tab sleeping or limiter",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "Needs a Chromium-capable machine",
+      "editorial"
+    ],
+    "installSize": [
+      5.5,
+      "Qt WebEngine adds roughly Chromium-sized deps",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6.5,
+      "No telemetry; filter lists configurable",
+      "editorial"
+    ],
+    "blocking": [
+      6.5,
+      "ABP lists + hosts; no cosmetic filtering",
+      "editorial"
+    ],
+    "fingerprinting": [
+      3,
+      "Chromium default surface",
+      "editorial"
+    ],
+    "securityHardening": [
+      7,
+      "Chromium sandbox/site isolation via Qt WebEngine",
+      "editorial"
+    ],
+    "patchSpeed": [
+      6.5,
+      "Lags Chromium via Qt WebEngine cadence",
+      "editorial"
+    ],
+    "telemetry": [
+      9.5,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      7,
+      "Stylesheets, colours, hidden UI",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      10,
+      "Modal keys, per-domain settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      10,
+      "Hundreds of config options",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab positions, sessions, no groups",
+      "editorial"
+    ],
+    "searchFreedom": [
+      9,
+      "Custom engines and prefixes",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Usable list and external handlers",
+      "editorial"
+    ],
+    "productivity": [
+      5.5,
+      "Command line, PDF.js; no reader/sidebar",
+      "editorial"
+    ],
+    "media": [
+      5.5,
+      "Codec/DRM depends on Qt build",
+      "editorial"
+    ],
+    "translation": [
+      1,
+      "Userscripts only",
+      "editorial"
+    ],
+    "extras": [
+      2,
+      "Few built-ins",
+      "editorial"
+    ],
+    "extensions": [
+      2.5,
+      "Userscripts only; no WebExtensions",
+      "editorial"
+    ],
+    "sync": [
+      0.5,
+      "None built in",
+      "editorial"
+    ],
+    "passwords": [
+      3.5,
+      "Userscript integrations only",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile app",
+      "documented"
+    ],
+    "webCompat": [
+      8,
+      "Blink via Qt WebEngine",
+      "editorial"
+    ],
+    "devTools": [
+      8.5,
+      "Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      5.5,
+      "Keyboard-first; Qt screen-reader support limited",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "GPL-3.0, public development",
+      "documented"
+    ],
+    "businessTrust": [
+      9.5,
+      "Volunteer project, no tracking",
+      "editorial"
+    ],
+    "longevity": [
+      8,
+      "12 years, active maintainer; small team",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      2,
+      "Modal vim-style keys, config.py",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

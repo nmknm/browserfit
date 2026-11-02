@@ -1,0 +1,310 @@
+{
+  "id": "otter-browser",
+  "name": "Otter Browser",
+  "aliases": ["Otter"],
+  "group": "power",
+  "developer": "Michał Dutkiewicz (Emdek) and contributors",
+  "hq": "Independent volunteer project (jurisdiction unverified)",
+  "businessModel": "None; free open-source project",
+  "engine": "blink",
+  "basedOn": "Qt (QtWebEngine, Chromium-based; QtWebKit backend also exists)",
+  "license": "GPL-3.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2014,
+  "status": "maintenance",
+  "statusNote": "Last stable 1.0.03 (Feb 2022) and last SourceForge builds June 2022; the maintainer still commits almost daily and a Qt6 port is in progress. FreeBSD dropped its port in Sep 2026 because the Qt5 WebEngine is deprecated.",
+  "version": {
+    "current": "1.0.03",
+    "date": "2022-02-22",
+    "upstream": "Qt5 / QtWebEngine (Chromium version depends on system Qt)"
+  },
+  "channels": ["Stable (1.0.x)", "Weekly/dev builds (last 1.0.81-dev440, Jun 2022)", "Git master"],
+  "updateCadence": "No stable release since Feb 2022; daily git commits and weekly progress reports",
+  "website": "https://otter-browser.org",
+  "tags": ["opera-12-style", "qt", "power-user", "rss", "mouse-gestures", "notes"],
+  "pitch": "Qt browser that recreates Opera 12's customisable UI. Stable releases stopped in 2022.",
+  "summary": "A Qt5 browser that recreates classic Opera 12: configurable toolbars and shortcuts, mouse gestures, notes, feeds and a content blocker. Development goes on in git, but the last stable release dates from 2022.",
+  "bestFor": [
+    "Fans of classic Opera 12 who want its customisable layout back",
+    "Power users who want mouse gestures, notes, a feed reader and sidebars built in",
+    "People happy to build from git or use a distro package"
+  ],
+  "notFor": [
+    "Anyone who needs timely Chromium security fixes",
+    "Users who want browser extensions or sync",
+    "Beginners who want a one-click installer on Windows or macOS"
+  ],
+  "pros": [
+    {
+      "title": "Opera 12 heritage",
+      "detail": "Aims to recreate the best aspects of Opera 12.x with a modular, highly configurable interface."
+    },
+    {
+      "title": "Built-in tools",
+      "detail": "Includes an RSS/Atom feeds reader, notes, content blocker, session management, password manager and userscript support."
+    },
+    {
+      "title": "Fully configurable",
+      "detail": "Toolbars, menus, shortcuts and mouse gestures can be rearranged and remapped."
+    },
+    {
+      "title": "No telemetry known",
+      "detail": "Volunteer project with no business model and no data-collection service."
+    },
+    {
+      "title": "Wide platform reach",
+      "detail": "Runs on Linux, BSD, macOS, Windows, Haiku, RISC OS and OS/2 or ArcaOS."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No release since 2022",
+      "detail": "Stable 1.0.03 shipped on 2022-02-22 and the last SourceForge build dates from June 2022."
+    },
+    {
+      "title": "Qt5 dead end",
+      "detail": "The project still builds against Qt 5.15; FreeBSD removed its port in Sep 2026 as it depends on the deprecated Qt5 WebEngine."
+    },
+    {
+      "title": "Slow security patches",
+      "detail": "Chromium fixes arrive only through the system Qt WebEngine, which for Qt5 is no longer actively developed."
+    },
+    {
+      "title": "No extension system",
+      "detail": "There is no extension API; only userscripts and built-in tools."
+    }
+  ],
+  "signatureFeatures": ["Opera 12-style UI", "Feeds reader", "Notes manager", "Mouse gestures", "Content blocking profiles"],
+  "faq": [
+    {
+      "q": "Is Otter Browser still maintained?",
+      "a": "Partly. The maintainer commits to git almost daily and posts weekly reports, but the last stable release was 1.0.03 on 2022-02-22."
+    },
+    {
+      "q": "Does Otter have a Qt6 version?",
+      "a": "A Qt6 port is under way (weekly report #638 of 2026-03-30 says it is getting closer), but no Qt6 release has been published."
+    },
+    {
+      "q": "Can I install Chrome extensions?",
+      "a": "No. Otter has no extension API; it offers userscripts and its own built-in tools."
+    }
+  ],
+  "timeline": [
+    {"date": "2014-01", "event": "First alpha released"},
+    {"date": "2019-01", "event": "First stable release 1.0.01 (1 Jan)"},
+    {"date": "2022-02", "event": "1.0.03 released, the latest stable"},
+    {"date": "2024-07", "event": "Initial Qt6 port work begins (weekly report #548)"},
+    {"date": "2026-03", "event": "Weekly report #638 says the Qt6 port is getting closer"},
+    {"date": "2026-09", "event": "FreeBSD removes its port: not ported to Qt6, depends on deprecated Qt5 WebEngine"}
+  ],
+  "switching": {
+    "imports": ["bookmarks"],
+    "note": "Imports and exports bookmarks (HTML) and has an OPML importer for feeds; passwords and extensions do not carry over."
+  },
+  "alternatives": ["vivaldi", "falkon", "qutebrowser", "opera", "seamonkey"],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync service"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Built-in password manager; local only"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension API; userscripts only",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Content blocking profiles and Do Not Track available; no telemetry known; no fingerprint defences",
+      "telemetry": "None known",
+      "jurisdiction": "Volunteer project"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Configurable list of bundled engines (default unverified)",
+    "telemetry": "None known",
+    "drm": "None by default (depends on Qt WebEngine build)",
+    "codecs": "Depends on the system Qt WebEngine and GStreamer build",
+    "sandbox": "Chromium sandbox via Qt WebEngine",
+    "patchLag": "Follows the system Qt5 WebEngine, which is deprecated",
+    "languages": "Many (community translations via Transifex)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "maintenance",
+      "minOs": "Windows (installers and an XP zip listed historically)",
+      "arch": ["x64", "x86"],
+      "stores": ["official-installer", "portable"],
+      "notes": ["Binaries come from SourceForge; SourceForge shows nothing newer than June 2022", "Current installers unverified"],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "maintenance",
+      "minOs": "Unverified",
+      "arch": ["x64"],
+      "stores": ["official-installer"],
+      "notes": ["DMG builds were announced in release news; current availability unverified"],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "maintenance",
+      "minOs": "Distro with Qt 5.15",
+      "arch": ["x64"],
+      "stores": ["aur", "rpm", "portable"],
+      "notes": ["1.0.03 packaged by Fedora, openSUSE, Void and others", "AppImage on SourceForge; BSD, Haiku, RISC OS and OS/2 ports also exist"],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": ["partial", 4, "Content blocking profiles; Do Not Track"],
+    "fingerprintProtection": ["no", 0],
+    "httpsOnly": ["no", 0],
+    "doh": ["no", 0],
+    "torWindows": ["no", 0],
+    "builtinVpn": ["no", 0],
+    "cookieIsolation": ["partial", 3, "Per-site cookie rules and a cookie panel"],
+    "queryStripping": ["no", 0],
+    "telemetryOptOut": ["yes", 9, "No telemetry known"],
+    "privateHardening": ["partial", 4, "Private windows"],
+    "adBlocker": ["yes", 6, "Content blocking profiles with ABP-style lists"],
+    "cosmeticFiltering": ["partial", 4],
+    "customFilterLists": ["yes", 7, "Add your own profiles (abp: protocol)"],
+    "youtubeAds": ["partial", 3],
+    "cookieBanners": ["partial", 3, "Only via filter lists"],
+    "verticalTabs": ["partial", 4, "Tab bar position is configurable; true vertical layout unverified"],
+    "tabGroups": ["no", 0],
+    "tabStacks": ["no", 0],
+    "workspaces": ["no", 0],
+    "splitView": ["no", 0],
+    "tabSleeping": ["no", 0],
+    "tabSearch": ["no", 0],
+    "pinnedTabs": ["yes", 7],
+    "tabTiling": ["no", 0],
+    "readerMode": ["no", 0],
+    "notes": ["yes", 7, "Built-in notes manager"],
+    "webPanels": ["partial", 5, "Sidebar with built-in panels (bookmarks, notes, history, links)"],
+    "pip": ["no", 0],
+    "screenshots": ["yes", 5, "Page screenshot action"],
+    "commandBar": ["no", 0],
+    "mouseGestures": ["yes", 8],
+    "keyboardShortcuts": ["yes", 9, "Fully configurable"],
+    "readLater": ["no", 0],
+    "mailCalendarRss": ["partial", 5, "Feeds reader (Atom/RSS 2.0, OPML import); no mail or calendar"],
+    "chromeWebStore": ["no", 0],
+    "firefoxAddons": ["no", 0],
+    "mv2Support": ["no", 0],
+    "uboFull": ["no", 0],
+    "mobileExtensions": ["no", 0],
+    "userscripts": ["yes", 5, "Userscript support per Wikipedia"],
+    "syncBookmarks": ["no", 0],
+    "syncPasswords": ["no", 0],
+    "syncTabs": ["no", 0],
+    "e2eeSync": ["no", 0],
+    "profiles": ["partial", 3, "Via command-line profile paths"],
+    "passwordManager": ["partial", 4],
+    "passkeys": ["no", 0],
+    "importData": ["partial", 4, "HTML bookmarks and OPML"],
+    "widevine": ["no", 0],
+    "netflix4k": ["no", 0],
+    "hevc": ["partial", 3],
+    "av1": ["partial", 4],
+    "hwDecode": ["partial", 3],
+    "aiAssistant": ["no", 0],
+    "aiSummarizer": ["no", 0],
+    "agenticBrowsing": ["no", 0],
+    "localAi": ["no", 0],
+    "aiKillSwitch": ["yes", 10, "No AI features"],
+    "translation": ["no", 0],
+    "cryptoWallet": ["no", 0],
+    "pwaInstall": ["no", 0],
+    "enterprisePolicies": ["no", 0],
+    "kioskMode": ["no", 0],
+    "panicButton": ["no", 0],
+    "downloadManager": ["yes", 6, "Transfers panel"],
+    "customThemes": ["partial", 4, "Reviewers note limited theming"],
+    "customSearchEngines": ["yes", 8],
+    "devtools": ["yes", 8, "Chromium inspector via QtWebEngine"]
+  },
+  "scores": {
+    "jsSpeed": [6.5, "Qt5 WebEngine is an older Chromium V8", "editorial"],
+    "pageLoad": [7, "Blink rendering, older engine", "editorial"],
+    "networkSpeed": [7, "Chromium network stack, older version", "editorial"],
+    "startup": [7, "Native Qt shell starts quickly", "editorial"],
+    "smoothness": [7, "Blink compositor", "editorial"],
+    "graphics": [6, "WebGL via old QtWebEngine; no WebGPU", "editorial"],
+    "memory": [5.5, "Chromium process model, lean shell", "editorial"],
+    "cpu": [6, "Chromium-level CPU use", "editorial"],
+    "battery": [5.5, "Chromium-level efficiency", "editorial"],
+    "resourceControls": [3, "No tab sleeping or limiters", "editorial"],
+    "lowEnd": [5, "Needs Qt5 WebEngine; heavier than Falkon-class", "editorial"],
+    "installSize": [5.5, "Small app but large Qt WebEngine dependency", "editorial"],
+    "privacyDefaults": [5.5, "No telemetry, blocking available but opt-in", "editorial"],
+    "blocking": [6, "ABP-style profiles, limited cosmetic support", "documented"],
+    "fingerprinting": [2.5, "Stock Chromium fingerprint surface", "editorial"],
+    "securityHardening": [4, "Chromium sandbox, but dated Qt5 WebEngine base", "documented"],
+    "patchSpeed": [3, "Depends on deprecated Qt5 WebEngine updates", "documented"],
+    "telemetry": [9.5, "No telemetry known", "documented"],
+    "lookCustom": [7, "Configurable toolbars and skins; limited theming", "documented"],
+    "behaviourCustom": [9, "Gestures, shortcuts and site rules", "documented"],
+    "advancedSettings": [8.5, "Large settings dialog and config editor", "editorial"],
+    "tabManagement": [6, "Pinned tabs, tab bar placement, sessions; no groups", "editorial"],
+    "searchFreedom": [8.5, "Many bundled engines, custom ones easy", "documented"],
+    "downloads": [6, "Transfers panel", "editorial"],
+    "productivity": [7, "Notes, feeds, sidebar panels, sessions", "documented"],
+    "media": [5, "Codecs depend on the Qt build; no DRM", "editorial"],
+    "translation": [0, "No translation", "editorial"],
+    "extras": [6, "Feeds reader, notes, content blocker", "documented"],
+    "extensions": [1.5, "No extension API; userscripts only", "documented"],
+    "sync": [0, "No sync", "documented"],
+    "passwords": [3.5, "Basic local manager", "editorial"],
+    "mobileApps": [0, "No mobile version", "documented"],
+    "webCompat": [6.5, "Old Chromium, but still Blink", "editorial"],
+    "devTools": [7.5, "Chromium inspector", "editorial"],
+    "accessibility": [5, "Qt accessibility; limited testing found", "editorial"],
+    "openSource": [9.5, "GPL-3.0, public development", "documented"],
+    "businessTrust": [9, "Volunteer project, no monetisation", "editorial"],
+    "longevity": [3.5, "One maintainer, no release since 2022, Qt5 dead end", "documented"],
+    "ai": [0, "No AI features", "documented"],
+    "beginnerFriendly": [4.5, "Familiar UI but no easy current installer", "editorial"]
+  },
+  "sources": [
+    {"url": "https://github.com/OtterBrowser/otter-browser", "title": "OtterBrowser/otter-browser (GitHub)", "accessed": "2026-10-30"},
+    {"url": "https://github.com/OtterBrowser/otter-browser/releases", "title": "Otter Browser releases (1.0.03 latest)", "accessed": "2026-10-30"},
+    {"url": "https://otter-browser.org/", "title": "Otter Browser official site and weekly reports", "accessed": "2026-10-30"},
+    {"url": "https://en.wikipedia.org/wiki/Otter_Browser", "title": "Otter Browser - Wikipedia", "accessed": "2026-10-30"},
+    {"url": "https://www.freshports.org/www/otter-browser", "title": "FreshPorts: www/otter-browser (expired and removed 2026-09-30)", "accessed": "2026-10-30"},
+    {"url": "https://sourceforge.net/projects/otter-browser/files/", "title": "SourceForge: Otter Browser files", "accessed": "2026-10-30"},
+    {"url": "https://repology.org/project/otter-browser/versions", "title": "Repology: otter-browser packages", "accessed": "2026-10-30"}
+  ],
+  "unverified": [
+    "Whether current Windows, macOS and AppImage binaries exist (SourceForge listing shows only a June 2022 source tarball)",
+    "Which Chromium version distro builds actually ship (depends on the Qt5 WebEngine version)",
+    "True vertical-tab support, default search engine, accessibility quality and import coverage",
+    "Whether the Qt6 port will reach a release (reports show gradual, intermittent progress)",
+    "Several feature ratings are inferred from Wikipedia and release notes rather than tested"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-30"
+}

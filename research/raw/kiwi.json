@@ -1,0 +1,758 @@
+{
+  "id": "kiwi",
+  "name": "Kiwi Browser",
+  "aliases": [
+    "Kiwi"
+  ],
+  "group": "android",
+  "developer": "Arnaud Granal",
+  "hq": "Not confirmed",
+  "businessModel": "Free; ads/search deals earlier (unverified)",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Open source (Chromium-based; GitHub archived)",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2017,
+  "status": "discontinued",
+  "statusNote": "No maintenance after Jan 2025; removed from Google Play; GitHub archived Jan 23, 2025",
+  "version": {
+    "current": "Final release (version unconfirmed)",
+    "date": "2025-01",
+    "upstream": "Chromium (frozen)"
+  },
+  "channels": [],
+  "updateCadence": "None - discontinued",
+  "website": "https://github.com/kiwibrowser/src.next",
+  "tags": [
+    "android",
+    "discontinued",
+    "extensions",
+    "chromium"
+  ],
+  "pitch": "Android Chromium browser famous for desktop extensions; shut down January 2025.",
+  "summary": "Popular Android Chromium browser that pioneered desktop extensions on phones. Discontinued Jan 2025; pulled from Play, GitHub archived Jan 23. Extension code reportedly folded into Edge Canary. Stuck on an old Chromium.",
+  "bestFor": [
+    "Historical reference",
+    "Anyone choosing an alternative (Quetta, Lemur, Edge Canary)"
+  ],
+  "notFor": [
+    "Anyone: no security updates",
+    "New installs",
+    "Banking or sensitive browsing"
+  ],
+  "pros": [
+    {
+      "title": "Desktop extensions at peak",
+      "detail": "Chrome extensions on Android in a Chromium browser."
+    },
+    {
+      "title": "Night mode and blocker support",
+      "detail": "Popular tweaks such as night mode and Adblock-style features (XDA thread title)."
+    },
+    {
+      "title": "Source on GitHub",
+      "detail": "Code remains available though archived."
+    },
+    {
+      "title": "Lived on via Edge",
+      "detail": "The developer said extension code was integrated into Microsoft Edge Canary."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Discontinued",
+      "detail": "No updates, features or fixes after Jan 2025."
+    },
+    {
+      "title": "Removed from Google Play",
+      "detail": "Only GitHub builds remain; the developer warns against other sources."
+    },
+    {
+      "title": "Frozen Chromium",
+      "detail": "Growing unpatched vulnerability gap."
+    }
+  ],
+  "signatureFeatures": [
+    "Desktop Chrome extensions on Android",
+    "Night mode",
+    "Chromium engine"
+  ],
+  "faq": [
+    {
+      "q": "Is Kiwi Browser still available?",
+      "a": "Only via GitHub; it was removed from Google Play in Jan 2025 and is unmaintained."
+    },
+    {
+      "q": "What replaced it?",
+      "a": "Quetta, Lemur, Edge Canary or Vivaldi/Firefox per the developer."
+    },
+    {
+      "q": "Did Microsoft buy it?",
+      "a": "No sign of an acquisition; extension code was integrated into Edge Canary."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Kiwi Browser released (approximate)"
+    },
+    {
+      "date": "2025-01",
+      "event": "Removed from Play; GitHub archived Jan 23"
+    },
+    {
+      "date": "2025-01",
+      "event": "Android Authority and others report the shutdown (Jan 25-27)"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Move to Quetta, Lemur or Edge Canary for extensions."
+  },
+  "alternatives": [
+    "quetta",
+    "lemur",
+    "mises",
+    "iceraven",
+    "fulguris",
+    "jiosphere"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Chromium autofill"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Supported MV2 extensions at last release (frozen)",
+      "date": "2025"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "chrome-web-store",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI"
+    },
+    "privacy": {
+      "defaults": "Chromium defaults, ad/tracker blocking via features/extensions",
+      "telemetry": "Unverified",
+      "jurisdiction": "Unknown"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Unverified",
+    "drm": "Unverified",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox (frozen)",
+    "patchLag": "Unbounded - discontinued",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "android": {
+      "status": "discontinued",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64",
+        "armv7"
+      ],
+      "stores": [
+        "github"
+      ],
+      "notes": [
+        "Removed from Google Play Jan 2025",
+        "GitHub builds only; developer warns against other sources"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.androidauthority.com/kiwi-browser-shutting-down-3519510/",
+      "title": "Android Authority: Kiwi shutting down",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.alternativeto.net/news/2025/1/kiwi-browser-discontinued-explore-alternatives-for-extension-support-and-security/",
+      "title": "AlternativeTo: Kiwi discontinued",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.yahoo.com/tech/kiwi-browser-dead-dodo-not-174449161.html",
+      "title": "Kiwi Browser dead as a Dodo - Yahoo/TechCrunch",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://techissuestoday.com/kiwi-browser-removed-from-google-play-store-as-maintenance-ends-code-integrated-into-microsoft-edge/",
+      "title": "Kiwi removed from Play - TechIssuesToday",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Final version and Chromium base",
+    "Release year",
+    "Business model",
+    "jzaas.net claim that the developer left in Jan 2026 (conflicts with all other sources)"
+  ],
+  "confidence": "high",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "extension",
+      8,
+      "uBO"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "partial",
+      4,
+      "Chromium mobile tab groups (unverified)"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Android OS-level tab discard"
+    ],
+    "tabSearch": [
+      "partial",
+      4,
+      ""
+    ],
+    "pinnedTabs": [
+      "no",
+      0,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "no",
+      0,
+      ""
+    ],
+    "pip": [
+      "partial",
+      5,
+      ""
+    ],
+    "screenshots": [
+      "no",
+      0,
+      ""
+    ],
+    "commandBar": [
+      "no",
+      0,
+      ""
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0,
+      "Mobile; external keyboards only"
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "yes",
+      8,
+      "Full desktop extensions at last release"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "yes",
+      8,
+      "MV2 at last release"
+    ],
+    "uboFull": [
+      "yes",
+      8,
+      "uBO worked at last release"
+    ],
+    "mobileExtensions": [
+      "yes",
+      9,
+      "Desktop Chrome extensions on Android"
+    ],
+    "userscripts": [
+      "yes",
+      8,
+      "Tampermonkey"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "no",
+      0,
+      ""
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "partial",
+      4,
+      ""
+    ],
+    "widevine": [
+      "yes",
+      7,
+      ""
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "no",
+      0,
+      "No AI assistant"
+    ],
+    "aiSummarizer": [
+      "no",
+      0,
+      ""
+    ],
+    "agenticBrowsing": [
+      "no",
+      0,
+      ""
+    ],
+    "localAi": [
+      "no",
+      0,
+      ""
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      5,
+      ""
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      ""
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      ""
+    ],
+    "customThemes": [
+      "yes",
+      5,
+      "Night mode"
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "partial",
+      5,
+      "Remote debugging via desktop Chrome (unverified)"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      8,
+      "Chromium mobile cold start",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      5,
+      "Chromium multi-process",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium-class",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Chromium on phone, average drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      3.5,
+      "Android OS tab discard only",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "Runs on mid-range phones",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Typical Chromium APK size",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3.5,
+      "Chromium defaults",
+      "editorial"
+    ],
+    "blocking": [
+      7.5,
+      "uBlock Origin worked at last release",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      3,
+      "Frozen Chromium since Jan 2025",
+      "editorial"
+    ],
+    "patchSpeed": [
+      0.5,
+      "No updates since Jan 2025",
+      "documented"
+    ],
+    "telemetry": [
+      4,
+      "Vendor telemetry not fully documented",
+      "editorial"
+    ],
+    "lookCustom": [
+      3,
+      "Dark mode and basic themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3.5,
+      "Few gestures or per-site controls",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3.5,
+      "Limited flags on mobile",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Basic tab switcher",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      4,
+      "Basic mobile tools",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      6,
+      "Page translation if enabled (unverified)",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "Few extras",
+      "editorial"
+    ],
+    "extensions": [
+      9,
+      "Desktop Chrome extensions on Android",
+      "documented"
+    ],
+    "sync": [
+      3,
+      "Limited or no sync",
+      "editorial"
+    ],
+    "passwords": [
+      4,
+      "Basic autofill",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "Mobile is the main product",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      4,
+      "Remote debugging only",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Chromium Android accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      7,
+      "Open Chromium-based code, now archived",
+      "editorial"
+    ],
+    "businessTrust": [
+      5,
+      "Abrupt discontinuation",
+      "editorial"
+    ],
+    "longevity": [
+      0.5,
+      "Discontinued Jan 2025",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      4,
+      "Discontinued; hard to install safely",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

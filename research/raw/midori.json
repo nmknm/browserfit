@@ -1,0 +1,789 @@
+{
+  "id": "midori",
+  "name": "Midori",
+  "aliases": [
+    "Midori Browser",
+    "Astian Midori"
+  ],
+  "group": "forks",
+  "developer": "Astian, Inc.",
+  "hq": "Unverified (Astian, Inc.)",
+  "businessModel": "Free browser; services via Astian Account (MidoriVPN, Midori Sync, Astian Cloud, Marketplace). Revenue model details unverified",
+  "engine": "gecko",
+  "basedOn": "Firefox (Gecko); originally WebKitGTK",
+  "license": "LGPL-2.1-or-later",
+  "openSource": "partial",
+  "price": "free",
+  "paidNote": "MidoriVPN is a separate service; pricing unverified",
+  "releaseYear": 2007,
+  "status": "active",
+  "statusNote": "Midori 12 in development; Astian says a desktop update has been delayed",
+  "version": {
+    "current": "11.9.x (desktop 11.9.1; Android 11.9.4)",
+    "date": "2026-10-15",
+    "upstream": "Firefox (tracks latest since 11.6.1, Mar 2026)"
+  },
+  "channels": [
+    "Stable"
+  ],
+  "updateCadence": "Irregular; over two months with no desktop update before 11.9.x, per Astian blog",
+  "website": "https://astian.org/midori-en/",
+  "tags": [
+    "gecko",
+    "astian",
+    "vpn",
+    "sync"
+  ],
+  "pitch": "Firefox-based Midori from Astian with its own sync and VPN services.",
+  "summary": "The former lightweight WebKitGTK Midori, now a Firefox-based browser run by Astian with an optional Astian Account for E2EE Midori Sync (alpha) and MidoriVPN. Midori 12 is in development.",
+  "bestFor": [
+    "Users wanting a Firefox-based browser with bundled sync and VPN options",
+    "People who like Astian services",
+    "Android users wanting an alternative Gecko-style browser"
+  ],
+  "notFor": [
+    "Users needing guaranteed update cadence",
+    "People wanting a long-established independent browser",
+    "Anyone needing verified security patch timelines"
+  ],
+  "pros": [
+    {
+      "title": "Gecko base",
+      "detail": "Switched to tracking latest Firefox from 11.6.1 (March 2026) instead of ESR."
+    },
+    {
+      "title": "Own sync",
+      "detail": "Midori Sync is E2EE but still in open alpha."
+    },
+    {
+      "title": "Astian Account",
+      "detail": "Optional single account for Sync, MidoriVPN and Astian Cloud."
+    },
+    {
+      "title": "Cross-platform",
+      "detail": "Linux, Windows, macOS (since 11.5.2 in 2025) and Android."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Update gaps",
+      "detail": "Astian blog noted over two months without a desktop update."
+    },
+    {
+      "title": "Alpha services",
+      "detail": "Midori Sync is open alpha and VPN is not fully integrated."
+    },
+    {
+      "title": "Opaque details",
+      "detail": "Patch lag, telemetry and company jurisdiction are not clearly documented."
+    },
+    {
+      "title": "Confusing lineage",
+      "detail": "Old WebKitGTK Midori and Android versions use a different version line."
+    }
+  ],
+  "signatureFeatures": [
+    "Midori Sync (E2EE alpha)",
+    "MidoriVPN",
+    "Astian Account",
+    "Midori 12 in progress"
+  ],
+  "faq": [
+    {
+      "q": "What engine does Midori use now?",
+      "a": "Gecko; it moved from WebKitGTK to a Firefox base after merging with Astian in 2019."
+    },
+    {
+      "q": "Is Midori 12 released?",
+      "a": "Not as of late October 2026; Astian says it is in active development."
+    },
+    {
+      "q": "Does Midori have built-in sync?",
+      "a": "Yes, Midori Sync with end-to-end encryption, currently in open alpha."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2007",
+      "event": "Original Midori WebKitGTK browser begins"
+    },
+    {
+      "date": "2019",
+      "event": "Merges with Astian Foundation, becomes Firefox derivative"
+    },
+    {
+      "date": "2025-03",
+      "event": "11.5.2 adds macOS support"
+    },
+    {
+      "date": "2026-03",
+      "event": "11.6.1 switches to tracking latest Firefox"
+    },
+    {
+      "date": "2026-09",
+      "event": "Astian Account launched with Midori Sync alpha and MidoriVPN"
+    },
+    {
+      "date": "2026-10",
+      "event": "Android 11.9.4 released (2026-10-15)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Standard Firefox-style import; optional Astian Account for sync."
+  },
+  "alternatives": [
+    "firefox",
+    "librewolf",
+    "waterfox",
+    "brave",
+    "otter-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs"
+      ],
+      "crossOs": true,
+      "note": "Midori Sync, open alpha, E2EE per Astian"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Firefox-based manager (unverified)"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Firefox base keeps MV2 add-ons; Midori-specific behaviour unverified",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features reported"
+    },
+    "privacy": {
+      "defaults": "Firefox-style protections plus Astian options; details unverified",
+      "telemetry": "Unverified",
+      "jurisdiction": "Unverified"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Astian-hosted search (unverified)",
+    "telemetry": "Unverified",
+    "drm": "Widevine unverified",
+    "codecs": "Firefox set (unverified)",
+    "sandbox": "Firefox sandbox (unverified)",
+    "patchLag": "Unverified; follows latest Firefox since 11.6.1",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Desktop 11.9.1 dated 2026-09-29 on a download site"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Supported since 11.5.2 (Mar 2025)"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "deb"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64",
+        "arm"
+      ],
+      "stores": [
+        "google-play"
+      ],
+      "notes": [
+        "Play listing org.midorinext.android; Android 11.9.4 on 2026-10-15",
+        "Engine on Android unverified"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -4
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      6,
+      "Firefox ETP lineage; unverified"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "yes",
+      6
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "partial",
+      4,
+      "MidoriVPN via Astian Account; browser integration partial"
+    ],
+    "cookieIsolation": [
+      "yes",
+      6
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      5
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "partial",
+      4,
+      "Desktop built-in blocker teased; unverified"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      8
+    ],
+    "customFilterLists": [
+      "extension",
+      7
+    ],
+    "youtubeAds": [
+      "extension",
+      8
+    ],
+    "cookieBanners": [
+      "extension",
+      6
+    ],
+    "verticalTabs": [
+      "partial",
+      5,
+      "Depends on Firefox base version"
+    ],
+    "tabGroups": [
+      "partial",
+      5,
+      "Depends on Firefox base version"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "yes",
+      5
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      7
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "yes",
+      6
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "yes",
+      7,
+      "Gecko base; Midori Marketplace also announced"
+    ],
+    "mv2Support": [
+      "yes",
+      8,
+      "Inherited from Firefox"
+    ],
+    "uboFull": [
+      "yes",
+      8
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      7
+    ],
+    "syncBookmarks": [
+      "partial",
+      5,
+      "Alpha"
+    ],
+    "syncPasswords": [
+      "partial",
+      5
+    ],
+    "syncTabs": [
+      "partial",
+      5
+    ],
+    "e2eeSync": [
+      "partial",
+      6,
+      "Alpha"
+    ],
+    "profiles": [
+      "yes",
+      6
+    ],
+    "passwordManager": [
+      "yes",
+      6
+    ],
+    "passkeys": [
+      "partial",
+      4
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "partial",
+      6,
+      "Unverified"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      5
+    ],
+    "av1": [
+      "yes",
+      7
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "cryptoWallet": [
+      "partial",
+      2,
+      "Midori Wallet planned"
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "yes",
+      6
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      7
+    ],
+    "customSearchEngines": [
+      "yes",
+      8
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Firefox DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "smoothness": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "graphics": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "memory": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "resourceControls": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "installSize": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "blocking": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "fingerprinting": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "securityHardening": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "patchSpeed": [
+      6,
+      "Follows latest Firefox since 11.6.1, but desktop updates stalled 2+ months",
+      "documented"
+    ],
+    "telemetry": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lookCustom": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "advancedSettings": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "productivity": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "media": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "translation": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extras": [
+      6,
+      "MidoriVPN, Astian Cloud, wallet planned; mostly alpha",
+      "documented"
+    ],
+    "extensions": [
+      8,
+      "Gecko base; Firefox add-on ecosystem",
+      "documented"
+    ],
+    "sync": [
+      4.5,
+      "Midori Sync is E2EE but still open alpha",
+      "documented"
+    ],
+    "passwords": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "mobileApps": [
+      5,
+      "Android 11.9.4 on Google Play (engine unverified)",
+      "documented"
+    ],
+    "webCompat": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "devTools": [
+      8.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "openSource": [
+      6.5,
+      "LGPL-2.1 per Wikipedia; Astian service code not fully open",
+      "documented"
+    ],
+    "businessTrust": [
+      5.5,
+      "Opaque company and revenue details",
+      "documented"
+    ],
+    "longevity": [
+      5.5,
+      "Long history but irregular updates; Midori 12 pending",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features reported",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Midori_(web_browser)",
+      "title": "Midori (web browser) - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/09/20/midori-browser-extra-services-astian-account/",
+      "title": "Midori Astian Account - PiunikaWeb",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://astian.org/midori-en/midori-browser-arrives-11-6-1/",
+      "title": "Midori Browser arrives 11.6.1 - Astian",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://astian.org/midori-en/midori-sync/",
+      "title": "Midori Sync - Astian",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=org.midorinext.android&hl=en",
+      "title": "Midori on Google Play",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Company jurisdiction and revenue model",
+    "Windows/macOS/Linux minimum OS and exact desktop version and date (11.9.1 from a download site)",
+    "Android engine and Android version-line mapping",
+    "Whether Firefox add-ons, tab groups, vertical tabs and Widevine are enabled",
+    "Telemetry, default search, patch lag",
+    "Built-in ad blocker status"
+  ],
+  "confidence": "low",
+  "lastVerified": "2026-10-29"
+}

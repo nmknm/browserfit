@@ -1,0 +1,802 @@
+{
+  "id": "waterfox",
+  "name": "Waterfox",
+  "aliases": [
+    "Waterfox Browser"
+  ],
+  "group": "forks",
+  "developer": "BrowserWorks",
+  "hq": "United Kingdom",
+  "businessModel": "Search-engine partnerships (Qwant in 26 regions, DuckDuckGo elsewhere); no ads or tracking",
+  "engine": "gecko",
+  "basedOn": "Firefox ESR 153",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2011,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "6.7.7",
+    "date": "2026-10-27",
+    "upstream": "Firefox ESR 153"
+  },
+  "channels": [
+    "Release",
+    "Beta"
+  ],
+  "updateCadence": "Point releases every 1-2 weeks on an ESR base; new ESR rebase about yearly",
+  "website": "https://www.waterfox.com",
+  "tags": [
+    "privacy",
+    "firefox-fork",
+    "legacy-addons",
+    "no-ai",
+    "customizable"
+  ],
+  "pitch": "Privacy-first Firefox ESR fork with native tree tabs and legacy add-on support.",
+  "summary": "Independent Firefox ESR fork. Waterfox 6.7 (Aug 2026) moved to ESR 153 with native tree-style vertical tabs, a built-in ad blocker panel, 12 palettes, restored legacy add-ons, no telemetry and AI disabled.",
+  "bestFor": [
+    "Firefox users who want fewer Mozilla extras",
+    "People who want vertical tree tabs without an extension",
+    "Users who want no AI and no telemetry"
+  ],
+  "notFor": [
+    "People who want Firefox-level resources behind security patching",
+    "Those who need a polished mobile app",
+    "Anyone wanting workspaces or split view"
+  ],
+  "pros": [
+    {
+      "title": "No telemetry, no AI",
+      "detail": "Zero telemetry, Safe Browsing endpoints disabled, Firefox 153 AI features turned off by default."
+    },
+    {
+      "title": "Native tree-style tabs",
+      "detail": "Vertical tab strip with built-in tree support in 6.7, replacing the bundled add-on."
+    },
+    {
+      "title": "Legacy add-on support",
+      "detail": "Restores restartless, overlay and restart-required add-ons alongside WebExtensions."
+    },
+    {
+      "title": "Built-in ad blocker",
+      "detail": "6.7 adds a dedicated blocker settings panel."
+    },
+    {
+      "title": "Android app",
+      "detail": "Waterfox for Android (1.2.10, Gecko 159) is on Google Play."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Behind on new Firefox features",
+      "detail": "ESR base means feature updates arrive only with the yearly rebase."
+    },
+    {
+      "title": "Small team",
+      "detail": "Security patching depends on a small company shipping on top of Mozilla."
+    },
+    {
+      "title": "Fewer tab-management tools",
+      "detail": "No workspaces or split view like Zen or Vivaldi."
+    },
+    {
+      "title": "Mixed Android reviews",
+      "detail": "Play rating about 3.5 from ~3.3k ratings (AppBrain)."
+    }
+  ],
+  "signatureFeatures": [
+    "Native tree-style vertical tabs",
+    "Legacy add-on support",
+    "Built-in ad blocker panel",
+    "No telemetry, AI off",
+    "Nova style and 12 palettes"
+  ],
+  "faq": [
+    {
+      "q": "Does Waterfox have AI?",
+      "a": "The Firefox 153 AI features are disabled by default and 6.7.4 added a switch to disable AI in search results."
+    },
+    {
+      "q": "Is Waterfox on Android?",
+      "a": "Yes, Waterfox for Android is on Google Play (1.2.10, Gecko 159 as of late October 2026)."
+    },
+    {
+      "q": "Which Firefox is it based on?",
+      "a": "Waterfox 6.7 is built on Firefox ESR 153, up from ESR 140."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2011",
+      "event": "First Waterfox release"
+    },
+    {
+      "date": "2026-07-07",
+      "event": "6.7.0-beta.1 on Firefox ESR 153"
+    },
+    {
+      "date": "2026-08-19",
+      "event": "Waterfox 6.7.0 stable (Supernova)"
+    },
+    {
+      "date": "2026-10-22",
+      "event": "Waterfox for Android updated to Gecko 159"
+    },
+    {
+      "date": "2026-10-27",
+      "event": "Waterfox 6.7.7 released"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "cookies",
+      "form data"
+    ],
+    "note": "Rewritten migrator imports from Firefox, Chrome and others."
+  },
+  "alternatives": [
+    "firefox",
+    "librewolf",
+    "zen",
+    "floorp"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "extensions",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Firefox Sync (Android 1.2.9 adds custom sync server)"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Firefox password manager; passkeys on macOS noted in changelog"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Gecko keeps MV2 and adds legacy add-on support",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "firefox-addons",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Upstream AI disabled by default"
+    },
+    "privacy": {
+      "defaults": "No telemetry, Safe Browsing off, built-in blocker",
+      "telemetry": "None; Sentry removed on Android",
+      "jurisdiction": "United Kingdom (unverified)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Qwant (26 regions) / DuckDuckGo",
+    "telemetry": "None",
+    "drm": "Widevine (assumed as upstream; not verified)",
+    "codecs": "H.264, VP9, AV1, JPEG XL",
+    "sandbox": "Firefox process sandbox",
+    "patchLag": "Tracks ESR security updates (6.7.7 within a week of Firefox updates)",
+    "languages": "Many"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "winget"
+      ],
+      "notes": [
+        "ARM64 builds in 6.7"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS (recent)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew"
+      ],
+      "notes": [
+        "Passkey support on macOS noted in changelog"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern distro",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "flathub",
+        "aur"
+      ],
+      "notes": [
+        "Official DEB and RPM repositories since 6.7.0"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 8+ (newer builds need 12L per Uptodown)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "Gecko 159, v1.2.10; Android 5.0 variant stuck at 1.1.9"
+      ],
+      "highlights": [
+        "Custom sync server"
+      ],
+      "scoreDelta": {
+        "mobileApps": 0,
+        "extensions": -2
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      7
+    ],
+    "fingerprintProtection": [
+      "partial",
+      6
+    ],
+    "httpsOnly": [
+      "yes",
+      8
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "yes",
+      9
+    ],
+    "queryStripping": [
+      "yes",
+      7
+    ],
+    "telemetryOptOut": [
+      "yes",
+      9,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "partial",
+      5
+    ],
+    "adBlocker": [
+      "yes",
+      7,
+      "Built-in blocker panel (6.7)"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      5
+    ],
+    "customFilterLists": [
+      "partial",
+      5
+    ],
+    "youtubeAds": [
+      "partial",
+      5
+    ],
+    "cookieBanners": [
+      "partial",
+      5
+    ],
+    "verticalTabs": [
+      "yes",
+      9,
+      "Native tree tabs"
+    ],
+    "tabGroups": [
+      "partial",
+      5
+    ],
+    "tabStacks": [
+      "partial",
+      6,
+      "Tree structure"
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "yes",
+      6
+    ],
+    "tabSearch": [
+      "yes",
+      7
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      7
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "yes",
+      7
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "yes",
+      10
+    ],
+    "mv2Support": [
+      "yes",
+      10,
+      "Plus legacy add-ons"
+    ],
+    "uboFull": [
+      "yes",
+      10
+    ],
+    "mobileExtensions": [
+      "yes",
+      6,
+      "Android Firefox add-ons"
+    ],
+    "userscripts": [
+      "extension",
+      9
+    ],
+    "syncBookmarks": [
+      "yes",
+      8
+    ],
+    "syncPasswords": [
+      "yes",
+      8
+    ],
+    "syncTabs": [
+      "yes",
+      8
+    ],
+    "e2eeSync": [
+      "yes",
+      9
+    ],
+    "profiles": [
+      "yes",
+      7
+    ],
+    "passwordManager": [
+      "yes",
+      7
+    ],
+    "passkeys": [
+      "yes",
+      6
+    ],
+    "importData": [
+      "yes",
+      8,
+      "Rewritten migrator"
+    ],
+    "widevine": [
+      "yes",
+      6
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      5
+    ],
+    "av1": [
+      "yes",
+      8
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      9,
+      "AI disabled by default"
+    ],
+    "translation": [
+      "yes",
+      7,
+      "Local Firefox Translations"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "yes",
+      8
+    ],
+    "kioskMode": [
+      "partial",
+      4
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      8,
+      "Nova style, 12 palettes"
+    ],
+    "customSearchEngines": [
+      "yes",
+      9
+    ],
+    "devtools": [
+      "yes",
+      9
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8,
+      "SpiderMonkey on ESR 153",
+      "editorial"
+    ],
+    "pageLoad": [
+      8,
+      "Gecko rendering",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Firefox network stack with HTTP/3",
+      "editorial"
+    ],
+    "startup": [
+      7.5,
+      "Close to stock Firefox",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Gecko compositor",
+      "editorial"
+    ],
+    "graphics": [
+      8,
+      "Gecko WebGL",
+      "editorial"
+    ],
+    "memory": [
+      6.5,
+      "Firefox baseline",
+      "editorial"
+    ],
+    "cpu": [
+      7,
+      "Firefox baseline",
+      "editorial"
+    ],
+    "battery": [
+      7,
+      "Firefox baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      6,
+      "Tab unloading, no limiters",
+      "documented"
+    ],
+    "lowEnd": [
+      6.5,
+      "Firefox-sized, 6.7 adds ARM64 builds",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Firefox-sized download",
+      "documented"
+    ],
+    "privacyDefaults": [
+      7.5,
+      "No telemetry, Safe Browsing off, ETP on",
+      "documented"
+    ],
+    "blocking": [
+      7,
+      "Built-in ad blocker plus ETP and uBO support",
+      "documented"
+    ],
+    "fingerprinting": [
+      6,
+      "Firefox protections",
+      "editorial"
+    ],
+    "securityHardening": [
+      8,
+      "Firefox sandbox on ESR base",
+      "editorial"
+    ],
+    "patchSpeed": [
+      8,
+      "6.7.0 to 6.7.7 in nine weeks on ESR base",
+      "documented"
+    ],
+    "telemetry": [
+      9.5,
+      "Zero telemetry, Sentry removed on Android",
+      "documented"
+    ],
+    "lookCustom": [
+      7.5,
+      "Nova style, 12 palettes, userChrome",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      7.5,
+      "Firefox settings and shortcuts",
+      "editorial"
+    ],
+    "advancedSettings": [
+      10,
+      "Full about:config and policies",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Native tree-style vertical tabs",
+      "documented"
+    ],
+    "searchFreedom": [
+      9,
+      "Any engine; Qwant/DDG defaults",
+      "documented"
+    ],
+    "downloads": [
+      7,
+      "Firefox download panel",
+      "editorial"
+    ],
+    "productivity": [
+      6,
+      "Reader and PiP only",
+      "editorial"
+    ],
+    "media": [
+      7.5,
+      "Widevine and common codecs",
+      "editorial"
+    ],
+    "translation": [
+      7,
+      "Local Firefox Translations",
+      "documented"
+    ],
+    "extras": [
+      4,
+      "No VPN/mail/RSS; built-in blocker only",
+      "documented"
+    ],
+    "extensions": [
+      9.5,
+      "Firefox add-ons, legacy add-ons, full MV2",
+      "documented"
+    ],
+    "sync": [
+      8.5,
+      "Firefox Sync, Android custom sync server",
+      "documented"
+    ],
+    "passwords": [
+      7.5,
+      "Firefox password manager",
+      "documented"
+    ],
+    "mobileApps": [
+      6,
+      "Android app on Gecko 159, none for iOS",
+      "documented"
+    ],
+    "webCompat": [
+      8.5,
+      "Gecko",
+      "editorial"
+    ],
+    "devTools": [
+      9.5,
+      "Firefox DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      9,
+      "Inherits Firefox accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "MPL-2.0, Firefox fork",
+      "documented"
+    ],
+    "businessTrust": [
+      7.5,
+      "Independent; ownership history not re-verified",
+      "documented"
+    ],
+    "longevity": [
+      7.5,
+      "Fifteen years old, steady releases",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "AI features disabled by default",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      7.5,
+      "Firefox-familiar UI",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.waterfox.com/releases/",
+      "title": "Waterfox changelog (6.7.7, Oct 27 2026)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://alternativeto.net/news/2026/8/waterfox-6-7-brings-full-redesign-native-tree-tabs-improved-ad-blocking-and-much-more/",
+      "title": "AlternativeTo: Waterfox 6.7 redesign and native tree tabs",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/BrowserWorks/waterfox/releases/tag/6.7.0",
+      "title": "GitHub: Waterfox 6.7.0 release",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=net.waterfox.android.release&hl=en",
+      "title": "Google Play: Waterfox Private Web Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.theregister.com/software/2026/09/19/firefox-156-arrives-with-a-forest-of-forks-in-its-wake/5297194",
+      "title": "The Register: Firefox 156 and forks",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Waterfox",
+      "title": "Wikipedia: Waterfox",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Ownership/HQ (UK) not re-checked",
+    "Widevine/DRM state",
+    "Exact Linux store list and macOS min version",
+    "Whether desktop Sync is default Mozilla sync"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

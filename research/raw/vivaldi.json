@@ -1,0 +1,849 @@
+{
+  "id": "vivaldi",
+  "name": "Vivaldi",
+  "aliases": [
+    "Vivaldi Browser"
+  ],
+  "group": "power",
+  "developer": "Vivaldi Technologies AS",
+  "hq": "Norway",
+  "businessModel": "Search-engine partnerships and sponsored default bookmarks/speed dials; no user data selling, no AI upsell",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary UI on Chromium (BSD); UI source viewable but not open-licensed",
+  "openSource": "partial",
+  "price": "free",
+  "releaseYear": 2016,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "8.2 (minor update 14)",
+    "date": "2026-10-29",
+    "upstream": "Chromium 152 ESR with security backports from Chromium 156"
+  },
+  "channels": [
+    "Stable",
+    "Snapshot"
+  ],
+  "updateCadence": "Major every ~2-4 months, frequent minor security updates; snapshot 4190.x already on Chromium 156 for 8.3",
+  "website": "https://vivaldi.com",
+  "tags": [
+    "power-user",
+    "customizable",
+    "no-ai",
+    "vertical-tabs",
+    "mail-calendar-rss"
+  ],
+  "pitch": "The most customizable Chromium browser, with built-in mail, notes and no AI.",
+  "summary": "Chromium-based browser with deep UI, tab, gesture and command customization plus built-in mail, calendar, feeds and notes. Publicly pledges to stay AI-free. Lost MV2 (uBlock Origin) with Chromium 152 in 2026.",
+  "bestFor": [
+    "Power users who want to tweak everything",
+    "People who want a browser with zero AI features",
+    "Heavy tab users (stacks, tiling, workspaces)",
+    "Users who want built-in mail, calendar and RSS"
+  ],
+  "notFor": [
+    "Anyone who needs full uBlock Origin (MV2 is gone)",
+    "People who want a fully open-source browser",
+    "Beginners who find lots of options overwhelming"
+  ],
+  "pros": [
+    {
+      "title": "Deepest customization",
+      "detail": "Themes, layouts (6 presets in 8.0), toolbars, gestures, quick commands and per-site settings go further than any other mainstream browser."
+    },
+    {
+      "title": "Best-in-class tab tools",
+      "detail": "Vertical tabs, tab stacks, tiling, workspaces and hibernation are all built in."
+    },
+    {
+      "title": "No AI, by pledge",
+      "detail": "Vivaldi publicly committed in August 2025 to keep AI features out of the browser."
+    },
+    {
+      "title": "Built-in productivity suite",
+      "detail": "Mail, calendar, feeds, notes, translate, capture and reading list ship in the box."
+    },
+    {
+      "title": "Desktop-class Android extensions",
+      "detail": "Since 8.2 (Sept 2026) Android can install Chrome Web Store extensions (MV3 only)."
+    }
+  ],
+  "cons": [
+    {
+      "title": "MV2 and uBlock Origin gone",
+      "detail": "Snapshot 4116.3 moved to Chromium 152 and dropped MV2; only uBlock Origin Lite and the built-in blocker remain."
+    },
+    {
+      "title": "Not fully open source",
+      "detail": "Chromium parts are open, but the Vivaldi UI is source-viewable only."
+    },
+    {
+      "title": "Heavy and complex",
+      "detail": "Uses more RAM than Safari or Firefox and the settings depth can overwhelm newcomers."
+    },
+    {
+      "title": "No fingerprint protection",
+      "detail": "Blocks trackers but offers no dedicated fingerprinting resistance."
+    }
+  ],
+  "signatureFeatures": [
+    "Unified UI with 6 layout presets (8.0)",
+    "Tab stacks, tiling and workspaces",
+    "Quick Commands and mouse gestures",
+    "Built-in Mail, Calendar and Feed reader",
+    "Android extensions (8.2)"
+  ],
+  "faq": [
+    {
+      "q": "Does Vivaldi have AI?",
+      "a": "No. Vivaldi has pledged to keep AI features out and 8.0 added none."
+    },
+    {
+      "q": "Does uBlock Origin still work in Vivaldi?",
+      "a": "Not in 8.2: Chromium 152 removed MV2 support. Use the built-in blocker or uBlock Origin Lite."
+    },
+    {
+      "q": "Can I install extensions on Vivaldi for Android?",
+      "a": "Yes, since Vivaldi 8.2 (Sept 2026) you can add Chrome Web Store extensions; only MV3 extensions work."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2016-04",
+      "event": "Vivaldi 1.0 released"
+    },
+    {
+      "date": "2025-08",
+      "event": "Public pledge to keep AI out of Vivaldi"
+    },
+    {
+      "date": "2026-05-21",
+      "event": "Vivaldi 8.0: Unified design and layout presets"
+    },
+    {
+      "date": "2026-07",
+      "event": "Snapshot on Chromium 152 loses MV2 support"
+    },
+    {
+      "date": "2026-09",
+      "event": "Vivaldi 8.2: Chrome Web Store extensions on Android"
+    },
+    {
+      "date": "2026-10-29",
+      "event": "Minor update 14 backports Chromium 156 security fixes"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions",
+      "settings"
+    ],
+    "note": "Imports from Chrome, Edge, Firefox, Opera, Safari and others; Chrome extensions install from the Chrome Web Store."
+  },
+  "alternatives": [
+    "brave",
+    "firefox",
+    "zen",
+    "opera-gx",
+    "sleipnir",
+    "otter-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "notes",
+        "settings",
+        "autofill"
+      ],
+      "crossOs": true,
+      "note": "Vivaldi account with optional separate encryption password; extensions do not sync"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Built-in manager with sync; no breach check"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "MV2 lost when Vivaldi moved to Chromium 152 (snapshot 4116.3, July 2026); Android extensions are MV3 only",
+      "date": "2026-07"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "chrome-web-store",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Explicitly no AI features"
+    },
+    "privacy": {
+      "defaults": "Built-in tracker and ad blocker, Google services stripped; no fingerprint protection",
+      "telemetry": "Anonymous usage statistics, can be disabled",
+      "jurisdiction": "Norway (EEA)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Bing (region-dependent) with many alternatives",
+    "telemetry": "Anonymous usage stats, opt-out",
+    "drm": "Widevine (L3)",
+    "codecs": "H.264, HEVC (hw), VP9, AV1",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Backports Chromium security fixes within days (e.g. 8.2 minor update 14 on Oct 29 carries Chromium 156 fixes)",
+    "languages": "50+"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "winget",
+        "microsoft-store"
+      ],
+      "notes": [
+        "Full feature set"
+      ],
+      "highlights": [
+        "Native ARM64 build"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS (recent releases)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew"
+      ],
+      "notes": [
+        "Full feature set"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern x64/arm64 distro",
+      "arch": [
+        "x64",
+        "arm64",
+        "arm32"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "snap"
+      ],
+      "notes": [
+        "Official DEB/RPM repositories"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android (recent)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "Chrome Web Store extensions (MV3) since 8.2, Sept 2026",
+        "Extensions in private tabs added in 8.2 minor update 4"
+      ],
+      "highlights": [
+        "Accordion tabs (8.0)"
+      ],
+      "scoreDelta": {
+        "extensions": -1,
+        "mobileApps": 0
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS (recent)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine (Apple rule)",
+        "No extensions"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -6,
+        "jsSpeed": -0.5
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      8,
+      "Built-in tracker blocker"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrade"
+    ],
+    "doh": [
+      "yes",
+      7
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "yes",
+      8,
+      "Built-in tracker and ad blocker"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      4
+    ],
+    "customFilterLists": [
+      "yes",
+      7
+    ],
+    "youtubeAds": [
+      "partial",
+      5
+    ],
+    "cookieBanners": [
+      "yes",
+      6,
+      "Cookie-warning blocking list"
+    ],
+    "verticalTabs": [
+      "yes",
+      10
+    ],
+    "tabGroups": [
+      "yes",
+      10
+    ],
+    "tabStacks": [
+      "yes",
+      10,
+      "Stacks with two-level bar"
+    ],
+    "workspaces": [
+      "yes",
+      10
+    ],
+    "splitView": [
+      "yes",
+      9,
+      "Tab tiling"
+    ],
+    "tabSleeping": [
+      "yes",
+      8,
+      "Tab hibernation"
+    ],
+    "tabSearch": [
+      "yes",
+      9
+    ],
+    "pinnedTabs": [
+      "yes",
+      9
+    ],
+    "tabTiling": [
+      "yes",
+      10
+    ],
+    "readerMode": [
+      "yes",
+      8
+    ],
+    "notes": [
+      "yes",
+      9,
+      "Built-in notes"
+    ],
+    "webPanels": [
+      "yes",
+      10
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "yes",
+      9,
+      "Capture tool"
+    ],
+    "commandBar": [
+      "yes",
+      10,
+      "Quick Commands"
+    ],
+    "mouseGestures": [
+      "yes",
+      10
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      10
+    ],
+    "readLater": [
+      "yes",
+      7,
+      "Reading list"
+    ],
+    "mailCalendarRss": [
+      "yes",
+      9,
+      "Vivaldi Mail, Calendar, Feeds"
+    ],
+    "chromeWebStore": [
+      "yes",
+      9
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "Lost with Chromium 152"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "uBO Lite (MV3) only"
+    ],
+    "mobileExtensions": [
+      "yes",
+      7,
+      "Android since 8.2, MV3 only"
+    ],
+    "userscripts": [
+      "extension",
+      7,
+      "Via extensions"
+    ],
+    "syncBookmarks": [
+      "yes",
+      9
+    ],
+    "syncPasswords": [
+      "yes",
+      8
+    ],
+    "syncTabs": [
+      "yes",
+      9
+    ],
+    "e2eeSync": [
+      "yes",
+      9,
+      "Encryption password"
+    ],
+    "profiles": [
+      "yes",
+      9
+    ],
+    "passwordManager": [
+      "yes",
+      7
+    ],
+    "passkeys": [
+      "yes",
+      7
+    ],
+    "importData": [
+      "yes",
+      9
+    ],
+    "widevine": [
+      "yes",
+      9
+    ],
+    "netflix4k": [
+      "partial",
+      5,
+      "Widevine L3, roughly 1080p"
+    ],
+    "hevc": [
+      "yes",
+      8
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      9
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "yes",
+      7,
+      "Private translation service"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      7
+    ],
+    "enterprisePolicies": [
+      "partial",
+      5,
+      "Chromium policies"
+    ],
+    "kioskMode": [
+      "partial",
+      4
+    ],
+    "panicButton": [
+      "yes",
+      9,
+      "Panic mode"
+    ],
+    "downloadManager": [
+      "yes",
+      7
+    ],
+    "customThemes": [
+      "yes",
+      10,
+      "7,000+ community themes"
+    ],
+    "customSearchEngines": [
+      "yes",
+      10
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Chromium V8 engine, same class as Chrome",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Blink rendering; extra UI layer adds slight overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Heavier UI than Chrome means slower cold start",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Blink compositor; busy UI can add jank",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Chromium multi-process model plus Vivaldi UI overhead",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Chromium baseline, UI adds some load",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Chromium baseline; Energy saver mode available",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Tab hibernation and memory saver, fewer controls than Brave/Chrome",
+      "documented"
+    ],
+    "lowEnd": [
+      5,
+      "Large install and RAM footprint",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Large installer and profile data",
+      "documented"
+    ],
+    "privacyDefaults": [
+      7.5,
+      "Built-in tracker blocker, Google services stripped",
+      "documented"
+    ],
+    "blocking": [
+      8.5,
+      "Built-in blocker with custom lists, but no full uBlock Origin now",
+      "documented"
+    ],
+    "fingerprinting": [
+      5,
+      "No dedicated fingerprint resistance beyond Chromium",
+      "editorial"
+    ],
+    "securityHardening": [
+      9,
+      "Chromium sandbox and site isolation",
+      "editorial"
+    ],
+    "patchSpeed": [
+      8,
+      "Backports Chromium fixes within days (minor update 14 on Oct 29)",
+      "documented"
+    ],
+    "telemetry": [
+      8,
+      "Anonymous stats only, opt-out, Norwegian company",
+      "documented"
+    ],
+    "lookCustom": [
+      10,
+      "Unified UI with 6 layout presets and 7,000+ themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      10,
+      "Gestures, Quick Commands, per-site settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      9,
+      "Huge settings tree plus Chromium flags",
+      "editorial"
+    ],
+    "tabManagement": [
+      10,
+      "Stacks, tiling, vertical tabs and workspaces",
+      "documented"
+    ],
+    "searchFreedom": [
+      10,
+      "Nicknames, search in address bar, unlimited engines",
+      "documented"
+    ],
+    "downloads": [
+      7,
+      "Dedicated download panel with sort and open options",
+      "editorial"
+    ],
+    "productivity": [
+      10,
+      "Notes, panels, capture, Quick Commands, reading list",
+      "editorial"
+    ],
+    "media": [
+      7.5,
+      "Widevine L3 only, codecs fine",
+      "editorial"
+    ],
+    "translation": [
+      7,
+      "Built-in private translation",
+      "documented"
+    ],
+    "extras": [
+      9.5,
+      "Mail, calendar, feeds, notes, capture, Panic mode",
+      "documented"
+    ],
+    "extensions": [
+      8.5,
+      "Chrome Web Store but MV2 gone since July 2026",
+      "documented"
+    ],
+    "sync": [
+      8.5,
+      "Encrypted sync of most data; extensions do not sync",
+      "documented"
+    ],
+    "passwords": [
+      7,
+      "Built-in manager with sync, no breach check",
+      "documented"
+    ],
+    "mobileApps": [
+      8,
+      "Android and iOS apps; Android has extensions since 8.2",
+      "documented"
+    ],
+    "webCompat": [
+      9,
+      "Chromium engine on desktop and Android",
+      "editorial"
+    ],
+    "devTools": [
+      9,
+      "Full Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      8,
+      "Chromium a11y with extra keyboard options",
+      "editorial"
+    ],
+    "openSource": [
+      6,
+      "Chromium open, Vivaldi UI source-viewable only",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Independent, no AI, transparent privacy stance",
+      "documented"
+    ],
+    "longevity": [
+      9,
+      "Ten years old, steady release cadence",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "Explicitly no AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Powerful but complex first-run options",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.ghacks.net/2026/05/21/vivaldi-8-0-launches-with-unified-design-and-no-ai-features-free-for-windows-macos-and-linux/",
+      "title": "gHacks: Vivaldi 8.0 launches with Unified design and no AI",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://vivaldi.com/blog/desktop/minor-update-fourteen-8-2/",
+      "title": "Vivaldi: Minor update (14) for Vivaldi Desktop 8.2",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://vivaldi.com/blog/android/minor-update4-android-8-2/",
+      "title": "Vivaldi: Minor update (4) for Android 8.2",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/07/29/vivaldi-snapshot-4116-3-chromium-152-ublock-origin/",
+      "title": "PiunikaWeb: Snapshot 4116.3 jumps to Chromium 152, breaks uBlock Origin",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/09/10/vivaldi-v8-2-update-android-finally-support-extensions/",
+      "title": "PiunikaWeb: Vivaldi 8.2 adds Android extensions",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Vivaldi_(web_browser)",
+      "title": "Wikipedia: Vivaldi (web browser)",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Exact current stable build number (blog cache showed 8.2 build 4133.94 before minor update 14)",
+    "Linux Snap/Flathub store availability and arm32 support not re-checked",
+    "Per-feature ratings are editorial"
+  ],
+  "confidence": "high",
+  "lastVerified": "2026-10-29"
+}

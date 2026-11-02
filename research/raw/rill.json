@@ -1,0 +1,766 @@
+{
+  "id": "rill",
+  "name": "Rill Browser",
+  "aliases": [
+    "Rill"
+  ],
+  "group": "ai",
+  "developer": "William (maker; launch team Zac Zuo and Iris Tu)",
+  "hq": "Not confirmed",
+  "businessModel": "Free; runs on your existing Claude Code or Codex plan",
+  "engine": "webkit",
+  "basedOn": "System WebKit",
+  "license": "Not stated",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2026,
+  "status": "early-access",
+  "statusNote": "Product Hunt launch Oct 6, 2026 (#1 of the day, #2 of the week)",
+  "version": {
+    "current": "Not published",
+    "date": "2026-10-06",
+    "upstream": "System WebKit (macOS)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Unknown",
+  "website": "https://rill.love",
+  "tags": [
+    "mac",
+    "webkit",
+    "claude-code",
+    "codex",
+    "developer",
+    "agents"
+  ],
+  "pitch": "WebKit Mac browser that hands pages to your Claude Code or Codex agent.",
+  "summary": "Native Mac WebKit browser built around coding agents: press ⌘E on any page to turn it into a task for Claude Code or Codex, track parallel agent projects, and organize tabs by theme. Free, no new subscription.",
+  "bestFor": [
+    "Developers who already pay for Claude Code or Codex",
+    "Mac users wanting agents as first-class citizens",
+    "People who prefer WebKit and Keychain"
+  ],
+  "notFor": [
+    "Non-Mac users",
+    "Chrome-extension users (not supported yet)",
+    "People who want a stand-alone cloud agent"
+  ],
+  "pros": [
+    {
+      "title": "Agents beside the page",
+      "detail": "⌘E sends page context to Claude Code or Codex while you keep browsing."
+    },
+    {
+      "title": "No new subscription",
+      "detail": "Uses your existing Claude Code or Codex plan; no API keys."
+    },
+    {
+      "title": "Keychain passwords",
+      "detail": "Saves to the Mac Keychain; 1Password works via universal autofill."
+    },
+    {
+      "title": "Free",
+      "detail": "No charge."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No Chrome extensions yet",
+      "detail": "Maker plans \"make your own extension\" and is exploring support."
+    },
+    {
+      "title": "Mac only, WebKit",
+      "detail": "Chrome-only sites and APIs may behave differently."
+    },
+    {
+      "title": "Needs separate agent plan",
+      "detail": "Useless without Claude Code or Codex."
+    },
+    {
+      "title": "Little documentation",
+      "detail": "License, privacy policy and version not stated."
+    }
+  ],
+  "signatureFeatures": [
+    "⌘E page-to-agent",
+    "Parallel agent projects",
+    "Theme tab sorting",
+    "Searchable history days"
+  ],
+  "faq": [
+    {
+      "q": "How does Rill differ from Atlas or Comet?",
+      "a": "It delegates to the coding agent you already use rather than shipping its own cloud agent."
+    },
+    {
+      "q": "Does it support extensions?",
+      "a": "Not yet; the maker is looking into it."
+    },
+    {
+      "q": "Is it free?",
+      "a": "Yes, and it uses your Claude Code or Codex plan."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-10",
+      "event": "Product Hunt launch, #1 of the day (Oct 6)"
+    },
+    {
+      "date": "2026-10",
+      "event": "#2 of the week of Oct 5, #6 of October monthly leaderboard"
+    },
+    {
+      "date": "2026-10",
+      "event": "Maker says extension support is being explored"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "passwords"
+    ],
+    "note": "Chrome passwords can be imported."
+  },
+  "alternatives": [
+    "thravik",
+    "dia",
+    "browseros",
+    "aside"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Not documented"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Mac Keychain; 1Password via autofill"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "Chrome extensions not supported yet",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Delegates to your Claude Code/Codex plan"
+    },
+    "privacy": {
+      "defaults": "No policy described; agent runs under your existing plan",
+      "telemetry": "Not documented",
+      "jurisdiction": "Unknown"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Not documented",
+    "drm": "System WebKit",
+    "codecs": "System WebKit",
+    "sandbox": "WebKit sandbox",
+    "patchLag": "Tied to macOS updates",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "macos": {
+      "status": "early-access",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Native WebKit"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.producthunt.com/products/rill-3",
+      "title": "Rill Browser on Product Hunt",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.producthunt.com/leaderboard/monthly/2026/10",
+      "title": "Best of Product Hunt: October 2026",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.launchpact.io/product-hunt-launches/october-2026",
+      "title": "LaunchPact: Product Hunt October 2026",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.producthunt.com/categories/web-browsers?order=recent_launches",
+      "title": "Product Hunt: new web browsers",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Developer identity and country",
+    "Version, license, privacy policy",
+    "Minimum macOS",
+    "Whether rill.love hosts a download (site not fetched)"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      5,
+      "WebKit ITP-class defaults (system WebKit)"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "partial",
+      5,
+      "WebKit upgrade behaviour (unverified)"
+    ],
+    "doh": [
+      "partial",
+      4,
+      "System DNS; unverified"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "yes",
+      6,
+      "WebKit partitioned storage"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "no",
+      0,
+      "No extension store"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0,
+      ""
+    ],
+    "customFilterLists": [
+      "no",
+      0,
+      ""
+    ],
+    "youtubeAds": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieBanners": [
+      "no",
+      0,
+      ""
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      "Sorts tabs into themes"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "yes",
+      8,
+      "⌘E send to agent"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "no",
+      0,
+      "Not supported yet"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      ""
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      ""
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      ""
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      ""
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Spaces with separate logins"
+    ],
+    "passwordManager": [
+      "yes",
+      6,
+      "Keychain, 1Password autofill"
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      6,
+      "Chrome passwords"
+    ],
+    "widevine": [
+      "yes",
+      6,
+      "FairPlay via system WebKit"
+    ],
+    "netflix4k": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      8,
+      "System VideoToolbox"
+    ],
+    "av1": [
+      "partial",
+      5,
+      "macOS hardware-dependent"
+    ],
+    "hwDecode": [
+      "yes",
+      9,
+      "VideoToolbox"
+    ],
+    "aiAssistant": [
+      "partial",
+      6,
+      "Via external agents"
+    ],
+    "aiSummarizer": [
+      "partial",
+      5,
+      "Via external agents"
+    ],
+    "agenticBrowsing": [
+      "yes",
+      7,
+      "Claude Code/Codex agents"
+    ],
+    "localAi": [
+      "no",
+      0,
+      "Cloud models"
+    ],
+    "aiKillSwitch": [
+      "partial",
+      5,
+      "Agents are external; no global switch documented"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "yes",
+      6,
+      "Web Inspector"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "System WebKit/JavaScriptCore, Safari-class",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "System WebKit rendering",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "System WebKit/URLSession networking",
+      "editorial"
+    ],
+    "startup": [
+      8.5,
+      "Native WebKit Mac app",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Native WebKit on Apple Silicon",
+      "editorial"
+    ],
+    "graphics": [
+      8,
+      "WebKit WebGL/WebGPU on macOS",
+      "editorial"
+    ],
+    "memory": [
+      7.5,
+      "Shared system WebKit; tabs hibernate",
+      "editorial"
+    ],
+    "cpu": [
+      8,
+      "Native WebKit efficiency",
+      "editorial"
+    ],
+    "battery": [
+      8.5,
+      "Native WebKit on Apple Silicon",
+      "editorial"
+    ],
+    "resourceControls": [
+      6,
+      "Tab hibernation documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      3,
+      "Native WebKit on recent Macs",
+      "editorial"
+    ],
+    "installSize": [
+      9.5,
+      "App is only a few MB; engine is the system WebKit",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Local WebKit; agents under your existing plan",
+      "editorial"
+    ],
+    "blocking": [
+      2,
+      "No extension store or built-in blocker documented",
+      "editorial"
+    ],
+    "fingerprinting": [
+      5,
+      "WebKit privacy defaults; no extra work documented",
+      "editorial"
+    ],
+    "securityHardening": [
+      8,
+      "WebKit sandbox; patches tied to macOS updates",
+      "documented"
+    ],
+    "patchSpeed": [
+      7,
+      "Fixes ship via macOS/Safari cadence",
+      "editorial"
+    ],
+    "telemetry": [
+      5,
+      "Not documented",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      6.5,
+      "Theme-sorted tabs, searchable history days",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      7.5,
+      "One-key handoff to agents",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "AI agent and memory; no VPN or wallet",
+      "editorial"
+    ],
+    "extensions": [
+      1.5,
+      "No Chrome extension support yet",
+      "editorial"
+    ],
+    "sync": [
+      1,
+      "No sync documented",
+      "editorial"
+    ],
+    "passwords": [
+      6,
+      "Mac Keychain plus 1Password autofill",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "macOS only",
+      "editorial"
+    ],
+    "webCompat": [
+      8.5,
+      "WebKit; Chrome-only sites and APIs may break",
+      "documented"
+    ],
+    "devTools": [
+      6,
+      "Web Inspector level",
+      "documented"
+    ],
+    "accessibility": [
+      8.5,
+      "Native macOS accessibility stack",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "License not stated",
+      "editorial"
+    ],
+    "businessTrust": [
+      4.5,
+      "Solo maker, little documentation",
+      "editorial"
+    ],
+    "longevity": [
+      3.5,
+      "New launch, unclear funding",
+      "editorial"
+    ],
+    "ai": [
+      8,
+      "Strong agent handoff, no own model",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      5.5,
+      "Needs Claude Code/Codex setup",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

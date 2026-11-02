@@ -1,0 +1,706 @@
+{
+  "id": "meta-quest-browser",
+  "name": "Meta Quest Browser",
+  "aliases": [
+    "Oculus Browser",
+    "Quest Browser"
+  ],
+  "group": "mobile",
+  "developer": "Meta Platforms, Inc.",
+  "hq": "United States",
+  "businessModel": "Bundled free with Quest headsets; supports Meta’s Horizon OS hardware and store business",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary (freeware)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2016,
+  "status": "active",
+  "statusNote": "Renamed from Oculus Browser in January 2024",
+  "version": {
+    "current": "152.1",
+    "date": "2026-10-02",
+    "upstream": "Chromium (version number follows the milestone)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Every 3–8 weeks in 2026, usually with a Chromium milestone bump every few releases",
+  "website": "https://developers.meta.com/horizon/documentation/web/",
+  "tags": [
+    "vr",
+    "webxr",
+    "headset",
+    "chromium"
+  ],
+  "pitch": "The built-in Quest headset browser: Chromium with WebXR, WebGPU and spatial windows.",
+  "summary": "Meta’s Chromium-based browser for Quest headsets on Horizon OS. It is the main way to run WebXR content on Quest, and it adds spatial features such as wall-anchored windows and tabs inside immersive apps.",
+  "bestFor": [
+    "Quest owners browsing the web or watching video in a headset",
+    "WebXR developers testing on real hardware",
+    "Viewing 360° and immersive video"
+  ],
+  "notFor": [
+    "People who want a privacy-first or ad-blocking browser",
+    "Anyone who needs a desktop-class extension ecosystem",
+    "Users on non-Meta headsets"
+  ],
+  "pros": [
+    {
+      "title": "WebXR first",
+      "detail": "WebXR has been on by default since v7.0, with hand and body tracking and WebGPU added later."
+    },
+    {
+      "title": "Spatial windowing",
+      "detail": "Draggable tabs, wall-anchored windows on Quest 3 and later, and tabs usable inside immersive apps."
+    },
+    {
+      "title": "Modern Chromium",
+      "detail": "Tracks recent Chromium milestones, so current web apps and sites run."
+    },
+    {
+      "title": "Extensions",
+      "detail": "Selected extensions have been supported since v32.2 (April 2024)."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Quest only",
+      "detail": "Ships on Meta headsets and is not available elsewhere."
+    },
+    {
+      "title": "Closed source",
+      "detail": "Only the Chromium base is open; Meta’s changes are not."
+    },
+    {
+      "title": "Weak privacy tooling",
+      "detail": "No built-in tracker or ad blocking documented; telemetry has an opt-out."
+    }
+  ],
+  "signatureFeatures": [
+    "WebXR with hand tracking",
+    "WebGPU",
+    "Wall-anchored windows",
+    "Tabs inside immersive apps"
+  ],
+  "faq": [
+    {
+      "q": "Is Meta Quest Browser the same as Oculus Browser?",
+      "a": "Yes. Meta renamed Oculus Browser to Meta Quest Browser in January 2024."
+    },
+    {
+      "q": "What engine does it use?",
+      "a": "Blink and V8 from Chromium."
+    },
+    {
+      "q": "Can I use another browser on Quest?",
+      "a": "Yes, for example Wolvic, which is available from the Meta store and as an APK."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2016-12",
+      "event": "First developer preview of Oculus Browser (codename Carmel)"
+    },
+    {
+      "date": "2020",
+      "event": "WebVR removed in v9.0 in favor of WebXR"
+    },
+    {
+      "date": "2024-01",
+      "event": "Renamed Meta Quest Browser"
+    },
+    {
+      "date": "2024-04",
+      "event": "Extensions become a standard feature (v32.2)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Version 152.1 adds experimental WebGPU composition layers"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "passwords"
+    ],
+    "note": "Password import was added in v36.2; no other importers are documented."
+  },
+  "alternatives": [
+    "wolvic",
+    "chrome",
+    "firefox"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No browser sync documented in the sources"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Password import added in v36.2"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Extensions supported since v32.2; which extension model is not documented",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "own-store",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No browser AI features documented"
+    },
+    "privacy": {
+      "defaults": "Permission prompts; spatial permission merged WebXR depth and plane in v36.2",
+      "telemetry": "Browser telemetry can be turned off (since v6.2)",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (not verified)",
+    "telemetry": "Opt-out available",
+    "drm": "Not documented in the sources",
+    "codecs": "Chromium codecs; MV-HEVC playback enabled in v150.1",
+    "sandbox": "Chromium sandbox on Horizon OS",
+    "patchLag": "Roughly 5–6 weeks behind Chrome by version number",
+    "languages": "Follows Horizon OS languages"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Meta Horizon OS (Quest 2, Pro, 3, 3S)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "preinstalled"
+      ],
+      "notes": [
+        "Horizon OS is Android-based; the browser ships with the system",
+        "Wall anchoring needs Quest 3 or later"
+      ],
+      "highlights": [
+        "WebXR",
+        "WebGPU",
+        "Spatial windows"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "Chromium milestone for versions after 146 (inferred from version numbers)",
+    "Widevine/DRM level, default search engine, sync and extension installation source"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "no",
+      0
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      6,
+      "Opt-out since v6.2"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Site permission management"
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "partial",
+      4,
+      "Bluetooth keyboards work"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "partial",
+      4,
+      "Selected extensions since v32.2"
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      3,
+      "Password import since v36.2"
+    ],
+    "widevine": [
+      "partial",
+      4,
+      "Not documented in the sources"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "yes",
+      7,
+      "MV-HEVC playback enabled in v150.1"
+    ],
+    "av1": [
+      "partial",
+      5,
+      "Chromium AV1; hardware path not confirmed"
+    ],
+    "hwDecode": [
+      "partial",
+      5,
+      "Not documented in the sources"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      4,
+      "Basic downloads"
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      3
+    ],
+    "devtools": [
+      "partial",
+      6,
+      "Remote debugging from a desktop Chrome"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      6.5,
+      "V8 on a mobile XR chip",
+      "editorial"
+    ],
+    "pageLoad": [
+      6.5,
+      "Chromium engine, mobile-class hardware",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      6,
+      "Loads inside the Horizon shell",
+      "editorial"
+    ],
+    "smoothness": [
+      6,
+      "Windowed in VR; frame rate shared with the system",
+      "editorial"
+    ],
+    "graphics": [
+      8,
+      "WebXR, WebGPU and layers are core features",
+      "documented"
+    ],
+    "memory": [
+      4,
+      "Headset RAM is shared with the system and apps",
+      "editorial"
+    ],
+    "cpu": [
+      4,
+      "Mobile XR SoC under heavy load",
+      "editorial"
+    ],
+    "battery": [
+      4,
+      "Headset battery drains quickly in any use",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "No tab-sleeping controls documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      3,
+      "Only runs on Quest hardware",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Preinstalled; no separate download",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3,
+      "No tracker blocking documented",
+      "editorial"
+    ],
+    "blocking": [
+      2,
+      "No built-in blocking documented",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance documented",
+      "editorial"
+    ],
+    "securityHardening": [
+      7,
+      "Chromium sandbox and site isolation base",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5,
+      "Often a couple of milestones behind Chrome",
+      "editorial"
+    ],
+    "telemetry": [
+      4,
+      "Opt-out exists, tied to a Meta account",
+      "editorial"
+    ],
+    "lookCustom": [
+      3,
+      "Window size and position, few visual options",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3,
+      "Few settings beyond permissions",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5,
+      "Chromium flags reachable on the headset",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Draggable tabs, tabs inside immersive apps",
+      "documented"
+    ],
+    "searchFreedom": [
+      5,
+      "Default engine can be changed",
+      "editorial"
+    ],
+    "downloads": [
+      4,
+      "Basic file downloads",
+      "editorial"
+    ],
+    "productivity": [
+      4,
+      "Wall-anchored windows; PDF reader",
+      "editorial"
+    ],
+    "media": [
+      7,
+      "360° and immersive video, MV-HEVC, passthrough",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "No built-in translation documented",
+      "editorial"
+    ],
+    "extras": [
+      4,
+      "Spatial and immersive web features",
+      "editorial"
+    ],
+    "extensions": [
+      3,
+      "Selected extensions since v32.2",
+      "documented"
+    ],
+    "sync": [
+      2,
+      "No sync documented",
+      "editorial"
+    ],
+    "passwords": [
+      3,
+      "Password import only",
+      "editorial"
+    ],
+    "mobileApps": [
+      2,
+      "One headset-only app",
+      "editorial"
+    ],
+    "webCompat": [
+      8,
+      "Chromium engine",
+      "editorial"
+    ],
+    "devTools": [
+      7,
+      "Desktop Chrome DevTools over remote debugging",
+      "editorial"
+    ],
+    "accessibility": [
+      5,
+      "Depends on Horizon OS accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      3,
+      "Chromium base is open; Meta’s build is not",
+      "editorial"
+    ],
+    "businessTrust": [
+      3,
+      "Meta account and data practices",
+      "editorial"
+    ],
+    "longevity": [
+      8,
+      "Backed by Meta; regular 2026 releases",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No browser AI features documented",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Works out of the box on Quest",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://developers.meta.com/horizon/release-notes/web/",
+      "title": "Meta Quest Browser release notes",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Meta_Quest_Browser",
+      "title": "Meta Quest Browser - Wikipedia",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

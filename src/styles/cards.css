@@ -1,0 +1,149 @@
+/* ============ browser card ============ */
+.bcard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  padding: var(--s-5);
+  min-width: 0;
+}
+/* Wrapper around a card inside a grid: stretch the card to the row height. */
+.bcard-cell {
+  display: flex;
+  min-width: 0;
+}
+.bcard-cell > .bcard {
+  flex: 1;
+}
+.bcard__top {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+.bcard__id {
+  flex: 1;
+  min-width: 0;
+}
+.bcard__id h3 {
+  font-size: var(--text-md);
+}
+.bcard__pitch {
+  color: var(--text-2);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  min-height: 2.6em;
+  line-height: 1.4;
+}
+.bcard__pillars {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: var(--s-2);
+}
+.bcard__pillar {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+.bcard__pillar svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  color: var(--text-3);
+}
+.bcard__pillar .xs {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bcard__pillar .score-bar {
+  min-width: 0;
+}
+.bcard__foot {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+.bcard__actions {
+  margin-inline-start: auto;
+  display: flex;
+  gap: var(--s-2);
+}
+.is-on-btn {
+  background: var(--accent-soft) !important;
+  border-color: color-mix(in oklab, var(--accent) 40%, var(--border)) !important;
+  color: var(--accent-text) !important;
+}
+
+.os-dots {
+  display: inline-flex;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+.os-dot {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: var(--text-3);
+  box-shadow: inset 0 0 0 1px var(--border);
+  text-decoration: line-through;
+  text-decoration-color: color-mix(in oklab, var(--text-3) 50%, transparent);
+}
+.os-dot.is-on {
+  color: var(--text);
+  background: var(--surface-2);
+  box-shadow: none;
+  text-decoration: none;
+}
+.os-dot.is-dead {
+  text-decoration: line-through;
+}
+
+/* ============ browser row ============ */
+.brow {
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr) minmax(4rem, 9rem) 3.5rem;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--border);
+  transition: background-color var(--dur-fast) ease;
+}
+.brow:last-child {
+  border-bottom: 0;
+}
+@media (hover: hover) {
+  .brow:hover {
+    background: var(--surface-hover);
+  }
+}
+.brow__rank {
+  width: 1.75rem;
+  color: var(--text-3);
+  font-weight: 600;
+  text-align: end;
+}
+.brow__id {
+  display: grid;
+  min-width: 0;
+}
+.brow__name {
+  font-weight: 500;
+}
+.brow__sub {
+  font-size: var(--text-sm);
+  color: var(--text-2);
+}
+@media (max-width: 40rem) {
+  .brow {
+    grid-template-columns: auto auto minmax(0, 1fr) 3.25rem;
+  }
+  .brow__bar {
+    display: none;
+  }
+  .brow__sub {
+    display: none;
+  }
+}

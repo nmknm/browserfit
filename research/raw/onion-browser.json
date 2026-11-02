@@ -1,0 +1,698 @@
+{
+  "id": "onion-browser",
+  "name": "Onion Browser",
+  "aliases": [
+    "OnionBrowser"
+  ],
+  "group": "privacy",
+  "developer": "Mike Tigas",
+  "hq": "United States (unverified)",
+  "businessModel": "Donations (OpenCollective)",
+  "engine": "webkit",
+  "basedOn": "WebKit with Tor (iOS)",
+  "license": "Open source (BSD-style; verify)",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2012,
+  "status": "active",
+  "statusNote": "iOS only; Tor Project recommends it for Tor on iOS",
+  "version": {
+    "current": "3.3.9",
+    "date": "2026-05-21",
+    "upstream": "WebKit (iOS) + Tor"
+  },
+  "channels": [
+    "App Store"
+  ],
+  "updateCadence": "Irregular; a few releases per year",
+  "website": "https://onionbrowser.com",
+  "tags": [
+    "privacy",
+    "tor",
+    "ios",
+    "open-source"
+  ],
+  "pitch": "Open-source Tor browser for iPhone and iPad.",
+  "summary": "Free, maintained Tor-routing browser for iOS and iPadOS. Because iOS forces WebKit, it cannot match Tor Browser desktop's fingerprint resistance, but it routes traffic over Tor and supports bridges and DNSTT.",
+  "bestFor": [
+    "Reaching .onion sites from an iPhone",
+    "Users in censored regions needing Tor bridges on iOS"
+  ],
+  "notFor": [
+    "High-risk anonymity needs (WebKit limits fingerprint resistance)",
+    "Android, desktop users",
+    "People wanting sync or extensions"
+  ],
+  "pros": [
+    {
+      "title": "Tor on iOS",
+      "detail": "Endorsed by the Tor Project for iOS."
+    },
+    {
+      "title": "Bridge/DNSTT support",
+      "detail": "Improved DNSTT support for heavy-censorship countries."
+    },
+    {
+      "title": "Open source",
+      "detail": "Code is public; maintained since 2012."
+    },
+    {
+      "title": "Free",
+      "detail": "No ads or paywall."
+    }
+  ],
+  "cons": [
+    {
+      "title": "WebKit limits",
+      "detail": "No Tor Browser style anti-fingerprinting or first-party isolation."
+    },
+    {
+      "title": "Single maintainer",
+      "detail": "Maintained by one developer."
+    },
+    {
+      "title": "Mixed ratings",
+      "detail": "App Store rating about 3.2/5 from 2.1K reviews."
+    }
+  ],
+  "signatureFeatures": [
+    "Tor routing",
+    "Bridges and DNSTT",
+    ".onion support",
+    "Open source"
+  ],
+  "faq": [
+    {
+      "q": "Is Onion Browser as anonymous as Tor Browser?",
+      "a": "No. WebKit on iOS cannot provide Tor Browser's fingerprint resistance."
+    },
+    {
+      "q": "Is it free?",
+      "a": "The App Store lists it as free and open source; one download site calls it paid, which looks wrong."
+    },
+    {
+      "q": "Is it still maintained?",
+      "a": "Yes, version 3.3.9 shipped on 2026-05-21."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2012",
+      "event": "First release by Mike Tigas"
+    },
+    {
+      "date": "2026-05",
+      "event": "Version 3.3.9 updates Korean translation"
+    },
+    {
+      "date": "2026",
+      "event": "Improved DNSTT support for censored regions"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No import; designed for anonymous sessions."
+  },
+  "alternatives": [
+    "tor-browser",
+    "brave",
+    "firefox-focus",
+    "duckduckgo"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": ""
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI"
+    },
+    "privacy": {
+      "defaults": "All traffic over Tor",
+      "telemetry": "None claimed",
+      "jurisdiction": "US (unverified)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo (onion) (unverified)",
+    "telemetry": "None",
+    "drm": "None",
+    "codecs": "iOS system codecs",
+    "sandbox": "iOS app sandbox + WebKit",
+    "patchSpeed": "Depends on iOS WebKit updates",
+    "languages": "Multiple translations"
+  },
+  "platforms": {
+    "ios": {
+      "status": "active",
+      "minOs": "iOS (version unverified)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "iPadOS supported",
+        "Version 3.4.1 appears on one listing; 3.3.9 on 2026-05-21 per another"
+      ],
+      "highlights": [
+        "Tor routing, bridges, DNSTT"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://apps.apple.com/app/onion-browser/id519296448",
+      "title": "Onion Browser on App Store",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://apps.apple.com/gb/developer/mike-tigas/id519296451",
+      "title": "Mike Tigas developer page",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://gizmodo.com/download/onion-browser",
+      "title": "Gizmodo downloads: Onion Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://onionbrowser.com",
+      "title": "Onion Browser website",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Latest version (3.3.9 vs 3.4.1)",
+    "Minimum iOS version",
+    "Exact license",
+    "Developer jurisdiction",
+    "Default search"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      5
+    ],
+    "fingerprintProtection": [
+      "partial",
+      3,
+      "Limited by WebKit"
+    ],
+    "httpsOnly": [
+      "partial",
+      5
+    ],
+    "doh": [
+      "partial",
+      3
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10
+    ],
+    "privateHardening": [
+      "yes",
+      8,
+      "All via Tor"
+    ],
+    "adBlocker": [
+      "partial",
+      3
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      3
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "partial",
+      4
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "partial",
+      3
+    ],
+    "hwDecode": [
+      "partial",
+      5
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "partial",
+      5,
+      "New identity style"
+    ],
+    "downloadManager": [
+      "no",
+      0
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      4
+    ],
+    "devtools": [
+      "no",
+      0
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8,
+      "JavaScriptCore on iOS (Tor adds latency)",
+      "editorial"
+    ],
+    "pageLoad": [
+      3,
+      "Tor latency",
+      "editorial"
+    ],
+    "networkSpeed": [
+      2,
+      "Tor network is slow",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Light",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "WebKit scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      6,
+      "WebKit",
+      "editorial"
+    ],
+    "memory": [
+      7,
+      "Light",
+      "editorial"
+    ],
+    "cpu": [
+      7.5,
+      "Light",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Tor circuits use power",
+      "editorial"
+    ],
+    "resourceControls": [
+      2,
+      "iOS controls only",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "iOS devices",
+      "editorial"
+    ],
+    "installSize": [
+      8,
+      "Small app",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      9,
+      "Tor by default",
+      "documented"
+    ],
+    "blocking": [
+      4,
+      "Little blocking",
+      "editorial"
+    ],
+    "fingerprinting": [
+      4,
+      "WebKit prevents Tor-grade resistance",
+      "documented"
+    ],
+    "securityHardening": [
+      7.5,
+      "iOS sandbox + WebKit",
+      "documented"
+    ],
+    "patchSpeed": [
+      6,
+      "Relies on iOS updates and one maintainer",
+      "editorial"
+    ],
+    "telemetry": [
+      10,
+      "None",
+      "documented"
+    ],
+    "lookCustom": [
+      1,
+      "Minimal",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      2,
+      "Minimal",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3,
+      "Bridge and security settings",
+      "documented"
+    ],
+    "tabManagement": [
+      3,
+      "Basic tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      5,
+      "Few engines",
+      "editorial"
+    ],
+    "downloads": [
+      2,
+      "Minimal",
+      "editorial"
+    ],
+    "productivity": [
+      1,
+      "Minimal",
+      "editorial"
+    ],
+    "media": [
+      4,
+      "iOS media",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "None",
+      "documented"
+    ],
+    "extras": [
+      3,
+      "Bridges, DNSTT",
+      "documented"
+    ],
+    "extensions": [
+      0,
+      "None",
+      "documented"
+    ],
+    "sync": [
+      0,
+      "None",
+      "documented"
+    ],
+    "passwords": [
+      0,
+      "None",
+      "documented"
+    ],
+    "mobileApps": [
+      5,
+      "iOS only",
+      "documented"
+    ],
+    "webCompat": [
+      6.5,
+      "WebKit but Tor blocks",
+      "editorial"
+    ],
+    "devTools": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "iOS accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      9,
+      "Open source",
+      "documented"
+    ],
+    "businessTrust": [
+      8,
+      "Donation funded",
+      "editorial"
+    ],
+    "longevity": [
+      5,
+      "Single maintainer",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "None",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Simple",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

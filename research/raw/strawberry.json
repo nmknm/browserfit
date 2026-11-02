@@ -1,0 +1,782 @@
+{
+  "id": "strawberry",
+  "name": "Strawberry",
+  "aliases": [
+    "Strawberry Browser"
+  ],
+  "group": "ai",
+  "developer": "Strawberry (Stockholm; CEO Charles Maddock)",
+  "hq": "Sweden",
+  "businessModel": "Free plan plus credit-based subscriptions at $20, $85 and $250 per month",
+  "engine": "blink",
+  "basedOn": "Not stated (engine unconfirmed)",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "$20 / $85 / $250 per month by credit usage",
+  "releaseYear": 2025,
+  "status": "active",
+  "statusNote": "v1.0 left beta on Oct 26, 2026; invite-only beta Oct 2025, public downloads Feb 2026",
+  "version": {
+    "current": "1.0",
+    "date": "2026-10-26",
+    "upstream": "Not stated"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Unknown",
+  "website": "https://strawberry.me",
+  "tags": [
+    "ai",
+    "agentic",
+    "enterprise",
+    "teams",
+    "sweden",
+    "eu"
+  ],
+  "pitch": "Swedish team browser where shared AI \"companions\" run work for non-technical staff.",
+  "summary": "Stockholm startup's browser that exits beta as v1.0 (Oct 26, 2026): build and share AI \"companions\" for sales, recruiting and support. macOS and Windows; EU data residency option; model agnostic; $6M backed.",
+  "bestFor": [
+    "Non-technical teams automating sales/recruiting work",
+    "European orgs wanting EU data residency",
+    "Teams that want shared agents"
+  ],
+  "notFor": [
+    "Individuals wanting a personal daily browser",
+    "Linux or mobile users",
+    "People wanting independent security audits"
+  ],
+  "pros": [
+    {
+      "title": "Shared team companions",
+      "detail": "Trained companions can be shared, scheduled or triggered by new emails/leads."
+    },
+    {
+      "title": "EU data option",
+      "detail": "Customers can keep data within the EU; passwords stay in the browser (vendor)."
+    },
+    {
+      "title": "Human approval",
+      "detail": "Companions pause before sending emails, publishing posts or changing records."
+    },
+    {
+      "title": "Local meeting capture",
+      "detail": "Records meetings locally so no bot joins the call."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Brand-new 1.0",
+      "detail": "Left beta Oct 26, 2026; one outlet says features arrived well before the 1.0 date."
+    },
+    {
+      "title": "Credit pricing",
+      "detail": "Plans scale to $250/mo with credit usage."
+    },
+    {
+      "title": "Details thin",
+      "detail": "Engine, extensions and models are not stated."
+    },
+    {
+      "title": "Small company",
+      "detail": "12 staff; Series A not yet confirmed."
+    }
+  ],
+  "signatureFeatures": [
+    "AI companions",
+    "Parallel sub-agents",
+    "Meeting capture",
+    "EU data residency"
+  ],
+  "faq": [
+    {
+      "q": "Is Strawberry free?",
+      "a": "Yes there is a free plan; paid credit tiers are $20, $85 and $250 per month."
+    },
+    {
+      "q": "Which platforms?",
+      "a": "macOS and Windows for v1.0."
+    },
+    {
+      "q": "Who is behind it?",
+      "a": "Stockholm-based, co-led funding from General Catalyst and EQT Ventures ($6M, Oct 2025)."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-10",
+      "event": "Invite-only beta and $6M raise"
+    },
+    {
+      "date": "2026-02",
+      "event": "Public downloads open (mid-February)"
+    },
+    {
+      "date": "2026-10",
+      "event": "v1.0 exits beta (Oct 26)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "passwords"
+    ],
+    "note": "Unverified."
+  },
+  "alternatives": [
+    "polar",
+    "aside",
+    "comet",
+    "sigma-ai"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "account",
+      "items": [
+        "companions"
+      ],
+      "crossOs": true,
+      "note": "Team sharing; browser data sync not documented"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Passwords stay in the browser (vendor)"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "Extensions not mentioned",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Free plan; paid credits"
+    },
+    "privacy": {
+      "defaults": "Runs on user devices; EU data residency option; human approval for sends",
+      "telemetry": "Not documented",
+      "jurisdiction": "Sweden (EU)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Not documented",
+    "drm": "Unverified",
+    "codecs": "Unverified",
+    "sandbox": "Unverified",
+    "patchLag": "Unknown",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "macos": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "v1.0 Oct 2026"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "v1.0 Oct 2026"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://thenextweb.com/news/strawberry-ai-browser-1-0-launch",
+      "title": "The Next Web: Strawberry 1.0",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://tech.eu/2026/10/26/swedish-ai-browser-strawberry-takes-on-us-ai-heavy-hitters-as-comes-out-of-beta/",
+      "title": "Tech.eu: Strawberry exits beta",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://dealroom.co/news/165899-swedens-strawberry-exits-beta-pitching-a-6m-backed-agent-browser-against/",
+      "title": "Dealroom: Strawberry exits beta",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://emergent.sh/news/strawberry-launches-ai-browser-non-technical",
+      "title": "Emergent: Strawberry launch",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Browser engine",
+    "Extensions",
+    "Models used",
+    "On-premises deployment (one outlet only)",
+    "Series A",
+    "Website URL (strawberry.me assumed, not fetched)"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "extension",
+      3,
+      "Only MV3 blockers such as uBO Lite"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      "Chromium tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "partial",
+      5,
+      "Meeting notes and tasks"
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "partial",
+      6,
+      "Address bar doubles as AI prompt"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "partial",
+      3,
+      "Not mentioned"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "Via userscript-manager extension (MV3)"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      7,
+      "Chrome import"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      8,
+      ""
+    ],
+    "aiSummarizer": [
+      "yes",
+      7,
+      "Meeting notes"
+    ],
+    "agenticBrowsing": [
+      "yes",
+      9,
+      "Companions with parallel sub-agents"
+    ],
+    "localAi": [
+      "no",
+      0,
+      "Cloud models"
+    ],
+    "aiKillSwitch": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "partial",
+      5,
+      "EU residency; admin controls unverified"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "Engine unconfirmed; assumed Chromium-class",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Chromium cold start, heavier than plain Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus AI layer; RAM-heavy",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs modern hardware; AI features add load",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "EU residency and local capture; cloud models",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Only MV3 blockers such as uBO Lite are available",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      7,
+      "Human approval gates; engine hardening unverified",
+      "editorial"
+    ],
+    "patchSpeed": [
+      7.5,
+      "Follows Chromium stable; lag not independently measured",
+      "editorial"
+    ],
+    "telemetry": [
+      4.5,
+      "Not documented",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab groups and search; no workspaces documented",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      8.5,
+      "Shared companions, scheduling, meeting capture",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "AI agent and memory; no VPN or wallet",
+      "editorial"
+    ],
+    "extensions": [
+      3,
+      "Extensions not mentioned",
+      "editorial"
+    ],
+    "sync": [
+      5,
+      "Team sharing of companions",
+      "editorial"
+    ],
+    "passwords": [
+      4.5,
+      "Passwords stay local (vendor)",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile app",
+      "editorial"
+    ],
+    "webCompat": [
+      8.5,
+      "Engine unconfirmed",
+      "editorial"
+    ],
+    "devTools": [
+      6.5,
+      "DevTools not documented",
+      "editorial"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary layer over Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      6,
+      "EU startup, named VCs, small team",
+      "editorial"
+    ],
+    "longevity": [
+      5.5,
+      "$6M raised, 12 staff, v1.0 shipped",
+      "editorial"
+    ],
+    "ai": [
+      8.5,
+      "Multi-agent companions for teams",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Built for non-technical teams",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

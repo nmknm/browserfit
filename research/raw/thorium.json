@@ -1,0 +1,811 @@
+{
+  "id": "thorium",
+  "name": "Thorium",
+  "aliases": [
+    "Thorium Browser"
+  ],
+  "group": "forks",
+  "developer": "Alex313031 (original); gz83 (interim maintainer since 2026)",
+  "hq": "United States (individual developers; unverified)",
+  "businessModel": "Volunteer project; donations. No ads or paid tiers",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "BSD-3-Clause",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2023,
+  "status": "active",
+  "statusNote": "Original maintainer Alex313031 has been unavailable since early 2026; collaborator gz83 ships builds labelled Beta on his fork while Alex has not officially released them",
+  "version": {
+    "current": "M156.0.8078.28",
+    "date": "2026-10-11",
+    "upstream": "Chromium 156"
+  },
+  "channels": [
+    "Beta (gz83 fork builds)",
+    "Legacy stable (M138, Feb 2026)"
+  ],
+  "updateCadence": "Irregular; gz83 has shipped M150, M151, M152, M154 and M156 between Jul and Oct 2026",
+  "website": "https://thorium.rocks",
+  "tags": [
+    "chromium",
+    "optimized",
+    "avx",
+    "mv2",
+    "legacy-os"
+  ],
+  "pitch": "Chromium rebuilt with CPU optimizations and MV2 extensions kept alive.",
+  "summary": "A performance-tuned Chromium fork (AVX/AVX2/SSE builds, PGO/LTO) with extra codecs and Manifest V2 uBlock Origin preinstalled. Maintainer continuity is the main risk: gz83 has been shipping unofficial-beta builds since mid-2026.",
+  "bestFor": [
+    "Chromium users who want MV2 uBlock Origin to keep working",
+    "Enthusiasts wanting CPU-optimized builds",
+    "Linux, Windows, macOS and Android users who want a de-Googled-ish Chromium"
+  ],
+  "notFor": [
+    "Anyone needing guaranteed same-week security patches",
+    "People who want built-in sync",
+    "Users who need a clearly staffed project"
+  ],
+  "pros": [
+    {
+      "title": "MV2 extensions kept",
+      "detail": "Release notes say uBlock Origin 1.75.0 is preinstalled and MV2 support is retained, unlike stock Chrome."
+    },
+    {
+      "title": "CPU-optimized builds",
+      "detail": "Separate SSE3/SSE4/AVX/AVX2 (and AVX-512 on Linux) builds with PGO and LTO."
+    },
+    {
+      "title": "Wide platform reach",
+      "detail": "Windows, Linux (deb/rpm/ARM64), macOS 13+, Android, Raspberry Pi and Windows-on-ARM builds."
+    },
+    {
+      "title": "Extra codecs",
+      "detail": "Proprietary codecs such as H.264 and HEVC are enabled, with hardware decode."
+    },
+    {
+      "title": "Full Chromium compatibility",
+      "detail": "Blink engine and Chrome Web Store access keep site compatibility at Chrome level."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Maintainer uncertainty",
+      "detail": "Alex313031 has been unavailable; gz83 builds are labelled Beta because they are not officially released."
+    },
+    {
+      "title": "Patch lag and trust",
+      "detail": "Unofficial third-party binaries trail Chrome and have a smaller security team than Chrome or Brave."
+    },
+    {
+      "title": "No built-in sync",
+      "detail": "Google Sync is not available in the builds (not confirmed in the release notes)."
+    },
+    {
+      "title": "MV2 durability",
+      "detail": "Keeping MV2 requires patching around Chromium 150+ removal code each release."
+    }
+  ],
+  "signatureFeatures": [
+    "Optimized AVX/AVX2 builds",
+    "Preinstalled MV2 uBlock Origin",
+    "Proprietary codecs enabled",
+    "Multi-platform incl. Android and Raspberry Pi"
+  ],
+  "faq": [
+    {
+      "q": "Is Thorium still maintained?",
+      "a": "Yes, but by interim maintainer gz83; builds since M144 (June 2026) are posted on his fork as Beta while original author Alex313031 is unavailable."
+    },
+    {
+      "q": "Does Thorium still support uBlock Origin?",
+      "a": "Yes. Release notes say MV2 support is kept and uBO 1.75.0 is preinstalled, though community reports on MV2 beyond M150 are mixed."
+    },
+    {
+      "q": "Does it still run on Windows 7?",
+      "a": "The M150 notes say old Windows 7 files were removed; Windows 7 builds ended with the earlier M138 line."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "Thorium first published by Alex313031 as an optimized Chromium fork"
+    },
+    {
+      "date": "2026-02",
+      "event": "Last Alex313031 release: M138.0.7204.303 (Chromium LTS base)"
+    },
+    {
+      "date": "2026-06",
+      "event": "gz83 takes over interim builds with M144"
+    },
+    {
+      "date": "2026-07",
+      "event": "M150 released (LTS label, MV2 retained, patch-series migration)"
+    },
+    {
+      "date": "2026-09",
+      "event": "M154 released"
+    },
+    {
+      "date": "2026-10",
+      "event": "M156.0.8078.28 released (2026-10-11)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Chromium importer plus Chrome Web Store extensions; no account sync."
+  },
+  "alternatives": [
+    "ungoogled-chromium",
+    "supermium",
+    "brave",
+    "cromite"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No working Google Sync reported; unverified"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Local Chromium password manager"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "MV2 retained via patches; uBO 1.75.0 preinstalled; durability past Chromium 150 depends on maintainer",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Chromium defaults with Google services stripped; no tracker blocking built in",
+      "telemetry": "No Google API keys; opt-in metrics removed (unverified)",
+      "jurisdiction": "US (individual developers)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (changeable)",
+    "telemetry": "Google services mostly stripped; unverified details",
+    "drm": "Widevine unverified",
+    "codecs": "H.264, HEVC, VP9, AV1 with hardware decode",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Irregular; weeks behind Chrome stable",
+    "languages": "~100 (Chromium locales)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10+ (Win7/8 builds ended around M138)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "github",
+        "portable"
+      ],
+      "notes": [
+        "M156 Windows entry on Thorium-Win is a notification-only release; builds on gz83 fork"
+      ],
+      "highlights": [
+        "SSE3/SSE4/AVX/AVX2 build variants"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 13+",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "github"
+      ],
+      "notes": [
+        "DMG builds"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern x64/ARM64 distro",
+      "arch": [
+        "x64",
+        "arm64",
+        "x86"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "github",
+        "portable",
+        "aur"
+      ],
+      "notes": [
+        "AVX, AVX2, AVX-512 variants; Raspberry Pi build"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android (version unverified)",
+      "arch": [
+        "arm64",
+        "arm"
+      ],
+      "stores": [
+        "github",
+        "apk"
+      ],
+      "notes": [
+        "SystemWebView builds; no extension support"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -7,
+        "sync": -1
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium defaults; uBO adds real blocking"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "yes",
+      7,
+      "Chromium HTTPS-First mode"
+    ],
+    "doh": [
+      "yes",
+      7,
+      "Secure DNS setting"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "yes",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      6,
+      "Google API keys/metrics not in builds (unverified)"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Standard Chromium incognito"
+    ],
+    "adBlocker": [
+      "extension",
+      8,
+      "uBlock Origin MV2 preinstalled"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      8
+    ],
+    "customFilterLists": [
+      "extension",
+      8
+    ],
+    "youtubeAds": [
+      "extension",
+      8
+    ],
+    "cookieBanners": [
+      "extension",
+      6
+    ],
+    "verticalTabs": [
+      "partial",
+      4,
+      "Chromium flag; unverified"
+    ],
+    "tabGroups": [
+      "yes",
+      8,
+      "Native tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      4,
+      "Chromium side-by-side; unverified"
+    ],
+    "tabSleeping": [
+      "yes",
+      7,
+      "Memory Saver"
+    ],
+    "tabSearch": [
+      "yes",
+      7
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      5,
+      "Chromium reading mode side panel"
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4,
+      "Chromium side panel"
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "yes",
+      5,
+      "Chromium capture tool"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "yes",
+      5,
+      "Reading list"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      8
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      7,
+      "Retained by patch; durability uncertain"
+    ],
+    "uboFull": [
+      "yes",
+      8,
+      "Preinstalled uBO 1.75.0"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      "Android has none"
+    ],
+    "userscripts": [
+      "extension",
+      7,
+      "Tampermonkey/Violentmonkey"
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "yes",
+      5,
+      "Local Chromium manager"
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "yes",
+      8,
+      "Proprietary codecs enabled"
+    ],
+    "av1": [
+      "yes",
+      8
+    ],
+    "hwDecode": [
+      "yes",
+      8
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "partial",
+      4,
+      "Google Translate dependency unverified"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      7
+    ],
+    "kioskMode": [
+      "yes",
+      7
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      7
+    ],
+    "customSearchEngines": [
+      "yes",
+      8
+    ],
+    "devtools": [
+      "yes",
+      10,
+      "Full Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.3,
+      "Blink/V8 with AVX/PGO builds; Chromium-class speed",
+      "documented"
+    ],
+    "pageLoad": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "graphics": [
+      9.3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "resourceControls": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Optimized builds help, but needs modern CPU for AVX variants",
+      "documented"
+    ],
+    "installSize": [
+      4.5,
+      "Standard Chromium footprint",
+      "documented"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "blocking": [
+      6,
+      "Only via preinstalled uBO MV2",
+      "documented"
+    ],
+    "fingerprinting": [
+      2.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "securityHardening": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5.5,
+      "Unofficial interim builds; lag behind Chrome stable of weeks",
+      "documented"
+    ],
+    "telemetry": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lookCustom": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "tabManagement": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "productivity": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "media": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "translation": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extensions": [
+      8.5,
+      "CWS access plus MV2 uBO preinstalled",
+      "documented"
+    ],
+    "sync": [
+      0.5,
+      "No working sync reported (unverified)",
+      "documented"
+    ],
+    "passwords": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "mobileApps": [
+      4,
+      "Android builds on GitHub only; no extensions",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "openSource": [
+      8.5,
+      "BSD-3 Chromium fork, patches public on GitHub",
+      "documented"
+    ],
+    "businessTrust": [
+      5.5,
+      "Volunteer project; no business model but continuity risk",
+      "documented"
+    ],
+    "longevity": [
+      4.5,
+      "Maintainer gap; builds labelled Beta since mid-2026",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://github.com/gz83/thorium/releases",
+      "title": "gz83/thorium releases",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/Alex313031/Thorium-Win/releases",
+      "title": "Thorium-Win releases",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/Alex313031/thorium/issues/1224",
+      "title": "PSA: Re-enabling Extension Manifest Version 2 after M150",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://chromiumbuilds.org/builds/thorium/",
+      "title": "Chromium Builds: Thorium",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.techspot.com/downloads/7612-thorium-browser.html",
+      "title": "TechSpot Thorium download page",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Whether any sync works in current builds",
+    "Widevine/Netflix status and Android minimum OS",
+    "Whether Thorium is formally on an LTS Chromium base: builds track current 150-156 versions",
+    "MV2 viability after M150 per community disagreement",
+    "Translation and Chromium vertical-tab/split-view flags in current builds"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

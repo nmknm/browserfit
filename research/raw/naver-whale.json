@@ -1,0 +1,828 @@
+{
+  "id": "naver-whale",
+  "name": "Naver Whale",
+  "aliases": [
+    "Whale",
+    "Whale browser",
+    "웨일"
+  ],
+  "group": "regional",
+  "developer": "Naver Corporation",
+  "hq": "South Korea",
+  "businessModel": "Free; funnel to Naver search, services and Naver ads; AI features tied to Naver CLOVA/HyperCLOVA ecosystem",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary freeware (Chromium BSD components)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2017,
+  "status": "active",
+  "statusNote": "Repositioned as an \"AI browser\" for its 10th anniversary (AI Chat launched 2026-10-01)",
+  "version": {
+    "current": "4.38.386.14 desktop (Wikipedia, mid-2026); Android 4.0.1.15 (APKMirror)",
+    "date": "2026-10-18",
+    "upstream": "Chromium 144 in 4.36 changelog; later builds newer (exact unverified)"
+  },
+  "channels": [
+    "Release",
+    "Beta"
+  ],
+  "updateCadence": "Desktop roughly every 1-2 months tracking Chromium; Android point releases frequent",
+  "website": "https://whale.naver.com",
+  "tags": [
+    "regional",
+    "korea",
+    "chromium",
+    "ai",
+    "sidebar",
+    "papago"
+  ],
+  "pitch": "Korea's Chromium browser with sidebar apps, Papago translation and new AI Chat.",
+  "summary": "Naver Whale is Naver's Chromium-based browser, popular in South Korea (about 8% share per MoneyToday). It bundles a sidebar, Papago translation, Whale Space multitasking and, since Oct 2026, an AI Chat assistant.",
+  "bestFor": [
+    "Korean-language users and Naver account holders",
+    "People who like a built-in sidebar of web apps",
+    "Users wanting strong Korean/English translation"
+  ],
+  "notFor": [
+    "Privacy-first users",
+    "People who dislike Naver as default search",
+    "Users who need Linux-first support or an English-only UX"
+  ],
+  "pros": [
+    {
+      "title": "Sidebar and Whale Space",
+      "detail": "Sidebar mini-apps, scrapbook and multitasking views are core to the design."
+    },
+    {
+      "title": "Papago translation",
+      "detail": "Naver Papago handles page translation with strong Korean quality."
+    },
+    {
+      "title": "AI Chat in sidebar",
+      "detail": "AI Chat (launched 2026-10-01) summarises pages, organises tabs and edits Naver Calendar events with confirmation."
+    },
+    {
+      "title": "Chrome Web Store compatible",
+      "detail": "Chromium base lets users add Chrome extensions alongside the Whale Store."
+    },
+    {
+      "title": "Multi-platform",
+      "detail": "Windows, macOS, Linux (per Wikipedia), Android and iOS."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Naver-centric",
+      "detail": "Defaults and best features assume a Naver account."
+    },
+    {
+      "title": "Telemetry and jurisdiction",
+      "detail": "Closed-source with Naver data collection under Korean law."
+    },
+    {
+      "title": "Chromium lag",
+      "detail": "Changelog showed Chromium 144 in Jan 2026-era builds, behind Chrome."
+    },
+    {
+      "title": "Limited global presence",
+      "detail": "Support and UI polish are Korea-first."
+    }
+  ],
+  "signatureFeatures": [
+    "Sidebar web apps",
+    "Whale Space",
+    "Papago translation",
+    "AI Chat",
+    "Scrapbook"
+  ],
+  "faq": [
+    {
+      "q": "Is Naver Whale Chromium-based?",
+      "a": "Yes, it uses Blink/V8 on desktop and Android; iOS uses WebKit."
+    },
+    {
+      "q": "Does Whale have AI?",
+      "a": "Yes. AI Chat launched on 2026-10-01 and can summarise, translate and manage Naver Calendar events from the sidebar."
+    },
+    {
+      "q": "Where is it popular?",
+      "a": "South Korea, where MoneyToday reported roughly 8% share in September 2026."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2017-10",
+      "event": "Desktop launch"
+    },
+    {
+      "date": "2018-04",
+      "event": "Android release"
+    },
+    {
+      "date": "2026-01",
+      "event": "4.35 stable; Chromium 142+ engine updates through 2025-2026"
+    },
+    {
+      "date": "2026-10-01",
+      "event": "AI Chat launched in sidebar"
+    },
+    {
+      "date": "2026-10",
+      "event": "10th anniversary rebrand: \"Journey to the Next AI Browsing\""
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Imports from Chrome, Edge and others; Naver account sync."
+  },
+  "alternatives": [
+    "chrome",
+    "edge",
+    "yandex",
+    "opera",
+    "sleipnir"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Naver account sync; E2EE not confirmed"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Built-in password manager (unverified depth)"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Whale Store and Chrome Web Store; MV2 status in 2026 unconfirmed",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": false,
+      "paid": "no",
+      "note": "AI Chat in sidebar, Naver account likely required"
+    },
+    "privacy": {
+      "defaults": "Standard Chromium privacy; Naver services pre-integrated",
+      "telemetry": "Naver collects usage data, opt-out options in settings",
+      "jurisdiction": "South Korea"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Naver",
+    "telemetry": "Naver usage analytics; details not fully published",
+    "drm": "Widevine",
+    "codecs": "H.264, VP9, AV1",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Tracks Chromium with months of delay (Chromium 144 in 4.36)",
+    "languages": "Korean, English and others (not enumerated)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 7 per Wikipedia (current unverified)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Desktop 4.38.386.14 listed by Wikipedia"
+      ],
+      "highlights": [
+        "Sidebar",
+        "Whale Space"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 10.15",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Not verified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "deb"
+      ],
+      "notes": [
+        "Wikipedia lists Linux; downloads page not checked"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "patchSpeed": -1
+      }
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 8.0 per Wikipedia",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "4.0.0.2 (2026-10-02), 4.0.1.15 (2026-10-18) on APKMirror",
+        "Wikipedia infobox shows older 3.9.14"
+      ],
+      "highlights": [
+        "AI Chat"
+      ],
+      "scoreDelta": {
+        "extensions": -6
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS 15",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -6,
+        "jsSpeed": -1
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "Basic tracker blocking settings"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "partial",
+      4
+    ],
+    "doh": [
+      "yes",
+      5,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      3
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      4
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "partial",
+      5,
+      "Built-in ad blocking option; depth unverified"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      3
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "yes",
+      7,
+      "Side tab layout option (Chromium side panel/tabs)"
+    ],
+    "tabGroups": [
+      "yes",
+      7
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "partial",
+      5,
+      "Whale Space multiview"
+    ],
+    "splitView": [
+      "yes",
+      8,
+      "Whale Space"
+    ],
+    "tabSleeping": [
+      "yes",
+      6
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      7
+    ],
+    "tabTiling": [
+      "yes",
+      7,
+      "Whale Space"
+    ],
+    "readerMode": [
+      "partial",
+      4
+    ],
+    "notes": [
+      "yes",
+      7,
+      "Memo/Scrapbook"
+    ],
+    "webPanels": [
+      "yes",
+      8,
+      "Sidebar web apps"
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "yes",
+      7,
+      "Capture tool"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "partial",
+      4
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "yes",
+      5,
+      "Scrapbook"
+    ],
+    "mailCalendarRss": [
+      "yes",
+      6,
+      "Naver Mail, Calendar sidebar extension"
+    ],
+    "chromeWebStore": [
+      "yes",
+      7
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      4,
+      "Unconfirmed"
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "yes",
+      7
+    ],
+    "syncPasswords": [
+      "yes",
+      7
+    ],
+    "syncTabs": [
+      "yes",
+      7
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      6
+    ],
+    "passwordManager": [
+      "yes",
+      6
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "yes",
+      8
+    ],
+    "netflix4k": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6
+    ],
+    "av1": [
+      "yes",
+      6
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "yes",
+      7,
+      "AI Chat (Oct 2026)"
+    ],
+    "aiSummarizer": [
+      "yes",
+      7
+    ],
+    "agenticBrowsing": [
+      "partial",
+      4,
+      "Calendar edits and tab organising with confirmation"
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "partial",
+      4,
+      "Optional sidebar feature, no single switch confirmed"
+    ],
+    "translation": [
+      "yes",
+      9,
+      "Papago"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      6
+    ],
+    "enterprisePolicies": [
+      "partial",
+      4
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      6
+    ],
+    "devtools": [
+      "yes",
+      9
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Chromium V8, Blink",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium base",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      7.5,
+      "Chromium plus sidebar services",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Blink compositing",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Chromium baseline, sidebar apps add overhead",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      6.5,
+      "Tab sleeping and energy options",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Needs modern hardware",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Large Chromium bundle",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      4.5,
+      "Standard Chromium plus Naver integration",
+      "editorial"
+    ],
+    "blocking": [
+      5.5,
+      "Built-in ad blocking depth unverified",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2.5,
+      "No special resistance",
+      "editorial"
+    ],
+    "securityHardening": [
+      9,
+      "Chromium sandbox and site isolation",
+      "editorial"
+    ],
+    "patchSpeed": [
+      7.5,
+      "Chromium 144 changelog; lags a few versions",
+      "editorial"
+    ],
+    "telemetry": [
+      3.5,
+      "Naver analytics, closed source",
+      "editorial"
+    ],
+    "lookCustom": [
+      6,
+      "Themes, sidebar layout",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6.5,
+      "Sidebar and gestures",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5.5,
+      "Chromium flags plus Whale settings",
+      "editorial"
+    ],
+    "tabManagement": [
+      7.5,
+      "Whale Space, side tabs, groups",
+      "editorial"
+    ],
+    "searchFreedom": [
+      5.5,
+      "Naver default; others selectable",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Chromium downloads",
+      "editorial"
+    ],
+    "productivity": [
+      8.5,
+      "Sidebar, scrapbook, memo, AI Chat",
+      "editorial"
+    ],
+    "media": [
+      8.5,
+      "Widevine and codecs",
+      "editorial"
+    ],
+    "translation": [
+      9,
+      "Papago integration",
+      "editorial"
+    ],
+    "extras": [
+      7,
+      "Sidebar apps, Whale On, Naver tools",
+      "editorial"
+    ],
+    "extensions": [
+      7.5,
+      "Chrome Web Store compatible",
+      "editorial"
+    ],
+    "sync": [
+      7,
+      "Naver account sync on all platforms",
+      "editorial"
+    ],
+    "passwords": [
+      6.5,
+      "Built-in manager, no passkeys",
+      "editorial"
+    ],
+    "mobileApps": [
+      8,
+      "Android and iOS with AI Chat",
+      "editorial"
+    ],
+    "webCompat": [
+      9,
+      "Blink; strong on Korean sites",
+      "editorial"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary on Chromium",
+      "editorial"
+    ],
+    "businessTrust": [
+      5,
+      "Large listed company, ad-supported ecosystem",
+      "editorial"
+    ],
+    "longevity": [
+      8.5,
+      "Ten years, 8% Korean share (MoneyToday)",
+      "editorial"
+    ],
+    "ai": [
+      7.5,
+      "AI Chat sidebar with calendar actions",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      8.5,
+      "Chrome-like UI, Korean-first",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Naver_Whale",
+      "title": "Wikipedia - Naver Whale",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.edaily.co.kr/news/eda202610015174/",
+      "title": "EDAILY - Naver Whale transforms into an AI browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.digitaltoday.co.kr/en/view/109565/naver-whale-launches-ai-chat-in-browser-summarising-translation-and-schedule-management",
+      "title": "Digital Today - Whale AI Chat",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.mt.co.kr/en/tech/2026/10/18/2026101514373023800",
+      "title": "MoneyToday - Whale market share",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.filehorse.com/download-whale-browser/",
+      "title": "FileHorse - Whale changelog",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.apkmirror.com/apk/naver-corp/naver-whale-browser/",
+      "title": "APKMirror - Whale Android versions",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Current Linux availability and store",
+    "MV2 / Chrome extension limits in 2026",
+    "Exact depth of built-in ad blocking",
+    "Whether AI Chat needs a Naver login on every platform",
+    "Latest Chromium base of 4.38"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

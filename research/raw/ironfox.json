@@ -1,0 +1,793 @@
+{
+  "id": "ironfox",
+  "name": "IronFox",
+  "aliases": [
+    "IronFox OSS"
+  ],
+  "group": "android",
+  "developer": "IronFox OSS (community)",
+  "hq": "Decentralised community project",
+  "businessModel": "Donation-funded open-source project; no ads or tracking",
+  "engine": "gecko",
+  "basedOn": "Mozilla Firefox for Android (fork of Mull)",
+  "license": "MPL-2.0 (Firefox base; verify repo)",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2025,
+  "status": "active",
+  "statusNote": "Successor to the discontinued Mull; not on Google Play",
+  "version": {
+    "current": "159.0",
+    "date": "2026-10",
+    "upstream": "Firefox for Android 158.x/159"
+  },
+  "channels": [
+    "Release",
+    "Nightly"
+  ],
+  "updateCadence": "Tracks Firefox releases (about every 4 weeks) plus point releases",
+  "website": "https://ironfoxoss.org",
+  "tags": [
+    "android",
+    "privacy",
+    "firefox-fork",
+    "hardened",
+    "open-source"
+  ],
+  "pitch": "Hardened, telemetry-free Firefox for Android, continuing the Mull project.",
+  "summary": "Community Firefox fork for Android that continues Mull: Mozilla telemetry stripped, strict tracking protection, content blocking on by default, Fission site isolation. Not on Google Play: use Accrescent, its F-Droid repo or Obtainium.",
+  "bestFor": [
+    "Android users wanting a hardened Firefox with no Google services",
+    "Former Mull or DivestOS users",
+    "People who install via Accrescent/F-Droid/Obtainium"
+  ],
+  "notFor": [
+    "People who want one-tap Google Play installs",
+    "Those who want maximum site compatibility",
+    "Users wanting a big, long-established team"
+  ],
+  "pros": [
+    {
+      "title": "Mull successor",
+      "detail": "Carries all of Mull's privacy patches and adds more from the Phoenix project."
+    },
+    {
+      "title": "Telemetry stripped",
+      "detail": "Removes Mozilla data-collection hooks and services like Pocket while keeping E2EE sync."
+    },
+    {
+      "title": "Blocking on by default",
+      "detail": "Reviews report built-in content blocking and strict tracking protection."
+    },
+    {
+      "title": "Secure install options",
+      "detail": "Accrescent recommended, signing certificate fingerprint published, Obtainium supported."
+    },
+    {
+      "title": "Fully open source",
+      "detail": "Developed on GitLab with GitHub and Codeberg mirrors."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Not on Google Play",
+      "detail": "Install needs Accrescent, F-Droid repo, Obtainium or APK; no official F-Droid inclusion (project declines it)."
+    },
+    {
+      "title": "Site breakage",
+      "detail": "Hardening can break some sites and reduce features such as WebGL until re-enabled."
+    },
+    {
+      "title": "Small volunteer team",
+      "detail": "PrivacyTools notes security-fix speed depends on a few maintainers."
+    },
+    {
+      "title": "Android only",
+      "detail": "No desktop or iOS builds."
+    }
+  ],
+  "signatureFeatures": [
+    "Telemetry removed",
+    "Strict ETP by default",
+    "Fission site isolation",
+    "Accrescent distribution"
+  ],
+  "faq": [
+    {
+      "q": "Is IronFox on Google Play?",
+      "a": "No. Use Accrescent (recommended), the project F-Droid repo, Obtainium or direct APK."
+    },
+    {
+      "q": "What is its relation to Mull?",
+      "a": "It is a fork of Mull, which ended with DivestOS in Dec 2024; IronFox appeared in Jan 2025."
+    },
+    {
+      "q": "Minimum Android?",
+      "a": "Android 5 (API 21); arm64, armv7 and x86_64 builds exist."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2024-12",
+      "event": "Mull and DivestOS discontinued"
+    },
+    {
+      "date": "2025-01",
+      "event": "IronFox appears as Mull successor"
+    },
+    {
+      "date": "2026-10",
+      "event": "Download page lists version 159.0 (earlier snapshot 158.0)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Firefox Sync account works; manual import from other apps."
+  },
+  "alternatives": [
+    "fennec-fdroid",
+    "iceraven",
+    "mull",
+    "vanadium",
+    "fulguris",
+    "monocles-browser"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Firefox Sync retained per review"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Firefox login manager without Mozilla services"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Firefox engine keeps Manifest V2",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "firefox-addons",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Telemetry removed, strict tracking protection, content blocking on, Fission",
+      "telemetry": "None (Mozilla hooks stripped)",
+      "jurisdiction": "Community, no single jurisdiction"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Privacy-oriented default (unverified)",
+    "telemetry": "Mozilla telemetry removed",
+    "drm": "Unverified",
+    "codecs": "Gecko codecs",
+    "sandbox": "Gecko sandbox + Fission",
+    "patchLag": "Tracks Firefox; one release lag possible",
+    "languages": "Firefox locales (unverified)"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Android 5",
+      "arch": [
+        "arm64",
+        "armv7",
+        "x86_64"
+      ],
+      "stores": [
+        "github",
+        "f-droid",
+        "accrescent"
+      ],
+      "notes": [
+        "Not on Google Play",
+        "F-Droid via own repo (fdroid.ironfoxoss.org); official F-Droid inclusion not supported",
+        "Obtainium supported; package org.ironfoxoss.ironfox"
+      ],
+      "highlights": [
+        "Nightly builds on GitLab"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://ironfoxoss.org/download/",
+      "title": "IronFox download page (official)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://ironfoxoss.org/docs/faq/",
+      "title": "IronFox FAQ",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://privacytools.io/app/ironfox",
+      "title": "IronFox review - PrivacyTools.io",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://forum.f-droid.org/t/divest-os-apps-discontinued/29792",
+      "title": "DivestOS apps discontinued - F-Droid forum",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://factually.co/fact-checks/electronics-tech/best-firefox-forks-android-privacy-2026-iceraven-ironfox-mull-fennec-b03d3f",
+      "title": "Best Firefox forks for Android - Factually (aggregator)",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Built-in uBlock Origin and exact default blocking (from aggregators)",
+    "Firefox add-on scope on IronFox",
+    "Why download page shows 159.0 while Firefox stable was 158.0.1",
+    "License wording"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      7,
+      "Firefox Enhanced Tracking Protection"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      5,
+      "ETP fingerprinting protection"
+    ],
+    "httpsOnly": [
+      "yes",
+      8,
+      "HTTPS-only mode"
+    ],
+    "doh": [
+      "yes",
+      7,
+      "Firefox DNS over HTTPS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "yes",
+      8,
+      "Total Cookie Protection"
+    ],
+    "queryStripping": [
+      "yes",
+      6,
+      "Firefox URL parameter stripping in strict/private"
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "yes",
+      7,
+      "Hardening patches"
+    ],
+    "adBlocker": [
+      "yes",
+      8,
+      "Built-in uBlock Origin per reviews (unverified)"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      8,
+      "uBO"
+    ],
+    "customFilterLists": [
+      "yes",
+      8,
+      "uBO"
+    ],
+    "youtubeAds": [
+      "yes",
+      8,
+      "uBO"
+    ],
+    "cookieBanners": [
+      "partial",
+      5,
+      "Firefox cookie banner reduction (unverified on Android)"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "partial",
+      4,
+      "Collections/tab groups depend on build"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Android OS-level tab discard"
+    ],
+    "tabSearch": [
+      "partial",
+      4,
+      ""
+    ],
+    "pinnedTabs": [
+      "no",
+      0,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "no",
+      0,
+      ""
+    ],
+    "pip": [
+      "partial",
+      5,
+      ""
+    ],
+    "screenshots": [
+      "no",
+      0,
+      ""
+    ],
+    "commandBar": [
+      "no",
+      0,
+      ""
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0,
+      "Mobile; external keyboards only"
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "no",
+      0,
+      "Firefox add-ons instead"
+    ],
+    "firefoxAddons": [
+      "partial",
+      6,
+      "Mobile add-on support; scope unverified"
+    ],
+    "mv2Support": [
+      "yes",
+      9,
+      "Firefox keeps MV2"
+    ],
+    "uboFull": [
+      "yes",
+      9,
+      "Full uBO available"
+    ],
+    "mobileExtensions": [
+      "partial",
+      6,
+      "Firefox add-ons on Android; list unverified"
+    ],
+    "userscripts": [
+      "extension",
+      6,
+      "Violentmonkey/Tampermonkey add-ons"
+    ],
+    "syncBookmarks": [
+      "yes",
+      7,
+      "Firefox Sync"
+    ],
+    "syncPasswords": [
+      "yes",
+      7,
+      "Firefox Sync"
+    ],
+    "syncTabs": [
+      "yes",
+      8,
+      "Firefox Sync"
+    ],
+    "e2eeSync": [
+      "yes",
+      8,
+      "Firefox Sync is E2EE"
+    ],
+    "profiles": [
+      "no",
+      0,
+      ""
+    ],
+    "passwordManager": [
+      "partial",
+      5,
+      "Firefox login manager; can use other autofill"
+    ],
+    "passkeys": [
+      "partial",
+      5,
+      "Android credential provider (unverified)"
+    ],
+    "importData": [
+      "partial",
+      4,
+      ""
+    ],
+    "widevine": [
+      "yes",
+      7,
+      ""
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "partial",
+      5,
+      "Hardware dependent"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      6,
+      ""
+    ],
+    "aiAssistant": [
+      "no",
+      0,
+      "No AI assistant"
+    ],
+    "aiSummarizer": [
+      "no",
+      0,
+      ""
+    ],
+    "agenticBrowsing": [
+      "no",
+      0,
+      ""
+    ],
+    "localAi": [
+      "no",
+      0,
+      ""
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "yes",
+      7,
+      "Local Firefox translations (if kept)"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      5,
+      ""
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      ""
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      ""
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      "Dark mode / basic themes"
+    ],
+    "customSearchEngines": [
+      "yes",
+      8,
+      ""
+    ],
+    "devtools": [
+      "partial",
+      5,
+      "Remote debugging via desktop Firefox"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      7.5,
+      "SpiderMonkey, slower than V8 on Android",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "Gecko rendering",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "Gecko HTTP/3 support",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Gecko cold start",
+      "editorial"
+    ],
+    "smoothness": [
+      7.5,
+      "GeckoView scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      6.5,
+      "WebGL ok, WebGPU limited",
+      "editorial"
+    ],
+    "memory": [
+      6,
+      "Single content process on Android",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium-class",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Gecko on phone",
+      "editorial"
+    ],
+    "resourceControls": [
+      3.5,
+      "Android OS tab discard only",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "Runs on mid-range phones",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Typical Chromium APK size",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      9,
+      "Telemetry stripped, ETP strict, blocking on by default",
+      "editorial"
+    ],
+    "blocking": [
+      8.5,
+      "Built-in uBlock Origin reported, MV2 intact",
+      "editorial"
+    ],
+    "fingerprinting": [
+      6.5,
+      "ETP fingerprinting protection, no RFP on Android",
+      "editorial"
+    ],
+    "securityHardening": [
+      8,
+      "Fission site isolation and hardening patches",
+      "editorial"
+    ],
+    "patchSpeed": [
+      7.5,
+      "Tracks Firefox; small volunteer team",
+      "editorial"
+    ],
+    "telemetry": [
+      9.5,
+      "Mozilla telemetry removed",
+      "editorial"
+    ],
+    "lookCustom": [
+      4.5,
+      "Basic themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      5,
+      "Per-site permissions",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6,
+      "Hardening toggles, limited about:config",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Basic tab switcher",
+      "editorial"
+    ],
+    "searchFreedom": [
+      8,
+      "Custom search engines",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      4,
+      "Basic mobile tools",
+      "editorial"
+    ],
+    "media": [
+      7,
+      "Gecko codecs, DRM available",
+      "editorial"
+    ],
+    "translation": [
+      6,
+      "Page translation if enabled (unverified)",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "Few extras",
+      "editorial"
+    ],
+    "extensions": [
+      6,
+      "Firefox add-ons on Android, scope limited (unverified)",
+      "editorial"
+    ],
+    "sync": [
+      7,
+      "Firefox Sync E2EE kept",
+      "editorial"
+    ],
+    "passwords": [
+      5.5,
+      "Firefox login manager",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "Android is the whole product; no iOS",
+      "editorial"
+    ],
+    "webCompat": [
+      7,
+      "Gecko plus hardening can break sites",
+      "editorial"
+    ],
+    "devTools": [
+      5,
+      "Remote debugging only",
+      "editorial"
+    ],
+    "accessibility": [
+      7.5,
+      "Gecko Android accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "Open source Firefox fork on GitLab",
+      "documented"
+    ],
+    "businessTrust": [
+      8.5,
+      "No ads or tracking, transparent signing",
+      "editorial"
+    ],
+    "longevity": [
+      6,
+      "About 10 months old, small team",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      5.5,
+      "Needs Accrescent/F-Droid setup",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

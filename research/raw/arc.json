@@ -1,0 +1,766 @@
+{
+  "id": "arc",
+  "name": "Arc",
+  "aliases": [
+    "Arc Browser"
+  ],
+  "group": "power",
+  "developer": "The Browser Company (Atlassian)",
+  "hq": "United States",
+  "businessModel": "VC then acquired by Atlassian (closed Oct 21, 2025); focus moved to Dia",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary freeware",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2022,
+  "status": "sunsetting",
+  "statusNote": "Desktop apps stop working Dec 22, 2026; new accounts disabled Oct 22, 2026; Arc Search loses AI/sync Nov 23",
+  "version": {
+    "current": "Final builds (version not verified)",
+    "date": "2026-10-22",
+    "upstream": "Chromium (version not verified)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Security-only; feature development halted May 2025",
+  "website": "https://arc.net",
+  "tags": [
+    "sidebar",
+    "spaces",
+    "sunsetting",
+    "chromium"
+  ],
+  "pitch": "The sidebar-and-Spaces browser that is shutting down on December 22, 2026.",
+  "summary": "Arc popularised vertical sidebar tabs and Spaces. The Browser Company announced on Oct 22, 2026 that desktop Arc stops working on Dec 22, 2026 and points users to Dia.",
+  "bestFor": [
+    "Existing Arc users migrating before the cutoff"
+  ],
+  "notFor": [
+    "Anyone starting a new browser setup (no new accounts)",
+    "Long-term use after Dec 22, 2026"
+  ],
+  "pros": [
+    {
+      "title": "Spaces and sidebar",
+      "detail": "Well-loved organization model still copied by Crest, Ardia, Zen."
+    },
+    {
+      "title": "Chrome extension support",
+      "detail": "Chromium base."
+    },
+    {
+      "title": "Dia import",
+      "detail": "Dia brings over passwords, bookmarks, extensions, history; Spaces become Profiles."
+    },
+    {
+      "title": "Mature UX",
+      "detail": "Polished sidebar and command-bar workflow refined over several years."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Shutting down",
+      "detail": "Desktop stops Dec 22, 2026; accounts deactivated and data purged within 30 days."
+    },
+    {
+      "title": "No new accounts",
+      "detail": "Disabled Oct 22, 2026."
+    },
+    {
+      "title": "No feature work",
+      "detail": "Halted since May 2025."
+    }
+  ],
+  "signatureFeatures": [
+    "Spaces",
+    "Sidebar tabs",
+    "Split View",
+    "Boosts"
+  ],
+  "faq": [
+    {
+      "q": "When does Arc stop working?",
+      "a": "Dec 22, 2026 on macOS and Windows; Arc Search AI and sync end Nov 23."
+    },
+    {
+      "q": "Where do I go?",
+      "a": "The Browser Company recommends Dia; others include Zen, Crest and Ardia; use Export Data in Arc first for non-Dia browsers."
+    },
+    {
+      "q": "What about Arc Search?",
+      "a": "iOS keeps working as a plain mobile browser; Android is removed from Google Play."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2022-07",
+      "event": "Arc beta begins"
+    },
+    {
+      "date": "2023-07",
+      "event": "Arc for Mac general availability"
+    },
+    {
+      "date": "2025-05",
+      "event": "Feature development halted to focus on Dia"
+    },
+    {
+      "date": "2025-10",
+      "event": "Atlassian acquisition closes (Oct 21)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Sunset announced Oct 22 for Dec 22, 2026"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Use Dia import or Arc Export Data before Dec 22, 2026."
+  },
+  "alternatives": [
+    "dia",
+    "zen",
+    "vivaldi",
+    "orion",
+    "crest"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "spaces",
+        "bookmarks",
+        "tabs"
+      ],
+      "crossOs": true,
+      "note": "Arc account; sign-in/sync ends for Arc Search Nov 23 and desktop Dec 22"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Chromium manager"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Chromium MV3 only",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Browse for Me (Arc Search) ends Nov 23"
+    },
+    "privacy": {
+      "defaults": "Chromium defaults; telemetry",
+      "telemetry": "Collects analytics",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google",
+    "telemetry": "Analytics",
+    "drm": "Widevine",
+    "codecs": "Chromium",
+    "sandbox": "Chromium sandbox",
+    "patchSpeed": "Slowing until shutdown",
+    "languages": "English-focused"
+  },
+  "platforms": {
+    "macos": {
+      "status": "sunsetting",
+      "minOs": "macOS (unverified)",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Stops working Dec 22, 2026"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "sunsetting",
+      "minOs": "Windows 10 (unverified)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "microsoft-store",
+        "official-installer"
+      ],
+      "notes": [
+        "Stops working Dec 22, 2026"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "maintenance",
+      "minOs": "iOS (unverified)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "Arc Search remains as a plain browser; AI/sign-in lost Nov 23"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "ai": -3
+      }
+    },
+    "android": {
+      "status": "discontinued",
+      "minOs": "n/a",
+      "arch": [],
+      "stores": [
+        "google-play"
+      ],
+      "notes": [
+        "Arc Search for Android to be removed from Google Play and installed devices"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://tidbits.com/2026/10/26/the-browser-company-kicks-arc-to-the-curb-on-22-december-2026/",
+      "title": "TidBITS: Arc to the curb Dec 22",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://9to5mac.com/2026/10/22/arc-browser-gets-a-sunset-date-and-users-have-two-months-to-move-on/",
+      "title": "9to5Mac: Arc sunset date",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.engadget.com/2294643/the-browser-company-is-officially-killing-arc-on-december-22/",
+      "title": "Engadget: Arc killed Dec 22",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://alternativeto.net/news/2026/10/the-browser-company-confirms-arc-browser-sunset-directs-users-to-ai-powered-successor-dia/",
+      "title": "AlternativeTo: Arc sunset to Dia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.heise.de/en/news/The-Browser-Company-is-shutting-down-Arc-on-Dec-22-11497946.html",
+      "title": "heise: Arc shutting down",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Final Arc version/Chromium base",
+    "Minimum OS versions",
+    "Exact Windows store channels"
+  ],
+  "confidence": "high",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3
+    ],
+    "customFilterLists": [
+      "extension",
+      3
+    ],
+    "youtubeAds": [
+      "extension",
+      2
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "yes",
+      10,
+      "Sidebar pioneer"
+    ],
+    "tabGroups": [
+      "yes",
+      9,
+      "Spaces/folders"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      10,
+      "Spaces"
+    ],
+    "splitView": [
+      "yes",
+      9
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "yes",
+      6,
+      "Easels/notes"
+    ],
+    "webPanels": [
+      "yes",
+      6
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "partial",
+      3
+    ],
+    "commandBar": [
+      "yes",
+      8,
+      "Command bar"
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      8
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "partial",
+      5,
+      "Boosts"
+    ],
+    "syncBookmarks": [
+      "yes",
+      8
+    ],
+    "syncPasswords": [
+      "yes",
+      7
+    ],
+    "syncTabs": [
+      "yes",
+      8
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      9
+    ],
+    "passwordManager": [
+      "partial",
+      3
+    ],
+    "passkeys": [
+      "partial",
+      3
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "partial",
+      4,
+      "Browse for Me (Arc Search) ending"
+    ],
+    "aiSummarizer": [
+      "partial",
+      5
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      3
+    ],
+    "aiKillSwitch": [
+      "yes",
+      9
+    ],
+    "translation": [
+      "partial",
+      3
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      8
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "blocking": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "securityHardening": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "patchSpeed": [
+      6,
+      "Security-only until shutdown",
+      "editorial"
+    ],
+    "telemetry": [
+      3,
+      "Analytics collection",
+      "editorial"
+    ],
+    "lookCustom": [
+      8,
+      "Spaces themes and Boosts",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      9.5,
+      "Best-in-class sidebar spaces",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      8,
+      "Command bar, easels, split view",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "translation": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extensions": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "sync": [
+      6,
+      "Ends with shutdown",
+      "documented"
+    ],
+    "passwords": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "mobileApps": [
+      3,
+      "Arc Search mostly sunsetting",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "businessTrust": [
+      5,
+      "Acquired; abandoned users",
+      "editorial"
+    ],
+    "longevity": [
+      0.5,
+      "Shuts down Dec 22, 2026",
+      "documented"
+    ],
+    "ai": [
+      3,
+      "AI features ending",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      6,
+      "Unusual UI",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

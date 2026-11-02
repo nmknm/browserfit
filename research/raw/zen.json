@@ -1,0 +1,786 @@
+{
+  "id": "zen",
+  "name": "Zen Browser",
+  "aliases": [
+    "Zen"
+  ],
+  "group": "power",
+  "developer": "Zen Browser team (community, led by Mauro Balades)",
+  "hq": "Distributed (independent)",
+  "businessModel": "Donations and sponsorships; default search partnership; no ads or paid tiers",
+  "engine": "gecko",
+  "basedOn": "Firefox",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2024,
+  "status": "beta",
+  "statusNote": "Versions carry a \"b\" suffix (1.23.x b); still labelled beta",
+  "version": {
+    "current": "1.23.4b",
+    "date": "2026-10",
+    "upstream": "Firefox 158"
+  },
+  "channels": [
+    "Release (b)",
+    "Twilight"
+  ],
+  "updateCadence": "Roughly weekly patch releases, tracks Firefox security releases within days",
+  "website": "https://zen-browser.app",
+  "tags": [
+    "power-user",
+    "workspaces",
+    "vertical-tabs",
+    "firefox-fork",
+    "arc-alternative"
+  ],
+  "pitch": "Firefox fork with Arc-style workspaces, split view and Glance.",
+  "summary": "Free, open-source Firefox fork with a vertical sidebar, workspaces (\"spaces\"), folders, split view, Glance and Zen Mods. A popular Arc successor, desktop only, without Widevine DRM.",
+  "bestFor": [
+    "Arc users looking for a successor",
+    "Firefox users who want vertical tabs and workspaces",
+    "Customizers who like themes and mods"
+  ],
+  "notFor": [
+    "Anyone who needs Netflix or Widevine DRM",
+    "People who need a mobile version",
+    "Users who want a fully stable non-beta release"
+  ],
+  "pros": [
+    {
+      "title": "Arc-style workflow",
+      "detail": "Vertical sidebar, spaces, folders, Essentials, split view and Glance previews."
+    },
+    {
+      "title": "Firefox engine and add-ons",
+      "detail": "Full Firefox add-on catalog with MV2 uBlock Origin and Total Cookie Protection."
+    },
+    {
+      "title": "Zen Mods",
+      "detail": "Community mods and gradient themes let you restyle the UI."
+    },
+    {
+      "title": "Fast security patching",
+      "detail": "Ships Firefox security updates within days (1.23.3b moved to Firefox 158 on Oct 16)."
+    },
+    {
+      "title": "Open source and free",
+      "detail": "MPL-2.0 licensed, no ads, no subscription."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No official DRM",
+      "detail": "Zen has not obtained a Widevine license; protected video is unreliable."
+    },
+    {
+      "title": "Desktop only",
+      "detail": "The team says it has no resources for Android or iOS versions."
+    },
+    {
+      "title": "Still beta",
+      "detail": "Every release is a \"b\" build; occasional regressions."
+    },
+    {
+      "title": "Young project",
+      "detail": "Small team; long-term sustainability unproven."
+    }
+  ],
+  "signatureFeatures": [
+    "Spaces (workspaces) with folders and Essentials",
+    "Split view",
+    "Glance link previews",
+    "Zen Mods and gradient themes",
+    "Library (1.23b)"
+  ],
+  "faq": [
+    {
+      "q": "Is Zen Browser an Arc replacement?",
+      "a": "It is the most commonly recommended Arc successor: it has a similar sidebar, spaces, split view and peek-style Glance, though Arc features like Boosts are different."
+    },
+    {
+      "q": "Does Zen play Netflix?",
+      "a": "Not reliably: Zen has not received a Widevine license and its FAQ recommends another browser or the native app for DRM video."
+    },
+    {
+      "q": "Is there a Zen app for phones?",
+      "a": "No. The team says it lacks the resources and vertical tabs do not translate to mobile; sync with Firefox on your phone instead."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Zen Browser introduced as a Firefox fork"
+    },
+    {
+      "date": "2025-08",
+      "event": "Nestable tab folders added"
+    },
+    {
+      "date": "2026-10-02",
+      "event": "1.23b: Library, Firefox 157"
+    },
+    {
+      "date": "2026-10-16",
+      "event": "1.23.3b moves to Firefox 158"
+    },
+    {
+      "date": "2026-10",
+      "event": "1.23.4b listed as latest release"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Imports from Chrome, Edge, Safari, Firefox; install Firefox add-ons instead of Chrome extensions."
+  },
+  "alternatives": [
+    "firefox",
+    "floorp",
+    "vivaldi",
+    "arc"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "extensions",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Firefox Sync via Mozilla account; self-hosted sync server possible"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": true,
+      "breachCheck": true,
+      "note": "Firefox Password Manager inherited"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Firefox keeps MV2 and MV3; uBlock Origin works fully",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Firefox AI features inherited; not a Zen focus (unverified how Zen exposes them)"
+    },
+    "privacy": {
+      "defaults": "Firefox Enhanced Tracking Protection, Total Cookie Protection",
+      "telemetry": "Firefox-derived; Zen own telemetry status not confirmed",
+      "jurisdiction": "Not stated"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (configurable)",
+    "telemetry": "Firefox telemetry inherited with opt-out (Zen-specific changes unverified)",
+    "drm": "No Widevine license (manual enable, unreliable)",
+    "codecs": "H.264, VP9, AV1, HEVC (hardware only)",
+    "sandbox": "Firefox process sandbox (Fission site isolation)",
+    "patchLag": "Days behind Firefox",
+    "languages": "Many (Firefox locales)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "winget",
+        "portable"
+      ],
+      "notes": [
+        "Signed installer and portable build"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS (recent)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern distro",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "flathub",
+        "aur",
+        "official-installer"
+      ],
+      "notes": [
+        "AppImage and tarball from official site"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      7,
+      "Firefox ETP"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      6,
+      "Firefox fingerprinting protection / optional RFP"
+    ],
+    "httpsOnly": [
+      "yes",
+      8
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "yes",
+      9,
+      "Total Cookie Protection"
+    ],
+    "queryStripping": [
+      "yes",
+      7
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "partial",
+      5
+    ],
+    "adBlocker": [
+      "extension",
+      8,
+      "uBlock Origin"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      9,
+      "via uBO"
+    ],
+    "customFilterLists": [
+      "extension",
+      9,
+      "via uBO"
+    ],
+    "youtubeAds": [
+      "extension",
+      8,
+      "via uBO"
+    ],
+    "cookieBanners": [
+      "partial",
+      5,
+      "Firefox cookie banner reduction"
+    ],
+    "verticalTabs": [
+      "yes",
+      9
+    ],
+    "tabGroups": [
+      "yes",
+      8,
+      "Folders"
+    ],
+    "tabStacks": [
+      "partial",
+      5,
+      "Folders, no stacks"
+    ],
+    "workspaces": [
+      "yes",
+      9,
+      "Spaces"
+    ],
+    "splitView": [
+      "yes",
+      9
+    ],
+    "tabSleeping": [
+      "yes",
+      7,
+      "Unload tabs"
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      9,
+      "Essentials and pinned"
+    ],
+    "tabTiling": [
+      "yes",
+      7,
+      "Split grid"
+    ],
+    "readerMode": [
+      "yes",
+      7
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "yes",
+      7
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "yes",
+      7
+    ],
+    "commandBar": [
+      "yes",
+      8,
+      "Command palette"
+    ],
+    "mouseGestures": [
+      "extension",
+      6
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      8
+    ],
+    "readLater": [
+      "extension",
+      5
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "yes",
+      10
+    ],
+    "mv2Support": [
+      "yes",
+      9
+    ],
+    "uboFull": [
+      "yes",
+      10
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      9,
+      "Tampermonkey/Violentmonkey"
+    ],
+    "syncBookmarks": [
+      "yes",
+      8
+    ],
+    "syncPasswords": [
+      "yes",
+      8
+    ],
+    "syncTabs": [
+      "yes",
+      8
+    ],
+    "e2eeSync": [
+      "yes",
+      9
+    ],
+    "profiles": [
+      "yes",
+      7
+    ],
+    "passwordManager": [
+      "yes",
+      7
+    ],
+    "passkeys": [
+      "yes",
+      7
+    ],
+    "importData": [
+      "yes",
+      8,
+      "Imports Arc/Chrome data"
+    ],
+    "widevine": [
+      "partial",
+      3,
+      "No license; manual and unreliable"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      5,
+      "Hardware-only"
+    ],
+    "av1": [
+      "yes",
+      8
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "partial",
+      3,
+      "Inherited Firefox chatbot sidebar (unverified)"
+    ],
+    "aiSummarizer": [
+      "partial",
+      3
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      4
+    ],
+    "aiKillSwitch": [
+      "yes",
+      7,
+      "Firefox AI controls"
+    ],
+    "translation": [
+      "yes",
+      7,
+      "Local Firefox Translations"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "yes",
+      8,
+      "policies.json"
+    ],
+    "kioskMode": [
+      "partial",
+      4
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      9,
+      "Zen Mods and gradients"
+    ],
+    "customSearchEngines": [
+      "yes",
+      9
+    ],
+    "devtools": [
+      "yes",
+      9
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8,
+      "SpiderMonkey, same as Firefox",
+      "editorial"
+    ],
+    "pageLoad": [
+      8,
+      "Gecko rendering, comparable to Firefox",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Firefox network stack with HTTP/3",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Customized UI starts slower than stock Firefox",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Firefox 158 brought smoother high-res scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      8,
+      "Gecko WebGL; WebGPU less mature",
+      "editorial"
+    ],
+    "memory": [
+      6,
+      "Firefox baseline, many tabs can add up",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Firefox baseline",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Firefox baseline on laptops",
+      "editorial"
+    ],
+    "resourceControls": [
+      6.5,
+      "Tab unloading but no RAM/CPU limiters",
+      "documented"
+    ],
+    "lowEnd": [
+      5.5,
+      "Heavier UI and effects than stock Firefox",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Firefox-sized download",
+      "documented"
+    ],
+    "privacyDefaults": [
+      7,
+      "Firefox ETP and Total Cookie Protection by default",
+      "documented"
+    ],
+    "blocking": [
+      6.5,
+      "No built-in ad blocker; needs uBlock Origin",
+      "documented"
+    ],
+    "fingerprinting": [
+      6,
+      "Firefox protections, RFP optional",
+      "editorial"
+    ],
+    "securityHardening": [
+      7.5,
+      "Firefox sandbox, small team build pipeline",
+      "editorial"
+    ],
+    "patchSpeed": [
+      8.5,
+      "Follows Firefox security releases within days",
+      "documented"
+    ],
+    "telemetry": [
+      7.5,
+      "Firefox telemetry opt-out; Zen-specific details not confirmed",
+      "documented"
+    ],
+    "lookCustom": [
+      9.5,
+      "Mods, gradient themes, compact mode, sidebar",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      8,
+      "Shortcuts, per-space settings, about:config",
+      "editorial"
+    ],
+    "advancedSettings": [
+      9.5,
+      "Full about:config and policies",
+      "editorial"
+    ],
+    "tabManagement": [
+      9.5,
+      "Spaces, folders, split view, vertical sidebar",
+      "documented"
+    ],
+    "searchFreedom": [
+      9,
+      "Any search engine, keywords",
+      "documented"
+    ],
+    "downloads": [
+      6.5,
+      "Firefox downloads panel plus Library tab",
+      "editorial"
+    ],
+    "productivity": [
+      8,
+      "Command bar, Glance, split view, Library",
+      "editorial"
+    ],
+    "media": [
+      5.5,
+      "No official Widevine license",
+      "editorial"
+    ],
+    "translation": [
+      7,
+      "Local Firefox Translations",
+      "documented"
+    ],
+    "extras": [
+      5,
+      "No VPN or mail; Library and Glance only",
+      "documented"
+    ],
+    "extensions": [
+      9,
+      "Firefox add-ons with full MV2 uBO",
+      "documented"
+    ],
+    "sync": [
+      8,
+      "Firefox Sync, E2EE, self-hostable",
+      "documented"
+    ],
+    "passwords": [
+      7,
+      "Firefox password manager with breach alerts",
+      "documented"
+    ],
+    "mobileApps": [
+      1,
+      "No mobile apps, none planned",
+      "documented"
+    ],
+    "webCompat": [
+      8,
+      "Gecko; some Chromium-only sites differ",
+      "editorial"
+    ],
+    "devTools": [
+      9.5,
+      "Firefox DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      8,
+      "Inherits Firefox a11y, custom UI may regress",
+      "editorial"
+    ],
+    "openSource": [
+      9.5,
+      "MPL-2.0, Firefox fork",
+      "documented"
+    ],
+    "businessTrust": [
+      7.5,
+      "Donation-funded, no ads, young project",
+      "documented"
+    ],
+    "longevity": [
+      6.5,
+      "Small team, beta label, fast growth",
+      "documented"
+    ],
+    "ai": [
+      3,
+      "Only inherited Firefox AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      6.5,
+      "Unconventional UI but friendly to Arc users",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://github.com/zen-browser/desktop/releases/tag/1.23b",
+      "title": "GitHub: Zen Browser 1.23b release",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/10/05/zen-browser-library-update-1-23b/",
+      "title": "PiunikaWeb: Zen Browser Library in 1.23b",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.linuxcompatible.org/story/zen-browser-1233b-ships-with-firefox-158-security-fixes",
+      "title": "LinuxCompatible: Zen 1.23.3b ships with Firefox 158",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://docs.zen-browser.app/faq",
+      "title": "Zen Browser FAQ (DRM, mobile)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Zen_Browser",
+      "title": "Wikipedia: Zen Browser",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Exact release date of 1.23.4b (Wikipedia infobox lists it; other sources list 1.23.2b/1.23.3b)",
+    "Whether Zen ships its own telemetry or Firefox AI features enabled",
+    "HQ/jurisdiction not stated",
+    "Widevine status: FAQ is old; a 2026 article repeats that no license is granted"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

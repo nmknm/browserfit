@@ -1,0 +1,697 @@
+{
+  "id": "yab",
+  "name": "Yab",
+  "aliases": [
+    "Yet Another Browser"
+  ],
+  "group": "power",
+  "developer": "Independent (unverified)",
+  "hq": "Unknown",
+  "businessModel": "Unknown",
+  "engine": "webkit",
+  "basedOn": "WebKit",
+  "license": "Unverified",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2026,
+  "status": "beta",
+  "statusNote": "iPhone beta; limited public information",
+  "version": {
+    "current": "Not verified",
+    "date": "2026-10-25",
+    "upstream": "WebKit"
+  },
+  "channels": [
+    "Beta"
+  ],
+  "updateCadence": "Unknown",
+  "website": "https://flaviocopes.com/alternative-browsers/",
+  "tags": [
+    "webkit",
+    "extensions",
+    "apple",
+    "beta"
+  ],
+  "pitch": "A WebKit browser that runs Chrome extensions.",
+  "summary": "Yet Another Browser (Yab) uses WebKit to render pages while supporting Chrome extensions; an iPhone beta exists. Public information is thin.",
+  "bestFor": [
+    "Apple users curious about WebKit with Chrome extensions"
+  ],
+  "notFor": [
+    "Anyone needing a proven, documented browser"
+  ],
+  "pros": [
+    {
+      "title": "Chrome extensions on WebKit",
+      "detail": "Reported compatibility layer."
+    },
+    {
+      "title": "WebKit efficiency",
+      "detail": "Apple-native engine."
+    },
+    {
+      "title": "iPhone beta",
+      "detail": "Mobile version exists."
+    },
+    {
+      "title": "Apple-native engine",
+      "detail": "WebKit rendering benefits battery on Apple devices."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Sparse info",
+      "detail": "Few verifiable details."
+    },
+    {
+      "title": "Beta",
+      "detail": "Not production grade."
+    },
+    {
+      "title": "Unknown maintainers",
+      "detail": "Trust cannot be assessed."
+    }
+  ],
+  "signatureFeatures": [
+    "WebKit rendering",
+    "Chrome extension support",
+    "iPhone beta"
+  ],
+  "faq": [
+    {
+      "q": "Which engine?",
+      "a": "WebKit."
+    },
+    {
+      "q": "Does it run Chrome extensions?",
+      "a": "Reportedly yes, per a 50-browser roundup."
+    },
+    {
+      "q": "Is it available on iPhone?",
+      "a": "A beta exists."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "Yab appears in alternative browser lists"
+    },
+    {
+      "date": "2026-10",
+      "event": "Listed amid post-Arc roundups"
+    },
+    {
+      "date": "2026",
+      "event": "iPhone beta reported"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Unverified."
+  },
+  "alternatives": [
+    "orion",
+    "safari",
+    "arc",
+    "crest"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Unverified"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Unverified"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Reported Chrome extension compatibility (unverified)",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Unverified"
+    },
+    "privacy": {
+      "defaults": "Unverified",
+      "telemetry": "Unverified",
+      "jurisdiction": "Unknown"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Unverified",
+    "drm": "FairPlay (WebKit)",
+    "codecs": "WebKit",
+    "sandbox": "WebKit + Apple sandbox",
+    "patchSpeed": "Unverified",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "macos": {
+      "status": "beta",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [],
+      "notes": [
+        "Presumed; only iPhone beta confirmed by roundup"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "beta",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "iPhone beta (distribution channel unverified)"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://flaviocopes.com/alternative-browsers/",
+      "title": "Flavio Copes: 50 browsers compared",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://daily.dev/posts/chrome-alternatives-in-2026-50-web-browsers-compared-tabxftitm",
+      "title": "daily.dev: Chrome alternatives 2026",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://toolfolio.com/articles/best-arc-browser-alternatives-for-mac-and-windows-after-the-december-2026-shutdown-dia-zen-and-ai-browsers",
+      "title": "Toolfolio: Arc alternatives",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Nearly everything beyond engine and extension claim",
+    "macOS version existence",
+    "Licence",
+    "Developer",
+    "Telemetry"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      8
+    ],
+    "fingerprintProtection": [
+      "yes",
+      8
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "partial",
+      5
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "paid",
+      7
+    ],
+    "cookieIsolation": [
+      "yes",
+      8
+    ],
+    "queryStripping": [
+      "yes",
+      8
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "yes",
+      8
+    ],
+    "adBlocker": [
+      "extension",
+      6
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      6
+    ],
+    "customFilterLists": [
+      "extension",
+      5
+    ],
+    "youtubeAds": [
+      "extension",
+      6
+    ],
+    "cookieBanners": [
+      "extension",
+      5
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      6
+    ],
+    "splitView": [
+      "partial",
+      3
+    ],
+    "tabSleeping": [
+      "partial",
+      5
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      9
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      9
+    ],
+    "screenshots": [
+      "partial",
+      4
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "partial",
+      5
+    ],
+    "readLater": [
+      "yes",
+      8
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      5,
+      "Reported"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      3
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "partial",
+      3
+    ],
+    "userscripts": [
+      "extension",
+      6
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "yes",
+      9
+    ],
+    "hevc": [
+      "yes",
+      10
+    ],
+    "av1": [
+      "partial",
+      7
+    ],
+    "hwDecode": [
+      "yes",
+      10
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI found"
+    ],
+    "translation": [
+      "yes",
+      8
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      6
+    ],
+    "enterprisePolicies": [
+      "yes",
+      7
+    ],
+    "kioskMode": [
+      "partial",
+      4
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "partial",
+      3
+    ],
+    "customSearchEngines": [
+      "partial",
+      4
+    ],
+    "devtools": [
+      "yes",
+      8
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      9,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      8.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      8.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      9,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      9.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      6,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      7,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      9,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      7,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "blocking": [
+      6,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "fingerprinting": [
+      7.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "securityHardening": [
+      8.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "patchSpeed": [
+      7,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "telemetry": [
+      7,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "lookCustom": [
+      3,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "searchFreedom": [
+      5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      7,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "media": [
+      9.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "translation": [
+      7.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "extensions": [
+      5,
+      "Chrome extensions on WebKit (unverified)",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "None known",
+      "editorial"
+    ],
+    "passwords": [
+      2,
+      "Unverified",
+      "editorial"
+    ],
+    "mobileApps": [
+      3,
+      "iPhone beta",
+      "documented"
+    ],
+    "webCompat": [
+      8.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      7.5,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      9,
+      "Baseline from safari; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      1,
+      "Unverified",
+      "editorial"
+    ],
+    "businessTrust": [
+      4,
+      "Unknown maintainers",
+      "editorial"
+    ],
+    "longevity": [
+      2,
+      "Unknown team and beta",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "None found",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      4,
+      "Beta",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

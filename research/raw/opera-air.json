@@ -1,0 +1,714 @@
+{
+  "id": "opera-air",
+  "name": "Opera Air",
+  "aliases": [],
+  "group": "power",
+  "developer": "Opera Limited",
+  "hq": "Norway (Kunlun Tech majority owner)",
+  "businessModel": "Opera ad/search partnerships; free product",
+  "engine": "blink",
+  "basedOn": "Chromium (Opera)",
+  "license": "Proprietary freeware",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2025,
+  "status": "active",
+  "statusNote": "Relaunched with redesign and breathing tools in October 2026",
+  "version": {
+    "current": "137.0.6036.91",
+    "date": "2026-10-26",
+    "upstream": "Chromium (Opera 137 line)"
+  },
+  "channels": [
+    "Stable"
+  ],
+  "updateCadence": "Follows Opera releases (listing shows 137 build)",
+  "website": "https://www.opera.com/air",
+  "tags": [
+    "mindfulness",
+    "opera",
+    "chromium",
+    "minimalist"
+  ],
+  "pitch": "A calmer Opera with break reminders, breathing exercises and ambient sound.",
+  "summary": "Opera's mindfulness-first browser for Windows and macOS: break reminders, guided breathing, binaural Boosts, no shortcuts or notifications by default, AI off by default.",
+  "bestFor": [
+    "People who want a calmer, focus-oriented browser",
+    "Opera users who want fewer distractions"
+  ],
+  "notFor": [
+    "Linux or mobile users (none)",
+    "Users wanting open source or strongest privacy",
+    "Those who need ARM Windows support"
+  ],
+  "pros": [
+    {
+      "title": "Take a Break",
+      "detail": "Guided breathing, stretches and meditation built in."
+    },
+    {
+      "title": "Quiet defaults",
+      "detail": "No ads or notifications on first launch; AI off by default."
+    },
+    {
+      "title": "Opera features",
+      "detail": "Free VPN, ad blocker and Aria are included."
+    },
+    {
+      "title": "Chromium compatibility",
+      "detail": "Same site compatibility and extension support as Opera."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Windows/macOS only",
+      "detail": "No Linux or mobile versions."
+    },
+    {
+      "title": "Opera ownership",
+      "detail": "Same Kunlun majority ownership as Opera."
+    },
+    {
+      "title": "Limited audience",
+      "detail": "Novelty features, same Chromium base."
+    }
+  ],
+  "signatureFeatures": [
+    "Take a Break exercises",
+    "Boosts (binaural beats)",
+    "Calm UI",
+    "Opera VPN"
+  ],
+  "faq": [
+    {
+      "q": "What platforms does Air support?",
+      "a": "Windows 10+ and macOS (macOS 12 per one guide, 13 per Wikipedia); no Linux or mobile."
+    },
+    {
+      "q": "Is AI on?",
+      "a": "Disabled by default, per an October 2026 review."
+    },
+    {
+      "q": "Is it based on Chromium?",
+      "a": "Yes, like Opera."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-02",
+      "event": "Opera Air released as a mindfulness-focused browser"
+    },
+    {
+      "date": "2025-02",
+      "event": "Opera Air released"
+    },
+    {
+      "date": "2026-10",
+      "event": "Redesign with breathing modes: Destress, Refresh, Box Breathing, Relax"
+    },
+    {
+      "date": "2026-10",
+      "event": "Opera 137-line build 137.0.6036.91 listed (Oct 26)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Imports from Chrome, Edge, Firefox."
+  },
+  "alternatives": [
+    "opera",
+    "vivaldi",
+    "brave",
+    "chrome"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "settings"
+      ],
+      "crossOs": false,
+      "note": "Opera account (unverified)"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": ""
+    },
+    "mv2": {
+      "level": "temporary",
+      "note": "Inherits Opera MV2 status (unverified)",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Aria included but AI off by default"
+    },
+    "privacy": {
+      "defaults": "Ad blocker opt-in, free VPN",
+      "telemetry": "Opera usage statistics",
+      "jurisdiction": "Norway/China owner"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google",
+    "telemetry": "Opera statistics",
+    "drm": "Widevine",
+    "codecs": "Chromium",
+    "sandbox": "Chromium sandbox",
+    "patchSpeed": "Opera cadence",
+    "languages": "Many"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Windows ARM unsupported"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 13 (Wikipedia; one guide says 12)",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://piunikaweb.com/2026/10/16/opera-air-doubles-down-minimalism-mindfulness-new-update/",
+      "title": "PiunikaWeb: Opera Air update",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.techspot.com/downloads/7722-opera-air.html",
+      "title": "TechSpot: Opera Air 137.0.6036.91",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Opera_(web_browser)",
+      "title": "Opera - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://browsers.to/opera-air",
+      "title": "browsers.to: Opera Air",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Whether Air gets same MV2 policy as Opera",
+    "macOS minimum version",
+    "Sync details"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      6
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "yes",
+      6
+    ],
+    "doh": [
+      "yes",
+      7
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "yes",
+      8
+    ],
+    "cookieIsolation": [
+      "partial",
+      3
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      5
+    ],
+    "privateHardening": [
+      "partial",
+      5
+    ],
+    "adBlocker": [
+      "yes",
+      7
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      6
+    ],
+    "customFilterLists": [
+      "partial",
+      5
+    ],
+    "youtubeAds": [
+      "partial",
+      5
+    ],
+    "cookieBanners": [
+      "yes",
+      6
+    ],
+    "verticalTabs": [
+      "partial",
+      4
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "yes",
+      7
+    ],
+    "workspaces": [
+      "yes",
+      9
+    ],
+    "splitView": [
+      "yes",
+      7
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "yes",
+      8
+    ],
+    "readerMode": [
+      "partial",
+      5
+    ],
+    "notes": [
+      "yes",
+      8
+    ],
+    "webPanels": [
+      "yes",
+      9
+    ],
+    "pip": [
+      "yes",
+      9
+    ],
+    "screenshots": [
+      "yes",
+      8
+    ],
+    "commandBar": [
+      "partial",
+      5
+    ],
+    "mouseGestures": [
+      "yes",
+      7
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      8
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "yes",
+      8
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      6
+    ],
+    "uboFull": [
+      "partial",
+      6
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      7
+    ],
+    "syncBookmarks": [
+      "yes",
+      8
+    ],
+    "syncPasswords": [
+      "yes",
+      7
+    ],
+    "syncTabs": [
+      "yes",
+      7
+    ],
+    "e2eeSync": [
+      "partial",
+      5
+    ],
+    "profiles": [
+      "partial",
+      2
+    ],
+    "passwordManager": [
+      "yes",
+      6
+    ],
+    "passkeys": [
+      "yes",
+      6
+    ],
+    "importData": [
+      "yes",
+      8
+    ],
+    "widevine": [
+      "yes",
+      9
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "yes",
+      8
+    ],
+    "av1": [
+      "yes",
+      8
+    ],
+    "hwDecode": [
+      "yes",
+      8
+    ],
+    "aiAssistant": [
+      "partial",
+      5,
+      "Aria off by default"
+    ],
+    "aiSummarizer": [
+      "yes",
+      7
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "yes",
+      6
+    ],
+    "aiKillSwitch": [
+      "partial",
+      5
+    ],
+    "translation": [
+      "yes",
+      6
+    ],
+    "cryptoWallet": [
+      "yes",
+      7
+    ],
+    "pwaInstall": [
+      "yes",
+      7
+    ],
+    "enterprisePolicies": [
+      "partial",
+      4
+    ],
+    "kioskMode": [
+      "partial",
+      3
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      7
+    ],
+    "customThemes": [
+      "yes",
+      8
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      9
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      7.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      6,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "blocking": [
+      7.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "fingerprinting": [
+      3,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "securityHardening": [
+      9,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "patchSpeed": [
+      7.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "telemetry": [
+      4,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "lookCustom": [
+      6,
+      "Calm theme options",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      7.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      8.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      6.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      8.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "media": [
+      8.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "translation": [
+      6,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      6,
+      "Break tools and VPN",
+      "documented"
+    ],
+    "extensions": [
+      7,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "sync": [
+      7,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "passwords": [
+      6,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile version",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      9.5,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      8,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      3,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "businessTrust": [
+      4,
+      "Baseline from opera; not separately evaluated",
+      "editorial"
+    ],
+    "longevity": [
+      7,
+      "Young Opera sub-brand",
+      "editorial"
+    ],
+    "ai": [
+      4,
+      "Aria off by default",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      8.5,
+      "Calm, minimal",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

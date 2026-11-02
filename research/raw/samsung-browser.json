@@ -1,0 +1,780 @@
+{
+  "id": "samsung-browser",
+  "name": "Samsung Browser",
+  "aliases": [
+    "Samsung Internet"
+  ],
+  "group": "mainstream",
+  "developer": "Samsung Electronics",
+  "hq": "South Korea",
+  "businessModel": "Free, preinstalled on Galaxy devices; supports Samsung ecosystem, search/shopping partnerships and Galaxy AI features",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary freeware (built on open-source Chromium)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2012,
+  "status": "active",
+  "statusNote": "Renamed from Samsung Internet to Samsung Browser in March 2026; Windows stable since Mar 25-26, 2026",
+  "version": {
+    "current": "30.0.5.27 (Android); 31.0.0.55 (Windows, per Wikipedia)",
+    "date": "2026-10-23",
+    "upstream": "Chromium (exact base version not found)"
+  },
+  "channels": [
+    "Stable",
+    "Beta (Android and Windows)"
+  ],
+  "updateCadence": "Android: stable updates roughly monthly via Galaxy Store/Play; Windows builds roughly monthly",
+  "website": "https://www.samsung.com/us/support/owners/app/samsung-internet",
+  "tags": [
+    "mainstream",
+    "android",
+    "samsung",
+    "galaxy-ai",
+    "perplexity"
+  ],
+  "pitch": "The Galaxy default: Chromium-based, ad blocker add-ons and a Perplexity-powered assistant.",
+  "summary": "Samsung's Chromium-based browser, default on Galaxy phones and now also on Windows: Secret Mode, Samsung Pass, Smart Anti-Tracking, cross-device continuity and AI helpers (Perplexity-powered on Windows, Ask Anything on Galaxy).",
+  "bestFor": [
+    "Galaxy phone/tablet owners",
+    "Android users who want add-ons (ad blockers) without Chrome",
+    "People who want phone-to-PC continuity in the Samsung ecosystem"
+  ],
+  "notFor": [
+    "Users on iOS, macOS or Linux (not available)",
+    "Power users wanting Chrome Web Store/full extension choice",
+    "Those wanting an open-source or fully transparent browser"
+  ],
+  "pros": [
+    {
+      "title": "Great on Galaxy",
+      "detail": "Deep integration with One UI, Samsung Pass, DeX and Galaxy AI."
+    },
+    {
+      "title": "Add-on support",
+      "detail": "Android version offers Samsung's own add-on catalog including content blockers."
+    },
+    {
+      "title": "Privacy tools",
+      "detail": "Smart Anti-Tracking and a biometric-locked Secret Mode."
+    },
+    {
+      "title": "Windows version",
+      "detail": "Stable Windows build since March 2026 with Samsung phone sync."
+    },
+    {
+      "title": "Useful AI",
+      "detail": "Ask Anything / assistant for page questions and summaries; Windows assistant built with Perplexity."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Platform-limited",
+      "detail": "Android and Windows only; Windows AI features reported only for Korea and the US."
+    },
+    {
+      "title": "Small extension store",
+      "detail": "Own add-on catalog only, no Chrome Web Store."
+    },
+    {
+      "title": "Chromium lag unclear",
+      "detail": "Samsung's Chromium base version was not published in release notes found."
+    },
+    {
+      "title": "Samsung account focus",
+      "detail": "Sync and best features depend on Samsung account and Galaxy devices."
+    }
+  ],
+  "signatureFeatures": [
+    "Smart Anti-Tracking and Secret Mode",
+    "Samsung Pass",
+    "Ask Anything / Browsing Assist",
+    "Phone-PC continuity",
+    "Add-ons (ad blockers)"
+  ],
+  "faq": [
+    {
+      "q": "Is Samsung Internet now called Samsung Browser?",
+      "a": "Yes. Samsung renamed it to Samsung Browser in March 2026, first on Galaxy devices and then with the Windows stable release."
+    },
+    {
+      "q": "Is there a Windows version?",
+      "a": "Yes. A stable Windows build (30.0.0.95) launched around March 25-26, 2026 for Windows 10 1809+ and Windows 11 after about five months of beta."
+    },
+    {
+      "q": "Does it support extensions?",
+      "a": "Android offers Samsung's own add-on store (not Chrome Web Store). Windows extension support was not verified."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2012",
+      "event": "Samsung Internet debuts on Galaxy devices"
+    },
+    {
+      "date": "2025-10",
+      "event": "Samsung Internet beta for Windows launched"
+    },
+    {
+      "date": "2026-03",
+      "event": "Renamed to Samsung Browser; Windows stable released with Perplexity-powered assistant"
+    },
+    {
+      "date": "2026-05",
+      "event": "Version 30 becomes stable on Android; adds auto-close unused tabs"
+    },
+    {
+      "date": "2026-07",
+      "event": "One UI 9 (Android 17) brings Ask Anything and Open PDFs in Notes"
+    },
+    {
+      "date": "2026-10",
+      "event": "Android 30.0.5.27 (Oct 23) adds Smart Shopping and Manage windows"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords via Samsung Pass",
+      "history"
+    ],
+    "note": "Moves from Chrome via Samsung account sync or import; limited import tools."
+  },
+  "alternatives": [
+    "chrome",
+    "edge",
+    "firefox",
+    "brave",
+    "opera"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "saved pages",
+        "open tabs",
+        "history",
+        "passwords (Samsung Pass)",
+        "settings"
+      ],
+      "crossOs": false,
+      "note": "Samsung Account; Android and Windows (PC-phone continuity)"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Samsung Pass and Samsung Pass integration on Windows; passkey support not re-verified"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Own add-on catalog; no MV2/MV3 detail found",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "own-store",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Ask Anything / Browsing Assist (beta, Galaxy AI); Windows assistant with Perplexity; can be turned off"
+    },
+    "privacy": {
+      "defaults": "Smart Anti-Tracking on, Secret Mode, optional ad blocker add-ons",
+      "telemetry": "Samsung services and Google components; usage data per Samsung privacy policy",
+      "jurisdiction": "South Korea"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (varies by region)",
+    "telemetry": "Samsung usage data and customization service; opt-outs available",
+    "drm": "Widevine L1 on supported devices",
+    "codecs": "H.264, HEVC, VP9, AV1",
+    "sandbox": "Chromium sandbox on Android/Windows",
+    "patchSpeed": "Not published; Samsung ships Chromium updates in app updates (lag unverified)",
+    "languages": "~100 on Android"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Android 11 (APKMirror listing for 30.0.2.30; Wikipedia says Android 10)",
+      "arch": [
+        "arm64",
+        "arm32"
+      ],
+      "stores": [
+        "preinstalled",
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "Galaxy Store updates; available on non-Samsung Android via Google Play",
+        "Wikipedia lists Android 30.0.5.27 (Oct 23, 2026)"
+      ],
+      "highlights": [
+        "Add-ons, Secret Mode, Ask Anything, auto close unused tabs"
+      ],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10 1809",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Stable March 2026 (30.0.0.95); Wikipedia lists 31.0.0.55 on 2026-09-17",
+        "AI features reported for Korea/US only by some outlets"
+      ],
+      "highlights": [
+        "Samsung Pass, phone continuity, Perplexity assistant"
+      ],
+      "scoreDelta": {
+        "extensions": -1,
+        "devTools": 0.5,
+        "mobileApps": 0
+      }
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Samsung_Browser",
+      "title": "Samsung Browser - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.androidheadlines.com/2026/03/samsung-internet-browser-windows-stable-release-download.html",
+      "title": "Android Headlines: Samsung Internet for Windows stable",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.notebookcheck.net/Samsung-Browser-for-Windows-gets-new-agentic-AI-features.1262211.0.html",
+      "title": "Notebookcheck: Samsung Browser for Windows agentic AI",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.sammobile.com/news/samsung-browser-two-new-features-one-ui-9/",
+      "title": "SamMobile: Samsung Browser Ask Anything and Notes PDF with One UI 9",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.apkmirror.com/apk/samsung-electronics-co-ltd/samsung-internet-for-android/samsung-internet-browser-30-0-2-30-release/samsung-internet-browser-30-0-2-30-android-apk-download/",
+      "title": "APKMirror: Samsung Browser 30.0.2.30",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Underlying Chromium version of Samsung Browser 30/31",
+    "Windows current version (31.0.0.55 vs 30.0.4.29 in Wikipedia)",
+    "Android minimum OS (10 vs 11)",
+    "Windows extension support and passkey sync",
+    "Regional availability of Windows AI features",
+    "Add-on ad blockers currently available",
+    "Patch lag and exact stable date of Windows (Mar 25 vs 26)"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      6,
+      "Smart Anti-Tracking"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "partial",
+      5
+    ],
+    "doh": [
+      "partial",
+      5
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      4
+    ],
+    "privateHardening": [
+      "yes",
+      6,
+      "Secret Mode with biometrics"
+    ],
+    "adBlocker": [
+      "extension",
+      6,
+      "Add-ons"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      5
+    ],
+    "customFilterLists": [
+      "extension",
+      4
+    ],
+    "youtubeAds": [
+      "extension",
+      4
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "yes",
+      7
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      4,
+      "Android multi-window"
+    ],
+    "tabSleeping": [
+      "partial",
+      5,
+      "Auto close unused tabs"
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      6
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      7
+    ],
+    "notes": [
+      "partial",
+      4,
+      "Open PDFs in Notes"
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      6
+    ],
+    "screenshots": [
+      "partial",
+      5
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6,
+      "Saved pages"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "yes",
+      5,
+      "Own catalog"
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "yes",
+      8
+    ],
+    "syncPasswords": [
+      "yes",
+      8,
+      "Samsung Pass"
+    ],
+    "syncTabs": [
+      "yes",
+      8
+    ],
+    "e2eeSync": [
+      "partial",
+      4
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "yes",
+      7,
+      "Samsung Pass"
+    ],
+    "passkeys": [
+      "yes",
+      7,
+      "Unverified"
+    ],
+    "importData": [
+      "partial",
+      5
+    ],
+    "widevine": [
+      "yes",
+      8
+    ],
+    "netflix4k": [
+      "partial",
+      5,
+      "Device dependent"
+    ],
+    "hevc": [
+      "yes",
+      8
+    ],
+    "av1": [
+      "yes",
+      7
+    ],
+    "hwDecode": [
+      "yes",
+      8
+    ],
+    "aiAssistant": [
+      "yes",
+      8,
+      "Ask Anything / Perplexity assistant"
+    ],
+    "aiSummarizer": [
+      "yes",
+      8
+    ],
+    "agenticBrowsing": [
+      "partial",
+      5,
+      "Windows agentic features, regional"
+    ],
+    "localAi": [
+      "partial",
+      5,
+      "Some Galaxy AI on device"
+    ],
+    "aiKillSwitch": [
+      "partial",
+      5,
+      "Assistant toggle"
+    ],
+    "translation": [
+      "yes",
+      7
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      6
+    ],
+    "enterprisePolicies": [
+      "partial",
+      4,
+      "Knox"
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "partial",
+      4
+    ],
+    "customSearchEngines": [
+      "partial",
+      5
+    ],
+    "devtools": [
+      "partial",
+      5,
+      "Remote debugging"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "V8; mobile focus and Chromium lag",
+      "editorial"
+    ],
+    "pageLoad": [
+      8,
+      "Chromium rendering on Galaxy hardware",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Fast on Galaxy",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Tuned for high refresh Galaxy displays",
+      "editorial"
+    ],
+    "graphics": [
+      8,
+      "Chromium GPU, mobile limits",
+      "editorial"
+    ],
+    "memory": [
+      5.5,
+      "Chromium multi-process",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Mobile-tuned",
+      "editorial"
+    ],
+    "battery": [
+      7,
+      "Optimised for Galaxy devices",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "Auto close unused tabs only",
+      "documented"
+    ],
+    "lowEnd": [
+      6,
+      "Android 11+ required",
+      "documented"
+    ],
+    "installSize": [
+      6,
+      "Moderate APK size",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6,
+      "Smart Anti-Tracking, Secret Mode",
+      "documented"
+    ],
+    "blocking": [
+      6,
+      "Add-on ad blockers on Android",
+      "documented"
+    ],
+    "fingerprinting": [
+      3.5,
+      "No dedicated resistance",
+      "editorial"
+    ],
+    "securityHardening": [
+      8.5,
+      "Chromium sandbox plus Knox",
+      "documented"
+    ],
+    "patchSpeed": [
+      6.5,
+      "Chromium base lag unpublished",
+      "editorial"
+    ],
+    "telemetry": [
+      3.5,
+      "Samsung services data collection",
+      "editorial"
+    ],
+    "lookCustom": [
+      6,
+      "Menu/toolbar customisation, themes",
+      "documented"
+    ],
+    "behaviourCustom": [
+      5.5,
+      "Some gestures and shortcuts",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4,
+      "Few advanced options",
+      "editorial"
+    ],
+    "tabManagement": [
+      6.5,
+      "Groups, auto close",
+      "documented"
+    ],
+    "searchFreedom": [
+      6.5,
+      "Several engines, limited custom",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard",
+      "editorial"
+    ],
+    "productivity": [
+      6.5,
+      "Reader, notes, assistant",
+      "editorial"
+    ],
+    "media": [
+      8.5,
+      "Widevine, HEVC, video assistant",
+      "editorial"
+    ],
+    "translation": [
+      7,
+      "Galaxy AI translate",
+      "documented"
+    ],
+    "extras": [
+      6.5,
+      "Samsung Pass, shopping, continuity",
+      "documented"
+    ],
+    "extensions": [
+      4.5,
+      "Own add-on catalog",
+      "documented"
+    ],
+    "sync": [
+      7.5,
+      "Samsung account across phone and PC",
+      "documented"
+    ],
+    "passwords": [
+      7,
+      "Samsung Pass",
+      "documented"
+    ],
+    "mobileApps": [
+      9,
+      "Core Android product on Galaxy",
+      "documented"
+    ],
+    "webCompat": [
+      9,
+      "Chromium engine",
+      "documented"
+    ],
+    "devTools": [
+      6.5,
+      "Remote debugging via Chrome",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "One UI accessibility integration",
+      "editorial"
+    ],
+    "openSource": [
+      3,
+      "Proprietary on Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      5.5,
+      "Large vendor, ecosystem lock-in",
+      "editorial"
+    ],
+    "longevity": [
+      8,
+      "Samsung backed, 14 years",
+      "editorial"
+    ],
+    "ai": [
+      7.5,
+      "Ask Anything and Perplexity assistant",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      8.5,
+      "Familiar and simple",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

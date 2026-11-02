@@ -1,0 +1,776 @@
+{
+  "id": "lemur",
+  "name": "Lemur Browser",
+  "aliases": [
+    "Lemur Browser: Web Extensions"
+  ],
+  "group": "android",
+  "developer": "Lemur Browser Limited (listings also show Konova Co Limited, Osman Group Limited)",
+  "hq": "China (unverified, old MalwareTips thread)",
+  "businessModel": "Free; monetisation not documented",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2023,
+  "status": "active",
+  "statusNote": "Frequent builds in Oct 2026; stability disputed",
+  "version": {
+    "current": "2.7.6.008",
+    "date": "2026-10-26",
+    "upstream": "Chromium (version unknown)"
+  },
+  "channels": [
+    "Release",
+    "Beta (com.lemurbrowser.exts.beta)"
+  ],
+  "updateCadence": "Many builds per month (Uptodown shows several in Oct 2026)",
+  "website": "https://play.google.com/store/apps/details?id=com.lemurbrowser.exts",
+  "tags": [
+    "android",
+    "extensions",
+    "chromium",
+    "kiwi-alternative"
+  ],
+  "pitch": "Chromium Android browser with Chrome and Edge extensions, a Kiwi stand-in.",
+  "summary": "Chromium Android browser that installs extensions from the Chrome Web Store and Edge Add-ons, plus local CRX files and Tampermonkey. Product Hunt \"Kiwi alternative\" (Feb 2025). Reviews split on stability; ownership and privacy are unclear.",
+  "bestFor": [
+    "Android users who need desktop extensions",
+    "Userscript/Tampermonkey fans",
+    "Former Kiwi users"
+  ],
+  "notFor": [
+    "Anyone wanting audited privacy",
+    "Users who need rock-solid stability",
+    "People avoiding Chinese-linked vendors"
+  ],
+  "pros": [
+    {
+      "title": "Extension support",
+      "detail": "Chrome Web Store, Edge Add-ons and local CRX/ZIP installs."
+    },
+    {
+      "title": "Tampermonkey works",
+      "detail": "MakeUseOf reports full userscript support."
+    },
+    {
+      "title": "Desktop-style UI",
+      "detail": "Desktop tabs, bookmarks bar and extension sidebar."
+    },
+    {
+      "title": "Active builds",
+      "detail": "Version 2.7.6.008 on Oct 26, 2026."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Stability complaints",
+      "detail": "DigitBin saw freezes and crashes with extensions; beta rated 3.8 from 160 reviews."
+    },
+    {
+      "title": "Opaque developer",
+      "detail": "Listings show different company names; old thread flagged Google trackers and Chinese ownership."
+    },
+    {
+      "title": "Closed source",
+      "detail": "Proprietary, no audit."
+    },
+    {
+      "title": "Play history",
+      "detail": "Reported removed from Play in ~2023, but main and beta listings are live now."
+    }
+  ],
+  "signatureFeatures": [
+    "Chrome and Edge extensions",
+    "Tampermonkey",
+    "Desktop UI mode",
+    "Extension sidebar"
+  ],
+  "faq": [
+    {
+      "q": "Is Lemur on Google Play?",
+      "a": "Yes: com.lemurbrowser.exts (and a separate beta com.lemurbrowser.exts.beta); an old report of removal appears outdated."
+    },
+    {
+      "q": "Is it a Kiwi fork?",
+      "a": "Not confirmed; it is described as a Chromium-based alternative."
+    },
+    {
+      "q": "Minimum Android?",
+      "a": "Android 8.0 per APKMirror."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-02",
+      "event": "Product Hunt launch as \"Kiwi alternative\" (Feb 26)"
+    },
+    {
+      "date": "2026-10",
+      "event": "APKMirror lists 2.7.5.011 (Oct 13)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Uptodown lists 2.7.6.008 (Oct 26)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks"
+    ],
+    "note": "Unverified."
+  },
+  "alternatives": [
+    "quetta",
+    "kiwi",
+    "iceraven",
+    "ironfox",
+    "fulguris"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Not documented"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Bitwarden via extension"
+    },
+    "mv2": {
+      "level": "temporary",
+      "note": "Extension installs from CWS/Edge; MV2 behaviour after Aug 2026 unverified",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "chrome-web-store",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI documented"
+    },
+    "privacy": {
+      "defaults": "No special protection beyond extensions",
+      "telemetry": "Old report of two Google trackers; unverified now",
+      "jurisdiction": "China (unverified)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Unverified",
+    "drm": "Unverified",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox",
+    "patchLag": "Unknown",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Android 8.0",
+      "arch": [
+        "arm64",
+        "armv7"
+      ],
+      "stores": [
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "Google Play: com.lemurbrowser.exts (1M+ installs per APKCombo)",
+        "Beta on Play: com.lemurbrowser.exts.beta",
+        "AlternativeTo mentions an iPhone listing; conflicts with Android-only claims"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.lemurbrowser.exts",
+      "title": "Lemur Browser - Google Play",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.apkmirror.com/apk/konova-co-limited/lemur-browser-extensions/",
+      "title": "Lemur Browser - APKMirror",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://lemur-browser-extensions.en.uptodown.com/android",
+      "title": "Lemur Browser - Uptodown",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.makeuseof.com/android-browsers-that-run-extensions-chrome-keeps-leaving-out/",
+      "title": "MakeUseOf: Android browsers with extensions",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.digitbin.com/best-kiwi-alternative-android-chrome-extensions/",
+      "title": "DigitBin: Kiwi alternatives",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Developer identity and HQ",
+    "Whether Lemur is a Kiwi fork",
+    "iOS version",
+    "Current tracker/privacy behaviour",
+    "Chromium version"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "extension",
+      6,
+      "AdGuard/AdBlock extensions"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "partial",
+      4,
+      "Desktop-style tabs"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Android OS-level tab discard"
+    ],
+    "tabSearch": [
+      "partial",
+      4,
+      ""
+    ],
+    "pinnedTabs": [
+      "partial",
+      4,
+      "Desktop tabs"
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "yes",
+      6,
+      "Extension sidebar"
+    ],
+    "pip": [
+      "partial",
+      5,
+      ""
+    ],
+    "screenshots": [
+      "no",
+      0,
+      ""
+    ],
+    "commandBar": [
+      "no",
+      0,
+      ""
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "partial",
+      4,
+      "Desktop mode"
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "yes",
+      8,
+      "Plus Edge Add-ons and CRX"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "uboFull": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "mobileExtensions": [
+      "yes",
+      7,
+      "Desktop-style extensions on Android"
+    ],
+    "userscripts": [
+      "yes",
+      8,
+      "Tampermonkey works fully"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "no",
+      0,
+      ""
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "partial",
+      4,
+      ""
+    ],
+    "widevine": [
+      "yes",
+      7,
+      ""
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "no",
+      0,
+      "No AI assistant"
+    ],
+    "aiSummarizer": [
+      "no",
+      0,
+      ""
+    ],
+    "agenticBrowsing": [
+      "no",
+      0,
+      ""
+    ],
+    "localAi": [
+      "no",
+      0,
+      ""
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      5,
+      ""
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      ""
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      ""
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      "Dark mode / basic themes"
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "partial",
+      5,
+      "Remote debugging via desktop Chrome (unverified)"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      8,
+      "Chromium mobile cold start",
+      "editorial"
+    ],
+    "smoothness": [
+      6.5,
+      "Reviews report freezes with extensions",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      5,
+      "Chromium multi-process",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium-class",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Chromium on phone, average drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      3.5,
+      "Android OS tab discard only",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "Runs on mid-range phones",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Typical Chromium APK size",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3,
+      "No built-in protections; trackers reported",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Only MV3 blockers such as uBO Lite are available",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      6.5,
+      "Chromium sandbox; extension surface and unknown patching",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5,
+      "Chromium version not published",
+      "editorial"
+    ],
+    "telemetry": [
+      3,
+      "Old tracker report, unverified",
+      "editorial"
+    ],
+    "lookCustom": [
+      3,
+      "Dark mode and basic themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3.5,
+      "Few gestures or per-site controls",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3.5,
+      "Limited flags on mobile",
+      "editorial"
+    ],
+    "tabManagement": [
+      5.5,
+      "Desktop-style tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      5,
+      "Desktop UI and extension sidebar",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      6,
+      "Page translation if enabled (unverified)",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "Few extras",
+      "editorial"
+    ],
+    "extensions": [
+      8,
+      "CWS, Edge Add-ons and CRX installs",
+      "editorial"
+    ],
+    "sync": [
+      3,
+      "Limited or no sync",
+      "editorial"
+    ],
+    "passwords": [
+      4,
+      "Basic autofill",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "Mobile is the main product",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      4,
+      "Remote debugging only",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Chromium Android accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      1.5,
+      "Proprietary",
+      "documented"
+    ],
+    "businessTrust": [
+      3,
+      "Varying company names, closed source",
+      "editorial"
+    ],
+    "longevity": [
+      5,
+      "Frequent builds but disputed stability",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Chrome-like mobile UI",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,735 @@
+{
+  "id": "mi-browser",
+  "name": "Mi Browser",
+  "aliases": [
+    "Xiaomi Browser",
+    "Mi Browser Pro",
+    "Mi Browser Fast & Secure"
+  ],
+  "group": "mobile",
+  "developer": "Xiaomi Inc. (Zhigu Corporation Limited on Google Play)",
+  "hq": "China",
+  "businessModel": "Ad-funded: news feed, sponsored content and search/partner revenue on Xiaomi phones",
+  "engine": "blink",
+  "basedOn": "Chromium WebView/Blink (unverified)",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2012,
+  "status": "active",
+  "statusNote": "Preinstalled on Xiaomi/Redmi/POCO phones; Mi Browser Pro on Google Play; separate built-in Xiaomi Browser line",
+  "version": {
+    "current": "14.66.0-gn (Mi Browser Pro); 20.25.1020805 (built-in Xiaomi Browser)",
+    "date": "2026-10-28",
+    "upstream": "Unverified"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Mi Browser Pro roughly monthly in 2026; Xiaomi Browser updated via Xiaomi system updates",
+  "website": "https://www.mi.com",
+  "tags": [
+    "mobile",
+    "android",
+    "xiaomi",
+    "ads",
+    "preinstalled",
+    "privacy-concerns"
+  ],
+  "pitch": "Xiaomi's preinstalled Android browser, ad-funded with news feed and past privacy findings.",
+  "summary": "Mi Browser is the default browser on Xiaomi phones, available as Mi Browser Pro on Google Play and as a built-in Xiaomi Browser. Includes ad blocker and night mode, but also feeds, sponsored content and a 2020 incognito-tracking scandal.",
+  "bestFor": [
+    "Xiaomi owners wanting the stock browser",
+    "Users who want a light mobile browser with night mode"
+  ],
+  "notFor": [
+    "Privacy-focused users",
+    "Users who dislike ads and recommended content",
+    "Anyone wanting extensions"
+  ],
+  "pros": [
+    {
+      "title": "Preinstalled and light",
+      "detail": "Comes with Xiaomi devices; modest resource use."
+    },
+    {
+      "title": "Regular Play updates",
+      "detail": "Mi Browser Pro 14.x had releases roughly every month in 2026."
+    },
+    {
+      "title": "Ad and privacy toggles",
+      "detail": "Settings let users disable ads, recommended news and personalised services."
+    },
+    {
+      "title": "Night mode and reading tools",
+      "detail": "Dark mode, video download and reader tools in app."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Ads and feeds",
+      "detail": "HyperOS guides list Mi Browser among apps showing ads, recommended news and sponsored content."
+    },
+    {
+      "title": "2020 incognito tracking",
+      "detail": "Forbes reported Mi Browser/Pro recorded private browsing; Xiaomi added an opt-out toggle."
+    },
+    {
+      "title": "No extensions",
+      "detail": "No add-on support."
+    },
+    {
+      "title": "Xiaomi-only polish",
+      "detail": "Tightly tied to Xiaomi system services."
+    }
+  ],
+  "signatureFeatures": [
+    "Night mode",
+    "Built-in ad block",
+    "News feed start page",
+    "Mi account sync"
+  ],
+  "faq": [
+    {
+      "q": "What happened with Mi Browser and incognito mode?",
+      "a": "In April 2020 Forbes reported Mi Browser and Mi Browser Pro sent browsing data, including incognito, to Xiaomi servers; Xiaomi added an opt-out button by May 4, 2020."
+    },
+    {
+      "q": "How do I disable ads in Mi Browser?",
+      "a": "Turn off Show ads, recommended news and personalised services in Mi Browser settings, and disable MSA/personalised ads in system Privacy settings."
+    },
+    {
+      "q": "Is it on Google Play?",
+      "a": "Yes, as Mi Browser Pro (com.mi.globalbrowser, updated 2026-10-15)."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2020-04-30",
+      "event": "Forbes reports Mi Browser tracks private browsing"
+    },
+    {
+      "date": "2020-05-04",
+      "event": "Xiaomi pushes update (v12.1.4) with opt-out for aggregated data collection"
+    },
+    {
+      "date": "2025-12",
+      "event": "Mi Browser 14.47.1/14.48.2 releases"
+    },
+    {
+      "date": "2026-10-28",
+      "event": "Mi Browser 14.66.0-gn uploaded to APKMirror"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks"
+    ],
+    "note": "Mi account sync; limited import."
+  },
+  "alternatives": [
+    "chrome",
+    "uc-browser",
+    "opera-mini",
+    "huawei-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "history"
+      ],
+      "crossOs": false,
+      "note": "Mi Account on Xiaomi devices"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Autofill basic"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extensions",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": false,
+      "paid": "no",
+      "note": "System-level Xiaomi AI integrations (unverified)"
+    },
+    "privacy": {
+      "defaults": "Ads and personalised services enabled by default",
+      "telemetry": "Analytics sent to Xiaomi; 2020 incognito scandal",
+      "jurisdiction": "China"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google/Bing/Baidu by region (unverified)",
+    "telemetry": "Xiaomi analytics, opt-out toggles",
+    "drm": "Widevine L1 via device",
+    "codecs": "Android system codecs",
+    "sandbox": "Android sandbox + WebView",
+    "patchLag": "Unknown",
+    "languages": "Many"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Android 9 (older builds) / 11 (APKCombo latest)",
+      "arch": [
+        "arm64",
+        "arm"
+      ],
+      "stores": [
+        "preinstalled",
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "Mi Browser Pro: com.mi.globalbrowser, Zhigu Corporation Limited",
+        "Built-in Xiaomi Browser 20.25.1020805 (Aug 2026) is a separate line",
+        "14.66.0-gn uploaded 2026-10-28"
+      ],
+      "highlights": [
+        "Ad toggles"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      4,
+      "Personalised services toggle"
+    ],
+    "privateHardening": [
+      "partial",
+      3,
+      "2020 scandal fixed with opt-out"
+    ],
+    "adBlocker": [
+      "yes",
+      5,
+      "Built-in ad blocker"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      3
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "partial",
+      4
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      6
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      5
+    ],
+    "screenshots": [
+      "yes",
+      5
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "partial",
+      4,
+      "Touch gestures"
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0
+    ],
+    "readLater": [
+      "yes",
+      5,
+      "Offline pages"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "yes",
+      5
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "partial",
+      3
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "partial",
+      3
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      3
+    ],
+    "widevine": [
+      "yes",
+      6
+    ],
+    "netflix4k": [
+      "partial",
+      5,
+      "Device L1 dependent"
+    ],
+    "hevc": [
+      "yes",
+      6
+    ],
+    "av1": [
+      "partial",
+      5
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "partial",
+      3,
+      "Unverified"
+    ],
+    "aiSummarizer": [
+      "partial",
+      3
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "partial",
+      3
+    ],
+    "translation": [
+      "yes",
+      5,
+      "Built-in page translate"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "partial",
+      3
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5,
+      "Includes video download"
+    ],
+    "customThemes": [
+      "yes",
+      5,
+      "Night mode"
+    ],
+    "customSearchEngines": [
+      "yes",
+      4
+    ],
+    "devtools": [
+      "no",
+      0
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      7.5,
+      "Chromium WebView engine on phones",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "WebView-class",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7,
+      "WebView stack",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Preinstalled, light",
+      "editorial"
+    ],
+    "smoothness": [
+      7.5,
+      "WebView",
+      "editorial"
+    ],
+    "graphics": [
+      6.5,
+      "Phone WebGL",
+      "editorial"
+    ],
+    "memory": [
+      7,
+      "Light mobile app",
+      "editorial"
+    ],
+    "cpu": [
+      7,
+      "Light",
+      "editorial"
+    ],
+    "battery": [
+      7,
+      "Light",
+      "editorial"
+    ],
+    "resourceControls": [
+      4,
+      "Minimal",
+      "editorial"
+    ],
+    "lowEnd": [
+      7.5,
+      "Runs on budget phones",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Moderate",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      2.5,
+      "Ads and personalised services on by default",
+      "editorial"
+    ],
+    "blocking": [
+      5,
+      "Built-in ad blocker",
+      "editorial"
+    ],
+    "fingerprinting": [
+      1.5,
+      "None",
+      "editorial"
+    ],
+    "securityHardening": [
+      6,
+      "Android sandbox, WebView",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5,
+      "Depends on WebView and app updates",
+      "editorial"
+    ],
+    "telemetry": [
+      2,
+      "2020 incognito collection; ad analytics",
+      "documented"
+    ],
+    "lookCustom": [
+      5,
+      "Night mode, skins",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Limited",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3,
+      "Limited",
+      "editorial"
+    ],
+    "tabManagement": [
+      4,
+      "Basic",
+      "editorial"
+    ],
+    "searchFreedom": [
+      5,
+      "Some engine choices",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Video download",
+      "editorial"
+    ],
+    "productivity": [
+      4.5,
+      "Reader, offline",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "System DRM",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "Basic",
+      "editorial"
+    ],
+    "extras": [
+      4.5,
+      "Feed and tools",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extension support",
+      "editorial"
+    ],
+    "sync": [
+      4.5,
+      "Mi account",
+      "editorial"
+    ],
+    "passwords": [
+      3,
+      "Basic",
+      "editorial"
+    ],
+    "mobileApps": [
+      6.5,
+      "Android only, regional builds",
+      "editorial"
+    ],
+    "webCompat": [
+      8,
+      "Blink WebView",
+      "editorial"
+    ],
+    "devTools": [
+      1,
+      "Remote debug only",
+      "editorial"
+    ],
+    "accessibility": [
+      5.5,
+      "Android system",
+      "editorial"
+    ],
+    "openSource": [
+      1,
+      "Closed",
+      "editorial"
+    ],
+    "businessTrust": [
+      2.5,
+      "Ads plus 2020 Forbes finding",
+      "documented"
+    ],
+    "longevity": [
+      7,
+      "Ships with Xiaomi phones",
+      "editorial"
+    ],
+    "ai": [
+      3.5,
+      "Minor",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7.5,
+      "Simple stock browser",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.apkmirror.com/apk/zhigu-corporation-limited/mi-browser-fast-and-secure-browsing/",
+      "title": "APKMirror - Mi Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.apkmirror.com/apk/xiaomi-inc/mi-browse/xiaomi-browser-20-25-1020805-release/",
+      "title": "APKMirror - Xiaomi Browser 20.25",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details/Mi_Browser?id=com.mi.globalbrowser&hl=en_AU",
+      "title": "Google Play - Mi Browser Pro",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.forbes.com/sites/thomasbrewster/2020/04/30/exclusive-warning-over-chinese-mobile-giant-xiaomi-recording-millions-of-peoples-private-web-and-phone-use/",
+      "title": "Forbes - Xiaomi recording private web use (2020)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/technology/xiaomi-tracks-private-browser-and-phone-usage-defends-behavior/",
+      "title": "BleepingComputer - Xiaomi tracking",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.gizmochina.com/2026/02/17/how-to-turn-off-ads-in-xiaomis-hyperos-system-apps/",
+      "title": "Gizmochina - Turn off ads in HyperOS (2026)",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Chromium/WebView base version",
+    "AI features in browser",
+    "Current search defaults by region",
+    "Mi Browser Pro vs built-in Xiaomi Browser feature differences",
+    "Whether Mi Browser Pro still sends any incognito-related data post-2020"
+  ],
+  "confidence": "low",
+  "lastVerified": "2026-10-29"
+}

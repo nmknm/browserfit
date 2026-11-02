@@ -1,0 +1,704 @@
+{
+  "id": "amazon-silk",
+  "name": "Amazon Silk",
+  "aliases": [
+    "Silk Browser",
+    "Silk"
+  ],
+  "group": "android",
+  "developer": "Amazon.com, Inc.",
+  "hq": "United States",
+  "businessModel": "Bundled free with Fire tablets, Fire TV and Echo Show; supports Amazon’s device and content ecosystem",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary (freeware)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2011,
+  "status": "active",
+  "version": {
+    "current": "152.4.7",
+    "date": "2026-10-06",
+    "upstream": "Chromium 152"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Several builds a month across parallel Chromium branches",
+  "website": "https://docs.aws.amazon.com/silk/latest/developerguide/what-is-silk.html",
+  "tags": [
+    "fire-tablet",
+    "fire-tv",
+    "alexa",
+    "chromium"
+  ],
+  "pitch": "Amazon’s browser for Fire tablets, Fire TV and Echo Show, built on Chromium.",
+  "summary": "Silk is the default browser on Amazon’s Fire devices. It began in 2011 with a cloud-accelerated split-browser design and is now a Chromium-based browser with Alexa control, private tabs and Amazon account backup.",
+  "bestFor": [
+    "Fire tablet and Fire TV owners",
+    "Casual browsing on Amazon devices",
+    "Voice control through Alexa"
+  ],
+  "notFor": [
+    "People who need extensions, ad blocking or a password manager",
+    "Anyone who wants strong privacy defaults"
+  ],
+  "pros": [
+    {
+      "title": "Built into Fire devices",
+      "detail": "Preinstalled on Fire tablets, Fire TV and Echo Show."
+    },
+    {
+      "title": "Current Chromium base",
+      "detail": "Version 152 uses Chromium 152, so modern sites work."
+    },
+    {
+      "title": "Alexa voice control",
+      "detail": "Alexa and the Fire TV remote can control video and music."
+    },
+    {
+      "title": "Private tabs and local history",
+      "detail": "History is stored on the device and can be cleared."
+    }
+  ],
+  "cons": [
+    {
+      "title": "No extensions or ad blocker",
+      "detail": "Amazon’s docs say Silk has no add-on support and no built-in ad blocking."
+    },
+    {
+      "title": "Amazon account tie-in",
+      "detail": "Optional customised recommendations send browsing history to Amazon."
+    },
+    {
+      "title": "Closed and device-bound",
+      "detail": "Proprietary, and mainly useful on Amazon hardware."
+    }
+  ],
+  "signatureFeatures": [
+    "Fire TV remote navigation",
+    "Alexa voice control",
+    "Private tabs",
+    "Cloud backup of bookmarks"
+  ],
+  "faq": [
+    {
+      "q": "Does Silk still use Amazon’s cloud to speed up pages?",
+      "a": "The original 2011 split-browser design did, with an option to turn it off; current docs describe a Chromium-based browser."
+    },
+    {
+      "q": "Can I install ad blockers in Silk?",
+      "a": "No. Amazon says Silk does not support extensions or add-ons."
+    },
+    {
+      "q": "Does Silk sync history?",
+      "a": "Fire tablets can back up settings and bookmarks to the Amazon cloud; full sync is not documented officially."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2011-11",
+      "event": "Launched on the original Kindle Fire with cloud-split design"
+    },
+    {
+      "date": "2017-11",
+      "event": "Fire TV version arrives"
+    },
+    {
+      "date": "2018-09",
+      "event": "Echo Show support added"
+    },
+    {
+      "date": "2026-10",
+      "event": "Build 152.4.7 on Chromium 152"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "A Chrome extension can save Chrome bookmarks to an Amazon account for Silk."
+  },
+  "alternatives": [
+    "firefox",
+    "chrome",
+    "duckduckgo"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "settings"
+      ],
+      "crossOs": false,
+      "note": "Backup and Restore to the Amazon cloud on Fire tablets"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No password manager documented"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension support",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI browser features documented"
+    },
+    "privacy": {
+      "defaults": "Local history; optional recommendations send history to Amazon",
+      "telemetry": "Amazon account-linked",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Not verified",
+    "telemetry": "Amazon account-linked; recommendations optional",
+    "drm": "Not documented in the sources",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox on Fire OS",
+    "patchLag": "About 6 weeks behind Chrome by version number",
+    "languages": "Follows Fire OS"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Fire OS 7/8 (Android-based)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "preinstalled",
+        "apk"
+      ],
+      "notes": [
+        "Preinstalled on Fire tablets and Fire TV",
+        "Android 10+ builds are published to APK mirrors",
+        "Echo Show support since 2018"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "Whether Silk runs on Amazon’s Vega OS",
+    "Default search engine and DRM details"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "no",
+      0
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      4,
+      "Recommendations setting can be turned off"
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      3
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "partial",
+      4,
+      "Remote and keyboard navigation"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "partial",
+      5,
+      "Backup and Restore to Amazon cloud"
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "partial",
+      3,
+      "Bookmark import via a Chrome extension"
+    ],
+    "widevine": [
+      "partial",
+      5,
+      "Video streams on Fire devices"
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "partial",
+      5,
+      "Fire hardware decoders"
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      4
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      3
+    ],
+    "devtools": [
+      "no",
+      0
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      6.5,
+      "V8 on modest Fire hardware",
+      "editorial"
+    ],
+    "pageLoad": [
+      6.5,
+      "Chromium engine, entry-level Fire devices",
+      "editorial"
+    ],
+    "networkSpeed": [
+      7,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Light shell around Chromium",
+      "editorial"
+    ],
+    "smoothness": [
+      6,
+      "Entry-level tablet and TV hardware",
+      "editorial"
+    ],
+    "graphics": [
+      5,
+      "Limited by low-end GPUs",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Fire devices have little RAM",
+      "editorial"
+    ],
+    "cpu": [
+      5,
+      "Low-power SoCs",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Tablets are efficient for casual use",
+      "editorial"
+    ],
+    "resourceControls": [
+      2,
+      "No tab or memory controls documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Designed for cheap Fire hardware",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Preinstalled on Fire devices",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3,
+      "Account-linked, no blocking",
+      "editorial"
+    ],
+    "blocking": [
+      1,
+      "No ad or tracker blocking",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance",
+      "editorial"
+    ],
+    "securityHardening": [
+      7,
+      "Chromium sandbox base",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5.5,
+      "Chromium 152 in Oct 2026, a few weeks behind",
+      "editorial"
+    ],
+    "telemetry": [
+      4,
+      "Optional history sharing with Amazon",
+      "documented"
+    ],
+    "lookCustom": [
+      2,
+      "Few visual options",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3,
+      "Basic settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      2,
+      "Little exposed",
+      "editorial"
+    ],
+    "tabManagement": [
+      3,
+      "Basic tabs and private tab",
+      "editorial"
+    ],
+    "searchFreedom": [
+      4,
+      "Limited engine choices",
+      "editorial"
+    ],
+    "downloads": [
+      4,
+      "Basic downloads",
+      "editorial"
+    ],
+    "productivity": [
+      3,
+      "Basic reading and bookmarks",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Video on Fire TV and tablets",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "No translation documented",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "Alexa voice control",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extension support",
+      "documented"
+    ],
+    "sync": [
+      3,
+      "Backup to Amazon cloud",
+      "editorial"
+    ],
+    "passwords": [
+      0,
+      "No password manager",
+      "editorial"
+    ],
+    "mobileApps": [
+      4,
+      "Amazon devices only",
+      "editorial"
+    ],
+    "webCompat": [
+      8,
+      "Current Chromium",
+      "editorial"
+    ],
+    "devTools": [
+      0,
+      "No developer tools",
+      "editorial"
+    ],
+    "accessibility": [
+      6,
+      "Fire OS accessibility features",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary on top of Chromium",
+      "editorial"
+    ],
+    "businessTrust": [
+      4,
+      "Amazon account and recommendations tie-in",
+      "editorial"
+    ],
+    "longevity": [
+      8,
+      "Active builds across several branches",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI browser features documented",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Simple and preinstalled",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Amazon_Silk",
+      "title": "Amazon Silk - Wikipedia",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/silk/latest/developerguide/what-is-silk.html",
+      "title": "What is Amazon Silk? - AWS docs",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.apkmirror.com/apk/amazon-mobile-llc/silk-browser/",
+      "title": "Silk versions on APKMirror",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://www.androidpolice.com/silk-browser-tips/",
+      "title": "Silk browser tips - Android Police",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

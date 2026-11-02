@@ -1,0 +1,817 @@
+{
+  "id": "jatter",
+  "name": "Jatter",
+  "aliases": [
+    "Jatter Private AI Browser"
+  ],
+  "group": "ai",
+  "developer": "Castle Information Systems, Inc. (Jatter; led by Juan Soberanis)",
+  "hq": "United States",
+  "businessModel": "Free tier; Jatter Plus $10/mo or $100/yr",
+  "engine": "blink",
+  "basedOn": "Not stated",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Free: learn from 1 website, up to 3 notes/month, basic models. Plus $10/mo or $100/yr.",
+  "releaseYear": 2026,
+  "status": "active",
+  "statusNote": "Browser launched Jun 2026; builds on an earlier AI mobile app",
+  "version": {
+    "current": "iOS 6.0.0",
+    "date": "2026-09-09",
+    "upstream": "Not stated"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Unknown",
+  "website": "https://www.jatter.ai",
+  "tags": [
+    "ai",
+    "privacy",
+    "personal-insights",
+    "mobile",
+    "desktop"
+  ],
+  "pitch": "AI browser that learns from sites you log into and answers questions about your life.",
+  "summary": "Privacy-first AI browser for Mac, Windows, iOS, Android that learns, with permission, from sites you log into (bank, clinic, school) to answer personal questions. Encrypted sync claimed; XDA called it middle-of-the-pack.",
+  "bestFor": [
+    "People who want AI answers from their own logged-in sites",
+    "Mobile-plus-desktop AI browser users",
+    "Note-taking with AI"
+  ],
+  "notFor": [
+    "People who need autonomous agents",
+    "Users wanting audited privacy",
+    "Extension-heavy users"
+  ],
+  "pros": [
+    {
+      "title": "Four platforms",
+      "detail": "Mac, Windows, iOS and Android."
+    },
+    {
+      "title": "Client-side encryption",
+      "detail": "Vendor says chats and learned pages are encrypted on-device and stay encrypted in sync."
+    },
+    {
+      "title": "Personal answers",
+      "detail": "Learns from sites you log into, only with explicit permission."
+    },
+    {
+      "title": "Free tier",
+      "detail": "Free to use; Plus is $10/mo."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Unaudited privacy claims",
+      "detail": "Encryption and no-training claims are vendor statements."
+    },
+    {
+      "title": "Sensitive data scope",
+      "detail": "Reading banking and medical portals raises risk if mishandled."
+    },
+    {
+      "title": "Mediocre review",
+      "detail": "XDA found it \"oddly middle-of-the-pack\" for a privacy-led product."
+    },
+    {
+      "title": "Opaque engine and extensions",
+      "detail": "Site does not state the browser engine or extension support."
+    }
+  ],
+  "signatureFeatures": [
+    "Personal Answers",
+    "Learn from logged-in sites",
+    "Notes",
+    "Maps",
+    "Client-side encrypted sync"
+  ],
+  "faq": [
+    {
+      "q": "Is Jatter free?",
+      "a": "Yes with limits (1 learned website, 3 notes/month); Plus is $10/mo or $100/yr."
+    },
+    {
+      "q": "Which platforms?",
+      "a": "Mac, Windows, iOS and Android; the iOS app is listed on the App Store."
+    },
+    {
+      "q": "Is my data used for training?",
+      "a": "The vendor says never; this is unverified."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-06",
+      "event": "AI browser launched (press coverage around Jun 25)"
+    },
+    {
+      "date": "2026-07",
+      "event": "Listed in TechCrunch alternatives roundup (Jul 22)"
+    },
+    {
+      "date": "2026-09",
+      "event": "iOS app v6.0.0 (Sep 9)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks"
+    ],
+    "note": "Unverified."
+  },
+  "alternatives": [
+    "dia",
+    "comet",
+    "sigma-ai",
+    "strawberry"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "chats",
+        "learned pages",
+        "notes"
+      ],
+      "crossOs": true,
+      "note": "Client-side encrypted per vendor; browser data scope unverified"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Not documented"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "Extensions not mentioned",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "on-by-default",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "AI core; not an autonomous agent"
+    },
+    "privacy": {
+      "defaults": "Learns only with permission; client-side encryption; no data selling (vendor)",
+      "telemetry": "Not documented",
+      "jurisdiction": "US (unverified)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Not documented",
+    "drm": "Unverified",
+    "codecs": "Unverified",
+    "sandbox": "Unverified",
+    "patchLag": "Unknown",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "macos": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "v6.0.0 Sep 9, 2026",
+        "WebKit engine (Apple rule)"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -2
+      }
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [
+        "google-play"
+      ],
+      "notes": [
+        "Older Android app v5.0.2 seen on third-party site"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.jatter.ai/",
+      "title": "Jatter (official)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.menlotimes.com/post/jatter-launches-browser-to-turn-digital-chaos-into-private-personal-insights",
+      "title": "Menlo Times: Jatter launch",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.xda-developers.com/jatter-claims-you-can-have-personalization-without-giving-up-your-privacy/",
+      "title": "XDA Developers on Jatter",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/jatter-private-ai-browser/id1570152674",
+      "title": "Jatter - App Store",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://techcrunch.com/2026/07/22/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
+      "title": "TechCrunch alternatives roundup",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Browser engine on desktop/Android",
+    "Extension support",
+    "Sync scope",
+    "700,000 downloads (previous AI app, from press release)",
+    "HQ country",
+    "Encryption claims"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "extension",
+      3,
+      "Only MV3 blockers such as uBO Lite"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      "Chromium tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "yes",
+      7,
+      "Integrated Notes app with AI"
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "partial",
+      6,
+      "Address bar doubles as AI prompt"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "no",
+      0,
+      "Extensions not mentioned"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "no",
+      0,
+      ""
+    ],
+    "syncBookmarks": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "e2eeSync": [
+      "yes",
+      6,
+      "Client-side encrypted (vendor claim)"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      7,
+      "Chrome import"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      8,
+      ""
+    ],
+    "aiSummarizer": [
+      "yes",
+      8,
+      ""
+    ],
+    "agenticBrowsing": [
+      "partial",
+      4,
+      "Answers from learned sites; not autonomous"
+    ],
+    "localAi": [
+      "no",
+      0,
+      "Cloud models"
+    ],
+    "aiKillSwitch": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "partial",
+      4,
+      "Unverified"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Chromium cold start, heavier than plain Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus AI layer; RAM-heavy",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs modern hardware; AI features add load",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6,
+      "Permission-based learning, client-side encryption claimed",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Only MV3 blockers such as uBO Lite are available",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      8.5,
+      "Chromium sandbox and site isolation; agent injection risk",
+      "documented"
+    ],
+    "patchSpeed": [
+      7.5,
+      "Follows Chromium stable; lag not independently measured",
+      "editorial"
+    ],
+    "telemetry": [
+      5,
+      "No-selling claim, telemetry undocumented",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab groups and search; no workspaces documented",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      7,
+      "Notes, Maps, Personal Answers",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5.5,
+      "Notes and Maps",
+      "editorial"
+    ],
+    "extensions": [
+      2,
+      "Extension support not mentioned",
+      "editorial"
+    ],
+    "sync": [
+      6.5,
+      "Client-side encrypted cross-device sync (claimed)",
+      "editorial"
+    ],
+    "passwords": [
+      4,
+      "Not documented",
+      "editorial"
+    ],
+    "mobileApps": [
+      6.5,
+      "iOS (v6.0.0) and Android apps exist",
+      "editorial"
+    ],
+    "webCompat": [
+      8,
+      "Engine unconfirmed; iOS uses WebKit",
+      "editorial"
+    ],
+    "devTools": [
+      5,
+      "DevTools not documented",
+      "editorial"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary layer over Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      5,
+      "Privacy claims unaudited; mid-pack independent review",
+      "editorial"
+    ],
+    "longevity": [
+      5,
+      "Existing mobile app lineage, new desktop browser",
+      "editorial"
+    ],
+    "ai": [
+      7.5,
+      "Personal-data Q&A, not full agent",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7.5,
+      "Simple chat interface",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

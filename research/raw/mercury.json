@@ -1,0 +1,308 @@
+{
+  "id": "mercury",
+  "name": "Mercury",
+  "aliases": ["Mercury Browser", "Alex313031 Mercury"],
+  "group": "forks",
+  "developer": "Alex313031 (Alexander David Frick) with collaborators",
+  "hq": "Independent developer (jurisdiction unverified)",
+  "businessModel": "None; free open-source hobby project from the Thorium author",
+  "engine": "gecko",
+  "basedOn": "Firefox, with patches from LibreWolf, Waterfox, GNU IceCat, Ghostery and BetterFox",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2022,
+  "status": "discontinued",
+  "statusNote": "De facto unmaintained, not formally announced: last release 129.0.2 (Sep 2024), last commit on main Dec 2024. A collaborator said in Aug 2026 he has an unreleased Firefox 153 fork but will not publish it.",
+  "version": {
+    "current": "129.0.2",
+    "date": "2024-09-17",
+    "upstream": "Firefox 129"
+  },
+  "channels": ["Release (SSE3, SSE4, AVX, AVX2, ARM64 builds)", "Mercury-Win7 (ESR 115)"],
+  "updateCadence": "None since Sep 2024; earlier releases came every 1-3 months",
+  "website": "https://thorium.rocks/mercury",
+  "tags": ["firefox-fork", "optimized-builds", "avx2", "privacy", "unmaintained"],
+  "pitch": "Compiler-optimised Firefox fork from the Thorium author. Stalled since Sep 2024.",
+  "summary": "A Firefox fork built with AVX/AVX2/LTO/PGO optimisations and privacy patches borrowed from LibreWolf, Waterfox and others. Its last release is Firefox 129 from September 2024, so it no longer gets security fixes.",
+  "bestFor": [
+    "Readers curious about CPU-optimised Firefox builds",
+    "Users on old CPUs who want SSE3 or SSE4 builds (with the security caveat)",
+    "Anyone studying how Thorium's approach was applied to Gecko"
+  ],
+  "notFor": [
+    "Anyone browsing the open web today: it is more than 20 Firefox versions behind",
+    "People who need guaranteed security updates",
+    "Users who want a maintained fork, such as LibreWolf, Waterfox or Floorp"
+  ],
+  "pros": [
+    {
+      "title": "CPU-targeted builds",
+      "detail": "Separate SSE3, SSE4, AVX, AVX2 and ARM64 builds with LTO and PGO; the developer claims 8-20% over stock Firefox (not independently verified)."
+    },
+    {
+      "title": "Firefox add-on ecosystem",
+      "detail": "Firefox base keeps the full add-on catalogue, MV2 and uBlock Origin."
+    },
+    {
+      "title": "Portable packages",
+      "detail": "Windows and Linux zips run from a folder with a USER_DATA profile beside the launcher."
+    },
+    {
+      "title": "Normandy disabled",
+      "detail": "The 129.0.2 notes say Mozilla's Normandy remote-config component is switched off."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Abandoned in practice",
+      "detail": "No release since Sep 2024 and no maintainer reply on status issues; a collaborator says he will not publish further builds for now."
+    },
+    {
+      "title": "Unpatched security flaws",
+      "detail": "Firefox 129 misses every security fix since 2024, and the maintainers said there was no timeline for security updates."
+    },
+    {
+      "title": "Site compatibility drift",
+      "detail": "The engine is two years behind, so newer web features and anti-bot checks increasingly fail."
+    },
+    {
+      "title": "Thin documentation",
+      "detail": "Patch list, telemetry defaults and default search are not summarised in the sources we could fetch."
+    }
+  ],
+  "signatureFeatures": ["AVX2/AVX/SSE builds", "LTO + PGO compiler flags", "Patches from LibreWolf, Waterfox, Ghostery and BetterFox", "Portable zip packages"],
+  "faq": [
+    {
+      "q": "Is Mercury discontinued?",
+      "a": "Not officially, but there has been no release since 129.0.2 (17 Sep 2024) and no commit on main since 3 Dec 2024. Users on GitHub have repeatedly asked if it is abandoned."
+    },
+    {
+      "q": "Is this the old Mercury iOS or Android browser?",
+      "a": "No. This is Alex313031's Firefox fork; the older Mercury Browser articles on Wikipedia are an unrelated Android browser."
+    },
+    {
+      "q": "Is it safe to use?",
+      "a": "Not for general browsing. It is built on Firefox 129 with no security updates since September 2024."
+    }
+  ],
+  "timeline": [
+    {"date": "2022-07", "event": "GitHub repository created"},
+    {"date": "2024-03", "event": "Release 123.0.1"},
+    {"date": "2024-09", "event": "Release 129.0.2 (17 Sep), the last published build"},
+    {"date": "2024-12", "event": "Last commit on the main branch (3 Dec)"},
+    {"date": "2025-03", "event": "Users open an issue asking whether the project is abandoned; no maintainer reply"},
+    {"date": "2026-08", "event": "Collaborator says a Firefox 153 fork exists but no public release is planned"}
+  ],
+  "switching": {
+    "imports": ["bookmarks", "history", "passwords", "extensions"],
+    "note": "Firefox-family profile; moving to LibreWolf, Waterfox or Floorp keeps extensions and most settings."
+  },
+  "alternatives": ["librewolf", "waterfox", "floorp", "zen", "firefox"],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "account",
+      "items": ["bookmarks", "passwords", "history", "tabs"],
+      "crossOs": true,
+      "note": "Firefox Sync status in Mercury builds not verified"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Firefox base manager"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Firefox 129 base keeps MV2 add-ons and uBlock Origin",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features (predates Firefox's AI sidebar)"
+    },
+    "privacy": {
+      "defaults": "LibreWolf/BetterFox-style patches; Normandy off; full list not verified",
+      "telemetry": "Not documented in fetched sources",
+      "jurisdiction": "Independent developer"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Not verified",
+    "telemetry": "Normandy disabled; rest not verified",
+    "drm": "Not verified",
+    "codecs": "Firefox 129 set; AV1 yes, HEVC partial (unverified)",
+    "sandbox": "Firefox sandbox and Fission, frozen at v129",
+    "patchLag": "No security updates since Sep 2024",
+    "languages": "Firefox set (unverified)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "discontinued",
+      "minOs": "Windows 10+ (Win7/8/8.1 via Mercury-Win7, ESR 115)",
+      "arch": ["x64"],
+      "stores": ["official-installer", "portable", "winget", "github"],
+      "notes": ["SSE3, SSE4, AVX and AVX2 installers and zips", "Winget lists 129.0.2 as latest"],
+      "highlights": ["Portable run with MERCURY.bat"],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "discontinued",
+      "minOs": "Unverified",
+      "arch": ["arm64", "x64"],
+      "stores": ["github"],
+      "notes": ["DMGs lack PGO because they were cross-compiled", "Cross-compiling was described as broken after 129.0.2"],
+      "highlights": [],
+      "scoreDelta": {
+        "jsSpeed": -0.5
+      }
+    },
+    "linux": {
+      "status": "discontinued",
+      "minOs": "Modern 64-bit distro",
+      "arch": ["x64", "arm64"],
+      "stores": ["deb", "portable", "github"],
+      "notes": ["Debs and zips for SSE3, SSE4, AVX, AVX2 and ARM64", "Collaborator says Linux is the only platform he could still build reliably"],
+      "highlights": ["CPU-specific packages"],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": ["yes", 7, "Firefox Enhanced Tracking Protection"],
+    "fingerprintProtection": ["partial", 5, "LibreWolf-style patches claimed; unverified"],
+    "httpsOnly": ["yes", 7],
+    "doh": ["yes", 7],
+    "torWindows": ["no", 0],
+    "builtinVpn": ["no", 0],
+    "cookieIsolation": ["yes", 7, "Total Cookie Protection in Firefox 129"],
+    "queryStripping": ["partial", 5],
+    "telemetryOptOut": ["yes", 8, "Normandy disabled"],
+    "privateHardening": ["partial", 5],
+    "adBlocker": ["extension", 7, "uBlock Origin via add-ons"],
+    "cosmeticFiltering": ["extension", 8],
+    "customFilterLists": ["extension", 8],
+    "youtubeAds": ["extension", 6],
+    "cookieBanners": ["partial", 3],
+    "verticalTabs": ["extension", 5, "Sidebery-style add-ons"],
+    "tabGroups": ["extension", 4],
+    "tabStacks": ["no", 0],
+    "workspaces": ["no", 0],
+    "splitView": ["no", 0],
+    "tabSleeping": ["partial", 3, "Firefox tab unloading under memory pressure"],
+    "tabSearch": ["yes", 6],
+    "pinnedTabs": ["yes", 8],
+    "tabTiling": ["no", 0],
+    "readerMode": ["yes", 7],
+    "notes": ["no", 0],
+    "webPanels": ["no", 0],
+    "pip": ["yes", 8],
+    "screenshots": ["yes", 7],
+    "commandBar": ["partial", 3],
+    "mouseGestures": ["extension", 6],
+    "keyboardShortcuts": ["yes", 7],
+    "readLater": ["no", 0],
+    "mailCalendarRss": ["no", 0],
+    "chromeWebStore": ["no", 0],
+    "firefoxAddons": ["yes", 9, "Users report Mozilla store extensions install"],
+    "mv2Support": ["yes", 9],
+    "uboFull": ["yes", 9],
+    "mobileExtensions": ["no", 0],
+    "userscripts": ["extension", 9],
+    "syncBookmarks": ["partial", 3, "Firefox Sync availability unverified"],
+    "syncPasswords": ["partial", 3, "Unverified"],
+    "syncTabs": ["partial", 3, "Unverified"],
+    "e2eeSync": ["partial", 3, "Firefox Sync is E2EE; unverified here"],
+    "profiles": ["yes", 7],
+    "passwordManager": ["yes", 5],
+    "passkeys": ["partial", 3],
+    "importData": ["yes", 7],
+    "widevine": ["partial", 4, "Not verified"],
+    "netflix4k": ["no", 0],
+    "hevc": ["partial", 4],
+    "av1": ["yes", 8],
+    "hwDecode": ["yes", 7],
+    "aiAssistant": ["no", 0],
+    "aiSummarizer": ["no", 0],
+    "agenticBrowsing": ["no", 0],
+    "localAi": ["no", 0],
+    "aiKillSwitch": ["yes", 10, "No AI features"],
+    "translation": ["partial", 3, "Unverified"],
+    "cryptoWallet": ["no", 0],
+    "pwaInstall": ["no", 0],
+    "enterprisePolicies": ["yes", 7, "Firefox policies.json"],
+    "kioskMode": ["partial", 4],
+    "panicButton": ["no", 0],
+    "downloadManager": ["yes", 6],
+    "customThemes": ["yes", 7],
+    "customSearchEngines": ["yes", 8],
+    "devtools": ["yes", 9, "Firefox DevTools"]
+  },
+  "scores": {
+    "jsSpeed": [7.5, "Firefox 129 with AVX/PGO/LTO; claimed gain unverified", "editorial"],
+    "pageLoad": [7.5, "Optimised Gecko, but an old engine", "editorial"],
+    "networkSpeed": [7.5, "Firefox 129 networking with HTTP/3", "editorial"],
+    "startup": [7.5, "Firefox start with optimised builds", "editorial"],
+    "smoothness": [8, "Gecko compositor", "editorial"],
+    "graphics": [7, "WebGL yes; no recent WebGPU", "editorial"],
+    "memory": [6.5, "Firefox-level memory use", "editorial"],
+    "cpu": [7, "Instruction-set builds aim to cut CPU time", "editorial"],
+    "battery": [6.5, "Firefox-level efficiency", "editorial"],
+    "resourceControls": [5, "Automatic tab unloading only", "editorial"],
+    "lowEnd": [6.5, "SSE3/SSE4 builds help old CPUs", "documented"],
+    "installSize": [6, "Firefox-sized install", "editorial"],
+    "privacyDefaults": [6.5, "Patches from LibreWolf and BetterFox; list unverified", "editorial"],
+    "blocking": [6, "ETP only; uBlock Origin via add-ons", "editorial"],
+    "fingerprinting": [5.5, "Unverified RFP-style patches", "editorial"],
+    "securityHardening": [3, "Sandbox intact but base is two years unpatched", "documented"],
+    "patchSpeed": [0.5, "No release since Sep 2024; no update timeline", "documented"],
+    "telemetry": [7, "Normandy off; rest of telemetry unverified", "documented"],
+    "lookCustom": [7, "Firefox themes and userChrome", "editorial"],
+    "behaviourCustom": [7, "Firefox shortcuts and per-site settings", "editorial"],
+    "advancedSettings": [9.5, "Full about:config and policies", "editorial"],
+    "tabManagement": [6, "Pinned tabs and containers; add-ons for the rest", "editorial"],
+    "searchFreedom": [8.5, "Firefox search engine management", "editorial"],
+    "downloads": [6.5, "Firefox download panel", "editorial"],
+    "productivity": [5.5, "Reader, PiP, screenshots", "editorial"],
+    "media": [6, "Firefox 129 codecs; DRM unverified", "editorial"],
+    "translation": [4, "Firefox translation features unconfirmed in builds", "editorial"],
+    "extras": [2.5, "Portable packaging, little else", "editorial"],
+    "extensions": [8.5, "Mozilla add-ons, MV2, uBlock Origin", "documented"],
+    "sync": [4, "Firefox Sync unverified in these builds", "editorial"],
+    "passwords": [6, "Firefox password manager", "editorial"],
+    "mobileApps": [0, "No mobile versions", "documented"],
+    "webCompat": [6.5, "Gecko 129 is far behind current Firefox", "documented"],
+    "devTools": [8.5, "Firefox DevTools", "documented"],
+    "accessibility": [7.5, "Firefox accessibility, older snapshot", "editorial"],
+    "openSource": [9.5, "MPL-2.0 with public build scripts", "documented"],
+    "businessTrust": [6, "No business, but silent on project status", "editorial"],
+    "longevity": [0.5, "No releases for 13+ months; maintainers decline updates", "documented"],
+    "ai": [0, "No AI features", "documented"],
+    "beginnerFriendly": [4.5, "Five CPU variants per platform confuse newcomers", "editorial"]
+  },
+  "sources": [
+    {"url": "https://github.com/Alex313031/Mercury/releases", "title": "Mercury releases (latest v129.0.2, 17 Sep 2024)", "accessed": "2026-10-30"},
+    {"url": "https://github.com/Alex313031/Mercury/issues/246", "title": "Mercury issue #246: Is it an abandoned project?", "accessed": "2026-10-30"},
+    {"url": "https://github.com/Alex313031/Mercury/issues/259", "title": "Mercury issue #259: mercury-updates (Aug 2026)", "accessed": "2026-10-30"},
+    {"url": "https://github.com/Alex313031/Mercury/issues/262", "title": "Mercury issue #262: bring this old thing back into relevance (Oct 2026)", "accessed": "2026-10-30"},
+    {"url": "https://thorium.rocks/mercury", "title": "Mercury official page", "accessed": "2026-10-30"},
+    {"url": "https://alternativeto.net/software/mercury-browser-1/about/", "title": "AlternativeTo: Mercury Browser (listed as discontinued)", "accessed": "2026-10-30"},
+    {"url": "https://winstall.app/apps/Alex313031.Mercury", "title": "winstall: Alex313031.Mercury 129.0.2", "accessed": "2026-10-30"}
+  ],
+  "unverified": [
+    "Full patch list, default search, Widevine and Firefox Sync behaviour of the builds",
+    "The 8-20% speed gain over Firefox is a developer claim and was not verified",
+    "Whether the owner (as opposed to collaborator gz83) intends to resume releases",
+    "Exact first public release date (repo created July 2022)",
+    "Feature ratings are inferred from the Firefox 129 base"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-30"
+}

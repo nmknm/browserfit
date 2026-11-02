@@ -1,0 +1,332 @@
+{
+  "id": "avast-secure-browser",
+  "name": "Avast Secure Browser",
+  "aliases": ["AVG Secure Browser", "Avast SafeZone Browser"],
+  "group": "privacy",
+  "developer": "Gen Digital Inc. (Avast brand)",
+  "hq": "United States (Gen Digital); Avast engineering is Czech-founded",
+  "businessModel": "Free browser bundled with Avast security software; PRO subscription adds a browser VPN and stronger blocking. New-tab page carries sponsored shortcuts and affiliate placements, and search/shopping partners are listed in the product policy.",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary freeware (built on open-source Chromium)",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "PRO about $39.99 first year for five devices, $49.99 renewal (antivirus-review.com, checked Jul 2026)",
+  "releaseYear": 2016,
+  "status": "active",
+  "statusNote": "AVG Secure Browser is the same browser under a sibling brand. New installs on Windows 7/8/8.1 ended in March 2026; existing copies stay on v109.",
+  "version": {
+    "current": "152.0.35367.42",
+    "date": "2026-09-22",
+    "upstream": "Chromium 152 (inferred from the version number)"
+  },
+  "channels": ["Release"],
+  "updateCadence": "Auto-updates; no public build-to-Chromium map. The 152 build was listed in late Sep 2026 while Chrome 156 reached stable on 2026-10-20.",
+  "website": "https://www.avast.com/secure-browser",
+  "tags": ["privacy", "security", "chromium", "bank-mode", "antivirus-bundled"],
+  "pitch": "Chromium with Avast's Bank Mode, Privacy Guard and an optional VPN. Not telemetry-free.",
+  "summary": "A proprietary Chromium browser from Gen Digital with Bank Mode, ad and tracker blocking, anti-fingerprinting and a paid VPN. Its own policy says it is not telemetry-free, and Avast's Jumpshot history weighs on trust.",
+  "bestFor": [
+    "Avast antivirus users who want Bank Mode (it needs the browser)",
+    "People who want blocking and phishing protection without installing extensions",
+    "Chrome users who want a familiar Chromium interface with extra safeguards"
+  ],
+  "notFor": [
+    "Anyone who wants a telemetry-free or independently audited browser",
+    "People who object to sponsored new-tab shortcuts or a bundled-installer model",
+    "Windows 7/8 users (no new installs; stuck on v109)"
+  ],
+  "pros": [
+    {
+      "title": "Bank Mode",
+      "detail": "Opens banking and shopping sites in an isolated virtual desktop that blocks screen capture, but it needs Avast Antivirus installed."
+    },
+    {
+      "title": "Strong phishing results",
+      "detail": "Scored 94% (Jan 2026) and 89% (Mar 2026) in AV-Comparatives phishing tests with no false alarms, ahead of Chrome (72%, 77%) and Firefox (75%, 76%)."
+    },
+    {
+      "title": "Privacy Guard",
+      "detail": "Combines ad blocking, tracker filtering and anti-fingerprinting in Basic, Balanced and Strict modes."
+    },
+    {
+      "title": "Chromium compatibility",
+      "detail": "Same engine as Chrome, so sites work as they do in Chrome."
+    },
+    {
+      "title": "Extra guards",
+      "detail": "Extension Guard, Webcam Guard, Hack Check, Screen Sharing Mode and end-to-end encrypted sync (per Avast)."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Not telemetry-free",
+      "detail": "Avast's policy lists server-side URL subsets (kept 36 months), usage events, device data and third-party analytics such as Google Analytics and Mixpanel."
+    },
+    {
+      "title": "Jumpshot legacy",
+      "detail": "The FTC finalised a $16.5 million order in June 2024 over Avast selling re-identifiable browsing data through Jumpshot (2014-2020)."
+    },
+    {
+      "title": "Hidden bundled extensions",
+      "detail": "Researcher Wladimir Palant found 11 Avast extensions, some hidden and some weakening security, and advised running it only in a VM."
+    },
+    {
+      "title": "Monetised and slow to track Chrome",
+      "detail": "Sponsored new-tab shortcuts and Bing as default search; the 152 build trails Chrome 156 by weeks."
+    }
+  ],
+  "signatureFeatures": ["Bank Mode", "Privacy Guard", "Anti-Fingerprinting", "Webcam Guard", "Browser VPN (PRO)"],
+  "faq": [
+    {
+      "q": "Is Avast Secure Browser the same as AVG Secure Browser?",
+      "a": "Effectively yes: both are the same Chromium-based browser marketed under two brands owned by Gen Digital."
+    },
+    {
+      "q": "Does it collect data?",
+      "a": "Yes. Avast's own product policy says it is not a telemetry-free browser, listing URL subsets, usage events, device and extension data, plus third-party analytics."
+    },
+    {
+      "q": "Can I use Chrome Web Store extensions?",
+      "a": "Sources conflict: one review says it only offers Avast's curated add-on page, another describes Chrome-style extension compatibility. Check the extensions page in the app."
+    }
+  ],
+  "timeline": [
+    {"date": "2016-03", "event": "Launched as Avast SafeZone Browser (24 March 2016)"},
+    {"date": "2018-04", "event": "Renamed Avast Secure Browser and revamped"},
+    {"date": "2020-01", "event": "Jumpshot closure announced after reports of Avast selling browsing data"},
+    {"date": "2024-06", "event": "FTC finalises order: ban on selling browsing data for ads and $16.5M payment"},
+    {"date": "2026-03", "event": "New installs on Windows 7/8/8.1 end; existing copies stay on v109"},
+    {"date": "2026-09", "event": "Version 152.0.35367.42 listed by download sites"}
+  ],
+  "switching": {
+    "imports": ["bookmarks", "history", "passwords", "extensions"],
+    "note": "Imports from Chrome and other browsers; extension migration depends on Avast's extension store policy."
+  },
+  "alternatives": ["brave", "firefox", "vivaldi", "duckduckgo", "norton-neo"],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "e2ee",
+      "items": ["bookmarks", "passwords", "history", "tabs"],
+      "crossOs": true,
+      "note": "Avast says synced data is end-to-end encrypted; which items sync was not verified"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": true,
+      "note": "Chromium-style store plus Hack Check for email breach lookups; no built-in Avast vault described"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Chromium 152 base; MV2 support not documented",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": false,
+      "paid": "no",
+      "note": "A bundled AI Chat extension was reported in 2024; current state unverified"
+    },
+    "privacy": {
+      "defaults": "Privacy Guard (ad, tracker and fingerprint controls) with Bing default search; telemetry stays on",
+      "telemetry": "Not telemetry-free: URL subsets, events and device data go to Avast; third-party analytics used",
+      "jurisdiction": "US (Gen Digital)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Bing (per Gizmodo, Aug 2026)",
+    "telemetry": "Server-side URL subsets (36 months), usage events, device data; Google Analytics and Mixpanel",
+    "drm": "Not verified",
+    "codecs": "Chromium codecs (unverified)",
+    "sandbox": "Chromium sandbox plus Avast Web Shield",
+    "patchLag": "152 build listed Sep 2026 while Chrome 156 reached stable Oct 20, 2026",
+    "languages": "Many (unverified)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10 (Windows 7/8/8.1 frozen at v109)",
+      "arch": ["x64"],
+      "stores": ["official-installer"],
+      "notes": ["Bank Mode requires Avast Antivirus", "Windows 7/8/8.1 new installs ended March 2026"],
+      "highlights": ["Bank Mode virtual desktop"],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "Unverified (Catalina frozen at v116)",
+      "arch": ["arm64", "x64"],
+      "stores": ["official-installer"],
+      "notes": ["Bank Mode is Windows only"],
+      "highlights": [],
+      "scoreDelta": {
+        "extras": -1
+      }
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 9 or later",
+      "arch": ["arm64"],
+      "stores": ["google-play"],
+      "notes": ["Wikipedia's comparison lists 8.15.0 (Aug 2025), which looks stale"],
+      "highlights": ["Browser VPN with automatic location on free tier"],
+      "scoreDelta": {
+        "extensions": -5,
+        "blocking": -1
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": ["arm64"],
+      "stores": ["app-store"],
+      "notes": ["WebKit engine under Apple rules (inferred)"],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -5,
+        "fingerprinting": -2,
+        "blocking": -2,
+        "webCompat": -1
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": ["yes", 6, "Privacy Guard"],
+    "fingerprintProtection": ["yes", 5, "Anti-Fingerprinting; Avast says it cannot prevent fingerprinting outright"],
+    "httpsOnly": ["partial", 5, "Chromium HTTPS setting; Avast-specific behaviour unverified"],
+    "doh": ["yes", 6, "Chromium secure DNS"],
+    "torWindows": ["no", 0],
+    "builtinVpn": ["paid", 6, "PRO adds browser VPN (30+ locations); free desktop does not hide your IP"],
+    "cookieIsolation": ["partial", 4, "Chromium third-party cookie controls"],
+    "queryStripping": ["no", 0],
+    "telemetryOptOut": ["partial", 3, "Some data-sharing toggles; not telemetry-free"],
+    "privateHardening": ["partial", 4, "Private mode and Screen Sharing Mode"],
+    "adBlocker": ["yes", 6, "Privacy Guard; Softpedia calls it not very good"],
+    "cosmeticFiltering": ["partial", 4],
+    "customFilterLists": ["no", 0],
+    "youtubeAds": ["partial", 3],
+    "cookieBanners": ["no", 0],
+    "verticalTabs": ["no", 0, "Not confirmed in this build"],
+    "tabGroups": ["yes", 7, "Chromium tab groups"],
+    "tabStacks": ["no", 0],
+    "workspaces": ["no", 0],
+    "splitView": ["no", 0],
+    "tabSleeping": ["yes", 6, "Chromium memory saver, if enabled"],
+    "tabSearch": ["yes", 6],
+    "pinnedTabs": ["yes", 8],
+    "tabTiling": ["no", 0],
+    "readerMode": ["partial", 3, "Chromium reading mode; unverified"],
+    "notes": ["no", 0],
+    "webPanels": ["partial", 4, "Bundled Side Panel extension"],
+    "pip": ["yes", 7],
+    "screenshots": ["partial", 4],
+    "commandBar": ["no", 0],
+    "mouseGestures": ["no", 0],
+    "keyboardShortcuts": ["yes", 6],
+    "readLater": ["partial", 4, "Chromium reading list"],
+    "mailCalendarRss": ["no", 0],
+    "chromeWebStore": ["partial", 4, "Sources conflict on Web Store access"],
+    "firefoxAddons": ["no", 0],
+    "mv2Support": ["no", 0],
+    "uboFull": ["no", 0],
+    "mobileExtensions": ["no", 0],
+    "userscripts": ["extension", 5, "If Web Store extensions install"],
+    "syncBookmarks": ["partial", 4, "Avast account sync; items not verified"],
+    "syncPasswords": ["partial", 4, "Item coverage not verified"],
+    "syncTabs": ["partial", 4, "Item coverage not verified"],
+    "e2eeSync": ["yes", 5, "Per Avast; not independently audited"],
+    "profiles": ["yes", 6],
+    "passwordManager": ["partial", 4, "Chromium-style store; works with a chosen password manager"],
+    "passkeys": ["no", 0, "Not documented"],
+    "importData": ["yes", 7],
+    "widevine": ["partial", 5, "DRM playback not verified in sources"],
+    "netflix4k": ["no", 0],
+    "hevc": ["partial", 5],
+    "av1": ["yes", 7],
+    "hwDecode": ["yes", 7],
+    "aiAssistant": ["partial", 3, "Hidden AI Chat extension reported in 2024"],
+    "aiSummarizer": ["no", 0],
+    "agenticBrowsing": ["no", 0],
+    "localAi": ["no", 0],
+    "aiKillSwitch": ["partial", 3, "No single AI switch documented"],
+    "translation": ["no", 0],
+    "cryptoWallet": ["no", 0],
+    "pwaInstall": ["partial", 4],
+    "enterprisePolicies": ["partial", 3],
+    "kioskMode": ["no", 0],
+    "panicButton": ["no", 0],
+    "downloadManager": ["yes", 6, "Video Downloader extension plus Chromium downloads"],
+    "customThemes": ["yes", 5],
+    "customSearchEngines": ["yes", 6],
+    "devtools": ["yes", 9, "Chromium DevTools"]
+  },
+  "scores": {
+    "jsSpeed": [9, "Chromium V8, slightly behind current Chrome", "editorial"],
+    "pageLoad": [8, "Chromium speed; Avast layers add overhead", "editorial"],
+    "networkSpeed": [8.5, "Chromium network stack, HTTP/3", "editorial"],
+    "startup": [6.5, "Bundled extensions and shields slow launch", "editorial"],
+    "smoothness": [8.5, "Chromium compositor", "editorial"],
+    "graphics": [9, "Full Chromium WebGL/WebGPU", "editorial"],
+    "memory": [4.5, "Chromium plus 11 bundled extensions (Palant)", "documented"],
+    "cpu": [6, "Chromium-level plus shield scanning", "editorial"],
+    "battery": [5.5, "Chromium-level; Web Shield adds work", "editorial"],
+    "resourceControls": [6.5, "Chromium Memory/Energy Saver, if present", "editorial"],
+    "lowEnd": [5, "Drops Win 7/8; heavy for old PCs", "documented"],
+    "installSize": [4.5, "Chromium plus Avast extras", "editorial"],
+    "privacyDefaults": [5.5, "Privacy Guard on, but Bing default and ads on new tab", "documented"],
+    "blocking": [6, "Privacy Guard modes; critics call it middling", "documented"],
+    "fingerprinting": [5.5, "Anti-fingerprinting extension; Avast hedges claims", "documented"],
+    "securityHardening": [6.5, "Chromium sandbox, but hidden extensions raised issues", "documented"],
+    "patchSpeed": [5.5, "Weeks behind Chrome; 152 vs stable 156", "documented"],
+    "telemetry": [2.5, "Own policy: not telemetry-free, third-party analytics", "documented"],
+    "lookCustom": [5, "Chromium themes plus a few Avast options", "editorial"],
+    "behaviourCustom": [5, "Chromium site settings and shortcuts", "editorial"],
+    "advancedSettings": [5.5, "Chromium flags; Avast pages limit some", "editorial"],
+    "tabManagement": [6.5, "Tab groups, search, pinned tabs", "editorial"],
+    "searchFreedom": [6, "Bing default; changeable", "documented"],
+    "downloads": [6.5, "Video Downloader plus Chromium manager", "documented"],
+    "productivity": [5, "Side panel, PiP; little else", "editorial"],
+    "media": [7, "Chromium codecs; DRM unverified", "editorial"],
+    "translation": [2, "No built-in translation confirmed", "editorial"],
+    "extras": [6.5, "Bank Mode, VPN, webcam guard, Hack Check", "documented"],
+    "extensions": [5.5, "Chrome-style API, Web Store access disputed", "documented"],
+    "sync": [5.5, "Account sync claimed E2EE; items unverified", "documented"],
+    "passwords": [4.5, "Basic store, external manager recommended", "documented"],
+    "mobileApps": [6, "Android and iOS apps exist; Android listing looks stale", "editorial"],
+    "webCompat": [9, "Chromium engine", "editorial"],
+    "devTools": [9, "Chromium DevTools", "editorial"],
+    "accessibility": [8, "Chromium accessibility stack", "editorial"],
+    "openSource": [2, "Proprietary wrapper around Chromium", "documented"],
+    "businessTrust": [3, "FTC order over Jumpshot; monetised new tab", "documented"],
+    "longevity": [8, "Gen Digital product since 2016, tied to AV business", "editorial"],
+    "ai": [3, "Hidden AI Chat extension reported; little else", "documented"],
+    "beginnerFriendly": [7.5, "Bundled with AV and easy, but opt-out installer", "editorial"]
+  },
+  "sources": [
+    {"url": "https://en.wikipedia.org/wiki/Avast_Secure_Browser", "title": "Avast Secure Browser - Wikipedia", "accessed": "2026-10-30"},
+    {"url": "https://antivirus-review.com/blog/is-avast-secure-browser-good", "title": "Is Avast Secure Browser Good? 2026 Review", "accessed": "2026-10-30"},
+    {"url": "https://gizmodo.com/best-antivirus/avast", "title": "Gizmodo: Avast Antivirus Review 2026", "accessed": "2026-10-30"},
+    {"url": "https://palant.info/2024/07/15/how-insecure-is-avast-secure-browser/", "title": "Wladimir Palant: How insecure is Avast Secure Browser?", "accessed": "2026-10-30"},
+    {"url": "https://www.ftc.gov/news-events/news/press-releases/2024/02/ftc-order-will-ban-avast-selling-browsing-data-advertising-purposes-require-it-pay-165-million-over", "title": "FTC: Avast order over browsing data sales", "accessed": "2026-10-30"},
+    {"url": "https://www.filehorse.com/download-avast-secure-browser/", "title": "FileHorse: Avast Secure Browser (page updated 2026-09-22)", "accessed": "2026-10-30"},
+    {"url": "https://gbhackers.com/google-chrome-156-fixes-353-security-vulnerabilities/", "title": "GBHackers: Chrome 156 stable (Oct 2026)", "accessed": "2026-10-30"}
+  ],
+  "unverified": [
+    "Chromium base of the current build (152 inferred from the version number; download sites show 2026-09-22 or 2026-10-22 as the listing date)",
+    "Whether Chrome Web Store extensions install (Softpedia says no, another review implies Chrome-style compatibility)",
+    "DRM/Widevine, passkeys, tab features (vertical tabs, split view) and which items sync",
+    "Current Android and iOS app versions",
+    "avast.com pages returned 403 to our fetcher, so vendor-side feature claims come from third-party reviews"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-30"
+}

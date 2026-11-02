@@ -1,0 +1,791 @@
+{
+  "id": "floorp",
+  "name": "Floorp",
+  "aliases": [
+    "Floorp Browser"
+  ],
+  "group": "power",
+  "developer": "Floorp Projects (Japan)",
+  "hq": "Japan",
+  "businessModel": "Donations and sponsorships; no ads or paid tiers",
+  "engine": "gecko",
+  "basedOn": "Firefox",
+  "license": "MPL-2.0 plus Floorp Shared Source License",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2021,
+  "status": "active",
+  "statusNote": "iOS/iPadOS beta announced August 2026",
+  "version": {
+    "current": "12.21.0",
+    "date": "2026-10-27",
+    "upstream": "Firefox rapid-release base (exact version not verified)"
+  },
+  "channels": [
+    "Release",
+    "Flasco (test)"
+  ],
+  "updateCadence": "Frequent minor releases (12.18.1 on Sept 23, 12.21.0 on Oct 27)",
+  "website": "https://floorp.app",
+  "tags": [
+    "power-user",
+    "firefox-fork",
+    "vertical-tabs",
+    "japanese",
+    "customizable"
+  ],
+  "pitch": "Firefox fork with vertical tabs, workspaces and Chrome extension installs.",
+  "summary": "Japanese Firefox fork with vertical tabs, workspaces, split view, panel sidebar, custom CSS and, since 12.11, installing Chrome Web Store extensions. Also adds MCP server support. Desktop only (iOS beta announced).",
+  "bestFor": [
+    "Firefox users who want vertical tabs and workspaces",
+    "People who want both Firefox add-ons and Chrome Web Store extensions",
+    "Tinkerers who like custom CSS"
+  ],
+  "notFor": [
+    "Beginners who want zero setup",
+    "People who want a long-established team",
+    "Anyone who needs an Android app"
+  ],
+  "pros": [
+    {
+      "title": "Firefox add-ons plus Chrome extensions",
+      "detail": "Since 12.11 (March 2026) the Chrome Web Store shows an Add to Floorp button, with some API gaps."
+    },
+    {
+      "title": "Rich layout tools",
+      "detail": "Vertical tabs, workspaces, split view, panel sidebar and multi-row layouts are built in."
+    },
+    {
+      "title": "Full MV2 uBlock Origin",
+      "detail": "Firefox engine keeps MV2 add-ons working."
+    },
+    {
+      "title": "Fast release pace",
+      "detail": "Versions 12.18.1 to 12.21.0 shipped within five weeks."
+    },
+    {
+      "title": "Open source and free",
+      "detail": "MPL-2.0 core, no paid tier."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Chrome extension support is partial",
+      "detail": "Some extensions fail due to API differences (e.g. capture APIs); a warning says they are not Mozilla-vetted."
+    },
+    {
+      "title": "No Android app",
+      "detail": "Only an iOS/iPadOS beta was announced in August 2026."
+    },
+    {
+      "title": "Small team",
+      "detail": "Developed by a small Japanese group; long-term support depends on it."
+    },
+    {
+      "title": "Not beginner friendly",
+      "detail": "A press review criticised beginner-unfriendliness."
+    }
+  ],
+  "signatureFeatures": [
+    "Workspaces and vertical tabs",
+    "Chrome Web Store installs (12.11)",
+    "Panel sidebar",
+    "Custom CSS and Lepton theme",
+    "MCP server support (12.8)"
+  ],
+  "faq": [
+    {
+      "q": "Can Floorp install Chrome extensions?",
+      "a": "Yes, since Floorp 12.11 (March 2026), though some extensions do not work because of API differences."
+    },
+    {
+      "q": "Is Floorp based on Firefox ESR?",
+      "a": "No, since 12.1.0 it returned to the rapid-release Firefox base after a period on ESR."
+    },
+    {
+      "q": "Is there a mobile version?",
+      "a": "An iOS/iPadOS beta was announced in August 2026; there is no Android release."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2021-08",
+      "event": "First release"
+    },
+    {
+      "date": "2025-12-06",
+      "event": "12.8.0: experimental Chrome extension install and MCP server"
+    },
+    {
+      "date": "2026-03-14",
+      "event": "12.11.0: Chrome extension support in standard release"
+    },
+    {
+      "date": "2026-08-28",
+      "event": "Floorp for iOS beta announced"
+    },
+    {
+      "date": "2026-10-27",
+      "event": "12.21.0 (Wikipedia infobox)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Imports from Chrome, Edge, Firefox; install Firefox add-ons or Chrome Web Store extensions."
+  },
+  "alternatives": [
+    "zen",
+    "firefox",
+    "waterfox",
+    "vivaldi"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "extensions",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Firefox Sync via Mozilla account"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": true,
+      "breachCheck": true,
+      "note": "Firefox password manager"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Firefox engine keeps MV2 and MV3",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "MCP server for external AI tools; Firefox AI features inherited"
+    },
+    "privacy": {
+      "defaults": "Firefox ETP, Mozilla telemetry disabled, fingerprinting protection option",
+      "telemetry": "Mozilla telemetry disabled",
+      "jurisdiction": "Japan"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (configurable)",
+    "telemetry": "Mozilla telemetry disabled",
+    "drm": "Widevine supported (fixed in 12.1.0)",
+    "codecs": "H.264, VP9, AV1",
+    "sandbox": "Firefox process sandbox",
+    "patchLag": "Rapid-release Firefox base; lag not measured",
+    "languages": "Many (Firefox locales)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "winget"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS Catalina",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern distro",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "flathub",
+        "aur",
+        "deb",
+        "rpm"
+      ],
+      "notes": [
+        "Store list from memory of project docs; not re-verified"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "beta",
+      "minOs": "Not verified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "Beta announced 2026-08-28 (Wikipedia)",
+        "WebKit engine (Apple rule)"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -7
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      7
+    ],
+    "fingerprintProtection": [
+      "partial",
+      6
+    ],
+    "httpsOnly": [
+      "yes",
+      8
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "yes",
+      9
+    ],
+    "queryStripping": [
+      "yes",
+      7
+    ],
+    "telemetryOptOut": [
+      "yes",
+      8,
+      "Mozilla telemetry off"
+    ],
+    "privateHardening": [
+      "partial",
+      5
+    ],
+    "adBlocker": [
+      "extension",
+      8,
+      "uBlock Origin"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      9
+    ],
+    "customFilterLists": [
+      "extension",
+      9
+    ],
+    "youtubeAds": [
+      "extension",
+      8
+    ],
+    "cookieBanners": [
+      "partial",
+      5
+    ],
+    "verticalTabs": [
+      "yes",
+      9
+    ],
+    "tabGroups": [
+      "partial",
+      6
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      8
+    ],
+    "splitView": [
+      "yes",
+      8
+    ],
+    "tabSleeping": [
+      "yes",
+      6
+    ],
+    "tabSearch": [
+      "yes",
+      7
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "yes",
+      7
+    ],
+    "readerMode": [
+      "yes",
+      7
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "yes",
+      9,
+      "Panel sidebar"
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "yes",
+      7
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "yes",
+      7,
+      "Built-in gestures"
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      8
+    ],
+    "readLater": [
+      "extension",
+      5
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      6,
+      "Since 12.11, some API gaps"
+    ],
+    "firefoxAddons": [
+      "yes",
+      10
+    ],
+    "mv2Support": [
+      "yes",
+      9
+    ],
+    "uboFull": [
+      "yes",
+      10
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      9
+    ],
+    "syncBookmarks": [
+      "yes",
+      8
+    ],
+    "syncPasswords": [
+      "yes",
+      8
+    ],
+    "syncTabs": [
+      "yes",
+      8
+    ],
+    "e2eeSync": [
+      "yes",
+      9
+    ],
+    "profiles": [
+      "yes",
+      7
+    ],
+    "passwordManager": [
+      "yes",
+      7
+    ],
+    "passkeys": [
+      "yes",
+      7
+    ],
+    "importData": [
+      "yes",
+      8
+    ],
+    "widevine": [
+      "yes",
+      7
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      5
+    ],
+    "av1": [
+      "yes",
+      8
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "partial",
+      3,
+      "MCP server for external AI"
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "partial",
+      4,
+      "MCP server lets external agents control Floorp"
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      7
+    ],
+    "translation": [
+      "yes",
+      7,
+      "Local Firefox Translations"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8,
+      "Site-specific browser"
+    ],
+    "enterprisePolicies": [
+      "yes",
+      8
+    ],
+    "kioskMode": [
+      "partial",
+      4
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      9,
+      "Lepton, custom CSS"
+    ],
+    "customSearchEngines": [
+      "yes",
+      9
+    ],
+    "devtools": [
+      "yes",
+      9
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8,
+      "SpiderMonkey, same as Firefox",
+      "editorial"
+    ],
+    "pageLoad": [
+      8,
+      "Gecko rendering",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Firefox network stack with HTTP/3",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Extra UI layers slow start versus stock Firefox",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Gecko compositor",
+      "editorial"
+    ],
+    "graphics": [
+      8,
+      "Gecko WebGL",
+      "editorial"
+    ],
+    "memory": [
+      6,
+      "Firefox baseline plus UI extras",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Firefox baseline",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Firefox baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      6,
+      "Tab unloading only",
+      "documented"
+    ],
+    "lowEnd": [
+      5.5,
+      "Heavier than stock Firefox",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Firefox-sized download",
+      "documented"
+    ],
+    "privacyDefaults": [
+      7,
+      "ETP on, Mozilla telemetry disabled",
+      "documented"
+    ],
+    "blocking": [
+      6.5,
+      "Needs uBlock Origin; no built-in ad blocker",
+      "documented"
+    ],
+    "fingerprinting": [
+      6,
+      "Firefox protections plus options to disable WebGL/WebRTC",
+      "editorial"
+    ],
+    "securityHardening": [
+      7.5,
+      "Firefox sandbox, small downstream team",
+      "editorial"
+    ],
+    "patchSpeed": [
+      8,
+      "Rapid-release base; 12.18 to 12.21 in five weeks",
+      "documented"
+    ],
+    "telemetry": [
+      8,
+      "Mozilla telemetry disabled in the fork",
+      "documented"
+    ],
+    "lookCustom": [
+      9.5,
+      "Lepton theme, custom CSS, toolbar and sidebar layouts",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      9,
+      "Gestures, shortcuts, per-site options",
+      "editorial"
+    ],
+    "advancedSettings": [
+      9.5,
+      "Full about:config",
+      "editorial"
+    ],
+    "tabManagement": [
+      9,
+      "Vertical tabs, workspaces, split view",
+      "documented"
+    ],
+    "searchFreedom": [
+      9,
+      "Any engine",
+      "documented"
+    ],
+    "downloads": [
+      6.5,
+      "Firefox download panel",
+      "editorial"
+    ],
+    "productivity": [
+      7.5,
+      "Panel sidebar, split view, PWA",
+      "editorial"
+    ],
+    "media": [
+      7,
+      "Widevine fixed in 12.1.0, no 4K",
+      "editorial"
+    ],
+    "translation": [
+      7,
+      "Local Firefox Translations",
+      "documented"
+    ],
+    "extras": [
+      5,
+      "Few built-ins beyond sidebar apps",
+      "documented"
+    ],
+    "extensions": [
+      9.5,
+      "Firefox add-ons plus Chrome Web Store installs, MV2 intact",
+      "documented"
+    ],
+    "sync": [
+      7.5,
+      "Firefox Sync, desktop only",
+      "documented"
+    ],
+    "passwords": [
+      7,
+      "Firefox password manager",
+      "documented"
+    ],
+    "mobileApps": [
+      2,
+      "iOS beta announced only",
+      "documented"
+    ],
+    "webCompat": [
+      8,
+      "Gecko",
+      "editorial"
+    ],
+    "devTools": [
+      9.5,
+      "Firefox DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      8,
+      "Inherited Firefox a11y",
+      "editorial"
+    ],
+    "openSource": [
+      9.5,
+      "MPL-2.0 core, Firefox fork",
+      "documented"
+    ],
+    "businessTrust": [
+      7.5,
+      "Donation-funded small team",
+      "documented"
+    ],
+    "longevity": [
+      6.5,
+      "Small team but steady releases since 2021",
+      "documented"
+    ],
+    "ai": [
+      3.5,
+      "MCP server integration, no built-in assistant",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      5.5,
+      "Many options; press called it beginner-unfriendly",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Floorp",
+      "title": "Wikipedia: Floorp",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blog.floorp.app/en/release/12.11.0/",
+      "title": "Floorp v12.11.0 Release Notes",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://alternativeto.net/news/2026/3/floorp-v12-11-0-now-supports-chrome-extensions-and-fixes-key-bugs",
+      "title": "AlternativeTo: Floorp 12.11.0 supports Chrome extensions",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://alternativeto.net/news/2025/12/floorp-12-8-0-adds-chrome-extension-support-and-mcp-server-integration",
+      "title": "AlternativeTo: Floorp 12.8.0 Chrome extension support and MCP",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blog.floorp.app/en/release/12.9.0/",
+      "title": "Floorp v12.9.0 Release Notes",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Task brief said 12.18.x; Wikipedia infobox shows 12.21.0 (27 Oct 2026), a search snippet showed 12.18.1 (23 Sept) - latest chosen is 12.21.0",
+    "Exact Firefox base version",
+    "Linux package stores and iOS beta details",
+    "Whether Floorp has built-in notes/command bar"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,776 @@
+{
+  "id": "vanadium",
+  "name": "Vanadium",
+  "aliases": [
+    "GrapheneOS Vanadium"
+  ],
+  "group": "android",
+  "developer": "GrapheneOS Foundation",
+  "hq": "Canada (GrapheneOS Foundation; unverified)",
+  "businessModel": "Donation-funded non-profit OS project",
+  "engine": "blink",
+  "basedOn": "Chromium (hardened for GrapheneOS)",
+  "license": "Open source (Chromium BSD base; see repository)",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2020,
+  "status": "active",
+  "statusNote": "Only officially available on GrapheneOS, where it is also the system WebView",
+  "version": {
+    "current": "156.0.8078.73.0",
+    "date": "2026-10",
+    "upstream": "Chromium 156.0.8078.73"
+  },
+  "channels": [
+    "Stable"
+  ],
+  "updateCadence": "Tracks Chromium stable closely (three builds Sep 30 - Oct 8, 2026)",
+  "website": "https://grapheneos.org/usage#web-browsing",
+  "tags": [
+    "android",
+    "grapheneos",
+    "security",
+    "hardened",
+    "webview"
+  ],
+  "pitch": "GrapheneOS's hardened Chromium: browser and system WebView, GrapheneOS only.",
+  "summary": "Security-hardened Chromium build that is GrapheneOS's default browser and system WebView. Strict site isolation, JIT off by default with per-site toggle, no extensions. Not officially available outside GrapheneOS.",
+  "bestFor": [
+    "GrapheneOS users",
+    "People who value exploit mitigation over features",
+    "Users who want the safest Chromium on Android"
+  ],
+  "notFor": [
+    "Non-GrapheneOS devices (not officially available)",
+    "Extension users",
+    "People who want sync or heavy customization"
+  ],
+  "pros": [
+    {
+      "title": "Strict site isolation",
+      "detail": "Enabled by default per Privacy Ranker comparison."
+    },
+    {
+      "title": "JIT off by default",
+      "detail": "Per-site toggle reduces JIT exploit surface."
+    },
+    {
+      "title": "Fast Chromium updates",
+      "detail": "Releases follow Chromium stable within days."
+    },
+    {
+      "title": "System WebView",
+      "detail": "Hardens every app that uses WebView on GrapheneOS."
+    },
+    {
+      "title": "No telemetry accounts",
+      "detail": "No sync account or vendor data collection."
+    }
+  ],
+  "cons": [
+    {
+      "title": "GrapheneOS only",
+      "detail": "Cannot supply WebView or full hardening on other Android builds."
+    },
+    {
+      "title": "No extensions",
+      "detail": "No add-ons, so no ad blocker beyond defaults."
+    },
+    {
+      "title": "Slower JS",
+      "detail": "JIT disabled by default costs JavaScript speed."
+    },
+    {
+      "title": "Minimal features",
+      "detail": "No sync, reader mode or customization."
+    }
+  ],
+  "signatureFeatures": [
+    "Hardened Chromium",
+    "JIT-off default",
+    "Strict site isolation",
+    "System WebView"
+  ],
+  "faq": [
+    {
+      "q": "Can I install Vanadium on stock Android?",
+      "a": "Not officially; it depends on GrapheneOS hardening and WebView integration."
+    },
+    {
+      "q": "Does it support extensions?",
+      "a": "No."
+    },
+    {
+      "q": "How are updates delivered?",
+      "a": "Through the GrapheneOS app repository and in OS releases."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2020-03",
+      "event": "WebView renamed \"Vanadium System WebView\" (org.grapheneos.vanadium.webview)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Release 156.0.8078.73.0 on Chromium 156"
+    },
+    {
+      "date": "2026-10",
+      "event": "Three Chromium bumps between Sep 30 and Oct 8 (Privacy Ranker)"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No import tools documented."
+  },
+  "alternatives": [
+    "ironfox",
+    "fennec-fdroid",
+    "quetta",
+    "iceraven",
+    "trivalent"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Use a separate password manager"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension support",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Hardening-first; no telemetry service",
+      "telemetry": "None documented",
+      "jurisdiction": "Canada (unverified)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "None documented",
+    "drm": "No Widevine (unverified)",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox + strict site isolation + GrapheneOS hardened malloc + MTE on supported Pixels",
+    "patchLag": "Days behind Chromium stable",
+    "languages": "Chromium locales"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "GrapheneOS only",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "preinstalled"
+      ],
+      "notes": [
+        "Bundled with GrapheneOS and updated via its app repository",
+        "Not on Google Play; not officially available outside GrapheneOS"
+      ],
+      "highlights": [
+        "Memory tagging on supported Pixels"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://github.com/GrapheneOS/Vanadium/releases",
+      "title": "Vanadium releases - GitHub",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/GrapheneOS/Vanadium",
+      "title": "Vanadium repository",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://grapheneos.org/releases",
+      "title": "GrapheneOS releases",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://privacyranker.com/posts/most-private-browser-for-android-2026/",
+      "title": "Most private Android browser 2026 - Privacy Ranker",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.webbrowserdirectory.com/browsers/vanadium/",
+      "title": "Vanadium - WebBrowserDirectory",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Foundation jurisdiction",
+    "Widevine/DRM support",
+    "Exact license text",
+    "Password autofill behavior"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "No built-in blocker"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      7,
+      ""
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "yes",
+      9,
+      "No telemetry service"
+    ],
+    "privateHardening": [
+      "yes",
+      8,
+      "Incognito Custom Tab handling fixes"
+    ],
+    "adBlocker": [
+      "extension",
+      3,
+      "Only MV3 blockers such as uBO Lite"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "partial",
+      4,
+      "Chromium mobile tab groups (unverified)"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Android OS-level tab discard"
+    ],
+    "tabSearch": [
+      "partial",
+      4,
+      ""
+    ],
+    "pinnedTabs": [
+      "no",
+      0,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "no",
+      0,
+      ""
+    ],
+    "pip": [
+      "partial",
+      5,
+      ""
+    ],
+    "screenshots": [
+      "no",
+      0,
+      ""
+    ],
+    "commandBar": [
+      "no",
+      0,
+      ""
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0,
+      "Mobile; external keyboards only"
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "no",
+      0,
+      "No extension support unless stated"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "no",
+      0,
+      ""
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "no",
+      0,
+      ""
+    ],
+    "passwordManager": [
+      "no",
+      0,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Android system"
+    ],
+    "importData": [
+      "no",
+      0,
+      ""
+    ],
+    "widevine": [
+      "no",
+      0,
+      "Not included (unverified)"
+    ],
+    "netflix4k": [
+      "no",
+      0,
+      "No Widevine"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "no",
+      0,
+      "No AI assistant"
+    ],
+    "aiSummarizer": [
+      "no",
+      0,
+      ""
+    ],
+    "agenticBrowsing": [
+      "no",
+      0,
+      ""
+    ],
+    "localAi": [
+      "no",
+      0,
+      ""
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0,
+      "Unverified"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      ""
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      ""
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      5,
+      ""
+    ],
+    "customThemes": [
+      "no",
+      0,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "partial",
+      4,
+      "Remote debugging only"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      6.5,
+      "JIT off by default trades speed for security",
+      "editorial"
+    ],
+    "pageLoad": [
+      7.5,
+      "Chromium rendering, slower JS",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      8,
+      "Minimal Chromium build",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      5,
+      "Chromium multi-process",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium-class",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Chromium on phone, average drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      3.5,
+      "Android OS tab discard only",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs a supported Pixel device",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Chromium bundle",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      7,
+      "No telemetry; no blocker or fingerprint work",
+      "editorial"
+    ],
+    "blocking": [
+      2,
+      "No built-in blocker or extensions",
+      "editorial"
+    ],
+    "fingerprinting": [
+      4.5,
+      "Chromium baseline with GrapheneOS hardening",
+      "editorial"
+    ],
+    "securityHardening": [
+      10,
+      "Strict isolation, JIT off, MTE, hardened malloc",
+      "documented"
+    ],
+    "patchSpeed": [
+      9.5,
+      "Tracks Chromium stable within days",
+      "documented"
+    ],
+    "telemetry": [
+      9,
+      "No telemetry or account",
+      "editorial"
+    ],
+    "lookCustom": [
+      1.5,
+      "Minimal UI options",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      2,
+      "Few options",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3,
+      "Few settings; hardening fixed by OS",
+      "editorial"
+    ],
+    "tabManagement": [
+      4,
+      "Basic tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      2,
+      "Bare-bones",
+      "editorial"
+    ],
+    "media": [
+      5,
+      "Chromium codecs, no Widevine",
+      "editorial"
+    ],
+    "translation": [
+      3,
+      "Not documented",
+      "editorial"
+    ],
+    "extras": [
+      1.5,
+      "None",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extension support",
+      "documented"
+    ],
+    "sync": [
+      0,
+      "No sync",
+      "documented"
+    ],
+    "passwords": [
+      2,
+      "No manager; OS autofill",
+      "editorial"
+    ],
+    "mobileApps": [
+      4,
+      "Works only on GrapheneOS",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      3,
+      "Remote debugging only",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Chromium Android accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      9,
+      "Open-source Chromium hardening patches",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Non-profit foundation, no data business",
+      "editorial"
+    ],
+    "longevity": [
+      8,
+      "Core of GrapheneOS since 2020",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      4,
+      "Requires GrapheneOS; bare-bones UI",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

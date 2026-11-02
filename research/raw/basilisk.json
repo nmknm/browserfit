@@ -1,0 +1,760 @@
+{
+  "id": "basilisk",
+  "name": "Basilisk",
+  "aliases": [
+    "Basilisk Browser"
+  ],
+  "group": "forks",
+  "developer": "Basilisk Development Team (formerly Basilisk-Dev)",
+  "hq": "Unverified (community project)",
+  "businessModel": "Volunteer project; no monetisation",
+  "engine": "goanna",
+  "basedOn": "Firefox (UXP / Goanna), originally Pale Moon team",
+  "license": "MPL-2.0 (source); binaries proprietary freeware unless rebranded",
+  "openSource": "partial",
+  "price": "free",
+  "releaseYear": 2018,
+  "status": "beta",
+  "statusNote": "Still labelled beta; community-maintained since 2022 after original author ended support in 2021",
+  "version": {
+    "current": "2026.09.24",
+    "date": "2026-09-24",
+    "upstream": "UXP / Goanna"
+  },
+  "channels": [
+    "Release (beta-labelled)"
+  ],
+  "updateCadence": "Several date-versioned releases per year (Jan, Mar, Apr, Jun, Sep 2026)",
+  "website": "https://basilisk-browser.org",
+  "tags": [
+    "goanna",
+    "xul",
+    "legacy",
+    "uxp"
+  ],
+  "pitch": "Goanna/UXP browser keeping XUL add-ons, revived by new maintainers.",
+  "summary": "A UXP reference browser started by the Pale Moon author, abandoned in 2021 and revived by community developers in 2022. Keeps XUL add-ons, runs on Windows 7+ and Linux, and is still described as beta.",
+  "bestFor": [
+    "XUL / legacy add-on users",
+    "Developers testing UXP",
+    "Retro-friendly Windows 7 and Linux setups"
+  ],
+  "notFor": [
+    "Daily browsing on modern sites",
+    "People needing WebExtensions",
+    "Users needing DRM or modern security"
+  ],
+  "pros": [
+    {
+      "title": "Regular 2026 updates",
+      "detail": "Releases 2026.01.23, 03.09, 04.15, 06.12 and 09.24 added JS and CSS features (top-level await, oklch, Error.cause)."
+    },
+    {
+      "title": "XUL add-ons",
+      "detail": "Supports classic add-ons and unsigned extensions."
+    },
+    {
+      "title": "ARM64 builds",
+      "detail": "ARM64 builds run substantially as of 2026.09.24."
+    },
+    {
+      "title": "Open source engine",
+      "detail": "MPL-2.0 source on repo.palemoon.org."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Beta and niche",
+      "detail": "Still described as beta with a small developer pool."
+    },
+    {
+      "title": "Compat gaps",
+      "detail": "Goanna lags modern web standards, and WebExtensions support was dropped in 2019."
+    },
+    {
+      "title": "Security model",
+      "detail": "Single-process, no site isolation or modern sandbox."
+    },
+    {
+      "title": "No DRM or mobile",
+      "detail": "No Widevine and desktop only."
+    }
+  ],
+  "signatureFeatures": [
+    "Goanna/UXP engine",
+    "XUL add-ons",
+    "Modern JS features backported in 2026",
+    "ARM64 build"
+  ],
+  "faq": [
+    {
+      "q": "Is Basilisk maintained?",
+      "a": "Yes, by the Basilisk Development Team since 2022; the latest release found is 2026.09.24."
+    },
+    {
+      "q": "Is Basilisk the same as Pale Moon?",
+      "a": "No. Both use UXP/Goanna, but Basilisk keeps the older Firefox-style UI and is a separate project and codebase."
+    },
+    {
+      "q": "Which OSes does it run on?",
+      "a": "Windows 7+ and Linux are fully supported; macOS and FreeBSD are experimental."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Announced by Pale Moon developer as UXP reference app"
+    },
+    {
+      "date": "2018-12",
+      "event": "First release (2018-12-17)"
+    },
+    {
+      "date": "2021",
+      "event": "Original author ends support"
+    },
+    {
+      "date": "2022",
+      "event": "Basilisk-Dev takes over development"
+    },
+    {
+      "date": "2026-06",
+      "event": "Release 2026.06.12"
+    },
+    {
+      "date": "2026-09",
+      "event": "Release 2026.09.24 (URL.parse, NSS update, ARM64)"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "history",
+      "passwords"
+    ],
+    "note": "Imports from other browsers; no extension migration."
+  },
+  "alternatives": [
+    "pale-moon",
+    "seamonkey",
+    "librewolf",
+    "firefox",
+    "k-meleon"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No supported sync found; unverified"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Built-in store"
+    },
+    "mv2": {
+      "level": "none",
+      "note": "WebExtensions dropped in 2019; XUL add-ons only",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "No telemetry; no built-in blocking",
+      "telemetry": "None documented",
+      "jurisdiction": "Community project"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "None documented",
+    "drm": "No Widevine",
+    "codecs": "Unverified, system libav",
+    "sandbox": "Single-process",
+    "patchLag": "Own releases; NSS 3.90.14 in 2026.09.24",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 7",
+      "arch": [
+        "x86",
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "portable"
+      ],
+      "notes": [
+        "Full support per Wikipedia"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern distro",
+      "arch": [
+        "x64",
+        "x86",
+        "arm64"
+      ],
+      "stores": [
+        "portable",
+        "aur"
+      ],
+      "notes": [
+        "Full support"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "beta",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Experimental"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "no",
+      0
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "partial",
+      3,
+      "Unverified"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      9,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "partial",
+      3
+    ],
+    "adBlocker": [
+      "extension",
+      5,
+      "Legacy XUL/UXP add-ons"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      5
+    ],
+    "customFilterLists": [
+      "extension",
+      5
+    ],
+    "youtubeAds": [
+      "extension",
+      4
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "extension",
+      5
+    ],
+    "tabGroups": [
+      "extension",
+      4,
+      "Add-on only; Panorama removed"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "yes",
+      7
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4,
+      "Bookmarks/history sidebars"
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "extension",
+      6
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "No WebExtensions by design"
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      7,
+      "Legacy Greasemonkey-type add-ons"
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      7
+    ],
+    "passwordManager": [
+      "yes",
+      4,
+      "Basic, optional master password"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      3
+    ],
+    "av1": [
+      "partial",
+      4
+    ],
+    "hwDecode": [
+      "partial",
+      4
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "partial",
+      3,
+      "Prefs/autoconfig only"
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      9,
+      "Themes and Personas"
+    ],
+    "customSearchEngines": [
+      "yes",
+      8
+    ],
+    "devtools": [
+      "yes",
+      5
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "pageLoad": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "networkSpeed": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "smoothness": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "graphics": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "memory": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "resourceControls": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lowEnd": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "installSize": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "blocking": [
+      3.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "fingerprinting": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "securityHardening": [
+      3.5,
+      "Single-process, no site isolation or modern sandbox",
+      "documented"
+    ],
+    "patchSpeed": [
+      4.5,
+      "Own releases every few months (2026.09.24 latest)",
+      "documented"
+    ],
+    "telemetry": [
+      9.5,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      8.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      7.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "advancedSettings": [
+      9,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "tabManagement": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "searchFreedom": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "productivity": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "media": [
+      3.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extras": [
+      2.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extensions": [
+      4.5,
+      "XUL add-ons only; small ecosystem",
+      "documented"
+    ],
+    "sync": [
+      0,
+      "No supported sync found",
+      "documented"
+    ],
+    "passwords": [
+      3.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "Desktop only",
+      "documented"
+    ],
+    "webCompat": [
+      3.5,
+      "Goanna lags; WebExtensions dropped in 2019",
+      "documented"
+    ],
+    "devTools": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "accessibility": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "openSource": [
+      8,
+      "MPL-2.0 source; binaries proprietary freeware",
+      "documented"
+    ],
+    "businessTrust": [
+      5.5,
+      "Volunteer project with a history of abandonment",
+      "documented"
+    ],
+    "longevity": [
+      4,
+      "Revived 2022 after being abandoned; still beta-labelled",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Basilisk_(web_browser)",
+      "title": "Basilisk - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.warp2search.net/story/basilisk-20260924-released",
+      "title": "Basilisk 2026.09.24 released",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.warp2search.net/story/basilisk-20260415-released",
+      "title": "Basilisk 2026.04.15 released",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.softpedia.com/get/Internet/Browsers/Basilisk.shtml",
+      "title": "Basilisk - Softpedia",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Sync availability",
+    "Default search, codecs, DRM details",
+    "Contents of 2026.06.12 release",
+    "Developer jurisdiction",
+    "macOS and Android status"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

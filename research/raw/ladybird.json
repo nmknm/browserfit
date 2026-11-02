@@ -1,0 +1,734 @@
+{
+  "id": "ladybird",
+  "name": "Ladybird",
+  "aliases": [
+    "Ladybird Browser"
+  ],
+  "group": "minimal",
+  "developer": "Ladybird Browser Initiative (non-profit; led by Andreas Kling)",
+  "hq": "United States",
+  "businessModel": "Non-profit funded by sponsors and donations",
+  "engine": "libweb",
+  "basedOn": "Independent",
+  "license": "BSD-2-Clause",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2022,
+  "status": "alpha",
+  "statusNote": "Still pre-alpha: no public alpha shipped as of Oct 29, 2026 (Summer 2026 target missed); public PRs closed June 2026",
+  "version": {
+    "current": "Pre-alpha (no numbered release)",
+    "date": "2026-10-06",
+    "upstream": "LibWeb / LibJS (own engine)"
+  },
+  "channels": [
+    "Source builds (nightly)"
+  ],
+  "updateCadence": "Continuous development; no releases yet",
+  "website": "https://ladybird.org",
+  "tags": [
+    "independent-engine",
+    "libweb",
+    "open-source",
+    "pre-alpha",
+    "rust-migration"
+  ],
+  "pitch": "A brand-new independent browser engine, still pre-alpha.",
+  "summary": "A from-scratch, non-Chromium/non-Gecko browser engine and browser. Not yet usable day to day; the first alpha for Linux and macOS is expected but undated. Style/layout code is being ported from C++ to Rust.",
+  "bestFor": [
+    "Developers and contributors interested in a new engine",
+    "Followers of the independent-engine movement"
+  ],
+  "notFor": [
+    "Anyone needing a daily browser",
+    "Windows users (only a teaser)",
+    "People expecting extensions or sync"
+  ],
+  "pros": [
+    {
+      "title": "Truly independent engine",
+      "detail": "Not built on Chromium, Gecko or WebKit."
+    },
+    {
+      "title": "Open source non-profit",
+      "detail": "BSD-2-Clause under a non-profit."
+    },
+    {
+      "title": "Progress",
+      "detail": "Memory use cut about 80% in July 2026; private browsing and profiles landed."
+    },
+    {
+      "title": "No telemetry",
+      "detail": "No data collection by design."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Pre-alpha",
+      "detail": "No official release; not suitable for browsing."
+    },
+    {
+      "title": "Compatibility gaps",
+      "detail": "Many sites broken."
+    },
+    {
+      "title": "Contribution freeze",
+      "detail": "Public PRs closed June 2026."
+    },
+    {
+      "title": "No ecosystem",
+      "detail": "No extensions, sync or mobile."
+    }
+  ],
+  "signatureFeatures": [
+    "LibWeb engine",
+    "Rust migration of style/layout",
+    "Private browsing and profiles",
+    "Auto-updating ad filters (Oct 2026)"
+  ],
+  "faq": [
+    {
+      "q": "Can I download Ladybird?",
+      "a": "Only by building from source; no official alpha has shipped yet."
+    },
+    {
+      "q": "When is the alpha?",
+      "a": "The target was summer 2026 for Linux and macOS and has slipped; no date announced. Beta expected 2027 and stable 2028 per Wikipedia."
+    },
+    {
+      "q": "Is there a Windows version?",
+      "a": "Only a teaser was shown in July 2026."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2022-09",
+      "event": "Ladybird begins as a SerenityOS spin-off"
+    },
+    {
+      "date": "2024-06",
+      "event": "Ladybird Browser Initiative non-profit founded"
+    },
+    {
+      "date": "2026-06",
+      "event": "Public pull-request queue closed ahead of alpha"
+    },
+    {
+      "date": "2026-07",
+      "event": "Windows version teased; memory use cut about 80%"
+    },
+    {
+      "date": "2026-10",
+      "event": "Update: AI-assisted security fixes, auto-updating ad filters, leak patches"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No import tools yet."
+  },
+  "alternatives": [
+    "servo",
+    "firefox",
+    "lynx",
+    "netsurf"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "None"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": ""
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension support",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "No telemetry; ad filters auto-updating",
+      "telemetry": "None",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Configurable (unverified)",
+    "telemetry": "None",
+    "drm": "None",
+    "codecs": "Limited",
+    "sandbox": "Multi-process, sandboxing in progress",
+    "patchSpeed": "Source-only",
+    "languages": "English"
+  },
+  "platforms": {
+    "linux": {
+      "status": "alpha",
+      "minOs": "Build from source",
+      "arch": [
+        "x64"
+      ],
+      "stores": [],
+      "notes": [
+        "Pre-alpha; first public alpha targeted for Linux and macOS"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "alpha",
+      "minOs": "Build from source",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [],
+      "notes": [
+        "Pre-alpha"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "alpha",
+      "minOs": "n/a",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "Only a development teaser (July 2026); no builds"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ladybird_(web_browser)",
+      "title": "Ladybird - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/10/06/ladybird-browser-alpha-update/",
+      "title": "PiunikaWeb: Ladybird nears alpha (Oct 2026)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/06/05/ladybird-browser-closes-public-contributions/",
+      "title": "PiunikaWeb: Ladybird closes public contributions",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/07/23/ladybird-teases-windows-version/",
+      "title": "PiunikaWeb: Ladybird teases Windows",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://ladybird.org",
+      "title": "Ladybird website",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Beta/stable dates (Wikipedia only)",
+    "Default search",
+    "Exact Rust migration extent"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "partial",
+      3,
+      "Private browsing shipped"
+    ],
+    "adBlocker": [
+      "partial",
+      4,
+      "Auto-updating ad filters (Oct 2026)"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "partial",
+      3
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      4,
+      "Profiles shipped"
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "no",
+      0
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      3
+    ],
+    "devtools": [
+      "partial",
+      2
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      3,
+      "LibJS is far slower than V8/JSC",
+      "editorial"
+    ],
+    "pageLoad": [
+      3,
+      "Many sites render incompletely",
+      "editorial"
+    ],
+    "networkSpeed": [
+      4,
+      "Basic HTTP stack",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Light",
+      "editorial"
+    ],
+    "smoothness": [
+      3,
+      "Early rendering",
+      "editorial"
+    ],
+    "graphics": [
+      2,
+      "Limited WebGL/WebGPU",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Memory cut about 80% in July 2026",
+      "documented"
+    ],
+    "cpu": [
+      4,
+      "Unoptimised",
+      "editorial"
+    ],
+    "battery": [
+      3,
+      "Unoptimised",
+      "editorial"
+    ],
+    "resourceControls": [
+      1,
+      "None",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Unoptimised",
+      "editorial"
+    ],
+    "installSize": [
+      7,
+      "Small source build",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      7,
+      "No telemetry",
+      "documented"
+    ],
+    "blocking": [
+      4,
+      "Auto-updating filters",
+      "documented"
+    ],
+    "fingerprinting": [
+      3,
+      "Not hardened",
+      "editorial"
+    ],
+    "securityHardening": [
+      4,
+      "Sandboxing in progress, unproven",
+      "editorial"
+    ],
+    "patchSpeed": [
+      3,
+      "Source builds only",
+      "editorial"
+    ],
+    "telemetry": [
+      10,
+      "None",
+      "documented"
+    ],
+    "lookCustom": [
+      1,
+      "Minimal",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      1,
+      "Minimal",
+      "editorial"
+    ],
+    "advancedSettings": [
+      2,
+      "Minimal",
+      "editorial"
+    ],
+    "tabManagement": [
+      3,
+      "Basic tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      3,
+      "Limited",
+      "editorial"
+    ],
+    "downloads": [
+      2,
+      "Basic",
+      "editorial"
+    ],
+    "productivity": [
+      1,
+      "None",
+      "editorial"
+    ],
+    "media": [
+      2,
+      "Limited",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "None",
+      "documented"
+    ],
+    "extras": [
+      0,
+      "None",
+      "documented"
+    ],
+    "extensions": [
+      0,
+      "None",
+      "documented"
+    ],
+    "sync": [
+      0,
+      "None",
+      "documented"
+    ],
+    "passwords": [
+      0,
+      "None",
+      "documented"
+    ],
+    "mobileApps": [
+      0,
+      "None",
+      "documented"
+    ],
+    "webCompat": [
+      3,
+      "Pre-alpha engine",
+      "editorial"
+    ],
+    "devTools": [
+      2,
+      "Minimal",
+      "editorial"
+    ],
+    "accessibility": [
+      2,
+      "Early",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "BSD-2-Clause, non-profit",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Non-profit, independent",
+      "editorial"
+    ],
+    "longevity": [
+      6,
+      "Strong momentum, no release yet",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "None",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      1,
+      "Source build only",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

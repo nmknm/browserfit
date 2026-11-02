@@ -1,0 +1,855 @@
+{
+  "id": "comet",
+  "name": "Perplexity Comet",
+  "aliases": [
+    "Comet",
+    "Comet Browser"
+  ],
+  "group": "ai",
+  "developer": "Perplexity AI, Inc.",
+  "hq": "United States",
+  "businessModel": "Free browser funding Perplexity subscriptions (Pro ~$20/mo, Max ~$200/mo) and Comet Plus",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "paidNote": "Perplexity Pro/Max raise AI limits; some features (e.g. Computer) are Max-only",
+  "releaseYear": 2025,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "Not published",
+    "date": "2026-10",
+    "upstream": "Chromium"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Auto-updating; tracks Chromium (cadence unverified)",
+  "website": "https://www.perplexity.ai/comet",
+  "tags": [
+    "ai",
+    "agentic",
+    "chromium",
+    "perplexity",
+    "mobile"
+  ],
+  "pitch": "Perplexity's free Chromium browser with an assistant and agent in every tab.",
+  "summary": "Chromium browser with Perplexity's assistant and a task-running agent. Launched Jul 2025 on desktop (paid-only), free since Oct 2025, with Android (Nov 2025) and iOS (Mar 2026) apps.",
+  "bestFor": [
+    "Perplexity users who want research and agents in the browser",
+    "People who want an AI browser on desktop and mobile",
+    "Chrome extension users"
+  ],
+  "notFor": [
+    "People worried about prompt-injection risks",
+    "Users wanting local or offline AI",
+    "Anyone needing full uBlock Origin"
+  ],
+  "pros": [
+    {
+      "title": "Free on all platforms",
+      "detail": "Paywall dropped Oct 2025; desktop and mobile apps are free to download."
+    },
+    {
+      "title": "Desktop and mobile",
+      "detail": "Windows, macOS, Android (Nov 2025) and iOS (Mar 2026)."
+    },
+    {
+      "title": "Strong research assistant",
+      "detail": "Perplexity answers and agent actions available in a sidebar on any page."
+    },
+    {
+      "title": "Chrome extension compatibility",
+      "detail": "Installs from the Chrome Web Store via \"Add to Comet\" (MV3)."
+    },
+    {
+      "title": "Enterprise option",
+      "detail": "Comet for Enterprise can be deployed through MDM."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Prompt-injection concerns",
+      "detail": "CometJacking and other disclosed attacks showed agent data-exfiltration risks."
+    },
+    {
+      "title": "Cloud-only AI",
+      "detail": "Page content and prompts go to Perplexity servers; no local model option."
+    },
+    {
+      "title": "No Linux build",
+      "detail": "Only Windows, macOS, Android and iOS."
+    },
+    {
+      "title": "Best features paywalled",
+      "detail": "Higher usage limits and the Computer feature need Pro/Max subscriptions."
+    }
+  ],
+  "signatureFeatures": [
+    "Comet Assistant",
+    "Agentic task running",
+    "Perplexity search integration",
+    "Android and iOS apps"
+  ],
+  "faq": [
+    {
+      "q": "Is Comet free?",
+      "a": "Yes, the browser has been free since Oct 2, 2025; paid Perplexity plans only raise AI limits and unlock extras."
+    },
+    {
+      "q": "Which platforms does it support?",
+      "a": "Windows 10+, macOS, Android 12+ and iOS 18+; no Linux build."
+    },
+    {
+      "q": "Does it support Chrome extensions?",
+      "a": "Yes via the Chrome Web Store, but only MV3; full uBlock Origin is unavailable."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-07",
+      "event": "Comet launches on Windows/macOS for Perplexity Max subscribers"
+    },
+    {
+      "date": "2025-10",
+      "event": "Paywall dropped; free to download"
+    },
+    {
+      "date": "2025-11",
+      "event": "Android app released"
+    },
+    {
+      "date": "2026-03",
+      "event": "iOS app released"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Chromium-based; Chrome import (details unverified)."
+  },
+  "alternatives": [
+    "dia",
+    "opera-neon",
+    "genspark",
+    "polar",
+    "norton-neo"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "history",
+        "tabs",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Perplexity account sync; item list unverified"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Chromium-class; third-party managers work as extensions"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "Chrome Web Store dropped MV2 on Aug 31, 2026; Yahoo review notes no uBlock Origin",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Assistant free; higher limits and Computer paid"
+    },
+    "privacy": {
+      "defaults": "Page context sent to Perplexity for AI; no tracker blocking beyond Chromium",
+      "telemetry": "Vendor telemetry; details not reviewed",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Perplexity",
+    "telemetry": "Not reviewed",
+    "drm": "Widevine (unverified)",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Not independently measured",
+    "languages": "Multi (unverified)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Launched Jul 9, 2025"
+      ],
+      "highlights": [
+        "Full desktop feature set"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS (Big Sur/Ventura per conflicting sources)",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Minimum macOS version differs across sources"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 12",
+      "arch": [],
+      "stores": [
+        "google-play"
+      ],
+      "notes": [
+        "Launched Nov 20, 2025"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -6,
+        "sync": 0
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS 18",
+      "arch": [],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "Launched Mar 18, 2026",
+        "WebKit engine per Apple rules"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -6,
+        "jsSpeed": -0.5
+      }
+    },
+    "linux": {
+      "status": "none",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "No Linux build"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Comet_(browser)",
+      "title": "Comet (browser) - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.perplexity.ai/help-center/comet/en/articles/11734716-extensions",
+      "title": "Extensions - Comet Browser Help Center",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://gizmodo.com/download/comet-browser",
+      "title": "Comet Browser download - Gizmodo",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.thekeyword.co/news/perplexity-comet-browser-free-all-platforms",
+      "title": "Perplexity drops Comet paywall - The Keyword",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/09/01/chrome-web-store-removes-manifest-v2-extensions/",
+      "title": "Chrome Web Store removes MV2 - PiunikaWeb",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Current version",
+    "Exact macOS minimum (sources conflict)",
+    "Sync item list",
+    "Whether Comet Plus is a separate paid add-on",
+    "A review says free worldwide from Mar 23, 2026 which conflicts with Oct 2025 date in Wikipedia"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "extension",
+      3,
+      "Only MV3 blockers such as uBO Lite"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      ""
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      ""
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "yes",
+      7,
+      "Assistant sidebar"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "yes",
+      8,
+      "Assistant in omnibox/sidebar"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "yes",
+      8,
+      "Chromium-based; installs MV3 extensions"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "Via userscript-manager extension (MV3)"
+    ],
+    "syncBookmarks": [
+      "partial",
+      5,
+      "Account sync, unverified items"
+    ],
+    "syncPasswords": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "syncTabs": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "yes",
+      7,
+      "Chrome import"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      9.5,
+      ""
+    ],
+    "aiSummarizer": [
+      "yes",
+      9,
+      ""
+    ],
+    "agenticBrowsing": [
+      "yes",
+      9,
+      "Comet Assistant agent; Computer for Max"
+    ],
+    "localAi": [
+      "no",
+      0,
+      "Cloud models"
+    ],
+    "aiKillSwitch": [
+      "no",
+      0,
+      "Assistant is core; no documented single off switch"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "partial",
+      5,
+      "Comet for Enterprise via MDM"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Chromium cold start, heavier than plain Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus AI layer; RAM-heavy",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs modern hardware; AI features add load",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3,
+      "AI features send page context to cloud; little blocking by default",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Only MV3 blockers such as uBO Lite are available",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      7.5,
+      "Chromium sandbox but CometJacking/injection disclosures",
+      "documented"
+    ],
+    "patchSpeed": [
+      7.5,
+      "Follows Chromium stable; lag not independently measured",
+      "editorial"
+    ],
+    "telemetry": [
+      3,
+      "Vendor telemetry; prompts processed in cloud",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab groups and search; no workspaces documented",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      8.5,
+      "Sidebar assistant, page summaries, agent tasks",
+      "documented"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "AI agent and memory; no VPN or wallet",
+      "editorial"
+    ],
+    "extensions": [
+      6.5,
+      "Chrome Web Store via Add to Comet; MV3 only",
+      "documented"
+    ],
+    "sync": [
+      5.5,
+      "Perplexity account sync; scope unverified",
+      "editorial"
+    ],
+    "passwords": [
+      5,
+      "Chromium-class plus third-party managers",
+      "editorial"
+    ],
+    "mobileApps": [
+      6.5,
+      "Android and iOS apps; iOS limited to WebKit",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "documented"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary layer over Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      4,
+      "Prompt-injection incidents; cloud processing of page data",
+      "editorial"
+    ],
+    "longevity": [
+      7,
+      "Well-funded vendor, multi-platform investment",
+      "editorial"
+    ],
+    "ai": [
+      9.5,
+      "Full assistant plus agent on desktop and mobile",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Chrome-like UI, free, assistant easy to start",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

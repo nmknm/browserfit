@@ -1,0 +1,732 @@
+{
+  "id": "w3m",
+  "name": "w3m",
+  "aliases": [
+    "w3m pager"
+  ],
+  "group": "minimal",
+  "developer": "Akinori Ito (original); community forks (tats/w3m, ~rkta/w3m)",
+  "hq": "Japan (original author)",
+  "businessModel": "None; volunteer-maintained free software",
+  "engine": "text",
+  "basedOn": "Independent",
+  "license": "MIT",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 1995,
+  "status": "maintenance",
+  "statusNote": "Original project inactive; community forks carry it (Debian uses tats/w3m)",
+  "version": {
+    "current": "0.5.6",
+    "date": "2026-01-23",
+    "upstream": "n/a (own text renderer)"
+  },
+  "channels": [
+    "Stable (forks)"
+  ],
+  "updateCadence": "Rare; fork releases when fixes accumulate",
+  "website": "https://w3m.sourceforge.net/",
+  "tags": [
+    "text-mode",
+    "terminal",
+    "tabs",
+    "pager"
+  ],
+  "pitch": "Text-mode browser and pager with tables, tabs and optional inline images.",
+  "summary": "w3m is a terminal browser that renders tables and frames, supports tabs, and can show inline images in capable terminals. Like Lynx it has no JavaScript, and upstream is largely inactive with forks carrying on.",
+  "bestFor": [
+    "Terminal users who want tabs and table rendering",
+    "Use as a pager/HTML viewer (mutt, Emacs w3m)",
+    "SSH-only systems"
+  ],
+  "notFor": [
+    "Anything needing JavaScript",
+    "Users who need an actively maintained, security-audited browser"
+  ],
+  "pros": [
+    {
+      "title": "Better layout than Lynx",
+      "detail": "Renders tables and frames in text, with tabs and mouse support."
+    },
+    {
+      "title": "Inline images",
+      "detail": "With w3m-img and a suitable terminal it can display images inline."
+    },
+    {
+      "title": "Great as a pager",
+      "detail": "Pipes HTML or text through it, and integrates with Emacs (emacs-w3m)."
+    },
+    {
+      "title": "Tiny and fast",
+      "detail": "Minimal RAM and instant startup."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Upstream inactive",
+      "detail": "Original project stalled; there are competing forks, so patch speed is uncertain."
+    },
+    {
+      "title": "No JavaScript",
+      "detail": "Modern sites and logins largely fail."
+    },
+    {
+      "title": "Security history",
+      "detail": "Memory-safety bugs have been reported in the C code base over the years."
+    }
+  ],
+  "signatureFeatures": [
+    "Tabs in a terminal",
+    "Table and frame rendering",
+    "Inline image display (w3m-img)",
+    "Emacs integration"
+  ],
+  "faq": [
+    {
+      "q": "Is w3m still maintained?",
+      "a": "The original project is not, but forks exist; Wikipedia lists 0.5.6 as of 2026-01-23 and a SourceHut fork still in development."
+    },
+    {
+      "q": "Does w3m support JavaScript?",
+      "a": "No."
+    },
+    {
+      "q": "Can w3m show images?",
+      "a": "Yes in supported terminals, usually via the separate w3m-img package."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "1995",
+      "event": "Created by Akinori Ito"
+    },
+    {
+      "date": "2011",
+      "event": "Debian-oriented fork by Tatsuya Kinoshita becomes the practical upstream"
+    },
+    {
+      "date": "2024",
+      "event": "Kinoshita steps away; new community fork (~rkta/w3m on SourceHut) starts"
+    },
+    {
+      "date": "2026-01",
+      "event": "0.5.6 listed as latest version"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No importers; bookmark file is local."
+  },
+  "alternatives": [
+    "lynx",
+    "qutebrowser",
+    "netsurf",
+    "dillo"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No password storage"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension system",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "No JavaScript; cookies can be disabled",
+      "telemetry": "None",
+      "jurisdiction": "Community project"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Configurable",
+    "telemetry": "None",
+    "drm": "None",
+    "codecs": "None",
+    "sandbox": "None",
+    "patchLag": "Distro/fork dependent",
+    "languages": "English, Japanese"
+  },
+  "platforms": {
+    "linux": {
+      "status": "active",
+      "minOs": "Any POSIX",
+      "arch": [
+        "x64",
+        "arm64",
+        "other"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "aur"
+      ],
+      "notes": [
+        "Debian ships the tats/w3m fork"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "Any with build tools",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "homebrew"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "beta",
+      "minOs": "Cygwin",
+      "arch": [
+        "x64"
+      ],
+      "stores": [],
+      "notes": [
+        "Via Cygwin only"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/W3m",
+      "title": "w3m - Wikipedia",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/tats/w3m",
+      "title": "tats/w3m on GitHub",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://w3m.sourceforge.net/",
+      "title": "w3m project site",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Which fork the 0.5.6 / 2026-01-23 version number refers to",
+    "Current security-patch cadence of each fork"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "No JS; cookies can be disabled"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      5,
+      "Minimal surface; no JS"
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      3,
+      "Cookie accept/reject settings"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry exists"
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "partial",
+      2,
+      "Ads mostly absent without JS/images"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "partial",
+      3,
+      "Tab list with selection"
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      4,
+      "Output is linear text"
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "partial",
+      3,
+      "U (URL) and search prompts"
+    ],
+    "mouseGestures": [
+      "partial",
+      2,
+      "Mouse clicks and menus only"
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7,
+      "Remappable keymap file"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      3,
+      "Basic save/external handler"
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "partial",
+      3,
+      "Via config / URL templates"
+    ],
+    "devtools": [
+      "partial",
+      1,
+      "Source view only"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      0,
+      "No JavaScript at all",
+      "documented"
+    ],
+    "pageLoad": [
+      3.5,
+      "Fast fetch; tables render, no CSS/JS",
+      "editorial"
+    ],
+    "networkSpeed": [
+      4,
+      "Basic HTTP/1.x only",
+      "editorial"
+    ],
+    "startup": [
+      10,
+      "Starts instantly in a terminal",
+      "editorial"
+    ],
+    "smoothness": [
+      5,
+      "Text scrolling only",
+      "editorial"
+    ],
+    "graphics": [
+      0,
+      "No WebGL or canvas; optional inline images only",
+      "editorial"
+    ],
+    "memory": [
+      10,
+      "A few MB of RAM",
+      "editorial"
+    ],
+    "cpu": [
+      10,
+      "Negligible CPU",
+      "editorial"
+    ],
+    "battery": [
+      10,
+      "Negligible power draw",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "Nothing to limit",
+      "editorial"
+    ],
+    "lowEnd": [
+      10,
+      "Runs on very old hardware",
+      "editorial"
+    ],
+    "installSize": [
+      10,
+      "Tiny binary",
+      "documented"
+    ],
+    "privacyDefaults": [
+      8,
+      "No JS; cookies configurable",
+      "editorial"
+    ],
+    "blocking": [
+      4,
+      "No filter lists; mostly relies on no-JS",
+      "editorial"
+    ],
+    "fingerprinting": [
+      8,
+      "Almost no fingerprintable surface",
+      "editorial"
+    ],
+    "securityHardening": [
+      4,
+      "No sandbox; C code with a memory-safety bug history",
+      "editorial"
+    ],
+    "patchSpeed": [
+      3,
+      "Upstream inactive; forks ship rarely",
+      "editorial"
+    ],
+    "telemetry": [
+      10,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      3,
+      "Colour and layout options",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      5.5,
+      "Keymap, mouse and option panel",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5.5,
+      "Options panel and config files",
+      "editorial"
+    ],
+    "tabManagement": [
+      3,
+      "Basic tabs in a terminal",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "URL templates in config",
+      "editorial"
+    ],
+    "downloads": [
+      3,
+      "Basic save / external handlers",
+      "editorial"
+    ],
+    "productivity": [
+      1.5,
+      "Pager use, no notes or reader",
+      "editorial"
+    ],
+    "media": [
+      0,
+      "No media playback",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "No translation",
+      "editorial"
+    ],
+    "extras": [
+      0,
+      "No extras",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extensions",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "No sync",
+      "editorial"
+    ],
+    "passwords": [
+      0,
+      "No password storage",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile app",
+      "documented"
+    ],
+    "webCompat": [
+      2,
+      "Static HTML, tables and frames only",
+      "editorial"
+    ],
+    "devTools": [
+      0,
+      "View source only",
+      "editorial"
+    ],
+    "accessibility": [
+      6,
+      "Linear text output; less documented than Lynx",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "MIT licensed, source on GitHub/SourceHut",
+      "documented"
+    ],
+    "businessTrust": [
+      8,
+      "Volunteer project, no business model",
+      "editorial"
+    ],
+    "longevity": [
+      4,
+      "Original upstream inactive; fragmented forks",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      1,
+      "Terminal only, vi-like keys",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

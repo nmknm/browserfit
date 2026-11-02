@@ -1,0 +1,753 @@
+{
+  "id": "seamonkey",
+  "name": "SeaMonkey",
+  "aliases": [
+    "SeaMonkey Internet Suite"
+  ],
+  "group": "forks",
+  "developer": "SeaMonkey Council (community)",
+  "hq": "Community project (no HQ)",
+  "businessModel": "Volunteer project; donations",
+  "engine": "gecko",
+  "basedOn": "Mozilla Application Suite / Gecko (2.53 line on Firefox 60 ESR codebase)",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2005,
+  "status": "maintenance",
+  "statusNote": "Still releasing (2.53.24 on 2026-07-28) but on an old Gecko 60 base; modern-site breakage acknowledged by the project",
+  "version": {
+    "current": "2.53.24",
+    "date": "2026-07-28",
+    "upstream": "Gecko 60 (Firefox 60 ESR branch)"
+  },
+  "channels": [
+    "Release",
+    "Beta"
+  ],
+  "updateCadence": "A couple of releases per year; 2.53.24 beta Jul 5, final Jul 28 2026",
+  "website": "https://www.seamonkey-project.org",
+  "tags": [
+    "suite",
+    "mail",
+    "irc",
+    "composer",
+    "legacy",
+    "gecko"
+  ],
+  "pitch": "All-in-one browser, mail, IRC and HTML composer suite descended from Netscape.",
+  "summary": "The community continuation of the Mozilla Application Suite: browser, mail/news, address book, ChatZilla IRC, and Composer in one app on an old Gecko 60 base. Still maintained but struggles with modern sites.",
+  "bestFor": [
+    "Users who want an integrated browser, mail, IRC and HTML editor",
+    "Fans of the classic Netscape/Mozilla suite",
+    "Legacy XPCOM add-on users"
+  ],
+  "notFor": [
+    "Anyone relying on modern web apps",
+    "Security-sensitive users",
+    "People needing WebExtensions or DRM"
+  ],
+  "pros": [
+    {
+      "title": "True all-in-one suite",
+      "detail": "Browser, mail/newsgroups, RSS, ChatZilla IRC, address book and Composer in one install."
+    },
+    {
+      "title": "Still updated",
+      "detail": "2.53.24 shipped on 2026-07-28 with platform-level fixes."
+    },
+    {
+      "title": "Open source",
+      "detail": "MPL-2.0 and community governed."
+    },
+    {
+      "title": "Highly configurable",
+      "detail": "Modern and Classic skins plus legacy add-on support."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Old Gecko base",
+      "detail": "Built on Firefox 60-era Gecko; the project admits many sites break because they require the latest Chrome or Firefox."
+    },
+    {
+      "title": "Security debt",
+      "detail": "No modern sandbox or site isolation; backports are limited."
+    },
+    {
+      "title": "Fewer platforms",
+      "detail": "x64 only now; Windows 7 x64+, macOS x64 and Linux x64."
+    },
+    {
+      "title": "Small team",
+      "detail": "A release slipped two weeks in 2026 due to infrastructure moving from Azure to OSUOSL."
+    }
+  ],
+  "signatureFeatures": [
+    "Integrated mail and news",
+    "ChatZilla IRC",
+    "HTML Composer",
+    "Classic and Modern skins"
+  ],
+  "faq": [
+    {
+      "q": "Is SeaMonkey still updated in 2026?",
+      "a": "Yes. 2.53.24 was released on 2026-07-28 and 2.53.23 earlier in 2026."
+    },
+    {
+      "q": "Does it run on 32-bit systems?",
+      "a": "No. 2.53.21 was the last release with 32-bit Windows and Linux builds."
+    },
+    {
+      "q": "Does it run on Windows 7?",
+      "a": "The 2.53.24 release page says Windows 7 x64 and higher; Wikipedia said 2.53.23 was the last for Win 7/8, so there is a discrepancy."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2005",
+      "event": "SeaMonkey 1.0 continues Mozilla Application Suite"
+    },
+    {
+      "date": "2.53.21 era",
+      "event": "Last release with 32-bit Windows/Linux builds (date unverified)"
+    },
+    {
+      "date": "2026-07-05",
+      "event": "2.53.24 Beta 1"
+    },
+    {
+      "date": "2026-07-28",
+      "event": "2.53.24 stable released"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "mail",
+      "passwords",
+      "history"
+    ],
+    "note": "Imports Thunderbird/Firefox/Netscape profile data; add-ons must be legacy-compatible."
+  },
+  "alternatives": [
+    "pale-moon",
+    "firefox",
+    "thunderbird",
+    "basilisk"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No browser sync"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Built-in store with master password"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Legacy XPCOM add-ons; limited WebExtension support unverified",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "No tracker blocking by default",
+      "telemetry": "No telemetry reporting (unverified)",
+      "jurisdiction": "Community project"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified, changeable",
+    "telemetry": "None (unverified)",
+    "drm": "No Widevine",
+    "codecs": "Gecko 60 era (H.264 via system libs, VP9)",
+    "sandbox": "Gecko 60 content sandbox limited; no Fission",
+    "patchLag": "Years behind Mozilla; backports by volunteers",
+    "languages": "24-26"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 7 x64",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Unsigned installer; verify checksums",
+        "Win 7 status conflicts across sources"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "x64 only"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "x64 distros",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "x64 only; internal updater issues reported"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "no",
+      0
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0,
+      "Gecko 60 predates DoH"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      9,
+      "No telemetry"
+    ],
+    "privateHardening": [
+      "partial",
+      3
+    ],
+    "adBlocker": [
+      "extension",
+      5,
+      "Legacy XUL/UXP add-ons"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      5
+    ],
+    "customFilterLists": [
+      "extension",
+      5
+    ],
+    "youtubeAds": [
+      "extension",
+      4
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "extension",
+      5
+    ],
+    "tabGroups": [
+      "extension",
+      4,
+      "Add-on only; Panorama removed"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "yes",
+      7
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "partial",
+      4,
+      "Composer for HTML authoring (not a notes app)"
+    ],
+    "webPanels": [
+      "partial",
+      4,
+      "Sidebar panels"
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "extension",
+      6
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "yes",
+      6,
+      "Mail, news, RSS, IRC; calendar via add-on"
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "partial",
+      3,
+      "Only legacy-compatible add-ons"
+    ],
+    "mv2Support": [
+      "partial",
+      3,
+      "Legacy XPCOM add-ons"
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      7,
+      "Legacy Greasemonkey-type add-ons"
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "yes",
+      7
+    ],
+    "passwordManager": [
+      "yes",
+      4,
+      "Basic, optional master password"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "partial",
+      3
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "partial",
+      3
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6,
+      "Modern and Classic skins plus themes"
+    ],
+    "customSearchEngines": [
+      "yes",
+      8
+    ],
+    "devtools": [
+      "yes",
+      6,
+      "Gecko 60 DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      3.5,
+      "Gecko 60 SpiderMonkey, far behind current engines",
+      "documented"
+    ],
+    "pageLoad": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "networkSpeed": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "startup": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "smoothness": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "graphics": [
+      3.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "battery": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "resourceControls": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lowEnd": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "blocking": [
+      3.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "fingerprinting": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "securityHardening": [
+      3,
+      "Old Gecko, no Fission or modern sandbox",
+      "documented"
+    ],
+    "patchSpeed": [
+      3,
+      "Volunteer backports to Gecko 60; years behind Mozilla",
+      "documented"
+    ],
+    "telemetry": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lookCustom": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      7,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "advancedSettings": [
+      8.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "tabManagement": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "searchFreedom": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "productivity": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "media": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extras": [
+      6.5,
+      "Mail, news, IRC, Composer in one suite",
+      "documented"
+    ],
+    "extensions": [
+      3.5,
+      "Legacy add-ons only; small ecosystem",
+      "documented"
+    ],
+    "sync": [
+      0,
+      "No sync",
+      "documented"
+    ],
+    "passwords": [
+      3.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "Desktop only",
+      "documented"
+    ],
+    "webCompat": [
+      3,
+      "Gecko 60 base; project says many sites break on old engines",
+      "documented"
+    ],
+    "devTools": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "accessibility": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "openSource": [
+      9.5,
+      "MPL-2.0, community governed",
+      "documented"
+    ],
+    "businessTrust": [
+      8,
+      "Community governed, no monetisation",
+      "documented"
+    ],
+    "longevity": [
+      4.5,
+      "Still releasing but old base and small team",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      4.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.seamonkey-project.org/releases/2.53.24",
+      "title": "SeaMonkey 2.53.24 release page",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blog.seamonkey-project.org/2026/07/29/seamonkey-2-53-24-is-out/",
+      "title": "SeaMonkey 2.53.24 is out",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blog.seamonkey-project.org/2026/07/06/seamonkey-2-53-24b1-is-out-now/",
+      "title": "SeaMonkey 2.53.24b1",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/SeaMonkey",
+      "title": "SeaMonkey - Wikipedia",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Windows 7 support scope (release page vs Wikipedia)",
+    "Whether telemetry is fully absent",
+    "WebExtension support status in 2.53",
+    "macOS minimum version",
+    "DoH support"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

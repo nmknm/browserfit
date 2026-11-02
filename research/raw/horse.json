@@ -1,0 +1,680 @@
+{
+  "id": "horse",
+  "name": "Horse",
+  "aliases": [
+    "Horse Browser"
+  ],
+  "group": "power",
+  "developer": "Unverified",
+  "hq": "Unknown",
+  "businessModel": "Unknown",
+  "engine": "blink",
+  "basedOn": "Chromium (Electron)",
+  "license": "Unverified",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2026,
+  "status": "beta",
+  "statusNote": "Little public information; built with Electron",
+  "version": {
+    "current": "Not verified",
+    "date": "2026-10-25",
+    "upstream": "Chromium via Electron"
+  },
+  "channels": [
+    "Unknown"
+  ],
+  "updateCadence": "Unknown",
+  "website": "https://flaviocopes.com/alternative-browsers/",
+  "tags": [
+    "trails",
+    "electron",
+    "organization"
+  ],
+  "pitch": "Organizes browsing into nested \"Trails\" instead of flat tabs.",
+  "summary": "Horse is an Electron-built browser that structures browsing as nested trails. Details beyond that are unverified.",
+  "bestFor": [
+    "Curious users who like non-linear browsing"
+  ],
+  "notFor": [
+    "Anyone needing a documented, supported browser"
+  ],
+  "pros": [
+    {
+      "title": "Trails model",
+      "detail": "Nested organization of browsing."
+    },
+    {
+      "title": "Chromium compatibility",
+      "detail": "Via Electron."
+    },
+    {
+      "title": "Novel UI",
+      "detail": "Different from tab strips."
+    },
+    {
+      "title": "Chrome-compatible rendering",
+      "detail": "Electron/Chromium renders most sites."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Unverified project",
+      "detail": "Sparse documentation."
+    },
+    {
+      "title": "Electron overhead",
+      "detail": "Not a full browser stack."
+    },
+    {
+      "title": "Unknown security posture",
+      "detail": "No audit info."
+    }
+  ],
+  "signatureFeatures": [
+    "Trails",
+    "Nested browsing",
+    "Electron-based"
+  ],
+  "faq": [
+    {
+      "q": "What is Horse?",
+      "a": "An Electron-based browser with nested Trails."
+    },
+    {
+      "q": "Which engine?",
+      "a": "Chromium through Electron."
+    },
+    {
+      "q": "Is it mature?",
+      "a": "Unverified; very little information is available."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "Mentioned in 50-browser comparison"
+    },
+    {
+      "date": "2026-10",
+      "event": "No stable release data found"
+    },
+    {
+      "date": "2026-10-29",
+      "event": "Researched; low confidence"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Unverified."
+  },
+  "alternatives": [
+    "arc",
+    "sigmaos",
+    "wavebox",
+    "zen"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Unverified"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": ""
+    },
+    "mv2": {
+      "level": "none",
+      "note": "Electron/Chromium",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Unverified"
+    },
+    "privacy": {
+      "defaults": "Unverified",
+      "telemetry": "Unverified",
+      "jurisdiction": "Unknown"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Unverified",
+    "drm": "Unverified",
+    "codecs": "Electron/Chromium",
+    "sandbox": "Electron",
+    "patchSpeed": "Unverified",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "macos": {
+      "status": "beta",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [],
+      "notes": [
+        "Platforms unverified; assumed desktop"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://flaviocopes.com/alternative-browsers/",
+      "title": "Flavio Copes: 50 browsers compared",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://daily.dev/posts/chrome-alternatives-in-2026-50-web-browsers-compared-tabxftitm",
+      "title": "daily.dev: Chrome alternatives 2026",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://toolfolio.com/articles/best-arc-browser-alternatives-for-mac-and-windows-after-the-december-2026-shutdown-dia-zen-and-ai-browsers",
+      "title": "Toolfolio: Arc alternatives",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Developer",
+    "Platforms",
+    "Version",
+    "Licence",
+    "Everything except Electron/Trails"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "partial",
+      2
+    ],
+    "httpsOnly": [
+      "yes",
+      7
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "no",
+      0
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3
+    ],
+    "customFilterLists": [
+      "extension",
+      3
+    ],
+    "youtubeAds": [
+      "extension",
+      2
+    ],
+    "cookieBanners": [
+      "extension",
+      3
+    ],
+    "verticalTabs": [
+      "yes",
+      7
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      5
+    ],
+    "tabSleeping": [
+      "yes",
+      7
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "partial",
+      3
+    ],
+    "readerMode": [
+      "yes",
+      5
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "partial",
+      4
+    ],
+    "pip": [
+      "yes",
+      7
+    ],
+    "screenshots": [
+      "partial",
+      3
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      5
+    ],
+    "readLater": [
+      "yes",
+      6
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      6
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      4
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      7
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "partial",
+      3
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI found"
+    ],
+    "translation": [
+      "partial",
+      3
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      9
+    ],
+    "kioskMode": [
+      "yes",
+      8
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "pageLoad": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "networkSpeed": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "startup": [
+      8,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "graphics": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "resourceControls": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lowEnd": [
+      6,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "blocking": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "securityHardening": [
+      5,
+      "Electron-based",
+      "editorial"
+    ],
+    "patchSpeed": [
+      4,
+      "Unverified",
+      "editorial"
+    ],
+    "telemetry": [
+      6.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "lookCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Trails concept (unverified)",
+      "editorial"
+    ],
+    "searchFreedom": [
+      7,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "downloads": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "productivity": [
+      5.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "media": [
+      3,
+      "No Widevine",
+      "editorial"
+    ],
+    "translation": [
+      3.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extras": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "extensions": [
+      1,
+      "Unverified",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "None known",
+      "editorial"
+    ],
+    "passwords": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "None",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "devTools": [
+      10,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "accessibility": [
+      8.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "openSource": [
+      9,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "businessTrust": [
+      3,
+      "Unknown",
+      "editorial"
+    ],
+    "longevity": [
+      1.5,
+      "Unknown project",
+      "editorial"
+    ],
+    "ai": [
+      2.5,
+      "Baseline from chromium; not separately evaluated",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      3.5,
+      "Unusual model",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

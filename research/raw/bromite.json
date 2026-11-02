@@ -1,0 +1,693 @@
+{
+  "id": "bromite",
+  "name": "Bromite",
+  "aliases": [],
+  "group": "forks",
+  "developer": "csagan5",
+  "hq": "Independent developer (jurisdiction unverified)",
+  "businessModel": "Volunteer open-source project",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "GPL-3.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2017,
+  "status": "discontinued",
+  "statusNote": "Last release v108.0.5359.156 in December 2022; superseded by Cromite",
+  "version": {
+    "current": "108.0.5359.156",
+    "date": "2022-12",
+    "upstream": "Chromium 108"
+  },
+  "channels": [],
+  "updateCadence": "Discontinued; no updates since Dec 2022",
+  "website": "https://github.com/bromite/bromite",
+  "tags": [
+    "android",
+    "discontinued",
+    "adblock",
+    "privacy"
+  ],
+  "pitch": "Discontinued Android Chromium fork with built-in ad blocking; replaced by Cromite.",
+  "summary": "A privacy-focused Android Chromium fork with built-in ad blocking and fingerprint patches, abandoned after v108 in Dec 2022. It is now dangerously out of date; use Cromite instead.",
+  "bestFor": [
+    "Historical reference only"
+  ],
+  "notFor": [
+    "Anyone browsing today: unpatched since Chromium 108",
+    "Users needing extensions or sync"
+  ],
+  "pros": [
+    {
+      "title": "Historic pioneer",
+      "detail": "Early Android Chromium fork with built-in ad blocking and no Google services."
+    },
+    {
+      "title": "Open source",
+      "detail": "GPL-3.0 patch set that lives on in Cromite."
+    },
+    {
+      "title": "Lightweight",
+      "detail": "Chromium-based without Google integration bloat."
+    },
+    {
+      "title": "Privacy features",
+      "detail": "Anti-fingerprint patches and DNS-over-HTTPS in its heyday."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Unpatched since 2022",
+      "detail": "Chromium 108 has many known vulnerabilities."
+    },
+    {
+      "title": "Developer unresponsive",
+      "detail": "AlternativeTo says the developer is not responding to questions."
+    },
+    {
+      "title": "No extensions or sync",
+      "detail": "Android-only, no extension support."
+    }
+  ],
+  "signatureFeatures": [
+    "Built-in ad blocking",
+    "Anti-fingerprinting patches",
+    "No Google services"
+  ],
+  "faq": [
+    {
+      "q": "Is Bromite still maintained?",
+      "a": "No. The last version, v108.0.5359.156, appeared in December 2022."
+    },
+    {
+      "q": "What should I use instead?",
+      "a": "Cromite, a community fork of Bromite that is actively updated."
+    },
+    {
+      "q": "Is it safe to keep using?",
+      "a": "No, it is missing years of Chromium security fixes."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Project launched (per WebBrowserDirectory)"
+    },
+    {
+      "date": "2022-12",
+      "event": "Final release v108.0.5359.156"
+    },
+    {
+      "date": "2023",
+      "event": "Cromite fork created; \"Bromite is Dead\" issue points users there"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Move to Cromite; no sync to migrate."
+  },
+  "alternatives": [
+    "cromite",
+    "brave",
+    "vanadium",
+    "firefox"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": ""
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension support",
+      "date": "2022"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "Built-in blocking as of 2022",
+      "telemetry": "No Google services",
+      "jurisdiction": "Independent developer"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Configurable",
+    "telemetry": "None documented",
+    "drm": "None",
+    "codecs": "Chromium 108 era",
+    "sandbox": "Chromium 108 sandbox (unpatched)",
+    "patchLag": "None since Dec 2022 (several years behind)",
+    "languages": "Chromium locales"
+  },
+  "platforms": {
+    "android": {
+      "status": "discontinued",
+      "minOs": "Android 6+ (unverified)",
+      "arch": [
+        "arm64",
+        "arm",
+        "x64"
+      ],
+      "stores": [
+        "github",
+        "f-droid"
+      ],
+      "notes": [
+        "Own F-Droid repo (historical, unverified)",
+        "No updates since 2022-12"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      5,
+      "Built-in at 2022 level"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      5
+    ],
+    "httpsOnly": [
+      "partial",
+      4
+    ],
+    "doh": [
+      "yes",
+      6
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      8,
+      "No Google services"
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "yes",
+      5,
+      "Built-in"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      3
+    ],
+    "customFilterLists": [
+      "yes",
+      5
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "partial",
+      3
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "partial",
+      3,
+      "Distill page"
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "yes",
+      5
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "partial",
+      3
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      3
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "yes",
+      6
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      5
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      5
+    ],
+    "customThemes": [
+      "no",
+      0
+    ],
+    "customSearchEngines": [
+      "yes",
+      6
+    ],
+    "devtools": [
+      "partial",
+      4,
+      "Remote debugging only"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      2,
+      "Old V8 (Chromium 108)",
+      "documented"
+    ],
+    "pageLoad": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "networkSpeed": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "startup": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "smoothness": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "graphics": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "memory": [
+      5.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      8,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "blocking": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "fingerprinting": [
+      6.5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "securityHardening": [
+      0.5,
+      "Chromium 108 with years of unpatched CVEs",
+      "documented"
+    ],
+    "patchSpeed": [
+      0,
+      "No patches since Dec 2022",
+      "documented"
+    ],
+    "telemetry": [
+      9,
+      "No Google services or analytics",
+      "documented"
+    ],
+    "lookCustom": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "tabManagement": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "downloads": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "productivity": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "media": [
+      3,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extras": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extension support",
+      "documented"
+    ],
+    "sync": [
+      0,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "passwords": [
+      0,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "mobileApps": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "webCompat": [
+      3,
+      "Chromium 108 fails on newer web APIs",
+      "documented"
+    ],
+    "devTools": [
+      2,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "accessibility": [
+      5,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ],
+    "openSource": [
+      9,
+      "GPL-3.0 patch set, forked into Cromite",
+      "documented"
+    ],
+    "businessTrust": [
+      4,
+      "Developer unresponsive; project abandoned",
+      "documented"
+    ],
+    "longevity": [
+      0,
+      "Discontinued Dec 2022",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      4,
+      "Editorial estimate against field anchors",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://alternativeto.net/software/bromite/?platform=android",
+      "title": "Bromite alternatives - AlternativeTo",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/bromite/bromite/issues/2641",
+      "title": "Bromite is Dead, Use Cromite Instead",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.webbrowserdirectory.com/browsers/bromite/",
+      "title": "Bromite - WebBrowserDirectory",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://privacytools.io/app/cromite",
+      "title": "Cromite review - PrivacyTools.io",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Exact first-release year (2017 per directory; first builds possibly 2018)",
+    "Minimum Android version",
+    "Developer jurisdiction",
+    "Exact December 2022 release date"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

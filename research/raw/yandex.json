@@ -1,0 +1,850 @@
+{
+  "id": "yandex",
+  "name": "Yandex Browser",
+  "aliases": [
+    "Yandex Browser with Alice AI",
+    "Яндекс Браузер",
+    "Yandex Browser Alpha"
+  ],
+  "group": "regional",
+  "developer": "Yandex LLC",
+  "hq": "Russia",
+  "businessModel": "Yandex ecosystem: search and display ads, Dzen feed, Yandex Plus; browser is a free funnel to Yandex services and Alice AI",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary (Chromium BSD components)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2012,
+  "status": "active",
+  "statusNote": "Rebranded \"Yandex Browser with Alice AI\" (Android listings); mainly used in Russia/CIS",
+  "version": {
+    "current": "26.10.0.1852 (Win/macOS), 26.10.2.125 (Android), 26.10.3.674 (iOS)",
+    "date": "2026-10-26",
+    "upstream": "Chromium (exact base version not published in sources found)"
+  },
+  "channels": [
+    "Release",
+    "Beta",
+    "Alpha (Android, Google Play)"
+  ],
+  "updateCadence": "Desktop roughly monthly; Android point releases about weekly (YY.M.x numbering)",
+  "website": "https://browser.yandex.com",
+  "tags": [
+    "regional",
+    "russia",
+    "chromium",
+    "ai",
+    "video-translation",
+    "chrome-extensions"
+  ],
+  "pitch": "Chromium browser from Russia with Alice AI, video translation and Chrome store access.",
+  "summary": "Yandex Browser is a Chromium-based browser from Russian search company Yandex, tightly integrated with Yandex services and the Alice AI assistant. Strong on features, but data flows to Yandex under Russian jurisdiction.",
+  "bestFor": [
+    "Russian-speaking users inside the Yandex ecosystem",
+    "People who want video voice-translation and an AI assistant built in",
+    "Android users wanting Chrome Web Store extensions (Alpha/stable)"
+  ],
+  "notFor": [
+    "Anyone concerned about Russian-jurisdiction data handling",
+    "Privacy-focused users (typed URLs and telemetry go to Yandex)",
+    "Users outside Russia/CIS wanting English-first UX and support"
+  ],
+  "pros": [
+    {
+      "title": "Alice AI built in",
+      "detail": "Alice AI can chat over any open page in split view (added March 2026), summarise and generate text and images."
+    },
+    {
+      "title": "Chrome Web Store access",
+      "detail": "Installs Chromium extensions on desktop and, uniquely among mobile browsers, on Android (Alpha and stable per Play listings)."
+    },
+    {
+      "title": "Built-in ad blocking and Protect",
+      "detail": "Ad blocker, Protect security system, Kaspersky download scanning and DNSCrypt support are included."
+    },
+    {
+      "title": "Video translation",
+      "detail": "Voice-translates foreign-language video, a signature feature rivals lack."
+    },
+    {
+      "title": "All five platforms",
+      "detail": "Windows, macOS, Linux, Android and iOS with Yandex ID sync."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Weak privacy",
+      "detail": "A Trinity College Dublin study (Leith) reported hashed hardware ID and typed URLs sent to Yandex."
+    },
+    {
+      "title": "Russian jurisdiction",
+      "detail": "Subject to Russian data laws; some governments and employers restrict it."
+    },
+    {
+      "title": "Russian-first UX",
+      "detail": "Much of the interface and many features default to Russian regions; location choices are limited to Russia/CIS/Turkey."
+    },
+    {
+      "title": "Opaque Chromium lag",
+      "detail": "Yandex does not publish its Chromium base per release, so patch speed cannot be verified."
+    }
+  ],
+  "signatureFeatures": [
+    "Alice AI assistant",
+    "Video voice translation",
+    "Protect security",
+    "Chrome Web Store on Android"
+  ],
+  "faq": [
+    {
+      "q": "Does Yandex Browser Alpha for Android support Chrome extensions?",
+      "a": "Yes. The Google Play listing says it works with Chromium extension stores such as the Chrome Web Store. One recent review reports connection problems after an update."
+    },
+    {
+      "q": "Is Yandex Browser safe to use?",
+      "a": "It uses the Chromium sandbox plus Yandex Protect, but it sends browsing data to Yandex, a company subject to Russian law."
+    },
+    {
+      "q": "Who owns Yandex Browser now?",
+      "a": "The browser is developed by Yandex LLC in Russia; the Russian business was separated from Yandex N.V. in 2024 (not re-verified for this entry)."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2012-10",
+      "event": "First public release, Chromium-based"
+    },
+    {
+      "date": "2020",
+      "event": "Trinity College Dublin (Leith) study ranked Yandex among the least private browsers tested"
+    },
+    {
+      "date": "2026-03",
+      "event": "Alice AI dialog over any web page in split view"
+    },
+    {
+      "date": "2026-05",
+      "event": "Android build 26.4.2.107 pitched as first Russian browser with built-in AI assistant (per third-party coverage)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Versions 26.10 released on desktop, Android and iOS; Alpha 26.10.2.26 on Google Play"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Imports from Chrome, Firefox, Edge, Opera and others; Yandex ID sync."
+  },
+  "alternatives": [
+    "chrome",
+    "opera",
+    "naver-whale",
+    "vivaldi"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "settings",
+        "extensions"
+      ],
+      "crossOs": true,
+      "note": "Yandex ID account sync; not end-to-end encrypted by default"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Built-in password manager with optional master password"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Desktop loads Chrome Web Store and Opera add-ons; MV2 handling in 2026 not confirmed",
+      "date": "2026"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "chrome-web-store",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "on-by-default",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "Alice AI integrated into toolbar/sidebar; Yandex Plus gives higher limits (unverified)"
+    },
+    "privacy": {
+      "defaults": "Ad blocker and Protect on; typed URLs and telemetry sent to Yandex",
+      "telemetry": "Usage and URL data sent to Yandex, opt-out partly available",
+      "jurisdiction": "Russia"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Yandex Search",
+    "telemetry": "Hashed device ID and typed URL/telemetry sent to Yandex (Leith study)",
+    "drm": "Widevine",
+    "codecs": "H.264, VP9, AV1 (hw), HEVC (hw)",
+    "sandbox": "Chromium sandbox + site isolation + Yandex Protect",
+    "patchLag": "Not published; follows Chromium with unspecified delay",
+    "languages": "14 (Wikipedia)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 7 per Wikipedia (current minimum unverified)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Latest 26.10.0.1852 (2026-10-26)"
+      ],
+      "highlights": [
+        "Alice AI split view",
+        "Video translation"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 10.15",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "26.10 line"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "x64 distro",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "deb",
+        "rpm"
+      ],
+      "notes": [
+        "Linux build trails (26.8.1 on comss.ru as of 2026-10-07)"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "patchSpeed": -1
+      }
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 5.0 per Wikipedia",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "Also on RuStore (not in vocabulary)",
+        "Yandex Browser (alpha) com.yandex.browser.alpha on Google Play supports Chrome Web Store extensions",
+        "Stable build uses Alice AI branding"
+      ],
+      "highlights": [
+        "Chrome Web Store extensions on mobile"
+      ],
+      "scoreDelta": {
+        "extensions": 0,
+        "mobileApps": 0
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS 11 per Wikipedia",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine (Apple rule)",
+        "Latest 26.10.3.674 (2026-10-22)"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -6,
+        "jsSpeed": -1
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      5,
+      "Ad/tracker blocking via built-in lists; Protect"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "partial",
+      5,
+      "HTTPS upgrade and warnings"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "DNSCrypt pioneer; DoH via Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      3,
+      "Chromium partitioning only"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      4,
+      "Some toggles, URL data still sent for Protect"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Incognito mode"
+    ],
+    "adBlocker": [
+      "yes",
+      7,
+      "Built-in Antishock ad blocker"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      6
+    ],
+    "customFilterLists": [
+      "partial",
+      3
+    ],
+    "youtubeAds": [
+      "partial",
+      5
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "partial",
+      5,
+      "Side tab panel option; unverified in 2026"
+    ],
+    "tabGroups": [
+      "yes",
+      6
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "yes",
+      7,
+      "Alice AI split view and side-by-side"
+    ],
+    "tabSleeping": [
+      "yes",
+      6,
+      "Unloads background tabs"
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      7
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      8,
+      "Reader mode with fonts/themes"
+    ],
+    "notes": [
+      "partial",
+      4,
+      "Collections"
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "Sidebar with Alice and services"
+    ],
+    "pip": [
+      "yes",
+      8,
+      "Video pop-up"
+    ],
+    "screenshots": [
+      "yes",
+      6
+    ],
+    "commandBar": [
+      "partial",
+      5,
+      "Smart Box address bar commands"
+    ],
+    "mouseGestures": [
+      "yes",
+      7
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "yes",
+      5,
+      "Collections"
+    ],
+    "mailCalendarRss": [
+      "partial",
+      5,
+      "Yandex Mail/Calendar widgets via Yandex ID"
+    ],
+    "chromeWebStore": [
+      "yes",
+      7,
+      "Desktop and Android"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      5,
+      "Unconfirmed for 2026"
+    ],
+    "uboFull": [
+      "partial",
+      5,
+      "uBO MV2 may run if MV2 still supported (unverified)"
+    ],
+    "mobileExtensions": [
+      "yes",
+      7,
+      "Android via Chrome Web Store"
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "Via Tampermonkey"
+    ],
+    "syncBookmarks": [
+      "yes",
+      7
+    ],
+    "syncPasswords": [
+      "yes",
+      7
+    ],
+    "syncTabs": [
+      "yes",
+      7
+    ],
+    "e2eeSync": [
+      "partial",
+      4,
+      "Optional passphrase for passwords"
+    ],
+    "profiles": [
+      "yes",
+      6
+    ],
+    "passwordManager": [
+      "yes",
+      6
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      8
+    ],
+    "widevine": [
+      "yes",
+      8
+    ],
+    "netflix4k": [
+      "partial",
+      5,
+      "Netflix not officially offered in Russia; depends on region"
+    ],
+    "hevc": [
+      "yes",
+      7
+    ],
+    "av1": [
+      "yes",
+      7
+    ],
+    "hwDecode": [
+      "yes",
+      8
+    ],
+    "aiAssistant": [
+      "yes",
+      8,
+      "Alice AI"
+    ],
+    "aiSummarizer": [
+      "yes",
+      8,
+      "Page and video retelling"
+    ],
+    "agenticBrowsing": [
+      "partial",
+      4,
+      "Alice executes some tasks; scope unconfirmed"
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "partial",
+      4,
+      "Individual toggles, no single switch confirmed"
+    ],
+    "translation": [
+      "yes",
+      8,
+      "Page translation plus voice video translation"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "yes",
+      7
+    ],
+    "enterprisePolicies": [
+      "partial",
+      5,
+      "Corporate edition with policies"
+    ],
+    "kioskMode": [
+      "partial",
+      3
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      7,
+      "Wallpaper library, animated backgrounds"
+    ],
+    "customSearchEngines": [
+      "yes",
+      6
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "Chromium V8, base version lags upstream",
+      "editorial"
+    ],
+    "pageLoad": [
+      8,
+      "Blink engine, plus Yandex services in start page",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "Chromium network stack; QUIC/HTTP3",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Heavier start page and services",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Blink compositing",
+      "editorial"
+    ],
+    "graphics": [
+      8.5,
+      "Chromium WebGL/WebGPU, lagging base",
+      "editorial"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus extra services",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Chromium baseline, background services",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      6.5,
+      "Tab unloading, power saving mode",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Heavy for old hardware",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Large installer with Yandex components",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3,
+      "Typed URLs and device ID sent to Yandex",
+      "documented"
+    ],
+    "blocking": [
+      6.5,
+      "Built-in Antishock blocker, limited custom lists",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance",
+      "editorial"
+    ],
+    "securityHardening": [
+      8.5,
+      "Chromium sandbox + Protect + Kaspersky scans",
+      "documented"
+    ],
+    "patchSpeed": [
+      7,
+      "Chromium-based; exact lag unpublished",
+      "editorial"
+    ],
+    "telemetry": [
+      2,
+      "Leith study: URL and ID leakage; Russian jurisdiction",
+      "documented"
+    ],
+    "lookCustom": [
+      6.5,
+      "Wallpaper library, themes, animated backgrounds",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6.5,
+      "Mouse gestures, smart box rules",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6,
+      "Chromium flags plus Yandex settings",
+      "editorial"
+    ],
+    "tabManagement": [
+      6.5,
+      "Groups, side panel, split view",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6.5,
+      "Can change default but Yandex pushed",
+      "editorial"
+    ],
+    "downloads": [
+      6.5,
+      "Chromium downloads plus Yandex scanning",
+      "editorial"
+    ],
+    "productivity": [
+      8,
+      "Alice AI, reader, PiP, video translation",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Widevine, hw decode, PiP",
+      "editorial"
+    ],
+    "translation": [
+      8,
+      "Page translate plus voice video translation",
+      "editorial"
+    ],
+    "extras": [
+      7,
+      "Alice, Protect, Dzen, smart camera",
+      "editorial"
+    ],
+    "extensions": [
+      7,
+      "Chrome Web Store on desktop and Android",
+      "editorial"
+    ],
+    "sync": [
+      6.5,
+      "Yandex ID sync, all five platforms",
+      "editorial"
+    ],
+    "passwords": [
+      6,
+      "Built-in manager, no passkeys",
+      "editorial"
+    ],
+    "mobileApps": [
+      8,
+      "Android and iOS full-featured; Android Chrome extensions",
+      "editorial"
+    ],
+    "webCompat": [
+      9,
+      "Blink",
+      "editorial"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary on top of Chromium",
+      "editorial"
+    ],
+    "businessTrust": [
+      2.5,
+      "Russian jurisdiction and ad-driven ecosystem",
+      "editorial"
+    ],
+    "longevity": [
+      8,
+      "Large Russian user base, frequent releases",
+      "editorial"
+    ],
+    "ai": [
+      8.5,
+      "Alice AI deeply integrated, video retelling",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Polished Chrome-like UX, Russian-first",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.whatismybrowser.com/guides/the-latest-version/yandex-browser",
+      "title": "WhatIsMyBrowser - latest Yandex Browser versions",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Yandex_Browser",
+      "title": "Wikipedia - Yandex Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.yandex.browser.alpha&hl=en_US",
+      "title": "Google Play - Yandex Browser (alpha)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.rustore.ru/catalog/app/com.yandex.browser/versions",
+      "title": "RuStore - Yandex Browser versions",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.makeuseof.com/android-browsers-that-run-extensions-chrome-keeps-leaving-out/",
+      "title": "MakeUseOf - Android browsers with extensions",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://browsers.to/yandex-browser",
+      "title": "browsers.to - Yandex Browser",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Chromium base version of the 26.10 releases",
+    "Whether MV2 extensions still work on desktop in 2026",
+    "Vertical-tab support in current builds",
+    "Current minimum Windows version",
+    "Alice AI paid limits via Yandex Plus",
+    "2024 split of Yandex N.V. and current legal owner details"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

@@ -1,0 +1,743 @@
+{
+  "id": "mullvad-browser",
+  "name": "Mullvad Browser",
+  "aliases": [],
+  "group": "privacy",
+  "developer": "Mullvad VPN AB with the Tor Project",
+  "hq": "Sweden",
+  "businessModel": "Funded by Mullvad VPN AB; free product, no ads or data collection",
+  "engine": "gecko",
+  "basedOn": "Firefox ESR / Tor Browser",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 2023,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "15.0.26",
+    "date": "2026-10-21",
+    "upstream": "Firefox ESR 140"
+  },
+  "channels": [
+    "Stable",
+    "Alpha (16.0a14)"
+  ],
+  "updateCadence": "Mirrors Tor Browser stable releases, roughly every 2-4 weeks",
+  "website": "https://mullvad.net/en/browser",
+  "tags": [
+    "privacy",
+    "anti-fingerprinting",
+    "tor-browser-fork",
+    "vpn"
+  ],
+  "pitch": "Tor Browser's fingerprinting defences without Tor, meant to pair with a VPN.",
+  "summary": "Tor Browser's hardening on Firefox ESR without the Tor network: uniform fingerprints, letterboxing, uBlock Origin preinstalled and private mode by default. Desktop only.",
+  "bestFor": [
+    "VPN users who want anti-fingerprinting",
+    "People who want Tor-Browser-level uniformity at normal speed",
+    "Those who want strong defaults without configuration"
+  ],
+  "notFor": [
+    "People needing sync and password saving",
+    "Anyone who wants Tor network anonymity",
+    "Streaming and DRM users"
+  ],
+  "pros": [
+    {
+      "title": "Uniform fingerprint",
+      "detail": "Shares Tor Browser's resist-fingerprinting and letterboxing work."
+    },
+    {
+      "title": "uBlock Origin included",
+      "detail": "Stable 15.0.24 ships uBO 1.75.0 and NoScript."
+    },
+    {
+      "title": "No telemetry",
+      "detail": "Mullvad collects no usage data; open source."
+    },
+    {
+      "title": "Normal speed",
+      "detail": "No onion routing, so page loads are close to ordinary Firefox."
+    },
+    {
+      "title": "Regular security releases",
+      "detail": "Updated on the same cadence as Tor Browser (15.0.26 on Oct 21, 2026)."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Desktop only",
+      "detail": "No Android or iOS versions."
+    },
+    {
+      "title": "No sync or passwords",
+      "detail": "Intentionally omits persistent profile features."
+    },
+    {
+      "title": "No DRM",
+      "detail": "Widevine is not available."
+    },
+    {
+      "title": "Not anonymous alone",
+      "detail": "IP is not hidden unless you pair with a VPN or Tor."
+    }
+  ],
+  "signatureFeatures": [
+    "Letterboxing",
+    "Resist Fingerprinting",
+    "uBlock Origin preinstalled",
+    "Private mode by default"
+  ],
+  "faq": [
+    {
+      "q": "Is it the same as Tor Browser?",
+      "a": "No: it has the same hardening but does not route traffic through Tor."
+    },
+    {
+      "q": "Does it need Mullvad VPN?",
+      "a": "No, but it is designed to be used with a VPN; it works without one."
+    },
+    {
+      "q": "Is it still on ESR?",
+      "a": "Stable 15.x is on Firefox ESR 140; the 16 alpha moved toward newer Firefox bases."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2023-04",
+      "event": "Mullvad Browser announced with Tor Project"
+    },
+    {
+      "date": "2026-03-26",
+      "event": "Alpha 16.0a1 announced moving to Firefox rapid-release base"
+    },
+    {
+      "date": "2026-09-21",
+      "event": "15.0.23 fixes SharedWorker identity mismatch"
+    },
+    {
+      "date": "2026-10-21",
+      "event": "15.0.26 CA intermediate update"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No import by design; the browser avoids persistent personal state."
+  },
+  "alternatives": [
+    "tor-browser",
+    "librewolf",
+    "brave"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Intentionally none"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Password saving disabled"
+    },
+    "mv2": {
+      "level": "full",
+      "note": "Firefox MV2; uBO preinstalled",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "RFP, letterboxing, FPI, uBO, private mode default, DoH to Mullvad DNS",
+      "telemetry": "None",
+      "jurisdiction": "Sweden"
+    }
+  },
+  "spec": {
+    "defaultSearch": "DuckDuckGo (Mullvad Leta available)",
+    "telemetry": "None",
+    "drm": "None",
+    "codecs": "Open codecs, limited",
+    "sandbox": "Firefox content sandbox + Fission",
+    "patchLag": "Days behind Tor Browser/Firefox ESR",
+    "languages": "~35"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [
+        "Letterboxing"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 10.15+",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern 64-bit distro",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "flathub",
+        "official-installer"
+      ],
+      "notes": [
+        "Own apt/rpm repos",
+        "Alpha available on Linux ARM"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      8
+    ],
+    "fingerprintProtection": [
+      "yes",
+      10
+    ],
+    "httpsOnly": [
+      "yes",
+      9
+    ],
+    "doh": [
+      "yes",
+      8,
+      "Mullvad DNS"
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "yes",
+      10
+    ],
+    "queryStripping": [
+      "partial",
+      6
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10
+    ],
+    "privateHardening": [
+      "yes",
+      10
+    ],
+    "adBlocker": [
+      "yes",
+      8,
+      "uBO"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      8
+    ],
+    "customFilterLists": [
+      "yes",
+      8
+    ],
+    "youtubeAds": [
+      "yes",
+      6
+    ],
+    "cookieBanners": [
+      "partial",
+      5
+    ],
+    "verticalTabs": [
+      "partial",
+      4
+    ],
+    "tabGroups": [
+      "partial",
+      4
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "yes",
+      6
+    ],
+    "pinnedTabs": [
+      "yes",
+      8
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      6
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "partial",
+      4
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "partial",
+      5
+    ],
+    "mv2Support": [
+      "yes",
+      5
+    ],
+    "uboFull": [
+      "yes",
+      9
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      3
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "yes",
+      5
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "partial",
+      4
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "partial",
+      4
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "partial",
+      3
+    ],
+    "customSearchEngines": [
+      "yes",
+      7
+    ],
+    "devtools": [
+      "yes",
+      8
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      6.5,
+      "Firefox ESR 140 with hardening",
+      "editorial"
+    ],
+    "pageLoad": [
+      7,
+      "Normal routing plus uBO",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "No Tor hops",
+      "editorial"
+    ],
+    "startup": [
+      6,
+      "Hardened profile start",
+      "editorial"
+    ],
+    "smoothness": [
+      7,
+      "Letterboxing, ESR WebRender",
+      "editorial"
+    ],
+    "graphics": [
+      4,
+      "WebGL restricted",
+      "editorial"
+    ],
+    "memory": [
+      6,
+      "Firefox ESR footprint",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Firefox ESR",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "No special optimisation",
+      "editorial"
+    ],
+    "resourceControls": [
+      2.5,
+      "No tab sleeping",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "ESR desktop requirements",
+      "editorial"
+    ],
+    "installSize": [
+      5.5,
+      "Firefox-sized",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      9.5,
+      "Private mode, RFP, letterboxing default",
+      "documented"
+    ],
+    "blocking": [
+      8,
+      "uBO preinstalled",
+      "documented"
+    ],
+    "fingerprinting": [
+      9.5,
+      "Tor Browser fingerprint work",
+      "documented"
+    ],
+    "securityHardening": [
+      8,
+      "Firefox sandbox, Safer mode",
+      "documented"
+    ],
+    "patchSpeed": [
+      8,
+      "Mirrors Tor Browser ESR cadence",
+      "documented"
+    ],
+    "telemetry": [
+      10,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      2,
+      "Minimal UI customisation",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3,
+      "Few settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6.5,
+      "about:config exposed but unwise",
+      "editorial"
+    ],
+    "tabManagement": [
+      3,
+      "Basic tabs",
+      "editorial"
+    ],
+    "searchFreedom": [
+      8,
+      "Several engines",
+      "editorial"
+    ],
+    "downloads": [
+      5,
+      "Firefox download panel",
+      "editorial"
+    ],
+    "productivity": [
+      2,
+      "No productivity extras",
+      "editorial"
+    ],
+    "media": [
+      3,
+      "DRM absent",
+      "documented"
+    ],
+    "translation": [
+      0,
+      "Translation absent",
+      "editorial"
+    ],
+    "extras": [
+      3,
+      "No built-in extras",
+      "editorial"
+    ],
+    "extensions": [
+      5,
+      "Add-ons allowed but discouraged",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "No sync",
+      "documented"
+    ],
+    "passwords": [
+      0,
+      "Password saving disabled",
+      "documented"
+    ],
+    "mobileApps": [
+      0,
+      "Desktop only",
+      "documented"
+    ],
+    "webCompat": [
+      6.5,
+      "Uniform fingerprint breaks few sites",
+      "editorial"
+    ],
+    "devTools": [
+      5,
+      "Firefox DevTools only",
+      "editorial"
+    ],
+    "accessibility": [
+      6,
+      "Firefox a11y stack",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "Fully open source",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Funded by VPN company, no data collection",
+      "documented"
+    ],
+    "longevity": [
+      8,
+      "Active, tied to Tor Browser release train",
+      "documented"
+    ],
+    "ai": [
+      0,
+      "No AI",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      6.5,
+      "Few choices, safe defaults",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://mullvad.net/en/browser",
+      "title": "Mullvad Browser",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://freedom.tech/project/mullvad-browser/",
+      "title": "Mullvad Browser release history",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://freedom.tech/posts/2026-09-30-mullvad-browser-15-0-24/",
+      "title": "Mullvad Browser 15.0.24",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://freedom.tech/posts/2026-10-19-mullvad-browser/",
+      "title": "Mullvad Browser 16.0a14",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://versionping.app/products/mullvad-browser",
+      "title": "versionping Mullvad Browser",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Default search is DuckDuckGo with Leta optional; not rechecked in 2026",
+    "Sources conflict on whether the alpha is on Firefox rapid release or ESR 153",
+    "Vertical tabs/tab groups availability on ESR 140 build"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

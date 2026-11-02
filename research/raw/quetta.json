@@ -1,0 +1,775 @@
+{
+  "id": "quetta",
+  "name": "Quetta Browser",
+  "aliases": [
+    "Quetta"
+  ],
+  "group": "android",
+  "developer": "Quetta Networks (per MakeUseOf; unverified)",
+  "hq": "Not confirmed",
+  "businessModel": "Free; monetisation not documented (sells itself as ad-free)",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2024,
+  "status": "active",
+  "statusNote": "Play listing last updated Oct 26, 2026",
+  "version": {
+    "current": "Play build on Chromium 148.0.7778.217 (Aug 7, 2026 release)",
+    "date": "2026-10-26",
+    "upstream": "Chromium 148"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Frequent Play updates; Chromium may lag Chrome by several majors",
+  "website": "https://www.quetta.net",
+  "tags": [
+    "android",
+    "extensions",
+    "chromium",
+    "ad-blocking",
+    "video-downloader"
+  ],
+  "pitch": "Chromium Android browser with desktop extensions, ad blocking and video download.",
+  "summary": "Chromium-based Android browser that installs extensions from the Chrome Web Store and Edge Add-ons, blocks ads and trackers by default, and adds a video downloader and biometric Data Vault. Proprietary; Chromium base lags upstream.",
+  "bestFor": [
+    "Android users wanting Chrome extensions on mobile",
+    "People who want ads blocked out of the box",
+    "Former Kiwi users"
+  ],
+  "notFor": [
+    "People who need open-source code to audit",
+    "Users who need the freshest Chromium patches",
+    "Anyone avoiding vendors with unclear ownership"
+  ],
+  "pros": [
+    {
+      "title": "Desktop extensions",
+      "detail": "Installs from the Chrome Web Store and Microsoft Edge Add-ons."
+    },
+    {
+      "title": "Blocking on by default",
+      "detail": "Play listing: ad and tracker blocking enabled by default."
+    },
+    {
+      "title": "Fingerprint protection",
+      "detail": "Listed on the Play store alongside private mode and a biometric Data Vault."
+    },
+    {
+      "title": "On Google Play",
+      "detail": "Package net.quetta.browser, updated Oct 26, 2026."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Closed source",
+      "detail": "No audit; you must trust Quetta Networks."
+    },
+    {
+      "title": "Chromium lag",
+      "detail": "The Aug 7, 2026 release used Chromium 148 while Chrome was several versions ahead."
+    },
+    {
+      "title": "Extension quirks",
+      "detail": "Quetta's own blog warns desktop extensions may not behave well on a phone."
+    },
+    {
+      "title": "Unclear ownership and privacy claims",
+      "detail": "Play listing says no data shared with third parties; stronger \"zero collection\" claims are third-party."
+    }
+  ],
+  "signatureFeatures": [
+    "Extension support",
+    "Built-in ad and tracker blocking",
+    "Video downloader",
+    "Data Vault"
+  ],
+  "faq": [
+    {
+      "q": "Is Quetta on Google Play?",
+      "a": "Yes, package net.quetta.browser, updated Oct 26, 2026."
+    },
+    {
+      "q": "Does uBlock Origin still work?",
+      "a": "Quetta lists it as a popular extension, but Chrome Web Store dropped MV2 on Aug 31, 2026, so full uBO availability is unverified."
+    },
+    {
+      "q": "Is it open source?",
+      "a": "No, it is proprietary."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-01",
+      "event": "Kiwi Browser discontinued; Quetta positioned as replacement (approximate)"
+    },
+    {
+      "date": "2026-08",
+      "event": "Play release on Chromium 148.0.7778.217 (Aug 7)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Play listing updated Oct 26"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks"
+    ],
+    "note": "Import details unverified."
+  },
+  "alternatives": [
+    "lemur",
+    "kiwi",
+    "vanadium",
+    "ironfox"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Not documented"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Bitwarden etc. via extensions"
+    },
+    "mv2": {
+      "level": "temporary",
+      "note": "Blog still lists uBO; Chrome Web Store dropped MV2 Aug 31, 2026 (unverified for Quetta)",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "chrome-web-store",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "Third-party site calls it AI-powered; unverified"
+    },
+    "privacy": {
+      "defaults": "Ad/tracker blocking and fingerprint protection on by default",
+      "telemetry": "Play: no data shared with third parties; collection unverified",
+      "jurisdiction": "Unknown"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Not documented",
+    "drm": "Unverified",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox",
+    "patchLag": "Chromium 148 shipped Aug 2026 while Chrome was several versions ahead",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "Google Play: net.quetta.browser",
+        "Official APK on quetta.net"
+      ],
+      "highlights": [
+        "Extension sidebar and desktop-style features"
+      ],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://play.google.com/store/apps/details?id=net.quetta.browser&hl=en",
+      "title": "Quetta - Google Play listing",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.makeuseof.com/this-private-android-browser-feels-like-chrome-without-the-bloat/",
+      "title": "MakeUseOf: Quetta review",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.quetta.net/blog/top-extensions-for-quetta-browser-customize-your-android-browsing",
+      "title": "Quetta blog: extensions (vendor)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.quetta.net/products/android",
+      "title": "Quetta Android download (vendor)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/09/01/chrome-web-store-removes-manifest-v2-extensions/",
+      "title": "Chrome Web Store removes MV2 - PiunikaWeb",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Developer entity/HQ",
+    "uBlock Origin MV2 status after Aug 31, 2026",
+    "AI features",
+    "ToolMage zero-data-collection claim",
+    "Release year"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "yes",
+      6,
+      "On by default per Play listing"
+    ],
+    "fingerprintProtection": [
+      "yes",
+      5,
+      "Listed on Play"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "yes",
+      6,
+      "Private mode + biometric Data Vault"
+    ],
+    "adBlocker": [
+      "yes",
+      6,
+      "Built-in per Play listing"
+    ],
+    "cosmeticFiltering": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "partial",
+      4,
+      "Chromium mobile tab groups (unverified)"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Android OS-level tab discard"
+    ],
+    "tabSearch": [
+      "partial",
+      4,
+      ""
+    ],
+    "pinnedTabs": [
+      "no",
+      0,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "no",
+      0,
+      ""
+    ],
+    "pip": [
+      "partial",
+      5,
+      ""
+    ],
+    "screenshots": [
+      "no",
+      0,
+      ""
+    ],
+    "commandBar": [
+      "no",
+      0,
+      ""
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0,
+      "Mobile; external keyboards only"
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "yes",
+      8,
+      "Plus Edge Add-ons"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "partial",
+      4,
+      "Unverified after Aug 2026"
+    ],
+    "uboFull": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "mobileExtensions": [
+      "yes",
+      7,
+      "Chrome Web Store and Edge Add-ons"
+    ],
+    "userscripts": [
+      "extension",
+      6,
+      "Tampermonkey-class"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "no",
+      0,
+      ""
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "partial",
+      4,
+      ""
+    ],
+    "widevine": [
+      "yes",
+      7,
+      ""
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "aiSummarizer": [
+      "no",
+      0,
+      ""
+    ],
+    "agenticBrowsing": [
+      "no",
+      0,
+      ""
+    ],
+    "localAi": [
+      "no",
+      0,
+      ""
+    ],
+    "aiKillSwitch": [
+      "yes",
+      8,
+      "AI optional (unverified)"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      ""
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      ""
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      7,
+      "Video downloader"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      "Dark mode / basic themes"
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "partial",
+      5,
+      "Remote debugging via desktop Chrome (unverified)"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      8,
+      "Chromium mobile cold start",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      5,
+      "Chromium multi-process",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium-class",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Chromium on phone, average drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      3.5,
+      "Android OS tab discard only",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "Runs on mid-range phones",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Typical Chromium APK size",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6,
+      "Blocking and fingerprint protection on; closed source",
+      "editorial"
+    ],
+    "blocking": [
+      7,
+      "Built-in blocker plus extension support",
+      "editorial"
+    ],
+    "fingerprinting": [
+      4.5,
+      "Feature advertised, depth unverified",
+      "editorial"
+    ],
+    "securityHardening": [
+      7.5,
+      "Chromium sandbox but Chromium 148 lag",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5.5,
+      "Chromium 148 in Aug 2026 trailed Chrome by versions",
+      "documented"
+    ],
+    "telemetry": [
+      4.5,
+      "No-sharing claim; collection unverified",
+      "editorial"
+    ],
+    "lookCustom": [
+      3,
+      "Dark mode and basic themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3.5,
+      "Few gestures or per-site controls",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3.5,
+      "Limited flags on mobile",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Basic tab switcher",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      7,
+      "Built-in video download",
+      "editorial"
+    ],
+    "productivity": [
+      6,
+      "Video downloader, extension sidebar",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      6,
+      "Page translation if enabled (unverified)",
+      "editorial"
+    ],
+    "extras": [
+      5.5,
+      "Video downloader, Data Vault",
+      "editorial"
+    ],
+    "extensions": [
+      8,
+      "Chrome Web Store and Edge Add-ons on Android",
+      "editorial"
+    ],
+    "sync": [
+      3,
+      "Limited or no sync",
+      "editorial"
+    ],
+    "passwords": [
+      5,
+      "Bitwarden via extension",
+      "editorial"
+    ],
+    "mobileApps": [
+      7,
+      "Mobile is the main product",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      4,
+      "Remote debugging only",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Chromium Android accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      1.5,
+      "Proprietary",
+      "documented"
+    ],
+    "businessTrust": [
+      4,
+      "Closed source, unclear ownership",
+      "editorial"
+    ],
+    "longevity": [
+      6,
+      "Active Play updates in Oct 2026",
+      "editorial"
+    ],
+    "ai": [
+      2,
+      "AI claims third-party only",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Chrome-like mobile UI",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

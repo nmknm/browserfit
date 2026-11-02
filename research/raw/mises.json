@@ -1,0 +1,793 @@
+{
+  "id": "mises",
+  "name": "Mises Browser",
+  "aliases": [
+    "Mises"
+  ],
+  "group": "android",
+  "developer": "Mises (mises-id)",
+  "hq": "Not confirmed",
+  "businessModel": "Web3 ecosystem; partnerships and in-app integrations",
+  "engine": "blink",
+  "basedOn": "Chromium (Kiwi-style extension support)",
+  "license": "Open-source Chromium mirror; app licence unverified",
+  "openSource": "partial",
+  "price": "free",
+  "releaseYear": 2022,
+  "status": "active",
+  "statusNote": "Delisted from Google Play Sep 12, 2025; a listing (site.mises.browser_stable) is live again, updated Mar 14, 2026, with fewer Web3 features",
+  "version": {
+    "current": "Not published",
+    "date": "2026-03-14",
+    "upstream": "Chromium (unknown)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Irregular; last Play update Mar 14, 2026",
+  "website": "https://www.mises.site",
+  "tags": [
+    "android",
+    "web3",
+    "extensions",
+    "chromium",
+    "ios"
+  ],
+  "pitch": "Extension-capable Android and iOS Web3 browser, shrunk after Play policy trouble.",
+  "summary": "Chromium-based mobile browser with Chrome extensions and Web3 features (ENS, Unstoppable Domains, dapp aggregation). Delisted from Google Play in Sep 2025 over impostor reports; relisted by Mar 2026 minus built-in wallet and swap.",
+  "bestFor": [
+    "Mobile Web3 users running wallet extensions",
+    "People who want Chrome extensions on Android and iOS",
+    "Former Kiwi users interested in Web3"
+  ],
+  "notFor": [
+    "People wanting a clean, trusted Play supply chain",
+    "Users who need MetaMask to work reliably (reviews say it hardly works)",
+    "Privacy-first users"
+  ],
+  "pros": [
+    {
+      "title": "Extensions on mobile",
+      "detail": "Supports Chrome extensions; users can install wallet extensions themselves."
+    },
+    {
+      "title": "Web3 name resolution",
+      "detail": "Listing mentions ENS, Unstoppable Domains and .bit."
+    },
+    {
+      "title": "Android and iOS",
+      "detail": "Official posts point to both versions."
+    },
+    {
+      "title": "Active partnerships",
+      "detail": "Matrix (BNB Chain rollup) integration announced Feb 5, 2026."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Impostor/delisting episode",
+      "detail": "Delisted Sep 12, 2025; the team said the then-listed version was fake."
+    },
+    {
+      "title": "Features cut",
+      "detail": "Built-in Mises Wallet, Discover and Swap dropped Nov 2025; xMod removed Mar 2026."
+    },
+    {
+      "title": "Extension regressions",
+      "detail": "A user review says the new version handles extensions worse; MetaMask hardly works."
+    },
+    {
+      "title": "Unclear package identity",
+      "detail": "Current Play package differs from the one AppBrain tracks (site.mises.browser)."
+    }
+  ],
+  "signatureFeatures": [
+    "Web3 name resolution",
+    "Chrome extension support",
+    "Dapp aggregation",
+    "Android and iOS apps"
+  ],
+  "faq": [
+    {
+      "q": "Is Mises on Google Play?",
+      "a": "A listing for site.mises.browser_stable is live (updated Mar 14, 2026) after a Sep 12, 2025 delisting; whether it is the restored official app is not independently confirmed."
+    },
+    {
+      "q": "Does it still ship a wallet?",
+      "a": "No; pre-installed Mises Wallet, Discover and Swap were removed in Nov 2025."
+    },
+    {
+      "q": "Is it safe?",
+      "a": "Use only links from official Mises channels; impostor builds were reported."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-09",
+      "event": "Android app delisted from Google Play (Sep 12) after impostor reports"
+    },
+    {
+      "date": "2025-11",
+      "event": "Pre-installed wallet, Discover and Swap dropped"
+    },
+    {
+      "date": "2026-02",
+      "event": "Matrix integration announced (Feb 5)"
+    },
+    {
+      "date": "2026-03",
+      "event": "Play update on Mar 14 removes xMod, updates AI function"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "Unverified."
+  },
+  "alternatives": [
+    "quetta",
+    "lemur",
+    "kiwi",
+    "brave"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Not documented"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Not documented"
+    },
+    "mv2": {
+      "level": "temporary",
+      "note": "Chrome extensions supported; MV2 status after Aug 2026 unverified",
+      "date": "2026"
+    },
+    "ublock": "lite",
+    "mobileExtensions": {
+      "android": "chrome-web-store",
+      "ios": "crx-sideload"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "Updated AI function mentioned in Mar 2026 update"
+    },
+    "privacy": {
+      "defaults": "Web3-oriented; no documented tracker blocking",
+      "telemetry": "Unverified",
+      "jurisdiction": "Unknown"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Unverified",
+    "drm": "Unverified",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox",
+    "patchLag": "Unknown",
+    "languages": "Unverified"
+  },
+  "platforms": {
+    "android": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "Google Play: site.mises.browser_stable listed (updated Mar 14, 2026)",
+        "Delisted Sep 12, 2025 per X post and AppBrain; official-site download recommended then",
+        "AppBrain tracks a different package ID (site.mises.browser)"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "iOS version announced on X (Oct 2025)",
+        "WebKit engine (Apple rule)"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -3
+      }
+    }
+  },
+  "sources": [
+    {
+      "url": "https://play.google.com/store/apps/details?id=site.mises.browser_stable&hl=en",
+      "title": "Mises Browser - Google Play",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.appbrain.com/app/mises-browser/site.mises.browser",
+      "title": "Mises Browser - AppBrain",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://x.com/airdropblgspot/status/1970023962395681018",
+      "title": "Delisting post on X (third-party)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://x.com/Mises001/status/1978056451055927488",
+      "title": "Mises on X: Android and iOS links",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/mises-id/mises-browser-chromium",
+      "title": "Mises Chromium mirror - GitHub",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Whether the current Play listing is the restored official app",
+    "Delisting reason came from a third-party post",
+    "Chromium version",
+    "App licence",
+    "Current MV2/uBO behaviour",
+    "Release year"
+  ],
+  "confidence": "low",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "extension",
+      4,
+      "Via extension"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "partial",
+      4,
+      "Chromium mobile tab groups (unverified)"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Android OS-level tab discard"
+    ],
+    "tabSearch": [
+      "partial",
+      4,
+      ""
+    ],
+    "pinnedTabs": [
+      "no",
+      0,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "no",
+      0,
+      ""
+    ],
+    "pip": [
+      "partial",
+      5,
+      ""
+    ],
+    "screenshots": [
+      "no",
+      0,
+      ""
+    ],
+    "commandBar": [
+      "no",
+      0,
+      ""
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "no",
+      0,
+      "Mobile; external keyboards only"
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "yes",
+      6,
+      "Extensions reported to work, worse after Mar 2026"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "partial",
+      5,
+      "Reviews say MetaMask hardly works"
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      ""
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "no",
+      0,
+      ""
+    ],
+    "passwordManager": [
+      "partial",
+      4,
+      ""
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "partial",
+      4,
+      ""
+    ],
+    "widevine": [
+      "yes",
+      7,
+      ""
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "partial",
+      4,
+      "AI function updated Mar 2026"
+    ],
+    "aiSummarizer": [
+      "no",
+      0,
+      ""
+    ],
+    "agenticBrowsing": [
+      "no",
+      0,
+      ""
+    ],
+    "localAi": [
+      "no",
+      0,
+      ""
+    ],
+    "aiKillSwitch": [
+      "yes",
+      6,
+      "AI optional (unverified)"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "cryptoWallet": [
+      "extension",
+      4,
+      "Built-in wallet removed Nov 2025; extension wallets only"
+    ],
+    "pwaInstall": [
+      "partial",
+      5,
+      ""
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      ""
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      ""
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      "Dark mode / basic themes"
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "partial",
+      5,
+      "Remote debugging via desktop Chrome (unverified)"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9,
+      "Blink/V8 engine, Chrome-class JS speed; no vendor benchmark",
+      "documented"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      8,
+      "Chromium mobile cold start",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      5,
+      "Chromium multi-process",
+      "editorial"
+    ],
+    "cpu": [
+      6.5,
+      "Chromium-class",
+      "editorial"
+    ],
+    "battery": [
+      6.5,
+      "Chromium on phone, average drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      3.5,
+      "Android OS tab discard only",
+      "editorial"
+    ],
+    "lowEnd": [
+      5,
+      "Runs on mid-range phones",
+      "editorial"
+    ],
+    "installSize": [
+      6,
+      "Typical Chromium APK size",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      2.5,
+      "Web3 focus; no blocking or protection documented",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Only MV3 blockers such as uBO Lite are available",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      5,
+      "Chromium sandbox; impostor and supply-chain history",
+      "editorial"
+    ],
+    "patchSpeed": [
+      4.5,
+      "Chromium version unknown",
+      "editorial"
+    ],
+    "telemetry": [
+      4,
+      "Vendor telemetry not fully documented",
+      "editorial"
+    ],
+    "lookCustom": [
+      3,
+      "Dark mode and basic themes",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      3.5,
+      "Few gestures or per-site controls",
+      "editorial"
+    ],
+    "advancedSettings": [
+      3.5,
+      "Limited flags on mobile",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Basic tab switcher",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      4,
+      "Basic mobile tools",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      6,
+      "Page translation if enabled (unverified)",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "Web3 name resolution; wallet removed",
+      "editorial"
+    ],
+    "extensions": [
+      5.5,
+      "Extensions supported but reportedly degraded",
+      "editorial"
+    ],
+    "sync": [
+      3,
+      "Limited or no sync",
+      "editorial"
+    ],
+    "passwords": [
+      3,
+      "Not documented",
+      "editorial"
+    ],
+    "mobileApps": [
+      6,
+      "Android and iOS apps; Play listing history messy",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      4,
+      "Remote debugging only",
+      "editorial"
+    ],
+    "accessibility": [
+      7,
+      "Chromium Android accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      5,
+      "Chromium source mirror on GitHub; app terms unverified",
+      "editorial"
+    ],
+    "businessTrust": [
+      3,
+      "Impostor delisting, features cut for policy reasons",
+      "editorial"
+    ],
+    "longevity": [
+      4,
+      "Last Play update Mar 2026",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "No AI features",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Chrome-like mobile UI",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

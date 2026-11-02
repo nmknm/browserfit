@@ -1,0 +1,803 @@
+{
+  "id": "maxthon",
+  "name": "Maxthon",
+  "aliases": [
+    "Maxthon 7",
+    "Maxthon Cloud Browser"
+  ],
+  "group": "regional",
+  "developer": "Maxthon International Ltd.",
+  "hq": "China / Singapore (unverified)",
+  "businessModel": "Free base with Maxthon Pro/VIP subscriptions, ads/start page, Media Plus; uumail and cloud services",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Maxthon Pro / VIP and Media Plus subscriptions (prices not found)",
+  "releaseYear": 2002,
+  "status": "active",
+  "statusNote": "Maxthon 7.5.x actively released; market share below 0.3% per vendor blog",
+  "version": {
+    "current": "7.5.3.3400 (Windows); 7.5.8.103 (Android)",
+    "date": "2026-10-27",
+    "upstream": "Chromium (version unverified)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Windows builds every few days to weeks (Oct 11, 19, 23, 27); Android roughly every 2 weeks",
+  "website": "https://www.maxthon.com",
+  "tags": [
+    "regional",
+    "chromium",
+    "cloud-sync",
+    "legacy",
+    "subscription"
+  ],
+  "pitch": "Long-running Chromium browser with cloud sync, Passkeeper and a new AI pet extension.",
+  "summary": "Maxthon is a veteran browser that now rides Chromium. It offers cloud sync, Passkeeper password manager, MaxNote, and in 2026 added Maxthon Pro, Media Plus and the aiMax assistant extension. Market share is tiny and trust is moderate.",
+  "bestFor": [
+    "Longtime Maxthon users",
+    "People wanting built-in notes/password cloud sync in a light Chromium shell"
+  ],
+  "notFor": [
+    "Users who need strong security guarantees",
+    "Privacy-focused users",
+    "Anyone who dislikes subscriptions and upsells"
+  ],
+  "pros": [
+    {
+      "title": "Regular updates",
+      "detail": "Windows builds released multiple times in October 2026."
+    },
+    {
+      "title": "Passkeeper sync",
+      "detail": "Built-in cloud-synced password and form autofill."
+    },
+    {
+      "title": "Maxnote V2 and sidebar",
+      "detail": "Notes and mail (Uumail) built into the sidebar."
+    },
+    {
+      "title": "aiMax extension",
+      "detail": "AI translation and chat pet added in 7.5.3.2600."
+    },
+    {
+      "title": "Android security fix",
+      "detail": "Android 7.5.8.103 fixed a fullscreen address-bar spoofing vulnerability."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Tiny market share",
+      "detail": "Vendor blog admits below 0.3% share; limited community scrutiny."
+    },
+    {
+      "title": "Upsell model",
+      "detail": "Pro/VIP and Media Plus subscriptions added in 2026."
+    },
+    {
+      "title": "Opaque data handling",
+      "detail": "Historical concerns about data uploads; current practice not independently verified."
+    },
+    {
+      "title": "Version transparency",
+      "detail": "Chromium base not published; Wikipedia infobox badly out of date."
+    }
+  ],
+  "signatureFeatures": [
+    "Passkeeper cloud autofill",
+    "MaxNote",
+    "Uumail sidebar",
+    "aiMax extension",
+    "Maxthon Pro/VIP"
+  ],
+  "faq": [
+    {
+      "q": "Is Maxthon still maintained?",
+      "a": "Yes. Windows 7.5.3.3400 shipped 2026-10-27 and Android 7.5.8.103 on 2026-10-17."
+    },
+    {
+      "q": "Does it support Windows 7?",
+      "a": "A Softexia comment says the last Windows 7-compatible version is 7.2.2.7000 (unverified)."
+    },
+    {
+      "q": "Is it Chromium-based?",
+      "a": "Yes, per the official site; the exact base version is not published."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2002",
+      "event": "First release (MyIE2 lineage)"
+    },
+    {
+      "date": "2026-03",
+      "event": "Maxthon blog calls Maxthon 7 current"
+    },
+    {
+      "date": "2026-06",
+      "event": "Windows 7.5.2.8000: file icons for local tabs, Uumail entry"
+    },
+    {
+      "date": "2026-10",
+      "event": "Media Plus/Pro (7.5.3.2200) and aiMax extension (7.5.3.2600)"
+    },
+    {
+      "date": "2026-10-18",
+      "event": "Android 7.5.8.103 fixes fullscreen address-bar spoofing"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history"
+    ],
+    "note": "Imports from other browsers; Maxthon account cloud sync."
+  },
+  "alternatives": [
+    "qq-browser",
+    "360-secure",
+    "opera",
+    "vivaldi",
+    "sleipnir"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Maxthon cloud account, Passkeeper"
+    },
+    "passwordManager": {
+      "level": "full",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Passkeeper autofill, addresses and payments, synced"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Chromium extension support; MV2 policy unverified",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "partial",
+      "note": "aiMax is an optional extension"
+    },
+    "privacy": {
+      "defaults": "Mobile has built-in ad blocking, desktop uses extension",
+      "telemetry": "Cloud account services; practice unverified",
+      "jurisdiction": "China/Singapore (unverified)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Bing / regional (unverified)",
+    "telemetry": "Not clearly documented",
+    "drm": "Widevine (unverified)",
+    "codecs": "Chromium codecs",
+    "sandbox": "Chromium sandbox",
+    "patchLag": "Unknown",
+    "languages": "Many (unverified)"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10 (7.2.2.7000 last for Windows 7, unverified)",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "7.5.3.3400 on 2026-10-27"
+      ],
+      "highlights": [
+        "Maxnote V2",
+        "aiMax"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "Not verified",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Listed on official site"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 7.0",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "google-play",
+        "apk"
+      ],
+      "notes": [
+        "7.5.8.103 (2026-10-17)",
+        "Built-in ad blocker on mobile"
+      ],
+      "highlights": [
+        "Fullscreen spoofing fix"
+      ],
+      "scoreDelta": {
+        "extensions": -7
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "Not verified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -7
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "partial",
+      3
+    ],
+    "doh": [
+      "partial",
+      3
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "no",
+      0
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3
+    ],
+    "privateHardening": [
+      "partial",
+      3
+    ],
+    "adBlocker": [
+      "extension",
+      5,
+      "Desktop extension; built-in on mobile"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      4
+    ],
+    "customFilterLists": [
+      "extension",
+      4
+    ],
+    "youtubeAds": [
+      "extension",
+      4
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "partial",
+      4
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "partial",
+      5
+    ],
+    "tabSleeping": [
+      "partial",
+      4
+    ],
+    "tabSearch": [
+      "yes",
+      5
+    ],
+    "pinnedTabs": [
+      "yes",
+      6
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      6,
+      "Reader mode"
+    ],
+    "notes": [
+      "yes",
+      7,
+      "MaxNote V2"
+    ],
+    "webPanels": [
+      "yes",
+      6,
+      "Sidebar incl. Uumail"
+    ],
+    "pip": [
+      "yes",
+      6
+    ],
+    "screenshots": [
+      "yes",
+      6,
+      "Resizable snap"
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "yes",
+      7
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6
+    ],
+    "readLater": [
+      "partial",
+      4
+    ],
+    "mailCalendarRss": [
+      "yes",
+      5,
+      "Uumail entry in sidebar"
+    ],
+    "chromeWebStore": [
+      "yes",
+      6,
+      "Chromium base (unverified)"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      4
+    ],
+    "uboFull": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      5
+    ],
+    "syncBookmarks": [
+      "yes",
+      7
+    ],
+    "syncPasswords": [
+      "yes",
+      7
+    ],
+    "syncTabs": [
+      "yes",
+      6
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "partial",
+      4
+    ],
+    "passwordManager": [
+      "yes",
+      6,
+      "Passkeeper"
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "yes",
+      7
+    ],
+    "widevine": [
+      "partial",
+      5
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "partial",
+      5
+    ],
+    "av1": [
+      "partial",
+      5
+    ],
+    "hwDecode": [
+      "yes",
+      6
+    ],
+    "aiAssistant": [
+      "yes",
+      4,
+      "aiMax extension"
+    ],
+    "aiSummarizer": [
+      "partial",
+      3
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      7,
+      "AI is a removable extension"
+    ],
+    "translation": [
+      "yes",
+      5,
+      "AI translation via aiMax"
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "partial",
+      3
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "partial",
+      3
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      5
+    ],
+    "devtools": [
+      "yes",
+      8
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8,
+      "Chromium V8, base version unpublished",
+      "editorial"
+    ],
+    "pageLoad": [
+      8,
+      "Chromium-class",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8,
+      "Chromium network stack",
+      "editorial"
+    ],
+    "startup": [
+      7,
+      "Light shell",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Blink",
+      "editorial"
+    ],
+    "graphics": [
+      7.5,
+      "Chromium WebGL",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "battery": [
+      6,
+      "Chromium baseline",
+      "editorial"
+    ],
+    "resourceControls": [
+      4.5,
+      "Basic",
+      "editorial"
+    ],
+    "lowEnd": [
+      5.5,
+      "Chromium weight",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Moderate",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      3.5,
+      "Mobile adblock only, desktop none by default",
+      "editorial"
+    ],
+    "blocking": [
+      4.5,
+      "Extension on desktop",
+      "editorial"
+    ],
+    "fingerprinting": [
+      2,
+      "None",
+      "editorial"
+    ],
+    "securityHardening": [
+      7,
+      "Chromium sandbox; address-bar spoof fixed Oct 2026",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5,
+      "Unknown base, frequent builds",
+      "editorial"
+    ],
+    "telemetry": [
+      3.5,
+      "Unclear practices",
+      "editorial"
+    ],
+    "lookCustom": [
+      6,
+      "Skins and layouts",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6.5,
+      "Gestures, sidebar",
+      "editorial"
+    ],
+    "advancedSettings": [
+      5,
+      "Limited",
+      "editorial"
+    ],
+    "tabManagement": [
+      5,
+      "Basic",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Changeable",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Built-in manager",
+      "editorial"
+    ],
+    "productivity": [
+      6.5,
+      "MaxNote, Passkeeper, sidebar",
+      "editorial"
+    ],
+    "media": [
+      6,
+      "Standard",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "Via aiMax",
+      "editorial"
+    ],
+    "extras": [
+      6,
+      "Notes, mail, Pro services",
+      "editorial"
+    ],
+    "extensions": [
+      6,
+      "Chromium compatibility (unverified)",
+      "editorial"
+    ],
+    "sync": [
+      6.5,
+      "Cloud sync all platforms",
+      "editorial"
+    ],
+    "passwords": [
+      6,
+      "Passkeeper",
+      "editorial"
+    ],
+    "mobileApps": [
+      6,
+      "Android/iOS available",
+      "editorial"
+    ],
+    "webCompat": [
+      8.5,
+      "Blink",
+      "editorial"
+    ],
+    "devTools": [
+      8,
+      "Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      6,
+      "Chromium based",
+      "editorial"
+    ],
+    "openSource": [
+      1,
+      "Closed",
+      "editorial"
+    ],
+    "businessTrust": [
+      4,
+      "Small vendor, subscription push, historical data concerns",
+      "editorial"
+    ],
+    "longevity": [
+      5.5,
+      "Two decades but under 0.3% share",
+      "documented"
+    ],
+    "ai": [
+      4,
+      "aiMax extension only",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      7,
+      "Familiar UI",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://www.maxthon.com/history/",
+      "title": "Maxthon version history",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://x.com/Maxthon/status/2064345913645277319",
+      "title": "Maxthon on X - 7.5.2.8000",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.apkmirror.com/apk/maxthon-browser/maxthon-web-browser-fast/maxthon-browser-7-5-2-101-release/maxthon-browser-7-5-2-101-android-apk-download/",
+      "title": "APKMirror - Maxthon Android",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://maxthon.en.uptodown.com/windows",
+      "title": "Uptodown - Maxthon for Windows",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blog.maxthon.com/2026/03/15/maxthon-browser-review-12/",
+      "title": "Maxthon blog - Maxthon Browser review",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Maxthon",
+      "title": "Wikipedia - Maxthon",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Company HQ jurisdiction",
+    "Chromium base version",
+    "Pro/VIP pricing",
+    "Current data-collection practice",
+    "macOS/iOS availability details",
+    "Whether Linux version still exists"
+  ],
+  "confidence": "low",
+  "lastVerified": "2026-10-29"
+}

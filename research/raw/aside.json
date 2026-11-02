@@ -1,0 +1,786 @@
+{
+  "id": "aside",
+  "name": "Aside",
+  "aliases": [
+    "Aside Browser"
+  ],
+  "group": "ai",
+  "developer": "Aside Computer Inc.",
+  "hq": "United States",
+  "businessModel": "Bring your own ChatGPT/Claude subscription or API key; pricing page not reviewed",
+  "engine": "blink",
+  "basedOn": "Chromium (Blink engine per browserating)",
+  "license": "Proprietary",
+  "openSource": false,
+  "price": "freemium",
+  "paidNote": "Pricing page not retrieved; BYO model subscription or API key",
+  "releaseYear": 2026,
+  "status": "active",
+  "statusNote": "Y Combinator F25; still \"upcoming\" at TechCrunch in May 2026, live by Oct 2026",
+  "version": {
+    "current": "Not published",
+    "date": "2026-10",
+    "upstream": "Blink / Chromium (version unknown)"
+  },
+  "channels": [
+    "Release"
+  ],
+  "updateCadence": "Unknown",
+  "website": "https://www.aside.com",
+  "tags": [
+    "ai",
+    "agentic",
+    "yc",
+    "macos",
+    "local-memory"
+  ],
+  "pitch": "YC-backed browser agent that does multi-step work in your logged-in accounts.",
+  "summary": "Chromium desktop browser from a YC F25 startup. Agent tabs, scheduled tasks and an agent-safe Vault password manager that keeps credentials from the model. Mostly macOS; BYO ChatGPT/Claude subscription.",
+  "bestFor": [
+    "Mac users wanting an agent to work through logged-in sites",
+    "People with existing ChatGPT/Claude plans",
+    "Scheduled recurring tasks"
+  ],
+  "notFor": [
+    "Windows or mobile users (macOS-first)",
+    "People wanting independent benchmark proof",
+    "Anyone needing extensions confirmed"
+  ],
+  "pros": [
+    {
+      "title": "Agent-safe passwords",
+      "detail": "Aside Vault autofills credentials without exposing them to the AI; credential use is logged."
+    },
+    {
+      "title": "Local memory",
+      "detail": "Tasks, memory and data stay on device per the vendor, with Secure Enclave encryption claimed."
+    },
+    {
+      "title": "Bring your own model",
+      "detail": "Use your ChatGPT or Claude subscription or an API key."
+    },
+    {
+      "title": "Scheduled and background agents",
+      "detail": "Agent tabs and recurring jobs such as a daily briefing."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Mostly macOS",
+      "detail": "Sources disagree on Windows; browserating says \"currently available for macOS\"."
+    },
+    {
+      "title": "Self-reported benchmarks",
+      "detail": "Top ranks on Online-Mind2Web, BU-Bench and Odysseys are company claims."
+    },
+    {
+      "title": "Small team",
+      "detail": "Eight employees reported (another source says three)."
+    },
+    {
+      "title": "Opaque pricing",
+      "detail": "Plans not listed on the home page."
+    }
+  ],
+  "signatureFeatures": [
+    "Agent tabs",
+    "Aside Vault",
+    "Scheduled tasks",
+    "Ultrabrowse mode",
+    "Local memory"
+  ],
+  "faq": [
+    {
+      "q": "Which platforms does Aside support?",
+      "a": "macOS on Apple Silicon is confirmed; one source lists Windows, others say Mac only."
+    },
+    {
+      "q": "Does it send my data to model providers?",
+      "a": "Vendor says nothing is shared with LLM providers beyond tasks you run; unverified independently."
+    },
+    {
+      "q": "How fast is it?",
+      "a": "Browserating lists Speedometer 3.1 = 41.32 on Apple Silicon macOS."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2025-09",
+      "event": "Accepted into Y Combinator Fall 2025 batch (F25)"
+    },
+    {
+      "date": "2026-05",
+      "event": "TechCrunch still lists Aside as upcoming"
+    },
+    {
+      "date": "2026-10",
+      "event": "Live with download buttons; Speedometer 3.1 benchmark page updated Oct 3"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords"
+    ],
+    "note": "Import details unverified."
+  },
+  "alternatives": [
+    "polar",
+    "comet",
+    "dia",
+    "tabbit"
+  ],
+  "keyFacts": {
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "Not documented; data stays local"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "Aside Vault with agent-safe autofill"
+    },
+    "mv2": {
+      "level": "mv3-only",
+      "note": "Not documented; assume MV3 (unverified)",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "agentic",
+      "killSwitch": false,
+      "paid": "partial",
+      "note": "BYO subscription/API key"
+    },
+    "privacy": {
+      "defaults": "Local memory; vendor says nothing shared with LLM providers beyond tasks",
+      "telemetry": "Not documented",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Unverified",
+    "telemetry": "Not documented",
+    "drm": "Unverified",
+    "codecs": "Unverified",
+    "sandbox": "Sandbox isolating filesystem and network access for agents",
+    "patchLag": "Unknown",
+    "languages": "English (unverified)"
+  },
+  "platforms": {
+    "macos": {
+      "status": "active",
+      "minOs": "Unverified",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [
+        "Apple Silicon; Speedometer 3.1 = 41.32 per browserating"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "windows": {
+      "status": "unknown",
+      "minOs": "",
+      "arch": [],
+      "stores": [],
+      "notes": [
+        "One source lists Windows; unconfirmed"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.aside.com",
+      "title": "Aside (official)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.ycombinator.com/companies/aside",
+      "title": "Aside - Y Combinator",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.browserating.com/browsers/aside",
+      "title": "Aside browser Speedometer 3.1 - Browserating",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.eesel.ai/blog/aside-ai-browser",
+      "title": "Aside AI browser explained - eesel",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://bitsandbucks.de/blog/en/aside-ai-browser.html",
+      "title": "Aside AI browser - bitsandbucks",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Windows availability",
+    "Pricing",
+    "Extension support",
+    "Team size (3 vs 8)",
+    "Benchmark claims and \"post-quantum encryption\"",
+    "Chromium version"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      3,
+      "Chromium cookie controls only"
+    ],
+    "fingerprintProtection": [
+      "no",
+      0,
+      "No fingerprint resistance beyond Chromium"
+    ],
+    "httpsOnly": [
+      "yes",
+      6,
+      "Chromium HTTPS-first upgrades (unverified in UI)"
+    ],
+    "doh": [
+      "yes",
+      6,
+      "Chromium secure DNS"
+    ],
+    "torWindows": [
+      "no",
+      0,
+      ""
+    ],
+    "builtinVpn": [
+      "no",
+      0,
+      ""
+    ],
+    "cookieIsolation": [
+      "partial",
+      5,
+      "Chromium storage partitioning"
+    ],
+    "queryStripping": [
+      "no",
+      0,
+      ""
+    ],
+    "telemetryOptOut": [
+      "partial",
+      3,
+      "Opt-out scope not documented"
+    ],
+    "privateHardening": [
+      "partial",
+      4,
+      "Chromium private window"
+    ],
+    "adBlocker": [
+      "extension",
+      3,
+      "Only MV3 blockers such as uBO Lite"
+    ],
+    "cosmeticFiltering": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "customFilterLists": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "youtubeAds": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "cookieBanners": [
+      "extension",
+      3,
+      "Via MV3 extension"
+    ],
+    "verticalTabs": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "tabGroups": [
+      "yes",
+      6,
+      "Chromium tab groups"
+    ],
+    "tabStacks": [
+      "no",
+      0,
+      ""
+    ],
+    "workspaces": [
+      "no",
+      0,
+      ""
+    ],
+    "splitView": [
+      "no",
+      0,
+      ""
+    ],
+    "tabSleeping": [
+      "partial",
+      4,
+      "Chromium memory saver (unverified)"
+    ],
+    "tabSearch": [
+      "yes",
+      6,
+      "Chromium tab search"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7,
+      ""
+    ],
+    "tabTiling": [
+      "no",
+      0,
+      ""
+    ],
+    "readerMode": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "notes": [
+      "no",
+      0,
+      ""
+    ],
+    "webPanels": [
+      "partial",
+      5,
+      "AI sidebar only"
+    ],
+    "pip": [
+      "yes",
+      7,
+      "Chromium picture-in-picture"
+    ],
+    "screenshots": [
+      "partial",
+      4,
+      "Chromium screenshot tools (unverified)"
+    ],
+    "commandBar": [
+      "yes",
+      9,
+      "Give tasks from the address bar"
+    ],
+    "mouseGestures": [
+      "no",
+      0,
+      ""
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      ""
+    ],
+    "readLater": [
+      "no",
+      0,
+      ""
+    ],
+    "mailCalendarRss": [
+      "no",
+      0,
+      ""
+    ],
+    "chromeWebStore": [
+      "partial",
+      4,
+      "Extensions not mentioned; unverified"
+    ],
+    "firefoxAddons": [
+      "no",
+      0,
+      ""
+    ],
+    "mv2Support": [
+      "no",
+      0,
+      "MV2 removed upstream; Chrome Web Store dropped MV2 Aug 31, 2026"
+    ],
+    "uboFull": [
+      "no",
+      0,
+      "Full uBlock Origin needs MV2"
+    ],
+    "mobileExtensions": [
+      "no",
+      0,
+      ""
+    ],
+    "userscripts": [
+      "extension",
+      5,
+      "Via userscript-manager extension (MV3)"
+    ],
+    "syncBookmarks": [
+      "no",
+      0,
+      "Local-first"
+    ],
+    "syncPasswords": [
+      "no",
+      0,
+      "Local-first"
+    ],
+    "syncTabs": [
+      "no",
+      0,
+      "Local-first"
+    ],
+    "e2eeSync": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "profiles": [
+      "yes",
+      6,
+      "Chromium profiles (unverified)"
+    ],
+    "passwordManager": [
+      "yes",
+      7,
+      "Aside Vault, agent-safe"
+    ],
+    "passkeys": [
+      "partial",
+      4,
+      "Chromium WebAuthn"
+    ],
+    "importData": [
+      "partial",
+      5,
+      "Unverified"
+    ],
+    "widevine": [
+      "yes",
+      7,
+      "Chromium builds usually ship Widevine (unverified)"
+    ],
+    "netflix4k": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "hevc": [
+      "yes",
+      6,
+      "Chromium hw HEVC"
+    ],
+    "av1": [
+      "yes",
+      7,
+      ""
+    ],
+    "hwDecode": [
+      "yes",
+      7,
+      ""
+    ],
+    "aiAssistant": [
+      "yes",
+      8,
+      ""
+    ],
+    "aiSummarizer": [
+      "yes",
+      7,
+      ""
+    ],
+    "agenticBrowsing": [
+      "yes",
+      9,
+      "Agent tabs, scheduled tasks, Ultrabrowse"
+    ],
+    "localAi": [
+      "no",
+      0,
+      "Cloud models"
+    ],
+    "aiKillSwitch": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "translation": [
+      "partial",
+      5,
+      "AI-driven; no dedicated engine documented"
+    ],
+    "cryptoWallet": [
+      "no",
+      0,
+      ""
+    ],
+    "pwaInstall": [
+      "partial",
+      4,
+      "Chromium PWA install (unverified)"
+    ],
+    "enterprisePolicies": [
+      "no",
+      0,
+      "Not documented"
+    ],
+    "kioskMode": [
+      "no",
+      0,
+      ""
+    ],
+    "panicButton": [
+      "no",
+      0,
+      ""
+    ],
+    "downloadManager": [
+      "yes",
+      6,
+      "Chromium download shelf"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      ""
+    ],
+    "customSearchEngines": [
+      "yes",
+      6,
+      ""
+    ],
+    "devtools": [
+      "yes",
+      9,
+      "Chromium DevTools"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "Speedometer 3.1 = 41.32 on Apple Silicon (browserating)",
+      "measured-public"
+    ],
+    "pageLoad": [
+      8.5,
+      "Chromium rendering; AI sidebar adds overhead",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack with HTTP/3 and preloading",
+      "documented"
+    ],
+    "startup": [
+      7,
+      "Chromium cold start, heavier than plain Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      8.5,
+      "Chromium compositor, smooth scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU support",
+      "documented"
+    ],
+    "memory": [
+      4.5,
+      "Chromium multi-process plus AI layer; RAM-heavy",
+      "editorial"
+    ],
+    "cpu": [
+      5.5,
+      "Chromium-class; agent tasks add background load",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Chromium-class; agent runs add drain",
+      "editorial"
+    ],
+    "resourceControls": [
+      5,
+      "No dedicated RAM/CPU limiters documented",
+      "editorial"
+    ],
+    "lowEnd": [
+      4,
+      "Needs modern hardware; AI features add load",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Full Chromium bundle, a few hundred MB",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      6,
+      "Local memory and Secure Enclave claimed; cloud models",
+      "editorial"
+    ],
+    "blocking": [
+      3,
+      "Only MV3 blockers such as uBO Lite are available",
+      "documented"
+    ],
+    "fingerprinting": [
+      2,
+      "No fingerprint resistance beyond Chromium",
+      "documented"
+    ],
+    "securityHardening": [
+      8,
+      "Sandboxed agent plus Chromium; claims unverified",
+      "editorial"
+    ],
+    "patchSpeed": [
+      7.5,
+      "Follows Chromium stable; lag not independently measured",
+      "editorial"
+    ],
+    "telemetry": [
+      5,
+      "Not documented",
+      "editorial"
+    ],
+    "lookCustom": [
+      4,
+      "Basic themes only",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      4,
+      "Few shortcut or per-site options documented",
+      "editorial"
+    ],
+    "advancedSettings": [
+      4.5,
+      "Chromium settings; flags/policies not documented",
+      "editorial"
+    ],
+    "tabManagement": [
+      6,
+      "Tab groups and search; no workspaces documented",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Default search changeable; AI prompt flow is the focus",
+      "editorial"
+    ],
+    "downloads": [
+      6,
+      "Standard Chromium download manager",
+      "documented"
+    ],
+    "productivity": [
+      8.5,
+      "Agent tabs, scheduling, background work",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Chromium codecs; DRM details unverified",
+      "editorial"
+    ],
+    "translation": [
+      5,
+      "AI-driven page translation; no dedicated engine",
+      "editorial"
+    ],
+    "extras": [
+      5,
+      "AI agent and memory; no VPN or wallet",
+      "editorial"
+    ],
+    "extensions": [
+      4.5,
+      "Extension support not documented",
+      "editorial"
+    ],
+    "sync": [
+      2,
+      "No sync; data local",
+      "editorial"
+    ],
+    "passwords": [
+      6,
+      "Aside Vault autofill hidden from the AI",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile app",
+      "editorial"
+    ],
+    "webCompat": [
+      9.5,
+      "Blink engine, full Chrome compatibility",
+      "documented"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "documented"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium accessibility stack, unverified for AI layer",
+      "editorial"
+    ],
+    "openSource": [
+      2,
+      "Proprietary layer over Chromium",
+      "documented"
+    ],
+    "businessTrust": [
+      5,
+      "YC startup, self-reported benchmarks",
+      "editorial"
+    ],
+    "longevity": [
+      5,
+      "Early-stage startup",
+      "editorial"
+    ],
+    "ai": [
+      9,
+      "Top-tier agent focus; benchmarks self-reported",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      6.5,
+      "BYO model subscription adds setup",
+      "editorial"
+    ]
+  },
+  "lastVerified": "2026-10-29"
+}

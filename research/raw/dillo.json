@@ -1,0 +1,725 @@
+{
+  "id": "dillo",
+  "name": "Dillo",
+  "aliases": [
+    "Dillo browser"
+  ],
+  "group": "minimal",
+  "developer": "Dillo project (Jorge Arellano Cid and contributors)",
+  "hq": "Community project",
+  "businessModel": "None; volunteer-maintained free software",
+  "engine": "dillo",
+  "basedOn": "Independent",
+  "license": "GPL-3.0-or-later",
+  "openSource": true,
+  "price": "free",
+  "releaseYear": 1999,
+  "status": "active",
+  "version": {
+    "current": "3.3.0",
+    "date": "2026-04-26",
+    "upstream": "n/a (own engine on FLTK)"
+  },
+  "channels": [
+    "Stable"
+  ],
+  "updateCadence": "Roughly yearly (3.2.0 in Jan 2025, 3.3.0 in Apr 2026)",
+  "website": "https://dillo-browser.org",
+  "tags": [
+    "lightweight",
+    "no-javascript",
+    "linux",
+    "fltk"
+  ],
+  "pitch": "Tiny graphical browser with no JavaScript, built for old and low-power machines.",
+  "summary": "Dillo is a small graphical browser written in C++ on FLTK. It has no JavaScript and handles only a subset of CSS, but starts instantly and runs on very old hardware. Version 3.3.0 arrived in April 2026.",
+  "bestFor": [
+    "Very old or low-power computers",
+    "Reading static, text-heavy pages",
+    "Minimalists who want no JavaScript at all"
+  ],
+  "notFor": [
+    "Modern web apps, logins and video",
+    "People who need an audited, sandboxed browser"
+  ],
+  "pros": [
+    {
+      "title": "Extremely light",
+      "detail": "Fast start and a tiny memory footprint."
+    },
+    {
+      "title": "No JavaScript",
+      "detail": "Removes a large part of tracking and attack surface."
+    },
+    {
+      "title": "Recent releases",
+      "detail": "3.2.0 (Jan 2025) added WebP and SVG; 3.3.0 (Apr 2026) adds experimental FLTK 1.4 support."
+    },
+    {
+      "title": "Configurable",
+      "detail": "Options such as link actions, new tab page and image-format ignoring."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Breaks most modern sites",
+      "detail": "No JavaScript and partial CSS support."
+    },
+    {
+      "title": "No sandbox",
+      "detail": "A C/C++ program with a memory-safety bug history, including a TLS use-after-free fixed in 3.2.0."
+    },
+    {
+      "title": "Domain warning",
+      "detail": "dillo.org is no longer controlled by the developers; the real site is dillo-browser.org."
+    }
+  ],
+  "signatureFeatures": [
+    "Instant startup",
+    "No JavaScript",
+    "FLTK interface",
+    "Custom link actions"
+  ],
+  "faq": [
+    {
+      "q": "Does Dillo support JavaScript?",
+      "a": "No."
+    },
+    {
+      "q": "Which site is official?",
+      "a": "dillo-browser.org. The old dillo.org domain has not been under the developers’ control since December 2023."
+    },
+    {
+      "q": "What changed in 3.3.0?",
+      "a": "It adds new features, configuration options and fixes, and is the first release with experimental FLTK 1.4 support."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "1999",
+      "event": "Dillo project begins"
+    },
+    {
+      "date": "2023-12",
+      "event": "dillo.org domain leaves developer control"
+    },
+    {
+      "date": "2025-01",
+      "event": "Version 3.2.0: WebP, basic SVG, new CSS units, zoom"
+    },
+    {
+      "date": "2026-04",
+      "event": "Version 3.3.0 with experimental FLTK 1.4 support"
+    }
+  ],
+  "switching": {
+    "imports": [],
+    "note": "No importers; bookmarks are a local file."
+  },
+  "alternatives": [
+    "netsurf",
+    "lynx",
+    "w3m"
+  ],
+  "keyFacts": {
+    "engineByOs": {},
+    "sync": {
+      "type": "none",
+      "items": [],
+      "crossOs": false,
+      "note": "No sync"
+    },
+    "passwordManager": {
+      "level": "none",
+      "passkeys": false,
+      "breachCheck": false,
+      "note": "No password storage"
+    },
+    "mv2": {
+      "level": "no-extensions",
+      "note": "No extension system",
+      "date": "2026"
+    },
+    "ublock": "none",
+    "mobileExtensions": {
+      "android": "n/a",
+      "ios": "n/a"
+    },
+    "ai": {
+      "level": "none",
+      "killSwitch": true,
+      "paid": "none",
+      "note": "No AI features"
+    },
+    "privacy": {
+      "defaults": "No JavaScript; cookies configurable",
+      "telemetry": "None",
+      "jurisdiction": "Community project"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Configurable",
+    "telemetry": "None",
+    "drm": "None",
+    "codecs": "Images only (JPEG, PNG, GIF, WebP, basic SVG)",
+    "sandbox": "None",
+    "patchLag": "Own code; distro packaging varies",
+    "languages": "English plus translations (not counted)"
+  },
+  "platforms": {
+    "linux": {
+      "status": "active",
+      "minOs": "Any with FLTK",
+      "arch": [
+        "x64",
+        "arm64",
+        "other"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "aur"
+      ],
+      "notes": [
+        "Arch Linux ships 3.3.0-2",
+        "Builds against FLTK 1.3; FLTK 1.4 is experimental"
+      ],
+      "highlights": [
+        "Tiny footprint"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "Needs build tools (not verified)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "homebrew"
+      ],
+      "notes": [
+        "Packaging not verified in the sources"
+      ],
+      "highlights": [],
+      "scoreDelta": {}
+    }
+  },
+  "unverified": [
+    "macOS packaging",
+    "Exact 3.3.0 feature list (release page not fetched)",
+    "Founding year (1999 per Wikipedia)"
+  ],
+  "confidence": "medium",
+  "features": {
+    "trackingProtection": [
+      "partial",
+      4,
+      "No JS; cookies configurable"
+    ],
+    "fingerprintProtection": [
+      "partial",
+      5,
+      "Minimal surface; no JS"
+    ],
+    "httpsOnly": [
+      "no",
+      0
+    ],
+    "doh": [
+      "no",
+      0
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "no",
+      0
+    ],
+    "cookieIsolation": [
+      "partial",
+      3,
+      "Cookie rules file"
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "yes",
+      10,
+      "No telemetry exists"
+    ],
+    "privateHardening": [
+      "no",
+      0
+    ],
+    "adBlocker": [
+      "partial",
+      3,
+      "No JS; image and URL filtering rules"
+    ],
+    "cosmeticFiltering": [
+      "no",
+      0
+    ],
+    "customFilterLists": [
+      "no",
+      0
+    ],
+    "youtubeAds": [
+      "no",
+      0
+    ],
+    "cookieBanners": [
+      "no",
+      0
+    ],
+    "verticalTabs": [
+      "no",
+      0
+    ],
+    "tabGroups": [
+      "no",
+      0
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "no",
+      0
+    ],
+    "tabSleeping": [
+      "no",
+      0
+    ],
+    "tabSearch": [
+      "no",
+      0
+    ],
+    "pinnedTabs": [
+      "no",
+      0
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "no",
+      0
+    ],
+    "pip": [
+      "no",
+      0
+    ],
+    "screenshots": [
+      "no",
+      0
+    ],
+    "commandBar": [
+      "no",
+      0
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      6,
+      "Remappable keys"
+    ],
+    "readLater": [
+      "no",
+      0
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "no",
+      0
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "no",
+      0
+    ],
+    "uboFull": [
+      "no",
+      0
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "no",
+      0
+    ],
+    "syncBookmarks": [
+      "no",
+      0
+    ],
+    "syncPasswords": [
+      "no",
+      0
+    ],
+    "syncTabs": [
+      "no",
+      0
+    ],
+    "e2eeSync": [
+      "no",
+      0
+    ],
+    "profiles": [
+      "no",
+      0
+    ],
+    "passwordManager": [
+      "no",
+      0
+    ],
+    "passkeys": [
+      "no",
+      0
+    ],
+    "importData": [
+      "no",
+      0
+    ],
+    "widevine": [
+      "no",
+      0
+    ],
+    "netflix4k": [
+      "no",
+      0
+    ],
+    "hevc": [
+      "no",
+      0
+    ],
+    "av1": [
+      "no",
+      0
+    ],
+    "hwDecode": [
+      "no",
+      0
+    ],
+    "aiAssistant": [
+      "no",
+      0
+    ],
+    "aiSummarizer": [
+      "no",
+      0
+    ],
+    "agenticBrowsing": [
+      "no",
+      0
+    ],
+    "localAi": [
+      "no",
+      0
+    ],
+    "aiKillSwitch": [
+      "yes",
+      10,
+      "No AI features"
+    ],
+    "translation": [
+      "no",
+      0
+    ],
+    "cryptoWallet": [
+      "no",
+      0
+    ],
+    "pwaInstall": [
+      "no",
+      0
+    ],
+    "enterprisePolicies": [
+      "no",
+      0
+    ],
+    "kioskMode": [
+      "no",
+      0
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "partial",
+      3,
+      "Basic save dialog"
+    ],
+    "customThemes": [
+      "partial",
+      3,
+      "User stylesheet"
+    ],
+    "customSearchEngines": [
+      "partial",
+      3,
+      "Config file"
+    ],
+    "devtools": [
+      "partial",
+      2,
+      "Source view"
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      0,
+      "No JavaScript at all",
+      "editorial"
+    ],
+    "pageLoad": [
+      5,
+      "Fast fetch; limited CSS",
+      "editorial"
+    ],
+    "networkSpeed": [
+      4,
+      "Basic HTTP, HTTPS added in 3.x",
+      "editorial"
+    ],
+    "startup": [
+      10,
+      "Starts instantly",
+      "editorial"
+    ],
+    "smoothness": [
+      6,
+      "Simple scrolling",
+      "editorial"
+    ],
+    "graphics": [
+      0,
+      "No canvas or WebGL",
+      "editorial"
+    ],
+    "memory": [
+      10,
+      "A few MB of RAM",
+      "editorial"
+    ],
+    "cpu": [
+      10,
+      "Negligible CPU",
+      "editorial"
+    ],
+    "battery": [
+      10,
+      "Negligible power draw",
+      "editorial"
+    ],
+    "resourceControls": [
+      3,
+      "Nothing to limit",
+      "editorial"
+    ],
+    "lowEnd": [
+      10,
+      "Runs on very old hardware",
+      "editorial"
+    ],
+    "installSize": [
+      10,
+      "Tiny binary",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      8,
+      "No JS; cookies configurable",
+      "editorial"
+    ],
+    "blocking": [
+      5,
+      "No JS removes most trackers",
+      "editorial"
+    ],
+    "fingerprinting": [
+      8,
+      "Almost no fingerprintable surface",
+      "editorial"
+    ],
+    "securityHardening": [
+      4,
+      "No sandbox; C/C++ with memory-safety fixes",
+      "editorial"
+    ],
+    "patchSpeed": [
+      5,
+      "Small project with roughly yearly releases",
+      "editorial"
+    ],
+    "telemetry": [
+      10,
+      "No telemetry",
+      "documented"
+    ],
+    "lookCustom": [
+      5,
+      "Colours, fonts and user CSS",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6,
+      "dillorc options and link actions",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6,
+      "Config file options",
+      "editorial"
+    ],
+    "tabManagement": [
+      4,
+      "Tabs, no groups",
+      "editorial"
+    ],
+    "searchFreedom": [
+      6,
+      "Config-defined",
+      "editorial"
+    ],
+    "downloads": [
+      3,
+      "Basic",
+      "editorial"
+    ],
+    "productivity": [
+      2,
+      "No reader or notes",
+      "editorial"
+    ],
+    "media": [
+      1,
+      "Images only",
+      "editorial"
+    ],
+    "translation": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "extras": [
+      1,
+      "None",
+      "editorial"
+    ],
+    "extensions": [
+      0,
+      "No extensions",
+      "editorial"
+    ],
+    "sync": [
+      0,
+      "No sync",
+      "editorial"
+    ],
+    "passwords": [
+      0,
+      "No password storage",
+      "editorial"
+    ],
+    "mobileApps": [
+      0,
+      "No mobile app",
+      "editorial"
+    ],
+    "webCompat": [
+      2.5,
+      "Static HTML and partial CSS",
+      "editorial"
+    ],
+    "devTools": [
+      1,
+      "View source only",
+      "editorial"
+    ],
+    "accessibility": [
+      3,
+      "Limited toolkit accessibility",
+      "editorial"
+    ],
+    "openSource": [
+      10,
+      "GPL-3.0 on GitHub",
+      "documented"
+    ],
+    "businessTrust": [
+      9,
+      "Volunteer project, no business model",
+      "editorial"
+    ],
+    "longevity": [
+      6.5,
+      "Active since 1999; small team",
+      "editorial"
+    ],
+    "ai": [
+      0,
+      "None",
+      "editorial"
+    ],
+    "beginnerFriendly": [
+      3,
+      "Works, but most sites break",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://github.com/dillo-browser/dillo/releases",
+      "title": "Dillo releases on GitHub",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://9to5linux.com/dillo-3-2-open-source-web-browser-released-to-celebrate-25th-anniversary",
+      "title": "Dillo 3.2 released - 9to5Linux",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://news.tuxmachines.org/n/2026/04/27/Web_Browsers_Dillo_Brave_Origin_Nightly_and_Firefox.shtml",
+      "title": "Tux Machines: Dillo 3.3.0",
+      "accessed": "2026-10-30"
+    },
+    {
+      "url": "https://archlinux.org/packages/extra-staging/x86_64/dillo/",
+      "title": "Arch Linux dillo 3.3.0-2",
+      "accessed": "2026-10-30"
+    }
+  ],
+  "lastVerified": "2026-10-30"
+}

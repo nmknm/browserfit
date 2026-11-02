@@ -1,0 +1,823 @@
+{
+  "id": "opera-gx",
+  "name": "Opera GX",
+  "aliases": [
+    "GX",
+    "Opera GX Gaming Browser"
+  ],
+  "group": "power",
+  "developer": "Opera Software (Opera Limited)",
+  "hq": "Norway",
+  "businessModel": "Search-engine deals, sponsored speed dials, gaming partnerships and affiliate promotions; free product",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "Proprietary (Chromium BSD components)",
+  "openSource": false,
+  "price": "free",
+  "releaseYear": 2019,
+  "status": "active",
+  "statusNote": "Oct 29 2026 Browser Booster update",
+  "version": {
+    "current": "GX core 130+ (latest number not verified)",
+    "date": "2026-10-29",
+    "upstream": "Chromium ~14x (not verified)"
+  },
+  "channels": [
+    "Stable",
+    "Early Bird",
+    "Developer"
+  ],
+  "updateCadence": "Major GX updates every few months plus Chromium-based core updates; lags Chromium by several versions",
+  "website": "https://www.opera.com/gx",
+  "tags": [
+    "gaming",
+    "customizable",
+    "resource-limiter",
+    "mods",
+    "free-vpn"
+  ],
+  "pitch": "Gaming-oriented Chromium browser with resource limiters, mods and built-in apps.",
+  "summary": "Free Chromium browser for gamers with CPU, RAM and network limiters, Hot Tabs Killer, GX Mods (11,000+), a native ad blocker, free VPN and Opera AI. Now on Windows, macOS, Linux (Mar 2026), Android and iOS.",
+  "bestFor": [
+    "Gamers who want a browser with resource caps",
+    "People who like heavy theming and mods",
+    "Users who want built-in music/Twitch/Discord sidebars"
+  ],
+  "notFor": [
+    "Privacy purists",
+    "People who dislike sponsored promotions",
+    "Anyone avoiding AI sidebars"
+  ],
+  "pros": [
+    {
+      "title": "GX Control limiters",
+      "detail": "Cap CPU, RAM and network use of the browser; Hot Tabs Killer closes heavy tabs."
+    },
+    {
+      "title": "Massive customisation",
+      "detail": "Over 11,000 GX Mods plus themes, sounds and shaders."
+    },
+    {
+      "title": "Native ad blocker",
+      "detail": "Summer 2026 update added a faster blocker with uBlock filter compatibility."
+    },
+    {
+      "title": "New in Oct 2026",
+      "detail": "Volume Booster up to 500% and an 8-preset Audio Equalizer per tab."
+    },
+    {
+      "title": "Broad platform reach",
+      "detail": "Windows, macOS, Linux (since Mar 2026), Android and iOS."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Weak privacy posture",
+      "detail": "Sponsored content, telemetry and an ad-driven business model."
+    },
+    {
+      "title": "Chromium patch lag",
+      "detail": "GX core 126 shipped on Chromium 142 in Jan 2026 while Chrome was newer."
+    },
+    {
+      "title": "MV2 not guaranteed",
+      "detail": "Opera says it supports MV2 \"as long as we can\" with no end date; GX-specific confirmation is missing."
+    },
+    {
+      "title": "AI and promos in the UI",
+      "detail": "Opera AI and promotional content appear by default."
+    }
+  ],
+  "signatureFeatures": [
+    "GX Control (CPU/RAM/Network limiters)",
+    "GX Mods",
+    "Browser Booster (Volume Booster, Equalizer)",
+    "Native ad blocker and free VPN",
+    "Split Screen"
+  ],
+  "faq": [
+    {
+      "q": "Is Opera GX only for gamers?",
+      "a": "No. It is a regular Chromium browser with extras; the limiters and mods help gamers most."
+    },
+    {
+      "q": "Is there Opera GX on Linux?",
+      "a": "Yes, GX launched on Linux in March 2026 with built-in ad blocker and VPN."
+    },
+    {
+      "q": "Does GX still support uBlock Origin?",
+      "a": "Opera says it supports MV2 extensions like uBlock Origin for as long as it can; the built-in blocker also uses uBlock filter lists."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "Opera GX announced"
+    },
+    {
+      "date": "2026-01-15",
+      "event": "GX core 126 (Chromium 142)"
+    },
+    {
+      "date": "2026-03",
+      "event": "Opera GX launches on Linux"
+    },
+    {
+      "date": "2026-06-25",
+      "event": "Summer update: mini player, new ad blocker, smarter AI"
+    },
+    {
+      "date": "2026-10-29",
+      "event": "Browser Booster update: Volume Booster, Equalizer, split screen"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions"
+    ],
+    "note": "Imports from Chrome and other browsers; Opera add-ons store plus Chrome extensions via helper."
+  },
+  "alternatives": [
+    "opera-air",
+    "brave",
+    "vivaldi",
+    "chrome"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "account",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "settings"
+      ],
+      "crossOs": true,
+      "note": "Opera account sync; encryption passphrase optional (unverified details)"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Basic built-in manager"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Opera (One) states MV2 support continues \"as long as we can\" (June 2026); GX specific not confirmed",
+      "date": "2026-06"
+    },
+    "ublock": "builtin-equivalent",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "on-by-default",
+      "killSwitch": true,
+      "paid": "no",
+      "note": "Opera AI (Aria) in sidebar; can be disabled (unverified exact toggle)"
+    },
+    "privacy": {
+      "defaults": "Native ad/tracker blocker optional, free VPN proxy; sponsored content on",
+      "telemetry": "Usage data collection with opt-outs",
+      "jurisdiction": "Norway/EU (Cayman parent)"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Google (region-dependent)",
+    "telemetry": "Usage statistics opt-out",
+    "drm": "Widevine",
+    "codecs": "H.264, VP9, AV1, HEVC (hw)",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Typically several Chromium majors behind during parts of 2026 (core 126 on Chromium 142 in Jan)",
+    "languages": "50+"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "microsoft-store"
+      ],
+      "notes": [],
+      "highlights": [
+        "Full GX Control"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS (recent)",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer"
+      ],
+      "notes": [],
+      "highlights": [],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern distro",
+      "arch": [
+        "x64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "snap"
+      ],
+      "notes": [
+        "Launched March 2026",
+        "Package formats not verified"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extras": -1
+      }
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android (recent)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "google-play"
+      ],
+      "notes": [
+        "Opera GX Mobile; separate app"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -7,
+        "resourceControls": -2
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS (recent)",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine (Apple rule)"
+      ],
+      "highlights": [],
+      "scoreDelta": {
+        "extensions": -7
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      6
+    ],
+    "fingerprintProtection": [
+      "no",
+      0
+    ],
+    "httpsOnly": [
+      "yes",
+      6
+    ],
+    "doh": [
+      "yes",
+      6
+    ],
+    "torWindows": [
+      "no",
+      0
+    ],
+    "builtinVpn": [
+      "yes",
+      6,
+      "Free browser VPN (proxy)"
+    ],
+    "cookieIsolation": [
+      "partial",
+      4
+    ],
+    "queryStripping": [
+      "no",
+      0
+    ],
+    "telemetryOptOut": [
+      "partial",
+      5
+    ],
+    "privateHardening": [
+      "partial",
+      4
+    ],
+    "adBlocker": [
+      "yes",
+      8,
+      "Native blocker with uBlock filters"
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      6
+    ],
+    "customFilterLists": [
+      "yes",
+      7
+    ],
+    "youtubeAds": [
+      "partial",
+      5
+    ],
+    "cookieBanners": [
+      "yes",
+      6
+    ],
+    "verticalTabs": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "tabGroups": [
+      "yes",
+      7,
+      "Tab Islands (unverified for GX)"
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "yes",
+      7
+    ],
+    "splitView": [
+      "yes",
+      7,
+      "Split Screen, expanded Oct 2026"
+    ],
+    "tabSleeping": [
+      "yes",
+      9,
+      "Hot Tabs Killer and limiters"
+    ],
+    "tabSearch": [
+      "yes",
+      8,
+      "Search in Tabs"
+    ],
+    "pinnedTabs": [
+      "yes",
+      7
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "no",
+      0
+    ],
+    "notes": [
+      "partial",
+      4,
+      "Flow and Pinboards"
+    ],
+    "webPanels": [
+      "yes",
+      9,
+      "Sidebar apps"
+    ],
+    "pip": [
+      "yes",
+      8,
+      "Video pop-out"
+    ],
+    "screenshots": [
+      "yes",
+      8,
+      "Snapshot tool"
+    ],
+    "commandBar": [
+      "partial",
+      5
+    ],
+    "mouseGestures": [
+      "yes",
+      7
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "partial",
+      5,
+      "Pinboards"
+    ],
+    "mailCalendarRss": [
+      "no",
+      0
+    ],
+    "chromeWebStore": [
+      "partial",
+      7,
+      "Via Opera helper add-on"
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      6,
+      "Promised \"as long as we can\""
+    ],
+    "uboFull": [
+      "partial",
+      6,
+      "Via MV2 if still supported"
+    ],
+    "mobileExtensions": [
+      "no",
+      0
+    ],
+    "userscripts": [
+      "extension",
+      7
+    ],
+    "syncBookmarks": [
+      "yes",
+      8
+    ],
+    "syncPasswords": [
+      "yes",
+      7
+    ],
+    "syncTabs": [
+      "yes",
+      8
+    ],
+    "e2eeSync": [
+      "partial",
+      5
+    ],
+    "profiles": [
+      "partial",
+      5
+    ],
+    "passwordManager": [
+      "yes",
+      5
+    ],
+    "passkeys": [
+      "yes",
+      6
+    ],
+    "importData": [
+      "yes",
+      8
+    ],
+    "widevine": [
+      "yes",
+      9
+    ],
+    "netflix4k": [
+      "partial",
+      5,
+      "Widevine L3"
+    ],
+    "hevc": [
+      "yes",
+      8
+    ],
+    "av1": [
+      "yes",
+      8
+    ],
+    "hwDecode": [
+      "yes",
+      8
+    ],
+    "aiAssistant": [
+      "yes",
+      7,
+      "Opera AI"
+    ],
+    "aiSummarizer": [
+      "yes",
+      6
+    ],
+    "agenticBrowsing": [
+      "partial",
+      4,
+      "Browser Connector lets ChatGPT/Claude read tabs (Apr 2026)"
+    ],
+    "localAi": [
+      "partial",
+      3
+    ],
+    "aiKillSwitch": [
+      "yes",
+      6
+    ],
+    "translation": [
+      "partial",
+      4,
+      "Unverified"
+    ],
+    "cryptoWallet": [
+      "partial",
+      4,
+      "Opera Wallet (unverified)"
+    ],
+    "pwaInstall": [
+      "yes",
+      6
+    ],
+    "enterprisePolicies": [
+      "partial",
+      4
+    ],
+    "kioskMode": [
+      "partial",
+      3
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      7
+    ],
+    "customThemes": [
+      "yes",
+      10,
+      "GX Mods, 11,000+"
+    ],
+    "customSearchEngines": [
+      "yes",
+      8
+    ],
+    "devtools": [
+      "yes",
+      9
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      8.5,
+      "Chromium V8 but running several majors behind",
+      "editorial"
+    ],
+    "pageLoad": [
+      8.5,
+      "Blink rendering",
+      "editorial"
+    ],
+    "networkSpeed": [
+      8.5,
+      "Chromium network stack; network limiter optional",
+      "editorial"
+    ],
+    "startup": [
+      6.5,
+      "Heavy UI; Opera claims 2x faster launch in summer 2026",
+      "editorial"
+    ],
+    "smoothness": [
+      8,
+      "Blink compositor with heavy UI effects",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Chromium WebGL/WebGPU",
+      "editorial"
+    ],
+    "memory": [
+      5,
+      "Heavy UI, though RAM limiter exists",
+      "editorial"
+    ],
+    "cpu": [
+      6,
+      "Chromium baseline; CPU limiter available",
+      "editorial"
+    ],
+    "battery": [
+      5.5,
+      "Battery saver exists; heavy visuals",
+      "editorial"
+    ],
+    "resourceControls": [
+      9.5,
+      "CPU/RAM/network limiters and Hot Tabs Killer",
+      "documented"
+    ],
+    "lowEnd": [
+      5.5,
+      "Limiters help but install is large",
+      "editorial"
+    ],
+    "installSize": [
+      4.5,
+      "Large installer",
+      "documented"
+    ],
+    "privacyDefaults": [
+      5,
+      "Sponsored items on; telemetry; VPN is proxy only",
+      "documented"
+    ],
+    "blocking": [
+      8,
+      "Native blocker with uBlock lists; MV2 uBO may work",
+      "documented"
+    ],
+    "fingerprinting": [
+      3,
+      "No dedicated fingerprint protection",
+      "editorial"
+    ],
+    "securityHardening": [
+      8,
+      "Chromium sandbox, but patch lag",
+      "editorial"
+    ],
+    "patchSpeed": [
+      6.5,
+      "Core 126 on Chromium 142 in Jan 2026, several majors behind",
+      "documented"
+    ],
+    "telemetry": [
+      3.5,
+      "Ad-driven model, opt-out usage data",
+      "documented"
+    ],
+    "lookCustom": [
+      9.5,
+      "11,000+ mods, themes, shaders, sounds",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      7.5,
+      "Shortcuts, gestures, per-site settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      6.5,
+      "Chromium flags and Opera settings",
+      "editorial"
+    ],
+    "tabManagement": [
+      8,
+      "Workspaces, islands, split screen, search in tabs",
+      "documented"
+    ],
+    "searchFreedom": [
+      8,
+      "Custom engines, address-bar search",
+      "documented"
+    ],
+    "downloads": [
+      6.5,
+      "Standard download panel",
+      "editorial"
+    ],
+    "productivity": [
+      7.5,
+      "Sidebar apps, snapshot, flow, AI",
+      "editorial"
+    ],
+    "media": [
+      8,
+      "Widevine, Volume Booster and 8-preset equalizer",
+      "editorial"
+    ],
+    "translation": [
+      4,
+      "No clear built-in translation (unverified)",
+      "documented"
+    ],
+    "extras": [
+      8.5,
+      "Free VPN, Twitch/Discord/music, GX Corner, mods",
+      "documented"
+    ],
+    "extensions": [
+      8,
+      "Opera add-ons, Chrome extensions, MV2 partly",
+      "documented"
+    ],
+    "sync": [
+      7,
+      "Opera account sync, passphrase encryption optional",
+      "documented"
+    ],
+    "passwords": [
+      5,
+      "Basic manager",
+      "documented"
+    ],
+    "mobileApps": [
+      8,
+      "Android and iOS GX apps",
+      "documented"
+    ],
+    "webCompat": [
+      9,
+      "Chromium engine",
+      "editorial"
+    ],
+    "devTools": [
+      9,
+      "Chromium DevTools",
+      "editorial"
+    ],
+    "accessibility": [
+      7.5,
+      "Chromium a11y with heavy custom UI",
+      "editorial"
+    ],
+    "openSource": [
+      3,
+      "Proprietary on Chromium base",
+      "documented"
+    ],
+    "businessTrust": [
+      4.5,
+      "Ad-funded; sponsored placements",
+      "documented"
+    ],
+    "longevity": [
+      8.5,
+      "Large company, frequent updates",
+      "documented"
+    ],
+    "ai": [
+      6.5,
+      "Opera AI plus Browser Connector for external assistants",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      7.5,
+      "Easy Setup wizard, familiar Chromium UI",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://press.opera.com/2026/10/29/opera-gx-browser-booster/",
+      "title": "Opera Newsroom: Opera GX Browser Booster",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://basic-tutorials.com/news/opera-gx-summer-2026-update-mini-player-new-ad-blocker-and-smarter-ai/",
+      "title": "Basic Tutorials: Opera GX Summer 2026 Update",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://forums.opera.com/topic/87948/changelogs-opera-gx-126",
+      "title": "Opera forums: Changelogs Opera GX 126",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/06/16/opera-responds-chrome-mv2-ban/",
+      "title": "PiunikaWeb: Opera responds on MV2",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://blogs.opera.com/news/2026/10/opera-gx-browser-booster/",
+      "title": "Opera blog: Browser Booster",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Current GX core number and Chromium base (core 130 seen in July 2026)",
+    "GX-specific MV2 support",
+    "Vertical tabs, Tab Islands, translation and wallet status in GX",
+    "Linux package formats",
+    "Opera parent ownership details"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

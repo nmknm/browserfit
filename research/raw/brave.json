@@ -1,0 +1,862 @@
+{
+  "id": "brave",
+  "name": "Brave",
+  "aliases": [
+    "Brave Browser"
+  ],
+  "group": "privacy",
+  "developer": "Brave Software, Inc.",
+  "hq": "United States",
+  "businessModel": "Opt-in privacy ads (BAT), Brave Search ads/API, Brave VPN, Leo and Search Premium subscriptions; Brave Origin one-time purchase",
+  "engine": "blink",
+  "basedOn": "Chromium",
+  "license": "MPL-2.0",
+  "openSource": true,
+  "price": "freemium",
+  "paidNote": "Brave Origin $59.99 one-time (Linux free); Brave VPN, Leo Premium and other subscriptions optional",
+  "releaseYear": 2016,
+  "status": "active",
+  "statusNote": "",
+  "version": {
+    "current": "1.97.59",
+    "date": "2026-10-16",
+    "upstream": "Chromium 155"
+  },
+  "channels": [
+    "Release",
+    "Beta",
+    "Nightly",
+    "Origin (paid/Beta)"
+  ],
+  "updateCadence": "Roughly every 2-4 weeks on the Chromium cycle, with point releases between",
+  "website": "https://brave.com",
+  "tags": [
+    "privacy",
+    "ad-blocking",
+    "chromium",
+    "crypto",
+    "ai"
+  ],
+  "pitch": "Chromium with strong built-in blocking and optional extras; Origin strips the extras.",
+  "summary": "Chromium-based browser with Shields blocking, fingerprint farbling, Tor windows, sync chain, and optional Leo AI, Rewards and VPN. Brave Origin (2026) is a paid stripped-down edition.",
+  "bestFor": [
+    "People who want blocking and privacy with zero setup",
+    "Chrome users who want to keep Chromium compatibility",
+    "Users who want to keep uBO-style MV2 blockers on a Chromium engine",
+    "Users who want a Chromium browser without Google services"
+  ],
+  "notFor": [
+    "People who dislike crypto, AI and promo extras (unless they buy Origin)",
+    "Users who want a non-Chromium engine",
+    "Those wanting Tor-grade anonymity"
+  ],
+  "pros": [
+    {
+      "title": "Blocking by default",
+      "detail": "Shields blocks ads, trackers, third-party cookie tracking and upgrades HTTPS with no setup."
+    },
+    {
+      "title": "Fingerprint farbling",
+      "detail": "Randomises fingerprint surfaces per session and eTLD+1 rather than a single fixed value."
+    },
+    {
+      "title": "Chromium compatibility",
+      "detail": "Chrome Web Store extensions and near-perfect site compatibility."
+    },
+    {
+      "title": "Partial MV2 survival",
+      "detail": "Keeps self-hosted MV2 builds of uBO, AdGuard, uMatrix and NoScript working after Chrome removed MV2."
+    },
+    {
+      "title": "E2EE sync chain",
+      "detail": "Sync needs no account, just a sync code, and is end-to-end encrypted."
+    },
+    {
+      "title": "Fast Chromium patching",
+      "detail": "Ships Chromium security point releases within days (1.97.57 and 1.97.59 in Oct 2026)."
+    }
+  ],
+  "cons": [
+    {
+      "title": "Bundled extras",
+      "detail": "Rewards, Wallet, VPN upsells, News and Leo are present unless you disable them or pay for Origin."
+    },
+    {
+      "title": "Past controversies",
+      "detail": "Affiliate-link injection (2020) and the crypto-ads model reduced trust for some users."
+    },
+    {
+      "title": "Mobile extension gap",
+      "detail": "Android extension support is still experimental behind a flag; iOS has none."
+    },
+    {
+      "title": "Chromium monoculture",
+      "detail": "Same engine as Chrome and Edge, so engine diversity is not improved."
+    }
+  ],
+  "signatureFeatures": [
+    "Shields",
+    "Tor private windows",
+    "Brave Search",
+    "Leo AI",
+    "Brave Origin"
+  ],
+  "faq": [
+    {
+      "q": "Is Brave still usable with uBlock Origin?",
+      "a": "Partly: Brave keeps self-hosted MV2 builds of uBO, AdGuard, uMatrix and NoScript working, but the Chrome Web Store no longer lists MV2 extensions. Its built-in Shields covers most blocking needs anyway."
+    },
+    {
+      "q": "What is Brave Origin?",
+      "a": "A 2026 paid edition ($59.99 one-time, 10 devices, Linux free) that removes Rewards, Wallet, VPN promos, Leo, News and sponsored images while keeping Shields."
+    },
+    {
+      "q": "Does Brave support extensions on Android?",
+      "a": "Not yet for normal users; work started in Sept-Oct 2026 behind brave://flags/#brave-android-extensions, Canary first."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2016-01",
+      "event": "First public release by Brendan Eich and Brian Bondy"
+    },
+    {
+      "date": "2019-11",
+      "event": "Brave 1.0 stable"
+    },
+    {
+      "date": "2026-04",
+      "event": "Brave Origin Nightly released"
+    },
+    {
+      "date": "2026-06",
+      "event": "Brave Origin stable ($59.99, Linux free)"
+    },
+    {
+      "date": "2026-10",
+      "event": "Brave Android extension support work started behind a flag"
+    }
+  ],
+  "switching": {
+    "imports": [
+      "bookmarks",
+      "passwords",
+      "history",
+      "extensions",
+      "search engines"
+    ],
+    "note": "Imports from Chrome, Edge, Firefox, Safari and other Chromium browsers."
+  },
+  "alternatives": [
+    "vivaldi",
+    "firefox",
+    "librewolf",
+    "helium",
+    "mullvad-browser",
+    "ecosia-browser"
+  ],
+  "keyFacts": {
+    "engineByOs": {
+      "ios": "webkit"
+    },
+    "sync": {
+      "type": "e2ee",
+      "items": [
+        "bookmarks",
+        "passwords",
+        "history",
+        "tabs",
+        "settings",
+        "extensions"
+      ],
+      "crossOs": true,
+      "note": "Sync chain code, no account required"
+    },
+    "passwordManager": {
+      "level": "basic",
+      "passkeys": true,
+      "breachCheck": false,
+      "note": "Chromium-style manager; fewer extras than dedicated managers"
+    },
+    "mv2": {
+      "level": "partial",
+      "note": "Self-hosts uBO, AdGuard, uMatrix and NoScript as MV2; other MV2 extensions need manual loading",
+      "date": "2026"
+    },
+    "ublock": "full",
+    "mobileExtensions": {
+      "android": "none",
+      "ios": "none"
+    },
+    "ai": {
+      "level": "opt-in",
+      "killSwitch": true,
+      "paid": "partial",
+      "note": "Leo assistant, BYOM/local models; removed in Brave Origin"
+    },
+    "privacy": {
+      "defaults": "Shields blocks trackers, ads and cross-site cookies, upgrades HTTPS, farbles fingerprints",
+      "telemetry": "Opt-out P3A anonymous product analytics, no Google services",
+      "jurisdiction": "US"
+    }
+  },
+  "spec": {
+    "defaultSearch": "Brave Search",
+    "telemetry": "P3A anonymous, privacy-preserving; opt-out; daily ping",
+    "drm": "Widevine (opt-in prompt)",
+    "codecs": "H.264, VP9, AV1, HEVC (hardware where available)",
+    "sandbox": "Chromium sandbox + site isolation",
+    "patchLag": "Ships Chromium security fixes within days; iOS trails one major",
+    "languages": "~100"
+  },
+  "platforms": {
+    "windows": {
+      "status": "active",
+      "minOs": "Windows 10",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "official-installer",
+        "winget",
+        "microsoft-store"
+      ],
+      "notes": [
+        "Brave Origin also sold for Windows"
+      ],
+      "highlights": [
+        "Full Shields, Tor windows, Leo"
+      ],
+      "scoreDelta": {}
+    },
+    "macos": {
+      "status": "active",
+      "minOs": "macOS 12+",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "official-installer",
+        "homebrew"
+      ],
+      "notes": [],
+      "highlights": [
+        "Native Apple silicon build"
+      ],
+      "scoreDelta": {}
+    },
+    "linux": {
+      "status": "active",
+      "minOs": "Modern 64-bit distro",
+      "arch": [
+        "x64",
+        "arm64"
+      ],
+      "stores": [
+        "deb",
+        "rpm",
+        "flathub",
+        "snap",
+        "aur"
+      ],
+      "notes": [
+        "Brave Origin free on Linux"
+      ],
+      "highlights": [
+        "Official apt/dnf repos"
+      ],
+      "scoreDelta": {}
+    },
+    "android": {
+      "status": "active",
+      "minOs": "Android 8+",
+      "arch": [
+        "arm64",
+        "x64"
+      ],
+      "stores": [
+        "google-play",
+        "github",
+        "apk"
+      ],
+      "notes": [
+        "No extensions yet; work started Oct 2026 behind a flag (Canary first)"
+      ],
+      "highlights": [
+        "Shields, Leo, background play"
+      ],
+      "scoreDelta": {
+        "extensions": -6
+      }
+    },
+    "ios": {
+      "status": "active",
+      "minOs": "iOS 16+",
+      "arch": [
+        "arm64"
+      ],
+      "stores": [
+        "app-store"
+      ],
+      "notes": [
+        "WebKit engine (Apple rule); trails desktop by a Chromium major in release notes"
+      ],
+      "highlights": [
+        "Shields via content blockers, Leo with voice"
+      ],
+      "scoreDelta": {
+        "extensions": -9,
+        "fingerprinting": -2,
+        "blocking": -1,
+        "webCompat": -1
+      }
+    }
+  },
+  "features": {
+    "trackingProtection": [
+      "yes",
+      10,
+      "Shields"
+    ],
+    "fingerprintProtection": [
+      "yes",
+      9,
+      "Farbling"
+    ],
+    "httpsOnly": [
+      "yes",
+      9,
+      "HTTPS upgrades"
+    ],
+    "doh": [
+      "yes",
+      8
+    ],
+    "torWindows": [
+      "yes",
+      8,
+      "Tor private windows (not full Tor Browser protection)"
+    ],
+    "builtinVpn": [
+      "paid",
+      7,
+      "Brave VPN"
+    ],
+    "cookieIsolation": [
+      "yes",
+      8,
+      "Ephemeral third-party storage"
+    ],
+    "queryStripping": [
+      "yes",
+      9,
+      "De-AMP, debounce, param stripping"
+    ],
+    "telemetryOptOut": [
+      "yes",
+      7,
+      "P3A opt-out"
+    ],
+    "privateHardening": [
+      "yes",
+      8
+    ],
+    "adBlocker": [
+      "yes",
+      10
+    ],
+    "cosmeticFiltering": [
+      "yes",
+      9
+    ],
+    "customFilterLists": [
+      "yes",
+      9
+    ],
+    "youtubeAds": [
+      "yes",
+      7,
+      "Shields scriptlets, arms race"
+    ],
+    "cookieBanners": [
+      "yes",
+      8
+    ],
+    "verticalTabs": [
+      "yes",
+      9
+    ],
+    "tabGroups": [
+      "yes",
+      8
+    ],
+    "tabStacks": [
+      "no",
+      0
+    ],
+    "workspaces": [
+      "no",
+      0
+    ],
+    "splitView": [
+      "yes",
+      7,
+      "Split view"
+    ],
+    "tabSleeping": [
+      "yes",
+      8
+    ],
+    "tabSearch": [
+      "yes",
+      8
+    ],
+    "pinnedTabs": [
+      "yes",
+      9
+    ],
+    "tabTiling": [
+      "no",
+      0
+    ],
+    "readerMode": [
+      "yes",
+      7,
+      "Speedreader"
+    ],
+    "notes": [
+      "no",
+      0
+    ],
+    "webPanels": [
+      "yes",
+      7,
+      "Sidebar"
+    ],
+    "pip": [
+      "yes",
+      8
+    ],
+    "screenshots": [
+      "partial",
+      5,
+      "Chromium capture only"
+    ],
+    "commandBar": [
+      "yes",
+      7,
+      "Command palette"
+    ],
+    "mouseGestures": [
+      "no",
+      0
+    ],
+    "keyboardShortcuts": [
+      "yes",
+      7
+    ],
+    "readLater": [
+      "yes",
+      6,
+      "Reading list"
+    ],
+    "mailCalendarRss": [
+      "partial",
+      5,
+      "Brave News feed"
+    ],
+    "chromeWebStore": [
+      "yes",
+      9
+    ],
+    "firefoxAddons": [
+      "no",
+      0
+    ],
+    "mv2Support": [
+      "partial",
+      7,
+      "Self-hosted MV2 for uBO/AdGuard/uMatrix/NoScript"
+    ],
+    "uboFull": [
+      "yes",
+      8,
+      "Self-hosted MV2 build"
+    ],
+    "mobileExtensions": [
+      "partial",
+      2,
+      "Android experimental flag"
+    ],
+    "userscripts": [
+      "extension",
+      6,
+      "Tampermonkey etc"
+    ],
+    "syncBookmarks": [
+      "yes",
+      8
+    ],
+    "syncPasswords": [
+      "yes",
+      7
+    ],
+    "syncTabs": [
+      "yes",
+      7
+    ],
+    "e2eeSync": [
+      "yes",
+      8,
+      "Sync chain"
+    ],
+    "profiles": [
+      "yes",
+      8
+    ],
+    "passwordManager": [
+      "partial",
+      6
+    ],
+    "passkeys": [
+      "yes",
+      7
+    ],
+    "importData": [
+      "yes",
+      9
+    ],
+    "widevine": [
+      "yes",
+      9,
+      "Opt-in prompt"
+    ],
+    "netflix4k": [
+      "partial",
+      5,
+      "Generally capped below 4K"
+    ],
+    "hevc": [
+      "yes",
+      8
+    ],
+    "av1": [
+      "yes",
+      9
+    ],
+    "hwDecode": [
+      "yes",
+      9
+    ],
+    "aiAssistant": [
+      "yes",
+      8,
+      "Leo"
+    ],
+    "aiSummarizer": [
+      "yes",
+      8,
+      "Leo page summary"
+    ],
+    "agenticBrowsing": [
+      "partial",
+      5,
+      "Experimental AI browsing (Nightly)"
+    ],
+    "localAi": [
+      "yes",
+      7,
+      "BYOM / Ollama"
+    ],
+    "aiKillSwitch": [
+      "yes",
+      8,
+      "Can disable Leo; Origin removes it"
+    ],
+    "translation": [
+      "yes",
+      7,
+      "Local Bergamot translation"
+    ],
+    "cryptoWallet": [
+      "yes",
+      9,
+      "Brave Wallet"
+    ],
+    "pwaInstall": [
+      "yes",
+      8
+    ],
+    "enterprisePolicies": [
+      "yes",
+      7
+    ],
+    "kioskMode": [
+      "partial",
+      5
+    ],
+    "panicButton": [
+      "no",
+      0
+    ],
+    "downloadManager": [
+      "yes",
+      6
+    ],
+    "customThemes": [
+      "yes",
+      6
+    ],
+    "customSearchEngines": [
+      "yes",
+      9
+    ],
+    "devtools": [
+      "yes",
+      10
+    ]
+  },
+  "scores": {
+    "jsSpeed": [
+      9.3,
+      "Chromium V8 with Brave overhead; matches anchor",
+      "measured-public"
+    ],
+    "pageLoad": [
+      9.3,
+      "Shields cuts load; fast on ad-heavy pages",
+      "measured-public"
+    ],
+    "networkSpeed": [
+      9,
+      "HTTP/3 and preloading from Chromium",
+      "documented"
+    ],
+    "startup": [
+      8,
+      "Anchor value; heavier first run than Chrome",
+      "editorial"
+    ],
+    "smoothness": [
+      9,
+      "Chromium compositor",
+      "editorial"
+    ],
+    "graphics": [
+      9,
+      "Full WebGL/WebGPU (some farbling)",
+      "documented"
+    ],
+    "memory": [
+      6,
+      "Chromium base; Shields trims page weight",
+      "editorial"
+    ],
+    "cpu": [
+      7,
+      "Less ad scripting lowers CPU",
+      "editorial"
+    ],
+    "battery": [
+      7.5,
+      "Efficiency from blocking ads",
+      "editorial"
+    ],
+    "resourceControls": [
+      8,
+      "Memory Saver and Energy Saver",
+      "documented"
+    ],
+    "lowEnd": [
+      6.5,
+      "Chromium floor requirements",
+      "editorial"
+    ],
+    "installSize": [
+      5,
+      "Roughly Chrome-size install",
+      "editorial"
+    ],
+    "privacyDefaults": [
+      9,
+      "Shields, HTTPS upgrade on by default",
+      "documented"
+    ],
+    "blocking": [
+      9.5,
+      "Built-in Rust adblock engine, cosmetic filters",
+      "documented"
+    ],
+    "fingerprinting": [
+      8.5,
+      "Per-session farbling",
+      "documented"
+    ],
+    "securityHardening": [
+      9.5,
+      "Chromium sandbox and site isolation",
+      "documented"
+    ],
+    "patchSpeed": [
+      9,
+      "Chromium point releases within days",
+      "documented"
+    ],
+    "telemetry": [
+      7.5,
+      "Opt-out P3A only, no Google",
+      "documented"
+    ],
+    "lookCustom": [
+      5.5,
+      "Chromium themes, few UI options",
+      "editorial"
+    ],
+    "behaviourCustom": [
+      6,
+      "Chromium shortcuts, site settings",
+      "editorial"
+    ],
+    "advancedSettings": [
+      7.5,
+      "brave://flags and policies",
+      "editorial"
+    ],
+    "tabManagement": [
+      8,
+      "Vertical tabs, groups, split view",
+      "documented"
+    ],
+    "searchFreedom": [
+      8,
+      "Many engines, custom search",
+      "documented"
+    ],
+    "downloads": [
+      6,
+      "Chromium download shelf",
+      "editorial"
+    ],
+    "productivity": [
+      6.5,
+      "Sidebar, speedreader, no notes",
+      "editorial"
+    ],
+    "media": [
+      9,
+      "Widevine, AV1, HEVC hardware",
+      "documented"
+    ],
+    "translation": [
+      7,
+      "Local on-device translation",
+      "documented"
+    ],
+    "extras": [
+      7.5,
+      "Wallet, VPN, Search, News, Leo",
+      "documented"
+    ],
+    "extensions": [
+      9,
+      "Chrome Web Store, partial MV2",
+      "documented"
+    ],
+    "sync": [
+      7,
+      "E2EE chain, no account, limited items",
+      "documented"
+    ],
+    "passwords": [
+      6,
+      "Basic Chromium manager",
+      "editorial"
+    ],
+    "mobileApps": [
+      8.5,
+      "Android and iOS good; no ext on mobile",
+      "documented"
+    ],
+    "webCompat": [
+      9.5,
+      "Chromium compatibility",
+      "editorial"
+    ],
+    "devTools": [
+      9.5,
+      "Full Chromium DevTools",
+      "documented"
+    ],
+    "accessibility": [
+      8.5,
+      "Chromium accessibility stack",
+      "editorial"
+    ],
+    "openSource": [
+      8,
+      "MPL-2.0 but ad/crypto business",
+      "documented"
+    ],
+    "businessTrust": [
+      6.5,
+      "Past affiliate/crypto controversy",
+      "editorial"
+    ],
+    "longevity": [
+      9,
+      "Funded company, rapid releases",
+      "documented"
+    ],
+    "ai": [
+      6.5,
+      "Leo opt-in, can be turned off",
+      "documented"
+    ],
+    "beginnerFriendly": [
+      8,
+      "Works out of the box",
+      "editorial"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://brave.com/latest/",
+      "title": "Brave Release Notes",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule",
+      "title": "Brave Release Schedule (GitHub wiki)",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.privacyguides.org/news/2026/06/07/brave-launches-paid-minimalist-brave-origin-browser/",
+      "title": "Privacy Guides: Brave Origin",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/software/brave-software-releases-origin-for-a-paid-bloat-free-browsing-experience/",
+      "title": "BleepingComputer: Brave Origin",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://piunikaweb.com/2026/10/01/brave-starts-work-android-extensions/",
+      "title": "PiunikaWeb: Brave Android extensions work",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://github.com/brave/brave-browser/issues/59354",
+      "title": "brave-browser#59354 Android extensions flag",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "unverified": [
+    "Whether 1.98.x (Chromium 156, scheduled Oct 22) has shipped; release notes page showed 1.97.59 as latest",
+    "Brave Containers (2026) not independently confirmed in fetched sources",
+    "Netflix 4K and agentic AI browsing status are based on general knowledge, not a fetched 2026 source"
+  ],
+  "confidence": "medium",
+  "lastVerified": "2026-10-29"
+}

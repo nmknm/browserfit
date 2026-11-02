@@ -1,0 +1,161 @@
+/* Print: always the light palette, no site chrome, panels stay whole, and every disclosure is open. */
+@media print {
+  :root:root:root {
+    color-scheme: light;
+    --bg: var(--n-0);
+    --bg-subtle: var(--n-25);
+    --surface: var(--n-0);
+    --surface-2: var(--n-50);
+    --surface-3: var(--n-100);
+    --surface-hover: var(--n-50);
+    --surface-active: var(--n-100);
+    --border: var(--n-200);
+    --border-strong: var(--n-300);
+    --border-input: var(--n-400);
+    --text: var(--n-950);
+    --text-2: var(--n-600);
+    --text-3: var(--n-500);
+    --accent: var(--blue-600);
+    --accent-hover: var(--blue-700);
+    --accent-soft: var(--blue-50);
+    --accent-soft-2: var(--blue-100);
+    --accent-text: var(--blue-600);
+    --positive: oklch(0.55 0.15 150);
+    --positive-soft: oklch(0.96 0.04 150);
+    --warning: oklch(0.62 0.15 70);
+    --warning-soft: oklch(0.97 0.05 85);
+    --negative: oklch(0.56 0.2 27);
+    --negative-soft: oklch(0.96 0.03 25);
+    --score-track: var(--n-100);
+    --series-1: #2a78d6;
+    --series-2: #eb6834;
+    --series-3: #1baf7a;
+    --series-4: #eda100;
+    --series-5: #e87ba4;
+    --series-6: #008300;
+    --viz-grid: var(--n-200);
+    --viz-axis: var(--n-500);
+    --seq-0: var(--n-50);
+    --heat-0: var(--seq-0);
+    --heat-on-high: oklch(1 0 0);
+    --shadow-pop: none;
+    --shadow-sheet: none;
+    --shadow-card-hover: none;
+  }
+
+  html,
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  /* Site chrome and controls that do nothing on paper. */
+  .skip-link,
+  .topbar,
+  .bottom-nav,
+  .tray,
+  .toast,
+  .footer,
+  .crumbs,
+  .no-print,
+  .cmp-add-mobile {
+    display: none !important;
+  }
+
+  .main,
+  .container,
+  .container--wide {
+    max-inline-size: none;
+    padding-inline: 0;
+  }
+  .page {
+    padding-block: 0;
+  }
+
+  .panel {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  /* Wide tables print in full instead of scrolling. */
+  .cmp-scroll,
+  .table-wrap {
+    overflow: visible !important;
+  }
+
+  /* Open every <details> so nothing is hidden on paper. */
+  details::details-content {
+    content-visibility: visible;
+    display: block;
+  }
+  details > summary .chev {
+    display: none;
+  }
+
+  /* Show where links go. */
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+    color: var(--text-2);
+    overflow-wrap: anywhere;
+  }
+  a[href^='#']::after {
+    content: none;
+  }
+}
+
+/* shortlist brief */
+.brief__list {
+  display: grid;
+  gap: var(--s-4);
+}
+.brief__item {
+  display: grid;
+  gap: var(--s-4);
+}
+.brief__head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: start;
+  gap: var(--s-3);
+}
+.brief__id h2 {
+  font-size: var(--text-xl);
+}
+.brief__scores {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+.brief__cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: var(--s-6);
+}
+.brief__cols ul {
+  display: grid;
+  gap: var(--s-1);
+  padding-inline-start: 1.1rem;
+}
+.brief__note {
+  padding: var(--s-3) var(--s-4);
+  border-radius: var(--r-md);
+  background: var(--surface-2);
+  text-wrap: pretty;
+}
+.brief__decide {
+  margin-block-start: var(--s-6);
+}
+@media (max-width: 40rem) {
+  .brief__head {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .brief__scores {
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "checked": "2026-10-30",
+  "note": "Reference versions for the security patch-lag rule in scripts/build-data.mjs. Update by hand when a new stable ships; values come from this site's own research files.",
+  "chromium": {
+    "major": 156,
+    "cadenceDays": 14,
+    "label": "Chrome 156 (156.0.8078.74, 2026-10-27)",
+    "source": { "url": "https://chromereleases.googleblog.com/", "title": "Chrome Releases blog", "accessed": "2026-10-30" },
+    "note": "Chrome moved to a two-week cycle from Chrome 153 (2026-09-08)."
+  },
+  "firefox": {
+    "major": 159,
+    "cadenceDays": 14,
+    "supportedEsr": [115, 140, 153],
+    "label": "Firefox 159 (2026-10-27)",
+    "source": { "url": "https://www.firefox.com/en-US/firefox/notes/", "title": "Firefox 159.0 release notes", "accessed": "2026-10-30" },
+    "note": "Two-week cycle since Firefox 155 (2026-09-01). ESR lines 115 and 153 are listed in the Firefox profile; Tor Browser 15.0.26 is on ESR 140. Confirm the supported ESR lines at https://whattrainisitnow.com/ before relying on them."
+  },
+  "webkit": {
+    "label": "Safari 27 (2026-09-14)",
+    "source": { "url": "https://developer.apple.com/documentation/safari-release-notes/safari-27-release-notes", "title": "Safari 27 Release Notes", "accessed": "2026-10-30" },
+    "note": "WebKit security fixes ship with OS releases, so there is no separate major-version gap rule."
+  }
+}
